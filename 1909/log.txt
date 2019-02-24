@@ -1,0 +1,124 @@
+2018-04-04 03:58:09,615 INFO  DownloadService - Downloading "https://github.com/bingoogolapple/BGARefreshLayout-Android/archive/master.zip", attempt 3
+2018-04-04 03:59:10,102 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:59:10,811 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:59:10,811 INFO  DownloadService - Downloading "https://github.com/bingoogolapple/BGARefreshLayout-Android/archive/master.zip", attempt 3
+2018-04-04 04:00:12,018 DEBUG FullProcessService - Repository https://github.com/bingoogolapple/BGARefreshLayout-Android available: true
+2018-04-04 04:00:12,018 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:00:12,018 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/bingoogolapple/BGARefreshLayout-Android, /tmp/rdisk/1909/src]
+2018-04-04 04:00:19,366 INFO  SysUtils - 
+2018-04-04 04:00:19,371 INFO  GitService - Deleted "/tmp/rdisk/1909/src/.git": true
+2018-04-04 04:00:19,376 INFO  FullProcessService - Size of directory with sources: 886 KB
+2018-04-04 04:00:19,376 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1909/src]
+2018-04-04 04:00:19,381 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1909/src/.git/
+
+2018-04-04 04:00:19,384 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1909/src/gradlew
+2018-04-04 04:00:19,388 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1909/src/demo/build.gradle /tmp/rdisk/1909/src/library/build.gradle /tmp/rdisk/1909/src/build.gradle
+2018-04-04 04:00:19,391 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1909/src/settings.gradle /tmp/rdisk/1909/src/library/build.gradle /tmp/rdisk/1909/src/demo/build.gradle /tmp/rdisk/1909/src/build.gradle
+2018-04-04 04:00:19,391 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle", attempt 3
+2018-04-04 04:00:19,568 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle, attempt 3
+2018-04-04 04:00:19,568 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle
+2018-04-04 04:00:19,568 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:00:19,577 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1909/src/demo/local.properties
+2018-04-04 04:00:19,578 INFO  ProjectFixService - Build info for "/tmp/rdisk/1909/src/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:00:19,578 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1909/src/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:00:19,579 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1909/src/library/local.properties
+2018-04-04 04:00:19,580 INFO  ProjectFixService - Build info for "/tmp/rdisk/1909/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:00:19,580 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1909/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:00:19,581 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1909/src/local.properties
+2018-04-04 04:00:19,581 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-04 04:00:19,581 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-04 04:00:19,582 INFO  ProjectFixService - Build info for "/tmp/rdisk/1909/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:00:19,582 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1909/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:00:19,583 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:00:19,583 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:00:19,583 INFO  SysUtils - Execute command: [/tmp/rdisk/1909/src/gradlew, -b, /tmp/rdisk/1909/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:00:27,474 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-04 04:00:27,474 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 04:00:27,474 INFO  SysUtils - Execute command: [/tmp/rdisk/1909/src/gradlew, -b, /tmp/rdisk/1909/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 04:01:15,498 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+/tmp/rdisk/1909/src/demo/src/main/AndroidManifest.xml:9:5-35:19 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:9 to replace other declarations but no other declaration present
+:demo:splitsDiscoveryTaskDebug
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:compileDebugNdk NO-SOURCE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:mergeDebugJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:preReleaseBuild
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+/tmp/rdisk/1909/src/demo/src/main/AndroidManifest.xml:9:5-35:19 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:9 to replace other declarations but no other declaration present
+:demo:splitsDiscoveryTaskRelease
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:compileReleaseNdk NO-SOURCE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:mergeReleaseAssets
+:demo:transformClassesWithPreDexForRelease
+:demo:transformDexWithDexForRelease
+:demo:mergeReleaseJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:processReleaseJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL in 47s
+50 actionable tasks: 50 executed
+
+2018-04-04 04:01:15,562 INFO  FullProcessService - Found APK file: /tmp/rdisk/1909/src/demo/build/outputs/apk/release/demo-release-unsigned.apk

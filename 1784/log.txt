@@ -1,0 +1,228 @@
+2018-04-04 11:49:50,735 INFO  DownloadService - Downloading "https://github.com/leonardoxh/ywhaterdata/archive/master.zip", attempt 3
+2018-04-04 11:50:51,302 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 11:50:52,117 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 11:50:52,117 INFO  DownloadService - Downloading "https://github.com/leonardoxh/ywhaterdata/archive/master.zip", attempt 3
+2018-04-04 11:51:53,378 DEBUG FullProcessService - Repository https://github.com/leonardoxh/ywhaterdata available: true
+2018-04-04 11:51:53,378 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 11:51:53,378 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/leonardoxh/ywhaterdata, /tmp/rdisk/1784/src]
+2018-04-04 11:51:54,817 INFO  SysUtils - 
+2018-04-04 11:51:54,827 INFO  GitService - Deleted "/tmp/rdisk/1784/src/.git": true
+2018-04-04 11:51:54,829 INFO  FullProcessService - Size of directory with sources: 110 KB
+2018-04-04 11:51:54,829 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1784/src]
+2018-04-04 11:51:54,837 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1784/src/.git/
+
+2018-04-04 11:51:54,839 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1784/src/YWheaterData/gradlew
+2018-04-04 11:51:54,840 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1784/src/YWheaterData/app/build.gradle /tmp/rdisk/1784/src/YWheaterData/build.gradle
+2018-04-04 11:51:54,842 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1784/src/YWheaterData/settings.gradle /tmp/rdisk/1784/src/YWheaterData/maven_push.gradle /tmp/rdisk/1784/src/YWheaterData/build.gradle /tmp/rdisk/1784/src/YWheaterData/app/build.gradle
+2018-04-04 11:51:54,843 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 11:51:54,843 INFO  ProjectFixService - Fixing project...
+2018-04-04 11:51:54,848 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1784/src/YWheaterData/app/local.properties
+2018-04-04 11:51:54,849 INFO  ProjectFixService - Build info for "/tmp/rdisk/1784/src/YWheaterData/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-04 11:51:54,849 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1784/src/YWheaterData/local.properties
+2018-04-04 11:51:54,849 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 11:51:54,850 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 11:51:54,851 INFO  ProjectFixService - Build info for "/tmp/rdisk/1784/src/YWheaterData/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-04 11:51:54,852 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 11:51:54,852 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 11:51:54,852 INFO  SysUtils - Execute command: [/tmp/rdisk/1784/src/YWheaterData/gradlew, -b, /tmp/rdisk/1784/src/YWheaterData/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 11:52:05,299 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-04 11:52:05,299 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 11:52:05,300 INFO  SysUtils - Execute command: [/tmp/rdisk/1784/src/YWheaterData/gradlew, -b, /tmp/rdisk/1784/src/YWheaterData/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 11:52:14,047 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:app:androidJavadocs/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:24: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Callback;
+                          ^
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:25: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:26: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:27: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Response;
+                          ^
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:51: error: cannot find symbol
+  private OkHttpClient okHttpClient = Utils.defaultOkHttpClient();
+          ^
+  symbol:   class OkHttpClient
+  location: class YahooWeatherClient
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:113: error: cannot find symbol
+  public void setOkHttpClient(OkHttpClient okHttpClient) {
+                              ^
+  symbol:   class OkHttpClient
+  location: class YahooWeatherClient
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:137: error: cannot find symbol
+  class OnLocationResponseListener implements Callback {
+                                              ^
+  symbol:   class Callback
+  location: class YahooWeatherClient
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:139: error: cannot find symbol
+    @Override public void onFailure(Request request, IOException e) {
+                                    ^
+  symbol:   class Request
+  location: class YahooWeatherClient.OnLocationResponseListener
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:143: error: cannot find symbol
+    @Override public void onResponse(Response response) throws IOException {
+                                     ^
+  symbol:   class Response
+  location: class YahooWeatherClient.OnLocationResponseListener
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:154: error: cannot find symbol
+  class OnWoeidResponseListener implements Callback {
+                                           ^
+  symbol:   class Callback
+  location: class YahooWeatherClient
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:162: error: cannot find symbol
+    @Override public void onFailure(Request request, IOException e) {
+                                    ^
+  symbol:   class Request
+  location: class YahooWeatherClient.OnWoeidResponseListener
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/YahooWeatherClient.java:166: error: cannot find symbol
+    @Override public void onResponse(Response response) throws IOException {
+                                     ^
+  symbol:   class Response
+  location: class YahooWeatherClient.OnWoeidResponseListener
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/Utils.java:22: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/1784/src/YWheaterData/app/src/main/java/com/github/leonardoxh/ywheaterdata/Utils.java:46: error: cannot find symbol
+  static OkHttpClient defaultOkHttpClient() {
+         ^
+  symbol:   class OkHttpClient
+  location: class Utils
+
+14 warnings
+:app:androidJavadocsJar
+:app:androidSourcesJar
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:packageDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles
+:app:preReleaseBuild UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:packageReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease
+:app:assembleRelease
+:app:signArchives SKIPPED
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.307 secs
+
+2018-04-04 11:52:14,053 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 11:52:14,054 INFO  SysUtils - Execute command: [/tmp/rdisk/1784/src/YWheaterData/gradlew, -b, /tmp/rdisk/1784/src/YWheaterData/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 11:52:20,163 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-04 11:52:20,163 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 11:52:20,163 INFO  SysUtils - Execute command: [/tmp/rdisk/1784/src/YWheaterData/gradlew, -b, /tmp/rdisk/1784/src/YWheaterData/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 11:52:26,294 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:app:androidJavadocs UP-TO-DATE
+:app:androidJavadocsJar UP-TO-DATE
+:app:androidSourcesJar UP-TO-DATE
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease UP-TO-DATE
+:app:assembleRelease UP-TO-DATE
+:app:signArchives SKIPPED
+:app:assemble UP-TO-DATE
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.7 secs
+
+2018-04-04 11:52:26,300 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 11:52:26,306 ERROR FullProcessService - Could not find generated or existed APK file

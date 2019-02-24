@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.dkharrat.nexusdialog.sample",
+    "label" : "Catalog",
+    "icon" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1757,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.github.dkharrat.nexusdialog.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"23\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0700a3\" android:label=\"Catalog\" android:icon=\"res/drawable-ldpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Catalog\" android:name=\"com.github.dkharrat.nexusdialog.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.github.dkharrat.nexusdialog.sample.ComplexForm\" />\n\t\t<activity android:name=\"com.github.dkharrat.nexusdialog.sample.SimpleExample\" />\n\t\t<activity android:name=\"com.github.dkharrat.nexusdialog.sample.CustomFormActivity\" />\n\t\t<activity android:name=\"com.github.dkharrat.nexusdialog.sample.FragmentFormActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1604250,
+  "crc32" : 3218500712,
+  "sha256" : "507d1d62e7db4ebb43a7176e86a13706836a191701405a3f8ad466deeb62449a",
+  "buildTime" : 1522807954000
+}

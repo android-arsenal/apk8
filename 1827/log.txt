@@ -1,0 +1,186 @@
+2018-04-04 09:11:02,014 INFO  DownloadService - Downloading "https://github.com/novoda/sqlite-analyzer/archive/master.zip", attempt 3
+2018-04-04 09:12:02,685 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:12:03,614 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:12:03,614 INFO  DownloadService - Downloading "https://github.com/novoda/sqlite-analyzer/archive/master.zip", attempt 3
+2018-04-04 09:13:05,031 DEBUG FullProcessService - Repository https://github.com/novoda/sqlite-analyzer available: true
+2018-04-04 09:13:05,031 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:13:05,031 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/novoda/sqlite-analyzer, /tmp/rdisk/1827/src]
+2018-04-04 09:13:10,912 INFO  SysUtils - 
+2018-04-04 09:13:10,917 INFO  GitService - Deleted "/tmp/rdisk/1827/src/.git": true
+2018-04-04 09:13:10,922 INFO  FullProcessService - Size of directory with sources: 855 KB
+2018-04-04 09:13:10,922 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1827/src]
+2018-04-04 09:13:10,927 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1827/src/.git/
+
+2018-04-04 09:13:10,931 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1827/src/gradlew /tmp/rdisk/1827/src/analyzer/gradlew
+2018-04-04 09:13:10,935 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1827/src/demo-assethelper/build.gradle /tmp/rdisk/1827/src/demo-sqliteprovider/build.gradle /tmp/rdisk/1827/src/analyzer/build.gradle /tmp/rdisk/1827/src/build.gradle /tmp/rdisk/1827/src/buildSrc/build.gradle
+2018-04-04 09:13:10,939 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1827/src/team-props/lint.gradle /tmp/rdisk/1827/src/settings.gradle /tmp/rdisk/1827/src/demo-sqliteprovider/build.gradle /tmp/rdisk/1827/src/demo-assethelper/build.gradle /tmp/rdisk/1827/src/buildSrc/settings.gradle /tmp/rdisk/1827/src/buildSrc/build.gradle /tmp/rdisk/1827/src/build.gradle /tmp/rdisk/1827/src/analyzer/build.gradle
+2018-04-04 09:13:10,940 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:13:10,940 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:13:10,948 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1827/src/demo-assethelper/local.properties
+2018-04-04 09:13:10,951 INFO  ProjectFixService - Build info for "/tmp/rdisk/1827/src/demo-assethelper/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-04 09:13:10,951 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1827/src/demo-assethelper/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-04 09:13:10,951 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1827/src/demo-sqliteprovider/local.properties
+2018-04-04 09:13:10,953 INFO  ProjectFixService - Build info for "/tmp/rdisk/1827/src/demo-sqliteprovider/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 09:13:10,955 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1827/src/demo-sqliteprovider/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 09:13:10,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1827/src/analyzer/local.properties
+2018-04-04 09:13:10,956 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-04 09:13:10,956 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-04 09:13:10,959 INFO  ProjectFixService - Build info for "/tmp/rdisk/1827/src/analyzer/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 09:13:10,960 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1827/src/analyzer/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 09:13:10,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1827/src/local.properties
+2018-04-04 09:13:10,961 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-04 09:13:10,961 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-04 09:13:10,963 INFO  ProjectFixService - Build info for "/tmp/rdisk/1827/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 09:13:10,963 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1827/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 09:13:10,964 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1827/src/buildSrc/local.properties
+2018-04-04 09:13:10,966 INFO  ProjectFixService - Build info for "/tmp/rdisk/1827/src/buildSrc/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 09:13:10,966 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1827/src/buildSrc/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 09:13:10,966 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:13:10,967 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:13:10,967 INFO  SysUtils - Execute command: [/tmp/rdisk/1827/src/gradlew, -b, /tmp/rdisk/1827/src/demo-assethelper/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:13:39,844 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 09:13:39,844 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 09:13:39,844 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 09:13:39,844 INFO  SysUtils - Execute command: [/tmp/rdisk/1827/src/gradlew, -b, /tmp/rdisk/1827/src/demo-assethelper/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 09:14:03,428 INFO  SysUtils - Configuration on demand is an incubating feature.
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:analyzer:generateGrammarSource UP-TO-DATE
+:buildSrc:analyzer:compileJava UP-TO-DATE
+:buildSrc:analyzer:compileGroovy UP-TO-DATE
+:buildSrc:analyzer:processResources UP-TO-DATE
+:buildSrc:analyzer:classes UP-TO-DATE
+:buildSrc:analyzer:jar UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+:buildSrc:analyzer:groovydoc UP-TO-DATE
+:buildSrc:analyzer:publishPluginGroovyDocsJar UP-TO-DATE
+:buildSrc:analyzer:publishPluginJar UP-TO-DATE
+:buildSrc:analyzer:javadoc UP-TO-DATE
+:buildSrc:analyzer:publishPluginJavaDocsJar UP-TO-DATE
+:buildSrc:analyzer:assemble UP-TO-DATE
+:buildSrc:analyzer:generateTestGrammarSource UP-TO-DATE
+:buildSrc:analyzer:compileTestJava UP-TO-DATE
+:buildSrc:analyzer:compileTestGroovy UP-TO-DATE
+:buildSrc:analyzer:processTestResources UP-TO-DATE
+:buildSrc:analyzer:testClasses UP-TO-DATE
+:buildSrc:analyzer:test UP-TO-DATE
+:buildSrc:analyzer:check UP-TO-DATE
+:buildSrc:analyzer:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:demo-assethelper:preBuild UP-TO-DATE
+:demo-assethelper:preDebugBuild UP-TO-DATE
+:demo-assethelper:checkDebugManifest
+:demo-assethelper:prepareDebugDependencies
+:demo-assethelper:compileDebugAidl
+:demo-assethelper:compileDebugRenderscript
+:demo-assethelper:generateDebugBuildConfig
+:demo-assethelper:generateDebugSqliteAccess
+:demo-assethelper:mergeDebugShaders
+:demo-assethelper:compileDebugShaders
+:demo-assethelper:generateDebugAssets
+:demo-assethelper:mergeDebugAssets
+:demo-assethelper:generateDebugResValues
+:demo-assethelper:generateDebugResources
+:demo-assethelper:mergeDebugResources
+:demo-assethelper:processDebugManifest
+:demo-assethelper:processDebugResources
+:demo-assethelper:generateDebugSources
+:demo-assethelper:incrementalDebugJavaCompilationSafeguard
+:demo-assethelper:compileDebugJavaWithJavac
+:demo-assethelper:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1827/src/demo-assethelper/src/main/java/com/example/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:demo-assethelper:compileDebugNdk UP-TO-DATE
+:demo-assethelper:compileDebugSources
+:demo-assethelper:prePackageMarkerForDebug
+:demo-assethelper:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:demo-assethelper:mergeDebugJniLibFolders
+:demo-assethelper:transformNative_libsWithMergeJniLibsForDebug
+:demo-assethelper:processDebugJavaRes UP-TO-DATE
+:demo-assethelper:transformResourcesWithMergeJavaResForDebug
+:demo-assethelper:validateDebugSigning
+:demo-assethelper:packageDebug
+:demo-assethelper:zipalignDebug
+:demo-assethelper:assembleDebug
+:demo-assethelper:preReleaseBuild UP-TO-DATE
+:demo-assethelper:checkReleaseManifest
+:demo-assethelper:prepareReleaseDependencies
+:demo-assethelper:compileReleaseAidl
+:demo-assethelper:compileReleaseRenderscript
+:demo-assethelper:generateReleaseBuildConfig
+:demo-assethelper:generateReleaseSqliteAccess
+:demo-assethelper:mergeReleaseShaders
+:demo-assethelper:compileReleaseShaders
+:demo-assethelper:generateReleaseAssets
+:demo-assethelper:mergeReleaseAssets
+:demo-assethelper:generateReleaseResValues
+:demo-assethelper:generateReleaseResources
+:demo-assethelper:mergeReleaseResources
+:demo-assethelper:processReleaseManifest
+:demo-assethelper:processReleaseResources
+:demo-assethelper:generateReleaseSources
+:demo-assethelper:incrementalReleaseJavaCompilationSafeguard
+:demo-assethelper:compileReleaseJavaWithJavac
+:demo-assethelper:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1827/src/demo-assethelper/src/main/java/com/example/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:demo-assethelper:compileReleaseNdk UP-TO-DATE
+:demo-assethelper:compileReleaseSources
+:demo-assethelper:lintVitalRelease
+:demo-assethelper:prePackageMarkerForRelease
+:demo-assethelper:transformClassesWithDexForRelease
+:demo-assethelper:mergeReleaseJniLibFolders
+:demo-assethelper:transformNative_libsWithMergeJniLibsForRelease
+:demo-assethelper:processReleaseJavaRes UP-TO-DATE
+:demo-assethelper:transformResourcesWithMergeJavaResForRelease
+:demo-assethelper:packageRelease
+:demo-assethelper:assembleRelease
+:demo-assethelper:assemble
+:demo-assethelper:compileLint
+:demo-assethelper:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:///tmp/rdisk/1827/src/demo-assethelper/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1827/src/demo-assethelper/build/outputs/lint-results-debug.xml
+:demo-assethelper:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:demo-assethelper:preDebugUnitTestBuild UP-TO-DATE
+:demo-assethelper:prepareDebugUnitTestDependencies
+:demo-assethelper:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:demo-assethelper:processDebugUnitTestJavaRes UP-TO-DATE
+:demo-assethelper:compileDebugUnitTestSources UP-TO-DATE
+:demo-assethelper:mockableAndroidJar
+:demo-assethelper:assembleDebugUnitTest
+:demo-assethelper:testDebugUnitTest
+:demo-assethelper:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:demo-assethelper:preReleaseUnitTestBuild UP-TO-DATE
+:demo-assethelper:prepareReleaseUnitTestDependencies
+:demo-assethelper:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:demo-assethelper:processReleaseUnitTestJavaRes UP-TO-DATE
+:demo-assethelper:compileReleaseUnitTestSources UP-TO-DATE
+:demo-assethelper:assembleReleaseUnitTest
+:demo-assethelper:testReleaseUnitTest
+:demo-assethelper:test
+:demo-assethelper:check
+:demo-assethelper:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.132 secs
+
+2018-04-04 09:14:03,448 INFO  FullProcessService - Found APK file: /tmp/rdisk/1827/src/demo-assethelper/build/outputs/apk/demo-assethelper-release-unsigned.apk

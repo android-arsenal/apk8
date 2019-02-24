@@ -1,0 +1,12 @@
+{
+  "cn.aigestudio.datepicker" : [ "BuildConfig" ],
+  "cn.aigestudio.datepicker.bizs.calendars" : [ "DPCManager", "DPCNCalendar", "DPCNCalendar$1", "DPCNCalendar$G", "DPCNCalendar$L", "DPCalendar", "DPUSCalendar", "SolarTerm", "SolarTerm$1", "SolarTerm$ZD" ],
+  "cn.aigestudio.datepicker.bizs.decors" : [ "DPDecor" ],
+  "cn.aigestudio.datepicker.bizs.languages" : [ "CN", "DPLManager", "EN" ],
+  "cn.aigestudio.datepicker.bizs.themes" : [ "DPBaseTheme", "DPCNTheme", "DPTManager", "DPTheme" ],
+  "cn.aigestudio.datepicker.cons" : [ "DPMode" ],
+  "cn.aigestudio.datepicker.demo" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "MainActivity$2$1", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ],
+  "cn.aigestudio.datepicker.entities" : [ "DPInfo" ],
+  "cn.aigestudio.datepicker.utils" : [ "DataUtils", "MeasureUtil" ],
+  "cn.aigestudio.datepicker.views" : [ "DatePicker", "DatePicker$1", "DatePicker$2", "DatePicker$OnDatePickedListener", "DatePicker$OnDateSelectedListener", "MonthView", "MonthView$1", "MonthView$2", "MonthView$BGCircle", "MonthView$OnDateChangeListener", "MonthView$ScaleAnimationListener", "MonthView$SlideMode" ]
+}

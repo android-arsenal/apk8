@@ -1,0 +1,70 @@
+2018-04-04 04:08:41,939 INFO  DownloadService - Downloading "https://github.com/hannesstruss/godot/archive/master.zip", attempt 3
+2018-04-04 04:09:42,409 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 04:09:43,097 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 04:09:43,097 INFO  DownloadService - Downloading "https://github.com/hannesstruss/godot/archive/master.zip", attempt 3
+2018-04-04 04:10:44,352 DEBUG FullProcessService - Repository https://github.com/hannesstruss/godot available: true
+2018-04-04 04:10:44,352 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:10:44,352 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hannesstruss/godot, /tmp/rdisk/1904/src]
+2018-04-04 04:10:46,927 INFO  SysUtils - 
+2018-04-04 04:10:46,938 INFO  GitService - Deleted "/tmp/rdisk/1904/src/.git": true
+2018-04-04 04:10:46,939 INFO  FullProcessService - Size of directory with sources: 685 KB
+2018-04-04 04:10:46,939 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1904/src]
+2018-04-04 04:10:46,943 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1904/src/.git/
+
+2018-04-04 04:10:46,945 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1904/src/gradlew
+2018-04-04 04:10:46,947 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1904/src/build.gradle /tmp/rdisk/1904/src/plugin/build.gradle
+2018-04-04 04:10:46,948 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1904/src/settings.gradle /tmp/rdisk/1904/src/plugin/build.gradle /tmp/rdisk/1904/src/maven_push.gradle /tmp/rdisk/1904/src/build.gradle
+2018-04-04 04:10:46,949 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 04:10:46,949 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:10:46,954 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1904/src/local.properties
+2018-04-04 04:10:46,954 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-bin.zip
+2018-04-04 04:10:46,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/1904/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:10:46,956 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1904/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:10:46,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1904/src/plugin/local.properties
+2018-04-04 04:10:46,958 INFO  ProjectFixService - Build info for "/tmp/rdisk/1904/src/plugin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:10:46,958 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1904/src/plugin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:10:46,958 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:10:46,958 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:10:46,958 INFO  SysUtils - Execute command: [/tmp/rdisk/1904/src/gradlew, -b, /tmp/rdisk/1904/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:10:55,130 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-04 04:10:55,130 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 04:10:55,130 INFO  SysUtils - Execute command: [/tmp/rdisk/1904/src/gradlew, -b, /tmp/rdisk/1904/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 04:11:02,535 INFO  SysUtils - Configuration on demand is an incubating feature.
+:plugin:compileJava UP-TO-DATE
+:plugin:compileGroovy
+:plugin:processResources
+:plugin:classes
+:plugin:jar
+:plugin:javadocJar
+:plugin:sourcesJar
+:plugin:signArchives SKIPPED
+:plugin:assemble
+:plugin:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.955 secs
+
+2018-04-04 04:11:02,538 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:11:02,538 INFO  SysUtils - Execute command: [/tmp/rdisk/1904/src/gradlew, -b, /tmp/rdisk/1904/src/plugin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:11:06,791 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-04 04:11:06,791 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 04:11:06,791 INFO  SysUtils - Execute command: [/tmp/rdisk/1904/src/gradlew, -b, /tmp/rdisk/1904/src/plugin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 04:11:11,436 INFO  SysUtils - Configuration on demand is an incubating feature.
+:plugin:compileJava UP-TO-DATE
+:plugin:compileGroovy UP-TO-DATE
+:plugin:processResources UP-TO-DATE
+:plugin:classes UP-TO-DATE
+:plugin:jar UP-TO-DATE
+:plugin:javadocJar UP-TO-DATE
+:plugin:sourcesJar UP-TO-DATE
+:plugin:signArchives SKIPPED
+:plugin:assemble UP-TO-DATE
+:plugin:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.232 secs
+
+2018-04-04 04:11:11,439 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 04:11:11,442 ERROR FullProcessService - Could not find generated or existed APK file

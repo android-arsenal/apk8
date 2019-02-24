@@ -1,0 +1,296 @@
+2018-04-04 08:06:53,354 INFO  DownloadService - Downloading "https://github.com/jjhesk/DisqusSDK-Android/archive/master.zip", attempt 3
+2018-04-04 08:07:54,031 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 08:07:54,873 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 08:07:54,874 INFO  DownloadService - Downloading "https://github.com/jjhesk/DisqusSDK-Android/archive/master.zip", attempt 3
+2018-04-04 08:08:56,163 DEBUG FullProcessService - Repository https://github.com/jjhesk/DisqusSDK-Android available: true
+2018-04-04 08:08:56,163 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 08:08:56,163 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jjhesk/DisqusSDK-Android, /tmp/rdisk/1855/src]
+2018-04-04 08:08:57,980 INFO  SysUtils - 
+2018-04-04 08:08:57,986 INFO  GitService - Deleted "/tmp/rdisk/1855/src/.git": true
+2018-04-04 08:08:57,991 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 08:08:57,991 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1855/src]
+2018-04-04 08:08:57,996 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1855/src/.git/
+
+2018-04-04 08:08:58,000 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1855/src/gradlew /tmp/rdisk/1855/src/disqus/gradlew
+2018-04-04 08:08:58,004 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1855/src/disqus/build.gradle /tmp/rdisk/1855/src/app/build.gradle /tmp/rdisk/1855/src/build.gradle
+2018-04-04 08:08:58,008 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1855/src/settings.gradle /tmp/rdisk/1855/src/disqus/build.gradle /tmp/rdisk/1855/src/disqus/br.gradle /tmp/rdisk/1855/src/build.gradle /tmp/rdisk/1855/src/app/build.gradle
+2018-04-04 08:08:58,008 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 08:08:58,008 INFO  ProjectFixService - Fixing project...
+2018-04-04 08:08:58,019 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1855/src/disqus/local.properties
+2018-04-04 08:08:58,019 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 08:08:58,019 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 08:08:58,022 INFO  ProjectFixService - Build info for "/tmp/rdisk/1855/src/disqus/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:08:58,022 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1855/src/disqus/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:08:58,023 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1855/src/app/local.properties
+2018-04-04 08:08:58,025 INFO  ProjectFixService - Build info for "/tmp/rdisk/1855/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:08:58,025 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1855/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:08:58,026 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1855/src/local.properties
+2018-04-04 08:08:58,026 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-04 08:08:58,026 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-04 08:08:58,029 INFO  ProjectFixService - Build info for "/tmp/rdisk/1855/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:08:58,029 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1855/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:08:58,029 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 08:08:58,029 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:08:58,029 INFO  SysUtils - Execute command: [/tmp/rdisk/1855/src/disqus/gradlew, -b, /tmp/rdisk/1855/src/disqus/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:09:14,950 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 08:09:14,951 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 08:09:14,951 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 08:09:14,951 INFO  SysUtils - Execute command: [/tmp/rdisk/1855/src/disqus/gradlew, -b, /tmp/rdisk/1855/src/disqus/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 08:09:18,351 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 08:09:18,351 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/1855/src/disqus/build.gradle' line: 1
+
+* What went wrong:
+A problem occurred evaluating project ':disqus'.
+> Failed to apply plugin [id 'com.android.library']
+   > Gradle version 2.10 is required. Current version is 2.2.1. If using the gradle wrapper, try editing the distributionUrl in /root/Documents/workspace/java/bloodhound/gradle/wrapper/gradle-wrapper.properties to gradle-2.10-all.zip
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':disqus'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:85)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:76)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin [id 'com.android.library']
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:117)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:80)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_1k6cuo02u670msspubpfbr6em.run(/tmp/rdisk/1855/src/disqus/build.gradle:1)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 48 more
+Caused by: org.gradle.api.GradleException: Gradle version 2.10 is required. Current version is 2.2.1. If using the gradle wrapper, try editing the distributionUrl in /root/Documents/workspace/java/bloodhound/gradle/wrapper/gradle-wrapper.properties to gradle-2.10-all.zip
+	at com.android.build.gradle.internal.ExtraModelInfo.handleSyncIssue(ExtraModelInfo.java:119)
+	at com.android.builder.core.ErrorReporter.handleSyncError(ErrorReporter.java:76)
+	at com.android.build.gradle.BasePlugin.checkGradleVersion(BasePlugin.java:591)
+	at com.android.build.gradle.BasePlugin.configureProject(BasePlugin.java:343)
+	at com.android.build.gradle.BasePlugin$1.call(BasePlugin.java:317)
+	at com.android.build.gradle.BasePlugin$1.call(BasePlugin.java:314)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:55)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:47)
+	at com.android.build.gradle.BasePlugin.apply(BasePlugin.java:313)
+	at com.android.build.gradle.LibraryPlugin.super$2$apply(LibraryPlugin.groovy)
+	at com.android.build.gradle.LibraryPlugin.apply(LibraryPlugin.groovy:89)
+	at com.android.build.gradle.LibraryPlugin.apply(LibraryPlugin.groovy)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:188)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:137)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:115)
+	... 57 more
+
+
+BUILD FAILED
+
+Total time: 2.975 secs
+
+2018-04-04 08:09:18,355 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:09:18,356 INFO  SysUtils - Execute command: [/tmp/rdisk/1855/src/gradlew, -b, /tmp/rdisk/1855/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:09:50,403 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-04 08:09:50,403 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-04 08:09:50,403 INFO  SysUtils - Execute command: [/tmp/rdisk/1855/src/gradlew, -b, /tmp/rdisk/1855/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-04 08:10:39,730 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDefaultConfigDebugBuild UP-TO-DATE
+:app:checkDefaultConfigDebugManifest
+:app:preDefaultConfigReleaseBuild UP-TO-DATE
+:disqus:preBuild UP-TO-DATE
+:disqus:preReleaseBuild UP-TO-DATE
+:disqus:compileReleaseNdk UP-TO-DATE
+:disqus:compileLint
+:disqus:copyReleaseLint UP-TO-DATE
+:disqus:checkReleaseManifest
+:disqus:preDebugAndroidTestBuild UP-TO-DATE
+:disqus:preDebugBuild UP-TO-DATE
+:disqus:preDebugUnitTestBuild UP-TO-DATE
+:disqus:preReleaseUnitTestBuild UP-TO-DATE
+:disqus:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:disqus:prepareComAndroidSupportAppcompatV72330Library
+:disqus:prepareComAndroidSupportSupportV132330Library
+:disqus:prepareComAndroidSupportSupportV42330Library
+:disqus:prepareComAndroidSupportSupportVectorDrawable2330Library
+:disqus:prepareComHkmEzwebviewEzwebviewv136Library
+:disqus:prepareComLsjwzhMaterialloadingprogressbar058RELEASELibrary
+:disqus:prepareIoRealmRealmAndroidLibrary0883Library
+:disqus:prepareReleaseDependencies
+:disqus:compileReleaseAidl
+:disqus:compileReleaseRenderscript
+:disqus:generateReleaseBuildConfig
+:disqus:generateReleaseAssets UP-TO-DATE
+:disqus:mergeReleaseAssets
+:disqus:generateReleaseResValues
+:disqus:generateReleaseResources
+:disqus:mergeReleaseResources
+:disqus:processReleaseManifest
+:disqus:processReleaseResources
+:disqus:generateReleaseSources
+:disqus:compileReleaseJavaWithJavacNote: /tmp/rdisk/1855/src/disqus/src/main/java/com/hkm/disqus/api/resources/AccessTokenService.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:disqus:extractReleaseAnnotations
+:disqus:mergeReleaseProguardFiles
+:disqus:packageReleaseRenderscript UP-TO-DATE
+:disqus:packageReleaseResources
+:disqus:transformClassesWithRealmTransformerForRelease
+:disqus:processReleaseJavaRes UP-TO-DATE
+:disqus:transformResourcesWithMergeJavaResForRelease
+:disqus:transformClassesAndResourcesWithSyncLibJarsForRelease
+:disqus:mergeReleaseJniLibFolders
+:disqus:transformNative_libsWithMergeJniLibsForRelease
+:disqus:transformNative_libsWithSyncJniLibsForRelease
+:disqus:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:app:prepareComAndroidSupportAppcompatV72330Library
+:app:prepareComAndroidSupportRecyclerviewV72221Library
+:app:prepareComAndroidSupportSupportV132330Library
+:app:prepareComAndroidSupportSupportV42330Library
+:app:prepareComAndroidSupportSupportVectorDrawable2330Library
+:app:prepareComHkmEzwebviewEzwebviewv136Library
+:app:prepareComLsjwzhMaterialloadingprogressbar058RELEASELibrary
+:app:prepareIoRealmRealmAndroidLibrary0883Library
+:app:prepareMeDrakeetLibraryCrashwoodpecker097Library
+:app:prepareSrcDisqusUnspecifiedLibrary
+:app:prepareDefaultConfigDebugDependencies
+:app:compileDefaultConfigDebugAidl
+:app:compileDefaultConfigDebugRenderscript
+:app:generateDefaultConfigDebugBuildConfig
+:app:generateDefaultConfigDebugAssets UP-TO-DATE
+:app:mergeDefaultConfigDebugAssets
+:app:generateDefaultConfigDebugResValues
+:app:generateDefaultConfigDebugResources
+:app:mergeDefaultConfigDebugResources
+:app:processDefaultConfigDebugManifest
+:app:processDefaultConfigDebugResources
+:app:generateDefaultConfigDebugSources
+:app:compileDefaultConfigDebugJavaWithJavac
+:app:compileDefaultConfigDebugNdk UP-TO-DATE
+:app:compileDefaultConfigDebugSources
+:app:prePackageMarkerForDefaultConfigDebug
+:app:transformClassesWithDexForDefaultConfigDebug
+:app:mergeDefaultConfigDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDefaultConfigDebug
+:app:processDefaultConfigDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDefaultConfigDebug
+:app:validateDebugSigning
+:app:packageDefaultConfigDebug
+:app:zipalignDefaultConfigDebug
+:app:assembleDefaultConfigDebug
+:app:assembleDebug
+:app:checkDefaultConfigReleaseManifest
+:app:prepareMeDrakeetLibraryCrashwoodpeckerDoNothing097Library
+:app:prepareDefaultConfigReleaseDependencies
+:app:compileDefaultConfigReleaseAidl
+:app:compileDefaultConfigReleaseRenderscript
+:app:generateDefaultConfigReleaseBuildConfig
+:app:generateDefaultConfigReleaseAssets UP-TO-DATE
+:app:mergeDefaultConfigReleaseAssets
+:app:generateDefaultConfigReleaseResValues
+:app:generateDefaultConfigReleaseResources
+:app:mergeDefaultConfigReleaseResources
+:app:processDefaultConfigReleaseManifest
+:app:processDefaultConfigReleaseResources
+:app:generateDefaultConfigReleaseSources
+:app:compileDefaultConfigReleaseJavaWithJavac
+:app:compileDefaultConfigReleaseNdk UP-TO-DATE
+:app:compileDefaultConfigReleaseSources
+:app:lintVitalDefaultConfigRelease
+:app:prePackageMarkerForDefaultConfigRelease
+:app:transformClassesWithDexForDefaultConfigRelease
+:app:mergeDefaultConfigReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDefaultConfigRelease
+:app:processDefaultConfigReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDefaultConfigRelease
+:app:packageDefaultConfigRelease
+:app:assembleDefaultConfigRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 48.88 secs
+
+2018-04-04 08:10:39,813 INFO  FullProcessService - Found APK file: /tmp/rdisk/1855/src/app/build/outputs/apk/app-defaultConfig-release-unsigned.apk

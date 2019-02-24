@@ -1,0 +1,518 @@
+2018-04-04 08:45:51,071 INFO  DownloadService - Downloading "https://github.com/thomashaertel/android-device-identification/archive/master.zip", attempt 3
+2018-04-04 08:46:51,722 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 08:46:52,559 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 08:46:52,560 INFO  DownloadService - Downloading "https://github.com/thomashaertel/android-device-identification/archive/master.zip", attempt 3
+2018-04-04 08:47:53,770 DEBUG FullProcessService - Repository https://github.com/thomashaertel/android-device-identification available: true
+2018-04-04 08:47:53,770 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 08:47:53,770 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/thomashaertel/android-device-identification, /tmp/rdisk/1840/src]
+2018-04-04 08:47:55,515 INFO  SysUtils - 
+2018-04-04 08:47:55,530 INFO  GitService - Deleted "/tmp/rdisk/1840/src/.git": true
+2018-04-04 08:47:55,532 INFO  FullProcessService - Size of directory with sources: 235 KB
+2018-04-04 08:47:55,532 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1840/src]
+2018-04-04 08:47:55,537 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1840/src/.git/
+
+2018-04-04 08:47:55,540 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1840/src/gradlew
+2018-04-04 08:47:55,543 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1840/src/library/build.gradle /tmp/rdisk/1840/src/samples/android-device-identification/build.gradle /tmp/rdisk/1840/src/build.gradle
+2018-04-04 08:47:55,545 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1840/src/settings.gradle /tmp/rdisk/1840/src/samples/android-device-identification/build.gradle /tmp/rdisk/1840/src/library/build.gradle /tmp/rdisk/1840/src/build.gradle
+2018-04-04 08:47:55,546 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 08:47:55,546 INFO  ProjectFixService - Fixing project...
+2018-04-04 08:47:55,552 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1840/src/library/local.properties
+2018-04-04 08:47:55,555 INFO  ProjectFixService - Build info for "/tmp/rdisk/1840/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:47:55,556 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1840/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:47:55,557 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1840/src/samples/android-device-identification/local.properties
+2018-04-04 08:47:55,560 INFO  ProjectFixService - Build info for "/tmp/rdisk/1840/src/samples/android-device-identification/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:47:55,560 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1840/src/samples/android-device-identification/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:47:55,561 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1840/src/local.properties
+2018-04-04 08:47:55,561 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 08:47:55,562 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 08:47:55,565 INFO  ProjectFixService - Build info for "/tmp/rdisk/1840/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:47:55,565 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1840/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:47:55,565 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 08:47:55,566 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:47:55,566 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:48:01,871 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 08:48:01,872 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 08:48:01,872 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 08:48:01,872 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 08:48:06,243 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 08:48:06,243 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/tmp/rdisk/1840/src/gradle.properties' line: 2
+
+* What went wrong:
+Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+> startup failed:
+  script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+     global_buildToolsVersion = \"21.1.2\"
+                                ^
+  
+  1 error
+
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.groovy.scripts.ScriptCompilationException: Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.wrapCompilationFailure(DefaultScriptCompilationHandler.java:136)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:102)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:65)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:99)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:82)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:116)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:103)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:94)
+	at org.gradle.cache.internal.DefaultCacheAccess$2.run(DefaultCacheAccess.java:104)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:173)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:163)
+	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:102)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:46)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:28)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:80)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:50)
+	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.doOpen(DefaultCacheRepository.java:138)
+	at org.gradle.cache.internal.DefaultCacheRepository$AbstractCacheBuilder.open(DefaultCacheRepository.java:121)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:59)
+	at org.gradle.groovy.scripts.internal.ShortCircuitEmptyScriptCompiler.compile(ShortCircuitEmptyScriptCompiler.java:36)
+	at org.gradle.groovy.scripts.internal.CachingScriptClassCompiler.compile(CachingScriptClassCompiler.java:37)
+	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:64)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:125)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyScript(DefaultObjectConfigurationAction.java:93)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$000(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$1.run(DefaultObjectConfigurationAction.java:62)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_8clnal3uauf5ry17l68gc6nv3.run(/tmp/rdisk/1840/src/library/build.gradle:4)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:562)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOnChildren(AbstractProject.java:545)
+	at org.gradle.api.Project$evaluationDependsOnChildren$1.call(Unknown Source)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy:43)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:188)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:137)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:115)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:80)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_9m6c6wu8m7g0htawr15x994ov.run(/tmp/rdisk/1840/src/build.gradle:19)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+   global_buildToolsVersion = \"21.1.2\"
+                              ^
+
+1 error
+
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:100)
+	... 90 more
+
+
+BUILD FAILED
+
+Total time: 3.913 secs
+
+2018-04-04 08:48:06,246 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:48:06,246 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/samples/android-device-identification/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:48:10,425 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 08:48:10,425 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 08:48:10,425 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 08:48:10,425 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/samples/android-device-identification/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 08:48:14,696 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 08:48:14,697 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/tmp/rdisk/1840/src/gradle.properties' line: 2
+
+* What went wrong:
+Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+> startup failed:
+  script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+     global_buildToolsVersion = \"21.1.2\"
+                                ^
+  
+  1 error
+
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.groovy.scripts.ScriptCompilationException: Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.wrapCompilationFailure(DefaultScriptCompilationHandler.java:136)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:102)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:65)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:99)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:82)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:116)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:103)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:94)
+	at org.gradle.cache.internal.DefaultCacheAccess$2.run(DefaultCacheAccess.java:104)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:173)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:163)
+	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:102)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:46)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:28)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:80)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:50)
+	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.doOpen(DefaultCacheRepository.java:138)
+	at org.gradle.cache.internal.DefaultCacheRepository$AbstractCacheBuilder.open(DefaultCacheRepository.java:121)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:59)
+	at org.gradle.groovy.scripts.internal.ShortCircuitEmptyScriptCompiler.compile(ShortCircuitEmptyScriptCompiler.java:36)
+	at org.gradle.groovy.scripts.internal.CachingScriptClassCompiler.compile(CachingScriptClassCompiler.java:37)
+	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:64)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:125)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyScript(DefaultObjectConfigurationAction.java:93)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$000(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$1.run(DefaultObjectConfigurationAction.java:62)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_8clnal3uauf5ry17l68gc6nv3.run(/tmp/rdisk/1840/src/library/build.gradle:4)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:562)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOnChildren(AbstractProject.java:545)
+	at org.gradle.api.Project$evaluationDependsOnChildren$1.call(Unknown Source)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy:43)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:188)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:137)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:115)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:80)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_9m6c6wu8m7g0htawr15x994ov.run(/tmp/rdisk/1840/src/build.gradle:19)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+   global_buildToolsVersion = \"21.1.2\"
+                              ^
+
+1 error
+
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:100)
+	... 90 more
+
+
+BUILD FAILED
+
+Total time: 3.838 secs
+
+2018-04-04 08:48:14,700 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:48:14,700 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:48:18,862 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 08:48:18,863 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 08:48:18,863 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 08:48:18,863 INFO  SysUtils - Execute command: [/tmp/rdisk/1840/src/gradlew, -b, /tmp/rdisk/1840/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 08:48:22,886 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 08:48:22,886 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/tmp/rdisk/1840/src/gradle.properties' line: 2
+
+* What went wrong:
+Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+> startup failed:
+  script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+     global_buildToolsVersion = \"21.1.2\"
+                                ^
+  
+  1 error
+
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.groovy.scripts.ScriptCompilationException: Could not compile script '/tmp/rdisk/1840/src/gradle.properties'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.wrapCompilationFailure(DefaultScriptCompilationHandler.java:136)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:102)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:65)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:99)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CacheInitializer.execute(FileCacheBackedScriptClassCompiler.java:82)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:116)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:103)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:94)
+	at org.gradle.cache.internal.DefaultCacheAccess$2.run(DefaultCacheAccess.java:104)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:173)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:163)
+	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:102)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:46)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:28)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:80)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:50)
+	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.doOpen(DefaultCacheRepository.java:138)
+	at org.gradle.cache.internal.DefaultCacheRepository$AbstractCacheBuilder.open(DefaultCacheRepository.java:121)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:59)
+	at org.gradle.groovy.scripts.internal.ShortCircuitEmptyScriptCompiler.compile(ShortCircuitEmptyScriptCompiler.java:36)
+	at org.gradle.groovy.scripts.internal.CachingScriptClassCompiler.compile(CachingScriptClassCompiler.java:37)
+	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:64)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:125)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyScript(DefaultObjectConfigurationAction.java:93)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$000(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$1.run(DefaultObjectConfigurationAction.java:62)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_8clnal3uauf5ry17l68gc6nv3.run(/tmp/rdisk/1840/src/library/build.gradle:4)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:562)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOnChildren(AbstractProject.java:545)
+	at org.gradle.api.Project$evaluationDependsOnChildren$1.call(Unknown Source)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy:43)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:188)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:137)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:115)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:80)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply$0.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply$0.callCurrent(Unknown Source)
+	at build_9m6c6wu8m7g0htawr15x994ov.run(/tmp/rdisk/1840/src/build.gradle:19)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+script '/tmp/rdisk/1840/src/gradle.properties': 2: unexpected char: '\' @ line 2, column 28.
+   global_buildToolsVersion = \"21.1.2\"
+                              ^
+
+1 error
+
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:100)
+	... 90 more
+
+
+BUILD FAILED
+
+Total time: 3.567 secs
+
+2018-04-04 08:48:22,889 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 08:48:22,892 ERROR FullProcessService - Could not find generated or existed APK file

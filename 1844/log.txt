@@ -1,0 +1,942 @@
+2016-07-16 02:52:50,269 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/igniterealtime/Smack/archive/master.zip", attempt 3
+2016-07-16 02:52:52,760 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/igniterealtime/Smack/archive/master.zip, attempt 3
+2016-07-16 02:52:55,898 DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src'.
+2016-07-16 02:52:56,447 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 9 MB
+2016-07-16 02:52:56,553 INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): none
+2016-07-16 02:52:56,553 ERROR c.g.v.a.s.a.ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2016-07-16 02:52:56,639 INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-java7/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-jingle-old/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-legacy/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-repl/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-dnsjava/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-javax/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-minidns/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-javax/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-provided/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-tcp/build.gradle
+2016-07-16 02:52:56,711 INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/settings.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-java7/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-jingle-old/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-legacy/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-repl/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-dnsjava/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-javax/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-minidns/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-javax/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-provided/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-tcp/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/version.gradle
+2016-07-16 02:52:56,730 INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: none
+2016-07-16 02:52:56,732 INFO  c.g.v.a.s.a.ProjectFixService - Fixing project...
+2016-07-16 02:52:56,933 INFO  c.g.v.a.s.AndroidToolsService - ANDROID_HOME: /Users/vbauer/Library/Android/sdk
+2016-07-16 02:52:56,933 INFO  c.g.v.a.s.AndroidToolsService - NDK_HOME: /Users/vbauer/Library/Android/ndk
+2016-07-16 02:52:56,937 INFO  c.g.v.a.s.AndroidToolsService - Available build tools: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-16 02:52:56,939 INFO  c.g.v.a.s.AndroidToolsService - Available build tools after clean up: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-16 02:52:56,943 INFO  c.g.v.a.s.AndroidToolsService - Available platforms: 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 7 8 9 24
+2016-07-16 02:52:56,944 INFO  c.g.v.a.s.AndroidToolsService - Available platforms after clean up: 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+2016-07-16 02:52:56,983 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/local.properties
+2016-07-16 02:52:57,032 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,051 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,063 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/local.properties
+2016-07-16 02:52:57,094 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,094 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,096 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/local.properties
+2016-07-16 02:52:57,128 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,128 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,130 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/local.properties
+2016-07-16 02:52:57,158 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,159 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,161 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/local.properties
+2016-07-16 02:52:57,189 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,189 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,191 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/local.properties
+2016-07-16 02:52:57,227 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,228 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,230 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/local.properties
+2016-07-16 02:52:57,267 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,267 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,269 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/local.properties
+2016-07-16 02:52:57,290 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,291 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,292 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/local.properties
+2016-07-16 02:52:57,305 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,305 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,307 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/local.properties
+2016-07-16 02:52:57,324 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,324 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,326 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/local.properties
+2016-07-16 02:52:57,342 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,342 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,344 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/local.properties
+2016-07-16 02:52:57,360 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,360 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,362 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-java7/local.properties
+2016-07-16 02:52:57,379 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-java7/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,379 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-java7/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,381 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-jingle-old/local.properties
+2016-07-16 02:52:57,392 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-jingle-old/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,393 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-jingle-old/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,394 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-legacy/local.properties
+2016-07-16 02:52:57,406 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-legacy/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,407 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-legacy/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,408 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-repl/local.properties
+2016-07-16 02:52:57,419 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-repl/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,420 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-repl/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,421 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-dnsjava/local.properties
+2016-07-16 02:52:57,439 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-dnsjava/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,439 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-dnsjava/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,440 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-javax/local.properties
+2016-07-16 02:52:57,454 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-javax/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,454 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-javax/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,455 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-minidns/local.properties
+2016-07-16 02:52:57,467 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-minidns/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,467 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-resolver-minidns/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,468 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-javax/local.properties
+2016-07-16 02:52:57,479 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-javax/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,479 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-javax/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,481 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-provided/local.properties
+2016-07-16 02:52:57,491 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-provided/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,492 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-sasl-provided/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,493 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-tcp/local.properties
+2016-07-16 02:52:57,506 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-tcp/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-16 02:52:57,506 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-tcp/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-16 02:52:57,507 INFO  c.g.v.a.s.a.ProjectFixService - Project was maybe fixed
+2016-07-16 02:52:57,516 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:52:57,520 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle, tasks]
+2016-07-16 02:53:23,868 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 71
+2016-07-16 02:53:23,870 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: javadoc test check
+2016-07-16 02:53:23,870 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2016-07-16 02:54:55,199 INFO  c.g.v.a.s.a.ProjectBuildService - :compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:jar SKIPPED
+:assemble UP-TO-DATE
+:build
+:smack-core:createVersionResource
+:smack-core:compileJava
+:smack-core:processResources
+:smack-core:classes
+:smack-core:jar
+:smack-im:compileJava
+:smack-im:processResources
+:smack-im:classes
+:smack-im:jar
+:smack-resolver-minidns:compileJava
+:smack-resolver-minidns:processResources UP-TO-DATE
+:smack-resolver-minidns:classes
+:smack-resolver-minidns:jar
+:smack-sasl-provided:compileJava
+:smack-sasl-provided:processResources UP-TO-DATE
+:smack-sasl-provided:classes
+:smack-sasl-provided:jar
+:smack-android:compileJava
+:smack-android:processResources UP-TO-DATE
+:smack-android:classes
+:smack-android:jar
+:smack-android:javadocJar
+:smack-android:sourcesJar
+:smack-android:compileTestJava UP-TO-DATE
+:smack-android:processTestResources UP-TO-DATE
+:smack-android:testClasses UP-TO-DATE
+:smack-android:testJar
+:smack-android:signArchives SKIPPED
+:smack-android:assemble
+:smack-android:build
+:smack-extensions:compileJava
+:smack-extensions:processResources
+:smack-extensions:classes
+:smack-extensions:jar
+:smack-android-extensions:compileJava
+:smack-android-extensions:processResources UP-TO-DATE
+:smack-android-extensions:classes
+:smack-android-extensions:jar
+:smack-android-extensions:javadocJar
+:smack-android-extensions:sourcesJar
+:smack-android-extensions:compileTestJava UP-TO-DATE
+:smack-android-extensions:processTestResources UP-TO-DATE
+:smack-android-extensions:testClasses UP-TO-DATE
+:smack-android-extensions:testJar
+:smack-android-extensions:signArchives SKIPPED
+:smack-android-extensions:assemble
+:smack-android-extensions:build
+:smack-bosh:compileJava
+:smack-bosh:processResources UP-TO-DATE
+:smack-bosh:classes
+:smack-bosh:jar
+:smack-bosh:javadocJar
+:smack-bosh:sourcesJar
+:smack-bosh:compileTestJava UP-TO-DATE
+:smack-bosh:processTestResources UP-TO-DATE
+:smack-bosh:testClasses UP-TO-DATE
+:smack-bosh:testJar
+:smack-bosh:signArchives SKIPPED
+:smack-bosh:assemble
+:smack-bosh:build
+:smack-compression-jzlib:compileJava
+:smack-compression-jzlib:processResources UP-TO-DATE
+:smack-compression-jzlib:classes
+:smack-compression-jzlib:jar
+:smack-compression-jzlib:javadocJar
+:smack-compression-jzlib:sourcesJar
+:smack-compression-jzlib:compileTestJava UP-TO-DATE
+:smack-compression-jzlib:processTestResources UP-TO-DATE
+:smack-compression-jzlib:testClasses UP-TO-DATE
+:smack-compression-jzlib:testJar
+:smack-compression-jzlib:signArchives SKIPPED
+:smack-compression-jzlib:assemble
+:smack-compression-jzlib:build
+:smack-core:javadocJar
+:smack-core:sourcesJar
+:smack-core:compileTestJava
+:smack-core:processTestResources
+:smack-core:testClasses
+:smack-core:testJar
+:smack-core:signArchives SKIPPED
+:smack-core:assemble
+:smack-core:build
+:smack-debug:compileJava
+:smack-debug:processResources
+:smack-debug:classes
+:smack-debug:jar
+:smack-debug:javadocJar
+:smack-debug:sourcesJar
+:smack-debug:compileTestJava UP-TO-DATE
+:smack-debug:processTestResources UP-TO-DATE
+:smack-debug:testClasses UP-TO-DATE
+:smack-debug:testJar
+:smack-debug:signArchives SKIPPED
+:smack-debug:assemble
+:smack-debug:build
+:smack-debug-slf4j:compileJava/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+ ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+       ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+          ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+             ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                      ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: class, interface, or enum expected
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                        ^
+9 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':smack-debug-slf4j:compileJava'.
+> Compilation failed with exit code 1; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':smack-debug-slf4j:compileJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed with exit code 1; see the compiler error output for details.
+	at net.ltgt.gradle.errorprone.ErrorProneCompiler.execute(ErrorProneCompiler.java:70)
+	at net.ltgt.gradle.errorprone.ErrorProneCompiler.execute(ErrorProneCompiler.java:25)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 57 more
+
+
+BUILD FAILED
+
+Total time: 1 mins 30.411 secs
+
+2016-07-16 02:54:55,205 ERROR c.g.v.a.s.a.ProjectBuildService - Can not build project using script "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/build.gradle"
+2016-07-16 02:54:55,412 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:54:55,412 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle, tasks]
+2016-07-16 02:55:09,337 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 50
+2016-07-16 02:55:09,338 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:55:09,338 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android-extensions/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:55:27,279 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-im:compileJava UP-TO-DATE
+:smack-im:processResources UP-TO-DATE
+:smack-im:classes UP-TO-DATE
+:smack-im:jar UP-TO-DATE
+:smack-resolver-minidns:compileJava UP-TO-DATE
+:smack-resolver-minidns:processResources UP-TO-DATE
+:smack-resolver-minidns:classes UP-TO-DATE
+:smack-resolver-minidns:jar UP-TO-DATE
+:smack-sasl-provided:compileJava UP-TO-DATE
+:smack-sasl-provided:processResources UP-TO-DATE
+:smack-sasl-provided:classes UP-TO-DATE
+:smack-sasl-provided:jar UP-TO-DATE
+:smack-android:compileJava UP-TO-DATE
+:smack-android:processResources UP-TO-DATE
+:smack-android:classes UP-TO-DATE
+:smack-android:jar UP-TO-DATE
+:smack-extensions:compileJava UP-TO-DATE
+:smack-extensions:processResources UP-TO-DATE
+:smack-extensions:classes UP-TO-DATE
+:smack-extensions:jar UP-TO-DATE
+:smack-android-extensions:compileJava UP-TO-DATE
+:smack-android-extensions:processResources UP-TO-DATE
+:smack-android-extensions:classes UP-TO-DATE
+:smack-android-extensions:jar UP-TO-DATE
+:smack-android-extensions:javadocJar UP-TO-DATE
+:smack-android-extensions:sourcesJar UP-TO-DATE
+:smack-android-extensions:compileTestJava UP-TO-DATE
+:smack-android-extensions:processTestResources UP-TO-DATE
+:smack-android-extensions:testClasses UP-TO-DATE
+:smack-android-extensions:testJar UP-TO-DATE
+:smack-android-extensions:signArchives SKIPPED
+:smack-android-extensions:assemble UP-TO-DATE
+:smack-android-extensions:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.379 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:55:27,376 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:55:27,376 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle, tasks]
+2016-07-16 02:55:49,604 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 52
+2016-07-16 02:55:49,605 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:55:49,605 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-android/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:56:12,895 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-im:compileJava UP-TO-DATE
+:smack-im:processResources UP-TO-DATE
+:smack-im:classes UP-TO-DATE
+:smack-im:jar UP-TO-DATE
+:smack-resolver-minidns:compileJava UP-TO-DATE
+:smack-resolver-minidns:processResources UP-TO-DATE
+:smack-resolver-minidns:classes UP-TO-DATE
+:smack-resolver-minidns:jar UP-TO-DATE
+:smack-sasl-provided:compileJava UP-TO-DATE
+:smack-sasl-provided:processResources UP-TO-DATE
+:smack-sasl-provided:classes UP-TO-DATE
+:smack-sasl-provided:jar UP-TO-DATE
+:smack-android:compileJava UP-TO-DATE
+:smack-android:processResources UP-TO-DATE
+:smack-android:classes UP-TO-DATE
+:smack-android:jar UP-TO-DATE
+:smack-android:javadocJar UP-TO-DATE
+:smack-android:sourcesJar UP-TO-DATE
+:smack-android:compileTestJava UP-TO-DATE
+:smack-android:processTestResources UP-TO-DATE
+:smack-android:testClasses UP-TO-DATE
+:smack-android:testJar UP-TO-DATE
+:smack-android:signArchives SKIPPED
+:smack-android:assemble UP-TO-DATE
+:smack-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.417 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:56:12,964 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:56:12,964 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle, tasks]
+2016-07-16 02:56:36,916 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 51
+2016-07-16 02:56:36,916 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:56:36,917 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-bosh/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:56:59,672 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-bosh:compileJava UP-TO-DATE
+:smack-bosh:processResources UP-TO-DATE
+:smack-bosh:classes UP-TO-DATE
+:smack-bosh:jar UP-TO-DATE
+:smack-bosh:javadocJar UP-TO-DATE
+:smack-bosh:sourcesJar UP-TO-DATE
+:smack-bosh:compileTestJava UP-TO-DATE
+:smack-bosh:processTestResources UP-TO-DATE
+:smack-bosh:testClasses UP-TO-DATE
+:smack-bosh:testJar UP-TO-DATE
+:smack-bosh:signArchives SKIPPED
+:smack-bosh:assemble UP-TO-DATE
+:smack-bosh:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.94 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:56:59,766 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:56:59,767 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle, tasks]
+2016-07-16 02:57:24,947 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 51
+2016-07-16 02:57:24,947 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:57:24,948 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-compression-jzlib/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:57:43,785 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-compression-jzlib:compileJava UP-TO-DATE
+:smack-compression-jzlib:processResources UP-TO-DATE
+:smack-compression-jzlib:classes UP-TO-DATE
+:smack-compression-jzlib:jar UP-TO-DATE
+:smack-compression-jzlib:javadocJar UP-TO-DATE
+:smack-compression-jzlib:sourcesJar UP-TO-DATE
+:smack-compression-jzlib:compileTestJava UP-TO-DATE
+:smack-compression-jzlib:processTestResources UP-TO-DATE
+:smack-compression-jzlib:testClasses UP-TO-DATE
+:smack-compression-jzlib:testJar UP-TO-DATE
+:smack-compression-jzlib:signArchives SKIPPED
+:smack-compression-jzlib:assemble UP-TO-DATE
+:smack-compression-jzlib:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.231 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:57:43,909 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:57:43,909 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle, tasks]
+2016-07-16 02:57:58,338 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 51
+2016-07-16 02:57:58,338 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:57:58,338 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:58:19,145 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-core:javadocJar UP-TO-DATE
+:smack-core:sourcesJar UP-TO-DATE
+:smack-core:compileTestJava UP-TO-DATE
+:smack-core:processTestResources UP-TO-DATE
+:smack-core:testClasses UP-TO-DATE
+:smack-core:testJar UP-TO-DATE
+:smack-core:signArchives SKIPPED
+:smack-core:assemble UP-TO-DATE
+:smack-core:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.223 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:58:19,216 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:58:19,217 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle, tasks]
+2016-07-16 02:58:45,874 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 52
+2016-07-16 02:58:45,875 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:58:45,875 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:59:12,766 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-debug-slf4j:compileJava/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+ ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+       ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+          ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+             ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: illegal '.'
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                      ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/src/main/java/org/jivesoftware/smackx/debugger/package-info.java:1: error: class, interface, or enum expected
+../../../../../../../../smack-debug/src/main/java/org/jivesoftware/smackx/debugger/package-info.java
+                        ^
+9 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':smack-debug-slf4j:compileJava'.
+> Compilation failed with exit code 1; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':smack-debug-slf4j:compileJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed with exit code 1; see the compiler error output for details.
+	at net.ltgt.gradle.errorprone.ErrorProneCompiler.execute(ErrorProneCompiler.java:70)
+	at net.ltgt.gradle.errorprone.ErrorProneCompiler.execute(ErrorProneCompiler.java:25)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 57 more
+
+
+BUILD FAILED
+
+Total time: 26.316 secs
+
+2016-07-16 02:59:12,768 ERROR c.g.v.a.s.a.ProjectBuildService - Can not build project using script "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug-slf4j/build.gradle"
+2016-07-16 02:59:12,900 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:59:12,900 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle, tasks]
+2016-07-16 02:59:30,551 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 51
+2016-07-16 02:59:30,554 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 02:59:30,554 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-debug/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 02:59:49,837 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-debug:compileJava UP-TO-DATE
+:smack-debug:processResources UP-TO-DATE
+:smack-debug:classes UP-TO-DATE
+:smack-debug:jar UP-TO-DATE
+:smack-debug:javadocJar UP-TO-DATE
+:smack-debug:sourcesJar UP-TO-DATE
+:smack-debug:compileTestJava UP-TO-DATE
+:smack-debug:processTestResources UP-TO-DATE
+:smack-debug:testClasses UP-TO-DATE
+:smack-debug:testJar UP-TO-DATE
+:smack-debug:signArchives SKIPPED
+:smack-debug:assemble UP-TO-DATE
+:smack-debug:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.707 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 02:59:49,913 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 02:59:49,913 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle, tasks]
+2016-07-16 03:00:08,922 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 54
+2016-07-16 03:00:08,923 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 03:00:08,924 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-experimental/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 03:00:49,277 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-im:compileJava UP-TO-DATE
+:smack-im:processResources UP-TO-DATE
+:smack-im:classes UP-TO-DATE
+:smack-im:jar UP-TO-DATE
+:smack-extensions:compileJava UP-TO-DATE
+:smack-extensions:processResources UP-TO-DATE
+:smack-extensions:classes UP-TO-DATE
+:smack-extensions:jar UP-TO-DATE
+:smack-experimental:compileJava
+:smack-experimental:processResources
+:smack-experimental:classes
+:smack-experimental:jar
+:smack-experimental:javadocJar
+:smack-experimental:sourcesJar
+:smack-core:javadoc/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/XMPPConnection.java:470: warning: no @param for <F>
+    public <F extends ExtensionElement> F getFeature(String element, String namespace);
+                                          ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/ConnectionConfiguration.java:765: warning: no @param for sslContext
+        public B performSaslExternalAuthentication(SSLContext sslContext) {
+                 ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:116: warning: no @param for <P>
+    public <P extends Stanza> P pollResult() {
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:131: warning: no @param for <P>
+    public <P extends Stanza> P pollResultOrThrow() throws XMPPErrorException {
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:147: warning: no @param for <P>
+    public <P extends Stanza> P nextResultBlockForever() throws InterruptedException {
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:163: warning: no @param for <P>
+    public <P extends Stanza> P nextResult() throws InterruptedException {
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:179: warning: no @param for <P>
+    public <P extends Stanza> P nextResult(long timeout) throws InterruptedException {
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:205: warning: no @param for <P>
+    public <P extends Stanza> P nextResultOrThrow() throws NoResponseException, XMPPErrorException,
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/PacketCollector.java:221: warning: no @param for <P>
+    public <P extends Stanza> P nextResultOrThrow(long timeout) throws NoResponseException,
+                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/SASLAuthentication.java:259: warning: no @param for success
+    public void authenticated(Success success) throws SmackException, InterruptedException {
+                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/SmackConfiguration.java:274: warning: no @param for verifier
+    public static void setDefaultHostnameVerifier(HostnameVerifier verifier) {
+                       ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/SynchronizationPoint.java:73: warning: no @throws for java.lang.InterruptedException
+    public E sendAndWaitForResponse(TopLevelStreamElement request) throws NoResponseException,
+             ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/SynchronizationPoint.java:105: warning: no @throws for java.lang.InterruptedException
+    public void sendAndWaitForResponseOrThrow(Nonza request) throws E, NoResponseException,
+                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/XMPPConnection.java:47: warning: attribute obsolete, use CSS instead: color
+ * Chat chat = ChatManager.getInstanceFor(con).createChat(<font color="green">"jdoe@igniterealtime.org"</font>, new MessageListener() {
+                                                                ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/XMPPConnection.java:50: warning: attribute obsolete, use CSS instead: color
+ *         System.out.println(<font color="green">"Received message: "</font> + message);
+                                    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/XMPPConnection.java:53: warning: attribute obsolete, use CSS instead: color
+ * chat.sendMessage(<font color="green">"Howdy!"</font>);
+                          ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/FileUtils.java:105: warning: no @throws for java.io.FileNotFoundException
+    public static String readFileOrThrow(File file) throws FileNotFoundException, IOException {
+                         ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:712: warning: no @throws for java.io.IOException
+    public static Compress.Feature parseCompressionFeature(XmlPullParser parser)
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:898: warning: no @param for elementName
+    public static ExtensionElement parsePacketExtension(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:898: warning: no @param for namespace
+    public static ExtensionElement parsePacketExtension(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:898: warning: no @param for parser
+    public static ExtensionElement parsePacketExtension(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:898: warning: no @return
+    public static ExtensionElement parsePacketExtension(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:898: warning: no @throws for java.lang.Exception
+    public static ExtensionElement parsePacketExtension(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketParserUtils.java:911: warning: no @throws for java.lang.Exception
+    public static ExtensionElement parseExtensionElement(String elementName, String namespace,
+                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketUtil.java:35: warning: no @param for <PE>
+    public static <PE extends ExtensionElement> PE packetExtensionfromCollection(
+                                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/PacketUtil.java:50: warning: no @param for <PE>
+    public static <PE extends ExtensionElement> PE extensionElementFrom(Collection<ExtensionElement> collection,
+                                                   ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:60: warning: no @param for <B>
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B setTLSOnly(B builder) {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:60: warning: no @return
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B setTLSOnly(B builder) {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:77: warning: no @param for <B>
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B setSSLv3AndTLSOnly(B builder) {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:77: warning: no @return
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B setSSLv3AndTLSOnly(B builder) {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:95: warning: no @param for <B>
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B acceptAllCertificates(B builder) throws NoSuchAlgorithmException, KeyManagementException {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/TLSUtils.java:121: warning: no @param for <B>
+    public static <B extends ConnectionConfiguration.Builder<B,?>> B disableHostnameVerificationForTlsCertificicates(B builder) {
+                                                                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/filter/FromMatchesFilter.java:67: warning: no @return
+    public static FromMatchesFilter create(Jid address) {
+                                    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/filter/FromMatchesFilter.java:78: warning: no @return
+    public static FromMatchesFilter createBare(Jid address) {
+                                    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/filter/FromMatchesFilter.java:91: warning: no @return
+    public static FromMatchesFilter createFull(Jid address) {
+                                    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/filter/IQReplyFilter.java:84: warning: no @param for conn
+    public IQReplyFilter(IQ iqPacket, XMPPConnection conn) {
+           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/sasl/SASLMechanism.java:274: warning: no @param for challenge
+    protected byte[] evaluateChallenge(byte[] challenge) throws SmackException {
+                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/sasl/SASLMechanism.java:274: warning: no @return
+    protected byte[] evaluateChallenge(byte[] challenge) throws SmackException {
+                     ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/AbstractError.java:96: warning: no @param for <PE>
+    public <PE extends ExtensionElement> PE getExtension(String elementName, String namespace) {
+                                            ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/Stanza.java:343: warning: no @param for <PE>
+    public <PE extends ExtensionElement> PE getExtension(String elementName, String namespace) {
+                                            ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/Packet.java:176: warning: no @param for <PE>
+    public <PE extends ExtensionElement> PE getExtension(String elementName, String namespace);
+                                            ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/XMPPError.java:142: warning: no @param for conditionText
+    public XMPPError(Condition condition, String conditionText, String errorGenerator, Type type, Map<String, String> descriptiveTexts,
+           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/XMPPError.java:142: warning: no @param for errorGenerator
+    public XMPPError(Condition condition, String conditionText, String errorGenerator, Type type, Map<String, String> descriptiveTexts,
+           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/XMPPError.java:159: warning: no @param for conditionText
+    public XMPPError(Condition condition, String conditionText, String errorGenerator, Type type, Map<String, String> descriptiveTexts,
+           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/packet/XMPPError.java:159: warning: no @param for errorGenerator
+    public XMPPError(Condition condition, String conditionText, String errorGenerator, Type type, Map<String, String> descriptiveTexts,
+           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/util/dns/DNSResolver.java:32: warning: no @throws for java.lang.Exception
+    List<SRVRecord> lookupSRVRecords(String name) throws Exception;
+                    ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebugger.java:68: warning: no @param for reader
+    public abstract Reader newConnectionReader(Reader reader);
+                           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebugger.java:78: warning: no @param for writer
+    public abstract Writer newConnectionWriter(Writer writer);
+                           ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebuggerFactory.java:32: warning: no @param for connection
+    SmackDebugger create(XMPPConnection connection, Writer writer, Reader reader) throws IllegalArgumentException;
+                  ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebuggerFactory.java:32: warning: no @param for writer
+    SmackDebugger create(XMPPConnection connection, Writer writer, Reader reader) throws IllegalArgumentException;
+                  ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebuggerFactory.java:32: warning: no @param for reader
+    SmackDebugger create(XMPPConnection connection, Writer writer, Reader reader) throws IllegalArgumentException;
+                  ^
+/private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-core/src/main/java/org/jivesoftware/smack/debugger/SmackDebuggerFactory.java:32: warning: no @return
+    SmackDebugger create(XMPPConnection connection, Writer writer, Reader reader) throws IllegalArgumentException;
+                  ^
+
+52 warnings
+:smack-core:javadocJar
+:smack-core:sourcesJar UP-TO-DATE
+:smack-core:compileTestJava UP-TO-DATE
+:smack-core:processTestResources UP-TO-DATE
+:smack-core:testClasses UP-TO-DATE
+:smack-core:testJar UP-TO-DATE
+:smack-core:signArchives SKIPPED
+:smack-experimental:compileTestJava
+:smack-experimental:processTestResources UP-TO-DATE
+:smack-experimental:testClasses
+:smack-experimental:testJar
+:smack-experimental:signArchives SKIPPED
+:smack-experimental:assemble
+:smack-experimental:build
+
+BUILD SUCCESSFUL
+
+Total time: 39.77 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 03:00:49,401 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 03:00:49,401 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle, tasks]
+2016-07-16 03:01:11,995 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 53
+2016-07-16 03:01:11,996 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 03:01:11,996 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-extensions/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 03:01:43,514 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-im:compileJava UP-TO-DATE
+:smack-im:processResources UP-TO-DATE
+:smack-im:classes UP-TO-DATE
+:smack-im:jar UP-TO-DATE
+:smack-extensions:compileJava UP-TO-DATE
+:smack-extensions:processResources UP-TO-DATE
+:smack-extensions:classes UP-TO-DATE
+:smack-extensions:jar UP-TO-DATE
+:smack-extensions:javadocJar
+:smack-extensions:sourcesJar
+:smack-core:javadoc UP-TO-DATE
+:smack-core:javadocJar UP-TO-DATE
+:smack-core:sourcesJar UP-TO-DATE
+:smack-core:compileTestJava UP-TO-DATE
+:smack-core:processTestResources UP-TO-DATE
+:smack-core:testClasses UP-TO-DATE
+:smack-core:testJar UP-TO-DATE
+:smack-core:signArchives SKIPPED
+:smack-extensions:compileTestJava
+:smack-extensions:processTestResources
+:smack-extensions:testClasses
+:smack-extensions:testJar
+:smack-extensions:signArchives SKIPPED
+:smack-extensions:assemble
+:smack-extensions:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.89 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 03:01:43,633 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 03:01:43,633 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle, tasks]
+2016-07-16 03:02:04,587 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 53
+2016-07-16 03:02:04,588 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: test check javadoc
+2016-07-16 03:02:04,588 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-im/build.gradle, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2016-07-16 03:02:33,847 INFO  c.g.v.a.s.a.ProjectBuildService - :smack-core:createVersionResource UP-TO-DATE
+:smack-core:compileJava UP-TO-DATE
+:smack-core:processResources UP-TO-DATE
+:smack-core:classes UP-TO-DATE
+:smack-core:jar UP-TO-DATE
+:smack-im:compileJava UP-TO-DATE
+:smack-im:processResources UP-TO-DATE
+:smack-im:classes UP-TO-DATE
+:smack-im:jar UP-TO-DATE
+:smack-im:javadocJar
+:smack-im:sourcesJar
+:smack-core:javadoc UP-TO-DATE
+:smack-core:javadocJar UP-TO-DATE
+:smack-core:sourcesJar UP-TO-DATE
+:smack-core:compileTestJava UP-TO-DATE
+:smack-core:processTestResources UP-TO-DATE
+:smack-core:testClasses UP-TO-DATE
+:smack-core:testJar UP-TO-DATE
+:smack-core:signArchives SKIPPED
+:smack-im:compileTestJava
+:smack-im:processTestResources UP-TO-DATE
+:smack-im:testClasses
+:smack-im:testJar
+:smack-im:signArchives SKIPPED
+:smack-im:assemble
+:smack-im:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.566 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+
+2016-07-16 03:02:33,996 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-16 03:02:33,996 INFO  c.g.v.a.u.SysUtils - Execute command: [gradle, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468615969739-0/src/Smack-master/smack-integration-test/build.gradle, tasks]

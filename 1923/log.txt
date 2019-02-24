@@ -1,0 +1,189 @@
+2018-04-04 03:17:48,246 INFO  DownloadService - Downloading "https://github.com/jiahuanyu/SVGMapView/archive/master.zip", attempt 3
+2018-04-04 03:18:48,699 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:18:49,390 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:18:49,390 INFO  DownloadService - Downloading "https://github.com/jiahuanyu/SVGMapView/archive/master.zip", attempt 3
+2018-04-04 03:19:50,612 DEBUG FullProcessService - Repository https://github.com/jiahuanyu/SVGMapView available: true
+2018-04-04 03:19:50,612 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 03:19:50,612 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jiahuanyu/SVGMapView, /tmp/rdisk/1923/src]
+2018-04-04 03:19:54,208 INFO  SysUtils - 
+2018-04-04 03:19:54,213 INFO  GitService - Deleted "/tmp/rdisk/1923/src/.git": true
+2018-04-04 03:19:54,216 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-04 03:19:54,216 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1923/src]
+2018-04-04 03:19:54,219 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1923/src/.git/
+
+2018-04-04 03:19:54,222 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1923/src/gradlew
+2018-04-04 03:19:54,225 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1923/src/library/build.gradle /tmp/rdisk/1923/src/sample/build.gradle /tmp/rdisk/1923/src/build.gradle
+2018-04-04 03:19:54,228 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1923/src/settings.gradle /tmp/rdisk/1923/src/sample/build.gradle /tmp/rdisk/1923/src/library/build.gradle /tmp/rdisk/1923/src/build.gradle
+2018-04-04 03:19:54,228 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 03:19:54,228 INFO  ProjectFixService - Fixing project...
+2018-04-04 03:19:54,235 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1923/src/library/local.properties
+2018-04-04 03:19:54,235 INFO  ProjectFixService - Build info for "/tmp/rdisk/1923/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-04 03:19:54,235 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1923/src/sample/local.properties
+2018-04-04 03:19:54,236 INFO  ProjectFixService - Build info for "/tmp/rdisk/1923/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-04 03:19:54,236 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1923/src/local.properties
+2018-04-04 03:19:54,236 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 03:19:54,236 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 03:19:54,237 INFO  ProjectFixService - Build info for "/tmp/rdisk/1923/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-04 03:19:54,237 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 03:19:54,237 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:19:54,237 INFO  SysUtils - Execute command: [/tmp/rdisk/1923/src/gradlew, -b, /tmp/rdisk/1923/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:20:02,243 INFO  ProjectTaskService - Detected possible tasks: 58
+2018-04-04 03:20:02,243 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 03:20:02,243 INFO  SysUtils - Execute command: [/tmp/rdisk/1923/src/gradlew, -b, /tmp/rdisk/1923/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 03:20:09,623 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaNote: /tmp/rdisk/1923/src/library/src/main/java/com/jiahuan/svgmapview/core/helper/map/SVGParser.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: /tmp/rdisk/1923/src/library/src/main/java/com/jiahuan/svgmapview/core/helper/map/SVGParser.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.94 secs
+
+2018-04-04 03:20:09,630 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:20:09,630 INFO  SysUtils - Execute command: [/tmp/rdisk/1923/src/gradlew, -b, /tmp/rdisk/1923/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:20:15,770 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 03:20:15,770 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 03:20:15,770 INFO  SysUtils - Execute command: [/tmp/rdisk/1923/src/gradlew, -b, /tmp/rdisk/1923/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 03:20:38,526 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72200Library
+:sample:prepareComAndroidSupportSupportV42200Library
+:sample:prepareSrcLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+AAPT warning(Job{title=Cruncher abc_spinner_mtrl_am_alpha.9.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/1923/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher indicator_arrow.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/1923/src/sample/src/main/res/mipmap-xxhdpi/indicator_arrow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+AAPT warning(Job{title=Cruncher abc_spinner_mtrl_am_alpha.9.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/1923/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher indicator_arrow.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/1923/src/sample/src/main/res/mipmap-xxhdpi/indicator_arrow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.314 secs
+
+2018-04-04 03:20:38,562 INFO  FullProcessService - Found APK file: /tmp/rdisk/1923/src/sample/build/outputs/apk/sample-release-unsigned.apk

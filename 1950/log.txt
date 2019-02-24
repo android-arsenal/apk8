@@ -1,0 +1,1032 @@
+2018-05-20 23:40:54,805 INFO  DownloadService - Downloading "https://github.com/DreaminginCodeZH/MaterialProgressBar/archive/master.zip", attempt 3
+2018-05-20 23:41:55,383 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:41:56,309 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:41:56,309 INFO  DownloadService - Downloading "https://github.com/DreaminginCodeZH/MaterialProgressBar/archive/master.zip", attempt 3
+2018-05-20 23:42:57,702 DEBUG FullProcessService - Repository https://github.com/DreaminginCodeZH/MaterialProgressBar available: true
+2018-05-20 23:42:57,702 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:42:57,702 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/DreaminginCodeZH/MaterialProgressBar, /tmp/rdisk/1950/src]
+2018-05-20 23:42:59,650 INFO  SysUtils - 
+2018-05-20 23:42:59,655 INFO  GitService - Deleted "/tmp/rdisk/1950/src/.git": true
+2018-05-20 23:42:59,658 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-20 23:42:59,658 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1950/src]
+2018-05-20 23:42:59,662 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1950/src/.git/
+
+2018-05-20 23:42:59,665 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1950/src/gradlew
+2018-05-20 23:42:59,668 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1950/src/library/build.gradle /tmp/rdisk/1950/src/sample/build.gradle /tmp/rdisk/1950/src/build.gradle
+2018-05-20 23:42:59,670 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1950/src/settings.gradle /tmp/rdisk/1950/src/sample/build.gradle /tmp/rdisk/1950/src/library/build.gradle /tmp/rdisk/1950/src/gradle-mvn-push.gradle /tmp/rdisk/1950/src/build.gradle
+2018-05-20 23:42:59,670 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:42:59,670 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:42:59,678 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1950/src/library/local.properties
+2018-05-20 23:42:59,681 INFO  ProjectFixService - Build info for "/tmp/rdisk/1950/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:42:59,681 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1950/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:42:59,682 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1950/src/sample/local.properties
+2018-05-20 23:42:59,685 INFO  ProjectFixService - Build info for "/tmp/rdisk/1950/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:42:59,685 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1950/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:42:59,685 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1950/src/local.properties
+2018-05-20 23:42:59,686 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-20 23:42:59,686 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-20 23:42:59,689 INFO  ProjectFixService - Build info for "/tmp/rdisk/1950/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:42:59,689 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1950/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:42:59,689 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:42:59,689 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:42:59,689 INFO  SysUtils - Execute command: [/tmp/rdisk/1950/src/gradlew, -b, /tmp/rdisk/1950/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:43:08,267 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-20 23:43:08,267 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-20 23:43:08,267 INFO  SysUtils - Execute command: [/tmp/rdisk/1950/src/gradlew, -b, /tmp/rdisk/1950/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-20 23:43:26,570 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatBase.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.Size;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:12: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:14: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:17: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:18: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:19: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:16: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:17: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.TintTypedArray;
+                                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/Interpolators.java:9: error: package android.support.v4.view.animation does not exist
+import android.support.v4.view.animation.PathInterpolatorCompat;
+                                        ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.Keep;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.Keep;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:15: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:16: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:17: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatBase.java:88: error: cannot find symbol
+    private static void calculateXYValues(Path path, @Size(NUM_POINTS) float[] xValues,
+                                                      ^
+  symbol:   class Size
+  location: class ObjectAnimatorCompatBase
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatBase.java:89: error: cannot find symbol
+                                          @Size(NUM_POINTS) float[] yValues) {
+                                           ^
+  symbol:   class Size
+  location: class ObjectAnimatorCompatBase
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatBase.java:103: error: cannot find symbol
+    private static void calculateXYValues(Path path, @Size(NUM_POINTS) int[] xValues,
+                                                      ^
+  symbol:   class Size
+  location: class ObjectAnimatorCompatBase
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatBase.java:104: error: cannot find symbol
+                                          @Size(NUM_POINTS) int[] yValues) {
+                                           ^
+  symbol:   class Size
+  location: class ObjectAnimatorCompatBase
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:41: error: cannot find symbol
+    void setTint(@ColorInt int tintColor);
+                  ^
+  symbol:   class ColorInt
+  location: interface TintableDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:60: error: cannot find symbol
+    void setTintList(@Nullable ColorStateList tint);
+                      ^
+  symbol:   class Nullable
+  location: interface TintableDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/TintableDrawable.java:77: error: cannot find symbol
+    void setTintMode(@NonNull PorterDuff.Mode tintMode);
+                      ^
+  symbol:   class NonNull
+  location: interface TintableDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:59: error: cannot find symbol
+    public void setColorFilter(@Nullable ColorFilter colorFilter) {
+                                ^
+  symbol:   class Nullable
+  location: class BaseDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:68: error: cannot find symbol
+    public void setTint(@ColorInt int tintColor) {
+                         ^
+  symbol:   class ColorInt
+  location: class BaseDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:76: error: cannot find symbol
+    public void setTintList(@Nullable ColorStateList tint) {
+                             ^
+  symbol:   class Nullable
+  location: class BaseDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:87: error: cannot find symbol
+    public void setTintMode(@NonNull PorterDuff.Mode tintMode) {
+                             ^
+  symbol:   class NonNull
+  location: class BaseDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseDrawable.java:167: error: cannot find symbol
+        @NonNull
+         ^
+  symbol:   class NonNull
+  location: class BaseDrawable.DummyConstantState
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:301: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:312: error: cannot find symbol
+    public void setProgressTintList(@Nullable ColorStateList tint) {
+                                     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:320: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:331: error: cannot find symbol
+    public void setProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:339: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:350: error: cannot find symbol
+    public void setSecondaryProgressTintList(@Nullable ColorStateList tint) {
+                                              ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:358: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:369: error: cannot find symbol
+    public void setSecondaryProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                              ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:377: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:388: error: cannot find symbol
+    public void setProgressBackgroundTintList(@Nullable ColorStateList tint) {
+                                               ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:396: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:407: error: cannot find symbol
+    public void setProgressBackgroundTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                               ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:415: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:426: error: cannot find symbol
+    public void setIndeterminateTintList(@Nullable ColorStateList tint) {
+                                          ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:434: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:445: error: cannot find symbol
+    public void setIndeterminateTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                          ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:462: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:470: error: cannot find symbol
+    public void setSupportProgressTintList(@Nullable ColorStateList tint) {
+                                            ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:480: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:488: error: cannot find symbol
+    public void setSupportProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                            ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:498: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:506: error: cannot find symbol
+    public void setSupportSecondaryProgressTintList(@Nullable ColorStateList tint) {
+                                                     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:516: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:524: error: cannot find symbol
+    public void setSupportSecondaryProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                                     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:534: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:542: error: cannot find symbol
+    public void setSupportProgressBackgroundTintList(@Nullable ColorStateList tint) {
+                                                      ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:552: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:560: error: cannot find symbol
+    public void setSupportProgressBackgroundTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                                      ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:570: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:578: error: cannot find symbol
+    public void setSupportIndeterminateTintList(@Nullable ColorStateList tint) {
+                                                 ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:588: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:596: error: cannot find symbol
+    public void setSupportIndeterminateTintMode(@Nullable PorterDuff.Mode tintMode) {
+                                                 ^
+  symbol:   class Nullable
+  location: class MaterialProgressBar
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable.java:141: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RectTransformX
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable.java:147: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RectTransformX
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable.java:114: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RingPathTransform
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable.java:120: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RingPathTransform
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable.java:126: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RingPathTransform
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable.java:137: error: cannot find symbol
+        @Keep
+         ^
+  symbol:   class Keep
+  location: class RingRotation
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:97: error: cannot find symbol
+    public void setTint(@ColorInt int tintColor) {
+                         ^
+  symbol:   class ColorInt
+  location: class BaseProgressLayerDrawable<ProgressDrawableType,BackgroundDrawableType>
+  where ProgressDrawableType,BackgroundDrawableType are type-variables:
+    ProgressDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+    BackgroundDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:111: error: cannot find symbol
+    public void setTintList(@Nullable ColorStateList tint) {
+                             ^
+  symbol:   class Nullable
+  location: class BaseProgressLayerDrawable<ProgressDrawableType,BackgroundDrawableType>
+  where ProgressDrawableType,BackgroundDrawableType are type-variables:
+    ProgressDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+    BackgroundDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java:132: error: cannot find symbol
+    public void setTintMode(@NonNull PorterDuff.Mode tintMode) {
+                             ^
+  symbol:   class NonNull
+  location: class BaseProgressLayerDrawable<ProgressDrawableType,BackgroundDrawableType>
+  where ProgressDrawableType,BackgroundDrawableType are type-variables:
+    ProgressDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+    BackgroundDrawableType extends IntrinsicPaddingDrawable,ShowBackgroundDrawable,TintableDrawable declared in class BaseProgressLayerDrawable
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/DrawableCompat.java:15: warning: no @param for value
+    public static PorterDuff.Mode parseTintMode(int value, PorterDuff.Mode defaultMode) {
+                                  ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/DrawableCompat.java:15: warning: no @param for defaultMode
+    public static PorterDuff.Mode parseTintMode(int value, PorterDuff.Mode defaultMode) {
+                                  ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/DrawableCompat.java:15: warning: no @return
+    public static PorterDuff.Mode parseTintMode(int value, PorterDuff.Mode defaultMode) {
+                                  ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompat.java:54: warning: no @param for <T>
+    public static <T> ObjectAnimator ofArgb(T target, Property<T, Integer> property,
+                                     ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompat.java:98: warning: no @param for <T>
+    public static <T> ObjectAnimator ofFloat(T target, Property<T, Float> xProperty,
+                                     ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompat.java:142: warning: no @param for <T>
+    public static <T> ObjectAnimator ofInt(T target, Property<T, Integer> xProperty,
+                                     ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/CircularProgressDrawable.java:22: warning: no @param for style
+    public CircularProgressDrawable(int style, Context context) {
+           ^
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:463: warning: no @return
+    public ColorStateList getSupportProgressTintList() {
+                          ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:470: warning: no @param for tint
+    public void setSupportProgressTintList(@Nullable ColorStateList tint) {
+                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:481: warning: no @return
+    public PorterDuff.Mode getSupportProgressTintMode() {
+                           ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:488: warning: no @param for tintMode
+    public void setSupportProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:499: warning: no @return
+    public ColorStateList getSupportSecondaryProgressTintList() {
+                          ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:506: warning: no @param for tint
+    public void setSupportSecondaryProgressTintList(@Nullable ColorStateList tint) {
+                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:517: warning: no @return
+    public PorterDuff.Mode getSupportSecondaryProgressTintMode() {
+                           ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:524: warning: no @param for tintMode
+    public void setSupportSecondaryProgressTintMode(@Nullable PorterDuff.Mode tintMode) {
+                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:535: warning: no @return
+    public ColorStateList getSupportProgressBackgroundTintList() {
+                          ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:542: warning: no @param for tint
+    public void setSupportProgressBackgroundTintList(@Nullable ColorStateList tint) {
+                ^
+/tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/MaterialProgressBar.java:553: warning: no @return
+    public PorterDuff.Mode getSupportProgressBackgroundTintMode() {
+                           ^
+
+100 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:checkDebugManifest
+:library:generateDebugBuildConfig
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:platformAttrExtractor
+:library:processDebugManifest
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:mergeDebugConsumerProguardFiles
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:packageDebugAssets
+:library:packageDebugRenderscript NO-SOURCE
+:library:processDebugJavaRes NO-SOURCE
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:checkReleaseManifest
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:javaPreCompileRelease
+:library:mergeReleaseConsumerProguardFiles
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:packageReleaseAssets
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:mergeReleaseResources
+:library:verifyReleaseResources
+:library:generateDebugRFile
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDebugAnnotations
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:generateReleaseRFile
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/1950/src/library/src/main/java/me/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL in 18s
+51 actionable tasks: 51 executed
+
+2018-05-20 23:43:26,608 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:43:26,609 INFO  SysUtils - Execute command: [/tmp/rdisk/1950/src/gradlew, -b, /tmp/rdisk/1950/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:43:34,451 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-20 23:43:34,451 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 23:43:34,451 INFO  SysUtils - Execute command: [/tmp/rdisk/1950/src/gradlew, -b, /tmp/rdisk/1950/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 23:44:34,394 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-20 23:44:34,394 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:generateDebugRFile UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild
+:sample:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:prepareLintJar
+:sample:mainApkListPersistenceDebug
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:packageDebugAssets UP-TO-DATE
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:generateReleaseRFile UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample:extractProguardFiles
+:sample:preReleaseBuild
+:sample:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:mainApkListPersistenceRelease
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:packageReleaseAssets UP-TO-DATE
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:library:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:transformClassesAndResourcesWithProguardForRelease
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8b184d44d2258b9edb37f574a966c914/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/faf429aee7da54575b1b85eca57b800e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/415b888cb5e630b21c7a6a884ea17d07/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7de69cd924b00630b98649b04266e8b1/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1b9e53ce71b985d42897ffdb8c5e65b1/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c3c081c22d9276a5ca588333f9eb8914/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2af3e381856e41686b679c1598b1755b/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c8fe4d83cc9834bef62a3c8a9b266567/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/53bfda23d54ece95f1cb5311dca9ae43/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4b35efe2af5ccdf6a388ec679222e7c5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1f0901d77a77ccb86275e8722a38ac39/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c30b8194993ac377d2c24389a233971c/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/1950/src/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/1950/src/sample/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/1950/src/sample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1041
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/1950/src/sample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1381
+  Final number of program classes:    753
+Inlining subroutines...
+Optimizing...
+  Number of finalized classes:                 321
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                302
+  Number of staticized methods:                150
+  Number of finalized methods:                 2346
+  Number of removed method parameters:         176
+  Number of inlined constant parameters:       60
+  Number of inlined constant return values:    29
+  Number of inlined short method calls:        514
+  Number of inlined unique method calls:       825
+  Number of inlined tail recursion calls:      6
+  Number of merged code blocks:                32
+  Number of variable peephole optimizations:   3102
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      28
+  Number of branch peephole optimizations:     849
+  Number of string peephole optimizations:     248
+  Number of simplified instructions:           354
+  Number of removed instructions:              1720
+  Number of removed local variables:           111
+  Number of removed exception blocks:          44
+  Number of optimized local variable frames:   1064
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 753
+  Final number of program classes:    739
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                1
+  Number of staticized methods:                3
+  Number of finalized methods:                 29
+  Number of removed method parameters:         79
+  Number of inlined constant parameters:       59
+  Number of inlined constant return values:    10
+  Number of inlined short method calls:        33
+  Number of inlined unique method calls:       14
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                1
+  Number of variable peephole optimizations:   178
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     21
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           83
+  Number of removed instructions:              2462
+  Number of removed local variables:           60
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   65
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 739
+  Final number of program classes:    739
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                1
+  Number of finalized methods:                 2
+  Number of removed method parameters:         20
+  Number of inlined constant parameters:       18
+  Number of inlined constant return values:    10
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       2
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   30
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     5
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           7
+  Number of removed instructions:              326
+  Number of removed local variables:           1
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   6
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 739
+  Final number of program classes:    739
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 1
+  Number of removed method parameters:         5
+  Number of inlined constant parameters:       7
+  Number of inlined constant return values:    10
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   9
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           4
+  Number of removed instructions:              34
+  Number of removed local variables:           0
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   1
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 739
+  Final number of program classes:    739
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 0
+  Number of removed method parameters:         2
+  Number of inlined constant parameters:       4
+  Number of inlined constant return values:    10
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   7
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           1
+  Number of removed instructions:              9
+  Number of removed local variables:           0
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   0
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 739
+  Final number of program classes:    739
+Obfuscating...
+Printing mapping to [/tmp/rdisk/1950/src/sample/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/1950/src/sample/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8b184d44d2258b9edb37f574a966c914/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/faf429aee7da54575b1b85eca57b800e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/415b888cb5e630b21c7a6a884ea17d07/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7de69cd924b00630b98649b04266e8b1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1b9e53ce71b985d42897ffdb8c5e65b1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c3c081c22d9276a5ca588333f9eb8914/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2af3e381856e41686b679c1598b1755b/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c8fe4d83cc9834bef62a3c8a9b266567/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/53bfda23d54ece95f1cb5311dca9ae43/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4b35efe2af5ccdf6a388ec679222e7c5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1f0901d77a77ccb86275e8722a38ac39/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c30b8194993ac377d2c24389a233971c/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1950/src/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1950/src/sample/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1950/src/sample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/1950/src/sample/build/outputs/mapping/release/dump.txt]...
+:sample:transformClassesWithShrinkResForRelease
+Removed unused resources: Binary resource data reduced from 491KB to 482KB: Removed 1%
+:sample:transformClassesWithDexBuilderForRelease
+:sample:transformDexArchiveWithDexMergerForRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:validateSigningRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':sample:validateSigningRelease'.
+> Keystore file '/tmp/rdisk/1950/github.jks' not found for signing config 'release'.
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':sample:validateSigningRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:59)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:128)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:46)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$ExecuteTasks.run(DefaultGradleLauncher.java:314)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.runTasks(DefaultGradleLauncher.java:204)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:134)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:291)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:264)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:257)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:191)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.InvalidUserDataException: Keystore file '/tmp/rdisk/1950/github.jks' not found for signing config 'release'.
+	at com.android.build.gradle.internal.tasks.ValidateSigningTask.validate(ValidateSigningTask.kt:71)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:780)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:747)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 94 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 59s
+94 actionable tasks: 59 executed, 35 up-to-date
+
+2018-05-20 23:44:34,481 INFO  FullProcessService - Found APK file: /tmp/rdisk/1950/src/sample/build/outputs/apk/debug/sample-debug.apk

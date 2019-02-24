@@ -1,0 +1,601 @@
+2018-04-04 01:05:27,988 INFO  DownloadService - Downloading "https://github.com/darko1002001/android-rest-client/archive/master.zip", attempt 3
+2018-04-04 01:06:28,466 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:06:29,085 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:06:29,085 INFO  DownloadService - Downloading "https://github.com/darko1002001/android-rest-client/archive/master.zip", attempt 3
+2018-04-04 01:07:30,276 DEBUG FullProcessService - Repository https://github.com/darko1002001/android-rest-client available: true
+2018-04-04 01:07:30,276 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:07:30,276 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/darko1002001/android-rest-client, /tmp/rdisk/1971/src]
+2018-04-04 01:07:32,112 INFO  SysUtils - 
+2018-04-04 01:07:32,118 INFO  GitService - Deleted "/tmp/rdisk/1971/src/.git": true
+2018-04-04 01:07:32,122 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-04 01:07:32,122 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1971/src]
+2018-04-04 01:07:32,126 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1971/src/.git/
+
+2018-04-04 01:07:32,130 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1971/src/gradlew
+2018-04-04 01:07:32,134 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle /tmp/rdisk/1971/src/android-rest-lib/build.gradle /tmp/rdisk/1971/src/rest-client-demo/build.gradle /tmp/rdisk/1971/src/build.gradle
+2018-04-04 01:07:32,138 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1971/src/settings.gradle /tmp/rdisk/1971/src/rest-client-demo/build.gradle /tmp/rdisk/1971/src/gradle-mvn-push.gradle /tmp/rdisk/1971/src/build.gradle /tmp/rdisk/1971/src/android-rest-lib/build.gradle /tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle
+2018-04-04 01:07:32,138 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:07:32,138 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:07:32,153 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1971/src/android-rest-lib-additions/local.properties
+2018-04-04 01:07:32,155 INFO  ProjectFixService - Build info for "/tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-04 01:07:32,155 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-04 01:07:32,156 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1971/src/android-rest-lib/local.properties
+2018-04-04 01:07:32,158 INFO  ProjectFixService - Build info for "/tmp/rdisk/1971/src/android-rest-lib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-04 01:07:32,158 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1971/src/android-rest-lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-04 01:07:32,159 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1971/src/rest-client-demo/local.properties
+2018-04-04 01:07:32,161 INFO  ProjectFixService - Build info for "/tmp/rdisk/1971/src/rest-client-demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-04 01:07:32,161 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1971/src/rest-client-demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-04 01:07:32,162 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1971/src/local.properties
+2018-04-04 01:07:32,162 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 01:07:32,162 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 01:07:32,165 INFO  ProjectFixService - Build info for "/tmp/rdisk/1971/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-04 01:07:32,165 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1971/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-04 01:07:32,166 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:07:32,166 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:07:32,166 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:07:55,486 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-04 01:07:55,486 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 01:07:55,486 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/android-rest-lib-additions/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 01:08:03,134 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 01:08:03,134 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-rest-lib-additions:androidJavadocs/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/StringHttpResponseParser.java:3: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.IOUtils;
+                            ^
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/StringHttpResponseParser.java:15: error: cannot find symbol
+public abstract class StringHttpResponseParser<T> implements HttpResponseParser<T> {
+                                                             ^
+  symbol: class HttpResponseParser
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/FileHttpResponseParser.java:3: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.IOUtils;
+                            ^
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/FileHttpResponseParser.java:9: error: cannot find symbol
+public abstract class FileHttpResponseParser implements HttpResponseParser<File> {
+                                                        ^
+  symbol: class HttpResponseParser
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/BaseJacksonMapperResponseParser.java:3: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.DeserializationFeature;
+                                     ^
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/BaseJacksonMapperResponseParser.java:4: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/BaseJacksonMapperResponseParser.java:5: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.SerializationFeature;
+                                     ^
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/BaseJacksonMapperResponseParser.java:7: error: cannot find symbol
+public abstract class BaseJacksonMapperResponseParser<T> implements HttpResponseParser<T> {
+                                                                    ^
+  symbol: class HttpResponseParser
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/BaseJacksonMapperResponseParser.java:11: error: cannot find symbol
+  public static ObjectMapper mapper = new ObjectMapper();
+                ^
+  symbol:   class ObjectMapper
+  location: class BaseJacksonMapperResponseParser<T>
+  where T is a type-variable:
+    T extends Object declared in class BaseJacksonMapperResponseParser
+/tmp/rdisk/1971/src/android-rest-lib-additions/src/main/java/com/dg/libs/rest/parsers/StringHttpResponseParser.java:8: error: reference not found
+ * The {@link HttpResponseParser} interface has the responsibility to parse
+              ^
+
+1 error
+9 warnings
+:android-rest-lib-additions:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':android-rest-lib-additions:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/1971/src/android-rest-lib-additions/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':android-rest-lib-additions:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/1971/src/android-rest-lib-additions/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.229 secs
+
+2018-04-04 01:08:03,139 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:08:03,139 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/android-rest-lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:08:10,230 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-04 01:08:10,230 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 01:08:10,230 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/android-rest-lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 01:08:18,026 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 01:08:18,026 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-rest-lib:androidJavadocs/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/RestClientConfiguration.java:5: error: package com.araneaapps.android.libs.asyncrunners.models does not exist
+import com.araneaapps.android.libs.asyncrunners.models.AsyncRunners;
+                                                      ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:8: error: package com.araneaapps.android.libs.asyncrunners.models does not exist
+import com.araneaapps.android.libs.asyncrunners.models.RequestOptions;
+                                                      ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:9: error: package com.araneaapps.android.libs.asyncrunners.models does not exist
+import com.araneaapps.android.libs.asyncrunners.models.TaskStore;
+                                                      ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:24: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:25: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:26: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.RequestBody;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:27: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Response;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:28: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.ResponseBody;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:45: error: package Request does not exist
+  private Request.Builder request = new Request.Builder();
+                 ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:49: error: cannot find symbol
+  RequestOptions requestOptions = null;
+  ^
+  symbol:   class RequestOptions
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:206: error: cannot find symbol
+  public RestClientRequest<T> setRequestMethod(RequestMethod requestMethod, RequestBody requestBody) {
+                                                                            ^
+  symbol:   class RequestBody
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:288: error: cannot find symbol
+  public RequestOptions getRequestOptions() {
+         ^
+  symbol:   class RequestOptions
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:292: error: cannot find symbol
+  public RestClientRequest<T> setRequestOptions(RequestOptions requestOptions) {
+                                                ^
+  symbol:   class RequestOptions
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:318: error: cannot find symbol
+  private OkHttpClient generateClient() {
+          ^
+  symbol:   class OkHttpClient
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:324: error: cannot find symbol
+  protected void customizeClient(OkHttpClient client) {
+                                 ^
+  symbol:   class OkHttpClient
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:387: error: cannot find symbol
+  private void close(ResponseBody body) {
+                     ^
+  symbol:   class ResponseBody
+  location: class RestClientRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class RestClientRequest
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:3: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.MediaType;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:4: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.RequestBody;
+                          ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:5: error: package com.squareup.okhttp.internal does not exist
+import com.squareup.okhttp.internal.Util;
+                                   ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:10: error: package okio does not exist
+import okio.BufferedSink;
+           ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:11: error: package okio does not exist
+import okio.Okio;
+           ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:12: error: package okio does not exist
+import okio.Source;
+           ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:16: error: cannot find symbol
+  public static RequestBody create(final MediaType mediaType, final InputStream inputStream) {
+                                         ^
+  symbol:   class MediaType
+  location: class RequestBodyUtils
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RequestBodyUtils.java:16: error: cannot find symbol
+  public static RequestBody create(final MediaType mediaType, final InputStream inputStream) {
+                ^
+  symbol:   class RequestBody
+  location: class RequestBodyUtils
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/callbacks/HttpCallback.java:23: warning: no @param for responseStatus
+  void onSuccess(T responseData, ResponseStatus responseStatus);
+       ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/callbacks/HttpCallback.java:29: warning: no description for @param
+   * @param responseStatus
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:94: warning: no description for @param
+   * @param key
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:95: warning: no description for @param
+   * @param value
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:97: warning: no @return
+  public RestClientRequest<T> addHeader(final String key, final String value) {
+                              ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:105: warning: no description for @param
+   * @param key
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:106: warning: no description for @param
+   * @param value
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:108: warning: no @return
+  public RestClientRequest<T> header(final String key, final String value) {
+                              ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:143: warning: no description for @param
+   * @param handler
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:145: warning: no @return
+  public RestClientRequest<T> setResponseHandler(ResponseHandler<T> handler) {
+                              ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:155: warning: no description for @param
+   * @param statusHandler
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:157: warning: no @return
+  public RestClientRequest<T> setStatusHandler(ResponseStatusHandler statusHandler) {
+                              ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:176: warning: no description for @param
+   * @param params
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:177: warning: no description for @return
+   * @return
+     ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:275: warning: no @param for status
+  protected boolean handleResponseStatus(ResponseStatus status) {
+                    ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:275: warning: no @return
+  protected boolean handleResponseStatus(ResponseStatus status) {
+                    ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/requests/RestClientRequest.java:315: warning: no @param for data
+  protected void doAfterSuccessfulRequestInBackgroundThread(T data) {
+                 ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/entities/UnicodeBOMInputStream.java:62: error: unexpected end tag: </p>
+ * </p>
+   ^
+/tmp/rdisk/1971/src/android-rest-lib/src/main/java/com/dg/libs/rest/entities/UnicodeBOMInputStream.java:128: warning: no @return
+    public final byte[] getBytes() {
+                        ^
+
+1 error
+42 warnings
+:android-rest-lib:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':android-rest-lib:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/1971/src/android-rest-lib/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':android-rest-lib:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/1971/src/android-rest-lib/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.375 secs
+
+2018-04-04 01:08:18,032 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:08:18,032 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/rest-client-demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:08:24,996 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 01:08:24,996 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 01:08:24,996 INFO  SysUtils - Execute command: [/tmp/rdisk/1971/src/gradlew, -b, /tmp/rdisk/1971/src/rest-client-demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 01:08:48,424 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rest-client-demo:preBuild UP-TO-DATE
+:rest-client-demo:preDebugBuild UP-TO-DATE
+:rest-client-demo:compileDebugNdk UP-TO-DATE
+:android-rest-lib:compileLint
+:android-rest-lib:copyReleaseLint UP-TO-DATE
+:android-rest-lib:mergeReleaseProguardFiles
+:android-rest-lib:preBuild UP-TO-DATE
+:android-rest-lib:preReleaseBuild UP-TO-DATE
+:android-rest-lib:checkReleaseManifest
+:android-rest-lib:preDebugAndroidTestBuild UP-TO-DATE
+:android-rest-lib:preDebugBuild UP-TO-DATE
+:android-rest-lib:prepareComAraneaAppsAndroidLibsAndroidAsyncRunners104Library
+:android-rest-lib:prepareReleaseDependencies
+:android-rest-lib:compileReleaseAidl
+:android-rest-lib:compileReleaseRenderscript
+:android-rest-lib:generateReleaseBuildConfig
+:android-rest-lib:generateReleaseAssets UP-TO-DATE
+:android-rest-lib:mergeReleaseAssets
+:android-rest-lib:generateReleaseResValues
+:android-rest-lib:generateReleaseResources
+:android-rest-lib:mergeReleaseResources
+:android-rest-lib:processReleaseManifest
+:android-rest-lib:processReleaseResources
+:android-rest-lib:generateReleaseSources
+:android-rest-lib:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:android-rest-lib:processReleaseJavaRes UP-TO-DATE
+:android-rest-lib:packageReleaseJar
+:android-rest-lib:compileReleaseNdk UP-TO-DATE
+:android-rest-lib:packageReleaseJniLibs UP-TO-DATE
+:android-rest-lib:packageReleaseLocalJar UP-TO-DATE
+:android-rest-lib:packageReleaseRenderscript UP-TO-DATE
+:android-rest-lib:packageReleaseResources
+:android-rest-lib:bundleRelease
+:android-rest-lib-additions:compileLint
+:android-rest-lib-additions:copyReleaseLint UP-TO-DATE
+:android-rest-lib-additions:mergeReleaseProguardFiles
+:android-rest-lib-additions:preBuild UP-TO-DATE
+:android-rest-lib-additions:preReleaseBuild UP-TO-DATE
+:android-rest-lib-additions:checkReleaseManifest
+:android-rest-lib-additions:preDebugAndroidTestBuild UP-TO-DATE
+:android-rest-lib-additions:preDebugBuild UP-TO-DATE
+:android-rest-lib-additions:prepareComAraneaAppsAndroidLibsAndroidAsyncRunners104Library
+:android-rest-lib-additions:prepareComAraneaAppsAndroidLibsAndroidRestLib290Library
+:android-rest-lib-additions:prepareReleaseDependencies
+:android-rest-lib-additions:compileReleaseAidl
+:android-rest-lib-additions:compileReleaseRenderscript
+:android-rest-lib-additions:generateReleaseBuildConfig
+:android-rest-lib-additions:generateReleaseAssets UP-TO-DATE
+:android-rest-lib-additions:mergeReleaseAssets
+:android-rest-lib-additions:generateReleaseResValues
+:android-rest-lib-additions:generateReleaseResources
+:android-rest-lib-additions:mergeReleaseResources
+:android-rest-lib-additions:processReleaseManifest
+:android-rest-lib-additions:processReleaseResources
+:android-rest-lib-additions:generateReleaseSources
+:android-rest-lib-additions:compileReleaseJava
+:android-rest-lib-additions:processReleaseJavaRes UP-TO-DATE
+:android-rest-lib-additions:packageReleaseJar
+:android-rest-lib-additions:compileReleaseNdk UP-TO-DATE
+:android-rest-lib-additions:packageReleaseJniLibs UP-TO-DATE
+:android-rest-lib-additions:packageReleaseLocalJar UP-TO-DATE
+:android-rest-lib-additions:packageReleaseRenderscript UP-TO-DATE
+:android-rest-lib-additions:packageReleaseResources
+:android-rest-lib-additions:bundleRelease
+:rest-client-demo:checkDebugManifest
+:rest-client-demo:preReleaseBuild UP-TO-DATE
+:rest-client-demo:prepareComAraneaAppsAndroidLibsAndroidAsyncRunners104Library
+:rest-client-demo:prepareComAraneaAppsAndroidLibsAndroidRestLib290Library
+:rest-client-demo:prepareComAraneaAppsAndroidLibsAndroidRestLibAdditions290Library
+:rest-client-demo:prepareDebugDependencies
+:rest-client-demo:compileDebugAidl
+:rest-client-demo:compileDebugRenderscript
+:rest-client-demo:generateDebugBuildConfig
+:rest-client-demo:generateDebugAssets UP-TO-DATE
+:rest-client-demo:mergeDebugAssets
+:rest-client-demo:generateDebugResValues
+:rest-client-demo:generateDebugResources
+:rest-client-demo:mergeDebugResources
+:rest-client-demo:processDebugManifest
+:rest-client-demo:processDebugResources
+:rest-client-demo:generateDebugSources
+:rest-client-demo:compileDebugJava
+:rest-client-demo:preDexDebug
+:rest-client-demo:dexDebug
+:rest-client-demo:processDebugJavaRes UP-TO-DATE
+:rest-client-demo:validateDebugSigning
+:rest-client-demo:packageDebug
+:rest-client-demo:zipalignDebug
+:rest-client-demo:assembleDebug
+:rest-client-demo:checkReleaseManifest
+:rest-client-demo:prepareReleaseDependencies
+:rest-client-demo:compileReleaseAidl
+:rest-client-demo:compileReleaseRenderscript
+:rest-client-demo:generateReleaseBuildConfig
+:rest-client-demo:generateReleaseAssets UP-TO-DATE
+:rest-client-demo:mergeReleaseAssets
+:rest-client-demo:generateReleaseResValues
+:rest-client-demo:generateReleaseResources
+:rest-client-demo:mergeReleaseResources
+:rest-client-demo:processReleaseManifest
+:rest-client-demo:processReleaseResources
+:rest-client-demo:generateReleaseSources
+:rest-client-demo:compileReleaseJava
+:rest-client-demo:lintVitalRelease
+:rest-client-demo:compileReleaseNdk UP-TO-DATE
+:rest-client-demo:preDexRelease
+:rest-client-demo:dexRelease
+:rest-client-demo:processReleaseJavaRes UP-TO-DATE
+:rest-client-demo:packageRelease
+:rest-client-demo:assembleRelease
+:rest-client-demo:assemble
+:rest-client-demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.002 secs
+
+2018-04-04 01:08:48,441 INFO  FullProcessService - Found APK file: /tmp/rdisk/1971/src/rest-client-demo/build/outputs/apk/rest-client-demo-release-unsigned.apk

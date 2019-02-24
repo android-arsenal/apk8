@@ -1,0 +1,98 @@
+2018-04-04 03:29:25,932 INFO  DownloadService - Downloading "https://github.com/paolorotolo/ExpandableHeightListView/archive/master.zip", attempt 3
+2018-04-04 03:30:26,445 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:30:27,104 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:30:27,104 INFO  DownloadService - Downloading "https://github.com/paolorotolo/ExpandableHeightListView/archive/master.zip", attempt 3
+2018-04-04 03:31:28,468 DEBUG FullProcessService - Repository https://github.com/paolorotolo/ExpandableHeightListView available: true
+2018-04-04 03:31:28,468 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 03:31:28,468 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/paolorotolo/ExpandableHeightListView, /tmp/rdisk/1919/src]
+2018-04-04 03:31:35,094 INFO  SysUtils - 
+2018-04-04 03:31:35,099 INFO  GitService - Deleted "/tmp/rdisk/1919/src/.git": true
+2018-04-04 03:31:35,102 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 03:31:35,102 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1919/src]
+2018-04-04 03:31:35,106 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1919/src/.git/
+
+2018-04-04 03:31:35,109 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1919/src/library/gradlew /tmp/rdisk/1919/src/ExpandableHeightListViewExample/gradlew
+2018-04-04 03:31:35,113 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build.gradle /tmp/rdisk/1919/src/library/app/build.gradle /tmp/rdisk/1919/src/ExpandableHeightListViewExample/build.gradle /tmp/rdisk/1919/src/library/build.gradle
+2018-04-04 03:31:35,116 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1919/src/library/settings.gradle /tmp/rdisk/1919/src/library/build.gradle /tmp/rdisk/1919/src/library/app/maven-push.gradle /tmp/rdisk/1919/src/library/app/build.gradle /tmp/rdisk/1919/src/ExpandableHeightListViewExample/settings.gradle /tmp/rdisk/1919/src/ExpandableHeightListViewExample/build.gradle /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build.gradle
+2018-04-04 03:31:35,116 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 03:31:35,116 INFO  ProjectFixService - Fixing project...
+2018-04-04 03:31:35,124 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/local.properties
+2018-04-04 03:31:35,124 INFO  ProjectFixService - Build info for "/tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 03:31:35,125 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1919/src/library/app/local.properties
+2018-04-04 03:31:35,125 INFO  ProjectFixService - Build info for "/tmp/rdisk/1919/src/library/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 03:31:35,125 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1919/src/ExpandableHeightListViewExample/local.properties
+2018-04-04 03:31:35,125 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-04 03:31:35,125 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-04 03:31:35,128 INFO  ProjectFixService - Build info for "/tmp/rdisk/1919/src/ExpandableHeightListViewExample/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 03:31:35,129 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/1919/src/library/local.properties
+2018-04-04 03:31:35,129 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 03:31:35,129 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 03:31:35,132 INFO  ProjectFixService - Build info for "/tmp/rdisk/1919/src/library/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 03:31:35,132 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 03:31:35,132 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:31:35,132 INFO  SysUtils - Execute command: [/tmp/rdisk/1919/src/ExpandableHeightListViewExample/gradlew, -b, /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:31:43,493 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-04 03:31:43,493 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 03:31:43,493 INFO  SysUtils - Execute command: [/tmp/rdisk/1919/src/ExpandableHeightListViewExample/gradlew, -b, /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 03:32:04,504 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareComGithubPaolorotoloExpandableheightlistview100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.579 secs
+
+2018-04-04 03:32:04,536 INFO  FullProcessService - Found APK file: /tmp/rdisk/1919/src/ExpandableHeightListViewExample/app/build/outputs/apk/app-debug.apk

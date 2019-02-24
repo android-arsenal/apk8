@@ -1,0 +1,193 @@
+2018-04-04 15:01:57,752 INFO  DownloadService - Downloading "https://github.com/BoD/android-prefs/archive/master.zip", attempt 3
+2018-04-04 15:01:58,302 INFO  DownloadService - Downloaded https://github.com/BoD/android-prefs/archive/master.zip, attempt 3
+2018-04-04 15:01:58,303 INFO  DownloadService - Size of file "/tmp/rdisk/1758/master.zip": 255 KB
+2018-04-04 15:01:58,303 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 15:01:58,303 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1758/master.zip: true
+2018-04-04 15:01:58,303 DEBUG ZipUtil - Extracting '/tmp/rdisk/1758/master.zip' into '/tmp/rdisk/1758/src'.
+2018-04-04 15:01:58,315 INFO  FullProcessService - Size of directory with sources: 337 KB
+2018-04-04 15:01:58,315 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1758/src]
+2018-04-04 15:01:58,320 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1758/src/.git/
+
+2018-04-04 15:01:58,323 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1758/src/android-prefs-master/gradlew
+2018-04-04 15:01:58,327 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1758/src/android-prefs-master/sample/build.gradle /tmp/rdisk/1758/src/android-prefs-master/build.gradle /tmp/rdisk/1758/src/android-prefs-master/android-sharedpreferences/build.gradle /tmp/rdisk/1758/src/android-prefs-master/prefs-compiler/build.gradle /tmp/rdisk/1758/src/android-prefs-master/prefs/build.gradle
+2018-04-04 15:01:58,339 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1758/src/android-prefs-master/settings.gradle /tmp/rdisk/1758/src/android-prefs-master/sample/build.gradle /tmp/rdisk/1758/src/android-prefs-master/prefs/build.gradle /tmp/rdisk/1758/src/android-prefs-master/prefs-compiler/build.gradle /tmp/rdisk/1758/src/android-prefs-master/build.gradle /tmp/rdisk/1758/src/android-prefs-master/android-sharedpreferences/build.gradle
+2018-04-04 15:01:58,339 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 15:01:58,339 INFO  ProjectFixService - Fixing project...
+2018-04-04 15:01:58,348 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1758/src/android-prefs-master/sample/local.properties
+2018-04-04 15:01:58,349 INFO  ProjectFixService - Build info for "/tmp/rdisk/1758/src/android-prefs-master/sample/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-04 15:01:58,350 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1758/src/android-prefs-master/local.properties
+2018-04-04 15:01:58,354 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-04 15:01:58,354 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-04 15:01:58,355 INFO  ProjectFixService - Build info for "/tmp/rdisk/1758/src/android-prefs-master/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-04 15:01:58,355 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1758/src/android-prefs-master/android-sharedpreferences/local.properties
+2018-04-04 15:01:58,356 INFO  ProjectFixService - Build info for "/tmp/rdisk/1758/src/android-prefs-master/android-sharedpreferences/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-04 15:01:58,356 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1758/src/android-prefs-master/prefs-compiler/local.properties
+2018-04-04 15:01:58,357 INFO  ProjectFixService - Build info for "/tmp/rdisk/1758/src/android-prefs-master/prefs-compiler/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-04 15:01:58,358 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1758/src/android-prefs-master/prefs/local.properties
+2018-04-04 15:01:58,359 INFO  ProjectFixService - Build info for "/tmp/rdisk/1758/src/android-prefs-master/prefs/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-04 15:01:58,359 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 15:01:58,359 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 15:01:58,359 INFO  SysUtils - Execute command: [/tmp/rdisk/1758/src/android-prefs-master/gradlew, -b, /tmp/rdisk/1758/src/android-prefs-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 15:02:08,412 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-04 15:02:08,412 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 15:02:08,412 INFO  SysUtils - Execute command: [/tmp/rdisk/1758/src/android-prefs-master/gradlew, -b, /tmp/rdisk/1758/src/android-prefs-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 15:02:29,272 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:android-sharedpreferences:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:android-sharedpreferences:processResources NO-SOURCE
+:android-sharedpreferences:classes
+:android-sharedpreferences:jar
+:prefs:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:prefs:processResources NO-SOURCE
+:prefs:classes
+:prefs:jar
+:prefs-compiler:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:prefs-compiler:processResources
+:prefs-compiler:classes
+:prefs-compiler:jar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:preReleaseBuild
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithPreDexForRelease
+:sample:transformDexWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:prepareLintJar
+:sample:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput.getClassesDir(DefaultSourceSetOutput.java:80)
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput_Decorated.getClassesDir(Unknown Source)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:839)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleClient.createLintRequest(LintGradleClient.java:182)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:149)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+	at com.android.build.gradle.tasks.LintBaseTask.runLint(LintBaseTask.java:199)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lintSingleVariant(LintPerVariantTask.java:53)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lint(LintPerVariantTask.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:121)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:731)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:705)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:122)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:111)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:63)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:124)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:105)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL in 20s
+57 actionable tasks: 57 executed
+Exception in thread "Thread-15" java.lang.NoClassDefFoundError: com/android/builder/internal/aapt/v2/AaptV2Jni$TempDirCache$RecursiveDelete
+	at com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache.lambda$getCachedDirectory$0(AaptV2Jni.java:251)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache$RecursiveDelete
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 2 more
+
+2018-04-04 15:02:29,288 INFO  FullProcessService - Found APK file: /tmp/rdisk/1758/src/android-prefs-master/sample/build/outputs/apk/release/sample-release-unsigned.apk

@@ -1,0 +1,922 @@
+2018-05-11 11:49:18,614 INFO  DownloadService - Downloading "https://github.com/palaima/DebugDrawer/archive/master.zip", attempt 3
+2018-05-11 11:49:20,874 INFO  DownloadService - Downloaded https://github.com/palaima/DebugDrawer/archive/master.zip, attempt 3
+2018-05-11 11:49:20,874 INFO  DownloadService - Size of file "/tmp/rdisk/1892/master.zip": 2 MB
+2018-05-11 11:49:20,874 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:49:20,875 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1892/master.zip: true
+2018-05-11 11:49:20,875 DEBUG ZipUtil - Extracting '/tmp/rdisk/1892/master.zip' into '/tmp/rdisk/1892/src'.
+2018-05-11 11:49:20,926 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-11 11:49:20,926 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1892/src]
+2018-05-11 11:49:20,931 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1892/src/.git/
+
+2018-05-11 11:49:20,940 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1892/src/DebugDrawer-master/gradlew
+2018-05-11 11:49:20,951 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-base/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-fps/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-glide/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-location/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-logs/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-network-quality/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-no-op/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp3/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-picasso/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-scalpel/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-timber/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view-no-op/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/build.gradle
+2018-05-11 11:49:20,959 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1892/src/DebugDrawer-master/settings.gradle /tmp/rdisk/1892/src/DebugDrawer-master/gradle/install-v1.gradle /tmp/rdisk/1892/src/DebugDrawer-master/gradle/bintray-java-v1.gradle /tmp/rdisk/1892/src/DebugDrawer-master/gradle/bintray-android-v1.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view-no-op/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-timber/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-scalpel/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-picasso/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp3/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-no-op/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-network-quality/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-logs/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-location/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-glide/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-fps/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-base/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/build.gradle /tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle
+2018-05-11 11:49:20,961 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:49:20,961 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:49:20,993 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/app/local.properties
+2018-05-11 11:49:21,006 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,007 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,008 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/local.properties
+2018-05-11 11:49:21,027 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,027 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,028 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-base/local.properties
+2018-05-11 11:49:21,040 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-base/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,040 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-base/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/local.properties
+2018-05-11 11:49:21,054 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,054 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,054 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-fps/local.properties
+2018-05-11 11:49:21,067 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-fps/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,067 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-fps/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,067 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-glide/local.properties
+2018-05-11 11:49:21,080 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-glide/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,080 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-glide/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,080 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-location/local.properties
+2018-05-11 11:49:21,093 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-location/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,093 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-location/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,094 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-logs/local.properties
+2018-05-11 11:49:21,107 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-logs/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,107 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-logs/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,107 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-network-quality/local.properties
+2018-05-11 11:49:21,120 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-network-quality/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,120 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-network-quality/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,120 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-no-op/local.properties
+2018-05-11 11:49:21,133 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-no-op/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,133 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-no-op/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,133 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp/local.properties
+2018-05-11 11:49:21,146 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,146 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,146 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp3/local.properties
+2018-05-11 11:49:21,159 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp3/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,159 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-okhttp3/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,159 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-picasso/local.properties
+2018-05-11 11:49:21,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-picasso/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,172 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-picasso/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,172 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-scalpel/local.properties
+2018-05-11 11:49:21,184 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-scalpel/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,184 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-scalpel/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,185 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-timber/local.properties
+2018-05-11 11:49:21,198 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-timber/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,198 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-timber/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,198 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view-no-op/local.properties
+2018-05-11 11:49:21,211 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view-no-op/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,211 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view-no-op/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,211 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/local.properties
+2018-05-11 11:49:21,224 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,224 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,224 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer/local.properties
+2018-05-11 11:49:21,236 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,236 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,237 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1892/src/DebugDrawer-master/local.properties
+2018-05-11 11:49:21,238 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.2.1-all.zip
+2018-05-11 11:49:21,238 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.2.1-bin.zip)
+2018-05-11 11:49:21,250 INFO  ProjectFixService - Build info for "/tmp/rdisk/1892/src/DebugDrawer-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:49:21,250 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1892/src/DebugDrawer-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:49:21,251 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:49:21,251 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:49:21,251 INFO  SysUtils - Execute command: [/tmp/rdisk/1892/src/DebugDrawer-master/gradlew, -b, /tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:49:30,855 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 11:49:30,855 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:49:30,855 INFO  SysUtils - Execute command: [/tmp/rdisk/1892/src/DebugDrawer-master/gradlew, -b, /tmp/rdisk/1892/src/DebugDrawer-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:51:03,909 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:checkDebugManifest
+:debugdrawer:processDebugManifest
+:debugdrawer-actions:preBuild UP-TO-DATE
+:debugdrawer-actions:preDebugBuild UP-TO-DATE
+:debugdrawer-actions:checkDebugManifest
+:debugdrawer-actions:processDebugManifest
+:debugdrawer-base:preBuild UP-TO-DATE
+:debugdrawer-base:preDebugBuild UP-TO-DATE
+:debugdrawer-base:checkDebugManifest
+:debugdrawer-base:processDebugManifest
+:debugdrawer-commons:preBuild UP-TO-DATE
+:debugdrawer-commons:preDebugBuild UP-TO-DATE
+:debugdrawer-commons:checkDebugManifest
+:debugdrawer-commons:processDebugManifest
+:debugdrawer-fps:preBuild UP-TO-DATE
+:debugdrawer-fps:preDebugBuild UP-TO-DATE
+:debugdrawer-fps:checkDebugManifest
+:debugdrawer-fps:processDebugManifest
+:debugdrawer-glide:preBuild UP-TO-DATE
+:debugdrawer-glide:preDebugBuild UP-TO-DATE
+:debugdrawer-glide:checkDebugManifest
+:debugdrawer-glide:processDebugManifest
+:debugdrawer-location:preBuild UP-TO-DATE
+:debugdrawer-location:preDebugBuild UP-TO-DATE
+:debugdrawer-location:checkDebugManifest
+:debugdrawer-location:processDebugManifest
+:debugdrawer-logs:preBuild UP-TO-DATE
+:debugdrawer-logs:preDebugBuild UP-TO-DATE
+:debugdrawer-logs:checkDebugManifest
+:debugdrawer-logs:processDebugManifest
+:debugdrawer-network-quality:preBuild UP-TO-DATE
+:debugdrawer-network-quality:preDebugBuild UP-TO-DATE
+:debugdrawer-network-quality:checkDebugManifest
+:debugdrawer-network-quality:processDebugManifest
+:debugdrawer-okhttp3:preBuild UP-TO-DATE
+:debugdrawer-okhttp3:preDebugBuild UP-TO-DATE
+:debugdrawer-okhttp3:checkDebugManifest
+:debugdrawer-okhttp3:processDebugManifest
+:debugdrawer-picasso:preBuild UP-TO-DATE
+:debugdrawer-picasso:preDebugBuild UP-TO-DATE
+:debugdrawer-picasso:checkDebugManifest
+:debugdrawer-picasso:processDebugManifest
+:debugdrawer-scalpel:preBuild UP-TO-DATE
+:debugdrawer-scalpel:preDebugBuild UP-TO-DATE
+:debugdrawer-scalpel:checkDebugManifest
+:debugdrawer-scalpel:processDebugManifest
+:debugdrawer-timber:preBuild UP-TO-DATE
+:debugdrawer-timber:preDebugBuild UP-TO-DATE
+:debugdrawer-timber:checkDebugManifest
+:debugdrawer-timber:processDebugManifest
+:debugdrawer-view:preBuild UP-TO-DATE
+:debugdrawer-view:preDebugBuild UP-TO-DATE
+:debugdrawer-view:checkDebugManifest
+:debugdrawer-view:processDebugManifest
+:app:preDebugBuild
+:debugdrawer-base:compileDebugAidl
+:debugdrawer-view:compileDebugAidl
+:debugdrawer:compileDebugAidl
+:debugdrawer-actions:compileDebugAidl
+:debugdrawer-commons:compileDebugAidl
+:debugdrawer-fps:compileDebugAidl
+:debugdrawer-glide:compileDebugAidl
+:debugdrawer-location:compileDebugAidl
+:debugdrawer-logs:compileDebugAidl
+:debugdrawer-network-quality:compileDebugAidl
+:debugdrawer-okhttp3:compileDebugAidl
+:debugdrawer-picasso:compileDebugAidl
+:debugdrawer-scalpel:compileDebugAidl
+:debugdrawer-timber:compileDebugAidl
+:app:compileDebugAidl
+:debugdrawer:packageDebugRenderscript NO-SOURCE
+:debugdrawer-actions:packageDebugRenderscript NO-SOURCE
+:debugdrawer-base:packageDebugRenderscript NO-SOURCE
+:debugdrawer-commons:packageDebugRenderscript NO-SOURCE
+:debugdrawer-fps:packageDebugRenderscript NO-SOURCE
+:debugdrawer-glide:packageDebugRenderscript NO-SOURCE
+:debugdrawer-location:packageDebugRenderscript NO-SOURCE
+:debugdrawer-logs:packageDebugRenderscript NO-SOURCE
+:debugdrawer-network-quality:packageDebugRenderscript NO-SOURCE
+:debugdrawer-okhttp3:packageDebugRenderscript NO-SOURCE
+:debugdrawer-picasso:packageDebugRenderscript NO-SOURCE
+:debugdrawer-scalpel:packageDebugRenderscript NO-SOURCE
+:debugdrawer-timber:packageDebugRenderscript NO-SOURCE
+:debugdrawer-view:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:debugdrawer:compileDebugRenderscript
+:debugdrawer:generateDebugResValues
+:debugdrawer:generateDebugResources
+:debugdrawer:packageDebugResources
+:debugdrawer-actions:compileDebugRenderscript
+:debugdrawer-actions:generateDebugResValues
+:debugdrawer-actions:generateDebugResources
+:debugdrawer-actions:packageDebugResources
+:debugdrawer-base:compileDebugRenderscript
+:debugdrawer-base:generateDebugResValues
+:debugdrawer-base:generateDebugResources
+:debugdrawer-base:packageDebugResources
+:debugdrawer-commons:compileDebugRenderscript
+:debugdrawer-commons:generateDebugResValues
+:debugdrawer-commons:generateDebugResources
+:debugdrawer-commons:packageDebugResources
+:debugdrawer-fps:compileDebugRenderscript
+:debugdrawer-fps:generateDebugResValues
+:debugdrawer-fps:generateDebugResources
+:debugdrawer-fps:packageDebugResources
+:debugdrawer-glide:compileDebugRenderscript
+:debugdrawer-glide:generateDebugResValues
+:debugdrawer-glide:generateDebugResources
+:debugdrawer-glide:packageDebugResources
+:debugdrawer-location:compileDebugRenderscript
+:debugdrawer-location:generateDebugResValues
+:debugdrawer-location:generateDebugResources
+:debugdrawer-location:packageDebugResources
+:debugdrawer-logs:compileDebugRenderscript
+:debugdrawer-logs:generateDebugResValues
+:debugdrawer-logs:generateDebugResources
+:debugdrawer-logs:packageDebugResources
+:debugdrawer-network-quality:compileDebugRenderscript
+:debugdrawer-network-quality:generateDebugResValues
+:debugdrawer-network-quality:generateDebugResources
+:debugdrawer-network-quality:packageDebugResources
+:debugdrawer-okhttp3:compileDebugRenderscript
+:debugdrawer-okhttp3:generateDebugResValues
+:debugdrawer-okhttp3:generateDebugResources
+:debugdrawer-okhttp3:packageDebugResources
+:debugdrawer-picasso:compileDebugRenderscript
+:debugdrawer-picasso:generateDebugResValues
+:debugdrawer-picasso:generateDebugResources
+:debugdrawer-picasso:packageDebugResources
+:debugdrawer-scalpel:compileDebugRenderscript
+:debugdrawer-scalpel:generateDebugResValues
+:debugdrawer-scalpel:generateDebugResources
+:debugdrawer-scalpel:packageDebugResources
+:debugdrawer-timber:compileDebugRenderscript
+:debugdrawer-timber:generateDebugResValues
+:debugdrawer-timber:generateDebugResources
+:debugdrawer-timber:packageDebugResources
+:debugdrawer-view:compileDebugRenderscript
+:debugdrawer-view:generateDebugResValues
+:debugdrawer-view:generateDebugResources
+:debugdrawer-view:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:debugdrawer:platformAttrExtractor
+:debugdrawer-base:platformAttrExtractor
+:debugdrawer-view:platformAttrExtractor
+:debugdrawer-actions:platformAttrExtractor
+:debugdrawer-base:processDebugResources
+:debugdrawer-commons:platformAttrExtractor
+:debugdrawer-view:processDebugResources
+:debugdrawer-commons:processDebugResources
+:debugdrawer-fps:platformAttrExtractor
+:debugdrawer-glide:platformAttrExtractor
+:debugdrawer:processDebugResources
+:debugdrawer-location:platformAttrExtractor
+:debugdrawer-fps:processDebugResources
+:debugdrawer-glide:processDebugResources
+:debugdrawer-logs:platformAttrExtractor
+:debugdrawer-location:processDebugResources
+:debugdrawer-network-quality:platformAttrExtractor
+:debugdrawer-logs:processDebugResources
+:debugdrawer-okhttp3:platformAttrExtractor
+:debugdrawer-network-quality:processDebugResources
+:debugdrawer-picasso:platformAttrExtractor
+:debugdrawer-okhttp3:processDebugResources
+:debugdrawer-scalpel:platformAttrExtractor
+:debugdrawer-picasso:processDebugResources
+:debugdrawer-timber:platformAttrExtractor
+:debugdrawer:generateDebugBuildConfig
+:debugdrawer:prepareLintJar
+:debugdrawer-scalpel:processDebugResources
+:debugdrawer:generateDebugSources
+:debugdrawer-base:generateDebugBuildConfig
+:debugdrawer-base:prepareLintJar
+:debugdrawer-base:generateDebugSources
+:debugdrawer-base:javaPreCompileDebug
+:debugdrawer-base:compileDebugJavaWithJavac
+:debugdrawer-base:processDebugJavaRes NO-SOURCE
+:debugdrawer-base:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-view:generateDebugBuildConfig
+:debugdrawer-view:prepareLintJar
+:debugdrawer-view:generateDebugSources
+:debugdrawer-view:javaPreCompileDebug
+:debugdrawer-view:compileDebugJavaWithJavacNote: /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-view/src/main/java/io/palaima/debugdrawer/view/DebugView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer-view:processDebugJavaRes NO-SOURCE
+:debugdrawer-view:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer:javaPreCompileDebug
+:debugdrawer:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer:processDebugJavaRes NO-SOURCE
+:debugdrawer:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-actions:processDebugResources
+:debugdrawer-actions:generateDebugBuildConfig
+:debugdrawer-actions:prepareLintJar
+:debugdrawer-actions:generateDebugSources
+:debugdrawer-actions:javaPreCompileDebug
+:debugdrawer-actions:compileDebugJavaWithJavacNote: /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/src/main/java/io/palaima/debugdrawer/actions/ActionsModule.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer-actions:processDebugJavaRes NO-SOURCE
+:debugdrawer-actions:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-commons:generateDebugBuildConfig
+:debugdrawer-commons:prepareLintJar
+:debugdrawer-commons:generateDebugSources
+:debugdrawer-commons:javaPreCompileDebug
+:debugdrawer-commons:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/src/main/java/io/palaima/debugdrawer/commons/NetworkModule.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:debugdrawer-commons:processDebugJavaRes NO-SOURCE
+:debugdrawer-commons:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-fps:generateDebugBuildConfig
+:debugdrawer-fps:prepareLintJar
+:debugdrawer-fps:generateDebugSources
+:debugdrawer-fps:javaPreCompileDebug
+:debugdrawer-fps:compileDebugJavaWithJavac
+:debugdrawer-fps:processDebugJavaRes NO-SOURCE
+:debugdrawer-fps:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-glide:generateDebugBuildConfig
+:debugdrawer-glide:prepareLintJar
+:debugdrawer-glide:generateDebugSources
+:debugdrawer-glide:javaPreCompileDebug
+:debugdrawer-timber:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:debugdrawer-glide:compileDebugJavaWithJavac
+:debugdrawer-glide:processDebugJavaRes NO-SOURCE
+:debugdrawer-glide:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-location:generateDebugBuildConfig
+:debugdrawer-location:prepareLintJar
+:debugdrawer-location:generateDebugSources
+:debugdrawer-location:javaPreCompileDebug
+:debugdrawer-location:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer-location:processDebugJavaRes NO-SOURCE
+:debugdrawer-location:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-logs:generateDebugBuildConfig
+:debugdrawer-logs:prepareLintJar
+:debugdrawer-logs:generateDebugSources
+:debugdrawer-logs:javaPreCompileDebug
+:debugdrawer-logs:compileDebugJavaWithJavac
+:debugdrawer-logs:processDebugJavaRes NO-SOURCE
+:debugdrawer-logs:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-network-quality:generateDebugBuildConfig
+:debugdrawer-network-quality:prepareLintJar
+:debugdrawer-network-quality:generateDebugSources
+:debugdrawer-network-quality:javaPreCompileDebug
+:debugdrawer-network-quality:compileDebugJavaWithJavac
+:debugdrawer-network-quality:processDebugJavaRes NO-SOURCE
+:debugdrawer-network-quality:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-okhttp3:generateDebugBuildConfig
+:debugdrawer-okhttp3:prepareLintJar
+:debugdrawer-okhttp3:generateDebugSources
+:debugdrawer-okhttp3:javaPreCompileDebug
+:debugdrawer-okhttp3:compileDebugJavaWithJavac
+:debugdrawer-okhttp3:processDebugJavaRes NO-SOURCE
+:debugdrawer-okhttp3:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-picasso:generateDebugBuildConfig
+:debugdrawer-picasso:prepareLintJar
+:debugdrawer-picasso:generateDebugSources
+:debugdrawer-picasso:javaPreCompileDebug
+:debugdrawer-picasso:compileDebugJavaWithJavac
+:debugdrawer-picasso:processDebugJavaRes NO-SOURCE
+:debugdrawer-picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-scalpel:generateDebugBuildConfig
+:debugdrawer-scalpel:prepareLintJar
+:debugdrawer-scalpel:generateDebugSources
+:debugdrawer-scalpel:javaPreCompileDebug
+:debugdrawer-scalpel:compileDebugJavaWithJavac
+:debugdrawer-scalpel:processDebugJavaRes NO-SOURCE
+:debugdrawer-scalpel:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:debugdrawer-timber:generateDebugBuildConfig
+:debugdrawer-timber:prepareLintJar
+:debugdrawer-timber:generateDebugSources
+:debugdrawer-timber:javaPreCompileDebug
+:debugdrawer-timber:compileDebugJavaWithJavac
+:debugdrawer-timber:processDebugJavaRes NO-SOURCE
+:debugdrawer-timber:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:debugdrawer:mergeDebugShaders
+:debugdrawer:compileDebugShaders
+:debugdrawer:generateDebugAssets
+:debugdrawer:mergeDebugAssets
+:debugdrawer-actions:mergeDebugShaders
+:debugdrawer-actions:compileDebugShaders
+:debugdrawer-actions:generateDebugAssets
+:debugdrawer-actions:mergeDebugAssets
+:debugdrawer-base:mergeDebugShaders
+:debugdrawer-base:compileDebugShaders
+:debugdrawer-base:generateDebugAssets
+:debugdrawer-base:mergeDebugAssets
+:debugdrawer-commons:mergeDebugShaders
+:debugdrawer-commons:compileDebugShaders
+:debugdrawer-commons:generateDebugAssets
+:debugdrawer-commons:mergeDebugAssets
+:debugdrawer-fps:mergeDebugShaders
+:debugdrawer-fps:compileDebugShaders
+:debugdrawer-fps:generateDebugAssets
+:debugdrawer-fps:mergeDebugAssets
+:debugdrawer-glide:mergeDebugShaders
+:debugdrawer-glide:compileDebugShaders
+:debugdrawer-glide:generateDebugAssets
+:debugdrawer-glide:mergeDebugAssets
+:debugdrawer-location:mergeDebugShaders
+:debugdrawer-location:compileDebugShaders
+:debugdrawer-location:generateDebugAssets
+:debugdrawer-location:mergeDebugAssets
+:debugdrawer-logs:mergeDebugShaders
+:debugdrawer-logs:compileDebugShaders
+:debugdrawer-logs:generateDebugAssets
+:debugdrawer-logs:mergeDebugAssets
+:debugdrawer-network-quality:mergeDebugShaders
+:debugdrawer-network-quality:compileDebugShaders
+:debugdrawer-network-quality:generateDebugAssets
+:debugdrawer-network-quality:mergeDebugAssets
+:debugdrawer-okhttp3:mergeDebugShaders
+:debugdrawer-okhttp3:compileDebugShaders
+:debugdrawer-okhttp3:generateDebugAssets
+:debugdrawer-okhttp3:mergeDebugAssets
+:debugdrawer-picasso:mergeDebugShaders
+:debugdrawer-picasso:compileDebugShaders
+:debugdrawer-picasso:generateDebugAssets
+:debugdrawer-picasso:mergeDebugAssets
+:debugdrawer-scalpel:mergeDebugShaders
+:debugdrawer-scalpel:compileDebugShaders
+:debugdrawer-scalpel:generateDebugAssets
+:debugdrawer-scalpel:mergeDebugAssets
+:debugdrawer-timber:mergeDebugShaders
+:debugdrawer-timber:compileDebugShaders
+:debugdrawer-timber:generateDebugAssets
+:debugdrawer-timber:mergeDebugAssets
+:debugdrawer-view:mergeDebugShaders
+:debugdrawer-view:compileDebugShaders
+:debugdrawer-view:generateDebugAssets
+:debugdrawer-view:mergeDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexBuilderForDebug
+:app:transformClassesWithMultidexlistForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders
+:debugdrawer:compileDebugNdk NO-SOURCE
+:debugdrawer:mergeDebugJniLibFolders
+:debugdrawer:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-actions:compileDebugNdk NO-SOURCE
+:debugdrawer-actions:mergeDebugJniLibFolders
+:debugdrawer-actions:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-actions:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-actions:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-base:compileDebugNdk NO-SOURCE
+:debugdrawer-base:mergeDebugJniLibFolders
+:debugdrawer-base:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-base:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-base:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-commons:compileDebugNdk NO-SOURCE
+:debugdrawer-commons:mergeDebugJniLibFolders
+:debugdrawer-commons:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-commons:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-commons:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-fps:compileDebugNdk NO-SOURCE
+:debugdrawer-fps:mergeDebugJniLibFolders
+:debugdrawer-fps:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-fps:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-fps:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-glide:compileDebugNdk NO-SOURCE
+:debugdrawer-glide:mergeDebugJniLibFolders
+:debugdrawer-glide:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-glide:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-glide:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-location:compileDebugNdk NO-SOURCE
+:debugdrawer-location:mergeDebugJniLibFolders
+:debugdrawer-location:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-location:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-location:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-logs:compileDebugNdk NO-SOURCE
+:debugdrawer-logs:mergeDebugJniLibFolders
+:debugdrawer-logs:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-logs:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-logs:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-network-quality:compileDebugNdk NO-SOURCE
+:debugdrawer-network-quality:mergeDebugJniLibFolders
+:debugdrawer-network-quality:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-network-quality:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-network-quality:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-okhttp3:compileDebugNdk NO-SOURCE
+:debugdrawer-okhttp3:mergeDebugJniLibFolders
+:debugdrawer-okhttp3:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-okhttp3:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-okhttp3:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-picasso:compileDebugNdk NO-SOURCE
+:debugdrawer-picasso:mergeDebugJniLibFolders
+:debugdrawer-picasso:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-picasso:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-picasso:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-scalpel:compileDebugNdk NO-SOURCE
+:debugdrawer-scalpel:mergeDebugJniLibFolders
+:debugdrawer-scalpel:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-scalpel:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-scalpel:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-timber:compileDebugNdk NO-SOURCE
+:debugdrawer-timber:mergeDebugJniLibFolders
+:debugdrawer-timber:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-timber:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-timber:transformNativeLibsWithIntermediateJniLibsForDebug
+:debugdrawer-view:compileDebugNdk NO-SOURCE
+:debugdrawer-view:mergeDebugJniLibFolders
+:debugdrawer-view:transformNativeLibsWithMergeJniLibsForDebug
+:debugdrawer-view:transformNativeLibsWithStripDebugSymbolForDebug
+:debugdrawer-view:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:debugdrawer-actions:preReleaseBuild UP-TO-DATE
+:debugdrawer-actions:checkReleaseManifest
+:debugdrawer-actions:processReleaseManifest
+:debugdrawer-base:preReleaseBuild UP-TO-DATE
+:debugdrawer-base:checkReleaseManifest
+:debugdrawer-base:processReleaseManifest
+:debugdrawer-commons:preReleaseBuild UP-TO-DATE
+:debugdrawer-commons:checkReleaseManifest
+:debugdrawer-commons:processReleaseManifest
+:debugdrawer-fps:preReleaseBuild UP-TO-DATE
+:debugdrawer-fps:checkReleaseManifest
+:debugdrawer-fps:processReleaseManifest
+:debugdrawer-glide:preReleaseBuild UP-TO-DATE
+:debugdrawer-glide:checkReleaseManifest
+:debugdrawer-glide:processReleaseManifest
+:debugdrawer-location:preReleaseBuild UP-TO-DATE
+:debugdrawer-location:checkReleaseManifest
+:debugdrawer-location:processReleaseManifest
+:debugdrawer-logs:preReleaseBuild UP-TO-DATE
+:debugdrawer-logs:checkReleaseManifest
+:debugdrawer-logs:processReleaseManifest
+:debugdrawer-network-quality:preReleaseBuild UP-TO-DATE
+:debugdrawer-network-quality:checkReleaseManifest
+:debugdrawer-network-quality:processReleaseManifest
+:debugdrawer-no-op:preBuild UP-TO-DATE
+:debugdrawer-no-op:preReleaseBuild UP-TO-DATE
+:debugdrawer-no-op:checkReleaseManifest
+:debugdrawer-no-op:processReleaseManifest
+:debugdrawer-okhttp3:preReleaseBuild UP-TO-DATE
+:debugdrawer-okhttp3:checkReleaseManifest
+:debugdrawer-okhttp3:processReleaseManifest
+:debugdrawer-picasso:preReleaseBuild UP-TO-DATE
+:debugdrawer-picasso:checkReleaseManifest
+:debugdrawer-picasso:processReleaseManifest
+:debugdrawer-scalpel:preReleaseBuild UP-TO-DATE
+:debugdrawer-scalpel:checkReleaseManifest
+:debugdrawer-scalpel:processReleaseManifest
+:debugdrawer-timber:preReleaseBuild UP-TO-DATE
+:debugdrawer-timber:checkReleaseManifest
+:debugdrawer-timber:processReleaseManifest
+:debugdrawer-view-no-op:preBuild UP-TO-DATE
+:debugdrawer-view-no-op:preReleaseBuild UP-TO-DATE
+:debugdrawer-view-no-op:checkReleaseManifest
+:debugdrawer-view-no-op:processReleaseManifest
+:app:preReleaseBuild
+:debugdrawer-base:compileReleaseAidl
+:debugdrawer-actions:compileReleaseAidl
+:debugdrawer-commons:compileReleaseAidl
+:debugdrawer-fps:compileReleaseAidl
+:debugdrawer-glide:compileReleaseAidl
+:debugdrawer-location:compileReleaseAidl
+:debugdrawer-logs:compileReleaseAidl
+:debugdrawer-network-quality:compileReleaseAidl
+:debugdrawer-no-op:compileReleaseAidl
+:debugdrawer-okhttp3:compileReleaseAidl
+:debugdrawer-picasso:compileReleaseAidl
+:debugdrawer-scalpel:compileReleaseAidl
+:debugdrawer-timber:compileReleaseAidl
+:debugdrawer-view-no-op:compileReleaseAidl
+:app:compileReleaseAidl
+:debugdrawer-actions:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-base:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-commons:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-fps:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-glide:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-location:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-logs:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-network-quality:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-no-op:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-okhttp3:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-picasso:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-scalpel:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-timber:packageReleaseRenderscript NO-SOURCE
+:debugdrawer-view-no-op:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:debugdrawer-actions:compileReleaseRenderscript
+:debugdrawer-actions:generateReleaseResValues
+:debugdrawer-actions:generateReleaseResources
+:debugdrawer-actions:packageReleaseResources
+:debugdrawer-base:compileReleaseRenderscript
+:debugdrawer-base:generateReleaseResValues
+:debugdrawer-base:generateReleaseResources
+:debugdrawer-base:packageReleaseResources
+:debugdrawer-commons:compileReleaseRenderscript
+:debugdrawer-commons:generateReleaseResValues
+:debugdrawer-commons:generateReleaseResources
+:debugdrawer-commons:packageReleaseResources
+:debugdrawer-fps:compileReleaseRenderscript
+:debugdrawer-fps:generateReleaseResValues
+:debugdrawer-fps:generateReleaseResources
+:debugdrawer-fps:packageReleaseResources
+:debugdrawer-glide:compileReleaseRenderscript
+:debugdrawer-glide:generateReleaseResValues
+:debugdrawer-glide:generateReleaseResources
+:debugdrawer-glide:packageReleaseResources
+:debugdrawer-location:compileReleaseRenderscript
+:debugdrawer-location:generateReleaseResValues
+:debugdrawer-location:generateReleaseResources
+:debugdrawer-location:packageReleaseResources
+:debugdrawer-logs:compileReleaseRenderscript
+:debugdrawer-logs:generateReleaseResValues
+:debugdrawer-logs:generateReleaseResources
+:debugdrawer-logs:packageReleaseResources
+:debugdrawer-network-quality:compileReleaseRenderscript
+:debugdrawer-network-quality:generateReleaseResValues
+:debugdrawer-network-quality:generateReleaseResources
+:debugdrawer-network-quality:packageReleaseResources
+:debugdrawer-no-op:compileReleaseRenderscript
+:debugdrawer-no-op:generateReleaseResValues
+:debugdrawer-no-op:generateReleaseResources
+:debugdrawer-no-op:packageReleaseResources
+:debugdrawer-okhttp3:compileReleaseRenderscript
+:debugdrawer-okhttp3:generateReleaseResValues
+:debugdrawer-okhttp3:generateReleaseResources
+:debugdrawer-okhttp3:packageReleaseResources
+:debugdrawer-picasso:compileReleaseRenderscript
+:debugdrawer-picasso:generateReleaseResValues
+:debugdrawer-picasso:generateReleaseResources
+:debugdrawer-picasso:packageReleaseResources
+:debugdrawer-scalpel:compileReleaseRenderscript
+:debugdrawer-scalpel:generateReleaseResValues
+:debugdrawer-scalpel:generateReleaseResources
+:debugdrawer-scalpel:packageReleaseResources
+:debugdrawer-timber:compileReleaseRenderscript
+:debugdrawer-timber:generateReleaseResValues
+:debugdrawer-timber:generateReleaseResources
+:debugdrawer-timber:packageReleaseResources
+:debugdrawer-view-no-op:compileReleaseRenderscript
+:debugdrawer-view-no-op:generateReleaseResValues
+:debugdrawer-view-no-op:generateReleaseResources
+:debugdrawer-view-no-op:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:debugdrawer-base:processReleaseResources
+:debugdrawer-actions:processReleaseResources
+:debugdrawer-commons:processReleaseResources
+:debugdrawer-fps:processReleaseResources
+:debugdrawer-glide:processReleaseResources
+:debugdrawer-location:processReleaseResources
+:debugdrawer-logs:processReleaseResources
+:debugdrawer-network-quality:processReleaseResources
+:debugdrawer-no-op:platformAttrExtractor
+:debugdrawer-okhttp3:processReleaseResources
+:debugdrawer-picasso:processReleaseResources
+:debugdrawer-scalpel:processReleaseResources
+:debugdrawer-timber:processReleaseResources
+:debugdrawer-view-no-op:platformAttrExtractor
+:debugdrawer-no-op:processReleaseResources
+:debugdrawer-actions:generateReleaseBuildConfig
+:debugdrawer-actions:generateReleaseSources
+:debugdrawer-base:generateReleaseBuildConfig
+:debugdrawer-base:generateReleaseSources
+:debugdrawer-base:javaPreCompileRelease
+:debugdrawer-base:compileReleaseJavaWithJavac
+:debugdrawer-base:processReleaseJavaRes NO-SOURCE
+:debugdrawer-base:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-actions:javaPreCompileRelease
+:debugdrawer-actions:compileReleaseJavaWithJavacNote: /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-actions/src/main/java/io/palaima/debugdrawer/actions/ActionsModule.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer-actions:processReleaseJavaRes NO-SOURCE
+:debugdrawer-actions:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-commons:generateReleaseBuildConfig
+:debugdrawer-commons:generateReleaseSources
+:debugdrawer-commons:javaPreCompileRelease
+:debugdrawer-commons:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1892/src/DebugDrawer-master/debugdrawer-commons/src/main/java/io/palaima/debugdrawer/commons/NetworkModule.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:debugdrawer-commons:processReleaseJavaRes NO-SOURCE
+:debugdrawer-commons:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-fps:generateReleaseBuildConfig
+:debugdrawer-fps:generateReleaseSources
+:debugdrawer-fps:javaPreCompileRelease
+:debugdrawer-view-no-op:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:debugdrawer-fps:compileReleaseJavaWithJavac
+:debugdrawer-fps:processReleaseJavaRes NO-SOURCE
+:debugdrawer-fps:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-glide:generateReleaseBuildConfig
+:debugdrawer-glide:generateReleaseSources
+:debugdrawer-glide:javaPreCompileRelease
+:debugdrawer-glide:compileReleaseJavaWithJavac
+:debugdrawer-glide:processReleaseJavaRes NO-SOURCE
+:debugdrawer-glide:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-location:generateReleaseBuildConfig
+:debugdrawer-location:generateReleaseSources
+:debugdrawer-location:javaPreCompileRelease
+:debugdrawer-location:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer-location:processReleaseJavaRes NO-SOURCE
+:debugdrawer-location:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-logs:generateReleaseBuildConfig
+:debugdrawer-logs:generateReleaseSources
+:debugdrawer-logs:javaPreCompileRelease
+:debugdrawer-logs:compileReleaseJavaWithJavac
+:debugdrawer-logs:processReleaseJavaRes NO-SOURCE
+:debugdrawer-logs:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-network-quality:generateReleaseBuildConfig
+:debugdrawer-network-quality:generateReleaseSources
+:debugdrawer-network-quality:javaPreCompileRelease
+:debugdrawer-network-quality:compileReleaseJavaWithJavac
+:debugdrawer-network-quality:processReleaseJavaRes NO-SOURCE
+:debugdrawer-network-quality:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-no-op:generateReleaseBuildConfig
+:debugdrawer-no-op:prepareLintJar
+:debugdrawer-no-op:generateReleaseSources
+:debugdrawer-no-op:javaPreCompileRelease
+:debugdrawer-no-op:compileReleaseJavaWithJavac
+:debugdrawer-no-op:processReleaseJavaRes NO-SOURCE
+:debugdrawer-no-op:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-okhttp3:generateReleaseBuildConfig
+:debugdrawer-okhttp3:generateReleaseSources
+:debugdrawer-okhttp3:javaPreCompileRelease
+:debugdrawer-okhttp3:compileReleaseJavaWithJavac
+:debugdrawer-okhttp3:processReleaseJavaRes NO-SOURCE
+:debugdrawer-okhttp3:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-picasso:generateReleaseBuildConfig
+:debugdrawer-picasso:generateReleaseSources
+:debugdrawer-picasso:javaPreCompileRelease
+:debugdrawer-picasso:compileReleaseJavaWithJavac
+:debugdrawer-picasso:processReleaseJavaRes NO-SOURCE
+:debugdrawer-picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-scalpel:generateReleaseBuildConfig
+:debugdrawer-scalpel:generateReleaseSources
+:debugdrawer-scalpel:javaPreCompileRelease
+:debugdrawer-scalpel:compileReleaseJavaWithJavac
+:debugdrawer-scalpel:processReleaseJavaRes NO-SOURCE
+:debugdrawer-scalpel:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-timber:generateReleaseBuildConfig
+:debugdrawer-timber:generateReleaseSources
+:debugdrawer-timber:javaPreCompileRelease
+:debugdrawer-timber:compileReleaseJavaWithJavac
+:debugdrawer-timber:processReleaseJavaRes NO-SOURCE
+:debugdrawer-timber:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:debugdrawer-view-no-op:generateReleaseBuildConfig
+:debugdrawer-view-no-op:prepareLintJar
+:debugdrawer-view-no-op:generateReleaseSources
+:debugdrawer-view-no-op:javaPreCompileRelease
+:debugdrawer-view-no-op:compileReleaseJavaWithJavac
+:debugdrawer-view-no-op:processReleaseJavaRes NO-SOURCE
+:debugdrawer-view-no-op:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:debugdrawer-actions:mergeReleaseShaders
+:debugdrawer-actions:compileReleaseShaders
+:debugdrawer-actions:generateReleaseAssets
+:debugdrawer-actions:mergeReleaseAssets
+:debugdrawer-base:mergeReleaseShaders
+:debugdrawer-base:compileReleaseShaders
+:debugdrawer-base:generateReleaseAssets
+:debugdrawer-base:mergeReleaseAssets
+:debugdrawer-commons:mergeReleaseShaders
+:debugdrawer-commons:compileReleaseShaders
+:debugdrawer-commons:generateReleaseAssets
+:debugdrawer-commons:mergeReleaseAssets
+:debugdrawer-fps:mergeReleaseShaders
+:debugdrawer-fps:compileReleaseShaders
+:debugdrawer-fps:generateReleaseAssets
+:debugdrawer-fps:mergeReleaseAssets
+:debugdrawer-glide:mergeReleaseShaders
+:debugdrawer-glide:compileReleaseShaders
+:debugdrawer-glide:generateReleaseAssets
+:debugdrawer-glide:mergeReleaseAssets
+:debugdrawer-location:mergeReleaseShaders
+:debugdrawer-location:compileReleaseShaders
+:debugdrawer-location:generateReleaseAssets
+:debugdrawer-location:mergeReleaseAssets
+:debugdrawer-logs:mergeReleaseShaders
+:debugdrawer-logs:compileReleaseShaders
+:debugdrawer-logs:generateReleaseAssets
+:debugdrawer-logs:mergeReleaseAssets
+:debugdrawer-network-quality:mergeReleaseShaders
+:debugdrawer-network-quality:compileReleaseShaders
+:debugdrawer-network-quality:generateReleaseAssets
+:debugdrawer-network-quality:mergeReleaseAssets
+:debugdrawer-no-op:mergeReleaseShaders
+:debugdrawer-no-op:compileReleaseShaders
+:debugdrawer-no-op:generateReleaseAssets
+:debugdrawer-no-op:mergeReleaseAssets
+:debugdrawer-okhttp3:mergeReleaseShaders
+:debugdrawer-okhttp3:compileReleaseShaders
+:debugdrawer-okhttp3:generateReleaseAssets
+:debugdrawer-okhttp3:mergeReleaseAssets
+:debugdrawer-picasso:mergeReleaseShaders
+:debugdrawer-picasso:compileReleaseShaders
+:debugdrawer-picasso:generateReleaseAssets
+:debugdrawer-picasso:mergeReleaseAssets
+:debugdrawer-scalpel:mergeReleaseShaders
+:debugdrawer-scalpel:compileReleaseShaders
+:debugdrawer-scalpel:generateReleaseAssets
+:debugdrawer-scalpel:mergeReleaseAssets
+:debugdrawer-timber:mergeReleaseShaders
+:debugdrawer-timber:compileReleaseShaders
+:debugdrawer-timber:generateReleaseAssets
+:debugdrawer-timber:mergeReleaseAssets
+:debugdrawer-view-no-op:mergeReleaseShaders
+:debugdrawer-view-no-op:compileReleaseShaders
+:debugdrawer-view-no-op:generateReleaseAssets
+:debugdrawer-view-no-op:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithJarMergingForRelease
+:app:transformClassesWithMultidexlistForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:debugdrawer-actions:compileReleaseNdk NO-SOURCE
+:debugdrawer-actions:mergeReleaseJniLibFolders
+:debugdrawer-actions:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-actions:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-actions:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-base:compileReleaseNdk NO-SOURCE
+:debugdrawer-base:mergeReleaseJniLibFolders
+:debugdrawer-base:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-base:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-base:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-commons:compileReleaseNdk NO-SOURCE
+:debugdrawer-commons:mergeReleaseJniLibFolders
+:debugdrawer-commons:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-commons:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-commons:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-fps:compileReleaseNdk NO-SOURCE
+:debugdrawer-fps:mergeReleaseJniLibFolders
+:debugdrawer-fps:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-fps:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-fps:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-glide:compileReleaseNdk NO-SOURCE
+:debugdrawer-glide:mergeReleaseJniLibFolders
+:debugdrawer-glide:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-glide:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-glide:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-location:compileReleaseNdk NO-SOURCE
+:debugdrawer-location:mergeReleaseJniLibFolders
+:debugdrawer-location:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-location:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-location:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-logs:compileReleaseNdk NO-SOURCE
+:debugdrawer-logs:mergeReleaseJniLibFolders
+:debugdrawer-logs:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-logs:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-logs:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-network-quality:compileReleaseNdk NO-SOURCE
+:debugdrawer-network-quality:mergeReleaseJniLibFolders
+:debugdrawer-network-quality:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-network-quality:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-network-quality:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-no-op:compileReleaseNdk NO-SOURCE
+:debugdrawer-no-op:mergeReleaseJniLibFolders
+:debugdrawer-no-op:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-no-op:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-no-op:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-okhttp3:compileReleaseNdk NO-SOURCE
+:debugdrawer-okhttp3:mergeReleaseJniLibFolders
+:debugdrawer-okhttp3:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-okhttp3:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-okhttp3:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-picasso:compileReleaseNdk NO-SOURCE
+:debugdrawer-picasso:mergeReleaseJniLibFolders
+:debugdrawer-picasso:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-picasso:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-picasso:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-scalpel:compileReleaseNdk NO-SOURCE
+:debugdrawer-scalpel:mergeReleaseJniLibFolders
+:debugdrawer-scalpel:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-scalpel:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-scalpel:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-timber:compileReleaseNdk NO-SOURCE
+:debugdrawer-timber:mergeReleaseJniLibFolders
+:debugdrawer-timber:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-timber:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-timber:transformNativeLibsWithIntermediateJniLibsForRelease
+:debugdrawer-view-no-op:compileReleaseNdk NO-SOURCE
+:debugdrawer-view-no-op:mergeReleaseJniLibFolders
+:debugdrawer-view-no-op:transformNativeLibsWithMergeJniLibsForRelease
+:debugdrawer-view-no-op:transformNativeLibsWithStripDebugSymbolForRelease
+:debugdrawer-view-no-op:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 1m 32s
+587 actionable tasks: 587 executed
+
+2018-05-11 11:51:04,137 INFO  FullProcessService - Found APK file: /tmp/rdisk/1892/src/DebugDrawer-master/app/build/outputs/apk/debug/app-debug.apk

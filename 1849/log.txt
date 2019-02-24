@@ -1,0 +1,22 @@
+2018-04-04 08:25:03,992 INFO  DownloadService - Downloading "https://github.com/FireZenk/FireZenk-s-TickerText/archive/master.zip", attempt 3
+2018-04-04 08:26:04,649 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 08:26:05,530 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 08:26:05,530 INFO  DownloadService - Downloading "https://github.com/FireZenk/FireZenk-s-TickerText/archive/master.zip", attempt 3
+2018-04-04 08:27:06,688 DEBUG FullProcessService - Repository https://github.com/FireZenk/FireZenk-s-TickerText available: true
+2018-04-04 08:27:06,688 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 08:27:06,688 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/FireZenk/FireZenk-s-TickerText, /tmp/rdisk/1849/src]
+2018-04-04 08:27:12,844 INFO  SysUtils - 
+2018-04-04 08:27:12,857 INFO  GitService - Deleted "/tmp/rdisk/1849/src/.git": true
+2018-04-04 08:27:12,859 INFO  FullProcessService - Size of directory with sources: 878 KB
+2018-04-04 08:27:12,859 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1849/src]
+2018-04-04 08:27:12,872 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1849/src/.git/
+
+2018-04-04 08:27:12,875 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 08:27:12,875 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 08:27:12,877 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 08:27:12,879 INFO  ProjectBuildService - All script(s): none
+2018-04-04 08:27:12,879 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 08:27:12,879 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 08:27:12,879 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 08:27:12,881 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/1849/src/bin/FireZenk TickerText.apk
+2018-04-04 08:27:12,881 INFO  FullProcessService - Found APK file: /tmp/rdisk/1849/src/bin/FireZenk TickerText.apk

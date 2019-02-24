@@ -1,0 +1,127 @@
+2018-04-04 14:44:32,349 INFO  DownloadService - Downloading "https://github.com/slim-gears/slimrepo/archive/master.zip", attempt 3
+2018-04-04 14:44:33,416 INFO  DownloadService - Downloaded https://github.com/slim-gears/slimrepo/archive/master.zip, attempt 3
+2018-04-04 14:44:33,416 INFO  DownloadService - Size of file "/tmp/rdisk/1778/master.zip": 421 KB
+2018-04-04 14:44:33,416 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:44:33,417 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1778/master.zip: true
+2018-04-04 14:44:33,417 DEBUG ZipUtil - Extracting '/tmp/rdisk/1778/master.zip' into '/tmp/rdisk/1778/src'.
+2018-04-04 14:44:33,457 INFO  FullProcessService - Size of directory with sources: 681 KB
+2018-04-04 14:44:33,457 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1778/src]
+2018-04-04 14:44:33,462 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1778/src/.git/
+
+2018-04-04 14:44:33,469 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1778/src/slimrepo-master/gradlew
+2018-04-04 14:44:33,476 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build.gradle /tmp/rdisk/1778/src/slimrepo-master/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-android/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-apt/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-core/build.gradle
+2018-04-04 14:44:33,482 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1778/src/slimrepo-master/versions.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-core/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-apt/build.gradle /tmp/rdisk/1778/src/slimrepo-master/slimrepo-android/build.gradle /tmp/rdisk/1778/src/slimrepo-master/settings.gradle /tmp/rdisk/1778/src/slimrepo-master/build.gradle
+2018-04-04 14:44:33,483 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 14:44:33,483 INFO  ProjectFixService - Fixing project...
+2018-04-04 14:44:33,498 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/local.properties
+2018-04-04 14:44:33,498 INFO  ProjectFixService - Build info for "/tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-04 14:44:33,499 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1778/src/slimrepo-master/local.properties
+2018-04-04 14:44:33,499 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-04 14:44:33,499 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-04 14:44:33,500 INFO  ProjectFixService - Build info for "/tmp/rdisk/1778/src/slimrepo-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=4,targetSdkVersion=23]
+2018-04-04 14:44:33,500 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1778/src/slimrepo-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-04 14:44:33,501 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1778/src/slimrepo-master/slimrepo-android/local.properties
+2018-04-04 14:44:33,502 INFO  ProjectFixService - Build info for "/tmp/rdisk/1778/src/slimrepo-master/slimrepo-android/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-04 14:44:33,502 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1778/src/slimrepo-master/slimrepo-apt/local.properties
+2018-04-04 14:44:33,503 INFO  ProjectFixService - Build info for "/tmp/rdisk/1778/src/slimrepo-master/slimrepo-apt/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-04 14:44:33,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1778/src/slimrepo-master/slimrepo-core/local.properties
+2018-04-04 14:44:33,505 INFO  ProjectFixService - Build info for "/tmp/rdisk/1778/src/slimrepo-master/slimrepo-core/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-04 14:44:33,505 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 14:44:33,505 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:44:33,505 INFO  SysUtils - Execute command: [/tmp/rdisk/1778/src/slimrepo-master/gradlew, -b, /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:45:28,344 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 14:45:28,344 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 14:45:28,344 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 14:45:28,345 INFO  SysUtils - Execute command: [/tmp/rdisk/1778/src/slimrepo-master/gradlew, -b, /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 14:46:06,735 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:slimrepo-example:preBuild UP-TO-DATE
+:slimrepo-example:preDebugBuild UP-TO-DATE
+:slimrepo-example:checkDebugManifest
+:slimrepo-example:preReleaseBuild UP-TO-DATE
+:slimrepo-example:prepareComSlimgearsSlimrepoSlimrepoAndroid0916Library
+:slimrepo-example:prepareDebugDependencies
+:slimrepo-example:compileDebugAidl
+:slimrepo-example:compileDebugRenderscript
+:slimrepo-example:generateDebugBuildConfig
+:slimrepo-example:generateDebugAssets UP-TO-DATE
+:slimrepo-example:mergeDebugAssets
+:slimrepo-example:generateDebugResValues
+:slimrepo-example:generateDebugResources
+:slimrepo-example:mergeDebugResources
+:slimrepo-example:processDebugManifest
+:slimrepo-example:processDebugResources
+:slimrepo-example:generateDebugSources
+:slimrepo-example:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:slimrepo-example:compileDebugNdk UP-TO-DATE
+:slimrepo-example:compileDebugSources
+:slimrepo-example:prePackageMarkerForDebug
+:slimrepo-example:transformClassesWithDexForDebug
+:slimrepo-example:mergeDebugJniLibFolders
+:slimrepo-example:transformNative_libsWithMergeJniLibsForDebug
+:slimrepo-example:processDebugJavaRes UP-TO-DATE
+:slimrepo-example:transformResourcesWithMergeJavaResForDebug
+:slimrepo-example:validateDebugSigning
+:slimrepo-example:packageDebug
+:slimrepo-example:zipalignDebug
+:slimrepo-example:assembleDebug
+:slimrepo-example:checkReleaseManifest
+:slimrepo-example:prepareReleaseDependencies
+:slimrepo-example:compileReleaseAidl
+:slimrepo-example:compileReleaseRenderscript
+:slimrepo-example:generateReleaseBuildConfig
+:slimrepo-example:generateReleaseAssets UP-TO-DATE
+:slimrepo-example:mergeReleaseAssets
+:slimrepo-example:generateReleaseResValues
+:slimrepo-example:generateReleaseResources
+:slimrepo-example:mergeReleaseResources
+:slimrepo-example:processReleaseManifest
+:slimrepo-example:processReleaseResources
+:slimrepo-example:generateReleaseSources
+:slimrepo-example:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:slimrepo-example:compileReleaseNdk UP-TO-DATE
+:slimrepo-example:compileReleaseSources
+:slimrepo-example:prePackageMarkerForRelease
+:slimrepo-example:transformClassesWithDexForRelease
+:slimrepo-example:mergeReleaseJniLibFolders
+:slimrepo-example:transformNative_libsWithMergeJniLibsForRelease
+:slimrepo-example:processReleaseJavaRes UP-TO-DATE
+:slimrepo-example:transformResourcesWithMergeJavaResForRelease
+:slimrepo-example:packageRelease
+:slimrepo-example:assembleRelease
+:slimrepo-example:assemble
+:slimrepo-example:compileLint
+:slimrepo-example:lint
+Ran lint on variant debug: 8 issues found
+Ran lint on variant release: 8 issues found
+Wrote HTML report to file:///tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build/outputs/lint-results-debug.xml
+:slimrepo-example:preDebugUnitTestBuild UP-TO-DATE
+:slimrepo-example:prepareDebugUnitTestDependencies
+:slimrepo-example:compileDebugUnitTestJavaWithJavac
+:slimrepo-example:processDebugUnitTestJavaRes UP-TO-DATE
+:slimrepo-example:compileDebugUnitTestSources
+:slimrepo-example:mockableAndroidJar
+:slimrepo-example:assembleDebugUnitTest
+:slimrepo-example:testDebugUnitTest
+:slimrepo-example:preReleaseUnitTestBuild UP-TO-DATE
+:slimrepo-example:prepareReleaseUnitTestDependencies
+:slimrepo-example:compileReleaseUnitTestJavaWithJavac
+:slimrepo-example:processReleaseUnitTestJavaRes UP-TO-DATE
+:slimrepo-example:compileReleaseUnitTestSources
+:slimrepo-example:assembleReleaseUnitTest
+:slimrepo-example:testReleaseUnitTest
+:slimrepo-example:test
+:slimrepo-example:check
+:slimrepo-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.964 secs
+
+2018-04-04 14:46:06,753 INFO  FullProcessService - Found APK file: /tmp/rdisk/1778/src/slimrepo-master/slimrepo-example/build/outputs/apk/slimrepo-example-release-unsigned.apk

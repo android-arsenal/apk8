@@ -1,0 +1,207 @@
+2018-05-11 11:55:01,244 INFO  DownloadService - Downloading "https://github.com/wangjiegulu/RapidFloatingActionButton/archive/master.zip", attempt 3
+2018-05-11 11:55:01,976 INFO  DownloadService - Downloaded https://github.com/wangjiegulu/RapidFloatingActionButton/archive/master.zip, attempt 3
+2018-05-11 11:55:01,977 INFO  DownloadService - Size of file "/tmp/rdisk/1781/master.zip": 1 MB
+2018-05-11 11:55:01,977 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:55:01,977 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1781/master.zip: true
+2018-05-11 11:55:01,977 DEBUG ZipUtil - Extracting '/tmp/rdisk/1781/master.zip' into '/tmp/rdisk/1781/src'.
+2018-05-11 11:55:02,010 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 11:55:02,010 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1781/src]
+2018-05-11 11:55:02,015 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1781/src/.git/
+
+2018-05-11 11:55:02,019 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1781/src/RapidFloatingActionButton-master/gradlew
+2018-05-11 11:55:02,023 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/build.gradle /tmp/rdisk/1781/src/RapidFloatingActionButton-master/build.gradle
+2018-05-11 11:55:02,026 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1781/src/RapidFloatingActionButton-master/settings.gradle /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/build.gradle /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle /tmp/rdisk/1781/src/RapidFloatingActionButton-master/build.gradle
+2018-05-11 11:55:02,026 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:55:02,026 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:55:02,035 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/local.properties
+2018-05-11 11:55:02,037 INFO  ProjectFixService - Build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:02,037 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:02,038 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/local.properties
+2018-05-11 11:55:02,040 INFO  ProjectFixService - Build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:02,040 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:02,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1781/src/RapidFloatingActionButton-master/local.properties
+2018-05-11 11:55:02,041 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-11 11:55:02,041 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-11 11:55:02,044 INFO  ProjectFixService - Build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:02,044 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1781/src/RapidFloatingActionButton-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:02,044 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:55:02,044 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:55:02,044 INFO  SysUtils - Execute command: [/tmp/rdisk/1781/src/RapidFloatingActionButton-master/gradlew, -b, /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:55:10,109 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-05-11 11:55:10,110 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:55:10,110 INFO  SysUtils - Execute command: [/tmp/rdisk/1781/src/RapidFloatingActionButton-master/gradlew, -b, /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:55:43,726 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':example' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
++-----------------------------------------------------------------------------------+
+|                      Rapid Maven Property Inject START                            |
++-----------------------------------------------------------------------------------+
+[RapidMavenPushPlugin][INFO]RapidMavenPushType: local, Maven Property Files: [/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_common.properties, /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_local.properties]
+[RapidMavenPushPlugin][INFO]propertyInjectMode: replace
+[RapidMavenPushPlugin][INFO]--------- Inject POM properties file[/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_common.properties] START ---------
+[RapidMavenPushPlugin][ERROR]File not found[/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_common.properties].
+[RapidMavenPushPlugin][INFO]--------- Inject POM properties file[/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_local.properties] START ---------
+[RapidMavenPushPlugin][ERROR]File not found[/tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/mavenupload/maven_local.properties].
+[RapidMavenPushPlugin][INFO]Inject Maven Properties to ext Finished!
+[RapidMavenPushPlugin][INFO]Origin Packaging: null
+[RapidMavenPushPlugin][INFO]Parsed Packaging: aar
+[RapidMavenPushPlugin][ERROR][ERROR in 'RapidMavenPushTask']throwable: null
+:example:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:example:preDebugBuild
+:library:compileDebugAidl
+:example:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:example:compileDebugRenderscript
+:example:checkDebugManifest
+:example:generateDebugBuildConfig
+:example:prepareLintJar
+:example:generateDebugResValues
+:example:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:rapidMetaInfTask
++-----------------------------------------------------------------------------+
+|                      Rapid Meta Inf Plugin START                            |
++-----------------------------------------------------------------------------+
+
+META-INF properties generated in /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/build/generated/rapidmetainf/META-INF/RFAB.properties: 
+
+generateBy=RapidMetaInfPlugin
+pluginUrl=https://github.com/wangjiegulu/RapidMetaInfPlugin
+Archive-Name=
+Archive-Version=
+Archive-Url=
+Author=
+Author-Email=
+Gradle-Version=Gradle 4.1
+Build-OS=Linux
+Build-Java-Version=1.8.0_171
+X-Compile-Target=1.7
+X-Compile-Source=1.7
+
++-----------------------------------------------------------------------------+
+|                       Rapid Meta Inf Plugin END                             |
++-----------------------------------------------------------------------------+
+:library:generateDebugResources
+:library:packageDebugResources
+:example:mergeDebugResources
+:example:createDebugCompatibleScreenManifests
+:example:processDebugManifest
+:example:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes
+:library:processDebugResources
+:example:processDebugResources
+:example:generateDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/src/main/java/com/wangjie/rapidfloatingactionbutton/contentimpl/labellist/RapidFloatingActionContentLabelList.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:example:javaPreCompileDebug
+:example:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example:compileDebugNdk NO-SOURCE
+:example:compileDebugSources
+:example:mergeDebugShaders
+:example:compileDebugShaders
+:example:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:example:mergeDebugAssets
+:example:transformClassesWithDexBuilderForDebug
+:example:transformDexArchiveWithExternalLibsDexMergerForDebug
+:example:transformDexArchiveWithDexMergerForDebug
+:example:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:example:transformNativeLibsWithMergeJniLibsForDebug
+:example:transformNativeLibsWithStripDebugSymbolForDebug
+:example:processDebugJavaRes NO-SOURCE
+:example:transformResourcesWithMergeJavaResForDebug
+:example:validateSigningDebug
+:example:packageDebug
+:example:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:example:preReleaseBuild
+:library:compileReleaseAidl
+:example:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:example:compileReleaseRenderscript
+:example:checkReleaseManifest
+:example:generateReleaseBuildConfig
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:example:mergeReleaseResources
+:example:createReleaseCompatibleScreenManifests
+:example:processReleaseManifest
+:example:splitsDiscoveryTaskRelease
+:library:processReleaseResources
+:example:processReleaseResources
+:example:generateReleaseSources
+:library:generateReleaseBuildConfig
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1781/src/RapidFloatingActionButton-master/library/src/main/java/com/wangjie/rapidfloatingactionbutton/contentimpl/labellist/RapidFloatingActionContentLabelList.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:processReleaseJavaRes
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:example:javaPreCompileRelease
+:example:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example:compileReleaseNdk NO-SOURCE
+:example:compileReleaseSources
+:example:mergeReleaseShaders
+:example:compileReleaseShaders
+:example:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:example:mergeReleaseAssets
+:example:transformClassesWithPreDexForRelease
+:example:transformDexWithDexForRelease
+:example:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:example:transformNativeLibsWithMergeJniLibsForRelease
+:example:transformNativeLibsWithStripDebugSymbolForRelease
+:example:processReleaseJavaRes NO-SOURCE
+:example:transformResourcesWithMergeJavaResForRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL in 33s
+90 actionable tasks: 90 executed
+
+2018-05-11 11:55:43,784 INFO  FullProcessService - Found APK file: /tmp/rdisk/1781/src/RapidFloatingActionButton-master/example/build/outputs/apk/release/example-release-unsigned.apk

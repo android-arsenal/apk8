@@ -1,0 +1,207 @@
+2018-04-04 09:56:41,576 INFO  DownloadService - Downloading "https://github.com/nhaarman/SQLiteBuilder/archive/master.zip", attempt 3
+2018-04-04 09:57:42,198 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:57:43,035 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:57:43,036 INFO  DownloadService - Downloading "https://github.com/nhaarman/SQLiteBuilder/archive/master.zip", attempt 3
+2018-04-04 09:58:44,313 DEBUG FullProcessService - Repository https://github.com/nhaarman/SQLiteBuilder available: true
+2018-04-04 09:58:44,313 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:58:44,313 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nhaarman/SQLiteBuilder, /tmp/rdisk/1812/src]
+2018-04-04 09:58:46,424 INFO  SysUtils - 
+2018-04-04 09:58:46,429 INFO  GitService - Deleted "/tmp/rdisk/1812/src/.git": true
+2018-04-04 09:58:46,435 INFO  FullProcessService - Size of directory with sources: 380 KB
+2018-04-04 09:58:46,435 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1812/src]
+2018-04-04 09:58:46,444 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1812/src/.git/
+
+2018-04-04 09:58:46,449 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1812/src/gradlew
+2018-04-04 09:58:46,453 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle /tmp/rdisk/1812/src/build.gradle /tmp/rdisk/1812/src/sqlitebuilder/build.gradle
+2018-04-04 09:58:46,457 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1812/src/sqlitebuilder/build.gradle /tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle /tmp/rdisk/1812/src/settings.gradle /tmp/rdisk/1812/src/gradle/tagging.gradle /tmp/rdisk/1812/src/gradle/publishing.gradle /tmp/rdisk/1812/src/gradle/javaCompile.gradle /tmp/rdisk/1812/src/gradle/bintray.gradle /tmp/rdisk/1812/src/gradle/artifactory.gradle /tmp/rdisk/1812/src/gradle/androidCompile.gradle /tmp/rdisk/1812/src/build.gradle
+2018-04-04 09:58:46,458 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:58:46,458 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:58:46,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1812/src/sqlitebuilder-android/local.properties
+2018-04-04 09:58:46,471 INFO  ProjectFixService - Build info for "/tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,471 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,471 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1812/src/local.properties
+2018-04-04 09:58:46,471 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-04 09:58:46,472 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-04 09:58:46,473 INFO  ProjectFixService - Build info for "/tmp/rdisk/1812/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,473 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1812/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,474 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1812/src/sqlitebuilder/local.properties
+2018-04-04 09:58:46,475 INFO  ProjectFixService - Build info for "/tmp/rdisk/1812/src/sqlitebuilder/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,475 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1812/src/sqlitebuilder/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:58:46,475 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:58:46,475 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:58:46,476 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:58:56,391 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-04 09:58:56,391 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-04 09:58:56,392 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/sqlitebuilder-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-04 09:59:06,536 INFO  SysUtils - Configuration on demand is an incubating feature.
+0.0.1-SNAPSHOT
+:sqlitebuilder-android:compileLint
+:sqlitebuilder-android:copyDebugLint UP-TO-DATE
+:sqlitebuilder-android:mergeDebugProguardFiles
+:sqlitebuilder:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:sqlitebuilder:processResources UP-TO-DATE
+:sqlitebuilder:classes
+:sqlitebuilder:jar
+:sqlitebuilder-android:preBuild UP-TO-DATE
+:sqlitebuilder-android:preDebugBuild UP-TO-DATE
+:sqlitebuilder-android:checkDebugManifest
+:sqlitebuilder-android:prepareDebugDependencies
+:sqlitebuilder-android:compileDebugAidl
+:sqlitebuilder-android:compileDebugRenderscript
+:sqlitebuilder-android:generateDebugBuildConfig
+:sqlitebuilder-android:generateDebugAssets UP-TO-DATE
+:sqlitebuilder-android:mergeDebugAssets
+:sqlitebuilder-android:generateDebugResValues
+:sqlitebuilder-android:generateDebugResources
+:sqlitebuilder-android:packageDebugResources
+:sqlitebuilder-android:processDebugManifest
+:sqlitebuilder-android:processDebugResources
+:sqlitebuilder-android:generateDebugSources
+:sqlitebuilder-android:processDebugJavaRes UP-TO-DATE
+:sqlitebuilder-android:compileDebugJava
+:sqlitebuilder-android:packageDebugJar
+:sqlitebuilder-android:compileDebugNdk UP-TO-DATE
+:sqlitebuilder-android:packageDebugJniLibs UP-TO-DATE
+:sqlitebuilder-android:packageDebugLocalJar UP-TO-DATE
+:sqlitebuilder-android:packageDebugRenderscript UP-TO-DATE
+:sqlitebuilder-android:bundleDebug
+:sqlitebuilder-android:compileDebugSources
+:sqlitebuilder-android:assembleDebug
+:sqlitebuilder-android:copyReleaseLint UP-TO-DATE
+:sqlitebuilder-android:mergeReleaseProguardFiles
+:sqlitebuilder-android:preReleaseBuild UP-TO-DATE
+:sqlitebuilder-android:checkReleaseManifest
+:sqlitebuilder-android:prepareReleaseDependencies
+:sqlitebuilder-android:compileReleaseAidl
+:sqlitebuilder-android:compileReleaseRenderscript
+:sqlitebuilder-android:generateReleaseBuildConfig
+:sqlitebuilder-android:generateReleaseAssets UP-TO-DATE
+:sqlitebuilder-android:mergeReleaseAssets
+:sqlitebuilder-android:generateReleaseResValues
+:sqlitebuilder-android:generateReleaseResources
+:sqlitebuilder-android:packageReleaseResources
+:sqlitebuilder-android:processReleaseManifest
+:sqlitebuilder-android:processReleaseResources
+:sqlitebuilder-android:generateReleaseSources
+:sqlitebuilder-android:processReleaseJavaRes UP-TO-DATE
+:sqlitebuilder-android:compileReleaseJava
+:sqlitebuilder-android:packageReleaseJar
+:sqlitebuilder-android:compileReleaseNdk UP-TO-DATE
+:sqlitebuilder-android:packageReleaseJniLibs UP-TO-DATE
+:sqlitebuilder-android:packageReleaseLocalJar UP-TO-DATE
+:sqlitebuilder-android:packageReleaseRenderscript UP-TO-DATE
+:sqlitebuilder-android:bundleRelease
+:sqlitebuilder-android:compileReleaseSources
+:sqlitebuilder-android:assembleRelease
+:sqlitebuilder-android:javadoc
+:sqlitebuilder-android:javadocJar
+:sqlitebuilder-android:sourceJar
+:sqlitebuilder-android:assemble
+:sqlitebuilder-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.723 secs
+
+2018-04-04 09:59:06,546 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:59:06,547 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:59:13,726 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-04-04 09:59:13,726 INFO  ProjectTaskService - Excluded tasks (18): lintDebug mockableAndroidJar deviceCheck coveralls lint javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-04 09:59:13,726 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, coveralls, -x, lint, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-04 09:59:20,960 INFO  SysUtils - Configuration on demand is an incubating feature.
+0.0.1-SNAPSHOT
+:sqlitebuilder:compileJava UP-TO-DATE
+:sqlitebuilder:processResources UP-TO-DATE
+:sqlitebuilder:classes UP-TO-DATE
+:sqlitebuilder:jar UP-TO-DATE
+:sqlitebuilder:javadocJar
+:sqlitebuilder:sourceJar
+:sqlitebuilder:assemble
+:sqlitebuilder:build
+:sqlitebuilder-android:compileLint
+:sqlitebuilder-android:copyDebugLint UP-TO-DATE
+:sqlitebuilder-android:mergeDebugProguardFiles UP-TO-DATE
+:sqlitebuilder-android:preBuild UP-TO-DATE
+:sqlitebuilder-android:preDebugBuild UP-TO-DATE
+:sqlitebuilder-android:checkDebugManifest
+:sqlitebuilder-android:prepareDebugDependencies
+:sqlitebuilder-android:compileDebugAidl UP-TO-DATE
+:sqlitebuilder-android:compileDebugRenderscript UP-TO-DATE
+:sqlitebuilder-android:generateDebugBuildConfig UP-TO-DATE
+:sqlitebuilder-android:generateDebugAssets UP-TO-DATE
+:sqlitebuilder-android:mergeDebugAssets UP-TO-DATE
+:sqlitebuilder-android:generateDebugResValues UP-TO-DATE
+:sqlitebuilder-android:generateDebugResources UP-TO-DATE
+:sqlitebuilder-android:packageDebugResources UP-TO-DATE
+:sqlitebuilder-android:processDebugManifest UP-TO-DATE
+:sqlitebuilder-android:processDebugResources UP-TO-DATE
+:sqlitebuilder-android:generateDebugSources UP-TO-DATE
+:sqlitebuilder-android:processDebugJavaRes UP-TO-DATE
+:sqlitebuilder-android:compileDebugJava UP-TO-DATE
+:sqlitebuilder-android:packageDebugJar UP-TO-DATE
+:sqlitebuilder-android:compileDebugNdk UP-TO-DATE
+:sqlitebuilder-android:packageDebugJniLibs UP-TO-DATE
+:sqlitebuilder-android:packageDebugLocalJar UP-TO-DATE
+:sqlitebuilder-android:packageDebugRenderscript UP-TO-DATE
+:sqlitebuilder-android:bundleDebug UP-TO-DATE
+:sqlitebuilder-android:compileDebugSources UP-TO-DATE
+:sqlitebuilder-android:assembleDebug UP-TO-DATE
+:sqlitebuilder-android:copyReleaseLint UP-TO-DATE
+:sqlitebuilder-android:mergeReleaseProguardFiles UP-TO-DATE
+:sqlitebuilder-android:preReleaseBuild UP-TO-DATE
+:sqlitebuilder-android:checkReleaseManifest
+:sqlitebuilder-android:prepareReleaseDependencies
+:sqlitebuilder-android:compileReleaseAidl UP-TO-DATE
+:sqlitebuilder-android:compileReleaseRenderscript UP-TO-DATE
+:sqlitebuilder-android:generateReleaseBuildConfig UP-TO-DATE
+:sqlitebuilder-android:generateReleaseAssets UP-TO-DATE
+:sqlitebuilder-android:mergeReleaseAssets UP-TO-DATE
+:sqlitebuilder-android:generateReleaseResValues UP-TO-DATE
+:sqlitebuilder-android:generateReleaseResources UP-TO-DATE
+:sqlitebuilder-android:packageReleaseResources UP-TO-DATE
+:sqlitebuilder-android:processReleaseManifest UP-TO-DATE
+:sqlitebuilder-android:processReleaseResources UP-TO-DATE
+:sqlitebuilder-android:generateReleaseSources UP-TO-DATE
+:sqlitebuilder-android:processReleaseJavaRes UP-TO-DATE
+:sqlitebuilder-android:compileReleaseJava UP-TO-DATE
+:sqlitebuilder-android:packageReleaseJar UP-TO-DATE
+:sqlitebuilder-android:compileReleaseNdk UP-TO-DATE
+:sqlitebuilder-android:packageReleaseJniLibs UP-TO-DATE
+:sqlitebuilder-android:packageReleaseLocalJar UP-TO-DATE
+:sqlitebuilder-android:packageReleaseRenderscript UP-TO-DATE
+:sqlitebuilder-android:bundleRelease UP-TO-DATE
+:sqlitebuilder-android:compileReleaseSources UP-TO-DATE
+:sqlitebuilder-android:assembleRelease UP-TO-DATE
+:sqlitebuilder-android:javadocJar UP-TO-DATE
+:sqlitebuilder-android:sourceJar UP-TO-DATE
+:sqlitebuilder-android:assemble UP-TO-DATE
+:sqlitebuilder-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.781 secs
+
+2018-04-04 09:59:20,970 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:59:20,970 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/sqlitebuilder/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:59:27,773 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-04 09:59:27,773 INFO  ProjectTaskService - Excluded tasks (4): coveralls javadoc test check
+2018-04-04 09:59:27,773 INFO  SysUtils - Execute command: [/tmp/rdisk/1812/src/gradlew, -b, /tmp/rdisk/1812/src/sqlitebuilder/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 09:59:34,711 INFO  SysUtils - Configuration on demand is an incubating feature.
+0.0.1-SNAPSHOT
+:sqlitebuilder:compileJava UP-TO-DATE
+:sqlitebuilder:processResources UP-TO-DATE
+:sqlitebuilder:classes UP-TO-DATE
+:sqlitebuilder:jar UP-TO-DATE
+:sqlitebuilder:javadocJar UP-TO-DATE
+:sqlitebuilder:sourceJar UP-TO-DATE
+:sqlitebuilder:assemble UP-TO-DATE
+:sqlitebuilder:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.49 secs
+
+2018-04-04 09:59:34,722 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 09:59:34,731 ERROR FullProcessService - Could not find generated or existed APK file

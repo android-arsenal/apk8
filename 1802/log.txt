@@ -1,0 +1,564 @@
+2018-04-04 10:23:39,518 INFO  DownloadService - Downloading "https://github.com/takahirom/android-postfix-plugin/archive/master.zip", attempt 3
+2018-04-04 10:24:40,122 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:24:40,966 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:24:40,967 INFO  DownloadService - Downloading "https://github.com/takahirom/android-postfix-plugin/archive/master.zip", attempt 3
+2018-04-04 10:25:42,208 DEBUG FullProcessService - Repository https://github.com/takahirom/android-postfix-plugin available: true
+2018-04-04 10:25:42,208 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:25:42,208 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/takahirom/android-postfix-plugin, /tmp/rdisk/1802/src]
+2018-04-04 10:25:44,267 INFO  SysUtils - 
+2018-04-04 10:25:44,281 INFO  GitService - Deleted "/tmp/rdisk/1802/src/.git": true
+2018-04-04 10:25:44,284 INFO  FullProcessService - Size of directory with sources: 146 KB
+2018-04-04 10:25:44,284 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1802/src]
+2018-04-04 10:25:44,288 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1802/src/.git/
+
+2018-04-04 10:25:44,291 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1802/src/gradlew
+2018-04-04 10:25:44,294 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1802/src/build.gradle
+2018-04-04 10:25:44,296 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1802/src/settings.gradle /tmp/rdisk/1802/src/build.gradle
+2018-04-04 10:25:44,296 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:25:44,296 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:25:44,302 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1802/src/local.properties
+2018-04-04 10:25:44,302 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.12-bin.zip
+2018-04-04 10:25:44,303 INFO  ProjectFixService - Build info for "/tmp/rdisk/1802/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 10:25:44,303 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1802/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 10:25:44,304 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:25:44,304 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:25:44,304 INFO  SysUtils - Execute command: [/tmp/rdisk/1802/src/gradlew, -b, /tmp/rdisk/1802/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:27:11,588 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-04-04 10:27:11,588 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 10:27:11,588 INFO  SysUtils - Execute command: [/tmp/rdisk/1802/src/gradlew, -b, /tmp/rdisk/1802/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 10:27:18,911 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:27:18,911 INFO  SysUtils - Configuration on demand is an incubating feature.
+Cannot find alternate SDK path: /Applications/Android Studio Canaly.app/Contents. Default IDEA will be used : /root/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/LATEST-EAP-SNAPSHOT/71ffd116fca01d7bd4db1251b5e567b70d5e78e1/ideaIC-LATEST-EAP-SNAPSHOT
+Cannot find alternate SDK path: /Applications/Android Studio Canaly.app/Contents. Default IDEA will be used : /root/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/LATEST-EAP-SNAPSHOT/71ffd116fca01d7bd4db1251b5e567b70d5e78e1/ideaIC-LATEST-EAP-SNAPSHOT
+:compileJava
+Download https://repo1.maven.org/maven2/org/easytesting/fest-util/1.2.4/fest-util-1.2.4.pom
+Download https://repo1.maven.org/maven2/org/easytesting/fest-util/1.2.4/fest-util-1.2.4.jar
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/ImportUtils.java:18: error: package com.intellij.psi does not exist
+import com.intellij.psi.*;
+^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/ImportUtils.java:19: error: package com.siyeh.ig.psiutils does not exist
+import com.siyeh.ig.psiutils.ClassUtils;
+                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/ImportUtils.java:35: error: cannot find symbol
+    public static boolean hasImportStatic(String fqClassName, String memberName, PsiElement context) {
+                                                                                 ^
+  symbol:   class PsiElement
+  location: class ImportUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:18: error: package com.intellij.codeInsight does not exist
+import com.intellij.codeInsight.NullableNotNullManager;
+                               ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:19: error: package com.intellij.openapi.util does not exist
+import com.intellij.openapi.util.Condition;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:20: error: package com.intellij.psi does not exist
+import com.intellij.psi.*;
+^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:21: error: package com.intellij.psi.util does not exist
+import com.intellij.psi.util.InheritanceUtil;
+                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:22: error: package com.intellij.psi.util does not exist
+import com.intellij.psi.util.PsiTreeUtil;
+                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:23: error: package com.siyeh.ig.psiutils does not exist
+import com.siyeh.ig.psiutils.ParenthesesUtils;
+                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:24: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:25: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NonNls;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:26: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:27: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Nullable;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:29: error: package com.intellij.codeInsight.template.postfix.util does not exist
+import static com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.*;
+                                                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:40: error: cannot find symbol
+    public static final Condition<PsiElement> IS_NON_NULL = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:40: error: cannot find symbol
+    public static final Condition<PsiElement> IS_NON_NULL = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:49: error: cannot find symbol
+    public static final Condition<PsiElement> IS_MAP = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:49: error: cannot find symbol
+    public static final Condition<PsiElement> IS_MAP = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:59: error: cannot find symbol
+    public static final Condition<PsiElement> IS_ITERABLE = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:59: error: cannot find symbol
+    public static final Condition<PsiElement> IS_ITERABLE = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:72: error: cannot find symbol
+    public static final Condition<PsiElement> IS_ARRAY_OR_ITERABLE_OR_ITERATOR = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:72: error: cannot find symbol
+    public static final Condition<PsiElement> IS_ARRAY_OR_ITERABLE_OR_ITERATOR = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:85: error: cannot find symbol
+    public static final Condition<PsiElement> IS_NON_PRIMITIVE_ARRAY_OR_ITERABLE_OR_ITERATOR =
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:85: error: cannot find symbol
+    public static final Condition<PsiElement> IS_NON_PRIMITIVE_ARRAY_OR_ITERABLE_OR_ITERATOR =
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:103: error: cannot find symbol
+    public static final Condition<PsiElement> IS_CHAR_SEQUENCE = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:103: error: cannot find symbol
+    public static final Condition<PsiElement> IS_CHAR_SEQUENCE = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:114: error: cannot find symbol
+    public static final Condition<PsiElement> IS_VIEW = new Condition<PsiElement>() {
+                        ^
+  symbol:   class Condition
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:114: error: cannot find symbol
+    public static final Condition<PsiElement> IS_VIEW = new Condition<PsiElement>() {
+                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:123: error: cannot find symbol
+    public static boolean isCollection(@Nullable PsiType type) {
+                                                 ^
+  symbol:   class PsiType
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:128: error: cannot find symbol
+    public static boolean isIterator(@Nullable PsiType type) {
+                                               ^
+  symbol:   class PsiType
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:134: error: cannot find symbol
+    public static boolean isCharSequence(@Nullable PsiType type) {
+                                                   ^
+  symbol:   class PsiType
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:139: error: cannot find symbol
+    public static boolean isObjectArrayTypeExpression(@Nullable PsiType type) {
+                                                                ^
+  symbol:   class PsiType
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:150: error: cannot find symbol
+    public static String getExpressionNumberOrArrayOrIterableBound(@NotNull PsiExpression expr) {
+                                                                            ^
+  symbol:   class PsiExpression
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:172: error: cannot find symbol
+                                         @NotNull PsiElement context) {
+                                                  ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:176: error: cannot find symbol
+    public static boolean isTopmostExpression(@NotNull PsiElement element) {
+                                                       ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:181: error: cannot find symbol
+    public static boolean isSemicolonNeeded(PsiElement context) {
+                                            ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidPostfixTemplatesUtils.java:186: error: cannot find symbol
+    public static boolean isAnnotatedNullable(PsiElement element) {
+                                              ^
+  symbol:   class PsiElement
+  location: class AndroidPostfixTemplatesUtils
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidClassName.java:18: error: package com.intellij.psi does not exist
+import com.intellij.psi.PsiClass;
+                       ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidClassName.java:19: error: package com.intellij.psi does not exist
+import com.intellij.psi.PsiElement;
+                       ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidClassName.java:20: error: package com.siyeh.ig.psiutils does not exist
+import com.siyeh.ig.psiutils.ClassUtils;
+                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidClassName.java:46: error: cannot find symbol
+    public PsiClass getPsiClass(PsiElement context) {
+                                ^
+  symbol:   class PsiElement
+  location: class AndroidClassName
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/utils/AndroidClassName.java:46: error: cannot find symbol
+    public PsiClass getPsiClass(PsiElement context) {
+           ^
+  symbol:   class PsiClass
+  location: class AndroidClassName
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:19: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.Template;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:20: error: package com.intellij.codeInsight.template.impl does not exist
+import com.intellij.codeInsight.template.impl.TextExpression;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:21: error: package com.intellij.psi does not exist
+import com.intellij.psi.PsiElement;
+                       ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:23: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:18: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.Template;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:19: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.TemplateEditingAdapter;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:20: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.TemplateManager;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:21: error: package com.intellij.codeInsight.template.impl does not exist
+import com.intellij.codeInsight.template.impl.TextExpression;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:22: error: package com.intellij.codeInsight.template.postfix.templates does not exist
+import com.intellij.codeInsight.template.postfix.templates.PostfixTemplateWithExpressionSelector;
+                                                          ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:23: error: package com.intellij.codeInsight.template.postfix.templates does not exist
+import com.intellij.codeInsight.template.postfix.templates.PostfixTemplatesUtils;
+                                                          ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:24: error: package com.intellij.codeInsight.template.postfix.templates does not exist
+import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate;
+                                                          ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:25: error: package com.intellij.codeInsight.template.postfix.util does not exist
+import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils;
+                                                     ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:26: error: package com.intellij.openapi.actionSystem does not exist
+import com.intellij.openapi.actionSystem.ActionManager;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:27: error: package com.intellij.openapi.actionSystem does not exist
+import com.intellij.openapi.actionSystem.ActionPlaces;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:28: error: package com.intellij.openapi.actionSystem does not exist
+import com.intellij.openapi.actionSystem.AnAction;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:29: error: package com.intellij.openapi.actionSystem.impl does not exist
+import com.intellij.openapi.actionSystem.impl.ActionManagerImpl;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:30: error: package com.intellij.openapi.editor does not exist
+import com.intellij.openapi.editor.Document;
+                                  ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:31: error: package com.intellij.openapi.editor does not exist
+import com.intellij.openapi.editor.Editor;
+                                  ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:32: error: package com.intellij.openapi.project does not exist
+import com.intellij.openapi.project.Project;
+                                   ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:33: error: package com.intellij.openapi.ui.playback.commands does not exist
+import com.intellij.openapi.ui.playback.commands.ActionCommand;
+                                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:34: error: package com.intellij.openapi.util does not exist
+import com.intellij.openapi.util.Condition;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:35: error: package com.intellij.psi does not exist
+import com.intellij.psi.PsiElement;
+                       ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:38: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:39: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Nullable;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:47: error: cannot find symbol
+public abstract class AbstractRichStringBasedPostfixTemplate extends PostfixTemplateWithExpressionSelector {
+                                                                     ^
+  symbol: class PostfixTemplateWithExpressionSelector
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:43: error: cannot find symbol
+    public String getTemplateString(@NotNull PsiElement element) {
+                                             ^
+  symbol:   class PsiElement
+  location: class VisibleTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:48: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                            ^
+  symbol:   class PsiElement
+  location: class VisibleTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleTemplate.java:48: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                                             ^
+  symbol:   class Template
+  location: class VisibleTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:51: error: cannot find symbol
+                                                     @NotNull Condition<PsiElement> typeChecker) {
+                                                              ^
+  symbol:   class Condition
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:51: error: cannot find symbol
+                                                     @NotNull Condition<PsiElement> typeChecker) {
+                                                                        ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:56: error: cannot find symbol
+    protected final void expandForChooseExpression(@NotNull PsiElement expr, @NotNull final Editor editor) {
+                                                            ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:56: error: cannot find symbol
+    protected final void expandForChooseExpression(@NotNull PsiElement expr, @NotNull final Editor editor) {
+                                                                                            ^
+  symbol:   class Editor
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:85: error: cannot find symbol
+    protected void onTemplateFinished(TemplateManager manager, Editor editor, Template template) {
+                                      ^
+  symbol:   class TemplateManager
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:85: error: cannot find symbol
+    protected void onTemplateFinished(TemplateManager manager, Editor editor, Template template) {
+                                                               ^
+  symbol:   class Editor
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:85: error: cannot find symbol
+    protected void onTemplateFinished(TemplateManager manager, Editor editor, Template template) {
+                                                                              ^
+  symbol:   class Template
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:93: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                            ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:93: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                                             ^
+  symbol:   class Template
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:103: error: cannot find symbol
+    protected void setVariables(@NotNull Template template, @NotNull PsiElement element) {
+                                         ^
+  symbol:   class Template
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:103: error: cannot find symbol
+    protected void setVariables(@NotNull Template template, @NotNull PsiElement element) {
+                                                                     ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:107: error: cannot find symbol
+    public abstract String getTemplateString(@NotNull PsiElement element);
+                                                      ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:139: error: cannot find symbol
+    protected Template createTemplate(Project project, TemplateManager manager, String templateString) {
+                                      ^
+  symbol:   class Project
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:139: error: cannot find symbol
+    protected Template createTemplate(Project project, TemplateManager manager, String templateString) {
+                                                       ^
+  symbol:   class TemplateManager
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:139: error: cannot find symbol
+    protected Template createTemplate(Project project, TemplateManager manager, String templateString) {
+              ^
+  symbol:   class Template
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:155: error: cannot find symbol
+                                     @NotNull PsiElement context) {
+                                              ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/internal/AbstractRichStringBasedPostfixTemplate.java:168: error: cannot find symbol
+                                     @NotNull PsiElement context) {
+                                              ^
+  symbol:   class PsiElement
+  location: class AbstractRichStringBasedPostfixTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:19: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.Template;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:20: error: package com.intellij.codeInsight.template.impl does not exist
+import com.intellij.codeInsight.template.impl.TextExpression;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:21: error: package com.intellij.psi does not exist
+import com.intellij.psi.PsiElement;
+                       ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:24: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:26: error: package com.intellij.codeInsight.template.postfix.util does not exist
+import static com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.IS_BOOLEAN;
+                                                            ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:26: error: static import only from classes and interfaces
+import static com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.IS_BOOLEAN;
+^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:44: error: cannot find symbol
+    public String getTemplateString(@NotNull PsiElement element) {
+                                             ^
+  symbol:   class PsiElement
+  location: class VisibleGoneTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:52: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                            ^
+  symbol:   class PsiElement
+  location: class VisibleGoneTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/VisibleGoneTemplate.java:52: error: cannot find symbol
+    protected void addExprVariable(@NotNull PsiElement expr, Template template) {
+                                                             ^
+  symbol:   class Template
+  location: class VisibleGoneTemplate
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/ToastTemplate.java:18: error: package com.intellij.codeInsight.template does not exist
+import com.intellij.codeInsight.template.Template;
+                                        ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/ToastTemplate.java:19: error: package com.intellij.codeInsight.template.impl does not exist
+import com.intellij.codeInsight.template.impl.ConstantNode;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/ToastTemplate.java:20: error: package com.intellij.codeInsight.template.impl does not exist
+import com.intellij.codeInsight.template.impl.MacroCallNode;
+                                             ^
+/tmp/rdisk/1802/src/src/main/java/com/kogitune/intellij/codeinsight/postfix/templates/surround/ToastTemplate.java:21: error: package com.intellij.codeInsight.template.macro does not exist
+import com.intellij.codeInsight.template.macro.VariableOfTypeMacro;
+                                              ^
+100 errors
+1 warning
+:compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:45)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:48)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:104)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:163)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:145)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 6.759 secs
+
+2018-04-04 10:27:18,916 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 10:27:18,919 ERROR FullProcessService - Could not find generated or existed APK file

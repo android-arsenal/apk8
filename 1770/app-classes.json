@@ -1,0 +1,4 @@
+{
+  "com.sevenheaven.segmentcontrol" : [ "BuildConfig", "R", "R$attr", "R$string", "R$styleable", "RadiusDrawable", "SegmentControl", "SegmentControl$1", "SegmentControl$Direction", "SegmentControl$OnSegmentControlClickListener" ],
+  "com.sevenheaven.segmentcontrol.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$color", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style", "R$styleable" ]
+}

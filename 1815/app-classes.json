@@ -1,0 +1,4 @@
+{
+  "com.nomad5.circularprogress" : [ "BuildConfig", "DemoActivity", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$styleable" ],
+  "com.nomad5.circularprogressview" : [ "BuildConfig", "CircularProgressView", "CircularProgressView$1", "R", "R$attr", "R$styleable" ]
+}

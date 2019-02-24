@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.firezenk.tickertext.test",
+    "label" : "FireZenk's TickerText",
+    "icon" : "res/drawable-ldpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "15",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAACcFBMVEUAAADIyMjo6Ojv7+/09PT39/f+/v7m5uYAAADZ2dny8vL7+/v+/v7////Kysru7u78/PzZ2dn39/cAAACqzNfA5fTA6Pm75vi65vj5/f76+vrd3d1AoslMvOlBu+s0tuozturt+f37+/va2to2lbpIueah3vVRwe1dxe5jwummvckrgJ4+r9tDu+uR1/S/3uisrKwAAAAym8RJu+k7ues5uOs1t+ru+f3K6vbU1NSqqqrv8PH9/v9ty/CK1fPL7fnx8fEAAADOzs6L1fPJ7PlgYGDi4uLp9/1Xw+5EvOxNv+1NrdNKVWCrq6vv7+/l9vwyq9yEn6YAAADBwcH39/c5s+OVsrwAAADLy8vx+v6R2PRexe55z/GS1vGzxcoAAADU1NTU1NQAAADV1dUAAADR0dEAAADHx8fIyMi3t7fw8PC4uLikpKTm5uYAAACPj4/X19fY2NgAAABWVla+vr7x8fFdXV0AAAAAAACdnZ3c3NzG6PWenp4AAABwcHC7u7sztem42+kAAACXl5fT09P4+PgyseReqcdxipRZWVmnp6ff39/6+vqg3fUysuUtn80ieJoTQFMAAAB+fn6wsLDg4ODd8/w2t+otoM4jfqIaW3YAAAAAAACEhIStra254fBDpswje58bX3sAAACBgYGkpKTR0dHu7u71+fr3/P76/f5yfYAAAAAAAABzc3OWlpa7u7sAAABPT0+Hh4ednZ2+vr7W1tbl5eX19fX9/f0AAAAAAABhYWGHh4eSkpKkpKS4uLjFxcXOzs7V1dUAAAAsLCxzc3OFhYWJiYmLi4uLi4sAAAAAAAAAAAAAAAAAAACzt3gPAAAA0HRSTlMADmKr2dn9ZgE8vfn//yuw/1jyAoH8//////yBhP///////4RZ/P////xZKvT///QuBLL///////+zRf3//////QW///8Y+f/////5GGr///9qBrb//7YL2P//////2g/x8xH7EvsT9PTf/+HC/wyQ//8HO/7/PwMX0f//0g1k/v//HMz/////zFD5///////5UBiS////////lQkhs/////+zJar+//////+qDiSH+P8fWtH///////8IK3Ha/f//////LEaUyejq/xUpMDQ4h9VdeAAAAkJJREFUOMtjYCAVMDIxs7CysbGyMLMzYlfBwcnFzcMLBTzcXJwcmEr4+AV4UYAAPx+aMg5BIR5eNMAjJIiiSlhEVExcAhlIgpRJSQsjqZGRlZNXQAGKYMOUlOGqOFRU5RQUMBSpqatraGpBbeTQ1tGVx6JIT0FBXlffAKLK0MjYxBQIzECSZqYQYA5WpGBmYWkINsjK2gYMbEGK7CBsG16IIgV7ByuQUY5OShAvgxU5I4IArMhFyckRqMjVjQeLIncPD08Q30vD2wfofV8/XiyK/GE+kA8IFGYICg7Bq0ghNCyIITxCCZuiyKioaBA/Jio2LpwhPoGHF5/DeXkS4xmSkgkpSk5hSElVwq9IKTWNIS09BL+ikIw0hpTMLPyKsrJTGOJzcvErys2JZ8jLLxDAp0igMD+Poai4pBSfotKSsiKG8orKKiXciqqrairKGRhq6+r9eHApamisr6sFphXHpuaWVmyKooDctvaOJlBS4ajt7OruwaKoV0Ghr3/CxFpw+jWcNHnK1B5MRdOm982YOWuSISQjzJ4zd15VCA+6Ip75CxYumjMbml2EaxcvWbps+YqVQLAKrkZp+bKlqxfXwjOe8Jq169ZvqCpVQhijVFq1Yf26tWuQs3Dexk2bt2zdtt1vR8/OnT07/LZv27pl86aNecIohcGuSbv37N23/8DBQ4cPHzp4YP++vXt2T9oljFasGNY2HTl67PiJk6dOnTxx/NjRI021hlhKKMfa0xvPnD13/vy5s2c2nq51RCgBAB2a2a4YxA9uAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 293,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.firezenk.tickertext.test\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"15\" />\n\t<application android:theme=\"@android:style/Theme.Light\" android:label=\"FireZenk&apos;s TickerText\" android:icon=\"res/drawable-ldpi/ic_launcher.png\" android:debuggable=\"true\">\n\t\t<activity android:theme=\"@android:style/Theme.Light\" android:label=\"FireZenk&apos;s TickerText\" android:name=\"com.firezenk.tickertext.test.Test\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 149541,
+  "crc32" : 1702263319,
+  "sha256" : "bdcd653008806c3e3a3978fbed06bcf88dd2d43d4799bf14e63ee2e91e44b693",
+  "buildTime" : 1522830432000
+}

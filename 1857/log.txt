@@ -1,0 +1,97 @@
+2018-04-04 06:17:32,899 INFO  DownloadService - Downloading "https://github.com/tarek360/Material-Animation-Samples/archive/master.zip", attempt 3
+2018-04-04 06:18:33,417 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 06:18:34,101 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 06:18:34,101 INFO  DownloadService - Downloading "https://github.com/tarek360/Material-Animation-Samples/archive/master.zip", attempt 3
+2018-04-04 06:19:35,370 DEBUG FullProcessService - Repository https://github.com/tarek360/Material-Animation-Samples available: true
+2018-04-04 06:19:35,370 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 06:19:35,370 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tarek360/Material-Animation-Samples, /tmp/rdisk/1857/src]
+2018-04-04 06:19:38,530 INFO  SysUtils - 
+2018-04-04 06:19:38,542 INFO  GitService - Deleted "/tmp/rdisk/1857/src/.git": true
+2018-04-04 06:19:38,544 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 06:19:38,544 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1857/src]
+2018-04-04 06:19:38,553 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1857/src/.git/
+
+2018-04-04 06:19:38,555 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1857/src/gradlew
+2018-04-04 06:19:38,557 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1857/src/app/build.gradle /tmp/rdisk/1857/src/build.gradle
+2018-04-04 06:19:38,559 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1857/src/settings.gradle /tmp/rdisk/1857/src/build.gradle /tmp/rdisk/1857/src/app/build.gradle
+2018-04-04 06:19:38,559 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 06:19:38,559 INFO  ProjectFixService - Fixing project...
+2018-04-04 06:19:38,563 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1857/src/app/local.properties
+2018-04-04 06:19:38,563 INFO  ProjectFixService - Build info for "/tmp/rdisk/1857/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 06:19:38,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1857/src/local.properties
+2018-04-04 06:19:38,564 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 06:19:38,564 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 06:19:38,565 INFO  ProjectFixService - Build info for "/tmp/rdisk/1857/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 06:19:38,565 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 06:19:38,565 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 06:19:38,565 INFO  SysUtils - Execute command: [/tmp/rdisk/1857/src/gradlew, -b, /tmp/rdisk/1857/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 06:19:46,054 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 06:19:46,054 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 06:19:46,055 INFO  SysUtils - Execute command: [/tmp/rdisk/1857/src/gradlew, -b, /tmp/rdisk/1857/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 06:20:12,827 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72210Library
+:app:prepareComAndroidSupportCardviewV72210Library
+:app:prepareComAndroidSupportRecyclerviewV72210Library
+:app:prepareComAndroidSupportSupportV42210Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: /tmp/rdisk/1857/src/app/src/main/java/com/tarek360/animationsamples/RecyclerItemClickListener.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1857/src/app/src/main/java/com/tarek360/animationsamples/PlayPauseDrawable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: /tmp/rdisk/1857/src/app/src/main/java/com/tarek360/animationsamples/RecyclerItemClickListener.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1857/src/app/src/main/java/com/tarek360/animationsamples/PlayPauseDrawable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.337 secs
+
+2018-04-04 06:20:12,861 INFO  FullProcessService - Found APK file: /tmp/rdisk/1857/src/app/build/outputs/apk/app-debug.apk

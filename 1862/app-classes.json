@@ -1,0 +1,5 @@
+{
+  "com.blundell.demo" : [ "ActivityWithPreview", "ActivityWithSimpleSetup", "BuildConfig", "ChooserActivity", "ExampleActivity", "FragmentWithPreview", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ],
+  "com.blundell.woody" : [ "BuildConfig", "EasyFaceDetection", "EasyFaceDetection$1", "EasyFaceDetection$Listener", "Woody", "Woody$ActivityListener", "Woody$ActivityMonitorListener", "Woody$FragmentListener" ],
+  "com.blundell.woody.core" : [ "ActuallyGetCameraStrategy", "CameraStrategy", "DebugCameraSurfaceView", "DontGetCameraStrategy", "DummySurfaceHolder", "FaceDetectionCamera", "FaceDetectionCamera$Listener", "FrontCameraRetriever", "FrontCameraRetriever$Listener", "FrontCameraRetriever$StackCameraRetrievers", "FrontCameraTaskFactory", "LoadFrontCameraAsyncTask", "LoadFrontCameraAsyncTask$Listener", "LoadPreLollipopFrontCameraTask", "OneShotFaceDetectionListener", "OneShotFaceDetectionListener$1", "OneShotFaceDetectionListener$Listener", "PreLollipopFaceDetectionCamera", "RestartingCountDownTimer", "RestartingCountDownTimer$1", "UniqueActivityLifecycleCallbacks", "UniqueActivityLifecycleCallbacks$LifeCycleCallbacks" ]
+}

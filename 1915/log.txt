@@ -1,0 +1,22 @@
+2018-04-04 03:41:19,943 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/ColorPhrase/archive/master.zip", attempt 3
+2018-04-04 03:42:20,542 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:42:21,218 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:42:21,218 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/ColorPhrase/archive/master.zip", attempt 3
+2018-04-04 03:43:22,486 DEBUG FullProcessService - Repository https://github.com/THEONE10211024/ColorPhrase available: true
+2018-04-04 03:43:22,486 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 03:43:22,486 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/THEONE10211024/ColorPhrase, /tmp/rdisk/1915/src]
+2018-04-04 03:43:25,969 INFO  SysUtils - 
+2018-04-04 03:43:25,984 INFO  GitService - Deleted "/tmp/rdisk/1915/src/.git": true
+2018-04-04 03:43:25,987 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-04 03:43:25,987 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1915/src]
+2018-04-04 03:43:25,991 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1915/src/.git/
+
+2018-04-04 03:43:25,994 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 03:43:25,994 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 03:43:25,996 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 03:43:25,998 INFO  ProjectBuildService - All script(s): none
+2018-04-04 03:43:25,998 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 03:43:25,998 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 03:43:25,998 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 03:43:26,000 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/1915/src/bin/ColorPhrase.apk
+2018-04-04 03:43:26,000 INFO  FullProcessService - Found APK file: /tmp/rdisk/1915/src/bin/ColorPhrase.apk

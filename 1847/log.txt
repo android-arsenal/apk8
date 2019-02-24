@@ -1,0 +1,21 @@
+2018-04-04 08:30:23,852 INFO  DownloadService - Downloading "https://github.com/goldmansachs/gs-collections/archive/master.zip", attempt 3
+2018-04-04 08:31:24,419 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 08:31:25,207 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 08:31:25,208 INFO  DownloadService - Downloading "https://github.com/goldmansachs/gs-collections/archive/master.zip", attempt 3
+2018-04-04 08:32:26,575 DEBUG FullProcessService - Repository https://github.com/goldmansachs/gs-collections available: true
+2018-04-04 08:32:26,576 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 08:32:26,576 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/goldmansachs/gs-collections, /tmp/rdisk/1847/src]
+2018-04-04 08:32:36,594 INFO  SysUtils - 
+2018-04-04 08:32:36,639 INFO  GitService - Deleted "/tmp/rdisk/1847/src/.git": true
+2018-04-04 08:32:36,729 INFO  FullProcessService - Size of directory with sources: 16 MB
+2018-04-04 08:32:36,729 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1847/src]
+2018-04-04 08:32:36,734 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1847/src/.git/
+
+2018-04-04 08:32:36,790 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 08:32:36,790 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 08:32:36,860 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 08:32:36,917 INFO  ProjectBuildService - All script(s): none
+2018-04-04 08:32:36,917 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 08:32:36,917 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 08:32:36,917 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 08:32:36,982 ERROR FullProcessService - Could not find generated or existed APK file

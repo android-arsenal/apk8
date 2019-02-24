@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.jakewharton.rxbinding2.support.v7.appcompat.kotlin.test",
+    "label" : null,
+    "icon" : null,
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "14",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 3739,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.jakewharton.rxbinding2.support.v7.appcompat.kotlin.test\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"14\" />\n\t<instrumentation android:label=\"Tests for com.jakewharton.rxbinding2.support.v7.appcompat.kotlin.test\" android:name=\"android.test.InstrumentationTestRunner\" android:targetPackage=\"com.jakewharton.rxbinding2.support.v7.appcompat.kotlin.test\" android:handleProfiling=\"false\" android:functionalTest=\"false\" />\n\t<application android:debuggable=\"true\">\n\t\t<uses-library android:name=\"android.test.runner\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2533943,
+  "crc32" : 213983648,
+  "sha256" : "8edfe43d00c7dc605faf636d2ec7569c829fcb696ab3dfaf128b28a0dbdb56eb",
+  "buildTime" : 1526278148000
+}

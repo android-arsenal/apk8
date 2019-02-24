@@ -1,0 +1,125 @@
+2018-04-04 09:14:05,367 INFO  DownloadService - Downloading "https://github.com/lolobosse/ContactsAutoCompleteTextView/archive/master.zip", attempt 3
+2018-04-04 09:15:05,993 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:15:06,847 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:15:06,848 INFO  DownloadService - Downloading "https://github.com/lolobosse/ContactsAutoCompleteTextView/archive/master.zip", attempt 3
+2018-04-04 09:16:08,132 DEBUG FullProcessService - Repository https://github.com/lolobosse/ContactsAutoCompleteTextView available: true
+2018-04-04 09:16:08,133 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:16:08,133 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lolobosse/ContactsAutoCompleteTextView, /tmp/rdisk/1826/src]
+2018-04-04 09:16:11,594 INFO  SysUtils - 
+2018-04-04 09:16:11,607 INFO  GitService - Deleted "/tmp/rdisk/1826/src/.git": true
+2018-04-04 09:16:11,609 INFO  FullProcessService - Size of directory with sources: 115 KB
+2018-04-04 09:16:11,609 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1826/src]
+2018-04-04 09:16:11,614 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1826/src/.git/
+
+2018-04-04 09:16:11,616 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1826/src/gradlew
+2018-04-04 09:16:11,619 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1826/src/app/build.gradle /tmp/rdisk/1826/src/contactsautocompletetextview/build.gradle /tmp/rdisk/1826/src/build.gradle
+2018-04-04 09:16:11,621 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1826/src/settings.gradle /tmp/rdisk/1826/src/maven_push.gradle /tmp/rdisk/1826/src/contactsautocompletetextview/settings.gradle /tmp/rdisk/1826/src/contactsautocompletetextview/build.gradle /tmp/rdisk/1826/src/build.gradle /tmp/rdisk/1826/src/app/build.gradle
+2018-04-04 09:16:11,621 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:16:11,621 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:16:11,638 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1826/src/app/local.properties
+2018-04-04 09:16:11,638 INFO  ProjectFixService - Build info for "/tmp/rdisk/1826/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 09:16:11,638 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1826/src/contactsautocompletetextview/local.properties
+2018-04-04 09:16:11,639 INFO  ProjectFixService - Build info for "/tmp/rdisk/1826/src/contactsautocompletetextview/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 09:16:11,639 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1826/src/local.properties
+2018-04-04 09:16:11,639 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 09:16:11,639 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 09:16:11,642 INFO  ProjectFixService - Build info for "/tmp/rdisk/1826/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 09:16:11,642 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:16:11,642 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:16:11,642 INFO  SysUtils - Execute command: [/tmp/rdisk/1826/src/gradlew, -b, /tmp/rdisk/1826/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:16:24,599 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-04 09:16:24,599 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 09:16:24,600 INFO  SysUtils - Execute command: [/tmp/rdisk/1826/src/gradlew, -b, /tmp/rdisk/1826/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 09:16:47,975 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:contactsautocompletetextview:compileLint
+:contactsautocompletetextview:copyReleaseLint UP-TO-DATE
+:contactsautocompletetextview:mergeReleaseProguardFiles
+:contactsautocompletetextview:preBuild UP-TO-DATE
+:contactsautocompletetextview:preReleaseBuild UP-TO-DATE
+:contactsautocompletetextview:checkReleaseManifest
+:contactsautocompletetextview:prepareReleaseDependencies
+:contactsautocompletetextview:compileReleaseAidl
+:contactsautocompletetextview:compileReleaseRenderscript
+:contactsautocompletetextview:generateReleaseBuildConfig
+:contactsautocompletetextview:generateReleaseAssets UP-TO-DATE
+:contactsautocompletetextview:mergeReleaseAssets
+:contactsautocompletetextview:generateReleaseResValues
+:contactsautocompletetextview:generateReleaseResources
+:contactsautocompletetextview:packageReleaseResources
+:contactsautocompletetextview:processReleaseManifest
+:contactsautocompletetextview:processReleaseResources
+:contactsautocompletetextview:generateReleaseSources
+:contactsautocompletetextview:processReleaseJavaRes UP-TO-DATE
+:contactsautocompletetextview:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:contactsautocompletetextview:packageReleaseJar
+:contactsautocompletetextview:compileReleaseNdk UP-TO-DATE
+:contactsautocompletetextview:packageReleaseJniLibs UP-TO-DATE
+:contactsautocompletetextview:packageReleaseLocalJar UP-TO-DATE
+:contactsautocompletetextview:packageReleaseRenderscript UP-TO-DATE
+:contactsautocompletetextview:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72211Library
+:app:prepareComAndroidSupportSupportV42211Library
+:app:prepareComGithubLolobosseContactsautocompletetextviewContactsautocompletetextview012Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/1826/src/app/src/main/java/dev/laurentmeyer/contactautocompleteview/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/1826/src/app/src/main/java/dev/laurentmeyer/contactautocompleteview/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.935 secs
+
+2018-04-04 09:16:48,011 INFO  FullProcessService - Found APK file: /tmp/rdisk/1826/src/app/build/outputs/apk/app-debug.apk

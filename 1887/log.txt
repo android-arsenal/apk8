@@ -1,0 +1,253 @@
+2018-04-04 05:00:02,343 INFO  DownloadService - Downloading "https://github.com/redwarp/Android-LazyDatabase/archive/master.zip", attempt 3
+2018-04-04 05:01:02,817 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:01:03,599 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-04-04 05:01:03,599 INFO  DownloadService - Downloading "https://github.com/redwarp/Android-LazyDatabase/archive/develop.zip", attempt 3
+2018-04-04 05:02:04,984 DEBUG FullProcessService - Repository https://github.com/redwarp/Android-LazyDatabase available: true
+2018-04-04 05:02:04,984 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:02:04,984 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/redwarp/Android-LazyDatabase, /tmp/rdisk/1887/src]
+2018-04-04 05:02:08,818 INFO  SysUtils - 
+2018-04-04 05:02:08,823 INFO  GitService - Deleted "/tmp/rdisk/1887/src/.git": true
+2018-04-04 05:02:08,827 INFO  FullProcessService - Size of directory with sources: 183 KB
+2018-04-04 05:02:08,827 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1887/src]
+2018-04-04 05:02:08,830 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1887/src/.git/
+
+2018-04-04 05:02:08,836 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1887/src/gradlew
+2018-04-04 05:02:08,840 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1887/src/lazy-database/build.gradle /tmp/rdisk/1887/src/test-application/build.gradle /tmp/rdisk/1887/src/build.gradle
+2018-04-04 05:02:08,843 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1887/src/test-application/build.gradle /tmp/rdisk/1887/src/settings.gradle /tmp/rdisk/1887/src/lazy-database/build.gradle /tmp/rdisk/1887/src/build.gradle
+2018-04-04 05:02:08,843 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 05:02:08,843 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:02:08,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1887/src/lazy-database/local.properties
+2018-04-04 05:02:08,852 INFO  ProjectFixService - Build info for "/tmp/rdisk/1887/src/lazy-database/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=15,targetSdkVersion=26]
+2018-04-04 05:02:08,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1887/src/test-application/local.properties
+2018-04-04 05:02:08,853 INFO  ProjectFixService - Build info for "/tmp/rdisk/1887/src/test-application/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=19,targetSdkVersion=26]
+2018-04-04 05:02:08,853 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1887/src/local.properties
+2018-04-04 05:02:08,853 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-04 05:02:08,853 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-04 05:02:08,854 INFO  ProjectFixService - Build info for "/tmp/rdisk/1887/src/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=19,targetSdkVersion=26]
+2018-04-04 05:02:08,854 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:02:08,854 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:02:08,854 INFO  SysUtils - Execute command: [/tmp/rdisk/1887/src/gradlew, -b, /tmp/rdisk/1887/src/lazy-database/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:02:19,686 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 05:02:19,686 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 05:02:19,686 INFO  SysUtils - Execute command: [/tmp/rdisk/1887/src/gradlew, -b, /tmp/rdisk/1887/src/lazy-database/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 05:02:34,218 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:lazy-database:preBuild UP-TO-DATE
+:lazy-database:preDebugBuild UP-TO-DATE
+:lazy-database:checkDebugManifest
+:lazy-database:prepareDebugDependencies
+:lazy-database:compileDebugAidl
+:lazy-database:compileDebugNdk UP-TO-DATE
+:lazy-database:compileLint
+:lazy-database:copyDebugLint UP-TO-DATE
+:lazy-database:compileDebugRenderscript
+:lazy-database:generateDebugBuildConfig
+:lazy-database:generateDebugResValues
+:lazy-database:generateDebugResources
+:lazy-database:packageDebugResources
+:lazy-database:processDebugManifest
+:lazy-database:processDebugResources
+:lazy-database:generateDebugSources
+:lazy-database:incrementalDebugJavaCompilationSafeguard
+:lazy-database:javaPreCompileDebug
+:lazy-database:compileDebugJavaWithJavac
+:lazy-database:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:lazy-database:extractDebugAnnotations
+:lazy-database:mergeDebugShaders
+:lazy-database:compileDebugShaders
+:lazy-database:generateDebugAssets
+:lazy-database:mergeDebugAssets
+:lazy-database:mergeDebugProguardFiles
+:lazy-database:packageDebugRenderscript UP-TO-DATE
+:lazy-database:processDebugJavaRes UP-TO-DATE
+:lazy-database:transformResourcesWithMergeJavaResForDebug
+:lazy-database:transformClassesAndResourcesWithSyncLibJarsForDebug
+:lazy-database:mergeDebugJniLibFolders
+:lazy-database:transformNativeLibsWithMergeJniLibsForDebug
+:lazy-database:transformNativeLibsWithStripDebugSymbolForDebug
+:lazy-database:transformNativeLibsWithSyncJniLibsForDebug
+:lazy-database:bundleDebug
+:lazy-database:compileDebugSources
+:lazy-database:assembleDebug
+:lazy-database:preReleaseBuild UP-TO-DATE
+:lazy-database:checkReleaseManifest
+:lazy-database:prepareReleaseDependencies
+:lazy-database:compileReleaseAidl
+:lazy-database:compileReleaseNdk UP-TO-DATE
+:lazy-database:copyReleaseLint UP-TO-DATE
+:lazy-database:compileReleaseRenderscript
+:lazy-database:generateReleaseBuildConfig
+:lazy-database:generateReleaseResValues
+:lazy-database:generateReleaseResources
+:lazy-database:packageReleaseResources
+:lazy-database:processReleaseManifest
+:lazy-database:processReleaseResources
+:lazy-database:generateReleaseSources
+:lazy-database:incrementalReleaseJavaCompilationSafeguard
+:lazy-database:javaPreCompileRelease
+:lazy-database:compileReleaseJavaWithJavac
+:lazy-database:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:lazy-database:extractReleaseAnnotations
+:lazy-database:mergeReleaseShaders
+:lazy-database:compileReleaseShaders
+:lazy-database:generateReleaseAssets
+:lazy-database:mergeReleaseAssets
+:lazy-database:mergeReleaseProguardFiles
+:lazy-database:packageReleaseRenderscript UP-TO-DATE
+:lazy-database:processReleaseJavaRes UP-TO-DATE
+:lazy-database:transformResourcesWithMergeJavaResForRelease
+:lazy-database:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lazy-database:mergeReleaseJniLibFolders
+:lazy-database:transformNativeLibsWithMergeJniLibsForRelease
+:lazy-database:transformNativeLibsWithStripDebugSymbolForRelease
+:lazy-database:transformNativeLibsWithSyncJniLibsForRelease
+:lazy-database:bundleRelease
+:lazy-database:compileReleaseSources
+:lazy-database:assembleRelease
+:lazy-database:javadoc/tmp/rdisk/1887/src/lazy-database/src/main/java/net/redwarp/library/database/annotation/PrimaryKey.java:35: warning: no @return
+  public String name() default "";
+                ^
+
+1 warning
+:lazy-database:javadocJar
+:lazy-database:sourcesJar
+:lazy-database:assemble
+:lazy-database:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.319 secs
+
+2018-04-04 05:02:34,232 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:02:34,232 INFO  SysUtils - Execute command: [/tmp/rdisk/1887/src/gradlew, -b, /tmp/rdisk/1887/src/test-application/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:02:45,589 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-04 05:02:45,589 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 05:02:45,589 INFO  SysUtils - Execute command: [/tmp/rdisk/1887/src/gradlew, -b, /tmp/rdisk/1887/src/test-application/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 05:03:23,020 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:lazy-database:preBuild UP-TO-DATE
+:lazy-database:preReleaseBuild UP-TO-DATE
+:lazy-database:checkReleaseManifest
+:lazy-database:prepareReleaseDependencies
+:lazy-database:compileReleaseAidl UP-TO-DATE
+:lazy-database:compileReleaseNdk UP-TO-DATE
+:lazy-database:compileLint UP-TO-DATE
+:lazy-database:copyReleaseLint UP-TO-DATE
+:lazy-database:compileReleaseRenderscript UP-TO-DATE
+:lazy-database:generateReleaseBuildConfig UP-TO-DATE
+:lazy-database:generateReleaseResValues UP-TO-DATE
+:lazy-database:generateReleaseResources UP-TO-DATE
+:lazy-database:packageReleaseResources UP-TO-DATE
+:lazy-database:processReleaseManifest UP-TO-DATE
+:lazy-database:processReleaseResources UP-TO-DATE
+:lazy-database:generateReleaseSources UP-TO-DATE
+:lazy-database:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:lazy-database:javaPreCompileRelease
+:lazy-database:compileReleaseJavaWithJavac UP-TO-DATE
+:lazy-database:extractReleaseAnnotations UP-TO-DATE
+:lazy-database:mergeReleaseShaders UP-TO-DATE
+:lazy-database:compileReleaseShaders UP-TO-DATE
+:lazy-database:generateReleaseAssets UP-TO-DATE
+:lazy-database:mergeReleaseAssets UP-TO-DATE
+:lazy-database:mergeReleaseProguardFiles UP-TO-DATE
+:lazy-database:packageReleaseRenderscript UP-TO-DATE
+:lazy-database:processReleaseJavaRes UP-TO-DATE
+:lazy-database:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:lazy-database:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:lazy-database:mergeReleaseJniLibFolders UP-TO-DATE
+:lazy-database:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:lazy-database:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:lazy-database:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:lazy-database:bundleRelease UP-TO-DATE
+:test-application:preBuild UP-TO-DATE
+:test-application:preDebugBuild UP-TO-DATE
+:test-application:checkDebugManifest
+:test-application:preReleaseBuild UP-TO-DATE
+:test-application:prepareComAndroidSupportAnimatedVectorDrawable2602Library
+:test-application:prepareComAndroidSupportAppcompatV72602Library
+:test-application:prepareComAndroidSupportDesign2602Library
+:test-application:prepareComAndroidSupportRecyclerviewV72602Library
+:test-application:prepareComAndroidSupportSupportCompat2602Library
+:test-application:prepareComAndroidSupportSupportCoreUi2602Library
+:test-application:prepareComAndroidSupportSupportCoreUtils2602Library
+:test-application:prepareComAndroidSupportSupportFragment2602Library
+:test-application:prepareComAndroidSupportSupportMediaCompat2602Library
+:test-application:prepareComAndroidSupportSupportV42602Library
+:test-application:prepareComAndroidSupportSupportVectorDrawable2602Library
+:test-application:prepareComAndroidSupportTransition2602Library
+:test-application:prepareComFacebookStethoStetho150Library
+:test-application:prepareComFacebookStethoStethoOkhttp150Library
+:test-application:prepareComJakewhartonButterknife881Library
+:test-application:prepareDebugDependencies
+:test-application:compileDebugAidl
+:test-application:compileDebugRenderscript
+:test-application:generateDebugBuildConfig
+:test-application:generateDebugResValues
+:test-application:generateDebugResources
+:test-application:mergeDebugResources
+:test-application:processDebugManifest
+:test-application:processDebugResources
+:test-application:generateDebugSources
+:test-application:incrementalDebugJavaCompilationSafeguard
+:test-application:javaPreCompileDebug
+:test-application:compileDebugJavaWithJavac
+:test-application:compileDebugNdk UP-TO-DATE
+:test-application:compileDebugSources
+:test-application:mergeDebugShaders
+:test-application:compileDebugShaders
+:test-application:generateDebugAssets
+:test-application:mergeDebugAssets
+:test-application:transformClassesWithDexForDebug
+:test-application:mergeDebugJniLibFolders
+:test-application:transformNativeLibsWithMergeJniLibsForDebug
+:test-application:transformNativeLibsWithStripDebugSymbolForDebug
+:test-application:processDebugJavaRes UP-TO-DATE
+:test-application:transformResourcesWithMergeJavaResForDebug
+:test-application:validateSigningDebug
+:test-application:packageDebug
+:test-application:assembleDebug
+:test-application:checkReleaseManifest
+:test-application:prepareReleaseDependencies
+:test-application:compileReleaseAidl
+:test-application:compileReleaseRenderscript
+:test-application:generateReleaseBuildConfig
+:test-application:generateReleaseResValues
+:test-application:generateReleaseResources
+:test-application:mergeReleaseResources
+:test-application:processReleaseManifest
+:test-application:processReleaseResources
+:test-application:generateReleaseSources
+:test-application:incrementalReleaseJavaCompilationSafeguard
+:test-application:javaPreCompileRelease
+:test-application:compileReleaseJavaWithJavac
+:test-application:compileReleaseNdk UP-TO-DATE
+:test-application:compileReleaseSources
+:test-application:lintVitalRelease
+:test-application:mergeReleaseShaders
+:test-application:compileReleaseShaders
+:test-application:generateReleaseAssets
+:test-application:mergeReleaseAssets
+:test-application:transformClassesWithDexForRelease
+:test-application:mergeReleaseJniLibFolders
+:test-application:transformNativeLibsWithMergeJniLibsForRelease
+:test-application:transformNativeLibsWithStripDebugSymbolForRelease
+:test-application:processReleaseJavaRes UP-TO-DATE
+:test-application:transformResourcesWithMergeJavaResForRelease
+:test-application:packageRelease
+:test-application:assembleRelease
+:test-application:assemble
+:test-application:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.111 secs
+
+2018-04-04 05:03:23,081 INFO  FullProcessService - Found APK file: /tmp/rdisk/1887/src/test-application/build/outputs/apk/test-application-release-unsigned.apk

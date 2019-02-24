@@ -1,0 +1,267 @@
+2018-04-04 02:42:06,900 INFO  DownloadService - Downloading "https://github.com/mitoyarzun/zxingfragmentlib/archive/master.zip", attempt 3
+2018-04-04 02:43:07,540 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 02:43:08,354 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 02:43:08,354 INFO  DownloadService - Downloading "https://github.com/mitoyarzun/zxingfragmentlib/archive/master.zip", attempt 3
+2018-04-04 02:44:09,587 DEBUG FullProcessService - Repository https://github.com/mitoyarzun/zxingfragmentlib available: true
+2018-04-04 02:44:09,587 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 02:44:09,587 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mitoyarzun/zxingfragmentlib, /tmp/rdisk/1935/src]
+2018-04-04 02:44:14,028 INFO  SysUtils - 
+2018-04-04 02:44:14,037 INFO  GitService - Deleted "/tmp/rdisk/1935/src/.git": true
+2018-04-04 02:44:14,047 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 02:44:14,047 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1935/src]
+2018-04-04 02:44:14,051 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1935/src/.git/
+
+2018-04-04 02:44:14,059 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1935/src/gradlew
+2018-04-04 02:44:14,066 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1935/src/library/build.gradle /tmp/rdisk/1935/src/sample/build.gradle /tmp/rdisk/1935/src/zxing-android/build.gradle /tmp/rdisk/1935/src/build.gradle
+2018-04-04 02:44:14,073 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1935/src/zxing-android/build.gradle /tmp/rdisk/1935/src/settings.gradle /tmp/rdisk/1935/src/sample/build.gradle /tmp/rdisk/1935/src/library/build.gradle /tmp/rdisk/1935/src/build.gradle
+2018-04-04 02:44:14,074 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 02:44:14,074 INFO  ProjectFixService - Fixing project...
+2018-04-04 02:44:14,089 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1935/src/library/local.properties
+2018-04-04 02:44:14,090 INFO  ProjectFixService - Build info for "/tmp/rdisk/1935/src/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 02:44:14,090 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1935/src/sample/local.properties
+2018-04-04 02:44:14,090 INFO  ProjectFixService - Build info for "/tmp/rdisk/1935/src/sample/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 02:44:14,090 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1935/src/zxing-android/local.properties
+2018-04-04 02:44:14,091 INFO  ProjectFixService - Build info for "/tmp/rdisk/1935/src/zxing-android/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 02:44:14,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1935/src/local.properties
+2018-04-04 02:44:14,091 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 02:44:14,091 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 02:44:14,092 INFO  ProjectFixService - Build info for "/tmp/rdisk/1935/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 02:44:14,092 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 02:44:14,092 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 02:44:14,092 INFO  SysUtils - Execute command: [/tmp/rdisk/1935/src/gradlew, -b, /tmp/rdisk/1935/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 02:44:25,862 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-04 02:44:25,862 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 02:44:25,863 INFO  SysUtils - Execute command: [/tmp/rdisk/1935/src/gradlew, -b, /tmp/rdisk/1935/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 02:44:38,618 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:zxing-android:compileLint
+:zxing-android:copyReleaseLint UP-TO-DATE
+:zxing-android:preBuild UP-TO-DATE
+:zxing-android:preReleaseBuild UP-TO-DATE
+:zxing-android:checkReleaseManifest
+:zxing-android:preDebugAndroidTestBuild UP-TO-DATE
+:zxing-android:preDebugBuild UP-TO-DATE
+:zxing-android:prepareComAndroidSupportSupportV42000Library
+:zxing-android:prepareReleaseDependencies
+:zxing-android:compileReleaseAidl
+:zxing-android:compileReleaseRenderscript
+:zxing-android:generateReleaseBuildConfig
+:zxing-android:generateReleaseAssets UP-TO-DATE
+:zxing-android:mergeReleaseAssets
+:zxing-android:generateReleaseResValues
+:zxing-android:generateReleaseResources
+:zxing-android:mergeReleaseResources
+:zxing-android:processReleaseManifest
+:zxing-android:processReleaseResources
+:zxing-android:generateReleaseSources
+:zxing-android:compileReleaseJavaNote: /tmp/rdisk/1935/src/zxing-android/src/main/java/com/google/zxing/client/android/camera/CameraConfigurationManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:zxing-android:extractReleaseAnnotations
+:zxing-android:mergeReleaseProguardFiles
+:zxing-android:processReleaseJavaRes UP-TO-DATE
+:zxing-android:packageReleaseJar
+:zxing-android:compileReleaseNdk UP-TO-DATE
+:zxing-android:packageReleaseJniLibs UP-TO-DATE
+:zxing-android:packageReleaseLocalJar UP-TO-DATE
+:zxing-android:packageReleaseRenderscript UP-TO-DATE
+:zxing-android:packageReleaseResources
+:zxing-android:bundleRelease
+:library:prepareComAndroidSupportAppcompatV72000Library
+:library:prepareComAndroidSupportSupportV42000Library
+:library:prepareSrcZxingAndroidUnspecifiedLibrary
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaNote: /tmp/rdisk/1935/src/library/src/main/java/com/welcu/android/zxingfragmentlib/BarCodeScannerFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: /tmp/rdisk/1935/src/library/src/main/java/com/welcu/android/zxingfragmentlib/BarCodeScannerFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.299 secs
+
+2018-04-04 02:44:38,669 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 02:44:38,669 INFO  SysUtils - Execute command: [/tmp/rdisk/1935/src/gradlew, -b, /tmp/rdisk/1935/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 02:44:44,866 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 02:44:44,866 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 02:44:44,866 INFO  SysUtils - Execute command: [/tmp/rdisk/1935/src/gradlew, -b, /tmp/rdisk/1935/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 02:45:12,655 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:zxing-android:compileLint
+:zxing-android:copyReleaseLint UP-TO-DATE
+:zxing-android:preBuild UP-TO-DATE
+:zxing-android:preReleaseBuild UP-TO-DATE
+:zxing-android:checkReleaseManifest
+:zxing-android:preDebugAndroidTestBuild UP-TO-DATE
+:zxing-android:preDebugBuild UP-TO-DATE
+:zxing-android:prepareComAndroidSupportSupportV42000Library UP-TO-DATE
+:zxing-android:prepareReleaseDependencies
+:zxing-android:compileReleaseAidl UP-TO-DATE
+:zxing-android:compileReleaseRenderscript UP-TO-DATE
+:zxing-android:generateReleaseBuildConfig UP-TO-DATE
+:zxing-android:generateReleaseAssets UP-TO-DATE
+:zxing-android:mergeReleaseAssets UP-TO-DATE
+:zxing-android:generateReleaseResValues UP-TO-DATE
+:zxing-android:generateReleaseResources UP-TO-DATE
+:zxing-android:mergeReleaseResources UP-TO-DATE
+:zxing-android:processReleaseManifest UP-TO-DATE
+:zxing-android:processReleaseResources UP-TO-DATE
+:zxing-android:generateReleaseSources UP-TO-DATE
+:zxing-android:compileReleaseJava UP-TO-DATE
+:zxing-android:extractReleaseAnnotations UP-TO-DATE
+:zxing-android:mergeReleaseProguardFiles UP-TO-DATE
+:zxing-android:processReleaseJavaRes UP-TO-DATE
+:zxing-android:packageReleaseJar UP-TO-DATE
+:zxing-android:compileReleaseNdk UP-TO-DATE
+:zxing-android:packageReleaseJniLibs UP-TO-DATE
+:zxing-android:packageReleaseLocalJar UP-TO-DATE
+:zxing-android:packageReleaseRenderscript UP-TO-DATE
+:zxing-android:packageReleaseResources UP-TO-DATE
+:zxing-android:bundleRelease UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72000Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42000Library UP-TO-DATE
+:library:prepareSrcZxingAndroidUnspecifiedLibrary UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72000Library
+:sample:prepareComAndroidSupportSupportV42000Library
+:sample:prepareSrcLibraryUnspecifiedLibrary
+:sample:prepareSrcZxingAndroidUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.369 secs
+
+2018-04-04 02:45:12,745 INFO  FullProcessService - Found APK file: /tmp/rdisk/1935/src/sample/build/outputs/apk/sample-release-unsigned.apk

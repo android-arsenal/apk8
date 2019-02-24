@@ -1,0 +1,166 @@
+2018-04-04 01:17:04,668 INFO  DownloadService - Downloading "https://github.com/janosgyerik/bluetoothviewer/archive/master.zip", attempt 3
+2018-04-04 01:18:10,134 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:18:10,800 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:18:10,800 INFO  DownloadService - Downloading "https://github.com/janosgyerik/bluetoothviewer/archive/master.zip", attempt 3
+2018-04-04 01:19:12,079 DEBUG FullProcessService - Repository https://github.com/janosgyerik/bluetoothviewer available: true
+2018-04-04 01:19:12,079 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:19:12,080 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/janosgyerik/bluetoothviewer, /tmp/rdisk/1966/src]
+2018-04-04 01:19:14,024 INFO  SysUtils - 
+2018-04-04 01:19:14,028 INFO  GitService - Deleted "/tmp/rdisk/1966/src/.git": true
+2018-04-04 01:19:14,032 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 01:19:14,032 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1966/src]
+2018-04-04 01:19:14,036 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1966/src/.git/
+
+2018-04-04 01:19:14,039 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1966/src/gradlew
+2018-04-04 01:19:14,042 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle /tmp/rdisk/1966/src/bluetoothviewer-lite/build.gradle /tmp/rdisk/1966/src/bluetoothviewer/build.gradle /tmp/rdisk/1966/src/build.gradle
+2018-04-04 01:19:14,045 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1966/src/settings.gradle /tmp/rdisk/1966/src/build.gradle /tmp/rdisk/1966/src/bluetoothviewer/build.gradle /tmp/rdisk/1966/src/bluetoothviewer-lite/build.gradle /tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle
+2018-04-04 01:19:14,045 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:19:14,045 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:19:14,052 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1966/src/bluetoothviewer-full/local.properties
+2018-04-04 01:19:14,053 INFO  ProjectFixService - Build info for "/tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 01:19:14,054 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 01:19:14,054 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1966/src/bluetoothviewer-lite/local.properties
+2018-04-04 01:19:14,056 INFO  ProjectFixService - Build info for "/tmp/rdisk/1966/src/bluetoothviewer-lite/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 01:19:14,056 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1966/src/bluetoothviewer-lite/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 01:19:14,056 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1966/src/bluetoothviewer/local.properties
+2018-04-04 01:19:14,058 INFO  ProjectFixService - Build info for "/tmp/rdisk/1966/src/bluetoothviewer/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 01:19:14,058 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1966/src/bluetoothviewer/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 01:19:14,060 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1966/src/local.properties
+2018-04-04 01:19:14,060 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-04 01:19:14,060 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-04 01:19:14,062 INFO  ProjectFixService - Build info for "/tmp/rdisk/1966/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 01:19:14,062 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1966/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 01:19:14,062 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:19:14,062 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:19:14,062 INFO  SysUtils - Execute command: [/tmp/rdisk/1966/src/gradlew, -b, /tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:19:23,301 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-04 01:19:23,301 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 01:19:23,301 INFO  SysUtils - Execute command: [/tmp/rdisk/1966/src/gradlew, -b, /tmp/rdisk/1966/src/bluetoothviewer-full/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 01:19:37,941 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:bluetoothviewer:preBuild UP-TO-DATE
+:bluetoothviewer:preDebugBuild UP-TO-DATE
+:bluetoothviewer:compileDebugAidl
+:bluetoothviewer:compileDebugRenderscript
+:bluetoothviewer:checkDebugManifest
+:bluetoothviewer:generateDebugBuildConfig
+:bluetoothviewer:prepareLintJar
+:bluetoothviewer:generateDebugResValues
+:bluetoothviewer:generateDebugResources
+:bluetoothviewer:packageDebugResources
+:bluetoothviewer:platformAttrExtractor
+:bluetoothviewer:processDebugManifest
+:bluetoothviewer:javaPreCompileDebug
+:bluetoothviewer:processDebugJavaRes NO-SOURCE
+:bluetoothviewer-full:preBuild UP-TO-DATE
+:bluetoothviewer-full:preDebugBuild
+:bluetoothviewer-full:compileDebugAidl
+:bluetoothviewer:packageDebugRenderscript NO-SOURCE
+:bluetoothviewer-full:compileDebugRenderscript
+:bluetoothviewer-full:checkDebugManifest
+:bluetoothviewer-full:generateDebugBuildConfig
+:bluetoothviewer-full:prepareLintJar
+:bluetoothviewer-full:generateDebugResValues
+:bluetoothviewer-full:generateDebugResources
+:bluetoothviewer-full:mergeDebugResources
+:bluetoothviewer-full:createDebugCompatibleScreenManifests
+:bluetoothviewer-full:processDebugManifest
+:bluetoothviewer-full:splitsDiscoveryTaskDebug
+:bluetoothviewer-full:compileDebugNdk NO-SOURCE
+:bluetoothviewer:mergeDebugShaders
+:bluetoothviewer:compileDebugShaders
+:bluetoothviewer:generateDebugAssets
+:bluetoothviewer:mergeDebugAssets
+:bluetoothviewer-full:mergeDebugShaders
+:bluetoothviewer-full:compileDebugShaders
+:bluetoothviewer-full:generateDebugAssets
+:bluetoothviewer-full:mergeDebugAssets
+:bluetoothviewer:compileDebugNdk NO-SOURCE
+:bluetoothviewer:mergeDebugJniLibFolders
+:bluetoothviewer:transformNativeLibsWithMergeJniLibsForDebug
+:bluetoothviewer:processDebugResources
+:bluetoothviewer:generateDebugSources
+:bluetoothviewer:compileDebugJavaWithJavac
+:bluetoothviewer:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:bluetoothviewer-full:processDebugResources
+:bluetoothviewer-full:generateDebugSources
+:bluetoothviewer-full:javaPreCompileDebug
+:bluetoothviewer-full:compileDebugJavaWithJavac
+:bluetoothviewer-full:compileDebugSources
+:bluetoothviewer-full:transformClassesWithDexBuilderForDebug
+:bluetoothviewer-full:transformDexArchiveWithExternalLibsDexMergerForDebug
+:bluetoothviewer-full:transformDexArchiveWithDexMergerForDebug
+:bluetoothviewer:transformNativeLibsWithStripDebugSymbolForDebug
+:bluetoothviewer:transformNativeLibsWithIntermediateJniLibsForDebug
+:bluetoothviewer-full:mergeDebugJniLibFolders
+:bluetoothviewer-full:transformNativeLibsWithMergeJniLibsForDebug
+:bluetoothviewer-full:transformNativeLibsWithStripDebugSymbolForDebug
+:bluetoothviewer-full:processDebugJavaRes NO-SOURCE
+:bluetoothviewer-full:transformResourcesWithMergeJavaResForDebug
+:bluetoothviewer-full:validateSigningDebug
+:bluetoothviewer-full:packageDebug
+:bluetoothviewer-full:assembleDebug
+:bluetoothviewer:preReleaseBuild UP-TO-DATE
+:bluetoothviewer:compileReleaseAidl
+:bluetoothviewer:compileReleaseRenderscript
+:bluetoothviewer:checkReleaseManifest
+:bluetoothviewer:generateReleaseBuildConfig
+:bluetoothviewer:generateReleaseResValues
+:bluetoothviewer:generateReleaseResources
+:bluetoothviewer:packageReleaseResources
+:bluetoothviewer:processReleaseManifest
+:bluetoothviewer:processReleaseResources
+:bluetoothviewer:generateReleaseSources
+:bluetoothviewer:javaPreCompileRelease
+:bluetoothviewer:compileReleaseJavaWithJavac
+:bluetoothviewer:processReleaseJavaRes NO-SOURCE
+:bluetoothviewer:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:bluetoothviewer-full:preReleaseBuild
+:bluetoothviewer-full:compileReleaseAidl
+:bluetoothviewer:packageReleaseRenderscript NO-SOURCE
+:bluetoothviewer-full:compileReleaseRenderscript
+:bluetoothviewer-full:checkReleaseManifest
+:bluetoothviewer-full:generateReleaseBuildConfig
+:bluetoothviewer-full:generateReleaseResValues
+:bluetoothviewer-full:generateReleaseResources
+:bluetoothviewer-full:mergeReleaseResources
+:bluetoothviewer-full:createReleaseCompatibleScreenManifests
+:bluetoothviewer-full:processReleaseManifest
+:bluetoothviewer-full:splitsDiscoveryTaskRelease
+:bluetoothviewer-full:processReleaseResources
+:bluetoothviewer-full:generateReleaseSources
+:bluetoothviewer-full:javaPreCompileRelease
+:bluetoothviewer-full:compileReleaseJavaWithJavac
+:bluetoothviewer-full:compileReleaseNdk NO-SOURCE
+:bluetoothviewer-full:compileReleaseSources
+:bluetoothviewer-full:lintVitalRelease
+:bluetoothviewer:mergeReleaseShaders
+:bluetoothviewer:compileReleaseShaders
+:bluetoothviewer:generateReleaseAssets
+:bluetoothviewer:mergeReleaseAssets
+:bluetoothviewer-full:mergeReleaseShaders
+:bluetoothviewer-full:compileReleaseShaders
+:bluetoothviewer-full:generateReleaseAssets
+:bluetoothviewer-full:mergeReleaseAssets
+:bluetoothviewer-full:transformClassesWithPreDexForRelease
+:bluetoothviewer-full:transformDexWithDexForRelease
+:bluetoothviewer:compileReleaseNdk NO-SOURCE
+:bluetoothviewer:mergeReleaseJniLibFolders
+:bluetoothviewer:transformNativeLibsWithMergeJniLibsForRelease
+:bluetoothviewer:transformNativeLibsWithStripDebugSymbolForRelease
+:bluetoothviewer:transformNativeLibsWithIntermediateJniLibsForRelease
+:bluetoothviewer-full:mergeReleaseJniLibFolders
+:bluetoothviewer-full:transformNativeLibsWithMergeJniLibsForRelease
+:bluetoothviewer-full:transformNativeLibsWithStripDebugSymbolForRelease
+:bluetoothviewer-full:processReleaseJavaRes NO-SOURCE
+:bluetoothviewer-full:transformResourcesWithMergeJavaResForRelease
+:bluetoothviewer-full:packageRelease
+:bluetoothviewer-full:assembleRelease
+:bluetoothviewer-full:assemble
+:bluetoothviewer-full:build
+
+BUILD SUCCESSFUL in 14s
+88 actionable tasks: 88 executed
+
+2018-04-04 01:19:37,962 INFO  FullProcessService - Found APK file: /tmp/rdisk/1966/src/bluetoothviewer-full/build/outputs/apk/release/bluetoothviewer-full-release-unsigned.apk

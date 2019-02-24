@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.avafab.examples.URLMediaPlayer",
+    "label" : "URL Media Player",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 823,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.avafab.examples.URLMediaPlayer\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0b002f\" android:label=\"URL Media Player\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"URL Media Player\" android:name=\"com.avafab.examples.URLMediaPlayer.MainActivity\" android:launchMode=\"singleTop\" android:configChanges=\"0xfb0\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"URL Media Player\" android:name=\"com.avafab.examples.URLMediaPlayer.URLMediaPlayerActivity\" android:configChanges=\"0xfb0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 881042,
+  "crc32" : 1139744560,
+  "sha256" : "47517ad9c63aa80e3e96126d8bcab531ad726226a185d8e74673e5f3ce6ecfd3",
+  "buildTime" : 1522853750000
+}

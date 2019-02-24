@@ -1,0 +1,601 @@
+2018-04-04 09:07:25,062 INFO  DownloadService - Downloading "https://github.com/novoda/merlin/archive/master.zip", attempt 3
+2018-04-04 09:08:25,695 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:08:26,507 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:08:26,508 INFO  DownloadService - Downloading "https://github.com/novoda/merlin/archive/master.zip", attempt 3
+2018-04-04 09:09:27,820 DEBUG FullProcessService - Repository https://github.com/novoda/merlin available: true
+2018-04-04 09:09:27,820 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:09:27,820 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/novoda/merlin, /tmp/rdisk/1828/src]
+2018-04-04 09:09:30,730 INFO  SysUtils - 
+2018-04-04 09:09:30,736 INFO  GitService - Deleted "/tmp/rdisk/1828/src/.git": true
+2018-04-04 09:09:30,741 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 09:09:30,741 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1828/src]
+2018-04-04 09:09:30,745 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1828/src/.git/
+
+2018-04-04 09:09:30,750 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1828/src/gradlew
+2018-04-04 09:09:30,754 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1828/src/core/build.gradle /tmp/rdisk/1828/src/demo/build.gradle /tmp/rdisk/1828/src/merlin-rxjava/build.gradle /tmp/rdisk/1828/src/merlin-rxjava2/build.gradle /tmp/rdisk/1828/src/build.gradle
+2018-04-04 09:09:30,758 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1828/src/settings.gradle /tmp/rdisk/1828/src/merlin-rxjava2/build.gradle /tmp/rdisk/1828/src/merlin-rxjava/build.gradle /tmp/rdisk/1828/src/dependencies.gradle /tmp/rdisk/1828/src/demo/build.gradle /tmp/rdisk/1828/src/core/build.gradle /tmp/rdisk/1828/src/build.gradle
+2018-04-04 09:09:30,759 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:09:30,759 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:09:30,768 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1828/src/core/local.properties
+2018-04-04 09:09:30,770 INFO  ProjectFixService - Build info for "/tmp/rdisk/1828/src/core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 09:09:30,771 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1828/src/core/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 09:09:30,771 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1828/src/demo/local.properties
+2018-04-04 09:09:30,774 INFO  ProjectFixService - Build info for "/tmp/rdisk/1828/src/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 09:09:30,774 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1828/src/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 09:09:30,774 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1828/src/merlin-rxjava/local.properties
+2018-04-04 09:09:30,777 INFO  ProjectFixService - Build info for "/tmp/rdisk/1828/src/merlin-rxjava/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 09:09:30,777 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1828/src/merlin-rxjava/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 09:09:30,777 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1828/src/merlin-rxjava2/local.properties
+2018-04-04 09:09:30,780 INFO  ProjectFixService - Build info for "/tmp/rdisk/1828/src/merlin-rxjava2/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 09:09:30,780 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1828/src/merlin-rxjava2/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 09:09:30,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1828/src/local.properties
+2018-04-04 09:09:30,781 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4.1-all.zip
+2018-04-04 09:09:30,781 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4.1-bin.zip)
+2018-04-04 09:09:30,783 INFO  ProjectFixService - Build info for "/tmp/rdisk/1828/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 09:09:30,784 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1828/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 09:09:30,784 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:09:30,784 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:09:30,784 INFO  SysUtils - Execute command: [/tmp/rdisk/1828/src/gradlew, -b, /tmp/rdisk/1828/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:09:40,161 INFO  ProjectTaskService - Detected possible tasks: 78
+2018-04-04 09:09:40,161 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 09:09:40,162 INFO  SysUtils - Execute command: [/tmp/rdisk/1828/src/gradlew, -b, /tmp/rdisk/1828/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 09:09:54,448 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+The CompileOptions.bootClasspath property has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the CompileOptions.bootstrapClasspath property instead.
+	at org.gradle.api.tasks.compile.CompileOptions.setBootClasspath(CompileOptions.java:273)
+	at org.gradle.api.tasks.compile.CompileOptions_Decorated.setBootClasspath(Unknown Source)
+	at com.android.build.gradle.tasks.factory.JavaCompileConfigAction.execute(JavaCompileConfigAction.java:77)
+	at com.android.build.gradle.tasks.factory.JavaCompileConfigAction.execute(JavaCompileConfigAction.java:31)
+	at org.gradle.api.internal.tasks.DefaultTaskContainer.create(DefaultTaskContainer.java:148)
+	at com.android.build.gradle.internal.TaskContainerAdaptor.create(TaskContainerAdaptor.java:58)
+	at com.android.build.gradle.internal.scope.AndroidTaskRegistry.create(AndroidTaskRegistry.java:45)
+	at com.android.build.gradle.internal.scope.AndroidTaskRegistry.create(AndroidTaskRegistry.java:87)
+	at com.android.build.gradle.internal.TaskManager.createJavacTask(TaskManager.java:1510)
+	at com.android.build.gradle.internal.LibraryTaskManager.lambda$createTasksForVariantScope$10(LibraryTaskManager.java:247)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.internal.LibraryTaskManager.createTasksForVariantScope(LibraryTaskManager.java:234)
+	at com.android.build.gradle.internal.VariantManager.createTasksForVariantData(VariantManager.java:545)
+	at com.android.build.gradle.internal.VariantManager.lambda$createAndroidTasks$1(VariantManager.java:355)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.internal.VariantManager.createAndroidTasks(VariantManager.java:351)
+	at com.android.build.gradle.BasePlugin.lambda$createAndroidTasks$5(BasePlugin.java:641)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:636)
+	at com.android.build.gradle.BasePlugin.lambda$null$3(BasePlugin.java:555)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.lambda$createTasks$4(BasePlugin.java:551)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:91)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:80)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:42)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:230)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:149)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:58)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:324)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:234)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:140)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy23.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:76)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:70)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:666)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:135)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:59)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$CalculateTaskGraph.run(DefaultGradleLauncher.java:268)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.constructTaskGraph(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:130)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:291)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:264)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:257)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:191)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:31)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:108)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+:core:preBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:compileDebugAidl
+:core:compileDebugNdk NO-SOURCE
+:core:compileDebugRenderscript
+:core:checkDebugManifest
+:core:generateDebugBuildConfig
+:core:prepareLintJar
+:core:generateDebugResValues
+:core:generateDebugResources
+:core:packageDebugResources
+:core:platformAttrExtractor
+:core:processDebugManifest
+:core:javaPreCompileDebug
+:core:mergeDebugShaders
+:core:compileDebugShaders
+:core:generateDebugAssets
+:core:mergeDebugAssets
+:core:mergeDebugConsumerProguardFiles
+:core:packageDebugRenderscript NO-SOURCE
+:core:processDebugJavaRes NO-SOURCE
+:core:mergeDebugJniLibFolders
+:core:transformNativeLibsWithMergeJniLibsForDebug
+:core:transformNativeLibsWithStripDebugSymbolForDebug
+:core:transformNativeLibsWithSyncJniLibsForDebug
+:core:preReleaseBuild UP-TO-DATE
+:core:compileReleaseAidl
+:core:compileReleaseNdk NO-SOURCE
+:core:compileReleaseRenderscript
+:core:checkReleaseManifest
+:core:generateReleaseBuildConfig
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:packageReleaseResources
+:core:processReleaseManifest
+:core:javaPreCompileRelease
+:core:mergeReleaseShaders
+:core:compileReleaseShaders
+:core:generateReleaseAssets
+:core:mergeReleaseAssets
+:core:mergeReleaseConsumerProguardFiles
+:core:packageReleaseRenderscript NO-SOURCE
+:core:processReleaseJavaRes NO-SOURCE
+:core:mergeReleaseJniLibFolders
+:core:transformNativeLibsWithMergeJniLibsForRelease
+:core:transformNativeLibsWithStripDebugSymbolForRelease
+:core:transformNativeLibsWithSyncJniLibsForRelease
+:core:mergeReleaseResources
+:core:verifyReleaseResources
+:core:processDebugResources
+:core:generateDebugSources
+:core:compileDebugJavaWithJavacNote: /tmp/rdisk/1828/src/core/src/main/java/com/novoda/merlin/MerlinsBeard.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:extractDebugAnnotations
+:core:transformResourcesWithMergeJavaResForDebug
+:core:transformClassesAndResourcesWithSyncLibJarsForDebug
+:core:bundleDebug
+:core:compileDebugSources
+:core:assembleDebug
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:compileReleaseJavaWithJavacNote: /tmp/rdisk/1828/src/core/src/main/java/com/novoda/merlin/MerlinsBeard.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:extractReleaseAnnotations
+:core:transformResourcesWithMergeJavaResForRelease
+:core:transformClassesAndResourcesWithSyncLibJarsForRelease
+:core:bundleRelease
+:core:compileReleaseSources
+:core:assembleRelease
+:core:assemble
+:core:build
+
+BUILD SUCCESSFUL in 13s
+48 actionable tasks: 48 executed
+
+2018-04-04 09:09:54,461 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:09:54,462 INFO  SysUtils - Execute command: [/tmp/rdisk/1828/src/gradlew, -b, /tmp/rdisk/1828/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:10:02,351 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-04 09:10:02,351 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 09:10:02,351 INFO  SysUtils - Execute command: [/tmp/rdisk/1828/src/gradlew, -b, /tmp/rdisk/1828/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 09:10:51,929 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+The CompileOptions.bootClasspath property has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the CompileOptions.bootstrapClasspath property instead.
+	at org.gradle.api.tasks.compile.CompileOptions.setBootClasspath(CompileOptions.java:273)
+	at org.gradle.api.tasks.compile.CompileOptions_Decorated.setBootClasspath(Unknown Source)
+	at com.android.build.gradle.tasks.factory.JavaCompileConfigAction.execute(JavaCompileConfigAction.java:77)
+	at com.android.build.gradle.tasks.factory.JavaCompileConfigAction.execute(JavaCompileConfigAction.java:31)
+	at org.gradle.api.internal.tasks.DefaultTaskContainer.create(DefaultTaskContainer.java:148)
+	at com.android.build.gradle.internal.TaskContainerAdaptor.create(TaskContainerAdaptor.java:58)
+	at com.android.build.gradle.internal.scope.AndroidTaskRegistry.create(AndroidTaskRegistry.java:45)
+	at com.android.build.gradle.internal.scope.AndroidTaskRegistry.create(AndroidTaskRegistry.java:87)
+	at com.android.build.gradle.internal.TaskManager.createJavacTask(TaskManager.java:1510)
+	at com.android.build.gradle.internal.ApplicationTaskManager.addCompileTask(ApplicationTaskManager.java:263)
+	at com.android.build.gradle.internal.ApplicationTaskManager.lambda$createTasksForVariantScope$12(ApplicationTaskManager.java:224)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.internal.ApplicationTaskManager.createTasksForVariantScope(ApplicationTaskManager.java:220)
+	at com.android.build.gradle.internal.VariantManager.createTasksForVariantData(VariantManager.java:545)
+	at com.android.build.gradle.internal.VariantManager.lambda$createAndroidTasks$1(VariantManager.java:355)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.internal.VariantManager.createAndroidTasks(VariantManager.java:351)
+	at com.android.build.gradle.BasePlugin.lambda$createAndroidTasks$5(BasePlugin.java:641)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:636)
+	at com.android.build.gradle.BasePlugin.lambda$null$3(BasePlugin.java:555)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.lambda$createTasks$4(BasePlugin.java:551)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:91)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:80)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:42)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:230)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:149)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:58)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:324)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:234)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:140)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy23.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:76)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:70)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:666)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:135)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:59)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$CalculateTaskGraph.run(DefaultGradleLauncher.java:268)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.constructTaskGraph(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:130)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:291)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:264)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:257)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:191)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:31)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:108)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+:core:preBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:compileDebugAidl UP-TO-DATE
+:core:compileDebugRenderscript UP-TO-DATE
+:core:checkDebugManifest UP-TO-DATE
+:core:generateDebugBuildConfig UP-TO-DATE
+:core:prepareLintJar UP-TO-DATE
+:core:generateDebugResValues UP-TO-DATE
+:core:generateDebugResources UP-TO-DATE
+:core:packageDebugResources UP-TO-DATE
+:core:platformAttrExtractor UP-TO-DATE
+:core:processDebugManifest UP-TO-DATE
+:core:processDebugResources UP-TO-DATE
+:core:generateDebugSources UP-TO-DATE
+:core:javaPreCompileDebug UP-TO-DATE
+:core:compileDebugJavaWithJavac UP-TO-DATE
+:core:processDebugJavaRes NO-SOURCE
+:core:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:preBuild UP-TO-DATE
+:merlin-rxjava:preBuild UP-TO-DATE
+:merlin-rxjava:preDebugBuild UP-TO-DATE
+:merlin-rxjava:checkDebugManifest
+:merlin-rxjava:processDebugManifest
+:merlin-rxjava2:preBuild UP-TO-DATE
+:merlin-rxjava2:preDebugBuild UP-TO-DATE
+:merlin-rxjava2:checkDebugManifest
+:merlin-rxjava2:processDebugManifest
+:demo:preDebugBuild
+:merlin-rxjava:compileDebugAidl
+:merlin-rxjava2:compileDebugAidl
+:demo:compileDebugAidl
+:core:packageDebugRenderscript NO-SOURCE
+:merlin-rxjava:packageDebugRenderscript NO-SOURCE
+:merlin-rxjava2:packageDebugRenderscript NO-SOURCE
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:merlin-rxjava:compileDebugRenderscript
+:merlin-rxjava:generateDebugResValues
+:merlin-rxjava:generateDebugResources
+:merlin-rxjava:packageDebugResources
+:merlin-rxjava2:compileDebugRenderscript
+:merlin-rxjava2:generateDebugResValues
+:merlin-rxjava2:generateDebugResources
+:merlin-rxjava2:packageDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+:demo:splitsDiscoveryTaskDebug
+:merlin-rxjava:platformAttrExtractor
+:merlin-rxjava2:platformAttrExtractor
+:merlin-rxjava:generateDebugBuildConfig
+:merlin-rxjava:prepareLintJar
+:merlin-rxjava:javaPreCompileDebug
+:merlin-rxjava:processDebugJavaRes NO-SOURCE
+:merlin-rxjava2:generateDebugBuildConfig
+:merlin-rxjava2:prepareLintJar
+:merlin-rxjava2:javaPreCompileDebug
+:merlin-rxjava2:processDebugJavaRes NO-SOURCE
+:demo:compileDebugNdk NO-SOURCE
+:core:mergeDebugShaders UP-TO-DATE
+:core:compileDebugShaders UP-TO-DATE
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets UP-TO-DATE
+:demo:mergeDebugShaders
+:merlin-rxjava2:processDebugResources
+:merlin-rxjava2:generateDebugSources
+:merlin-rxjava2:compileDebugJavaWithJavac
+:merlin-rxjava2:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:merlin-rxjava:mergeDebugShaders
+:merlin-rxjava:compileDebugShaders
+:merlin-rxjava:generateDebugAssets
+:merlin-rxjava:mergeDebugAssets
+:merlin-rxjava2:mergeDebugShaders
+:merlin-rxjava2:compileDebugShaders
+:merlin-rxjava2:generateDebugAssets
+:merlin-rxjava2:mergeDebugAssets
+:demo:mergeDebugAssets
+:core:compileDebugNdk NO-SOURCE
+:core:mergeDebugJniLibFolders UP-TO-DATE
+:core:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:core:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:core:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo:mergeDebugJniLibFolders
+:merlin-rxjava:compileDebugNdk NO-SOURCE
+:merlin-rxjava:mergeDebugJniLibFolders
+:merlin-rxjava:transformNativeLibsWithMergeJniLibsForDebug
+:merlin-rxjava:transformNativeLibsWithStripDebugSymbolForDebug
+:merlin-rxjava:transformNativeLibsWithIntermediateJniLibsForDebug
+:merlin-rxjava2:compileDebugNdk NO-SOURCE
+:merlin-rxjava2:mergeDebugJniLibFolders
+:merlin-rxjava2:transformNativeLibsWithMergeJniLibsForDebug
+:merlin-rxjava2:transformNativeLibsWithStripDebugSymbolForDebug
+:merlin-rxjava2:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:validateSigningDebug
+:core:preReleaseBuild UP-TO-DATE
+:core:compileReleaseAidl UP-TO-DATE
+:core:compileReleaseRenderscript UP-TO-DATE
+:core:checkReleaseManifest UP-TO-DATE
+:core:generateReleaseBuildConfig UP-TO-DATE
+:core:generateReleaseResValues UP-TO-DATE
+:core:generateReleaseResources UP-TO-DATE
+:core:packageReleaseResources UP-TO-DATE
+:core:processReleaseManifest UP-TO-DATE
+:core:processReleaseResources UP-TO-DATE
+:core:generateReleaseSources UP-TO-DATE
+:core:javaPreCompileRelease UP-TO-DATE
+:core:compileReleaseJavaWithJavac UP-TO-DATE
+:core:processReleaseJavaRes NO-SOURCE
+:core:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:merlin-rxjava:preReleaseBuild UP-TO-DATE
+:merlin-rxjava:checkReleaseManifest
+:merlin-rxjava:processReleaseManifest
+:merlin-rxjava2:preReleaseBuild UP-TO-DATE
+:merlin-rxjava2:checkReleaseManifest
+:merlin-rxjava2:processReleaseManifest
+:demo:preReleaseBuild
+:merlin-rxjava:compileReleaseAidl
+:merlin-rxjava2:compileReleaseAidl
+:demo:compileReleaseAidl
+:core:packageReleaseRenderscript NO-SOURCE
+:merlin-rxjava:packageReleaseRenderscript NO-SOURCE
+:merlin-rxjava2:packageReleaseRenderscript NO-SOURCE
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:merlin-rxjava:compileReleaseRenderscript
+:merlin-rxjava:generateReleaseResValues
+:merlin-rxjava:generateReleaseResources
+:merlin-rxjava:packageReleaseResources
+:merlin-rxjava2:compileReleaseRenderscript
+:merlin-rxjava2:generateReleaseResValues
+:merlin-rxjava2:generateReleaseResources
+:merlin-rxjava2:packageReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+:demo:splitsDiscoveryTaskRelease
+:merlin-rxjava2:processReleaseResources
+:merlin-rxjava:generateReleaseBuildConfig
+:merlin-rxjava:javaPreCompileRelease
+:merlin-rxjava:processReleaseJavaRes NO-SOURCE
+:merlin-rxjava2:generateReleaseBuildConfig
+:merlin-rxjava2:generateReleaseSources
+:merlin-rxjava2:javaPreCompileRelease
+:merlin-rxjava2:compileReleaseJavaWithJavac
+:merlin-rxjava2:processReleaseJavaRes NO-SOURCE
+:merlin-rxjava2:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo:compileReleaseNdk NO-SOURCE
+:core:mergeReleaseShaders UP-TO-DATE
+:core:compileReleaseShaders UP-TO-DATE
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets UP-TO-DATE
+:demo:mergeReleaseShaders
+:merlin-rxjava:processDebugResources
+:demo:processDebugResources
+:demo:generateDebugSources
+:merlin-rxjava:generateDebugSources
+:merlin-rxjava:compileDebugJavaWithJavac
+:merlin-rxjava:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileDebugSources
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:packageDebug
+:demo:assembleDebug
+:merlin-rxjava:processReleaseResources
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:merlin-rxjava:generateReleaseSources
+:merlin-rxjava:compileReleaseJavaWithJavac
+:merlin-rxjava:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:merlin-rxjava:mergeReleaseShaders
+:merlin-rxjava:compileReleaseShaders
+:merlin-rxjava:generateReleaseAssets
+:merlin-rxjava:mergeReleaseAssets
+:merlin-rxjava2:mergeReleaseShaders
+:merlin-rxjava2:compileReleaseShaders
+:merlin-rxjava2:generateReleaseAssets
+:merlin-rxjava2:mergeReleaseAssets
+:demo:mergeReleaseAssets
+:demo:transformClassesWithPreDexForRelease
+:demo:transformDexWithDexForRelease
+:core:compileReleaseNdk NO-SOURCE
+:core:mergeReleaseJniLibFolders UP-TO-DATE
+:core:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:core:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:core:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo:mergeReleaseJniLibFolders
+:merlin-rxjava:compileReleaseNdk NO-SOURCE
+:merlin-rxjava:mergeReleaseJniLibFolders
+:merlin-rxjava:transformNativeLibsWithMergeJniLibsForRelease
+:merlin-rxjava:transformNativeLibsWithStripDebugSymbolForRelease
+:merlin-rxjava:transformNativeLibsWithIntermediateJniLibsForRelease
+:merlin-rxjava2:compileReleaseNdk NO-SOURCE
+:merlin-rxjava2:mergeReleaseJniLibFolders
+:merlin-rxjava2:transformNativeLibsWithMergeJniLibsForRelease
+:merlin-rxjava2:transformNativeLibsWithStripDebugSymbolForRelease
+:merlin-rxjava2:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:processReleaseJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL in 48s
+164 actionable tasks: 130 executed, 34 up-to-date
+
+2018-04-04 09:10:51,996 INFO  FullProcessService - Found APK file: /tmp/rdisk/1828/src/demo/build/outputs/apk/release/demo-release-unsigned.apk

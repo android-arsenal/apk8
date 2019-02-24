@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "ca.barrenechea.stickyheaders",
+    "label" : "Header Decor",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.2.8",
+    "versionCode" : 9,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1356,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"9\" android:versionName=\"0.2.8\" package=\"ca.barrenechea.stickyheaders\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"27\" />\n\t<application android:theme=\"resourceId:0x7f0c0000\" android:label=\"Header Decor\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Header Decor\" android:name=\"ca.barrenechea.stickyheaders.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 737368,
+  "crc32" : 2274329663,
+  "sha256" : "ed8012d6d28e2b16ffb862c81f811f449306efbe7569b4da3024ac5fa5825306",
+  "buildTime" : 1526860799000
+}

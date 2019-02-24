@@ -1,0 +1,100 @@
+2018-04-04 03:26:41,275 INFO  DownloadService - Downloading "https://github.com/naman14/PlayAnimations/archive/master.zip", attempt 3
+2018-04-04 03:27:41,730 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:27:42,338 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:27:42,338 INFO  DownloadService - Downloading "https://github.com/naman14/PlayAnimations/archive/master.zip", attempt 3
+2018-04-04 03:28:43,550 DEBUG FullProcessService - Repository https://github.com/naman14/PlayAnimations available: true
+2018-04-04 03:28:43,550 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 03:28:43,550 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/naman14/PlayAnimations, /tmp/rdisk/1920/src]
+2018-04-04 03:28:48,739 INFO  SysUtils - 
+2018-04-04 03:28:48,744 INFO  GitService - Deleted "/tmp/rdisk/1920/src/.git": true
+2018-04-04 03:28:48,747 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-04 03:28:48,747 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1920/src]
+2018-04-04 03:28:48,752 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1920/src/.git/
+
+2018-04-04 03:28:48,754 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1920/src/gradlew
+2018-04-04 03:28:48,757 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1920/src/app/build.gradle /tmp/rdisk/1920/src/build.gradle
+2018-04-04 03:28:48,759 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1920/src/settings.gradle /tmp/rdisk/1920/src/build.gradle /tmp/rdisk/1920/src/app/build.gradle
+2018-04-04 03:28:48,759 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 03:28:48,759 INFO  ProjectFixService - Fixing project...
+2018-04-04 03:28:48,765 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1920/src/app/local.properties
+2018-04-04 03:28:48,765 INFO  ProjectFixService - Build info for "/tmp/rdisk/1920/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-04 03:28:48,766 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/1920/src/local.properties
+2018-04-04 03:28:48,766 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 03:28:48,766 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 03:28:48,767 INFO  ProjectFixService - Build info for "/tmp/rdisk/1920/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-04 03:28:48,767 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 03:28:48,767 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:28:48,767 INFO  SysUtils - Execute command: [/tmp/rdisk/1920/src/gradlew, -b, /tmp/rdisk/1920/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:28:57,046 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-04 03:28:57,046 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 03:28:57,046 INFO  SysUtils - Execute command: [/tmp/rdisk/1920/src/gradlew, -b, /tmp/rdisk/1920/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 03:29:21,239 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportCardviewV72103Library
+:app:prepareComAndroidSupportRecyclerviewV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareComJpardogoMaterialtabstripLibrary106Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1920/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1920/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.75 secs
+
+2018-04-04 03:29:21,272 INFO  FullProcessService - Found APK file: /tmp/rdisk/1920/src/app/build/outputs/apk/app-debug.apk

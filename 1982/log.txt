@@ -1,0 +1,14 @@
+2018-04-04 00:38:16,488 INFO  DownloadService - Downloading "https://github.com/tvbarthel/Cheerleader/archive/master.zip", attempt 3
+2018-04-04 00:39:17,069 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:39:17,742 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:39:17,743 INFO  DownloadService - Downloading "https://github.com/tvbarthel/Cheerleader/archive/master.zip", attempt 3
+2018-04-04 00:40:19,093 DEBUG FullProcessService - Repository https://github.com/tvbarthel/Cheerleader available: true
+2018-04-04 00:40:19,093 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:40:19,093 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tvbarthel/Cheerleader, /tmp/rdisk/1982/src]
+2018-04-04 00:40:23,553 INFO  SysUtils - 
+2018-04-04 00:40:23,563 INFO  GitService - Deleted "/tmp/rdisk/1982/src/.git": true
+2018-04-04 00:40:23,572 INFO  FullProcessService - Size of directory with sources: 50 MB
+2018-04-04 00:40:23,572 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-04 00:40:23,572 ERROR FullProcessService - Project will not be processed
+2018-04-04 00:40:23,572 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 00:40:23,577 ERROR FullProcessService - Could not find generated or existed APK file

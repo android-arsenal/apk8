@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "net.frakbot.creditsrolldemo",
+    "label" : "CreditsRoll Demo",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 92,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"net.frakbot.creditsrolldemo\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f060000\" android:label=\"CreditsRoll Demo\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"CreditsRoll Demo\" android:name=\"net.frakbot.creditsrolldemo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 79525,
+  "crc32" : 774773278,
+  "sha256" : "6810532c0a4af79340f309f0d66fbbf6a93bc548bfb35ecb33f039a99fa81daa",
+  "buildTime" : 1522820753000
+}

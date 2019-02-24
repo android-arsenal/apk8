@@ -1,0 +1,50 @@
+{
+  "meta" : {
+    "packageName" : "com.welcu.android.zxingfragmentsample",
+    "label" : "ZXing Fragment Sample",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : true,
+    "smallScreens" : true,
+    "normalScreens" : true,
+    "largeScreens" : true,
+    "usesPermissions" : [ "android.permission.CAMERA", "android.permission.FLASHLIGHT", "android.permission.INTERNET", "android.permission.VIBRATE", "android.permission.READ_CONTACTS", "com.android.browser.permission.READ_HISTORY_BOOKMARKS", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.CHANGE_WIFI_STATE", "android.permission.ACCESS_WIFI_STATE" ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.camera",
+      "required" : false
+    }, {
+      "name" : "android.hardware.camera.autofocus",
+      "required" : false
+    }, {
+      "name" : "android.hardware.camera.flash",
+      "required" : false
+    }, {
+      "name" : "android.hardware.camera.front",
+      "required" : false
+    }, {
+      "name" : "android.hardware.screen.landscape",
+      "required" : false
+    }, {
+      "name" : "android.hardware.wifi",
+      "required" : false
+    }, {
+      "name" : "android.hardware.touchscreen",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 1267,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "eu", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.welcu.android.zxingfragmentsample\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.CAMERA\" />\n\t<uses-permission android:name=\"android.permission.FLASHLIGHT\" />\n\t<uses-feature android:name=\"android.hardware.camera\" />\n\t<uses-feature android:name=\"android.hardware.camera.autofocus\" />\n\t<uses-feature android:name=\"android.hardware.camera.flash\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.VIBRATE\" />\n\t<uses-permission android:name=\"android.permission.READ_CONTACTS\" />\n\t<uses-permission android:name=\"com.android.browser.permission.READ_HISTORY_BOOKMARKS\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<uses-feature android:name=\"android.hardware.camera.front\" android:required=\"false\" />\n\t<uses-feature android:name=\"android.hardware.screen.landscape\" />\n\t<uses-feature android:name=\"android.hardware.wifi\" android:required=\"false\" />\n\t<uses-feature android:name=\"android.hardware.touchscreen\" />\n\t<supports-screens android:anyDensity=\"true\" android:smallScreens=\"true\" android:normalScreens=\"true\" android:largeScreens=\"true\" android:xlargeScreens=\"true\" />\n\t<application android:theme=\"resourceId:0x7f0e0000\" android:label=\"ZXing Fragment Sample\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"SampleActivity\" android:name=\"com.welcu.android.zxingfragmentlibsample.SampleActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f0e0000\" android:name=\"com.welcu.android.zxingfragmentlibsample.SampleNestedFragmentActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f0e0000\" android:name=\"com.welcu.android.zxingfragmentlibsample.SampleStretchedActivity\" />\n\t\t<activity android:label=\"LauncherActivity\" android:name=\"com.welcu.android.zxingfragmentlibsample.LauncherActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1662002,
+  "crc32" : 1859765775,
+  "sha256" : "f805f9c988fdd8e5617c452d63cc210b32e2d87d300cab4e3c95bcb5ba2f8242",
+  "buildTime" : 1522809912000
+}

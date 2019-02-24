@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.ppamorim.cult",
+    "label" : "Cult",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAC6FBMVEX////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v739/fW1ta4uLiysrLGxsbp6en9/f34+Pjz8/P19fX09PT29vb///////////+fn59OTk4zMzMpKSkrKys+Pj54eHjc3Nzx8fGGhoY6OjpNTU1MTExnZ2fg4OD////s7OwmJiYsLCwvLy8wMDAtLS0kJCRAQEC5ubn7+/vv7+9xcXEVFRUaGhrb29v///9iYmIyMjI7Ozs1NTUnJye6urr5+flzc3MZGRkxMTE0NDQdHR3///////+UlJQoKCguLi5BQUGcnJzZ2dm9vb1kZGQqKio5OTmlpaWPj496eno3NzeSkpKmpqb///9GRkZDQ0PS0tJ8fHzLy8vNzc0fHx++vr7///+8vLysrKw8PDwhISG1tbWjo6M9PT2amppFRUXy8vL///+oqKjf39/////IyMiLi4utra3u7u7///////9RUVGqqqrV1dUeHh50dHTR0dH///+VlZVTU1MTExP////6+vp+fn4jIyMiIiJPT0/Dw8P///+JiYnQ0NDBwcEMDAyvr6////////////+7u7uBgYFZWVlubm7Y2NhycnL////////////MzMzU1NT8/Pz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+b8ymkAAAA+HRSTlMAPG+exOL4//DWtIxdIgRV1/PChTRIqOrTiR0Nfd/FUSiu+eUCOvWYCjvO/J8JKfuKrf5g+u0t4LmnUlbszJ1GAT3Y/////////////////6wFcf///////////////////xX///////////////////9M////////////////juT/////////////////////vv//////////1P/////////////r///m/////9zx////////zf///7X///////9y//////8vXvT////////aCB////+HJqID9hvIgU6/GHwyDlASWhGIC2J+GVTJoAer5ycXvOHpMeuHnJEAAALOSURBVEjHY2CgO2BkYmZhZWMHAQ5OLm4eXryq+fiZBdhRgKCQsAhu9aJi4uyYQEJSCrtyaRlZduxATh6begVFJXZcQFlGBUO9Kgs7HqCmroGmXlOLHS/Q1tFFUa8nx04A6BvwIfvX0IiQBnY1YyR/yJiwEwamZojwN2cnBljAvMFnaUSUBm0rqKOsbdiJA7bQsLUjUj27kb0DSL2jE5KYs4urm7uHpxeI6e3jCwJ+/s4w2YBAkIYgJPUuwSGhYWHhEZFRXuzRMbFx8fHxcREJiTBp8SSQBmaE+uSElNS09PT0jMys7JzcvPwMECiIL4QrKAJpQCQi3+KUkrS00oiyjJLy0IrKquqa0NrQmro4hIZ6kIYGOLexqaS5pbUtsb0jvLOrmz27p7evs6Sqf0IyXMVEkAY2uIMmpTVPngJi+U+Nnwaip0fMKJmJHE6zQBrgvNkl6WFzYJrBpMfceTXzkTWwomhYkJ66MBkl4DE0iKNoWJQevngJfg1LUTQsq8koW45fwwqQBnjKW1mbXr4KEquJq9dg1bAWpGEdjBe9Pjw9fUM0O7vXxo5Nm7dg07AVpAFRdG0IS8tonjphzrbt88J25GHToAjSsBPO3bW7vDN8Xkr5nszUvfv2gzQsRNNwAKSBG8H3Odi3Zy8QzOtMOATiHw4/sukochY6BtJw/ASS0MlTpydNDjkzwRPMO9ubcG46kuz5CyANF1GKGK/ll1ZejoZyrvj7+uYgSQpD8uhVYnOcyTVwjmM4dp5IDddvQIsNSeJKjZtmDlANt24TpeEOoui7u5QI9ffuI4rKwAdKBNWzPkQuvR+pEyyLH6PWD0+YCah/egOtRnn2HK977vJh1FkvXorjVD/xoQqWWjHw2E4c4f/qNY56WvrNW0zlSu/M3uOs2VU0RD98RKnZOIU/vcfbeHAI/FzE/UXi67elK9bafjjw/QUfpY0XAN679eU/W4dEAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2019,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.1\" package=\"com.github.ppamorim.cult\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f080090\" android:label=\"Cult\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Cult\" android:name=\"com.github.ppamorim.sample.cult.activity.BaseActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1544390,
+  "crc32" : 3808477430,
+  "sha256" : "53a74c18e500ac3158f9cce63e7e35d484742a6c30db910cb7ff529c706e070d",
+  "buildTime" : 1522813747000
+}

@@ -1,0 +1,115 @@
+2018-04-04 05:43:21,183 INFO  DownloadService - Downloading "https://github.com/frakbot/CreditsRoll/archive/master.zip", attempt 3
+2018-04-04 05:44:21,822 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:44:22,506 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:44:22,506 INFO  DownloadService - Downloading "https://github.com/frakbot/CreditsRoll/archive/master.zip", attempt 3
+2018-04-04 05:45:23,701 DEBUG FullProcessService - Repository https://github.com/frakbot/CreditsRoll available: true
+2018-04-04 05:45:23,701 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:45:23,701 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/frakbot/CreditsRoll, /tmp/rdisk/1870/src]
+2018-04-04 05:45:29,866 INFO  SysUtils - 
+2018-04-04 05:45:29,877 INFO  GitService - Deleted "/tmp/rdisk/1870/src/.git": true
+2018-04-04 05:45:29,879 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-04-04 05:45:29,879 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1870/src]
+2018-04-04 05:45:29,883 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1870/src/.git/
+
+2018-04-04 05:45:29,886 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1870/src/gradlew
+2018-04-04 05:45:29,888 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1870/src/demo/build.gradle /tmp/rdisk/1870/src/lib/build.gradle /tmp/rdisk/1870/src/build.gradle
+2018-04-04 05:45:29,889 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1870/src/settings.gradle /tmp/rdisk/1870/src/lib/build.gradle /tmp/rdisk/1870/src/demo/build.gradle /tmp/rdisk/1870/src/build.gradle
+2018-04-04 05:45:29,890 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 05:45:29,890 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:45:29,894 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1870/src/demo/local.properties
+2018-04-04 05:45:29,894 INFO  ProjectFixService - Build info for "/tmp/rdisk/1870/src/demo/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=4,targetSdkVersion=19]
+2018-04-04 05:45:29,894 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1870/src/demo/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 05:45:29,895 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1870/src/lib/local.properties
+2018-04-04 05:45:29,895 INFO  ProjectFixService - Build info for "/tmp/rdisk/1870/src/lib/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=1,targetSdkVersion=19]
+2018-04-04 05:45:29,895 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1870/src/lib/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 05:45:29,895 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1870/src/local.properties
+2018-04-04 05:45:29,896 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-04-04 05:45:29,896 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-04-04 05:45:29,896 INFO  ProjectFixService - Build info for "/tmp/rdisk/1870/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-04 05:45:29,896 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:45:29,896 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:45:29,897 INFO  SysUtils - Execute command: [/tmp/rdisk/1870/src/gradlew, -b, /tmp/rdisk/1870/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:45:40,260 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-04 05:45:40,261 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 05:45:40,261 INFO  SysUtils - Execute command: [/tmp/rdisk/1870/src/gradlew, -b, /tmp/rdisk/1870/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 05:45:54,332 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:compileDebugNdk
+:demo:preBuild
+:demo:preDebugBuild
+:demo:checkDebugManifest
+:demo:preReleaseBuild
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseAidl UP-TO-DATE
+:lib:preBuild
+:lib:preReleaseBuild
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJavaNote: /tmp/rdisk/1870/src/lib/src/main/java/net/frakbot/creditsroll/CreditsRollView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:compileReleaseNdk
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease
+:demo:prepareSrcLibUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJava
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJava
+:demo:lintVitalRelease
+:demo:compileReleaseNdk
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.652 secs
+
+2018-04-04 05:45:54,341 INFO  FullProcessService - Found APK file: /tmp/rdisk/1870/src/demo/build/apk/demo-release-unsigned.apk

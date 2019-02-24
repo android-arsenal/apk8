@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "fr.tvbarthel.cheerleader.sampleapp.blue",
+    "label" : "CheerleaderBlue",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WAKE_LOCK" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 3555,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.1\" package=\"fr.tvbarthel.cheerleader.sampleapp.blue\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\n\t<application android:theme=\"resourceId:0x7f0a0036\" android:label=\"CheerleaderBlue\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"CheerleaderBlue\" android:name=\"fr.tvbarthel.cheerleader.sampleapp.PickActivity\" android:launchMode=\"singleTop\" android:windowSoftInputMode=\"0x2\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"fr.tvbarthel.cheerleader.sampleapp.ArtistActivity\" android:launchMode=\"singleTop\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MUSIC_PLAYER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t\t<category android:name=\"android.intent.category.APP_MUSIC\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<provider android:name=\"fr.tvbarthel.cheerleader.library.offline.OfflinerProvider\" android:exported=\"false\" android:authorities=\"fr.tvbarthel.cheerleader.sampleapp.blue.Cheerleader.OfflineProvider\" />\n\t\t<service android:name=\"fr.tvbarthel.cheerleader.library.player.PlaybackService\" android:exported=\"false\" />\n\t\t<receiver android:name=\"fr.tvbarthel.cheerleader.library.player.PlayerReceiver\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.media.AUDIO_BECOMING_NOISY\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t\t<receiver android:name=\"fr.tvbarthel.cheerleader.library.media.MediaSessionReceiver\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MEDIA_BUTTON\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2970832,
+  "crc32" : 1898154382,
+  "sha256" : "d5c9c3c8e5b643ffb7da505ce4cf65e396b5dcef5490ec08f2ea3e46ca83e6cb",
+  "buildTime" : 1496784475000
+}

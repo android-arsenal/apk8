@@ -1,0 +1,48 @@
+2018-04-04 05:21:23,922 INFO  DownloadService - Downloading "https://github.com/vRallev/SQRL-Protocol/archive/master.zip", attempt 3
+2018-04-04 05:22:24,419 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:22:25,060 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:22:25,061 INFO  DownloadService - Downloading "https://github.com/vRallev/SQRL-Protocol/archive/master.zip", attempt 3
+2018-04-04 05:23:26,345 DEBUG FullProcessService - Repository https://github.com/vRallev/SQRL-Protocol available: true
+2018-04-04 05:23:26,345 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:23:26,345 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vRallev/SQRL-Protocol, /tmp/rdisk/1879/src]
+2018-04-04 05:23:27,868 INFO  SysUtils - 
+2018-04-04 05:23:27,880 INFO  GitService - Deleted "/tmp/rdisk/1879/src/.git": true
+2018-04-04 05:23:27,882 INFO  FullProcessService - Size of directory with sources: 183 KB
+2018-04-04 05:23:27,882 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1879/src]
+2018-04-04 05:23:27,887 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1879/src/.git/
+
+2018-04-04 05:23:27,889 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1879/src/sqrl-protocol/gradlew
+2018-04-04 05:23:27,891 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1879/src/sqrl-protocol/build.gradle
+2018-04-04 05:23:27,893 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1879/src/sqrl-protocol/settings.gradle /tmp/rdisk/1879/src/sqrl-protocol/gradle-mvn-push.gradle /tmp/rdisk/1879/src/sqrl-protocol/build.gradle
+2018-04-04 05:23:27,893 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 05:23:27,893 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:23:27,898 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1879/src/sqrl-protocol/local.properties
+2018-04-04 05:23:27,898 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.0-all.zip
+2018-04-04 05:23:27,899 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.0-bin.zip)
+2018-04-04 05:23:27,901 INFO  ProjectFixService - Build info for "/tmp/rdisk/1879/src/sqrl-protocol/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 05:23:27,901 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1879/src/sqrl-protocol/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 05:23:27,901 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:23:27,901 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:23:27,901 INFO  SysUtils - Execute command: [/tmp/rdisk/1879/src/sqrl-protocol/gradlew, -b, /tmp/rdisk/1879/src/sqrl-protocol/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:23:41,308 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-04 05:23:41,309 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 05:23:41,309 INFO  SysUtils - Execute command: [/tmp/rdisk/1879/src/sqrl-protocol/gradlew, -b, /tmp/rdisk/1879/src/sqrl-protocol/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 05:23:48,148 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:processResources UP-TO-DATE
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.394 secs
+
+2018-04-04 05:23:48,152 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 05:23:48,154 ERROR FullProcessService - Could not find generated or existed APK file

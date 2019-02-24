@@ -1,0 +1,11 @@
+2018-04-04 15:27:47,105 INFO  DownloadService - Downloading "https://github.com/danikula/AndroidVideoCache/archive/master.zip", attempt 3
+2018-04-04 15:27:54,276 INFO  DownloadService - Downloaded https://github.com/danikula/AndroidVideoCache/archive/master.zip, attempt 3
+2018-04-04 15:27:54,279 INFO  DownloadService - Size of file "/tmp/rdisk/1751/master.zip": 114 MB
+2018-04-04 15:27:54,279 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 15:27:54,279 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1751/master.zip: true
+2018-04-04 15:27:54,279 DEBUG ZipUtil - Extracting '/tmp/rdisk/1751/master.zip' into '/tmp/rdisk/1751/src'.
+2018-04-04 15:27:54,711 INFO  FullProcessService - Size of directory with sources: 114 MB
+2018-04-04 15:27:54,711 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-04 15:27:54,713 ERROR FullProcessService - Project will not be processed
+2018-04-04 15:27:54,713 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 15:27:54,716 ERROR FullProcessService - Could not find generated or existed APK file

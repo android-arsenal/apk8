@@ -1,0 +1,1160 @@
+2018-04-04 10:02:25,819 INFO  DownloadService - Downloading "https://github.com/onepf/OPFPush/archive/master.zip", attempt 3
+2018-04-04 10:03:26,479 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:03:27,342 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:03:27,342 INFO  DownloadService - Downloading "https://github.com/onepf/OPFPush/archive/master.zip", attempt 3
+2018-04-04 10:04:28,666 DEBUG FullProcessService - Repository https://github.com/onepf/OPFPush available: true
+2018-04-04 10:04:28,666 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:04:28,666 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/onepf/OPFPush, /tmp/rdisk/1809/src]
+2018-04-04 10:04:31,486 INFO  SysUtils - 
+2018-04-04 10:04:31,494 INFO  GitService - Deleted "/tmp/rdisk/1809/src/.git": true
+2018-04-04 10:04:31,503 INFO  FullProcessService - Size of directory with sources: 717 KB
+2018-04-04 10:04:31,503 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1809/src]
+2018-04-04 10:04:31,508 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1809/src/.git/
+
+2018-04-04 10:04:31,515 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1809/src/gradlew
+2018-04-04 10:04:31,522 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle /tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle /tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle /tmp/rdisk/1809/src/opfpush/build.gradle /tmp/rdisk/1809/src/samples/pushchat/build.gradle /tmp/rdisk/1809/src/build.gradle
+2018-04-04 10:04:31,528 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1809/src/settings.gradle /tmp/rdisk/1809/src/samples/pushchat/build.gradle /tmp/rdisk/1809/src/opfpush/build.gradle /tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle /tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle /tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle /tmp/rdisk/1809/src/build.gradle
+2018-04-04 10:04:31,529 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:04:31,529 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:04:31,547 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/opfpush-providers/adm/local.properties
+2018-04-04 10:04:31,550 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,550 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,550 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/opfpush-providers/gcm/local.properties
+2018-04-04 10:04:31,553 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,553 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,553 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/opfpush-providers/nokia/local.properties
+2018-04-04 10:04:31,556 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,556 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,556 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/opfpush/local.properties
+2018-04-04 10:04:31,559 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/opfpush/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,559 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/opfpush/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,559 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/samples/pushchat/local.properties
+2018-04-04 10:04:31,562 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/samples/pushchat/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,562 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/samples/pushchat/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,562 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1809/src/local.properties
+2018-04-04 10:04:31,563 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 10:04:31,563 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 10:04:31,564 INFO  ProjectFixService - Build info for "/tmp/rdisk/1809/src/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,564 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1809/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 10:04:31,565 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:04:31,565 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:04:31,565 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:06:20,475 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 10:06:20,475 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 10:06:20,475 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 10:06:20,475 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/adm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 10:06:38,015 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:06:38,015 INFO  SysUtils - Configuration on demand is an incubating feature.
+:adm:compileLint
+:adm:copyDebugLint UP-TO-DATE
+:adm:preBuild UP-TO-DATE
+:adm:preDebugBuild UP-TO-DATE
+:adm:checkDebugManifest
+:adm:preDebugAndroidTestBuild UP-TO-DATE
+:adm:preDebugUnitTestBuild UP-TO-DATE
+:adm:preReleaseBuild UP-TO-DATE
+:adm:preReleaseUnitTestBuild UP-TO-DATE
+:adm:prepareOrgOnepfOpfpush031Library
+:adm:prepareDebugDependencies
+:adm:compileDebugAidl
+:adm:compileDebugRenderscript
+:adm:generateDebugBuildConfig
+:adm:generateDebugAssets UP-TO-DATE
+:adm:mergeDebugAssets
+:adm:generateDebugResValues
+:adm:generateDebugResources
+:adm:mergeDebugResources
+:adm:processDebugManifest
+:adm:processDebugResources
+:adm:generateDebugSources
+:adm:processDebugJavaRes UP-TO-DATE
+:adm:compileDebugJavaWithJavac
+:adm:extractDebugAnnotations
+:adm:mergeDebugProguardFiles
+:adm:packageDebugJar
+:adm:compileDebugNdk UP-TO-DATE
+:adm:packageDebugJniLibs UP-TO-DATE
+:adm:packageDebugLocalJar UP-TO-DATE
+:adm:packageDebugRenderscript UP-TO-DATE
+:adm:packageDebugResources
+:adm:bundleDebug
+:adm:compileDebugSources
+:adm:assembleDebug
+:adm:copyReleaseLint UP-TO-DATE
+:adm:checkReleaseManifest
+:adm:prepareReleaseDependencies
+:adm:compileReleaseAidl
+:adm:compileReleaseRenderscript
+:adm:generateReleaseBuildConfig
+:adm:generateReleaseAssets UP-TO-DATE
+:adm:mergeReleaseAssets
+:adm:generateReleaseResValues
+:adm:generateReleaseResources
+:adm:mergeReleaseResources
+:adm:processReleaseManifest
+:adm:processReleaseResources
+:adm:generateReleaseSources
+:adm:processReleaseJavaRes UP-TO-DATE
+:adm:compileReleaseJavaWithJavac
+:adm:extractReleaseAnnotations
+:adm:mergeReleaseProguardFiles
+:adm:packageReleaseJar
+:adm:compileReleaseNdk UP-TO-DATE
+:adm:packageReleaseJniLibs UP-TO-DATE
+:adm:packageReleaseLocalJar UP-TO-DATE
+:adm:packageReleaseRenderscript UP-TO-DATE
+:adm:packageReleaseResources
+:adm:bundleRelease
+:adm:compileReleaseSources
+:adm:assembleRelease
+:adm:assemble
+:adm:androidCheckstyle
+:adm:androidPmd
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+:adm:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1809/src/opfpush-providers/adm/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1809/src/opfpush-providers/adm/build/outputs/lint-results.xml
+:adm:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':adm:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':adm:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 17.093 secs
+
+2018-04-04 10:06:38,027 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:06:38,028 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:06:49,460 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 10:06:49,460 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 10:06:49,460 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 10:06:49,461 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/gcm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 10:07:08,135 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:07:08,135 INFO  SysUtils - Configuration on demand is an incubating feature.
+:gcm:compileLint
+:gcm:copyDebugLint UP-TO-DATE
+:gcm:preBuild UP-TO-DATE
+:gcm:preDebugBuild UP-TO-DATE
+:gcm:checkDebugManifest
+:gcm:preDebugAndroidTestBuild UP-TO-DATE
+:gcm:preDebugUnitTestBuild UP-TO-DATE
+:gcm:preReleaseBuild UP-TO-DATE
+:gcm:preReleaseUnitTestBuild UP-TO-DATE
+:gcm:prepareComAndroidSupportSupportV42220Library
+:gcm:prepareComGoogleAndroidGmsPlayServicesBase780Library
+:gcm:prepareComGoogleAndroidGmsPlayServicesGcm780Library
+:gcm:prepareOrgOnepfOpfpush031Library
+:gcm:prepareDebugDependencies
+:gcm:compileDebugAidl
+:gcm:compileDebugRenderscript
+:gcm:generateDebugBuildConfig
+:gcm:generateDebugAssets UP-TO-DATE
+:gcm:mergeDebugAssets
+:gcm:generateDebugResValues
+:gcm:generateDebugResources
+:gcm:mergeDebugResources
+:gcm:processDebugManifest
+:gcm:processDebugResources
+:gcm:generateDebugSources
+:gcm:processDebugJavaRes UP-TO-DATE
+:gcm:compileDebugJavaWithJavac/tmp/rdisk/1809/src/opfpush-providers/gcm/src/main/java/org/onepf/opfpush/gcm/GCMProvider.java:237: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+        OPFLog.logMethod(senderIds);
+                         ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+1 warning
+
+:gcm:extractDebugAnnotations
+:gcm:mergeDebugProguardFiles
+:gcm:packageDebugJar
+:gcm:compileDebugNdk UP-TO-DATE
+:gcm:packageDebugJniLibs UP-TO-DATE
+:gcm:packageDebugLocalJar UP-TO-DATE
+:gcm:packageDebugRenderscript UP-TO-DATE
+:gcm:packageDebugResources
+:gcm:bundleDebug
+:gcm:compileDebugSources
+:gcm:assembleDebug
+:gcm:copyReleaseLint UP-TO-DATE
+:gcm:checkReleaseManifest
+:gcm:prepareReleaseDependencies
+:gcm:compileReleaseAidl
+:gcm:compileReleaseRenderscript
+:gcm:generateReleaseBuildConfig
+:gcm:generateReleaseAssets UP-TO-DATE
+:gcm:mergeReleaseAssets
+:gcm:generateReleaseResValues
+:gcm:generateReleaseResources
+:gcm:mergeReleaseResources
+:gcm:processReleaseManifest
+:gcm:processReleaseResources
+:gcm:generateReleaseSources
+:gcm:processReleaseJavaRes UP-TO-DATE
+:gcm:compileReleaseJavaWithJavac/tmp/rdisk/1809/src/opfpush-providers/gcm/src/main/java/org/onepf/opfpush/gcm/GCMProvider.java:237: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+        OPFLog.logMethod(senderIds);
+                         ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+1 warning
+
+:gcm:extractReleaseAnnotations
+:gcm:mergeReleaseProguardFiles
+:gcm:packageReleaseJar
+:gcm:compileReleaseNdk UP-TO-DATE
+:gcm:packageReleaseJniLibs UP-TO-DATE
+:gcm:packageReleaseLocalJar UP-TO-DATE
+:gcm:packageReleaseRenderscript UP-TO-DATE
+:gcm:packageReleaseResources
+:gcm:bundleRelease
+:gcm:compileReleaseSources
+:gcm:assembleRelease
+:gcm:assemble
+:gcm:androidCheckstyle
+:gcm:androidPmd
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+:gcm:lint
+Ran lint on variant debug: 5 issues found
+Ran lint on variant release: 5 issues found
+Wrote HTML report to file:/tmp/rdisk/1809/src/opfpush-providers/gcm/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1809/src/opfpush-providers/gcm/build/outputs/lint-results.xml
+:gcm:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':gcm:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':gcm:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 18.18 secs
+
+2018-04-04 10:07:08,167 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:07:08,167 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:07:20,869 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 10:07:20,869 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 10:07:20,869 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 10:07:20,869 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush-providers/nokia/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 10:07:35,616 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:07:35,616 INFO  SysUtils - Configuration on demand is an incubating feature.
+:nokia:compileLint
+:nokia:copyDebugLint UP-TO-DATE
+:nokia:preBuild UP-TO-DATE
+:nokia:preDebugBuild UP-TO-DATE
+:nokia:checkDebugManifest
+:nokia:preDebugAndroidTestBuild UP-TO-DATE
+:nokia:preDebugUnitTestBuild UP-TO-DATE
+:nokia:preReleaseBuild UP-TO-DATE
+:nokia:preReleaseUnitTestBuild UP-TO-DATE
+:nokia:prepareOrgOnepfOpfpush031Library
+:nokia:prepareDebugDependencies
+:nokia:compileDebugAidl
+:nokia:compileDebugRenderscript
+:nokia:generateDebugBuildConfig
+:nokia:generateDebugAssets UP-TO-DATE
+:nokia:mergeDebugAssets
+:nokia:generateDebugResValues
+:nokia:generateDebugResources
+:nokia:mergeDebugResources
+:nokia:processDebugManifest
+:nokia:processDebugResources
+:nokia:generateDebugSources
+:nokia:processDebugJavaRes UP-TO-DATE
+:nokia:compileDebugJavaWithJavac
+:nokia:extractDebugAnnotations
+:nokia:mergeDebugProguardFiles
+:nokia:packageDebugJar
+:nokia:compileDebugNdk UP-TO-DATE
+:nokia:packageDebugJniLibs UP-TO-DATE
+:nokia:packageDebugLocalJar UP-TO-DATE
+:nokia:packageDebugRenderscript UP-TO-DATE
+:nokia:packageDebugResources
+:nokia:bundleDebug
+:nokia:compileDebugSources
+:nokia:assembleDebug
+:nokia:copyReleaseLint UP-TO-DATE
+:nokia:checkReleaseManifest
+:nokia:prepareReleaseDependencies
+:nokia:compileReleaseAidl
+:nokia:compileReleaseRenderscript
+:nokia:generateReleaseBuildConfig
+:nokia:generateReleaseAssets UP-TO-DATE
+:nokia:mergeReleaseAssets
+:nokia:generateReleaseResValues
+:nokia:generateReleaseResources
+:nokia:mergeReleaseResources
+:nokia:processReleaseManifest
+:nokia:processReleaseResources
+:nokia:generateReleaseSources
+:nokia:processReleaseJavaRes UP-TO-DATE
+:nokia:compileReleaseJavaWithJavac
+:nokia:extractReleaseAnnotations
+:nokia:mergeReleaseProguardFiles
+:nokia:packageReleaseJar
+:nokia:compileReleaseNdk UP-TO-DATE
+:nokia:packageReleaseJniLibs UP-TO-DATE
+:nokia:packageReleaseLocalJar UP-TO-DATE
+:nokia:packageReleaseRenderscript UP-TO-DATE
+:nokia:packageReleaseResources
+:nokia:bundleRelease
+:nokia:compileReleaseSources
+:nokia:assembleRelease
+:nokia:assemble
+:nokia:androidCheckstyle
+:nokia:androidPmd
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+:nokia:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1809/src/opfpush-providers/nokia/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1809/src/opfpush-providers/nokia/build/outputs/lint-results.xml
+:nokia:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':nokia:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':nokia:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 14.287 secs
+
+2018-04-04 10:07:35,652 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:07:35,652 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:07:47,448 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 10:07:47,449 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 10:07:47,449 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 10:07:47,449 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/opfpush/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 10:08:07,286 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:08:07,286 INFO  SysUtils - Configuration on demand is an incubating feature.
+:opfpush:compileLint
+:opfpush:copyDebugLint UP-TO-DATE
+:opfpush:preBuild UP-TO-DATE
+:opfpush:preDebugBuild UP-TO-DATE
+:opfpush:checkDebugManifest
+:opfpush:prepareDebugDependencies
+:opfpush:compileDebugAidl
+:opfpush:compileDebugRenderscript
+:opfpush:generateDebugBuildConfig
+:opfpush:generateDebugAssets UP-TO-DATE
+:opfpush:mergeDebugAssets
+:opfpush:generateDebugResValues
+:opfpush:generateDebugResources
+:opfpush:packageDebugResources
+:opfpush:processDebugManifest
+:opfpush:processDebugResources
+:opfpush:generateDebugSources
+:opfpush:processDebugJavaRes UP-TO-DATE
+:opfpush:compileDebugJavaWithJavac
+:opfpush:extractDebugAnnotations
+:opfpush:mergeDebugProguardFiles
+:opfpush:packageDebugJar
+:opfpush:compileDebugNdk UP-TO-DATE
+:opfpush:packageDebugJniLibs UP-TO-DATE
+:opfpush:packageDebugLocalJar UP-TO-DATE
+:opfpush:packageDebugRenderscript UP-TO-DATE
+:opfpush:bundleDebug
+:opfpush:compileDebugSources
+:opfpush:assembleDebug
+:opfpush:copyReleaseLint UP-TO-DATE
+:opfpush:preReleaseBuild UP-TO-DATE
+:opfpush:checkReleaseManifest
+:opfpush:prepareReleaseDependencies
+:opfpush:compileReleaseAidl
+:opfpush:compileReleaseRenderscript
+:opfpush:generateReleaseBuildConfig
+:opfpush:generateReleaseAssets UP-TO-DATE
+:opfpush:mergeReleaseAssets
+:opfpush:generateReleaseResValues
+:opfpush:generateReleaseResources
+:opfpush:packageReleaseResources
+:opfpush:processReleaseManifest
+:opfpush:processReleaseResources
+:opfpush:generateReleaseSources
+:opfpush:processReleaseJavaRes UP-TO-DATE
+:opfpush:compileReleaseJavaWithJavac
+:opfpush:extractReleaseAnnotations
+:opfpush:mergeReleaseProguardFiles
+:opfpush:packageReleaseJar
+:opfpush:compileReleaseNdk UP-TO-DATE
+:opfpush:packageReleaseJniLibs UP-TO-DATE
+:opfpush:packageReleaseLocalJar UP-TO-DATE
+:opfpush:packageReleaseRenderscript UP-TO-DATE
+:opfpush:bundleRelease
+:opfpush:compileReleaseSources
+:opfpush:assembleRelease
+:opfpush:assemble
+:opfpush:androidCheckstyle
+:opfpush:androidPmd
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+:opfpush:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1809/src/opfpush/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1809/src/opfpush/build/outputs/lint-results.xml
+:opfpush:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':opfpush:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':opfpush:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 19.425 secs
+
+2018-04-04 10:08:07,328 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:08:07,329 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/samples/pushchat/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:08:19,173 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 10:08:19,173 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 10:08:19,173 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 10:08:19,173 INFO  SysUtils - Execute command: [/tmp/rdisk/1809/src/gradlew, -b, /tmp/rdisk/1809/src/samples/pushchat/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 10:10:08,929 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:10:08,929 INFO  SysUtils - Configuration on demand is an incubating feature.
+:pushchat:preBuild UP-TO-DATE
+:pushchat:preDebugBuild UP-TO-DATE
+:pushchat:checkDebugManifest
+:pushchat:preReleaseBuild UP-TO-DATE
+:pushchat:prepareComAndroidSupportAppcompatV72300Library
+:pushchat:prepareComAndroidSupportMediarouterV72220Library
+:pushchat:prepareComAndroidSupportRecyclerviewV72103Library
+:pushchat:prepareComAndroidSupportSupportV42300Library
+:pushchat:prepareComGoogleAndroidGmsPlayServices780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesAds780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesAnalytics780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesAppindexing780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesAppinvite780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesAppstate780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesBase780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesCast780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesDrive780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesFitness780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesGames780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesGcm780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesIdentity780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesLocation780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesMaps780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesNearby780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesPanorama780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesPlus780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesSafetynet780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesVision780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesWallet780Library
+:pushchat:prepareComGoogleAndroidGmsPlayServicesWearable780Library
+:pushchat:prepareComMelnykovFloatingactionbutton130Library
+:pushchat:prepareComSquareupLeakcanaryLeakcanaryAndroid131Library
+:pushchat:prepareOrgOnepfOpfpush031Library
+:pushchat:prepareOrgOnepfOpfpushAdm031Library
+:pushchat:prepareOrgOnepfOpfpushGcm031Library
+:pushchat:prepareOrgOnepfOpfpushNokia031Library
+:pushchat:prepareDebugDependencies
+:pushchat:compileDebugAidl
+:pushchat:compileDebugRenderscript
+:pushchat:generateDebugBuildConfig
+:pushchat:generateDebugAssets UP-TO-DATE
+:pushchat:mergeDebugAssets
+:pushchat:generateDebugResValues
+:pushchat:generateDebugResources
+:pushchat:mergeDebugResources
+:pushchat:processDebugManifest
+:pushchat:processDebugResources
+:pushchat:generateDebugSources
+:pushchat:processDebugJavaRes UP-TO-DATE
+:pushchat:compileDebugJavaWithJavacNote: /tmp/rdisk/1809/src/samples/pushchat/src/main/java/org/onepf/pushchat/ui/fragment/content/TopicsFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1809/src/samples/pushchat/src/main/java/org/onepf/pushchat/ui/fragment/content/ContactsFragment.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:pushchat:compileDebugNdk UP-TO-DATE
+:pushchat:compileDebugSources
+:pushchat:preDexDebug
+:pushchat:dexDebug
+:pushchat:validateDebugSigning
+:pushchat:packageDebug
+:pushchat:zipalignDebug
+:pushchat:assembleDebug
+:pushchat:checkReleaseManifest
+:pushchat:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp131Library
+:pushchat:prepareReleaseDependencies
+:pushchat:compileReleaseAidl
+:pushchat:compileReleaseRenderscript
+:pushchat:generateReleaseBuildConfig
+:pushchat:generateReleaseAssets UP-TO-DATE
+:pushchat:mergeReleaseAssets
+:pushchat:generateReleaseResValues
+:pushchat:generateReleaseResources
+:pushchat:mergeReleaseResources
+:pushchat:processReleaseManifest
+:pushchat:processReleaseResources
+:pushchat:generateReleaseSources
+:pushchat:processReleaseJavaRes UP-TO-DATE
+:pushchat:compileReleaseJavaWithJavacNote: /tmp/rdisk/1809/src/samples/pushchat/src/main/java/org/onepf/pushchat/ui/fragment/content/TopicsFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1809/src/samples/pushchat/src/main/java/org/onepf/pushchat/ui/fragment/content/ContactsFragment.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:pushchat:compileReleaseNdk UP-TO-DATE
+:pushchat:compileReleaseSources
+:pushchat:proguardRelease
+Note: there were 7 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Warning: can't write resource [.readme] (Duplicate zip entry [classes.jar:.readme])
+:pushchat:dexRelease
+:pushchat:packageRelease
+:pushchat:assembleRelease
+:pushchat:assemble
+:pushchat:androidCheckstyle
+:pushchat:androidPmd
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+[ant:null] Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+:pushchat:compileLint
+:pushchat:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1809/src/samples/pushchat/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1809/src/samples/pushchat/build/outputs/lint-results.xml
+:pushchat:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pushchat:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':pushchat:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 1 mins 49.271 secs
+
+2018-04-04 10:10:09,037 INFO  FullProcessService - Found APK file: /tmp/rdisk/1809/src/samples/pushchat/build/outputs/apk/pushchat-release-unsigned.apk

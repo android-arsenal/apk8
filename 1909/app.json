@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "cn.bingoogolapple.refreshlayout.demo",
+    "label" : "BGARefreshLayout",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.8",
+    "versionCode" : 118,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAD60lEQVRYw+2YW2xUVRSG/0Nb7A1pUOtojYWWayIQUcEroOGFGAxI1NCYxvqCIVGDNiGphBBTlQc1aEO8BDBojNFAMBaNJGK0rTGClkLE2lpES+1QO1DBGSnTzvl86KnOnLPnzJm2j+ynM2v/61977b32WmuPdHlkGFYwGFdonmYppGJJMfWpSz9ZFydkBZSygc+4gHvEOMSz3DguD1igjXpYhZJOqVWdCisqqVghzdIiVUqKq1HbrZaxrPwq3mIY+JUt3GREzKWOTsDmo8yeuJVX0A2c5DEm++LyeJROIMIj2dA/wxBxXqAoELqA57mEzTZygsAtXgTC3JuVx8voBXYFMMFzQAczsz6zmXQAr2WCrSVBNzPGFNAz6AbW+0GmEyHG4jHfmduIETXH3MjufwpsHNe1fApoSXMSrAK+JTeN6jSWsoqlTPM1kEMLUGWebMZmuXFmOQe45KSIOIdYl24ZEndj04o3Q3AH8IVBoZid2MAv7GEbDTQzBLSxwrkDnrjhc+A+L9EbwEMe6ZU0Ab+zmklJ0fImQyR4lSnsp9OjswZ4xy3MpZdzFHqkjcBRyjwkd9EB9ANHPXP5RPiTvFThrcB+Y0z0coNxr69jAIBmw9xeYMnI96jjt0g67EGulVRr9RgLUINKJEkxg/UjkhaNfI5Gw1xJ7R7gk5qjfQb6Qr2v1c4Pk4GfJc1JNVAmybNS67iOG2PR1mZtdr7PG+Z7JF2famCqpL8CF/JBnfAFnHcYk84gR1JiwlqJhMOYZOCipIIJM1DgMCZtUUTSNYbj3KH7/zvMB6yTBkSR8q2zLmGppP5UA79JqtDXHv1ylTv06430JfpeuZruEldIOpW6RT9Kmm9wdrQq11gHTQle21VpCI6Fkiv+KGOYIwaKw04ObcNjnkm8BPzDnZ6ZVuKUuoXfkaDCAz1BlAfZC8SoS+4yuJYPgTjrPDqzsfFuNrXAVoOBlRI51BIFwjRQxUoeZycDwDnWGLyuBzZ4xSFihJnikt6c1DV8wFBSbxrnPcoN9FPpY4ASU358G6jzLYgVPM27HGA3NeYcK7EFeDmdepQL2XdErv3/m7OE/JquL12lIhv6PL4CnkgPmMw3aR0MYuAVoPH/4mqClHMa2DQm+k1AO1dn7s4GsKn3XYcMl64emz+YHQS8hDDwcdqjMtXnT4Au5gWPhWNAL9WZ23FyqeEM0OTtPfzUinmdYeAHqshPiyqkmmPAIFv9X0Jm9ds5iA30sZtq5lOQ9KZZQA17iADD7EvbTwcwsphdTv8DcU7TTjs9xB1JPzsykQd4iFOkZbpHC1WpkIokRXVGXWpTk5qswcv/ZYx7/AtTXtB402gWLAAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 3464,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"118\" android:versionName=\"1.1.8\" package=\"cn.bingoogolapple.refreshlayout.demo\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0e0006\" android:label=\"BGARefreshLayout\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"cn.bingoogolapple.refreshlayout.demo.App\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f0e0008\" android:label=\"BGARefreshLayout\" android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.StickyNavActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.NormalRecyclerViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.NormalListViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.SwipeRecyclerViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.SwipeListViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.ScrollViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.WebViewActivity\" />\n\t\t<activity android:name=\"cn.bingoogolapple.refreshlayout.demo.ui.activity.ViewPagerActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2929717,
+  "crc32" : 3538579707,
+  "sha256" : "64ddb97805367bc37193c66a686a14fc160a8386c4c767cb1dca5b4d85c5f93e",
+  "buildTime" : 1522814474000
+}

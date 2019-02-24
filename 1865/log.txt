@@ -1,0 +1,118 @@
+2018-04-04 05:53:50,369 INFO  DownloadService - Downloading "https://github.com/AigeStudio/MultiThreadDownloader/archive/master.zip", attempt 3
+2018-04-04 05:54:50,818 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:54:51,498 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:54:51,499 INFO  DownloadService - Downloading "https://github.com/AigeStudio/MultiThreadDownloader/archive/master.zip", attempt 3
+2018-04-04 05:55:52,771 DEBUG FullProcessService - Repository https://github.com/AigeStudio/MultiThreadDownloader available: true
+2018-04-04 05:55:52,771 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:55:52,771 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/AigeStudio/MultiThreadDownloader, /tmp/rdisk/1865/src]
+2018-04-04 05:55:54,961 INFO  SysUtils - 
+2018-04-04 05:55:54,974 INFO  GitService - Deleted "/tmp/rdisk/1865/src/.git": true
+2018-04-04 05:55:54,976 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 05:55:54,976 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1865/src]
+2018-04-04 05:55:54,981 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1865/src/.git/
+
+2018-04-04 05:55:54,983 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1865/src/gradlew
+2018-04-04 05:55:54,986 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1865/src/Demo/build.gradle /tmp/rdisk/1865/src/Downloader/build.gradle /tmp/rdisk/1865/src/build.gradle
+2018-04-04 05:55:54,987 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1865/src/settings.gradle /tmp/rdisk/1865/src/build.gradle /tmp/rdisk/1865/src/Downloader/build.gradle /tmp/rdisk/1865/src/Demo/build.gradle
+2018-04-04 05:55:54,988 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 05:55:54,988 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:55:54,993 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1865/src/Demo/local.properties
+2018-04-04 05:55:54,993 INFO  ProjectFixService - Build info for "/tmp/rdisk/1865/src/Demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=4,targetSdkVersion=22]
+2018-04-04 05:55:54,993 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1865/src/Demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-04 05:55:54,993 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1865/src/Downloader/local.properties
+2018-04-04 05:55:54,994 INFO  ProjectFixService - Build info for "/tmp/rdisk/1865/src/Downloader/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=1,targetSdkVersion=23]
+2018-04-04 05:55:54,994 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1865/src/Downloader/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-04 05:55:54,994 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1865/src/local.properties
+2018-04-04 05:55:54,994 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 05:55:54,994 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 05:55:54,995 INFO  ProjectFixService - Build info for "/tmp/rdisk/1865/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-04 05:55:54,995 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:55:54,995 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:55:54,995 INFO  SysUtils - Execute command: [/tmp/rdisk/1865/src/gradlew, -b, /tmp/rdisk/1865/src/Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:56:03,170 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-04 05:56:03,170 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 05:56:03,170 INFO  SysUtils - Execute command: [/tmp/rdisk/1865/src/gradlew, -b, /tmp/rdisk/1865/src/Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 05:56:18,512 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Demo:preBuild UP-TO-DATE
+:Demo:preDebugBuild UP-TO-DATE
+:Demo:checkDebugManifest
+:Demo:preReleaseBuild UP-TO-DATE
+:Downloader:compileLint
+:Downloader:copyReleaseLint UP-TO-DATE
+:Downloader:mergeReleaseProguardFiles
+:Downloader:preBuild UP-TO-DATE
+:Downloader:preReleaseBuild UP-TO-DATE
+:Downloader:checkReleaseManifest
+:Downloader:prepareReleaseDependencies
+:Downloader:compileReleaseAidl
+:Downloader:compileReleaseRenderscript
+:Downloader:generateReleaseBuildConfig
+:Downloader:generateReleaseAssets UP-TO-DATE
+:Downloader:mergeReleaseAssets
+:Downloader:generateReleaseResValues
+:Downloader:generateReleaseResources
+:Downloader:packageReleaseResources
+:Downloader:processReleaseManifest
+:Downloader:processReleaseResources
+:Downloader:generateReleaseSources
+:Downloader:processReleaseJavaRes UP-TO-DATE
+:Downloader:compileReleaseJavaWithJavac
+:Downloader:packageReleaseJar
+:Downloader:compileReleaseNdk UP-TO-DATE
+:Downloader:packageReleaseJniLibs UP-TO-DATE
+:Downloader:packageReleaseLocalJar UP-TO-DATE
+:Downloader:packageReleaseRenderscript UP-TO-DATE
+:Downloader:bundleRelease
+:Demo:prepareComAndroidSupportSupportV42211Library
+:Demo:prepareSrcDownloader143Library
+:Demo:prepareDebugDependencies
+:Demo:compileDebugAidl
+:Demo:compileDebugRenderscript
+:Demo:generateDebugBuildConfig
+:Demo:generateDebugAssets UP-TO-DATE
+:Demo:mergeDebugAssets
+:Demo:generateDebugResValues
+:Demo:generateDebugResources
+:Demo:mergeDebugResources
+:Demo:processDebugManifest
+:Demo:processDebugResources
+:Demo:generateDebugSources
+:Demo:processDebugJavaRes UP-TO-DATE
+:Demo:compileDebugJavaWithJavac
+:Demo:compileDebugNdk UP-TO-DATE
+:Demo:compileDebugSources
+:Demo:preDexDebug
+:Demo:dexDebug
+:Demo:validateDebugSigning
+:Demo:packageDebug
+:Demo:zipalignDebug
+:Demo:assembleDebug
+:Demo:checkReleaseManifest
+:Demo:prepareReleaseDependencies
+:Demo:compileReleaseAidl
+:Demo:compileReleaseRenderscript
+:Demo:generateReleaseBuildConfig
+:Demo:generateReleaseAssets UP-TO-DATE
+:Demo:mergeReleaseAssets
+:Demo:generateReleaseResValues
+:Demo:generateReleaseResources
+:Demo:mergeReleaseResources
+:Demo:processReleaseManifest
+:Demo:processReleaseResources
+:Demo:generateReleaseSources
+:Demo:processReleaseJavaRes UP-TO-DATE
+:Demo:compileReleaseJavaWithJavac
+:Demo:compileReleaseNdk UP-TO-DATE
+:Demo:compileReleaseSources
+:Demo:preDexRelease
+:Demo:dexRelease
+:Demo:packageRelease
+:Demo:assembleRelease
+:Demo:assemble
+:Demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.926 secs
+
+2018-04-04 05:56:18,522 INFO  FullProcessService - Found APK file: /tmp/rdisk/1865/src/Demo/build/outputs/apk/Demo-release-unsigned.apk

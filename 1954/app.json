@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.ramimartin.sample.multibluetooth",
+    "label" : "MultiBluetooth",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.BLUETOOTH", "android.permission.BLUETOOTH_ADMIN", "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCTION" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 322,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.ramimartin.sample.multibluetooth\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCTION\" />\n\t<application android:theme=\"resourceId:0x7f060000\" android:label=\"MultiBluetooth\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"MultiBluetooth\" android:name=\"com.ramimartin.sample.multibluetooth.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 335132,
+  "crc32" : 1236635599,
+  "sha256" : "2fd3fefaa24f9062d170b0211fcf30a8b2b4f7b23306b57a92a997bf0ae848b5",
+  "buildTime" : 1522806518000
+}

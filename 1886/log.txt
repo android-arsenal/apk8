@@ -1,0 +1,98 @@
+2018-04-04 05:03:32,284 INFO  DownloadService - Downloading "https://github.com/palominolabs/url-builder/archive/master.zip", attempt 3
+2018-04-04 05:04:32,857 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:04:33,554 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:04:33,554 INFO  DownloadService - Downloading "https://github.com/palominolabs/url-builder/archive/master.zip", attempt 3
+2018-04-04 05:05:34,876 DEBUG FullProcessService - Repository https://github.com/palominolabs/url-builder available: true
+2018-04-04 05:05:34,876 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:05:34,876 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/palominolabs/url-builder, /tmp/rdisk/1886/src]
+2018-04-04 05:05:36,459 INFO  SysUtils - 
+2018-04-04 05:05:36,470 INFO  GitService - Deleted "/tmp/rdisk/1886/src/.git": true
+2018-04-04 05:05:36,472 INFO  FullProcessService - Size of directory with sources: 134 KB
+2018-04-04 05:05:36,472 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1886/src]
+2018-04-04 05:05:36,475 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1886/src/.git/
+
+2018-04-04 05:05:36,477 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1886/src/gradlew
+2018-04-04 05:05:36,479 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1886/src/build.gradle /tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle /tmp/rdisk/1886/src/url-builder/build.gradle
+2018-04-04 05:05:36,481 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1886/src/url-builder/build.gradle /tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle /tmp/rdisk/1886/src/settings.gradle /tmp/rdisk/1886/src/build.gradle
+2018-04-04 05:05:36,481 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 05:05:36,481 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:05:36,486 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1886/src/local.properties
+2018-04-04 05:05:36,486 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 05:05:36,486 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 05:05:36,487 INFO  ProjectFixService - Build info for "/tmp/rdisk/1886/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 05:05:36,488 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1886/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 05:05:36,488 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1886/src/url-builder-benchmarks/local.properties
+2018-04-04 05:05:36,490 INFO  ProjectFixService - Build info for "/tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 05:05:36,490 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 05:05:36,490 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1886/src/url-builder/local.properties
+2018-04-04 05:05:36,491 INFO  ProjectFixService - Build info for "/tmp/rdisk/1886/src/url-builder/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 05:05:36,491 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1886/src/url-builder/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 05:05:36,492 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:05:36,492 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:05:36,492 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:05:46,507 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-04 05:05:46,508 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 05:05:46,508 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 05:05:52,422 INFO  SysUtils - Configuration on demand is an incubating feature.
+:url-builder:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:url-builder:compileGroovy UP-TO-DATE
+:url-builder:processResources UP-TO-DATE
+:url-builder:classes
+:url-builder:jar
+:url-builder:assemble
+:url-builder:build
+:url-builder-benchmarks:compileJava UP-TO-DATE
+:url-builder-benchmarks:processResources UP-TO-DATE
+:url-builder-benchmarks:classes UP-TO-DATE
+:url-builder-benchmarks:jar
+:url-builder-benchmarks:assemble
+:url-builder-benchmarks:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.494 secs
+
+2018-04-04 05:05:52,425 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:05:52,425 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:05:57,579 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-04 05:05:57,579 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 05:05:57,579 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/url-builder-benchmarks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 05:06:02,427 INFO  SysUtils - Configuration on demand is an incubating feature.
+:url-builder:compileJava UP-TO-DATE
+:url-builder:compileGroovy UP-TO-DATE
+:url-builder:processResources UP-TO-DATE
+:url-builder:classes UP-TO-DATE
+:url-builder:jar UP-TO-DATE
+:url-builder-benchmarks:compileJava UP-TO-DATE
+:url-builder-benchmarks:processResources UP-TO-DATE
+:url-builder-benchmarks:classes UP-TO-DATE
+:url-builder-benchmarks:jar UP-TO-DATE
+:url-builder-benchmarks:assemble UP-TO-DATE
+:url-builder-benchmarks:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.416 secs
+
+2018-04-04 05:06:02,430 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:06:02,430 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/url-builder/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:06:07,370 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-04 05:06:07,370 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 05:06:07,370 INFO  SysUtils - Execute command: [/tmp/rdisk/1886/src/gradlew, -b, /tmp/rdisk/1886/src/url-builder/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 05:06:12,106 INFO  SysUtils - Configuration on demand is an incubating feature.
+:url-builder:compileJava UP-TO-DATE
+:url-builder:compileGroovy UP-TO-DATE
+:url-builder:processResources UP-TO-DATE
+:url-builder:classes UP-TO-DATE
+:url-builder:jar UP-TO-DATE
+:url-builder:assemble UP-TO-DATE
+:url-builder:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.305 secs
+
+2018-04-04 05:06:12,109 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 05:06:12,111 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,86 @@
+2018-04-04 10:48:21,745 INFO  DownloadService - Downloading "https://github.com/JustinAngel/TextViewOverflowing/archive/master.zip", attempt 3
+2018-04-04 10:49:22,363 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:49:23,199 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:49:23,199 INFO  DownloadService - Downloading "https://github.com/JustinAngel/TextViewOverflowing/archive/master.zip", attempt 3
+2018-04-04 10:50:24,468 DEBUG FullProcessService - Repository https://github.com/JustinAngel/TextViewOverflowing available: true
+2018-04-04 10:50:24,468 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:50:24,468 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/JustinAngel/TextViewOverflowing, /tmp/rdisk/1793/src]
+2018-04-04 10:50:26,330 INFO  SysUtils - 
+2018-04-04 10:50:26,341 INFO  GitService - Deleted "/tmp/rdisk/1793/src/.git": true
+2018-04-04 10:50:26,343 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-04 10:50:26,343 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1793/src]
+2018-04-04 10:50:26,347 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1793/src/.git/
+
+2018-04-04 10:50:26,349 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1793/src/gradlew
+2018-04-04 10:50:26,351 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1793/src/app/build.gradle /tmp/rdisk/1793/src/build.gradle
+2018-04-04 10:50:26,352 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1793/src/settings.gradle /tmp/rdisk/1793/src/build.gradle /tmp/rdisk/1793/src/app/build.gradle
+2018-04-04 10:50:26,352 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:50:26,352 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:50:26,357 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1793/src/app/local.properties
+2018-04-04 10:50:26,357 INFO  ProjectFixService - Build info for "/tmp/rdisk/1793/src/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=19,targetSdkVersion=19]
+2018-04-04 10:50:26,358 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1793/src/local.properties
+2018-04-04 10:50:26,359 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 10:50:26,359 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 10:50:26,360 INFO  ProjectFixService - Build info for "/tmp/rdisk/1793/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=19,targetSdkVersion=19]
+2018-04-04 10:50:26,360 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:50:26,360 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:50:26,360 INFO  SysUtils - Execute command: [/tmp/rdisk/1793/src/gradlew, -b, /tmp/rdisk/1793/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:50:33,301 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-04 10:50:33,301 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 10:50:33,301 INFO  SysUtils - Execute command: [/tmp/rdisk/1793/src/gradlew, -b, /tmp/rdisk/1793/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 10:50:51,949 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV71910Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.197 secs
+
+2018-04-04 10:50:51,981 INFO  FullProcessService - Found APK file: /tmp/rdisk/1793/src/app/build/outputs/apk/app-debug.apk

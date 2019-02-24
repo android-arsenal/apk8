@@ -1,0 +1,130 @@
+2018-04-04 06:14:46,473 INFO  DownloadService - Downloading "https://github.com/cyndibaby905/TwitterCover-Android/archive/master.zip", attempt 3
+2018-04-04 06:15:47,056 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 06:15:47,721 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 06:15:47,721 INFO  DownloadService - Downloading "https://github.com/cyndibaby905/TwitterCover-Android/archive/master.zip", attempt 3
+2018-04-04 06:16:48,895 DEBUG FullProcessService - Repository https://github.com/cyndibaby905/TwitterCover-Android available: true
+2018-04-04 06:16:48,895 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 06:16:48,895 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/cyndibaby905/TwitterCover-Android, /tmp/rdisk/1858/src]
+2018-04-04 06:16:53,992 INFO  SysUtils - 
+2018-04-04 06:16:54,006 INFO  GitService - Deleted "/tmp/rdisk/1858/src/.git": true
+2018-04-04 06:16:54,009 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-04 06:16:54,009 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1858/src]
+2018-04-04 06:16:54,027 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1858/src/.git/
+
+2018-04-04 06:16:54,031 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1858/src/gradlew
+2018-04-04 06:16:54,033 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1858/src/app/build.gradle /tmp/rdisk/1858/src/twittercover/build.gradle /tmp/rdisk/1858/src/build.gradle
+2018-04-04 06:16:54,035 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1858/src/twittercover/build.gradle /tmp/rdisk/1858/src/settings.gradle /tmp/rdisk/1858/src/build.gradle /tmp/rdisk/1858/src/app/build.gradle
+2018-04-04 06:16:54,036 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 06:16:54,036 INFO  ProjectFixService - Fixing project...
+2018-04-04 06:16:54,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1858/src/app/local.properties
+2018-04-04 06:16:54,041 INFO  ProjectFixService - Build info for "/tmp/rdisk/1858/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=17,targetSdkVersion=22]
+2018-04-04 06:16:54,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1858/src/twittercover/local.properties
+2018-04-04 06:16:54,042 INFO  ProjectFixService - Build info for "/tmp/rdisk/1858/src/twittercover/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=17,targetSdkVersion=22]
+2018-04-04 06:16:54,042 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1858/src/local.properties
+2018-04-04 06:16:54,042 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 06:16:54,042 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 06:16:54,043 INFO  ProjectFixService - Build info for "/tmp/rdisk/1858/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=17,targetSdkVersion=22]
+2018-04-04 06:16:54,043 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 06:16:54,043 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 06:16:54,043 INFO  SysUtils - Execute command: [/tmp/rdisk/1858/src/gradlew, -b, /tmp/rdisk/1858/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 06:17:02,364 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-04 06:17:02,365 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 06:17:02,365 INFO  SysUtils - Execute command: [/tmp/rdisk/1858/src/gradlew, -b, /tmp/rdisk/1858/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 06:17:27,307 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:twittercover:compileLint
+:twittercover:copyReleaseLint UP-TO-DATE
+:twittercover:preBuild UP-TO-DATE
+:twittercover:preReleaseBuild UP-TO-DATE
+:twittercover:checkReleaseManifest
+:twittercover:preDebugAndroidTestBuild UP-TO-DATE
+:twittercover:preDebugBuild UP-TO-DATE
+:twittercover:preDebugUnitTestBuild UP-TO-DATE
+:twittercover:preReleaseUnitTestBuild UP-TO-DATE
+:twittercover:prepareComAndroidSupportAppcompatV72211Library
+:twittercover:prepareComAndroidSupportSupportV42211Library
+:twittercover:prepareReleaseDependencies
+:twittercover:compileReleaseAidl
+:twittercover:compileReleaseRenderscript
+:twittercover:generateReleaseBuildConfig
+:twittercover:generateReleaseAssets UP-TO-DATE
+:twittercover:mergeReleaseAssets
+:twittercover:generateReleaseResValues
+:twittercover:generateReleaseResources
+:twittercover:mergeReleaseResources
+:twittercover:processReleaseManifest
+:twittercover:processReleaseResources
+:twittercover:generateReleaseSources
+:twittercover:processReleaseJavaRes UP-TO-DATE
+:twittercover:compileReleaseJavaNote: /tmp/rdisk/1858/src/twittercover/src/main/java/com/hangchen/twittercover/TwitterCoverListView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:twittercover:extractReleaseAnnotations
+:twittercover:mergeReleaseProguardFiles
+:twittercover:packageReleaseJar
+:twittercover:compileReleaseNdk UP-TO-DATE
+:twittercover:packageReleaseJniLibs UP-TO-DATE
+:twittercover:packageReleaseLocalJar UP-TO-DATE
+:twittercover:packageReleaseRenderscript UP-TO-DATE
+:twittercover:packageReleaseResources
+:twittercover:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72211Library
+:app:prepareComAndroidSupportSupportV42211Library
+:app:prepareSrcTwittercoverUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/1858/src/app/src/main/res/drawable/img_header.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/1858/src/app/src/main/res/drawable/img_header.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.492 secs
+
+2018-04-04 06:17:27,357 INFO  FullProcessService - Found APK file: /tmp/rdisk/1858/src/app/build/outputs/apk/app-debug.apk

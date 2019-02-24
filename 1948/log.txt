@@ -1,0 +1,21 @@
+2018-04-04 02:07:33,199 INFO  DownloadService - Downloading "https://github.com/kgmyshin/eventbus-intellij-plugin/archive/master.zip", attempt 3
+2018-04-04 02:08:33,884 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 02:08:34,707 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 02:08:34,707 INFO  DownloadService - Downloading "https://github.com/kgmyshin/eventbus-intellij-plugin/archive/master.zip", attempt 3
+2018-04-04 02:09:35,881 DEBUG FullProcessService - Repository https://github.com/kgmyshin/eventbus-intellij-plugin available: true
+2018-04-04 02:09:35,881 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 02:09:35,881 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/kgmyshin/eventbus-intellij-plugin, /tmp/rdisk/1948/src]
+2018-04-04 02:09:39,669 INFO  SysUtils - 
+2018-04-04 02:09:39,676 INFO  GitService - Deleted "/tmp/rdisk/1948/src/.git": true
+2018-04-04 02:09:39,677 INFO  FullProcessService - Size of directory with sources: 637 KB
+2018-04-04 02:09:39,677 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1948/src]
+2018-04-04 02:09:39,681 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1948/src/.git/
+
+2018-04-04 02:09:39,686 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 02:09:39,686 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 02:09:39,687 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 02:09:39,688 INFO  ProjectBuildService - All script(s): none
+2018-04-04 02:09:39,688 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 02:09:39,688 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 02:09:39,688 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 02:09:39,690 ERROR FullProcessService - Could not find generated or existed APK file

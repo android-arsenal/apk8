@@ -1,0 +1,11 @@
+2018-05-16 03:55:30,606 INFO  DownloadService - Downloading "https://github.com/novoda/download-manager/archive/master.zip", attempt 3
+2018-05-16 03:55:44,905 INFO  DownloadService - Downloaded https://github.com/novoda/download-manager/archive/master.zip, attempt 3
+2018-05-16 03:55:44,906 INFO  DownloadService - Size of file "/tmp/rdisk/1822/master.zip": 100 MB
+2018-05-16 03:55:44,906 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-16 03:55:44,906 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1822/master.zip: true
+2018-05-16 03:55:44,906 DEBUG ZipUtil - Extracting '/tmp/rdisk/1822/master.zip' into '/tmp/rdisk/1822/src'.
+2018-05-16 03:55:45,354 INFO  FullProcessService - Size of directory with sources: 101 MB
+2018-05-16 03:55:45,354 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-05-16 03:55:45,354 ERROR FullProcessService - Project will not be processed
+2018-05-16 03:55:45,354 ERROR FullProcessService - Project build has not produced APK file
+2018-05-16 03:55:45,361 ERROR FullProcessService - Could not find generated or existed APK file

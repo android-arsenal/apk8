@@ -1,0 +1,224 @@
+2018-04-04 04:03:30,264 INFO  DownloadService - Downloading "https://github.com/rtoshiro/FullscreenVideoView/archive/master.zip", attempt 3
+2018-04-04 04:04:30,866 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 04:04:31,706 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 04:04:31,706 INFO  DownloadService - Downloading "https://github.com/rtoshiro/FullscreenVideoView/archive/master.zip", attempt 3
+2018-04-04 04:05:32,950 DEBUG FullProcessService - Repository https://github.com/rtoshiro/FullscreenVideoView available: true
+2018-04-04 04:05:32,950 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:05:32,951 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rtoshiro/FullscreenVideoView, /tmp/rdisk/1906/src]
+2018-04-04 04:05:36,916 INFO  SysUtils - 
+2018-04-04 04:05:36,922 INFO  GitService - Deleted "/tmp/rdisk/1906/src/.git": true
+2018-04-04 04:05:36,927 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 04:05:36,927 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1906/src]
+2018-04-04 04:05:36,931 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1906/src/.git/
+
+2018-04-04 04:05:36,935 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1906/src/gradlew
+2018-04-04 04:05:36,939 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1906/src/fullscreenvideoview/build.gradle /tmp/rdisk/1906/src/fvvapplication/build.gradle /tmp/rdisk/1906/src/build.gradle
+2018-04-04 04:05:36,943 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1906/src/settings.gradle /tmp/rdisk/1906/src/maven_push.gradle /tmp/rdisk/1906/src/fvvapplication/build.gradle /tmp/rdisk/1906/src/fullscreenvideoview/build.gradle /tmp/rdisk/1906/src/build.gradle
+2018-04-04 04:05:36,943 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 04:05:36,943 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:05:36,953 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1906/src/fullscreenvideoview/local.properties
+2018-04-04 04:05:36,953 INFO  ProjectFixService - Build info for "/tmp/rdisk/1906/src/fullscreenvideoview/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-04 04:05:36,954 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1906/src/fvvapplication/local.properties
+2018-04-04 04:05:36,954 INFO  ProjectFixService - Build info for "/tmp/rdisk/1906/src/fvvapplication/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 04:05:36,954 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1906/src/local.properties
+2018-04-04 04:05:36,954 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 04:05:36,954 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 04:05:36,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/1906/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 04:05:36,956 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:05:36,956 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:05:36,956 INFO  SysUtils - Execute command: [/tmp/rdisk/1906/src/gradlew, -b, /tmp/rdisk/1906/src/fullscreenvideoview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:05:46,440 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-04 04:05:46,440 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:05:46,440 INFO  SysUtils - Execute command: [/tmp/rdisk/1906/src/gradlew, -b, /tmp/rdisk/1906/src/fullscreenvideoview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:05:56,027 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:fullscreenvideoview:preBuild UP-TO-DATE
+:fullscreenvideoview:preDebugBuild UP-TO-DATE
+:fullscreenvideoview:checkDebugManifest
+:fullscreenvideoview:prepareDebugDependencies
+:fullscreenvideoview:compileDebugAidl
+:fullscreenvideoview:compileDebugNdk UP-TO-DATE
+:fullscreenvideoview:compileLint
+:fullscreenvideoview:copyDebugLint UP-TO-DATE
+:fullscreenvideoview:mergeDebugShaders
+:fullscreenvideoview:compileDebugShaders
+:fullscreenvideoview:generateDebugAssets
+:fullscreenvideoview:mergeDebugAssets
+:fullscreenvideoview:mergeDebugProguardFiles
+:fullscreenvideoview:packageDebugRenderscript UP-TO-DATE
+:fullscreenvideoview:compileDebugRenderscript
+:fullscreenvideoview:generateDebugResValues
+:fullscreenvideoview:generateDebugResources
+:fullscreenvideoview:packageDebugResources
+:fullscreenvideoview:processDebugManifest
+:fullscreenvideoview:generateDebugBuildConfig
+:fullscreenvideoview:processDebugResources
+:fullscreenvideoview:generateDebugSources
+:fullscreenvideoview:incrementalDebugJavaCompilationSafeguard
+:fullscreenvideoview:compileDebugJavaWithJavac
+:fullscreenvideoview:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:fullscreenvideoview:processDebugJavaRes UP-TO-DATE
+:fullscreenvideoview:transformResourcesWithMergeJavaResForDebug
+:fullscreenvideoview:transformClassesAndResourcesWithSyncLibJarsForDebug
+:fullscreenvideoview:mergeDebugJniLibFolders
+:fullscreenvideoview:transformNative_libsWithMergeJniLibsForDebug
+:fullscreenvideoview:transformNative_libsWithSyncJniLibsForDebug
+:fullscreenvideoview:bundleDebug
+:fullscreenvideoview:compileDebugSources
+:fullscreenvideoview:assembleDebug
+:fullscreenvideoview:preReleaseBuild UP-TO-DATE
+:fullscreenvideoview:checkReleaseManifest
+:fullscreenvideoview:prepareReleaseDependencies
+:fullscreenvideoview:compileReleaseAidl
+:fullscreenvideoview:compileReleaseNdk UP-TO-DATE
+:fullscreenvideoview:copyReleaseLint UP-TO-DATE
+:fullscreenvideoview:mergeReleaseShaders
+:fullscreenvideoview:compileReleaseShaders
+:fullscreenvideoview:generateReleaseAssets
+:fullscreenvideoview:mergeReleaseAssets
+:fullscreenvideoview:mergeReleaseProguardFiles
+:fullscreenvideoview:packageReleaseRenderscript UP-TO-DATE
+:fullscreenvideoview:compileReleaseRenderscript
+:fullscreenvideoview:generateReleaseResValues
+:fullscreenvideoview:generateReleaseResources
+:fullscreenvideoview:packageReleaseResources
+:fullscreenvideoview:processReleaseManifest
+:fullscreenvideoview:generateReleaseBuildConfig
+:fullscreenvideoview:processReleaseResources
+:fullscreenvideoview:generateReleaseSources
+:fullscreenvideoview:incrementalReleaseJavaCompilationSafeguard
+:fullscreenvideoview:compileReleaseJavaWithJavac
+:fullscreenvideoview:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:fullscreenvideoview:processReleaseJavaRes UP-TO-DATE
+:fullscreenvideoview:transformResourcesWithMergeJavaResForRelease
+:fullscreenvideoview:transformClassesAndResourcesWithSyncLibJarsForRelease
+:fullscreenvideoview:mergeReleaseJniLibFolders
+:fullscreenvideoview:transformNative_libsWithMergeJniLibsForRelease
+:fullscreenvideoview:transformNative_libsWithSyncJniLibsForRelease
+:fullscreenvideoview:bundleRelease
+:fullscreenvideoview:compileReleaseSources
+:fullscreenvideoview:assembleRelease
+:fullscreenvideoview:assemble
+:fullscreenvideoview:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.778 secs
+
+2018-04-04 04:05:56,038 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:05:56,038 INFO  SysUtils - Execute command: [/tmp/rdisk/1906/src/gradlew, -b, /tmp/rdisk/1906/src/fvvapplication/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:06:03,846 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-04 04:06:03,846 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 04:06:03,846 INFO  SysUtils - Execute command: [/tmp/rdisk/1906/src/gradlew, -b, /tmp/rdisk/1906/src/fvvapplication/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 04:06:20,457 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:fullscreenvideoview:preBuild UP-TO-DATE
+:fullscreenvideoview:preReleaseBuild UP-TO-DATE
+:fullscreenvideoview:checkReleaseManifest
+:fullscreenvideoview:prepareReleaseDependencies
+:fullscreenvideoview:compileReleaseAidl UP-TO-DATE
+:fullscreenvideoview:compileReleaseNdk UP-TO-DATE
+:fullscreenvideoview:compileLint UP-TO-DATE
+:fullscreenvideoview:copyReleaseLint UP-TO-DATE
+:fullscreenvideoview:mergeReleaseShaders UP-TO-DATE
+:fullscreenvideoview:compileReleaseShaders UP-TO-DATE
+:fullscreenvideoview:generateReleaseAssets UP-TO-DATE
+:fullscreenvideoview:mergeReleaseAssets UP-TO-DATE
+:fullscreenvideoview:mergeReleaseProguardFiles UP-TO-DATE
+:fullscreenvideoview:packageReleaseRenderscript UP-TO-DATE
+:fullscreenvideoview:compileReleaseRenderscript UP-TO-DATE
+:fullscreenvideoview:generateReleaseResValues UP-TO-DATE
+:fullscreenvideoview:generateReleaseResources UP-TO-DATE
+:fullscreenvideoview:packageReleaseResources UP-TO-DATE
+:fullscreenvideoview:processReleaseManifest UP-TO-DATE
+:fullscreenvideoview:generateReleaseBuildConfig UP-TO-DATE
+:fullscreenvideoview:processReleaseResources UP-TO-DATE
+:fullscreenvideoview:generateReleaseSources UP-TO-DATE
+:fullscreenvideoview:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:fullscreenvideoview:compileReleaseJavaWithJavac UP-TO-DATE
+:fullscreenvideoview:processReleaseJavaRes UP-TO-DATE
+:fullscreenvideoview:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:fullscreenvideoview:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:fullscreenvideoview:mergeReleaseJniLibFolders UP-TO-DATE
+:fullscreenvideoview:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:fullscreenvideoview:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:fullscreenvideoview:bundleRelease UP-TO-DATE
+:fvvapplication:preBuild UP-TO-DATE
+:fvvapplication:preDebugBuild UP-TO-DATE
+:fvvapplication:checkDebugManifest
+:fvvapplication:preReleaseBuild UP-TO-DATE
+:fvvapplication:prepareComAndroidSupportRecyclerviewV72501Library
+:fvvapplication:prepareComAndroidSupportSupportCompat2501Library
+:fvvapplication:prepareComAndroidSupportSupportCoreUi2501Library
+:fvvapplication:prepareComGithubRtoshiroFullscreenvideoviewFullscreenvideoview113Library
+:fvvapplication:prepareDebugDependencies
+:fvvapplication:compileDebugAidl
+:fvvapplication:compileDebugRenderscript
+:fvvapplication:generateDebugBuildConfig
+:fvvapplication:generateDebugResValues
+:fvvapplication:generateDebugResources
+:fvvapplication:mergeDebugResources
+:fvvapplication:processDebugManifest
+:fvvapplication:processDebugResources
+:fvvapplication:generateDebugSources
+:fvvapplication:incrementalDebugJavaCompilationSafeguard
+:fvvapplication:compileDebugJavaWithJavac
+:fvvapplication:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:fvvapplication:compileDebugNdk UP-TO-DATE
+:fvvapplication:compileDebugSources
+:fvvapplication:mergeDebugShaders
+:fvvapplication:compileDebugShaders
+:fvvapplication:generateDebugAssets
+:fvvapplication:mergeDebugAssets
+:fvvapplication:transformClassesWithDexForDebug
+:fvvapplication:mergeDebugJniLibFolders
+:fvvapplication:transformNative_libsWithMergeJniLibsForDebug
+:fvvapplication:processDebugJavaRes UP-TO-DATE
+:fvvapplication:transformResourcesWithMergeJavaResForDebug
+:fvvapplication:validateSigningDebug
+:fvvapplication:packageDebug
+:fvvapplication:assembleDebug
+:fvvapplication:checkReleaseManifest
+:fvvapplication:prepareReleaseDependencies
+:fvvapplication:compileReleaseAidl
+:fvvapplication:compileReleaseRenderscript
+:fvvapplication:generateReleaseBuildConfig
+:fvvapplication:generateReleaseResValues
+:fvvapplication:generateReleaseResources
+:fvvapplication:mergeReleaseResources
+:fvvapplication:processReleaseManifest
+:fvvapplication:processReleaseResources
+:fvvapplication:generateReleaseSources
+:fvvapplication:incrementalReleaseJavaCompilationSafeguard
+:fvvapplication:compileReleaseJavaWithJavac
+:fvvapplication:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:fvvapplication:compileReleaseNdk UP-TO-DATE
+:fvvapplication:compileReleaseSources
+:fvvapplication:lintVitalRelease
+:fvvapplication:mergeReleaseShaders
+:fvvapplication:compileReleaseShaders
+:fvvapplication:generateReleaseAssets
+:fvvapplication:mergeReleaseAssets
+:fvvapplication:transformClassesWithDexForRelease
+:fvvapplication:mergeReleaseJniLibFolders
+:fvvapplication:transformNative_libsWithMergeJniLibsForRelease
+:fvvapplication:processReleaseJavaRes UP-TO-DATE
+:fvvapplication:transformResourcesWithMergeJavaResForRelease
+:fvvapplication:packageRelease
+:fvvapplication:assembleRelease
+:fvvapplication:assemble
+:fvvapplication:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.054 secs
+
+2018-04-04 04:06:20,479 INFO  FullProcessService - Found APK file: /tmp/rdisk/1906/src/fvvapplication/build/outputs/apk/fvvapplication-release-unsigned.apk

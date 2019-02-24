@@ -1,0 +1,143 @@
+2018-04-04 05:35:42,892 INFO  DownloadService - Downloading "https://github.com/pizza/MaterialTabs/archive/master.zip", attempt 3
+2018-04-04 05:36:43,505 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:36:44,350 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:36:44,351 INFO  DownloadService - Downloading "https://github.com/pizza/MaterialTabs/archive/master.zip", attempt 3
+2018-04-04 05:37:45,700 DEBUG FullProcessService - Repository https://github.com/pizza/MaterialTabs available: true
+2018-04-04 05:37:45,700 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:37:45,700 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pizza/MaterialTabs, /tmp/rdisk/1874/src]
+2018-04-04 05:37:49,633 INFO  SysUtils - 
+2018-04-04 05:37:49,638 INFO  GitService - Deleted "/tmp/rdisk/1874/src/.git": true
+2018-04-04 05:37:49,641 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-04 05:37:49,641 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1874/src]
+2018-04-04 05:37:49,646 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1874/src/.git/
+
+2018-04-04 05:37:49,649 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1874/src/gradlew
+2018-04-04 05:37:49,652 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1874/src/library/build.gradle /tmp/rdisk/1874/src/sample/build.gradle /tmp/rdisk/1874/src/build.gradle
+2018-04-04 05:37:49,655 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1874/src/settings.gradle /tmp/rdisk/1874/src/sample/build.gradle /tmp/rdisk/1874/src/library/build.gradle /tmp/rdisk/1874/src/build.gradle
+2018-04-04 05:37:49,655 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-04 05:37:50,111 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-04 05:37:50,112 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-04 05:37:50,112 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:37:50,118 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1874/src/library/local.properties
+2018-04-04 05:37:50,119 INFO  ProjectFixService - Build info for "/tmp/rdisk/1874/src/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 05:37:50,119 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1874/src/sample/local.properties
+2018-04-04 05:37:50,119 INFO  ProjectFixService - Build info for "/tmp/rdisk/1874/src/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 05:37:50,119 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1874/src/local.properties
+2018-04-04 05:37:50,120 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-04 05:37:50,120 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-04 05:37:50,120 INFO  ProjectFixService - Build info for "/tmp/rdisk/1874/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 05:37:50,120 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:37:50,121 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:37:50,121 INFO  SysUtils - Execute command: [/tmp/rdisk/1874/src/gradlew, -b, /tmp/rdisk/1874/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:37:55,728 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 05:37:55,728 INFO  ProjectTaskService - Detected possible tasks: 4
+2018-04-04 05:37:55,728 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-04 05:37:55,728 INFO  SysUtils - Execute command: [/tmp/rdisk/1874/src/gradlew, -b, /tmp/rdisk/1874/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-04 05:37:58,768 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 05:37:58,768 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/1874/src/build.gradle' line: 21
+
+* What went wrong:
+A problem occurred evaluating root project 'src'.
+> Could not find property 'VERSION_NAME' on root project 'src'.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'src'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:76)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$1.run(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:156)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:55)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:487)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:85)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: groovy.lang.MissingPropertyException: Could not find property 'VERSION_NAME' on root project 'src'.
+	at org.gradle.api.internal.AbstractDynamicObject.propertyMissingException(AbstractDynamicObject.java:43)
+	at org.gradle.api.internal.AbstractDynamicObject.getProperty(AbstractDynamicObject.java:35)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:97)
+	at org.gradle.api.internal.project.DefaultProject_Decorated.getProperty(Unknown Source)
+	at build_ht4zhus1vtez9rchj0v6fj9t$_run_closure1.doCall(/tmp/rdisk/1874/src/build.gradle:21)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.project.AbstractProject.configure(AbstractProject.java:819)
+	at org.gradle.api.internal.project.AbstractProject.configure(AbstractProject.java:824)
+	at org.gradle.api.internal.project.AbstractProject.allprojects(AbstractProject.java:811)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:232)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:127)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:150)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_ht4zhus1vtez9rchj0v6fj9t.run(/tmp/rdisk/1874/src/build.gradle:20)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:74)
+	... 38 more
+
+
+BUILD FAILED
+
+Total time: 2.61 secs
+
+2018-04-04 05:37:58,771 INFO  FullProcessService - Found APK file: /tmp/rdisk/1874/src/sample/sample-release.apk

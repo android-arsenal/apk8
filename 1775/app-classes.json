@@ -1,0 +1,5 @@
+{
+  "com.example.leakcanary" : [ "BuildConfig", "ExampleApplication", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$drawable", "R$id", "R$layout", "R$string" ],
+  "com.squareup.leakcanary" : [ "LeakCanary", "RefWatcher" ],
+  "com.squareup.leakcanary.android.noop" : [ "R" ]
+}

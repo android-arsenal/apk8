@@ -1,0 +1,45 @@
+2018-04-04 04:50:33,985 INFO  DownloadService - Downloading "https://github.com/riiid/gradle-github-plugin/archive/master.zip", attempt 3
+2018-04-04 04:51:34,555 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 04:51:35,358 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 04:51:35,358 INFO  DownloadService - Downloading "https://github.com/riiid/gradle-github-plugin/archive/master.zip", attempt 3
+2018-04-04 04:52:36,747 DEBUG FullProcessService - Repository https://github.com/riiid/gradle-github-plugin available: true
+2018-04-04 04:52:36,747 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:52:36,747 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/riiid/gradle-github-plugin, /tmp/rdisk/1890/src]
+2018-04-04 04:52:38,407 INFO  SysUtils - 
+2018-04-04 04:52:38,415 INFO  GitService - Deleted "/tmp/rdisk/1890/src/.git": true
+2018-04-04 04:52:38,416 INFO  FullProcessService - Size of directory with sources: 83 KB
+2018-04-04 04:52:38,416 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1890/src]
+2018-04-04 04:52:38,426 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1890/src/.git/
+
+2018-04-04 04:52:38,428 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1890/src/gradlew
+2018-04-04 04:52:38,429 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1890/src/build.gradle
+2018-04-04 04:52:38,430 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1890/src/settings.gradle /tmp/rdisk/1890/src/build.gradle
+2018-04-04 04:52:38,430 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 04:52:38,431 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:52:38,433 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1890/src/local.properties
+2018-04-04 04:52:38,433 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.1-bin.zip
+2018-04-04 04:52:38,435 INFO  ProjectFixService - Build info for "/tmp/rdisk/1890/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 04:52:38,435 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1890/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 04:52:38,435 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:52:38,435 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:52:38,435 INFO  SysUtils - Execute command: [/tmp/rdisk/1890/src/gradlew, -b, /tmp/rdisk/1890/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:54:14,130 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-04 04:54:14,131 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 04:54:14,131 INFO  SysUtils - Execute command: [/tmp/rdisk/1890/src/gradlew, -b, /tmp/rdisk/1890/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 04:54:24,528 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.926 secs
+
+2018-04-04 04:54:24,530 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 04:54:24,533 ERROR FullProcessService - Could not find generated or existed APK file

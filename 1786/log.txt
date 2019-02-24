@@ -1,0 +1,251 @@
+2018-04-04 11:12:44,072 INFO  DownloadService - Downloading "https://github.com/thedumbtechguy/Fluxxan/archive/master.zip", attempt 3
+2018-04-04 11:13:44,674 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 11:13:45,492 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 11:13:45,494 INFO  DownloadService - Downloading "https://github.com/thedumbtechguy/Fluxxan/archive/master.zip", attempt 3
+2018-04-04 11:14:46,936 DEBUG FullProcessService - Repository https://github.com/thedumbtechguy/Fluxxan available: true
+2018-04-04 11:14:46,936 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 11:14:46,936 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/thedumbtechguy/Fluxxan, /tmp/rdisk/1786/src]
+2018-04-04 11:14:54,800 INFO  SysUtils - 
+2018-04-04 11:14:54,805 INFO  GitService - Deleted "/tmp/rdisk/1786/src/.git": true
+2018-04-04 11:14:54,809 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 11:14:54,809 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1786/src]
+2018-04-04 11:14:54,813 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1786/src/.git/
+
+2018-04-04 11:14:54,816 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1786/src/gradlew
+2018-04-04 11:14:54,820 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1786/src/app/build.gradle /tmp/rdisk/1786/src/fluxxan/build.gradle /tmp/rdisk/1786/src/build.gradle
+2018-04-04 11:14:54,823 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1786/src/settings.gradle /tmp/rdisk/1786/src/fluxxan/build.gradle /tmp/rdisk/1786/src/build.gradle /tmp/rdisk/1786/src/app/build.gradle
+2018-04-04 11:14:54,823 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-04 11:15:54,824 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 11:15:54,824 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-04 11:16:54,826 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 11:16:54,826 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 11:16:54,827 INFO  ProjectFixService - Fixing project...
+2018-04-04 11:16:54,834 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1786/src/app/local.properties
+2018-04-04 11:16:54,834 INFO  ProjectFixService - Build info for "/tmp/rdisk/1786/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 11:16:54,835 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1786/src/fluxxan/local.properties
+2018-04-04 11:16:54,835 INFO  ProjectFixService - Build info for "/tmp/rdisk/1786/src/fluxxan/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-04 11:16:54,835 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1786/src/local.properties
+2018-04-04 11:16:54,836 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 11:16:54,836 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 11:16:54,837 INFO  ProjectFixService - Build info for "/tmp/rdisk/1786/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-04 11:16:54,837 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 11:16:54,837 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 11:16:54,837 INFO  SysUtils - Execute command: [/tmp/rdisk/1786/src/gradlew, -b, /tmp/rdisk/1786/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 11:17:07,612 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-04 11:17:07,612 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 11:17:07,613 INFO  SysUtils - Execute command: [/tmp/rdisk/1786/src/gradlew, -b, /tmp/rdisk/1786/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 11:17:37,645 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:fluxxan:preBuild UP-TO-DATE
+:fluxxan:preReleaseBuild UP-TO-DATE
+:fluxxan:checkReleaseManifest
+:fluxxan:preDebugAndroidTestBuild UP-TO-DATE
+:fluxxan:preDebugBuild UP-TO-DATE
+:fluxxan:preDebugUnitTestBuild UP-TO-DATE
+:fluxxan:preReleaseUnitTestBuild UP-TO-DATE
+:fluxxan:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:fluxxan:prepareComAndroidSupportAppcompatV72321Library
+:fluxxan:prepareComAndroidSupportSupportV42321Library
+:fluxxan:prepareComAndroidSupportSupportVectorDrawable2321Library
+:fluxxan:prepareReleaseDependencies
+:fluxxan:compileReleaseAidl
+:fluxxan:compileReleaseNdk UP-TO-DATE
+:fluxxan:compileLint
+:fluxxan:copyReleaseLint UP-TO-DATE
+:fluxxan:compileReleaseRenderscript
+:fluxxan:generateReleaseBuildConfig
+:fluxxan:generateReleaseResValues
+:fluxxan:generateReleaseResources
+:fluxxan:mergeReleaseResources
+:fluxxan:processReleaseManifest
+:fluxxan:processReleaseResources
+:fluxxan:generateReleaseSources
+:fluxxan:incrementalReleaseJavaCompilationSafeguard
+:fluxxan:compileReleaseJavaWithJavac
+:fluxxan:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:fluxxan:extractReleaseAnnotations
+:fluxxan:mergeReleaseShaders
+:fluxxan:compileReleaseShaders
+:fluxxan:generateReleaseAssets
+:fluxxan:mergeReleaseAssets
+:fluxxan:mergeReleaseProguardFiles
+:fluxxan:packageReleaseRenderscript UP-TO-DATE
+:fluxxan:packageReleaseResources
+:fluxxan:processReleaseJavaRes UP-TO-DATE
+:fluxxan:transformResourcesWithMergeJavaResForRelease
+:fluxxan:transformClassesAndResourcesWithSyncLibJarsForRelease
+:fluxxan:mergeReleaseJniLibFolders
+:fluxxan:transformNative_libsWithMergeJniLibsForRelease
+:fluxxan:transformNative_libsWithSyncJniLibsForRelease
+:fluxxan:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:app:prepareComAndroidSupportAppcompatV72321Library
+:app:prepareComAndroidSupportCardviewV72321Library
+:app:prepareComAndroidSupportDesign2321Library
+:app:prepareComAndroidSupportRecyclerviewV72321Library
+:app:prepareComAndroidSupportSupportV42321Library
+:app:prepareComAndroidSupportSupportVectorDrawable2321Library
+:app:prepareComUmaplayOssFluxxan100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+/tmp/rdisk/1786/src/app/src/main/AndroidManifest.xml:5:5-22:19 Warning:
+	application@android:label was tagged at AndroidManifest.xml:5 to replace other declarations but no other declaration present
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:10: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:13: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:16: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+Note: /tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/adapter/TodoListAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+/tmp/rdisk/1786/src/app/src/main/AndroidManifest.xml:5:5-22:19 Warning:
+	application@android:label was tagged at AndroidManifest.xml:5 to replace other declarations but no other declaration present
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:10: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:13: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+/tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/flux/model/Todo.java:16: warning: @Value annotation have no effect, use nested annotations instead, like @Value.Immutable
+    @Value
+    ^
+Note: /tmp/rdisk/1786/src/app/src/main/java/com/umaplay/fluxxandemo/adapter/TodoListAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.427 secs
+
+2018-04-04 11:17:37,733 INFO  FullProcessService - Found APK file: /tmp/rdisk/1786/src/app/build/outputs/apk/app-debug.apk

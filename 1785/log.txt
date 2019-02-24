@@ -1,0 +1,33 @@
+2018-04-04 11:17:44,175 INFO  DownloadService - Downloading "https://github.com/amsterdatech/Dredd/archive/master.zip", attempt 3
+2018-04-04 11:18:44,850 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 11:18:45,654 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 11:18:45,654 INFO  DownloadService - Downloading "https://github.com/amsterdatech/Dredd/archive/master.zip", attempt 3
+2018-04-04 11:19:46,935 DEBUG FullProcessService - Repository https://github.com/amsterdatech/Dredd available: true
+2018-04-04 11:19:46,935 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 11:19:46,935 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/amsterdatech/Dredd, /tmp/rdisk/1785/src]
+2018-04-04 11:19:48,650 INFO  SysUtils - 
+2018-04-04 11:19:48,663 INFO  GitService - Deleted "/tmp/rdisk/1785/src/.git": true
+2018-04-04 11:19:48,666 INFO  FullProcessService - Size of directory with sources: 161 KB
+2018-04-04 11:19:48,666 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1785/src]
+2018-04-04 11:19:48,670 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1785/src/.git/
+
+2018-04-04 11:19:48,673 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1785/src/gradlew
+2018-04-04 11:19:48,675 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1785/src/dredd/build.gradle /tmp/rdisk/1785/src/sample/build.gradle /tmp/rdisk/1785/src/build.gradle
+2018-04-04 11:19:48,677 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1785/src/settings.gradle /tmp/rdisk/1785/src/sample/build.gradle /tmp/rdisk/1785/src/dredd/build.gradle /tmp/rdisk/1785/src/build.gradle
+2018-04-04 11:19:48,678 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 11:19:48,678 INFO  ProjectFixService - Fixing project...
+2018-04-04 11:19:48,684 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1785/src/dredd/local.properties
+2018-04-04 11:19:48,684 INFO  ProjectFixService - Build info for "/tmp/rdisk/1785/src/dredd/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 11:19:48,684 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1785/src/sample/local.properties
+2018-04-04 11:19:48,685 INFO  ProjectFixService - Build info for "/tmp/rdisk/1785/src/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 11:19:48,685 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1785/src/local.properties
+2018-04-04 11:19:48,685 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 11:19:48,685 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 11:19:48,686 INFO  ProjectFixService - Build info for "/tmp/rdisk/1785/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 11:19:48,686 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 11:19:48,686 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 11:19:48,686 INFO  SysUtils - Execute command: [/tmp/rdisk/1785/src/gradlew, -b, /tmp/rdisk/1785/src/dredd/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 11:24:49,020 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 143 (Exit value: 143)
+2018-04-04 11:24:49,020 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 11:24:49,020 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 11:24:49,020 INFO  SysUtils - Execute command: [/tmp/rdisk/1785/src/gradlew, -b, /tmp/rdisk/1785/src/dredd/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]

@@ -1,0 +1,7 @@
+{
+  "butterknife" : [ "Bind", "BindBool", "BindColor", "BindDimen", "BindDrawable", "BindInt", "BindString", "ButterKnife", "ButterKnife$1", "ButterKnife$Action", "ButterKnife$Finder", "ButterKnife$Finder$1", "ButterKnife$Finder$2", "ButterKnife$Finder$3", "ButterKnife$Setter", "ButterKnife$ViewBinder", "ImmutableList", "OnCheckedChanged", "OnClick", "OnEditorAction", "OnFocusChange", "OnItemClick", "OnItemLongClick", "OnItemSelected", "OnItemSelected$Callback", "OnLongClick", "OnPageChange", "OnPageChange$Callback", "OnTextChanged", "OnTextChanged$Callback", "OnTouch" ],
+  "butterknife.internal" : [ "BindingClass", "BindingClass$1", "ButterKnifeProcessor", "DebouncingOnClickListener", "DebouncingOnClickListener$1", "FieldCollectionViewBinding", "FieldCollectionViewBinding$Kind", "FieldResourceBinding", "FieldViewBinding", "ListenerClass", "ListenerClass$NONE", "ListenerMethod", "MethodViewBinding", "Parameter", "ViewBinding", "ViewBindings" ],
+  "com.github.rongi.rotate_layout" : [ "BuildConfig", "R", "R$attr", "R$styleable" ],
+  "com.github.rongi.rotate_layout.example" : [ "BuildConfig", "MainActivity", "MainActivity$$ViewBinder", "MainActivity$$ViewBinder$1", "MainActivity$$ViewBinder$2", "MainActivity$$ViewBinder$3", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ],
+  "com.github.rongi.rotate_layout.layout" : [ "RotateLayout" ]
+}

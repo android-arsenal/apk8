@@ -1,0 +1,116 @@
+2018-04-04 00:56:49,069 INFO  DownloadService - Downloading "https://github.com/malmstein/FloatingHints/archive/master.zip", attempt 3
+2018-04-04 00:57:49,573 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:57:50,244 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:57:50,244 INFO  DownloadService - Downloading "https://github.com/malmstein/FloatingHints/archive/master.zip", attempt 3
+2018-04-04 00:58:51,488 DEBUG FullProcessService - Repository https://github.com/malmstein/FloatingHints available: true
+2018-04-04 00:58:51,488 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:58:51,488 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/malmstein/FloatingHints, /tmp/rdisk/1974/src]
+2018-04-04 00:58:53,067 INFO  SysUtils - 
+2018-04-04 00:58:53,080 INFO  GitService - Deleted "/tmp/rdisk/1974/src/.git": true
+2018-04-04 00:58:53,082 INFO  FullProcessService - Size of directory with sources: 316 KB
+2018-04-04 00:58:53,082 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1974/src]
+2018-04-04 00:58:53,087 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1974/src/.git/
+
+2018-04-04 00:58:53,089 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1974/src/gradlew
+2018-04-04 00:58:53,091 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1974/src/app/build.gradle /tmp/rdisk/1974/src/library/build.gradle /tmp/rdisk/1974/src/build.gradle
+2018-04-04 00:58:53,093 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1974/src/settings.gradle /tmp/rdisk/1974/src/library/maven_push.gradle /tmp/rdisk/1974/src/library/build.gradle /tmp/rdisk/1974/src/build.gradle /tmp/rdisk/1974/src/app/build.gradle
+2018-04-04 00:58:53,093 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:58:53,093 INFO  ProjectFixService - Fixing project...
+2018-04-04 00:58:53,098 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1974/src/app/local.properties
+2018-04-04 00:58:53,099 INFO  ProjectFixService - Build info for "/tmp/rdisk/1974/src/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=15,targetSdkVersion=19]
+2018-04-04 00:58:53,099 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1974/src/library/local.properties
+2018-04-04 00:58:53,099 INFO  ProjectFixService - Build info for "/tmp/rdisk/1974/src/library/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=15,targetSdkVersion=19]
+2018-04-04 00:58:53,099 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1974/src/local.properties
+2018-04-04 00:58:53,100 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-all.zip
+2018-04-04 00:58:53,100 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.10-bin.zip)
+2018-04-04 00:58:53,101 INFO  ProjectFixService - Build info for "/tmp/rdisk/1974/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=15,targetSdkVersion=19]
+2018-04-04 00:58:53,101 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 00:58:53,101 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 00:58:53,102 INFO  SysUtils - Execute command: [/tmp/rdisk/1974/src/gradlew, -b, /tmp/rdisk/1974/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 00:59:06,635 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-04 00:59:06,635 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 00:59:06,635 INFO  SysUtils - Execute command: [/tmp/rdisk/1974/src/gradlew, -b, /tmp/rdisk/1974/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 00:59:27,592 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV71910Library
+:app:prepareComMalmsteinLibrary001Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.506 secs
+
+2018-04-04 00:59:27,624 INFO  FullProcessService - Found APK file: /tmp/rdisk/1974/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.jawnnypoo.physicslayout.sample",
+    "label" : "PhysicsLayout",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2702,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"101\" android:versionName=\"1.0.1\" package=\"com.jawnnypoo.physicslayout.sample\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"resourceId:0x7f0e0006\" android:label=\"PhysicsLayout\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"PhysicsLayout\" android:name=\"com.jawnnypoo.physicslayout.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.jawnnypoo.physicslayout.sample.AboutActivity\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2314711,
+  "crc32" : 4103513433,
+  "sha256" : "47af09d8fc12909a7368fae9a86f2f41c3cc78fce5ac2756b127b0a571caa8a4",
+  "buildTime" : 1522853915000
+}

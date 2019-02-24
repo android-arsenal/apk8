@@ -1,0 +1,467 @@
+2018-04-04 10:10:16,553 INFO  DownloadService - Downloading "https://github.com/xiprox/MarkView/archive/master.zip", attempt 3
+2018-04-04 10:11:18,287 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:11:19,086 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:11:19,086 INFO  DownloadService - Downloading "https://github.com/xiprox/MarkView/archive/master.zip", attempt 3
+2018-04-04 10:12:20,377 DEBUG FullProcessService - Repository https://github.com/xiprox/MarkView available: true
+2018-04-04 10:12:20,378 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:12:20,378 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/xiprox/MarkView, /tmp/rdisk/1808/src]
+2018-04-04 10:12:22,004 INFO  SysUtils - 
+2018-04-04 10:12:22,016 INFO  GitService - Deleted "/tmp/rdisk/1808/src/.git": true
+2018-04-04 10:12:22,017 INFO  FullProcessService - Size of directory with sources: 131 KB
+2018-04-04 10:12:22,017 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1808/src]
+2018-04-04 10:12:22,022 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1808/src/.git/
+
+2018-04-04 10:12:22,024 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1808/src/gradlew
+2018-04-04 10:12:22,026 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1808/src/library/build.gradle /tmp/rdisk/1808/src/sample/build.gradle /tmp/rdisk/1808/src/build.gradle
+2018-04-04 10:12:22,028 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1808/src/settings.gradle /tmp/rdisk/1808/src/sample/build.gradle /tmp/rdisk/1808/src/maven_push.gradle /tmp/rdisk/1808/src/library/build.gradle /tmp/rdisk/1808/src/build.gradle
+2018-04-04 10:12:22,028 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:12:22,028 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:12:22,046 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1808/src/library/local.properties
+2018-04-04 10:12:22,046 INFO  ProjectFixService - Build info for "/tmp/rdisk/1808/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-04 10:12:22,046 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1808/src/sample/local.properties
+2018-04-04 10:12:22,046 INFO  ProjectFixService - Build info for "/tmp/rdisk/1808/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-04 10:12:22,047 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1808/src/local.properties
+2018-04-04 10:12:22,047 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 10:12:22,047 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 10:12:22,048 INFO  ProjectFixService - Build info for "/tmp/rdisk/1808/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-04 10:12:22,048 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:12:22,048 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:12:22,048 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:12:41,151 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-04 10:12:41,151 INFO  ProjectTaskService - Excluded tasks (9): lintDebug androidJavadocs deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-04 10:12:41,151 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 10:12:47,963 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.38 secs
+
+2018-04-04 10:12:47,969 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:12:47,969 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:12:54,486 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-04 10:12:54,486 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 10:12:54,486 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 10:13:03,245 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:13:03,245 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:sample:preBuild
+:sample:compileDebugNdk
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library
+:sample:prepareComAndroidSupportAppcompatV72600Alpha1Library
+:sample:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:sample:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:sample:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library
+:sample:prepareComAndroidSupportSupportFragment2600Alpha1Library
+:sample:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library
+:sample:prepareComAndroidSupportSupportV42600Alpha1Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library
+:sample:prepareComGithubXiproxMarkviewLibrary110Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest/tmp/rdisk/1808/src/sample/src/main/AndroidManifest.xml:0:0 Error:
+	uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':sample:processDebugManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+  	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':sample:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: Manifest merger failed : uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+	at com.android.builder.core.AndroidBuilder.mergeManifests(AndroidBuilder.java:476)
+	at com.android.builder.core.AndroidBuilder$mergeManifests$5.call(Unknown Source)
+	at com.android.build.gradle.tasks.MergeManifests.doFullTaskAction(MergeManifests.groovy:125)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 8.341 secs
+
+2018-04-04 10:13:03,275 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:13:03,275 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:13:09,850 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 10:13:09,850 INFO  ProjectTaskService - Excluded tasks (12): lintDebug androidJavadocs deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 10:13:09,850 INFO  SysUtils - Execute command: [/tmp/rdisk/1808/src/gradlew, -b, /tmp/rdisk/1808/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 10:13:16,870 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 10:13:16,871 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:library:androidJavadocsJar UP-TO-DATE
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:compileDebugJava UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:signArchives SKIPPED
+:library:assemble UP-TO-DATE
+:library:build
+:sample:preBuild
+:sample:compileDebugNdk UP-TO-DATE
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportFragment2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportV42600Alpha1Library UP-TO-DATE
+:sample:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library UP-TO-DATE
+:sample:prepareComGithubXiproxMarkviewLibrary110Library UP-TO-DATE
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl UP-TO-DATE
+:sample:compileDebugRenderscript UP-TO-DATE
+:sample:generateDebugBuildConfig UP-TO-DATE
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets UP-TO-DATE
+:sample:generateDebugResValues UP-TO-DATE
+:sample:generateDebugResources UP-TO-DATE
+:sample:mergeDebugResources UP-TO-DATE
+:sample:processDebugManifest/tmp/rdisk/1808/src/sample/src/main/AndroidManifest.xml:0:0 Error:
+	uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':sample:processDebugManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+  	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':sample:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: Manifest merger failed : uses-sdk:minSdkVersion 7 cannot be smaller than version 14 declared in library /tmp/rdisk/1808/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/AndroidManifest.xml
+	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+	at com.android.builder.core.AndroidBuilder.mergeManifests(AndroidBuilder.java:476)
+	at com.android.builder.core.AndroidBuilder$mergeManifests$3.call(Unknown Source)
+	at com.android.build.gradle.tasks.MergeManifests.doFullTaskAction(MergeManifests.groovy:125)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 6.576 secs
+
+2018-04-04 10:13:16,902 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 10:13:16,933 ERROR FullProcessService - Could not find generated or existed APK file

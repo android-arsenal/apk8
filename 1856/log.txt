@@ -1,0 +1,129 @@
+2018-04-04 06:20:19,122 INFO  DownloadService - Downloading "https://github.com/siriscac/ProgressPageIndicator/archive/master.zip", attempt 3
+2018-04-04 06:21:19,628 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 06:21:20,335 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 06:21:20,335 INFO  DownloadService - Downloading "https://github.com/siriscac/ProgressPageIndicator/archive/master.zip", attempt 3
+2018-04-04 06:22:21,538 DEBUG FullProcessService - Repository https://github.com/siriscac/ProgressPageIndicator available: true
+2018-04-04 06:22:21,538 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 06:22:21,538 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/siriscac/ProgressPageIndicator, /tmp/rdisk/1856/src]
+2018-04-04 06:22:23,678 INFO  SysUtils - 
+2018-04-04 06:22:23,693 INFO  GitService - Deleted "/tmp/rdisk/1856/src/.git": true
+2018-04-04 06:22:23,695 INFO  FullProcessService - Size of directory with sources: 888 KB
+2018-04-04 06:22:23,695 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1856/src]
+2018-04-04 06:22:23,699 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1856/src/.git/
+
+2018-04-04 06:22:23,702 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1856/src/gradlew
+2018-04-04 06:22:23,704 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1856/src/app/build.gradle /tmp/rdisk/1856/src/progresspageindicator/build.gradle /tmp/rdisk/1856/src/build.gradle
+2018-04-04 06:22:23,707 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1856/src/settings.gradle /tmp/rdisk/1856/src/progresspageindicator/build.gradle /tmp/rdisk/1856/src/build.gradle /tmp/rdisk/1856/src/app/build.gradle
+2018-04-04 06:22:23,707 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 06:22:23,707 INFO  ProjectFixService - Fixing project...
+2018-04-04 06:22:23,713 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1856/src/app/local.properties
+2018-04-04 06:22:23,713 INFO  ProjectFixService - Build info for "/tmp/rdisk/1856/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 06:22:23,714 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1856/src/progresspageindicator/local.properties
+2018-04-04 06:22:23,714 INFO  ProjectFixService - Build info for "/tmp/rdisk/1856/src/progresspageindicator/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-04 06:22:23,714 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1856/src/local.properties
+2018-04-04 06:22:23,714 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 06:22:23,714 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 06:22:23,715 INFO  ProjectFixService - Build info for "/tmp/rdisk/1856/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-04 06:22:23,715 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 06:22:23,715 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 06:22:23,715 INFO  SysUtils - Execute command: [/tmp/rdisk/1856/src/gradlew, -b, /tmp/rdisk/1856/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 06:22:32,903 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-04 06:22:32,903 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 06:22:32,903 INFO  SysUtils - Execute command: [/tmp/rdisk/1856/src/gradlew, -b, /tmp/rdisk/1856/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 06:22:56,509 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:progresspageindicator:compileLint
+:progresspageindicator:copyReleaseLint UP-TO-DATE
+:progresspageindicator:preBuild UP-TO-DATE
+:progresspageindicator:preReleaseBuild UP-TO-DATE
+:progresspageindicator:checkReleaseManifest
+:progresspageindicator:preDebugAndroidTestBuild UP-TO-DATE
+:progresspageindicator:preDebugBuild UP-TO-DATE
+:progresspageindicator:preDebugUnitTestBuild UP-TO-DATE
+:progresspageindicator:preReleaseUnitTestBuild UP-TO-DATE
+:progresspageindicator:prepareComAndroidSupportSupportV42211Library
+:progresspageindicator:prepareReleaseDependencies
+:progresspageindicator:compileReleaseAidl
+:progresspageindicator:compileReleaseRenderscript
+:progresspageindicator:generateReleaseBuildConfig
+:progresspageindicator:generateReleaseAssets UP-TO-DATE
+:progresspageindicator:mergeReleaseAssets
+:progresspageindicator:generateReleaseResValues
+:progresspageindicator:generateReleaseResources
+:progresspageindicator:mergeReleaseResources
+:progresspageindicator:processReleaseManifest
+:progresspageindicator:processReleaseResources
+:progresspageindicator:generateReleaseSources
+:progresspageindicator:processReleaseJavaRes UP-TO-DATE
+:progresspageindicator:compileReleaseJava
+:progresspageindicator:extractReleaseAnnotations
+:progresspageindicator:mergeReleaseProguardFiles
+:progresspageindicator:packageReleaseJar
+:progresspageindicator:compileReleaseNdk UP-TO-DATE
+:progresspageindicator:packageReleaseJniLibs UP-TO-DATE
+:progresspageindicator:packageReleaseLocalJar UP-TO-DATE
+:progresspageindicator:packageReleaseRenderscript UP-TO-DATE
+:progresspageindicator:packageReleaseResources
+:progresspageindicator:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72210Library
+:app:prepareComAndroidSupportSupportV42211Library
+:app:prepareComSiriscacProgresspageindicator100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/1856/src/app/src/main/java/com/cepheuen/app/BlankFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/1856/src/app/src/main/java/com/cepheuen/app/BlankFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.141 secs
+
+2018-04-04 06:22:56,544 INFO  FullProcessService - Found APK file: /tmp/rdisk/1856/src/app/build/outputs/apk/app-debug.apk

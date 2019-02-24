@@ -1,0 +1,7 @@
+{
+  "android.support.annotation" : [ "AnimRes", "AnimatorRes", "AnyRes", "AnyThread", "ArrayRes", "AttrRes", "BinderThread", "BoolRes", "CallSuper", "CheckResult", "ColorInt", "ColorLong", "ColorRes", "DimenRes", "Dimension", "DrawableRes", "FloatRange", "FontRes", "FractionRes", "GuardedBy", "HalfFloat", "IdRes", "IntDef", "IntRange", "IntegerRes", "InterpolatorRes", "Keep", "LayoutRes", "MainThread", "MenuRes", "NonNull", "Nullable", "PluralsRes", "Px", "RawRes", "RequiresApi", "RequiresPermission", "RequiresPermission$Read", "RequiresPermission$Write", "RestrictTo", "RestrictTo$Scope", "Size", "StringDef", "StringRes", "StyleRes", "StyleableRes", "TransitionRes", "UiThread", "VisibleForTesting", "WorkerThread", "XmlRes" ],
+  "org.jraf.android.prefs" : [ "DefaultBoolean", "DefaultFloat", "DefaultInt", "DefaultLong", "DefaultString", "DefaultStringSet", "EditorWrapper", "Mode", "Name", "Prefs", "SharedPreferencesWrapper" ],
+  "org.jraf.android.prefs.sample" : [ "BuildConfig", "R", "R$layout", "R$mipmap", "R$string" ],
+  "org.jraf.android.prefs.sample.app" : [ "MainActivity" ],
+  "org.jraf.android.prefs.sample.prefs" : [ "Main", "MainConstants", "MainEditorWrapper", "MainPrefs", "Settings", "SettingsConstants", "SettingsEditorWrapper", "SettingsPrefs" ]
+}

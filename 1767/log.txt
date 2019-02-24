@@ -1,0 +1,108 @@
+2018-04-04 14:54:45,027 INFO  DownloadService - Downloading "https://github.com/Fichardu/CircleProgress/archive/master.zip", attempt 3
+2018-04-04 14:54:45,460 INFO  DownloadService - Downloaded https://github.com/Fichardu/CircleProgress/archive/master.zip, attempt 3
+2018-04-04 14:54:45,462 INFO  DownloadService - Size of file "/tmp/rdisk/1767/master.zip": 328 KB
+2018-04-04 14:54:45,462 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:54:45,462 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1767/master.zip: true
+2018-04-04 14:54:45,462 DEBUG ZipUtil - Extracting '/tmp/rdisk/1767/master.zip' into '/tmp/rdisk/1767/src'.
+2018-04-04 14:54:45,472 INFO  FullProcessService - Size of directory with sources: 393 KB
+2018-04-04 14:54:45,472 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1767/src]
+2018-04-04 14:54:45,484 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1767/src/.git/
+
+2018-04-04 14:54:45,486 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1767/src/CircleProgress-master/gradlew
+2018-04-04 14:54:45,488 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1767/src/CircleProgress-master/app/build.gradle /tmp/rdisk/1767/src/CircleProgress-master/build.gradle
+2018-04-04 14:54:45,490 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1767/src/CircleProgress-master/settings.gradle /tmp/rdisk/1767/src/CircleProgress-master/build.gradle /tmp/rdisk/1767/src/CircleProgress-master/app/build.gradle
+2018-04-04 14:54:45,490 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 14:54:45,490 INFO  ProjectFixService - Fixing project...
+2018-04-04 14:54:45,495 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1767/src/CircleProgress-master/app/local.properties
+2018-04-04 14:54:45,496 INFO  ProjectFixService - Build info for "/tmp/rdisk/1767/src/CircleProgress-master/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 14:54:45,496 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1767/src/CircleProgress-master/local.properties
+2018-04-04 14:54:45,496 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 14:54:45,496 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 14:54:45,497 INFO  ProjectFixService - Build info for "/tmp/rdisk/1767/src/CircleProgress-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 14:54:45,497 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 14:54:45,497 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:54:45,498 INFO  SysUtils - Execute command: [/tmp/rdisk/1767/src/CircleProgress-master/gradlew, -b, /tmp/rdisk/1767/src/CircleProgress-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:54:52,752 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 14:54:52,752 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 14:54:52,753 INFO  SysUtils - Execute command: [/tmp/rdisk/1767/src/CircleProgress-master/gradlew, -b, /tmp/rdisk/1767/src/CircleProgress-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 14:55:14,227 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1767/src/CircleProgress-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.055 secs
+
+2018-04-04 14:55:14,259 INFO  FullProcessService - Found APK file: /tmp/rdisk/1767/src/CircleProgress-master/app/build/outputs/apk/app-debug.apk

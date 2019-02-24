@@ -1,0 +1,143 @@
+2018-04-04 14:54:07,647 INFO  DownloadService - Downloading "https://github.com/ImranAtBhimsoft/indeterminateProgressView/archive/master.zip", attempt 3
+2018-04-04 14:54:08,636 INFO  DownloadService - Downloaded https://github.com/ImranAtBhimsoft/indeterminateProgressView/archive/master.zip, attempt 3
+2018-04-04 14:54:08,637 INFO  DownloadService - Size of file "/tmp/rdisk/1768/master.zip": 864 KB
+2018-04-04 14:54:08,637 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:54:08,637 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1768/master.zip: true
+2018-04-04 14:54:08,637 DEBUG ZipUtil - Extracting '/tmp/rdisk/1768/master.zip' into '/tmp/rdisk/1768/src'.
+2018-04-04 14:54:08,653 INFO  FullProcessService - Size of directory with sources: 914 KB
+2018-04-04 14:54:08,654 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1768/src]
+2018-04-04 14:54:08,661 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1768/src/.git/
+
+2018-04-04 14:54:08,664 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1768/src/indeterminateProgressView-master/gradlew
+2018-04-04 14:54:08,667 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1768/src/indeterminateProgressView-master/app/build.gradle /tmp/rdisk/1768/src/indeterminateProgressView-master/library/build.gradle /tmp/rdisk/1768/src/indeterminateProgressView-master/build.gradle
+2018-04-04 14:54:08,669 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1768/src/indeterminateProgressView-master/settings.gradle /tmp/rdisk/1768/src/indeterminateProgressView-master/library/build.gradle /tmp/rdisk/1768/src/indeterminateProgressView-master/build.gradle /tmp/rdisk/1768/src/indeterminateProgressView-master/app/build.gradle
+2018-04-04 14:54:08,669 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 14:54:08,669 INFO  ProjectFixService - Fixing project...
+2018-04-04 14:54:08,675 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1768/src/indeterminateProgressView-master/app/local.properties
+2018-04-04 14:54:08,676 INFO  ProjectFixService - Build info for "/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 14:54:08,676 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1768/src/indeterminateProgressView-master/library/local.properties
+2018-04-04 14:54:08,676 INFO  ProjectFixService - Build info for "/tmp/rdisk/1768/src/indeterminateProgressView-master/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 14:54:08,676 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1768/src/indeterminateProgressView-master/local.properties
+2018-04-04 14:54:08,677 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 14:54:08,677 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 14:54:08,678 INFO  ProjectFixService - Build info for "/tmp/rdisk/1768/src/indeterminateProgressView-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 14:54:08,678 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 14:54:08,678 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:54:08,678 INFO  SysUtils - Execute command: [/tmp/rdisk/1768/src/indeterminateProgressView-master/gradlew, -b, /tmp/rdisk/1768/src/indeterminateProgressView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:54:16,740 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 14:54:16,741 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 14:54:16,741 INFO  SysUtils - Execute command: [/tmp/rdisk/1768/src/indeterminateProgressView-master/gradlew, -b, /tmp/rdisk/1768/src/indeterminateProgressView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 14:54:40,921 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72103Library
+:library:prepareComAndroidSupportSupportV42103Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareIndeterminateProgressViewMasterLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.752 secs
+
+2018-04-04 14:54:40,971 INFO  FullProcessService - Found APK file: /tmp/rdisk/1768/src/indeterminateProgressView-master/app/build/outputs/apk/app-debug.apk

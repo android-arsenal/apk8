@@ -1,0 +1,10 @@
+2018-04-04 14:55:18,292 INFO  DownloadService - Downloading "https://github.com/mortenjust/androidtool-mac/archive/master.zip", attempt 3
+2018-04-04 14:55:27,260 INFO  DownloadService - Downloaded https://github.com/mortenjust/androidtool-mac/archive/master.zip, attempt 3
+2018-04-04 14:55:27,262 INFO  DownloadService - Size of file "/tmp/rdisk/1766/master.zip": 96 MB
+2018-04-04 14:55:27,262 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:55:27,262 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1766/master.zip: false
+2018-04-04 14:55:27,262 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-04 14:55:27,262 ERROR FullProcessService - Could not find directory with sources
+2018-04-04 14:55:27,263 ERROR FullProcessService - Project will not be processed
+2018-04-04 14:55:27,263 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 14:55:27,263 ERROR FullProcessService - Could not find generated or existed APK file

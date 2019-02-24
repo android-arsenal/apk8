@@ -1,0 +1,5 @@
+{
+  "org.buraktamturk.answerview" : [ "AnswerView", "AnswerView$OnAnswerChange", "BuildConfig", "R", "R$attr", "R$color", "R$drawable", "R$id", "R$layout", "R$string", "R$styleable" ],
+  "org.buraktamturk.answerview.internal" : [ "OneAnswerView" ],
+  "org.buraktamturk.answerview.sample" : [ "BuildConfig", "MainActivity", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style", "R$styleable" ]
+}

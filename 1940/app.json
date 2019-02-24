@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "b.a",
+    "label" : null,
+    "icon" : "res/drawable-ldpi/a.png",
+    "versionName" : null,
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : null,
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi/a.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEX///8AAABVwtN+AAAADElEQVR4AWNoYGAAAAGEAIHrfdnbAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" package=\"b.a\">\n\t<uses-sdk android:minSdkVersion=\"8\" />\n\t<application android:icon=\"res/drawable-ldpi/a.png\">\n\t\t<activity android:name=\".M\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 3425,
+  "crc32" : 76576058,
+  "sha256" : "ac24043d48dadc390877a6151515565b1fdc1dab028ee2d95d80bd80085d9376",
+  "buildTime" : 1522809016000
+}

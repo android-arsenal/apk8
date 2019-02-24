@@ -1,0 +1,2707 @@
+2018-04-04 04:34:10,866 INFO  DownloadService - Downloading "https://github.com/zserge/anvil/archive/master.zip", attempt 3
+2018-04-04 04:35:11,318 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 04:35:11,985 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 04:35:11,985 INFO  DownloadService - Downloading "https://github.com/zserge/anvil/archive/master.zip", attempt 3
+2018-04-04 04:36:13,237 DEBUG FullProcessService - Repository https://github.com/zserge/anvil available: true
+2018-04-04 04:36:13,237 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:36:13,237 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/zserge/anvil, /tmp/rdisk/1894/src]
+2018-04-04 04:36:14,922 INFO  SysUtils - 
+2018-04-04 04:36:14,928 INFO  GitService - Deleted "/tmp/rdisk/1894/src/.git": true
+2018-04-04 04:36:14,932 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 04:36:14,932 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1894/src]
+2018-04-04 04:36:14,936 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1894/src/.git/
+
+2018-04-04 04:36:14,940 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1894/src/gradlew
+2018-04-04 04:36:14,945 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle /tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle /tmp/rdisk/1894/src/anvil-design/build.gradle /tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle /tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle /tmp/rdisk/1894/src/anvil-support-v4/build.gradle /tmp/rdisk/1894/src/anvil/build.gradle /tmp/rdisk/1894/src/build.gradle /tmp/rdisk/1894/src/buildSrc/build.gradle
+2018-04-04 04:36:14,948 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1894/src/settings.gradle /tmp/rdisk/1894/src/buildSrc/build.gradle /tmp/rdisk/1894/src/build.gradle /tmp/rdisk/1894/src/anvil/build.gradle /tmp/rdisk/1894/src/anvil/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-support-v4/build.gradle /tmp/rdisk/1894/src/anvil-support-v4/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle /tmp/rdisk/1894/src/anvil-recyclerview-v7/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle /tmp/rdisk/1894/src/anvil-gridlayout-v7/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-design/build.gradle /tmp/rdisk/1894/src/anvil-design/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle /tmp/rdisk/1894/src/anvil-cardview-v7/attr-quirks.gradle /tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle /tmp/rdisk/1894/src/anvil-appcompat-v7/attr-quirks.gradle
+2018-04-04 04:36:14,949 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 04:36:14,949 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:36:14,964 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-appcompat-v7/local.properties
+2018-04-04 04:36:14,966 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,966 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,966 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-cardview-v7/local.properties
+2018-04-04 04:36:14,968 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,968 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,968 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-design/local.properties
+2018-04-04 04:36:14,970 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-design/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,970 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-design/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,970 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-gridlayout-v7/local.properties
+2018-04-04 04:36:14,972 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,972 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,972 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-recyclerview-v7/local.properties
+2018-04-04 04:36:14,974 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,974 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,974 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil-support-v4/local.properties
+2018-04-04 04:36:14,976 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil-support-v4/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,976 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil-support-v4/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,977 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/anvil/local.properties
+2018-04-04 04:36:14,979 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/anvil/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,979 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/anvil/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,979 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/local.properties
+2018-04-04 04:36:14,979 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 04:36:14,979 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 04:36:14,982 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,982 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,982 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1894/src/buildSrc/local.properties
+2018-04-04 04:36:14,985 INFO  ProjectFixService - Build info for "/tmp/rdisk/1894/src/buildSrc/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,985 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1894/src/buildSrc/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=25]
+2018-04-04 04:36:14,985 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:36:14,985 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:36:14,985 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:36:54,908 INFO  ProjectTaskService - Detected possible tasks: 97
+2018-04-04 04:36:54,908 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:36:54,908 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-appcompat-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:37:13,308 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-appcompat-v7:preBuild UP-TO-DATE
+:anvil-appcompat-v7:preDebugBuild UP-TO-DATE
+:anvil-appcompat-v7:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders
+:anvil:compileSdk15ReleaseShaders
+:anvil:generateSdk15ReleaseAssets
+:anvil:mergeSdk15ReleaseAssets
+:anvil:mergeSdk15ReleaseProguardFiles
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript
+:anvil:generateSdk15ReleaseResValues
+:anvil:generateSdk15ReleaseResources
+:anvil:packageSdk15ReleaseResources
+:anvil:processSdk15ReleaseManifest
+:anvil:generateSdk15ReleaseBuildConfig
+:anvil:processSdk15ReleaseResources
+:anvil:generateSdk15ReleaseSources
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard
+:anvil:compileSdk15ReleaseJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk15/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release
+:anvil:mergeSdk15ReleaseJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release
+:anvil:bundleSdk15Release
+:anvil-appcompat-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-appcompat-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-appcompat-v7:preReleaseBuild UP-TO-DATE
+:anvil-appcompat-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-appcompat-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-appcompat-v7:prepareComAndroidSupportAnimatedVectorDrawable2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportAppcompatV72511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCompat2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCoreUi2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCoreUtils2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportFragment2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportMediaCompat2511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportV42511Library
+:anvil-appcompat-v7:prepareComAndroidSupportSupportVectorDrawable2511Library
+:anvil-appcompat-v7:prepareDebugDependencies
+:anvil-appcompat-v7:compileDebugAidl
+:anvil-appcompat-v7:compileDebugNdk UP-TO-DATE
+:anvil-appcompat-v7:compileLint
+:anvil-appcompat-v7:copyDebugLint UP-TO-DATE
+:anvil-appcompat-v7:compileDebugRenderscript
+:anvil-appcompat-v7:generateDebugBuildConfig
+:anvil-appcompat-v7:generateDebugResValues
+:anvil-appcompat-v7:generateDebugResources
+:anvil-appcompat-v7:mergeDebugResources
+:anvil-appcompat-v7:processDebugManifest
+:anvil-appcompat-v7:processDebugResources
+:anvil-appcompat-v7:generateDebugSources
+:anvil-appcompat-v7:incrementalDebugJavaCompilationSafeguard
+:anvil-appcompat-v7:compileDebugJavaWithJavac
+:anvil-appcompat-v7:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-appcompat-v7:extractDebugAnnotations
+:anvil-appcompat-v7:mergeDebugShaders
+:anvil-appcompat-v7:compileDebugShaders
+:anvil-appcompat-v7:generateDebugAssets
+:anvil-appcompat-v7:mergeDebugAssets
+:anvil-appcompat-v7:mergeDebugProguardFiles
+:anvil-appcompat-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-appcompat-v7:packageDebugResources
+:anvil-appcompat-v7:processDebugJavaRes UP-TO-DATE
+:anvil-appcompat-v7:transformResourcesWithMergeJavaResForDebug
+:anvil-appcompat-v7:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-appcompat-v7:mergeDebugJniLibFolders
+:anvil-appcompat-v7:transformNative_libsWithMergeJniLibsForDebug
+:anvil-appcompat-v7:transformNative_libsWithSyncJniLibsForDebug
+:anvil-appcompat-v7:bundleDebug
+:anvil-appcompat-v7:compileDebugSources
+:anvil-appcompat-v7:assembleDebug
+:anvil-appcompat-v7:checkReleaseManifest
+:anvil-appcompat-v7:prepareReleaseDependencies
+:anvil-appcompat-v7:compileReleaseAidl
+:anvil-appcompat-v7:compileReleaseNdk UP-TO-DATE
+:anvil-appcompat-v7:copyReleaseLint UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseRenderscript
+:anvil-appcompat-v7:generateReleaseBuildConfig
+:anvil-appcompat-v7:generateReleaseResValues
+:anvil-appcompat-v7:generateReleaseResources
+:anvil-appcompat-v7:mergeReleaseResources
+:anvil-appcompat-v7:processReleaseManifest
+:anvil-appcompat-v7:processReleaseResources
+:anvil-appcompat-v7:generateReleaseSources
+:anvil-appcompat-v7:incrementalReleaseJavaCompilationSafeguard
+:anvil-appcompat-v7:compileReleaseJavaWithJavac
+:anvil-appcompat-v7:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-appcompat-v7:extractReleaseAnnotations
+:anvil-appcompat-v7:mergeReleaseShaders
+:anvil-appcompat-v7:compileReleaseShaders
+:anvil-appcompat-v7:generateReleaseAssets
+:anvil-appcompat-v7:mergeReleaseAssets
+:anvil-appcompat-v7:mergeReleaseProguardFiles
+:anvil-appcompat-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-appcompat-v7:packageReleaseResources
+:anvil-appcompat-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-appcompat-v7:transformResourcesWithMergeJavaResForRelease
+:anvil-appcompat-v7:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-appcompat-v7:mergeReleaseJniLibFolders
+:anvil-appcompat-v7:transformNative_libsWithMergeJniLibsForRelease
+:anvil-appcompat-v7:transformNative_libsWithSyncJniLibsForRelease
+:anvil-appcompat-v7:bundleRelease
+:anvil-appcompat-v7:compileReleaseSources
+:anvil-appcompat-v7:assembleRelease
+:anvil-appcompat-v7:javadoc/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:10: error: package android.support.v4.view does not exist
+import android.support.v4.view.ActionProvider;
+                              ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:11: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.CursorAdapter;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:12: error: package android.support.v7.view.menu does not exist
+import android.support.v7.view.menu.ActionMenuItemView;
+                                   ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:13: error: package android.support.v7.view.menu does not exist
+import android.support.v7.view.menu.ExpandedMenuView;
+                                   ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:14: error: package android.support.v7.view.menu does not exist
+import android.support.v7.view.menu.ListMenuItemView;
+                                   ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:15: error: package android.support.v7.view.menu does not exist
+import android.support.v7.view.menu.MenuBuilder;
+                                   ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:16: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ActionBarContainer;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:17: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ActionBarContextView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:18: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ActionBarOverlayLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:19: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ActionMenuView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:20: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ActivityChooserView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:21: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AlertDialogLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:22: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatAutoCompleteTextView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:23: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatButton;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:24: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatCheckBox;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:25: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatCheckedTextView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:26: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatEditText;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:27: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatImageButton;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:28: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatImageView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:29: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatMultiAutoCompleteTextView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:30: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatRadioButton;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:31: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatRatingBar;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:32: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatSeekBar;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:33: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatSpinner;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:34: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.AppCompatTextView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:35: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ButtonBarLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:36: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ContentFrameLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:37: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.DialogTitle;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:38: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.FitWindowsFrameLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:39: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.FitWindowsLinearLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:40: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.FitWindowsViewGroup;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:41: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.LinearLayoutCompat;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:42: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ListViewCompat;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:43: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ScrollingTabContainerView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:44: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.SearchView;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:45: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.SwitchCompat;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:46: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.Toolbar;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:47: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.ViewStubCompat;
+                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:60: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:61: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:69: error: package Anvil does not exist
+public final class AppCompatv7DSL implements Anvil.AttributeSetter {
+                                                  ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:74: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult actionMenuItemView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:78: error: package Anvil does not exist
+  public static Void actionMenuItemView(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:82: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult expandedMenuView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:86: error: package Anvil does not exist
+  public static Void expandedMenuView(Anvil.Renderable r) {
+                                           ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:90: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult listMenuItemView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:94: error: package Anvil does not exist
+  public static Void listMenuItemView(Anvil.Renderable r) {
+                                           ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:98: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult actionBarContainer() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:102: error: package Anvil does not exist
+  public static Void actionBarContainer(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:106: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult actionBarContextView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:110: error: package Anvil does not exist
+  public static Void actionBarContextView(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:114: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult actionBarOverlayLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:118: error: package Anvil does not exist
+  public static Void actionBarOverlayLayout(Anvil.Renderable r) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:122: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult actionMenuView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:126: error: package Anvil does not exist
+  public static Void actionMenuView(Anvil.Renderable r) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:130: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult activityChooserView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:134: error: package Anvil does not exist
+  public static Void activityChooserView(Anvil.Renderable r) {
+                                              ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:138: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult alertDialogLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:142: error: package Anvil does not exist
+  public static Void alertDialogLayout(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:146: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatAutoCompleteTextView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:150: error: package Anvil does not exist
+  public static Void appCompatAutoCompleteTextView(Anvil.Renderable r) {
+                                                        ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:154: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatButton() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:158: error: package Anvil does not exist
+  public static Void appCompatButton(Anvil.Renderable r) {
+                                          ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:162: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatCheckBox() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:166: error: package Anvil does not exist
+  public static Void appCompatCheckBox(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:170: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatCheckedTextView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:174: error: package Anvil does not exist
+  public static Void appCompatCheckedTextView(Anvil.Renderable r) {
+                                                   ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:178: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatEditText() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:182: error: package Anvil does not exist
+  public static Void appCompatEditText(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:186: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatImageButton() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:190: error: package Anvil does not exist
+  public static Void appCompatImageButton(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:194: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatImageView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:198: error: package Anvil does not exist
+  public static Void appCompatImageView(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:202: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatMultiAutoCompleteTextView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:206: error: package Anvil does not exist
+  public static Void appCompatMultiAutoCompleteTextView(Anvil.Renderable r) {
+                                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:210: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatRadioButton() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:214: error: package Anvil does not exist
+  public static Void appCompatRadioButton(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:218: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatRatingBar() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:222: error: package Anvil does not exist
+  public static Void appCompatRatingBar(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:226: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatSeekBar() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:230: error: package Anvil does not exist
+  public static Void appCompatSeekBar(Anvil.Renderable r) {
+                                           ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:234: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatSpinner() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:238: error: package Anvil does not exist
+  public static Void appCompatSpinner(Anvil.Renderable r) {
+                                           ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:242: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appCompatTextView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:246: error: package Anvil does not exist
+  public static Void appCompatTextView(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:250: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult buttonBarLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:254: error: package Anvil does not exist
+  public static Void buttonBarLayout(Anvil.Renderable r) {
+                                          ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:258: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult contentFrameLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:262: error: package Anvil does not exist
+  public static Void contentFrameLayout(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:266: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult dialogTitle() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:270: error: package Anvil does not exist
+  public static Void dialogTitle(Anvil.Renderable r) {
+                                      ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:274: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult fitWindowsFrameLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:278: error: package Anvil does not exist
+  public static Void fitWindowsFrameLayout(Anvil.Renderable r) {
+                                                ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:282: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult fitWindowsLinearLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:286: error: package Anvil does not exist
+  public static Void fitWindowsLinearLayout(Anvil.Renderable r) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:290: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult linearLayoutCompat() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:294: error: package Anvil does not exist
+  public static Void linearLayoutCompat(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:298: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult listViewCompat() {
+                       ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:302: error: package Anvil does not exist
+  public static Void listViewCompat(Anvil.Renderable r) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-appcompat-v7/src/main/java/trikita/anvil/appcompat/v7/AppCompatv7DSL.java:306: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult scrollingTabContainerView() {
+                       ^
+
+100 warnings
+:anvil-appcompat-v7:javadocJar
+:anvil-appcompat-v7:sourcesJar
+:anvil-appcompat-v7:assemble
+:anvil-appcompat-v7:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.865 secs
+
+2018-04-04 04:37:13,373 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:37:13,373 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:37:27,326 INFO  ProjectTaskService - Detected possible tasks: 95
+2018-04-04 04:37:27,326 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:37:27,327 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-cardview-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:37:40,056 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-cardview-v7:preBuild UP-TO-DATE
+:anvil-cardview-v7:preDebugBuild UP-TO-DATE
+:anvil-cardview-v7:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil-cardview-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-cardview-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-cardview-v7:preReleaseBuild UP-TO-DATE
+:anvil-cardview-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-cardview-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-cardview-v7:prepareComAndroidSupportCardviewV72511Library
+:anvil-cardview-v7:prepareDebugDependencies
+:anvil-cardview-v7:compileDebugAidl
+:anvil-cardview-v7:compileDebugNdk UP-TO-DATE
+:anvil-cardview-v7:compileLint
+:anvil-cardview-v7:copyDebugLint UP-TO-DATE
+:anvil-cardview-v7:compileDebugRenderscript
+:anvil-cardview-v7:generateDebugBuildConfig
+:anvil-cardview-v7:generateDebugResValues
+:anvil-cardview-v7:generateDebugResources
+:anvil-cardview-v7:mergeDebugResources
+:anvil-cardview-v7:processDebugManifest
+:anvil-cardview-v7:processDebugResources
+:anvil-cardview-v7:generateDebugSources
+:anvil-cardview-v7:incrementalDebugJavaCompilationSafeguard
+:anvil-cardview-v7:compileDebugJavaWithJavac
+:anvil-cardview-v7:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-cardview-v7:extractDebugAnnotations
+:anvil-cardview-v7:mergeDebugShaders
+:anvil-cardview-v7:compileDebugShaders
+:anvil-cardview-v7:generateDebugAssets
+:anvil-cardview-v7:mergeDebugAssets
+:anvil-cardview-v7:mergeDebugProguardFiles
+:anvil-cardview-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-cardview-v7:packageDebugResources
+:anvil-cardview-v7:processDebugJavaRes UP-TO-DATE
+:anvil-cardview-v7:transformResourcesWithMergeJavaResForDebug
+:anvil-cardview-v7:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-cardview-v7:mergeDebugJniLibFolders
+:anvil-cardview-v7:transformNative_libsWithMergeJniLibsForDebug
+:anvil-cardview-v7:transformNative_libsWithSyncJniLibsForDebug
+:anvil-cardview-v7:bundleDebug
+:anvil-cardview-v7:compileDebugSources
+:anvil-cardview-v7:assembleDebug
+:anvil-cardview-v7:checkReleaseManifest
+:anvil-cardview-v7:prepareReleaseDependencies
+:anvil-cardview-v7:compileReleaseAidl
+:anvil-cardview-v7:compileReleaseNdk UP-TO-DATE
+:anvil-cardview-v7:copyReleaseLint UP-TO-DATE
+:anvil-cardview-v7:compileReleaseRenderscript
+:anvil-cardview-v7:generateReleaseBuildConfig
+:anvil-cardview-v7:generateReleaseResValues
+:anvil-cardview-v7:generateReleaseResources
+:anvil-cardview-v7:mergeReleaseResources
+:anvil-cardview-v7:processReleaseManifest
+:anvil-cardview-v7:processReleaseResources
+:anvil-cardview-v7:generateReleaseSources
+:anvil-cardview-v7:incrementalReleaseJavaCompilationSafeguard
+:anvil-cardview-v7:compileReleaseJavaWithJavac
+:anvil-cardview-v7:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-cardview-v7:extractReleaseAnnotations
+:anvil-cardview-v7:mergeReleaseShaders
+:anvil-cardview-v7:compileReleaseShaders
+:anvil-cardview-v7:generateReleaseAssets
+:anvil-cardview-v7:mergeReleaseAssets
+:anvil-cardview-v7:mergeReleaseProguardFiles
+:anvil-cardview-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-cardview-v7:packageReleaseResources
+:anvil-cardview-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-cardview-v7:transformResourcesWithMergeJavaResForRelease
+:anvil-cardview-v7:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-cardview-v7:mergeReleaseJniLibFolders
+:anvil-cardview-v7:transformNative_libsWithMergeJniLibsForRelease
+:anvil-cardview-v7:transformNative_libsWithSyncJniLibsForRelease
+:anvil-cardview-v7:bundleRelease
+:anvil-cardview-v7:compileReleaseSources
+:anvil-cardview-v7:assembleRelease
+:anvil-cardview-v7:javadoc/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.CardView;
+                                ^
+/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:12: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:13: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:21: error: package Anvil does not exist
+public final class CardViewv7DSL implements Anvil.AttributeSetter {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:26: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult cardView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-cardview-v7/src/main/java/trikita/anvil/cardview/v7/CardViewv7DSL.java:30: error: package Anvil does not exist
+  public static Void cardView(Anvil.Renderable r) {
+                                   ^
+
+6 warnings
+:anvil-cardview-v7:javadocJar
+:anvil-cardview-v7:sourcesJar
+:anvil-cardview-v7:assemble
+:anvil-cardview-v7:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.197 secs
+
+2018-04-04 04:37:40,124 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:37:40,124 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-design/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:37:50,890 INFO  ProjectTaskService - Detected possible tasks: 95
+2018-04-04 04:37:50,890 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:37:50,890 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-design/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:38:08,664 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-design:preBuild UP-TO-DATE
+:anvil-design:preDebugBuild UP-TO-DATE
+:anvil-design:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil-design:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-design:preDebugUnitTestBuild UP-TO-DATE
+:anvil-design:preReleaseBuild UP-TO-DATE
+:anvil-design:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-design:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-design:prepareComAndroidSupportAnimatedVectorDrawable2511Library
+:anvil-design:prepareComAndroidSupportAppcompatV72511Library
+:anvil-design:prepareComAndroidSupportDesign2511Library
+:anvil-design:prepareComAndroidSupportRecyclerviewV72511Library
+:anvil-design:prepareComAndroidSupportSupportCompat2511Library
+:anvil-design:prepareComAndroidSupportSupportCoreUi2511Library
+:anvil-design:prepareComAndroidSupportSupportCoreUtils2511Library
+:anvil-design:prepareComAndroidSupportSupportFragment2511Library
+:anvil-design:prepareComAndroidSupportSupportMediaCompat2511Library
+:anvil-design:prepareComAndroidSupportSupportV42511Library
+:anvil-design:prepareComAndroidSupportSupportVectorDrawable2511Library
+:anvil-design:prepareComAndroidSupportTransition2511Library
+:anvil-design:prepareDebugDependencies
+:anvil-design:compileDebugAidl
+:anvil-design:compileDebugNdk UP-TO-DATE
+:anvil-design:compileLint
+:anvil-design:copyDebugLint UP-TO-DATE
+:anvil-design:compileDebugRenderscript
+:anvil-design:generateDebugBuildConfig
+:anvil-design:generateDebugResValues
+:anvil-design:generateDebugResources
+:anvil-design:mergeDebugResources
+:anvil-design:processDebugManifest
+:anvil-design:processDebugResources
+:anvil-design:generateDebugSources
+:anvil-design:incrementalDebugJavaCompilationSafeguard
+:anvil-design:compileDebugJavaWithJavac
+:anvil-design:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-design:extractDebugAnnotations
+:anvil-design:mergeDebugShaders
+:anvil-design:compileDebugShaders
+:anvil-design:generateDebugAssets
+:anvil-design:mergeDebugAssets
+:anvil-design:mergeDebugProguardFiles
+:anvil-design:packageDebugRenderscript UP-TO-DATE
+:anvil-design:packageDebugResources
+:anvil-design:processDebugJavaRes UP-TO-DATE
+:anvil-design:transformResourcesWithMergeJavaResForDebug
+:anvil-design:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-design:mergeDebugJniLibFolders
+:anvil-design:transformNative_libsWithMergeJniLibsForDebug
+:anvil-design:transformNative_libsWithSyncJniLibsForDebug
+:anvil-design:bundleDebug
+:anvil-design:compileDebugSources
+:anvil-design:assembleDebug
+:anvil-design:checkReleaseManifest
+:anvil-design:prepareReleaseDependencies
+:anvil-design:compileReleaseAidl
+:anvil-design:compileReleaseNdk UP-TO-DATE
+:anvil-design:copyReleaseLint UP-TO-DATE
+:anvil-design:compileReleaseRenderscript
+:anvil-design:generateReleaseBuildConfig
+:anvil-design:generateReleaseResValues
+:anvil-design:generateReleaseResources
+:anvil-design:mergeReleaseResources
+:anvil-design:processReleaseManifest
+:anvil-design:processReleaseResources
+:anvil-design:generateReleaseSources
+:anvil-design:incrementalReleaseJavaCompilationSafeguard
+:anvil-design:compileReleaseJavaWithJavac
+:anvil-design:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-design:extractReleaseAnnotations
+:anvil-design:mergeReleaseShaders
+:anvil-design:compileReleaseShaders
+:anvil-design:generateReleaseAssets
+:anvil-design:mergeReleaseAssets
+:anvil-design:mergeReleaseProguardFiles
+:anvil-design:packageReleaseRenderscript UP-TO-DATE
+:anvil-design:packageReleaseResources
+:anvil-design:processReleaseJavaRes UP-TO-DATE
+:anvil-design:transformResourcesWithMergeJavaResForRelease
+:anvil-design:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-design:mergeReleaseJniLibFolders
+:anvil-design:transformNative_libsWithMergeJniLibsForRelease
+:anvil-design:transformNative_libsWithSyncJniLibsForRelease
+:anvil-design:bundleRelease
+:anvil-design:compileReleaseSources
+:anvil-design:assembleRelease
+:anvil-design:javadoc/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:7: error: package android.support.design.internal does not exist
+import android.support.design.internal.BaselineLayout;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:8: error: package android.support.design.internal does not exist
+import android.support.design.internal.BottomNavigationItemView;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:9: error: package android.support.design.internal does not exist
+import android.support.design.internal.BottomNavigationMenuView;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:10: error: package android.support.design.internal does not exist
+import android.support.design.internal.BottomNavigationPresenter;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:11: error: package android.support.design.internal does not exist
+import android.support.design.internal.ForegroundLinearLayout;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:12: error: package android.support.design.internal does not exist
+import android.support.design.internal.NavigationMenuItemView;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:13: error: package android.support.design.internal does not exist
+import android.support.design.internal.NavigationMenuView;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:14: error: package android.support.design.internal does not exist
+import android.support.design.internal.ScrimInsetsFrameLayout;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:15: error: package android.support.design.internal does not exist
+import android.support.design.internal.SnackbarContentLayout;
+                                      ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:16: error: package android.support.design.widget does not exist
+import android.support.design.widget.AppBarLayout;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:17: error: package android.support.design.widget does not exist
+import android.support.design.widget.BottomNavigationView;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:18: error: package android.support.design.widget does not exist
+import android.support.design.widget.CheckableImageButton;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:19: error: package android.support.design.widget does not exist
+import android.support.design.widget.CollapsingToolbarLayout;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:20: error: package android.support.design.widget does not exist
+import android.support.design.widget.CoordinatorLayout;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:21: error: package android.support.design.widget does not exist
+import android.support.design.widget.FloatingActionButton;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:22: error: package android.support.design.widget does not exist
+import android.support.design.widget.NavigationView;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:23: error: package android.support.design.widget does not exist
+import android.support.design.widget.TabItem;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:24: error: package android.support.design.widget does not exist
+import android.support.design.widget.TabLayout;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:25: error: package android.support.design.widget does not exist
+import android.support.design.widget.TextInputEditText;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:26: error: package android.support.design.widget does not exist
+import android.support.design.widget.TextInputLayout;
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:27: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewPager;
+                              ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:38: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:39: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:47: error: package Anvil does not exist
+public final class DesignDSL implements Anvil.AttributeSetter {
+                                             ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:52: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult baselineLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:56: error: package Anvil does not exist
+  public static Void baselineLayout(Anvil.Renderable r) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:60: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult bottomNavigationItemView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:64: error: package Anvil does not exist
+  public static Void bottomNavigationItemView(Anvil.Renderable r) {
+                                                   ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:68: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult bottomNavigationMenuView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:72: error: package Anvil does not exist
+  public static Void bottomNavigationMenuView(Anvil.Renderable r) {
+                                                   ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:76: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult foregroundLinearLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:80: error: package Anvil does not exist
+  public static Void foregroundLinearLayout(Anvil.Renderable r) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:84: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult navigationMenuItemView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:88: error: package Anvil does not exist
+  public static Void navigationMenuItemView(Anvil.Renderable r) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:92: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult navigationMenuView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:96: error: package Anvil does not exist
+  public static Void navigationMenuView(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:100: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult scrimInsetsFrameLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:104: error: package Anvil does not exist
+  public static Void scrimInsetsFrameLayout(Anvil.Renderable r) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:108: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult snackbarContentLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:112: error: package Anvil does not exist
+  public static Void snackbarContentLayout(Anvil.Renderable r) {
+                                                ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:116: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult appBarLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:120: error: package Anvil does not exist
+  public static Void appBarLayout(Anvil.Renderable r) {
+                                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:124: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult bottomNavigationView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:128: error: package Anvil does not exist
+  public static Void bottomNavigationView(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:132: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult checkableImageButton() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:136: error: package Anvil does not exist
+  public static Void checkableImageButton(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:140: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult collapsingToolbarLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:144: error: package Anvil does not exist
+  public static Void collapsingToolbarLayout(Anvil.Renderable r) {
+                                                  ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:148: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult coordinatorLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:152: error: package Anvil does not exist
+  public static Void coordinatorLayout(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:156: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult floatingActionButton() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:160: error: package Anvil does not exist
+  public static Void floatingActionButton(Anvil.Renderable r) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:164: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult navigationView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:168: error: package Anvil does not exist
+  public static Void navigationView(Anvil.Renderable r) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:172: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult tabItem() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:176: error: package Anvil does not exist
+  public static Void tabItem(Anvil.Renderable r) {
+                                  ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:180: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult tabLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:184: error: package Anvil does not exist
+  public static Void tabLayout(Anvil.Renderable r) {
+                                    ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:188: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult textInputEditText() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:192: error: package Anvil does not exist
+  public static Void textInputEditText(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:196: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult textInputLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:200: error: package Anvil does not exist
+  public static Void textInputLayout(Anvil.Renderable r) {
+                                          ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:384: error: package NavigationView does not exist
+  public static Void navigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener arg) {
+                                                                  ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:392: error: package BottomNavigationView does not exist
+  public static Void onNavigationItemSelected(BottomNavigationView.OnNavigationItemSelectedListener arg) {
+                                                                  ^
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:424: error: cannot find symbol
+  public static Void presenter(BottomNavigationPresenter arg) {
+                               ^
+  symbol:   class BottomNavigationPresenter
+  location: class DesignDSL
+/tmp/rdisk/1894/src/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java:516: error: cannot find symbol
+  public static Void upWithViewPager(ViewPager arg) {
+                                     ^
+  symbol:   class ViewPager
+  location: class DesignDSL
+
+66 warnings
+:anvil-design:javadocJar
+:anvil-design:sourcesJar
+:anvil-design:assemble
+:anvil-design:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.219 secs
+
+2018-04-04 04:38:08,793 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:38:08,793 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:38:19,534 INFO  ProjectTaskService - Detected possible tasks: 95
+2018-04-04 04:38:19,534 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:38:19,534 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-gridlayout-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:38:32,460 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-gridlayout-v7:preBuild UP-TO-DATE
+:anvil-gridlayout-v7:preDebugBuild UP-TO-DATE
+:anvil-gridlayout-v7:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil-gridlayout-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:preReleaseBuild UP-TO-DATE
+:anvil-gridlayout-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-gridlayout-v7:prepareComAndroidSupportGridlayoutV72511Library
+:anvil-gridlayout-v7:prepareComAndroidSupportSupportCompat2511Library
+:anvil-gridlayout-v7:prepareComAndroidSupportSupportCoreUi2511Library
+:anvil-gridlayout-v7:prepareDebugDependencies
+:anvil-gridlayout-v7:compileDebugAidl
+:anvil-gridlayout-v7:compileDebugNdk UP-TO-DATE
+:anvil-gridlayout-v7:compileLint
+:anvil-gridlayout-v7:copyDebugLint UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugRenderscript
+:anvil-gridlayout-v7:generateDebugBuildConfig
+:anvil-gridlayout-v7:generateDebugResValues
+:anvil-gridlayout-v7:generateDebugResources
+:anvil-gridlayout-v7:mergeDebugResources
+:anvil-gridlayout-v7:processDebugManifest
+:anvil-gridlayout-v7:processDebugResources
+:anvil-gridlayout-v7:generateDebugSources
+:anvil-gridlayout-v7:incrementalDebugJavaCompilationSafeguard
+:anvil-gridlayout-v7:compileDebugJavaWithJavac
+:anvil-gridlayout-v7:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-gridlayout-v7:extractDebugAnnotations
+:anvil-gridlayout-v7:mergeDebugShaders
+:anvil-gridlayout-v7:compileDebugShaders
+:anvil-gridlayout-v7:generateDebugAssets
+:anvil-gridlayout-v7:mergeDebugAssets
+:anvil-gridlayout-v7:mergeDebugProguardFiles
+:anvil-gridlayout-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:packageDebugResources
+:anvil-gridlayout-v7:processDebugJavaRes UP-TO-DATE
+:anvil-gridlayout-v7:transformResourcesWithMergeJavaResForDebug
+:anvil-gridlayout-v7:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-gridlayout-v7:mergeDebugJniLibFolders
+:anvil-gridlayout-v7:transformNative_libsWithMergeJniLibsForDebug
+:anvil-gridlayout-v7:transformNative_libsWithSyncJniLibsForDebug
+:anvil-gridlayout-v7:bundleDebug
+:anvil-gridlayout-v7:compileDebugSources
+:anvil-gridlayout-v7:assembleDebug
+:anvil-gridlayout-v7:checkReleaseManifest
+:anvil-gridlayout-v7:prepareReleaseDependencies
+:anvil-gridlayout-v7:compileReleaseAidl
+:anvil-gridlayout-v7:compileReleaseNdk UP-TO-DATE
+:anvil-gridlayout-v7:copyReleaseLint UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseRenderscript
+:anvil-gridlayout-v7:generateReleaseBuildConfig
+:anvil-gridlayout-v7:generateReleaseResValues
+:anvil-gridlayout-v7:generateReleaseResources
+:anvil-gridlayout-v7:mergeReleaseResources
+:anvil-gridlayout-v7:processReleaseManifest
+:anvil-gridlayout-v7:processReleaseResources
+:anvil-gridlayout-v7:generateReleaseSources
+:anvil-gridlayout-v7:incrementalReleaseJavaCompilationSafeguard
+:anvil-gridlayout-v7:compileReleaseJavaWithJavac
+:anvil-gridlayout-v7:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-gridlayout-v7:extractReleaseAnnotations
+:anvil-gridlayout-v7:mergeReleaseShaders
+:anvil-gridlayout-v7:compileReleaseShaders
+:anvil-gridlayout-v7:generateReleaseAssets
+:anvil-gridlayout-v7:mergeReleaseAssets
+:anvil-gridlayout-v7:mergeReleaseProguardFiles
+:anvil-gridlayout-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:packageReleaseResources
+:anvil-gridlayout-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-gridlayout-v7:transformResourcesWithMergeJavaResForRelease
+:anvil-gridlayout-v7:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-gridlayout-v7:mergeReleaseJniLibFolders
+:anvil-gridlayout-v7:transformNative_libsWithMergeJniLibsForRelease
+:anvil-gridlayout-v7:transformNative_libsWithSyncJniLibsForRelease
+:anvil-gridlayout-v7:bundleRelease
+:anvil-gridlayout-v7:compileReleaseSources
+:anvil-gridlayout-v7:assembleRelease
+:anvil-gridlayout-v7:javadoc/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.GridLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:11: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:12: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:20: error: package Anvil does not exist
+public final class GridLayoutv7DSL implements Anvil.AttributeSetter {
+                                                   ^
+/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:25: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult gridLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-gridlayout-v7/src/main/java/trikita/anvil/gridlayout/v7/GridLayoutv7DSL.java:29: error: package Anvil does not exist
+  public static Void gridLayout(Anvil.Renderable r) {
+                                     ^
+
+6 warnings
+:anvil-gridlayout-v7:javadocJar
+:anvil-gridlayout-v7:sourcesJar
+:anvil-gridlayout-v7:assemble
+:anvil-gridlayout-v7:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.357 secs
+
+2018-04-04 04:38:32,590 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:38:32,590 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:38:43,540 INFO  ProjectTaskService - Detected possible tasks: 95
+2018-04-04 04:38:43,540 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:38:43,540 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-recyclerview-v7/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:38:56,940 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-recyclerview-v7:preBuild UP-TO-DATE
+:anvil-recyclerview-v7:preDebugBuild UP-TO-DATE
+:anvil-recyclerview-v7:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil-recyclerview-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:preReleaseBuild UP-TO-DATE
+:anvil-recyclerview-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-recyclerview-v7:prepareComAndroidSupportRecyclerviewV72511Library
+:anvil-recyclerview-v7:prepareComAndroidSupportSupportCompat2511Library
+:anvil-recyclerview-v7:prepareComAndroidSupportSupportCoreUi2511Library
+:anvil-recyclerview-v7:prepareDebugDependencies
+:anvil-recyclerview-v7:compileDebugAidl
+:anvil-recyclerview-v7:compileDebugNdk UP-TO-DATE
+:anvil-recyclerview-v7:compileLint
+:anvil-recyclerview-v7:copyDebugLint UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugRenderscript
+:anvil-recyclerview-v7:generateDebugBuildConfig
+:anvil-recyclerview-v7:generateDebugResValues
+:anvil-recyclerview-v7:generateDebugResources
+:anvil-recyclerview-v7:mergeDebugResources
+:anvil-recyclerview-v7:processDebugManifest
+:anvil-recyclerview-v7:processDebugResources
+:anvil-recyclerview-v7:generateDebugSources
+:anvil-recyclerview-v7:incrementalDebugJavaCompilationSafeguard
+:anvil-recyclerview-v7:compileDebugJavaWithJavac
+:anvil-recyclerview-v7:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-recyclerview-v7:extractDebugAnnotations
+:anvil-recyclerview-v7:mergeDebugShaders
+:anvil-recyclerview-v7:compileDebugShaders
+:anvil-recyclerview-v7:generateDebugAssets
+:anvil-recyclerview-v7:mergeDebugAssets
+:anvil-recyclerview-v7:mergeDebugProguardFiles
+:anvil-recyclerview-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:packageDebugResources
+:anvil-recyclerview-v7:processDebugJavaRes UP-TO-DATE
+:anvil-recyclerview-v7:transformResourcesWithMergeJavaResForDebug
+:anvil-recyclerview-v7:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-recyclerview-v7:mergeDebugJniLibFolders
+:anvil-recyclerview-v7:transformNative_libsWithMergeJniLibsForDebug
+:anvil-recyclerview-v7:transformNative_libsWithSyncJniLibsForDebug
+:anvil-recyclerview-v7:bundleDebug
+:anvil-recyclerview-v7:compileDebugSources
+:anvil-recyclerview-v7:assembleDebug
+:anvil-recyclerview-v7:checkReleaseManifest
+:anvil-recyclerview-v7:prepareReleaseDependencies
+:anvil-recyclerview-v7:compileReleaseAidl
+:anvil-recyclerview-v7:compileReleaseNdk UP-TO-DATE
+:anvil-recyclerview-v7:copyReleaseLint UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseRenderscript
+:anvil-recyclerview-v7:generateReleaseBuildConfig
+:anvil-recyclerview-v7:generateReleaseResValues
+:anvil-recyclerview-v7:generateReleaseResources
+:anvil-recyclerview-v7:mergeReleaseResources
+:anvil-recyclerview-v7:processReleaseManifest
+:anvil-recyclerview-v7:processReleaseResources
+:anvil-recyclerview-v7:generateReleaseSources
+:anvil-recyclerview-v7:incrementalReleaseJavaCompilationSafeguard
+:anvil-recyclerview-v7:compileReleaseJavaWithJavac
+:anvil-recyclerview-v7:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-recyclerview-v7:extractReleaseAnnotations
+:anvil-recyclerview-v7:mergeReleaseShaders
+:anvil-recyclerview-v7:compileReleaseShaders
+:anvil-recyclerview-v7:generateReleaseAssets
+:anvil-recyclerview-v7:mergeReleaseAssets
+:anvil-recyclerview-v7:mergeReleaseProguardFiles
+:anvil-recyclerview-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:packageReleaseResources
+:anvil-recyclerview-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-recyclerview-v7:transformResourcesWithMergeJavaResForRelease
+:anvil-recyclerview-v7:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-recyclerview-v7:mergeReleaseJniLibFolders
+:anvil-recyclerview-v7:transformNative_libsWithMergeJniLibsForRelease
+:anvil-recyclerview-v7:transformNative_libsWithSyncJniLibsForRelease
+:anvil-recyclerview-v7:bundleRelease
+:anvil-recyclerview-v7:compileReleaseSources
+:anvil-recyclerview-v7:assembleRelease
+:anvil-recyclerview-v7:javadoc/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerViewAccessibilityDelegate;
+                                ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:11: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:12: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:3: error: cannot find symbol
+import static trikita.anvil.BaseDSL.attr;
+                           ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:3: error: static import only from classes and interfaces
+import static trikita.anvil.BaseDSL.attr;
+^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:5: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.LinearLayoutManager;
+                                ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:6: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:8: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/BaseRecyclerView.java:10: error: package Anvil does not exist
+class BaseRecyclerView implements Anvil.AttributeSetter {
+                                       ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:20: error: package Anvil does not exist
+public final class RecyclerViewv7DSL extends BaseRecyclerView implements Anvil.AttributeSetter {
+                                                                              ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:25: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult recyclerView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:29: error: package Anvil does not exist
+  public static Void recyclerView(Anvil.Renderable r) {
+                                       ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:33: error: cannot find symbol
+  public static Void accessibilityDelegateCompat(RecyclerViewAccessibilityDelegate arg) {
+                                                 ^
+  symbol:   class RecyclerViewAccessibilityDelegate
+  location: class RecyclerViewv7DSL
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:37: error: package RecyclerView does not exist
+  public static Void adapter(RecyclerView.Adapter arg) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:41: error: package RecyclerView does not exist
+  public static Void childDrawingOrderCallback(RecyclerView.ChildDrawingOrderCallback arg) {
+                                                           ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:49: error: package RecyclerView does not exist
+  public static Void itemAnimator(RecyclerView.ItemAnimator arg) {
+                                              ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:61: error: package RecyclerView does not exist
+  public static Void layoutManager(RecyclerView.LayoutManager arg) {
+                                               ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:69: error: package RecyclerView does not exist
+  public static Void onFling(RecyclerView.OnFlingListener arg) {
+                                         ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:77: error: package RecyclerView does not exist
+  public static Void recycledViewPool(RecyclerView.RecycledViewPool arg) {
+                                                  ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:81: error: package RecyclerView does not exist
+  public static Void recyclerListener(RecyclerView.RecyclerListener arg) {
+                                                  ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/recyclerview/v7/RecyclerViewv7DSL.java:89: error: package RecyclerView does not exist
+  public static Void viewCacheExtension(RecyclerView.ViewCacheExtension arg) {
+                                                    ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:11: error: package RecyclerView does not exist
+        extends RecyclerView.Adapter<RenderableRecyclerViewAdapter.MountHolder> {
+                            ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:61: error: package RecyclerView does not exist
+    public static class MountHolder extends RecyclerView.ViewHolder {
+                                                        ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:14: error: package RenderableAdapter does not exist
+            final RenderableAdapter.Item<T> r) {
+                                   ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:69: error: package RecyclerView does not exist
+    public abstract void view(RecyclerView.ViewHolder holder);
+                                          ^
+/tmp/rdisk/1894/src/anvil-recyclerview-v7/src/main/java/trikita/anvil/RenderableRecyclerViewAdapter.java:62: error: package Anvil does not exist
+        private Anvil.Mount mount;
+                     ^
+
+28 warnings
+:anvil-recyclerview-v7:javadocJar
+:anvil-recyclerview-v7:sourcesJar
+:anvil-recyclerview-v7:assemble
+:anvil-recyclerview-v7:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.836 secs
+
+2018-04-04 04:38:57,079 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:38:57,079 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-support-v4/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:39:07,858 INFO  ProjectTaskService - Detected possible tasks: 95
+2018-04-04 04:39:07,859 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 04:39:07,859 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil-support-v4/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 04:39:21,269 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil-support-v4:preBuild UP-TO-DATE
+:anvil-support-v4:preDebugBuild UP-TO-DATE
+:anvil-support-v4:checkDebugManifest
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil-support-v4:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-support-v4:preDebugUnitTestBuild UP-TO-DATE
+:anvil-support-v4:preReleaseBuild UP-TO-DATE
+:anvil-support-v4:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-support-v4:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary
+:anvil-support-v4:prepareComAndroidSupportSupportCompat2511Library
+:anvil-support-v4:prepareComAndroidSupportSupportCoreUi2511Library
+:anvil-support-v4:prepareComAndroidSupportSupportCoreUtils2511Library
+:anvil-support-v4:prepareComAndroidSupportSupportFragment2511Library
+:anvil-support-v4:prepareComAndroidSupportSupportMediaCompat2511Library
+:anvil-support-v4:prepareComAndroidSupportSupportV42511Library
+:anvil-support-v4:prepareComAndroidSupportTransition2511Library
+:anvil-support-v4:prepareDebugDependencies
+:anvil-support-v4:compileDebugAidl
+:anvil-support-v4:compileDebugNdk UP-TO-DATE
+:anvil-support-v4:compileLint
+:anvil-support-v4:copyDebugLint UP-TO-DATE
+:anvil-support-v4:compileDebugRenderscript
+:anvil-support-v4:generateDebugBuildConfig
+:anvil-support-v4:generateDebugResValues
+:anvil-support-v4:generateDebugResources
+:anvil-support-v4:mergeDebugResources
+:anvil-support-v4:processDebugManifest
+:anvil-support-v4:processDebugResources
+:anvil-support-v4:generateDebugSources
+:anvil-support-v4:incrementalDebugJavaCompilationSafeguard
+:anvil-support-v4:compileDebugJavaWithJavac
+:anvil-support-v4:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-support-v4:extractDebugAnnotations
+:anvil-support-v4:mergeDebugShaders
+:anvil-support-v4:compileDebugShaders
+:anvil-support-v4:generateDebugAssets
+:anvil-support-v4:mergeDebugAssets
+:anvil-support-v4:mergeDebugProguardFiles
+:anvil-support-v4:packageDebugRenderscript UP-TO-DATE
+:anvil-support-v4:packageDebugResources
+:anvil-support-v4:processDebugJavaRes UP-TO-DATE
+:anvil-support-v4:transformResourcesWithMergeJavaResForDebug
+:anvil-support-v4:transformClassesAndResourcesWithSyncLibJarsForDebug
+:anvil-support-v4:mergeDebugJniLibFolders
+:anvil-support-v4:transformNative_libsWithMergeJniLibsForDebug
+:anvil-support-v4:transformNative_libsWithSyncJniLibsForDebug
+:anvil-support-v4:bundleDebug
+:anvil-support-v4:compileDebugSources
+:anvil-support-v4:assembleDebug
+:anvil-support-v4:checkReleaseManifest
+:anvil-support-v4:prepareReleaseDependencies
+:anvil-support-v4:compileReleaseAidl
+:anvil-support-v4:compileReleaseNdk UP-TO-DATE
+:anvil-support-v4:copyReleaseLint UP-TO-DATE
+:anvil-support-v4:compileReleaseRenderscript
+:anvil-support-v4:generateReleaseBuildConfig
+:anvil-support-v4:generateReleaseResValues
+:anvil-support-v4:generateReleaseResources
+:anvil-support-v4:mergeReleaseResources
+:anvil-support-v4:processReleaseManifest
+:anvil-support-v4:processReleaseResources
+:anvil-support-v4:generateReleaseSources
+:anvil-support-v4:incrementalReleaseJavaCompilationSafeguard
+:anvil-support-v4:compileReleaseJavaWithJavac
+:anvil-support-v4:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:anvil-support-v4:extractReleaseAnnotations
+:anvil-support-v4:mergeReleaseShaders
+:anvil-support-v4:compileReleaseShaders
+:anvil-support-v4:generateReleaseAssets
+:anvil-support-v4:mergeReleaseAssets
+:anvil-support-v4:mergeReleaseProguardFiles
+:anvil-support-v4:packageReleaseRenderscript UP-TO-DATE
+:anvil-support-v4:packageReleaseResources
+:anvil-support-v4:processReleaseJavaRes UP-TO-DATE
+:anvil-support-v4:transformResourcesWithMergeJavaResForRelease
+:anvil-support-v4:transformClassesAndResourcesWithSyncLibJarsForRelease
+:anvil-support-v4:mergeReleaseJniLibFolders
+:anvil-support-v4:transformNative_libsWithMergeJniLibsForRelease
+:anvil-support-v4:transformNative_libsWithSyncJniLibsForRelease
+:anvil-support-v4:bundleRelease
+:anvil-support-v4:compileReleaseSources
+:anvil-support-v4:assembleRelease
+:anvil-support-v4:javadoc/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:4: error: package android.support.v4.view does not exist
+import android.support.v4.view.PagerAdapter;
+                              ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:5: error: package android.support.v4.view does not exist
+import android.support.v4.view.PagerTabStrip;
+                              ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:6: error: package android.support.v4.view does not exist
+import android.support.v4.view.PagerTitleStrip;
+                              ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:7: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewPager;
+                              ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:8: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.ContentLoadingProgressBar;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:9: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.DrawerLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:10: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.NestedScrollView;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:11: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.SlidingPaneLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:12: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.Space;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:13: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.SwipeRefreshLayout;
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:21: error: cannot find symbol
+import trikita.anvil.Anvil;
+                    ^
+  symbol:   class Anvil
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:22: error: cannot find symbol
+import trikita.anvil.BaseDSL;
+                    ^
+  symbol:   class BaseDSL
+  location: package trikita.anvil
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:30: error: package Anvil does not exist
+public final class SupportCoreUiDSL implements Anvil.AttributeSetter {
+                                                    ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:35: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult pagerTabStrip() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:39: error: package Anvil does not exist
+  public static Void pagerTabStrip(Anvil.Renderable r) {
+                                        ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:43: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult pagerTitleStrip() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:47: error: package Anvil does not exist
+  public static Void pagerTitleStrip(Anvil.Renderable r) {
+                                          ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:51: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult viewPager() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:55: error: package Anvil does not exist
+  public static Void viewPager(Anvil.Renderable r) {
+                                    ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:59: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult contentLoadingProgressBar() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:63: error: package Anvil does not exist
+  public static Void contentLoadingProgressBar(Anvil.Renderable r) {
+                                                    ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:67: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult drawerLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:71: error: package Anvil does not exist
+  public static Void drawerLayout(Anvil.Renderable r) {
+                                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:75: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult nestedScrollView() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:79: error: package Anvil does not exist
+  public static Void nestedScrollView(Anvil.Renderable r) {
+                                           ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:83: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult slidingPaneLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:87: error: package Anvil does not exist
+  public static Void slidingPaneLayout(Anvil.Renderable r) {
+                                            ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:91: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult space() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:95: error: package Anvil does not exist
+  public static Void space(Anvil.Renderable r) {
+                                ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:99: error: package BaseDSL does not exist
+  public static BaseDSL.ViewClassResult swipeRefreshLayout() {
+                       ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:103: error: package Anvil does not exist
+  public static Void swipeRefreshLayout(Anvil.Renderable r) {
+                                             ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:107: error: cannot find symbol
+  public static Void adapter(PagerAdapter arg) {
+                             ^
+  symbol:   class PagerAdapter
+  location: class SupportCoreUiDSL
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:163: error: package SwipeRefreshLayout does not exist
+  public static Void onChildScrollUpCallback(SwipeRefreshLayout.OnChildScrollUpCallback arg) {
+                                                               ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:167: error: package SwipeRefreshLayout does not exist
+  public static Void onRefresh(SwipeRefreshLayout.OnRefreshListener arg) {
+                                                 ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:171: error: package NestedScrollView does not exist
+  public static Void onScrollChange(NestedScrollView.OnScrollChangeListener arg) {
+                                                    ^
+/tmp/rdisk/1894/src/anvil-support-v4/src/main/java/trikita/anvil/support/core/ui/SupportCoreUiDSL.java:187: error: package SlidingPaneLayout does not exist
+  public static Void panelSlideListener(SlidingPaneLayout.PanelSlideListener arg) {
+                                                         ^
+
+36 warnings
+:anvil-support-v4:javadocJar
+:anvil-support-v4:sourcesJar
+:anvil-support-v4:assemble
+:anvil-support-v4:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.836 secs
+
+2018-04-04 04:39:21,422 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:39:21,422 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:39:32,551 INFO  ProjectTaskService - Detected possible tasks: 138
+2018-04-04 04:39:32,551 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-04 04:39:32,551 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/anvil/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-04 04:39:48,403 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15DebugBuild UP-TO-DATE
+:anvil:checkSdk15DebugManifest
+:anvil:prepareSdk15DebugDependencies
+:anvil:compileSdk15DebugAidl
+:anvil:compileSdk15DebugNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15DebugLint UP-TO-DATE
+:anvil:mergeSdk15DebugShaders
+:anvil:compileSdk15DebugShaders
+:anvil:generateSdk15DebugAssets
+:anvil:mergeSdk15DebugAssets
+:anvil:mergeSdk15DebugProguardFiles
+:anvil:packageSdk15DebugRenderscript UP-TO-DATE
+:anvil:compileSdk15DebugRenderscript
+:anvil:generateSdk15DebugResValues
+:anvil:generateSdk15DebugResources
+:anvil:packageSdk15DebugResources
+:anvil:processSdk15DebugManifest
+:anvil:generateSdk15DebugBuildConfig
+:anvil:processSdk15DebugResources
+:anvil:generateSdk15DebugSources
+:anvil:incrementalSdk15DebugJavaCompilationSafeguard
+:anvil:compileSdk15DebugJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk15/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk15DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Debug
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Debug
+:anvil:mergeSdk15DebugJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Debug
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Debug
+:anvil:bundleSdk15Debug
+:anvil:compileSdk15DebugSources
+:anvil:assembleSdk15Debug
+:anvil:preSdk19DebugBuild UP-TO-DATE
+:anvil:checkSdk19DebugManifest
+:anvil:prepareSdk19DebugDependencies
+:anvil:compileSdk19DebugAidl
+:anvil:compileSdk19DebugNdk UP-TO-DATE
+:anvil:copySdk19DebugLint UP-TO-DATE
+:anvil:mergeSdk19DebugShaders
+:anvil:compileSdk19DebugShaders
+:anvil:generateSdk19DebugAssets
+:anvil:mergeSdk19DebugAssets
+:anvil:mergeSdk19DebugProguardFiles
+:anvil:packageSdk19DebugRenderscript UP-TO-DATE
+:anvil:compileSdk19DebugRenderscript
+:anvil:generateSdk19DebugResValues
+:anvil:generateSdk19DebugResources
+:anvil:packageSdk19DebugResources
+:anvil:processSdk19DebugManifest
+:anvil:generateSdk19DebugBuildConfig
+:anvil:processSdk19DebugResources
+:anvil:generateSdk19DebugSources
+:anvil:incrementalSdk19DebugJavaCompilationSafeguard
+:anvil:compileSdk19DebugJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk19/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk19DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk19Debug
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk19Debug
+:anvil:mergeSdk19DebugJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk19Debug
+:anvil:transformNative_libsWithSyncJniLibsForSdk19Debug
+:anvil:bundleSdk19Debug
+:anvil:compileSdk19DebugSources
+:anvil:assembleSdk19Debug
+:anvil:preSdk21DebugBuild UP-TO-DATE
+:anvil:checkSdk21DebugManifest
+:anvil:prepareSdk21DebugDependencies
+:anvil:compileSdk21DebugAidl
+:anvil:compileSdk21DebugNdk UP-TO-DATE
+:anvil:copySdk21DebugLint UP-TO-DATE
+:anvil:mergeSdk21DebugShaders
+:anvil:compileSdk21DebugShaders
+:anvil:generateSdk21DebugAssets
+:anvil:mergeSdk21DebugAssets
+:anvil:mergeSdk21DebugProguardFiles
+:anvil:packageSdk21DebugRenderscript UP-TO-DATE
+:anvil:compileSdk21DebugRenderscript
+:anvil:generateSdk21DebugResValues
+:anvil:generateSdk21DebugResources
+:anvil:packageSdk21DebugResources
+:anvil:processSdk21DebugManifest
+:anvil:generateSdk21DebugBuildConfig
+:anvil:processSdk21DebugResources
+:anvil:generateSdk21DebugSources
+:anvil:incrementalSdk21DebugJavaCompilationSafeguard
+:anvil:compileSdk21DebugJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk21/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk21DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk21Debug
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk21Debug
+:anvil:mergeSdk21DebugJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk21Debug
+:anvil:transformNative_libsWithSyncJniLibsForSdk21Debug
+:anvil:bundleSdk21Debug
+:anvil:compileSdk21DebugSources
+:anvil:assembleSdk21Debug
+:anvil:assembleDebug
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil:compileSdk15ReleaseSources UP-TO-DATE
+:anvil:assembleSdk15Release UP-TO-DATE
+:anvil:preSdk19ReleaseBuild UP-TO-DATE
+:anvil:checkSdk19ReleaseManifest
+:anvil:prepareSdk19ReleaseDependencies
+:anvil:compileSdk19ReleaseAidl
+:anvil:compileSdk19ReleaseNdk UP-TO-DATE
+:anvil:copySdk19ReleaseLint UP-TO-DATE
+:anvil:mergeSdk19ReleaseShaders
+:anvil:compileSdk19ReleaseShaders
+:anvil:generateSdk19ReleaseAssets
+:anvil:mergeSdk19ReleaseAssets
+:anvil:mergeSdk19ReleaseProguardFiles
+:anvil:packageSdk19ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk19ReleaseRenderscript
+:anvil:generateSdk19ReleaseResValues
+:anvil:generateSdk19ReleaseResources
+:anvil:packageSdk19ReleaseResources
+:anvil:processSdk19ReleaseManifest
+:anvil:generateSdk19ReleaseBuildConfig
+:anvil:processSdk19ReleaseResources
+:anvil:generateSdk19ReleaseSources
+:anvil:incrementalSdk19ReleaseJavaCompilationSafeguard
+:anvil:compileSdk19ReleaseJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk19/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk19ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk19Release
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk19Release
+:anvil:mergeSdk19ReleaseJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk19Release
+:anvil:transformNative_libsWithSyncJniLibsForSdk19Release
+:anvil:bundleSdk19Release
+:anvil:compileSdk19ReleaseSources
+:anvil:assembleSdk19Release
+:anvil:preSdk21ReleaseBuild UP-TO-DATE
+:anvil:checkSdk21ReleaseManifest
+:anvil:prepareSdk21ReleaseDependencies
+:anvil:compileSdk21ReleaseAidl
+:anvil:compileSdk21ReleaseNdk UP-TO-DATE
+:anvil:copySdk21ReleaseLint UP-TO-DATE
+:anvil:mergeSdk21ReleaseShaders
+:anvil:compileSdk21ReleaseShaders
+:anvil:generateSdk21ReleaseAssets
+:anvil:mergeSdk21ReleaseAssets
+:anvil:mergeSdk21ReleaseProguardFiles
+:anvil:packageSdk21ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk21ReleaseRenderscript
+:anvil:generateSdk21ReleaseResValues
+:anvil:generateSdk21ReleaseResources
+:anvil:packageSdk21ReleaseResources
+:anvil:processSdk21ReleaseManifest
+:anvil:generateSdk21ReleaseBuildConfig
+:anvil:processSdk21ReleaseResources
+:anvil:generateSdk21ReleaseSources
+:anvil:incrementalSdk21ReleaseJavaCompilationSafeguard
+:anvil:compileSdk21ReleaseJavaWithJavacNote: /tmp/rdisk/1894/src/anvil/src/sdk21/java/trikita/anvil/DSL.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:anvil:processSdk21ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk21Release
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk21Release
+:anvil:mergeSdk21ReleaseJniLibFolders
+:anvil:transformNative_libsWithMergeJniLibsForSdk21Release
+:anvil:transformNative_libsWithSyncJniLibsForSdk21Release
+:anvil:bundleSdk21Release
+:anvil:compileSdk21ReleaseSources
+:anvil:assembleSdk21Release
+:anvil:assembleRelease
+:anvil:javadoc/tmp/rdisk/1894/src/anvil/src/main/java/trikita/anvil/Anvil.java:153: warning: no @param for <T>
+    public static <T extends View> T mount(T v, Renderable r) {
+                                     ^
+/tmp/rdisk/1894/src/anvil/src/main/java/trikita/anvil/Anvil.java:153: warning: no @return
+    public static <T extends View> T mount(T v, Renderable r) {
+                                     ^
+/tmp/rdisk/1894/src/anvil/src/main/java/trikita/anvil/Anvil.java:202: warning: no @param for <T>
+    public static <T extends View> T currentView() {
+                                     ^
+
+3 warnings
+:anvil:javadocJar
+:anvil:sourcesJar
+:anvil:assemble
+:anvil:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.328 secs
+
+2018-04-04 04:39:48,563 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:39:48,563 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:40:00,817 INFO  ProjectTaskService - Detected possible tasks: 174
+2018-04-04 04:40:00,817 INFO  ProjectTaskService - Excluded tasks (16): mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest test check testDebugUnitTest lintRelease lintDebug testReleaseUnitTest uninstallAll connectedAndroidTest
+2018-04-04 04:40:00,817 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, test, -x, check, -x, testDebugUnitTest, -x, lintRelease, -x, lintDebug, -x, testReleaseUnitTest, -x, uninstallAll, -x, connectedAndroidTest, build]
+2018-04-04 04:40:13,819 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:anvil:preBuild UP-TO-DATE
+:anvil:preSdk15DebugBuild UP-TO-DATE
+:anvil:checkSdk15DebugManifest
+:anvil:prepareSdk15DebugDependencies
+:anvil:compileSdk15DebugAidl UP-TO-DATE
+:anvil:compileSdk15DebugNdk UP-TO-DATE
+:anvil:compileLint UP-TO-DATE
+:anvil:copySdk15DebugLint UP-TO-DATE
+:anvil:mergeSdk15DebugShaders UP-TO-DATE
+:anvil:compileSdk15DebugShaders UP-TO-DATE
+:anvil:generateSdk15DebugAssets UP-TO-DATE
+:anvil:mergeSdk15DebugAssets UP-TO-DATE
+:anvil:mergeSdk15DebugProguardFiles UP-TO-DATE
+:anvil:packageSdk15DebugRenderscript UP-TO-DATE
+:anvil:compileSdk15DebugRenderscript UP-TO-DATE
+:anvil:generateSdk15DebugResValues UP-TO-DATE
+:anvil:generateSdk15DebugResources UP-TO-DATE
+:anvil:packageSdk15DebugResources UP-TO-DATE
+:anvil:processSdk15DebugManifest UP-TO-DATE
+:anvil:generateSdk15DebugBuildConfig UP-TO-DATE
+:anvil:processSdk15DebugResources UP-TO-DATE
+:anvil:generateSdk15DebugSources UP-TO-DATE
+:anvil:incrementalSdk15DebugJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15DebugJavaWithJavac UP-TO-DATE
+:anvil:processSdk15DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Debug UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Debug UP-TO-DATE
+:anvil:mergeSdk15DebugJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Debug UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Debug UP-TO-DATE
+:anvil:bundleSdk15Debug UP-TO-DATE
+:anvil:compileSdk15DebugSources UP-TO-DATE
+:anvil:assembleSdk15Debug UP-TO-DATE
+:anvil:preSdk19DebugBuild UP-TO-DATE
+:anvil:checkSdk19DebugManifest
+:anvil:prepareSdk19DebugDependencies
+:anvil:compileSdk19DebugAidl UP-TO-DATE
+:anvil:compileSdk19DebugNdk UP-TO-DATE
+:anvil:copySdk19DebugLint UP-TO-DATE
+:anvil:mergeSdk19DebugShaders UP-TO-DATE
+:anvil:compileSdk19DebugShaders UP-TO-DATE
+:anvil:generateSdk19DebugAssets UP-TO-DATE
+:anvil:mergeSdk19DebugAssets UP-TO-DATE
+:anvil:mergeSdk19DebugProguardFiles UP-TO-DATE
+:anvil:packageSdk19DebugRenderscript UP-TO-DATE
+:anvil:compileSdk19DebugRenderscript UP-TO-DATE
+:anvil:generateSdk19DebugResValues UP-TO-DATE
+:anvil:generateSdk19DebugResources UP-TO-DATE
+:anvil:packageSdk19DebugResources UP-TO-DATE
+:anvil:processSdk19DebugManifest UP-TO-DATE
+:anvil:generateSdk19DebugBuildConfig UP-TO-DATE
+:anvil:processSdk19DebugResources UP-TO-DATE
+:anvil:generateSdk19DebugSources UP-TO-DATE
+:anvil:incrementalSdk19DebugJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk19DebugJavaWithJavac UP-TO-DATE
+:anvil:processSdk19DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk19Debug UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk19Debug UP-TO-DATE
+:anvil:mergeSdk19DebugJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk19Debug UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk19Debug UP-TO-DATE
+:anvil:bundleSdk19Debug UP-TO-DATE
+:anvil:compileSdk19DebugSources UP-TO-DATE
+:anvil:assembleSdk19Debug UP-TO-DATE
+:anvil:preSdk21DebugBuild UP-TO-DATE
+:anvil:checkSdk21DebugManifest
+:anvil:prepareSdk21DebugDependencies
+:anvil:compileSdk21DebugAidl UP-TO-DATE
+:anvil:compileSdk21DebugNdk UP-TO-DATE
+:anvil:copySdk21DebugLint UP-TO-DATE
+:anvil:mergeSdk21DebugShaders UP-TO-DATE
+:anvil:compileSdk21DebugShaders UP-TO-DATE
+:anvil:generateSdk21DebugAssets UP-TO-DATE
+:anvil:mergeSdk21DebugAssets UP-TO-DATE
+:anvil:mergeSdk21DebugProguardFiles UP-TO-DATE
+:anvil:packageSdk21DebugRenderscript UP-TO-DATE
+:anvil:compileSdk21DebugRenderscript UP-TO-DATE
+:anvil:generateSdk21DebugResValues UP-TO-DATE
+:anvil:generateSdk21DebugResources UP-TO-DATE
+:anvil:packageSdk21DebugResources UP-TO-DATE
+:anvil:processSdk21DebugManifest UP-TO-DATE
+:anvil:generateSdk21DebugBuildConfig UP-TO-DATE
+:anvil:processSdk21DebugResources UP-TO-DATE
+:anvil:generateSdk21DebugSources UP-TO-DATE
+:anvil:incrementalSdk21DebugJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk21DebugJavaWithJavac UP-TO-DATE
+:anvil:processSdk21DebugJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk21Debug UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk21Debug UP-TO-DATE
+:anvil:mergeSdk21DebugJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk21Debug UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk21Debug UP-TO-DATE
+:anvil:bundleSdk21Debug UP-TO-DATE
+:anvil:compileSdk21DebugSources UP-TO-DATE
+:anvil:assembleSdk21Debug UP-TO-DATE
+:anvil:assembleDebug UP-TO-DATE
+:anvil:preSdk15ReleaseBuild UP-TO-DATE
+:anvil:checkSdk15ReleaseManifest
+:anvil:prepareSdk15ReleaseDependencies
+:anvil:compileSdk15ReleaseAidl UP-TO-DATE
+:anvil:compileSdk15ReleaseNdk UP-TO-DATE
+:anvil:copySdk15ReleaseLint UP-TO-DATE
+:anvil:mergeSdk15ReleaseShaders UP-TO-DATE
+:anvil:compileSdk15ReleaseShaders UP-TO-DATE
+:anvil:generateSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk15ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk15ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk15ReleaseResValues UP-TO-DATE
+:anvil:generateSdk15ReleaseResources UP-TO-DATE
+:anvil:packageSdk15ReleaseResources UP-TO-DATE
+:anvil:processSdk15ReleaseManifest UP-TO-DATE
+:anvil:generateSdk15ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk15ReleaseResources UP-TO-DATE
+:anvil:generateSdk15ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk15ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk15ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk15ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk15Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk15Release UP-TO-DATE
+:anvil:mergeSdk15ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk15Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk15Release UP-TO-DATE
+:anvil:bundleSdk15Release UP-TO-DATE
+:anvil:compileSdk15ReleaseSources UP-TO-DATE
+:anvil:assembleSdk15Release UP-TO-DATE
+:anvil:preSdk19ReleaseBuild UP-TO-DATE
+:anvil:checkSdk19ReleaseManifest
+:anvil:prepareSdk19ReleaseDependencies
+:anvil:compileSdk19ReleaseAidl UP-TO-DATE
+:anvil:compileSdk19ReleaseNdk UP-TO-DATE
+:anvil:copySdk19ReleaseLint UP-TO-DATE
+:anvil:mergeSdk19ReleaseShaders UP-TO-DATE
+:anvil:compileSdk19ReleaseShaders UP-TO-DATE
+:anvil:generateSdk19ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk19ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk19ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk19ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk19ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk19ReleaseResValues UP-TO-DATE
+:anvil:generateSdk19ReleaseResources UP-TO-DATE
+:anvil:packageSdk19ReleaseResources UP-TO-DATE
+:anvil:processSdk19ReleaseManifest UP-TO-DATE
+:anvil:generateSdk19ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk19ReleaseResources UP-TO-DATE
+:anvil:generateSdk19ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk19ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk19ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk19ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk19Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk19Release UP-TO-DATE
+:anvil:mergeSdk19ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk19Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk19Release UP-TO-DATE
+:anvil:bundleSdk19Release UP-TO-DATE
+:anvil:compileSdk19ReleaseSources UP-TO-DATE
+:anvil:assembleSdk19Release UP-TO-DATE
+:anvil:preSdk21ReleaseBuild UP-TO-DATE
+:anvil:checkSdk21ReleaseManifest
+:anvil:prepareSdk21ReleaseDependencies
+:anvil:compileSdk21ReleaseAidl UP-TO-DATE
+:anvil:compileSdk21ReleaseNdk UP-TO-DATE
+:anvil:copySdk21ReleaseLint UP-TO-DATE
+:anvil:mergeSdk21ReleaseShaders UP-TO-DATE
+:anvil:compileSdk21ReleaseShaders UP-TO-DATE
+:anvil:generateSdk21ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk21ReleaseAssets UP-TO-DATE
+:anvil:mergeSdk21ReleaseProguardFiles UP-TO-DATE
+:anvil:packageSdk21ReleaseRenderscript UP-TO-DATE
+:anvil:compileSdk21ReleaseRenderscript UP-TO-DATE
+:anvil:generateSdk21ReleaseResValues UP-TO-DATE
+:anvil:generateSdk21ReleaseResources UP-TO-DATE
+:anvil:packageSdk21ReleaseResources UP-TO-DATE
+:anvil:processSdk21ReleaseManifest UP-TO-DATE
+:anvil:generateSdk21ReleaseBuildConfig UP-TO-DATE
+:anvil:processSdk21ReleaseResources UP-TO-DATE
+:anvil:generateSdk21ReleaseSources UP-TO-DATE
+:anvil:incrementalSdk21ReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil:compileSdk21ReleaseJavaWithJavac UP-TO-DATE
+:anvil:processSdk21ReleaseJavaRes UP-TO-DATE
+:anvil:transformResourcesWithMergeJavaResForSdk21Release UP-TO-DATE
+:anvil:transformClassesAndResourcesWithSyncLibJarsForSdk21Release UP-TO-DATE
+:anvil:mergeSdk21ReleaseJniLibFolders UP-TO-DATE
+:anvil:transformNative_libsWithMergeJniLibsForSdk21Release UP-TO-DATE
+:anvil:transformNative_libsWithSyncJniLibsForSdk21Release UP-TO-DATE
+:anvil:bundleSdk21Release UP-TO-DATE
+:anvil:compileSdk21ReleaseSources UP-TO-DATE
+:anvil:assembleSdk21Release UP-TO-DATE
+:anvil:assembleRelease UP-TO-DATE
+:anvil:javadoc UP-TO-DATE
+:anvil:javadocJar UP-TO-DATE
+:anvil:sourcesJar UP-TO-DATE
+:anvil:assemble UP-TO-DATE
+:anvil:build
+:anvil-appcompat-v7:preBuild UP-TO-DATE
+:anvil-appcompat-v7:preDebugBuild UP-TO-DATE
+:anvil-appcompat-v7:checkDebugManifest
+:anvil-appcompat-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-appcompat-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-appcompat-v7:preReleaseBuild UP-TO-DATE
+:anvil-appcompat-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-appcompat-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportAnimatedVectorDrawable2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportAppcompatV72511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCompat2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCoreUi2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportCoreUtils2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportFragment2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportMediaCompat2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportV42511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareComAndroidSupportSupportVectorDrawable2511Library UP-TO-DATE
+:anvil-appcompat-v7:prepareDebugDependencies
+:anvil-appcompat-v7:compileDebugAidl UP-TO-DATE
+:anvil-appcompat-v7:compileDebugNdk UP-TO-DATE
+:anvil-appcompat-v7:compileLint UP-TO-DATE
+:anvil-appcompat-v7:copyDebugLint UP-TO-DATE
+:anvil-appcompat-v7:compileDebugRenderscript UP-TO-DATE
+:anvil-appcompat-v7:generateDebugBuildConfig UP-TO-DATE
+:anvil-appcompat-v7:generateDebugResValues UP-TO-DATE
+:anvil-appcompat-v7:generateDebugResources UP-TO-DATE
+:anvil-appcompat-v7:mergeDebugResources UP-TO-DATE
+:anvil-appcompat-v7:processDebugManifest UP-TO-DATE
+:anvil-appcompat-v7:processDebugResources UP-TO-DATE
+:anvil-appcompat-v7:generateDebugSources UP-TO-DATE
+:anvil-appcompat-v7:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-appcompat-v7:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-appcompat-v7:extractDebugAnnotations UP-TO-DATE
+:anvil-appcompat-v7:mergeDebugShaders UP-TO-DATE
+:anvil-appcompat-v7:compileDebugShaders UP-TO-DATE
+:anvil-appcompat-v7:generateDebugAssets UP-TO-DATE
+:anvil-appcompat-v7:mergeDebugAssets UP-TO-DATE
+:anvil-appcompat-v7:mergeDebugProguardFiles UP-TO-DATE
+:anvil-appcompat-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-appcompat-v7:packageDebugResources UP-TO-DATE
+:anvil-appcompat-v7:processDebugJavaRes UP-TO-DATE
+:anvil-appcompat-v7:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-appcompat-v7:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-appcompat-v7:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-appcompat-v7:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-appcompat-v7:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-appcompat-v7:bundleDebug UP-TO-DATE
+:anvil-appcompat-v7:compileDebugSources UP-TO-DATE
+:anvil-appcompat-v7:assembleDebug UP-TO-DATE
+:anvil-appcompat-v7:checkReleaseManifest
+:anvil-appcompat-v7:prepareReleaseDependencies
+:anvil-appcompat-v7:compileReleaseAidl UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseNdk UP-TO-DATE
+:anvil-appcompat-v7:copyReleaseLint UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseRenderscript UP-TO-DATE
+:anvil-appcompat-v7:generateReleaseBuildConfig UP-TO-DATE
+:anvil-appcompat-v7:generateReleaseResValues UP-TO-DATE
+:anvil-appcompat-v7:generateReleaseResources UP-TO-DATE
+:anvil-appcompat-v7:mergeReleaseResources UP-TO-DATE
+:anvil-appcompat-v7:processReleaseManifest UP-TO-DATE
+:anvil-appcompat-v7:processReleaseResources UP-TO-DATE
+:anvil-appcompat-v7:generateReleaseSources UP-TO-DATE
+:anvil-appcompat-v7:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-appcompat-v7:extractReleaseAnnotations UP-TO-DATE
+:anvil-appcompat-v7:mergeReleaseShaders UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseShaders UP-TO-DATE
+:anvil-appcompat-v7:generateReleaseAssets UP-TO-DATE
+:anvil-appcompat-v7:mergeReleaseAssets UP-TO-DATE
+:anvil-appcompat-v7:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-appcompat-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-appcompat-v7:packageReleaseResources UP-TO-DATE
+:anvil-appcompat-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-appcompat-v7:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-appcompat-v7:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-appcompat-v7:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-appcompat-v7:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-appcompat-v7:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-appcompat-v7:bundleRelease UP-TO-DATE
+:anvil-appcompat-v7:compileReleaseSources UP-TO-DATE
+:anvil-appcompat-v7:assembleRelease UP-TO-DATE
+:anvil-appcompat-v7:javadoc UP-TO-DATE
+:anvil-appcompat-v7:javadocJar UP-TO-DATE
+:anvil-appcompat-v7:sourcesJar UP-TO-DATE
+:anvil-appcompat-v7:assemble UP-TO-DATE
+:anvil-appcompat-v7:build
+:anvil-cardview-v7:preBuild UP-TO-DATE
+:anvil-cardview-v7:preDebugBuild UP-TO-DATE
+:anvil-cardview-v7:checkDebugManifest
+:anvil-cardview-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-cardview-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-cardview-v7:preReleaseBuild UP-TO-DATE
+:anvil-cardview-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-cardview-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-cardview-v7:prepareComAndroidSupportCardviewV72511Library UP-TO-DATE
+:anvil-cardview-v7:prepareDebugDependencies
+:anvil-cardview-v7:compileDebugAidl UP-TO-DATE
+:anvil-cardview-v7:compileDebugNdk UP-TO-DATE
+:anvil-cardview-v7:compileLint UP-TO-DATE
+:anvil-cardview-v7:copyDebugLint UP-TO-DATE
+:anvil-cardview-v7:compileDebugRenderscript UP-TO-DATE
+:anvil-cardview-v7:generateDebugBuildConfig UP-TO-DATE
+:anvil-cardview-v7:generateDebugResValues UP-TO-DATE
+:anvil-cardview-v7:generateDebugResources UP-TO-DATE
+:anvil-cardview-v7:mergeDebugResources UP-TO-DATE
+:anvil-cardview-v7:processDebugManifest UP-TO-DATE
+:anvil-cardview-v7:processDebugResources UP-TO-DATE
+:anvil-cardview-v7:generateDebugSources UP-TO-DATE
+:anvil-cardview-v7:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-cardview-v7:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-cardview-v7:extractDebugAnnotations UP-TO-DATE
+:anvil-cardview-v7:mergeDebugShaders UP-TO-DATE
+:anvil-cardview-v7:compileDebugShaders UP-TO-DATE
+:anvil-cardview-v7:generateDebugAssets UP-TO-DATE
+:anvil-cardview-v7:mergeDebugAssets UP-TO-DATE
+:anvil-cardview-v7:mergeDebugProguardFiles UP-TO-DATE
+:anvil-cardview-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-cardview-v7:packageDebugResources UP-TO-DATE
+:anvil-cardview-v7:processDebugJavaRes UP-TO-DATE
+:anvil-cardview-v7:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-cardview-v7:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-cardview-v7:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-cardview-v7:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-cardview-v7:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-cardview-v7:bundleDebug UP-TO-DATE
+:anvil-cardview-v7:compileDebugSources UP-TO-DATE
+:anvil-cardview-v7:assembleDebug UP-TO-DATE
+:anvil-cardview-v7:checkReleaseManifest
+:anvil-cardview-v7:prepareReleaseDependencies
+:anvil-cardview-v7:compileReleaseAidl UP-TO-DATE
+:anvil-cardview-v7:compileReleaseNdk UP-TO-DATE
+:anvil-cardview-v7:copyReleaseLint UP-TO-DATE
+:anvil-cardview-v7:compileReleaseRenderscript UP-TO-DATE
+:anvil-cardview-v7:generateReleaseBuildConfig UP-TO-DATE
+:anvil-cardview-v7:generateReleaseResValues UP-TO-DATE
+:anvil-cardview-v7:generateReleaseResources UP-TO-DATE
+:anvil-cardview-v7:mergeReleaseResources UP-TO-DATE
+:anvil-cardview-v7:processReleaseManifest UP-TO-DATE
+:anvil-cardview-v7:processReleaseResources UP-TO-DATE
+:anvil-cardview-v7:generateReleaseSources UP-TO-DATE
+:anvil-cardview-v7:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-cardview-v7:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-cardview-v7:extractReleaseAnnotations UP-TO-DATE
+:anvil-cardview-v7:mergeReleaseShaders UP-TO-DATE
+:anvil-cardview-v7:compileReleaseShaders UP-TO-DATE
+:anvil-cardview-v7:generateReleaseAssets UP-TO-DATE
+:anvil-cardview-v7:mergeReleaseAssets UP-TO-DATE
+:anvil-cardview-v7:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-cardview-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-cardview-v7:packageReleaseResources UP-TO-DATE
+:anvil-cardview-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-cardview-v7:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-cardview-v7:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-cardview-v7:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-cardview-v7:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-cardview-v7:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-cardview-v7:bundleRelease UP-TO-DATE
+:anvil-cardview-v7:compileReleaseSources UP-TO-DATE
+:anvil-cardview-v7:assembleRelease UP-TO-DATE
+:anvil-cardview-v7:javadoc UP-TO-DATE
+:anvil-cardview-v7:javadocJar UP-TO-DATE
+:anvil-cardview-v7:sourcesJar UP-TO-DATE
+:anvil-cardview-v7:assemble UP-TO-DATE
+:anvil-cardview-v7:build
+:anvil-design:preBuild UP-TO-DATE
+:anvil-design:preDebugBuild UP-TO-DATE
+:anvil-design:checkDebugManifest
+:anvil-design:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-design:preDebugUnitTestBuild UP-TO-DATE
+:anvil-design:preReleaseBuild UP-TO-DATE
+:anvil-design:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-design:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-design:prepareComAndroidSupportAnimatedVectorDrawable2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportAppcompatV72511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportDesign2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportRecyclerviewV72511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportCompat2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportCoreUi2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportCoreUtils2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportFragment2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportMediaCompat2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportV42511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportSupportVectorDrawable2511Library UP-TO-DATE
+:anvil-design:prepareComAndroidSupportTransition2511Library UP-TO-DATE
+:anvil-design:prepareDebugDependencies
+:anvil-design:compileDebugAidl UP-TO-DATE
+:anvil-design:compileDebugNdk UP-TO-DATE
+:anvil-design:compileLint UP-TO-DATE
+:anvil-design:copyDebugLint UP-TO-DATE
+:anvil-design:compileDebugRenderscript UP-TO-DATE
+:anvil-design:generateDebugBuildConfig UP-TO-DATE
+:anvil-design:generateDebugResValues UP-TO-DATE
+:anvil-design:generateDebugResources UP-TO-DATE
+:anvil-design:mergeDebugResources UP-TO-DATE
+:anvil-design:processDebugManifest UP-TO-DATE
+:anvil-design:processDebugResources UP-TO-DATE
+:anvil-design:generateDebugSources UP-TO-DATE
+:anvil-design:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-design:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-design:extractDebugAnnotations UP-TO-DATE
+:anvil-design:mergeDebugShaders UP-TO-DATE
+:anvil-design:compileDebugShaders UP-TO-DATE
+:anvil-design:generateDebugAssets UP-TO-DATE
+:anvil-design:mergeDebugAssets UP-TO-DATE
+:anvil-design:mergeDebugProguardFiles UP-TO-DATE
+:anvil-design:packageDebugRenderscript UP-TO-DATE
+:anvil-design:packageDebugResources UP-TO-DATE
+:anvil-design:processDebugJavaRes UP-TO-DATE
+:anvil-design:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-design:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-design:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-design:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-design:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-design:bundleDebug UP-TO-DATE
+:anvil-design:compileDebugSources UP-TO-DATE
+:anvil-design:assembleDebug UP-TO-DATE
+:anvil-design:checkReleaseManifest
+:anvil-design:prepareReleaseDependencies
+:anvil-design:compileReleaseAidl UP-TO-DATE
+:anvil-design:compileReleaseNdk UP-TO-DATE
+:anvil-design:copyReleaseLint UP-TO-DATE
+:anvil-design:compileReleaseRenderscript UP-TO-DATE
+:anvil-design:generateReleaseBuildConfig UP-TO-DATE
+:anvil-design:generateReleaseResValues UP-TO-DATE
+:anvil-design:generateReleaseResources UP-TO-DATE
+:anvil-design:mergeReleaseResources UP-TO-DATE
+:anvil-design:processReleaseManifest UP-TO-DATE
+:anvil-design:processReleaseResources UP-TO-DATE
+:anvil-design:generateReleaseSources UP-TO-DATE
+:anvil-design:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-design:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-design:extractReleaseAnnotations UP-TO-DATE
+:anvil-design:mergeReleaseShaders UP-TO-DATE
+:anvil-design:compileReleaseShaders UP-TO-DATE
+:anvil-design:generateReleaseAssets UP-TO-DATE
+:anvil-design:mergeReleaseAssets UP-TO-DATE
+:anvil-design:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-design:packageReleaseRenderscript UP-TO-DATE
+:anvil-design:packageReleaseResources UP-TO-DATE
+:anvil-design:processReleaseJavaRes UP-TO-DATE
+:anvil-design:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-design:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-design:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-design:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-design:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-design:bundleRelease UP-TO-DATE
+:anvil-design:compileReleaseSources UP-TO-DATE
+:anvil-design:assembleRelease UP-TO-DATE
+:anvil-design:javadoc UP-TO-DATE
+:anvil-design:javadocJar UP-TO-DATE
+:anvil-design:sourcesJar UP-TO-DATE
+:anvil-design:assemble UP-TO-DATE
+:anvil-design:build
+:anvil-gridlayout-v7:preBuild UP-TO-DATE
+:anvil-gridlayout-v7:preDebugBuild UP-TO-DATE
+:anvil-gridlayout-v7:checkDebugManifest
+:anvil-gridlayout-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:preReleaseBuild UP-TO-DATE
+:anvil-gridlayout-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-gridlayout-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-gridlayout-v7:prepareComAndroidSupportGridlayoutV72511Library UP-TO-DATE
+:anvil-gridlayout-v7:prepareComAndroidSupportSupportCompat2511Library UP-TO-DATE
+:anvil-gridlayout-v7:prepareComAndroidSupportSupportCoreUi2511Library UP-TO-DATE
+:anvil-gridlayout-v7:prepareDebugDependencies
+:anvil-gridlayout-v7:compileDebugAidl UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugNdk UP-TO-DATE
+:anvil-gridlayout-v7:compileLint UP-TO-DATE
+:anvil-gridlayout-v7:copyDebugLint UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:generateDebugBuildConfig UP-TO-DATE
+:anvil-gridlayout-v7:generateDebugResValues UP-TO-DATE
+:anvil-gridlayout-v7:generateDebugResources UP-TO-DATE
+:anvil-gridlayout-v7:mergeDebugResources UP-TO-DATE
+:anvil-gridlayout-v7:processDebugManifest UP-TO-DATE
+:anvil-gridlayout-v7:processDebugResources UP-TO-DATE
+:anvil-gridlayout-v7:generateDebugSources UP-TO-DATE
+:anvil-gridlayout-v7:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-gridlayout-v7:extractDebugAnnotations UP-TO-DATE
+:anvil-gridlayout-v7:mergeDebugShaders UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugShaders UP-TO-DATE
+:anvil-gridlayout-v7:generateDebugAssets UP-TO-DATE
+:anvil-gridlayout-v7:mergeDebugAssets UP-TO-DATE
+:anvil-gridlayout-v7:mergeDebugProguardFiles UP-TO-DATE
+:anvil-gridlayout-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:packageDebugResources UP-TO-DATE
+:anvil-gridlayout-v7:processDebugJavaRes UP-TO-DATE
+:anvil-gridlayout-v7:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-gridlayout-v7:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-gridlayout-v7:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-gridlayout-v7:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-gridlayout-v7:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-gridlayout-v7:bundleDebug UP-TO-DATE
+:anvil-gridlayout-v7:compileDebugSources UP-TO-DATE
+:anvil-gridlayout-v7:assembleDebug UP-TO-DATE
+:anvil-gridlayout-v7:checkReleaseManifest
+:anvil-gridlayout-v7:prepareReleaseDependencies
+:anvil-gridlayout-v7:compileReleaseAidl UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseNdk UP-TO-DATE
+:anvil-gridlayout-v7:copyReleaseLint UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:generateReleaseBuildConfig UP-TO-DATE
+:anvil-gridlayout-v7:generateReleaseResValues UP-TO-DATE
+:anvil-gridlayout-v7:generateReleaseResources UP-TO-DATE
+:anvil-gridlayout-v7:mergeReleaseResources UP-TO-DATE
+:anvil-gridlayout-v7:processReleaseManifest UP-TO-DATE
+:anvil-gridlayout-v7:processReleaseResources UP-TO-DATE
+:anvil-gridlayout-v7:generateReleaseSources UP-TO-DATE
+:anvil-gridlayout-v7:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-gridlayout-v7:extractReleaseAnnotations UP-TO-DATE
+:anvil-gridlayout-v7:mergeReleaseShaders UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseShaders UP-TO-DATE
+:anvil-gridlayout-v7:generateReleaseAssets UP-TO-DATE
+:anvil-gridlayout-v7:mergeReleaseAssets UP-TO-DATE
+:anvil-gridlayout-v7:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-gridlayout-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-gridlayout-v7:packageReleaseResources UP-TO-DATE
+:anvil-gridlayout-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-gridlayout-v7:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-gridlayout-v7:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-gridlayout-v7:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-gridlayout-v7:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-gridlayout-v7:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-gridlayout-v7:bundleRelease UP-TO-DATE
+:anvil-gridlayout-v7:compileReleaseSources UP-TO-DATE
+:anvil-gridlayout-v7:assembleRelease UP-TO-DATE
+:anvil-gridlayout-v7:javadoc UP-TO-DATE
+:anvil-gridlayout-v7:javadocJar UP-TO-DATE
+:anvil-gridlayout-v7:sourcesJar UP-TO-DATE
+:anvil-gridlayout-v7:assemble UP-TO-DATE
+:anvil-gridlayout-v7:build
+:anvil-recyclerview-v7:preBuild UP-TO-DATE
+:anvil-recyclerview-v7:preDebugBuild UP-TO-DATE
+:anvil-recyclerview-v7:checkDebugManifest
+:anvil-recyclerview-v7:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:preDebugUnitTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:preReleaseBuild UP-TO-DATE
+:anvil-recyclerview-v7:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-recyclerview-v7:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-recyclerview-v7:prepareComAndroidSupportRecyclerviewV72511Library UP-TO-DATE
+:anvil-recyclerview-v7:prepareComAndroidSupportSupportCompat2511Library UP-TO-DATE
+:anvil-recyclerview-v7:prepareComAndroidSupportSupportCoreUi2511Library UP-TO-DATE
+:anvil-recyclerview-v7:prepareDebugDependencies
+:anvil-recyclerview-v7:compileDebugAidl UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugNdk UP-TO-DATE
+:anvil-recyclerview-v7:compileLint UP-TO-DATE
+:anvil-recyclerview-v7:copyDebugLint UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:generateDebugBuildConfig UP-TO-DATE
+:anvil-recyclerview-v7:generateDebugResValues UP-TO-DATE
+:anvil-recyclerview-v7:generateDebugResources UP-TO-DATE
+:anvil-recyclerview-v7:mergeDebugResources UP-TO-DATE
+:anvil-recyclerview-v7:processDebugManifest UP-TO-DATE
+:anvil-recyclerview-v7:processDebugResources UP-TO-DATE
+:anvil-recyclerview-v7:generateDebugSources UP-TO-DATE
+:anvil-recyclerview-v7:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-recyclerview-v7:extractDebugAnnotations UP-TO-DATE
+:anvil-recyclerview-v7:mergeDebugShaders UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugShaders UP-TO-DATE
+:anvil-recyclerview-v7:generateDebugAssets UP-TO-DATE
+:anvil-recyclerview-v7:mergeDebugAssets UP-TO-DATE
+:anvil-recyclerview-v7:mergeDebugProguardFiles UP-TO-DATE
+:anvil-recyclerview-v7:packageDebugRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:packageDebugResources UP-TO-DATE
+:anvil-recyclerview-v7:processDebugJavaRes UP-TO-DATE
+:anvil-recyclerview-v7:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-recyclerview-v7:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-recyclerview-v7:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-recyclerview-v7:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-recyclerview-v7:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-recyclerview-v7:bundleDebug UP-TO-DATE
+:anvil-recyclerview-v7:compileDebugSources UP-TO-DATE
+:anvil-recyclerview-v7:assembleDebug UP-TO-DATE
+:anvil-recyclerview-v7:checkReleaseManifest
+:anvil-recyclerview-v7:prepareReleaseDependencies
+:anvil-recyclerview-v7:compileReleaseAidl UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseNdk UP-TO-DATE
+:anvil-recyclerview-v7:copyReleaseLint UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:generateReleaseBuildConfig UP-TO-DATE
+:anvil-recyclerview-v7:generateReleaseResValues UP-TO-DATE
+:anvil-recyclerview-v7:generateReleaseResources UP-TO-DATE
+:anvil-recyclerview-v7:mergeReleaseResources UP-TO-DATE
+:anvil-recyclerview-v7:processReleaseManifest UP-TO-DATE
+:anvil-recyclerview-v7:processReleaseResources UP-TO-DATE
+:anvil-recyclerview-v7:generateReleaseSources UP-TO-DATE
+:anvil-recyclerview-v7:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-recyclerview-v7:extractReleaseAnnotations UP-TO-DATE
+:anvil-recyclerview-v7:mergeReleaseShaders UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseShaders UP-TO-DATE
+:anvil-recyclerview-v7:generateReleaseAssets UP-TO-DATE
+:anvil-recyclerview-v7:mergeReleaseAssets UP-TO-DATE
+:anvil-recyclerview-v7:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-recyclerview-v7:packageReleaseRenderscript UP-TO-DATE
+:anvil-recyclerview-v7:packageReleaseResources UP-TO-DATE
+:anvil-recyclerview-v7:processReleaseJavaRes UP-TO-DATE
+:anvil-recyclerview-v7:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-recyclerview-v7:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-recyclerview-v7:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-recyclerview-v7:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-recyclerview-v7:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-recyclerview-v7:bundleRelease UP-TO-DATE
+:anvil-recyclerview-v7:compileReleaseSources UP-TO-DATE
+:anvil-recyclerview-v7:assembleRelease UP-TO-DATE
+:anvil-recyclerview-v7:javadoc UP-TO-DATE
+:anvil-recyclerview-v7:javadocJar UP-TO-DATE
+:anvil-recyclerview-v7:sourcesJar UP-TO-DATE
+:anvil-recyclerview-v7:assemble UP-TO-DATE
+:anvil-recyclerview-v7:build
+:anvil-support-v4:preBuild UP-TO-DATE
+:anvil-support-v4:preDebugBuild UP-TO-DATE
+:anvil-support-v4:checkDebugManifest
+:anvil-support-v4:preDebugAndroidTestBuild UP-TO-DATE
+:anvil-support-v4:preDebugUnitTestBuild UP-TO-DATE
+:anvil-support-v4:preReleaseBuild UP-TO-DATE
+:anvil-support-v4:preReleaseUnitTestBuild UP-TO-DATE
+:anvil-support-v4:prepareCoTrikitaAnvil051Sdk15ReleaseLibrary UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportCompat2511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportCoreUi2511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportCoreUtils2511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportFragment2511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportMediaCompat2511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportSupportV42511Library UP-TO-DATE
+:anvil-support-v4:prepareComAndroidSupportTransition2511Library UP-TO-DATE
+:anvil-support-v4:prepareDebugDependencies
+:anvil-support-v4:compileDebugAidl UP-TO-DATE
+:anvil-support-v4:compileDebugNdk UP-TO-DATE
+:anvil-support-v4:compileLint UP-TO-DATE
+:anvil-support-v4:copyDebugLint UP-TO-DATE
+:anvil-support-v4:compileDebugRenderscript UP-TO-DATE
+:anvil-support-v4:generateDebugBuildConfig UP-TO-DATE
+:anvil-support-v4:generateDebugResValues UP-TO-DATE
+:anvil-support-v4:generateDebugResources UP-TO-DATE
+:anvil-support-v4:mergeDebugResources UP-TO-DATE
+:anvil-support-v4:processDebugManifest UP-TO-DATE
+:anvil-support-v4:processDebugResources UP-TO-DATE
+:anvil-support-v4:generateDebugSources UP-TO-DATE
+:anvil-support-v4:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:anvil-support-v4:compileDebugJavaWithJavac UP-TO-DATE
+:anvil-support-v4:extractDebugAnnotations UP-TO-DATE
+:anvil-support-v4:mergeDebugShaders UP-TO-DATE
+:anvil-support-v4:compileDebugShaders UP-TO-DATE
+:anvil-support-v4:generateDebugAssets UP-TO-DATE
+:anvil-support-v4:mergeDebugAssets UP-TO-DATE
+:anvil-support-v4:mergeDebugProguardFiles UP-TO-DATE
+:anvil-support-v4:packageDebugRenderscript UP-TO-DATE
+:anvil-support-v4:packageDebugResources UP-TO-DATE
+:anvil-support-v4:processDebugJavaRes UP-TO-DATE
+:anvil-support-v4:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:anvil-support-v4:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:anvil-support-v4:mergeDebugJniLibFolders UP-TO-DATE
+:anvil-support-v4:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:anvil-support-v4:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:anvil-support-v4:bundleDebug UP-TO-DATE
+:anvil-support-v4:compileDebugSources UP-TO-DATE
+:anvil-support-v4:assembleDebug UP-TO-DATE
+:anvil-support-v4:checkReleaseManifest
+:anvil-support-v4:prepareReleaseDependencies
+:anvil-support-v4:compileReleaseAidl UP-TO-DATE
+:anvil-support-v4:compileReleaseNdk UP-TO-DATE
+:anvil-support-v4:copyReleaseLint UP-TO-DATE
+:anvil-support-v4:compileReleaseRenderscript UP-TO-DATE
+:anvil-support-v4:generateReleaseBuildConfig UP-TO-DATE
+:anvil-support-v4:generateReleaseResValues UP-TO-DATE
+:anvil-support-v4:generateReleaseResources UP-TO-DATE
+:anvil-support-v4:mergeReleaseResources UP-TO-DATE
+:anvil-support-v4:processReleaseManifest UP-TO-DATE
+:anvil-support-v4:processReleaseResources UP-TO-DATE
+:anvil-support-v4:generateReleaseSources UP-TO-DATE
+:anvil-support-v4:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:anvil-support-v4:compileReleaseJavaWithJavac UP-TO-DATE
+:anvil-support-v4:extractReleaseAnnotations UP-TO-DATE
+:anvil-support-v4:mergeReleaseShaders UP-TO-DATE
+:anvil-support-v4:compileReleaseShaders UP-TO-DATE
+:anvil-support-v4:generateReleaseAssets UP-TO-DATE
+:anvil-support-v4:mergeReleaseAssets UP-TO-DATE
+:anvil-support-v4:mergeReleaseProguardFiles UP-TO-DATE
+:anvil-support-v4:packageReleaseRenderscript UP-TO-DATE
+:anvil-support-v4:packageReleaseResources UP-TO-DATE
+:anvil-support-v4:processReleaseJavaRes UP-TO-DATE
+:anvil-support-v4:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:anvil-support-v4:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:anvil-support-v4:mergeReleaseJniLibFolders UP-TO-DATE
+:anvil-support-v4:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:anvil-support-v4:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:anvil-support-v4:bundleRelease UP-TO-DATE
+:anvil-support-v4:compileReleaseSources UP-TO-DATE
+:anvil-support-v4:assembleRelease UP-TO-DATE
+:anvil-support-v4:javadoc UP-TO-DATE
+:anvil-support-v4:javadocJar UP-TO-DATE
+:anvil-support-v4:sourcesJar UP-TO-DATE
+:anvil-support-v4:assemble UP-TO-DATE
+:anvil-support-v4:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.071 secs
+
+2018-04-04 04:40:13,985 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:40:13,986 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/buildSrc/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:40:18,692 INFO  ProjectTaskService - Detected possible tasks: 57
+2018-04-04 04:40:18,693 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 04:40:18,693 INFO  SysUtils - Execute command: [/tmp/rdisk/1894/src/gradlew, -b, /tmp/rdisk/1894/src/buildSrc/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 04:40:23,279 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+:compileKotlin UP-TO-DATE
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:jar UP-TO-DATE
+:assemble UP-TO-DATE
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.182 secs
+
+2018-04-04 04:40:23,439 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 04:40:23,598 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,191 @@
+2018-04-04 02:12:41,435 INFO  DownloadService - Downloading "https://github.com/dkharrat/NexusData/archive/master.zip", attempt 3
+2018-04-04 02:13:42,112 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 02:13:42,812 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 02:13:42,812 INFO  DownloadService - Downloading "https://github.com/dkharrat/NexusData/archive/master.zip", attempt 3
+2018-04-04 02:14:44,106 DEBUG FullProcessService - Repository https://github.com/dkharrat/NexusData available: true
+2018-04-04 02:14:44,106 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 02:14:44,106 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/dkharrat/NexusData, /tmp/rdisk/1946/src]
+2018-04-04 02:14:45,728 INFO  SysUtils - 
+2018-04-04 02:14:45,734 INFO  GitService - Deleted "/tmp/rdisk/1946/src/.git": true
+2018-04-04 02:14:45,739 INFO  FullProcessService - Size of directory with sources: 491 KB
+2018-04-04 02:14:45,739 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1946/src]
+2018-04-04 02:14:45,744 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1946/src/.git/
+
+2018-04-04 02:14:45,748 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1946/src/gradlew
+2018-04-04 02:14:45,752 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1946/src/nexusdata/build.gradle /tmp/rdisk/1946/src/samples/todo/build.gradle /tmp/rdisk/1946/src/build.gradle /tmp/rdisk/1946/src/modelgen/build.gradle
+2018-04-04 02:14:45,756 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1946/src/settings.gradle /tmp/rdisk/1946/src/samples/todo/build.gradle /tmp/rdisk/1946/src/nexusdata/build.gradle /tmp/rdisk/1946/src/modelgen/build.gradle /tmp/rdisk/1946/src/build.gradle
+2018-04-04 02:14:45,756 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 02:14:45,756 INFO  ProjectFixService - Fixing project...
+2018-04-04 02:14:45,765 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1946/src/nexusdata/local.properties
+2018-04-04 02:14:45,765 INFO  ProjectFixService - Build info for "/tmp/rdisk/1946/src/nexusdata/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-04 02:14:45,766 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1946/src/samples/todo/local.properties
+2018-04-04 02:14:45,766 INFO  ProjectFixService - Build info for "/tmp/rdisk/1946/src/samples/todo/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-04 02:14:45,766 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1946/src/local.properties
+2018-04-04 02:14:45,766 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 02:14:45,766 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 02:14:45,767 INFO  ProjectFixService - Build info for "/tmp/rdisk/1946/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-04 02:14:45,767 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1946/src/modelgen/local.properties
+2018-04-04 02:14:45,768 INFO  ProjectFixService - Build info for "/tmp/rdisk/1946/src/modelgen/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-04 02:14:45,768 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 02:14:45,768 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 02:14:45,768 INFO  SysUtils - Execute command: [/tmp/rdisk/1946/src/gradlew, -b, /tmp/rdisk/1946/src/nexusdata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 02:14:59,828 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-04 02:14:59,828 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-04 02:14:59,828 INFO  SysUtils - Execute command: [/tmp/rdisk/1946/src/gradlew, -b, /tmp/rdisk/1946/src/nexusdata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 02:15:08,633 INFO  SysUtils - Configuration on demand is an incubating feature.
+:nexusdata:compileLint
+:nexusdata:copyDebugLint UP-TO-DATE
+:nexusdata:mergeDebugProguardFiles
+:nexusdata:preBuild
+:nexusdata:preDebugBuild
+:nexusdata:checkDebugManifest
+:nexusdata:prepareDebugDependencies
+:nexusdata:compileDebugAidl
+:nexusdata:compileDebugRenderscript
+:nexusdata:generateDebugBuildConfig
+:nexusdata:generateDebugAssets UP-TO-DATE
+:nexusdata:mergeDebugAssets
+:nexusdata:generateDebugResValues
+:nexusdata:generateDebugResources
+:nexusdata:packageDebugResources
+:nexusdata:processDebugManifest
+:nexusdata:processDebugResources
+:nexusdata:generateDebugSources
+:nexusdata:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:nexusdata:processDebugJavaRes UP-TO-DATE
+:nexusdata:packageDebugJar
+:nexusdata:compileDebugNdk
+:nexusdata:packageDebugJniLibs UP-TO-DATE
+:nexusdata:packageDebugLocalJar UP-TO-DATE
+:nexusdata:packageDebugRenderscript UP-TO-DATE
+:nexusdata:bundleDebug
+:nexusdata:assembleDebug
+:nexusdata:copyReleaseLint UP-TO-DATE
+:nexusdata:mergeReleaseProguardFiles
+:nexusdata:preReleaseBuild
+:nexusdata:checkReleaseManifest
+:nexusdata:prepareReleaseDependencies
+:nexusdata:compileReleaseAidl
+:nexusdata:compileReleaseRenderscript
+:nexusdata:generateReleaseBuildConfig
+:nexusdata:generateReleaseAssets UP-TO-DATE
+:nexusdata:mergeReleaseAssets
+:nexusdata:generateReleaseResValues
+:nexusdata:generateReleaseResources
+:nexusdata:packageReleaseResources
+:nexusdata:processReleaseManifest
+:nexusdata:processReleaseResources
+:nexusdata:generateReleaseSources
+:nexusdata:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:nexusdata:processReleaseJavaRes UP-TO-DATE
+:nexusdata:packageReleaseJar
+:nexusdata:compileReleaseNdk
+:nexusdata:packageReleaseJniLibs UP-TO-DATE
+:nexusdata:packageReleaseLocalJar UP-TO-DATE
+:nexusdata:packageReleaseRenderscript UP-TO-DATE
+:nexusdata:bundleRelease
+:nexusdata:assembleRelease
+:nexusdata:sourcesJar
+:nexusdata:signArchives SKIPPED
+:nexusdata:assemble
+:nexusdata:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.353 secs
+
+2018-04-04 02:15:08,644 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 02:15:08,644 INFO  SysUtils - Execute command: [/tmp/rdisk/1946/src/gradlew, -b, /tmp/rdisk/1946/src/samples/todo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 02:15:15,347 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-04 02:15:15,347 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 02:15:15,348 INFO  SysUtils - Execute command: [/tmp/rdisk/1946/src/gradlew, -b, /tmp/rdisk/1946/src/samples/todo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 02:15:33,100 INFO  SysUtils - Configuration on demand is an incubating feature.
+:samples:todo:preBuild
+:samples:todo:compileDebugNdk
+:nexusdata:compileLint
+:nexusdata:copyReleaseLint UP-TO-DATE
+:nexusdata:mergeReleaseProguardFiles UP-TO-DATE
+:nexusdata:preBuild
+:nexusdata:preReleaseBuild
+:nexusdata:checkReleaseManifest
+:nexusdata:prepareReleaseDependencies
+:nexusdata:compileReleaseAidl UP-TO-DATE
+:nexusdata:compileReleaseRenderscript UP-TO-DATE
+:nexusdata:generateReleaseBuildConfig UP-TO-DATE
+:nexusdata:generateReleaseAssets UP-TO-DATE
+:nexusdata:mergeReleaseAssets UP-TO-DATE
+:nexusdata:generateReleaseResValues UP-TO-DATE
+:nexusdata:generateReleaseResources UP-TO-DATE
+:nexusdata:packageReleaseResources UP-TO-DATE
+:nexusdata:processReleaseManifest UP-TO-DATE
+:nexusdata:processReleaseResources UP-TO-DATE
+:nexusdata:generateReleaseSources UP-TO-DATE
+:nexusdata:compileReleaseJava UP-TO-DATE
+:nexusdata:processReleaseJavaRes UP-TO-DATE
+:nexusdata:packageReleaseJar UP-TO-DATE
+:nexusdata:compileReleaseNdk UP-TO-DATE
+:nexusdata:packageReleaseJniLibs UP-TO-DATE
+:nexusdata:packageReleaseLocalJar UP-TO-DATE
+:nexusdata:packageReleaseRenderscript UP-TO-DATE
+:nexusdata:bundleRelease UP-TO-DATE
+:samples:todo:preDebugBuild
+:samples:todo:checkDebugManifest
+:samples:todo:preReleaseBuild
+:samples:todo:prepareComGithubDkharratNexusdataNexusdata021Library
+:samples:todo:prepareDebugDependencies
+:samples:todo:compileDebugAidl
+:samples:todo:compileDebugRenderscript
+:samples:todo:generateDebugBuildConfig
+:samples:todo:generateDebugAssets UP-TO-DATE
+:samples:todo:mergeDebugAssets
+:samples:todo:generateDebugResValues
+:samples:todo:generateDebugResources
+:samples:todo:mergeDebugResources
+:samples:todo:processDebugManifest
+:samples:todo:processDebugResources
+:samples:todo:generateDebugSources
+:samples:todo:compileDebugJavaNote: /tmp/rdisk/1946/src/samples/todo/src/main/java/org/example/todo/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:samples:todo:preDexDebug
+:samples:todo:dexDebug
+:samples:todo:processDebugJavaRes UP-TO-DATE
+:samples:todo:validateDebugSigning
+:samples:todo:packageDebug
+:samples:todo:zipalignDebug
+:samples:todo:assembleDebug
+:samples:todo:checkReleaseManifest
+:samples:todo:prepareReleaseDependencies
+:samples:todo:compileReleaseAidl
+:samples:todo:compileReleaseRenderscript
+:samples:todo:generateReleaseBuildConfig
+:samples:todo:generateReleaseAssets UP-TO-DATE
+:samples:todo:mergeReleaseAssets
+:samples:todo:generateReleaseResValues
+:samples:todo:generateReleaseResources
+:samples:todo:mergeReleaseResources
+:samples:todo:processReleaseManifest
+:samples:todo:processReleaseResources
+:samples:todo:generateReleaseSources
+:samples:todo:compileReleaseJavaNote: /tmp/rdisk/1946/src/samples/todo/src/main/java/org/example/todo/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:samples:todo:lintVitalRelease
+:samples:todo:compileReleaseNdk
+:samples:todo:preDexRelease
+:samples:todo:dexRelease
+:samples:todo:processReleaseJavaRes UP-TO-DATE
+:samples:todo:packageRelease
+:samples:todo:assembleRelease
+:samples:todo:assemble
+:samples:todo:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.334 secs
+
+2018-04-04 02:15:33,115 INFO  FullProcessService - Found APK file: /tmp/rdisk/1946/src/samples/todo/build/outputs/apk/todo-release-unsigned.apk

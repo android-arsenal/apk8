@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.jorgecastilloprz.fabprogresscircle",
+    "label" : "ProgressFAB",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.01",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1553,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.01\" package=\"com.github.jorgecastilloprz.fabprogresscircle\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f08002f\" android:label=\"ProgressFAB\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ProgressFAB\" android:name=\"com.github.jorgecastilloprz.fabprogresscircle.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2596855,
+  "crc32" : 3648476310,
+  "sha256" : "d87a67e9993cd6ac249d591197e8116641c0278e53d6b2898509c7fb285549d2",
+  "buildTime" : 1526860036000
+}

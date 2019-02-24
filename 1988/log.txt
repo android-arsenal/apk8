@@ -1,0 +1,21 @@
+2018-04-04 00:22:43,753 INFO  DownloadService - Downloading "https://github.com/LeffelMania/android-midi-lib/archive/master.zip", attempt 3
+2018-04-04 00:23:44,210 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:23:44,889 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:23:44,889 INFO  DownloadService - Downloading "https://github.com/LeffelMania/android-midi-lib/archive/master.zip", attempt 3
+2018-04-04 00:24:46,135 DEBUG FullProcessService - Repository https://github.com/LeffelMania/android-midi-lib available: true
+2018-04-04 00:24:46,135 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:24:46,135 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/LeffelMania/android-midi-lib, /tmp/rdisk/1988/src]
+2018-04-04 00:24:47,436 INFO  SysUtils - 
+2018-04-04 00:24:47,446 INFO  GitService - Deleted "/tmp/rdisk/1988/src/.git": true
+2018-04-04 00:24:47,448 INFO  FullProcessService - Size of directory with sources: 144 KB
+2018-04-04 00:24:47,448 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1988/src]
+2018-04-04 00:24:47,459 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1988/src/.git/
+
+2018-04-04 00:24:47,462 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 00:24:47,462 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 00:24:47,463 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 00:24:47,464 INFO  ProjectBuildService - All script(s): none
+2018-04-04 00:24:47,464 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:24:47,464 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 00:24:47,464 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 00:24:47,466 ERROR FullProcessService - Could not find generated or existed APK file

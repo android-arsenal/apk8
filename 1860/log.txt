@@ -1,0 +1,374 @@
+2018-05-14 06:07:52,133 INFO  DownloadService - Downloading "https://github.com/JakeWharton/RxBinding/archive/master.zip", attempt 3
+2018-05-14 06:07:54,016 INFO  DownloadService - Downloaded https://github.com/JakeWharton/RxBinding/archive/master.zip, attempt 3
+2018-05-14 06:07:54,017 INFO  DownloadService - Size of file "/tmp/rdisk/1860/master.zip": 377 KB
+2018-05-14 06:07:54,017 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:07:54,021 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1860/master.zip: true
+2018-05-14 06:07:54,022 DEBUG ZipUtil - Extracting '/tmp/rdisk/1860/master.zip' into '/tmp/rdisk/1860/src'.
+2018-05-14 06:07:54,079 INFO  FullProcessService - Size of directory with sources: 653 KB
+2018-05-14 06:07:54,081 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1860/src]
+2018-05-14 06:07:54,090 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1860/src/.git/
+
+2018-05-14 06:07:54,102 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1860/src/RxBinding-master/gradlew
+2018-05-14 06:07:54,115 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding/build.gradle /tmp/rdisk/1860/src/RxBinding-master/testing-utils/build.gradle /tmp/rdisk/1860/src/RxBinding-master/build.gradle /tmp/rdisk/1860/src/RxBinding-master/buildSrc/build.gradle
+2018-05-14 06:07:54,127 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1860/src/RxBinding-master/testing-utils/build.gradle /tmp/rdisk/1860/src/RxBinding-master/settings.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7/build.gradle /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle /tmp/rdisk/1860/src/RxBinding-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/1860/src/RxBinding-master/dependencies.gradle /tmp/rdisk/1860/src/RxBinding-master/buildSrc/build.gradle /tmp/rdisk/1860/src/RxBinding-master/build.gradle
+2018-05-14 06:07:54,129 INFO  ProjectBuildService - Remote scripts: none
+2018-05-14 06:07:54,129 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:07:54,174 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/local.properties
+2018-05-14 06:07:54,182 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,182 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,183 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7/local.properties
+2018-05-14 06:07:54,192 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,192 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,193 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design-kotlin/local.properties
+2018-05-14 06:07:54,201 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-design-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,201 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-design-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,202 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-design/local.properties
+2018-05-14 06:07:54,210 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-design/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,210 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-design/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,211 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/local.properties
+2018-05-14 06:07:54,219 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,219 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,220 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17-kotlin/local.properties
+2018-05-14 06:07:54,227 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,227 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,228 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17/local.properties
+2018-05-14 06:07:54,235 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,235 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-leanback-v17/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,236 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7-kotlin/local.properties
+2018-05-14 06:07:54,244 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,244 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,244 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7/local.properties
+2018-05-14 06:07:54,252 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,252 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-recyclerview-v7/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,253 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4-kotlin/local.properties
+2018-05-14 06:07:54,261 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,261 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,262 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4/local.properties
+2018-05-14 06:07:54,270 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,270 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding-support-v4/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,271 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/rxbinding/local.properties
+2018-05-14 06:07:54,279 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,279 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/rxbinding/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,279 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/testing-utils/local.properties
+2018-05-14 06:07:54,287 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/testing-utils/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,288 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/testing-utils/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,288 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/local.properties
+2018-05-14 06:07:54,289 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.5-all.zip
+2018-05-14 06:07:54,289 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.5-bin.zip)
+2018-05-14 06:07:54,297 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,298 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,298 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1860/src/RxBinding-master/buildSrc/local.properties
+2018-05-14 06:07:54,306 INFO  ProjectFixService - Build info for "/tmp/rdisk/1860/src/RxBinding-master/buildSrc/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=<null>]
+2018-05-14 06:07:54,307 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1860/src/RxBinding-master/buildSrc/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=17,targetSdkVersion=27]
+2018-05-14 06:07:54,307 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:07:54,307 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:07:54,307 INFO  SysUtils - Execute command: [/tmp/rdisk/1860/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:08:25,903 INFO  ProjectTaskService - Detected possible tasks: 85
+2018-05-14 06:08:25,904 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-14 06:08:25,904 INFO  SysUtils - Execute command: [/tmp/rdisk/1860/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-14 06:09:14,835 INFO  SysUtils - Configuration on demand is an incubating feature.
+:buildSrc:compileKotlin UP-TO-DATE
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy NO-SOURCE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestKotlin NO-SOURCE
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+:rxbinding-appcompat-v7-kotlin:androidJavadocs NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:androidJavadocsJar
+:rxbinding-appcompat-v7-kotlin:androidSourcesJar
+:rxbinding:preBuild UP-TO-DATE
+:rxbinding:preDebugBuild UP-TO-DATE
+:rxbinding:compileDebugAidl
+:rxbinding-appcompat-v7:preBuild UP-TO-DATE
+:rxbinding-appcompat-v7:preDebugBuild UP-TO-DATE
+:rxbinding-appcompat-v7:compileDebugAidl
+:rxbinding-appcompat-v7-kotlin:preBuild UP-TO-DATE
+:rxbinding-appcompat-v7-kotlin:preDebugBuild UP-TO-DATE
+:rxbinding-kotlin:preBuild UP-TO-DATE
+:rxbinding-kotlin:preDebugBuild UP-TO-DATE
+:rxbinding-kotlin:compileDebugAidl
+:rxbinding-appcompat-v7-kotlin:compileDebugAidl
+:rxbinding-appcompat-v7-kotlin:compileDebugNdk NO-SOURCE
+:rxbinding:compileDebugRenderscript
+:rxbinding:checkDebugManifest
+:rxbinding:generateDebugBuildConfig SKIPPED
+:rxbinding:prepareLintJar
+:rxbinding:generateDebugResValues
+:rxbinding:generateDebugResources
+:rxbinding:packageDebugResources
+:rxbinding:platformAttrExtractor
+:rxbinding:processDebugManifest
+:rxbinding:javaPreCompileDebug
+:rxbinding:processDebugJavaRes NO-SOURCE
+:rxbinding:packageDebugRenderscript NO-SOURCE
+:rxbinding-appcompat-v7:compileDebugRenderscript
+:rxbinding-appcompat-v7:checkDebugManifest
+:rxbinding-appcompat-v7:generateDebugBuildConfig SKIPPED
+:rxbinding-appcompat-v7:prepareLintJar
+:rxbinding-appcompat-v7:generateDebugResValues
+:rxbinding-appcompat-v7:generateDebugResources
+:rxbinding-appcompat-v7:packageDebugResources
+:rxbinding-appcompat-v7:platformAttrExtractor
+:rxbinding-appcompat-v7:processDebugManifest
+:rxbinding-appcompat-v7:processDebugJavaRes NO-SOURCE
+:rxbinding-appcompat-v7:packageDebugRenderscript NO-SOURCE
+:rxbinding-kotlin:packageDebugRenderscript NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:compileDebugRenderscript
+:rxbinding-appcompat-v7-kotlin:checkDebugManifest
+:rxbinding-appcompat-v7-kotlin:generateDebugBuildConfig SKIPPED
+:rxbinding-appcompat-v7-kotlin:generateDebugResValues
+:rxbinding-appcompat-v7-kotlin:generateDebugResources
+:rxbinding-appcompat-v7-kotlin:packageDebugResources
+:rxbinding-appcompat-v7-kotlin:platformAttrExtractor
+:rxbinding-appcompat-v7-kotlin:processDebugManifest
+:rxbinding-kotlin:compileDebugRenderscript
+:rxbinding-kotlin:generateDebugResValues
+:rxbinding-kotlin:generateDebugResources
+:rxbinding-kotlin:packageDebugResources
+:rxbinding-kotlin:platformAttrExtractor
+:rxbinding-kotlin:checkDebugManifest
+:rxbinding-kotlin:processDebugManifest
+:rxbinding-kotlin:generateDebugBuildConfig SKIPPED
+:rxbinding-kotlin:prepareLintJar
+:rxbinding-kotlin:processDebugJavaRes NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:prepareLintJar
+:rxbinding-appcompat-v7-kotlin:mergeDebugShaders
+:rxbinding-appcompat-v7-kotlin:compileDebugShaders
+:rxbinding-appcompat-v7-kotlin:generateDebugAssets
+:rxbinding-appcompat-v7-kotlin:mergeDebugAssets
+:rxbinding-appcompat-v7-kotlin:mergeDebugConsumerProguardFiles
+:rxbinding-appcompat-v7-kotlin:packageDebugRenderscript NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:processDebugJavaRes NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:mergeDebugJniLibFolders
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithSyncJniLibsForDebug
+:rxbinding-appcompat-v7-kotlin:preDebugAndroidTestBuild UP-TO-DATE
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestAidl
+:rxbinding-appcompat-v7-kotlin:processDebugAndroidTestManifest
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestRenderscript
+:rxbinding-appcompat-v7-kotlin:generateDebugAndroidTestBuildConfig
+:rxbinding-appcompat-v7-kotlin:generateDebugAndroidTestResValues
+:rxbinding-appcompat-v7-kotlin:generateDebugAndroidTestResources
+:rxbinding-appcompat-v7-kotlin:mergeDebugAndroidTestResources
+:rxbinding:processDebugResources
+:rxbinding:generateDebugSources
+:rxbinding:compileDebugJavaWithJavacNote: /tmp/rdisk/1860/src/RxBinding-master/rxbinding/src/main/java/com/jakewharton/rxbinding2/view/ViewTreeObserverGlobalLayoutObservable.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxbinding:transformClassesWithJacocoForDebug
+:rxbinding:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxbinding-appcompat-v7:javaPreCompileDebug
+:rxbinding-kotlin:processDebugResources
+:rxbinding-kotlin:compileDebugKotlin
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (81, 66): 'checked(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (91, 66): 'enabled(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (101, 64): 'icon(MenuItem): Consumer<in Drawable!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (111, 62): 'iconRes(MenuItem): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (121, 69): 'title(MenuItem): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (131, 63): 'titleRes(MenuItem): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (141, 66): 'visible(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (326, 60): 'activated(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (336, 60): 'clickable(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (346, 58): 'enabled(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (356, 58): 'pressed(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (366, 59): 'selected(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/widget/RxCompoundButton.kt: (42, 27): Extension is shadowed by a member: public open fun toggle(): Unit
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/widget/RxRatingBar.kt: (49, 22): Extension is shadowed by a member: public open fun isIndicator(): Boolean
+:rxbinding-kotlin:generateDebugSources
+:rxbinding-kotlin:javaPreCompileDebug
+:rxbinding-kotlin:compileDebugJavaWithJavac
+:rxbinding-kotlin:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestNdk NO-SOURCE
+:rxbinding:mergeDebugShaders
+:rxbinding:compileDebugShaders
+:rxbinding:generateDebugAssets
+:rxbinding:mergeDebugAssets
+:rxbinding-appcompat-v7:mergeDebugShaders
+:rxbinding-appcompat-v7:compileDebugShaders
+:rxbinding-appcompat-v7:generateDebugAssets
+:rxbinding-appcompat-v7:mergeDebugAssets
+:rxbinding-appcompat-v7-kotlin:mergeDebugAndroidTestShaders
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestShaders
+:rxbinding-appcompat-v7-kotlin:generateDebugAndroidTestAssets
+:rxbinding-kotlin:mergeDebugShaders
+:rxbinding-kotlin:compileDebugShaders
+:rxbinding-kotlin:generateDebugAssets
+:rxbinding-kotlin:mergeDebugAssets
+:rxbinding-appcompat-v7-kotlin:mergeDebugAndroidTestAssets
+:rxbinding:compileDebugNdk NO-SOURCE
+:rxbinding:mergeDebugJniLibFolders
+:rxbinding:transformNativeLibsWithMergeJniLibsForDebug
+:rxbinding:transformNativeLibsWithStripDebugSymbolForDebug
+:rxbinding:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxbinding-appcompat-v7:compileDebugNdk NO-SOURCE
+:rxbinding-appcompat-v7:mergeDebugJniLibFolders
+:rxbinding-appcompat-v7:transformNativeLibsWithMergeJniLibsForDebug
+:rxbinding-appcompat-v7:transformNativeLibsWithStripDebugSymbolForDebug
+:rxbinding-appcompat-v7:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxbinding-appcompat-v7-kotlin:mergeDebugAndroidTestJniLibFolders
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxbinding-kotlin:compileDebugNdk NO-SOURCE
+:rxbinding-kotlin:mergeDebugJniLibFolders
+:rxbinding-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:rxbinding-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:rxbinding-kotlin:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxbinding-appcompat-v7-kotlin:processDebugAndroidTestJavaRes NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:validateSigningDebugAndroidTest
+:rxbinding:preReleaseBuild UP-TO-DATE
+:rxbinding:compileReleaseAidl
+:rxbinding-appcompat-v7:preReleaseBuild UP-TO-DATE
+:rxbinding-appcompat-v7:compileReleaseAidl
+:rxbinding-appcompat-v7-kotlin:preReleaseBuild UP-TO-DATE
+:rxbinding-kotlin:preReleaseBuild UP-TO-DATE
+:rxbinding-kotlin:compileReleaseAidl
+:rxbinding-appcompat-v7-kotlin:compileReleaseAidl
+:rxbinding-appcompat-v7-kotlin:compileReleaseNdk NO-SOURCE
+:rxbinding:compileReleaseRenderscript
+:rxbinding:checkReleaseManifest
+:rxbinding:generateReleaseBuildConfig SKIPPED
+:rxbinding:generateReleaseResValues
+:rxbinding:generateReleaseResources
+:rxbinding:packageReleaseResources
+:rxbinding:processReleaseManifest
+:rxbinding:processReleaseResources
+:rxbinding:generateReleaseSources
+:rxbinding:javaPreCompileRelease
+:rxbinding:compileReleaseJavaWithJavacNote: /tmp/rdisk/1860/src/RxBinding-master/rxbinding/src/main/java/com/jakewharton/rxbinding2/view/ViewTreeObserverGlobalLayoutObservable.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxbinding:processReleaseJavaRes NO-SOURCE
+:rxbinding:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxbinding:packageReleaseRenderscript NO-SOURCE
+:rxbinding-appcompat-v7:compileReleaseRenderscript
+:rxbinding-appcompat-v7:checkReleaseManifest
+:rxbinding-appcompat-v7:generateReleaseBuildConfig SKIPPED
+:rxbinding-appcompat-v7:generateReleaseResValues
+:rxbinding-appcompat-v7:generateReleaseResources
+:rxbinding-appcompat-v7:packageReleaseResources
+:rxbinding-appcompat-v7:processReleaseManifest
+:rxbinding-appcompat-v7:javaPreCompileRelease
+:rxbinding-appcompat-v7:processReleaseJavaRes NO-SOURCE
+:rxbinding-appcompat-v7:packageReleaseRenderscript NO-SOURCE
+:rxbinding-kotlin:packageReleaseRenderscript NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:compileReleaseRenderscript
+:rxbinding-appcompat-v7-kotlin:checkReleaseManifest
+:rxbinding-appcompat-v7:processDebugResources
+:rxbinding-appcompat-v7:generateDebugSources
+:rxbinding-appcompat-v7:compileDebugJavaWithJavac
+:rxbinding-appcompat-v7:transformClassesWithJacocoForDebug
+:rxbinding-appcompat-v7:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxbinding-appcompat-v7-kotlin:processDebugResources
+:rxbinding-appcompat-v7-kotlin:compileDebugKotlin
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (46, 68): 'title(Toolbar): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (56, 61): 'titleRes(Toolbar): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (66, 71): 'subtitle(Toolbar): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (76, 64): 'subtitleRes(Toolbar): Consumer<in Int!>' is deprecated. Deprecated in Java
+:rxbinding-appcompat-v7-kotlin:generateDebugSources
+:rxbinding-appcompat-v7-kotlin:javaPreCompileDebug
+:rxbinding-appcompat-v7-kotlin:compileDebugJavaWithJavac
+:rxbinding-appcompat-v7-kotlin:extractDebugAnnotations
+:rxbinding-appcompat-v7-kotlin:transformResourcesWithMergeJavaResForDebug
+:rxbinding-appcompat-v7-kotlin:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxbinding-appcompat-v7-kotlin:bundleDebug
+:rxbinding-appcompat-v7-kotlin:compileDebugSources
+:rxbinding-appcompat-v7-kotlin:assembleDebug
+:rxbinding-appcompat-v7-kotlin:processDebugAndroidTestResources
+:rxbinding-appcompat-v7-kotlin:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestKotlin
+:rxbinding-appcompat-v7-kotlin:generateDebugAndroidTestSources
+:rxbinding-appcompat-v7-kotlin:javaPreCompileDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestJavaWithJavac
+:rxbinding-appcompat-v7-kotlin:compileDebugAndroidTestSources
+:rxbinding-appcompat-v7-kotlin:transformClassesWithDexBuilderForDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:transformDexArchiveWithDexMergerForDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithMergeJniLibsForDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:transformResourcesWithMergeJavaResForDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:packageDebugAndroidTest
+:rxbinding-appcompat-v7-kotlin:assembleDebugAndroidTest
+:rxbinding-appcompat-v7:processReleaseResources
+:rxbinding-appcompat-v7:generateReleaseSources
+:rxbinding-appcompat-v7:compileReleaseJavaWithJavac
+:rxbinding-appcompat-v7:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxbinding-appcompat-v7-kotlin:generateReleaseBuildConfig SKIPPED
+:rxbinding-appcompat-v7-kotlin:generateReleaseResValues
+:rxbinding-appcompat-v7-kotlin:generateReleaseResources
+:rxbinding-appcompat-v7-kotlin:packageReleaseResources
+:rxbinding-appcompat-v7-kotlin:processReleaseManifest
+:rxbinding-kotlin:compileReleaseRenderscript
+:rxbinding-kotlin:generateReleaseResValues
+:rxbinding-kotlin:generateReleaseResources
+:rxbinding-kotlin:packageReleaseResources
+:rxbinding-kotlin:checkReleaseManifest
+:rxbinding-kotlin:processReleaseManifest
+:rxbinding-kotlin:processReleaseResources
+:rxbinding-appcompat-v7-kotlin:processReleaseResources
+:rxbinding-kotlin:generateReleaseBuildConfig SKIPPED
+:rxbinding-kotlin:compileReleaseKotlin
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (81, 66): 'checked(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (91, 66): 'enabled(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (101, 64): 'icon(MenuItem): Consumer<in Drawable!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (111, 62): 'iconRes(MenuItem): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (121, 69): 'title(MenuItem): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (131, 63): 'titleRes(MenuItem): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxMenuItem.kt: (141, 66): 'visible(MenuItem): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (326, 60): 'activated(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (336, 60): 'clickable(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (346, 58): 'enabled(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (356, 58): 'pressed(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/view/RxView.kt: (366, 59): 'selected(View): Consumer<in Boolean!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/widget/RxCompoundButton.kt: (42, 27): Extension is shadowed by a member: public open fun toggle(): Unit
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/widget/RxRatingBar.kt: (49, 22): Extension is shadowed by a member: public open fun isIndicator(): Boolean
+:rxbinding-kotlin:generateReleaseSources
+:rxbinding-kotlin:javaPreCompileRelease
+:rxbinding-kotlin:compileReleaseJavaWithJavac
+:rxbinding-kotlin:processReleaseJavaRes NO-SOURCE
+:rxbinding-kotlin:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxbinding-appcompat-v7-kotlin:compileReleaseKotlin
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (46, 68): 'title(Toolbar): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (56, 61): 'titleRes(Toolbar): Consumer<in Int!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (66, 71): 'subtitle(Toolbar): Consumer<in CharSequence!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/src/main/kotlin/com/jakewharton/rxbinding2/support/v7/widget/RxToolbar.kt: (76, 64): 'subtitleRes(Toolbar): Consumer<in Int!>' is deprecated. Deprecated in Java
+:rxbinding-appcompat-v7-kotlin:generateReleaseSources
+:rxbinding-appcompat-v7-kotlin:javaPreCompileRelease
+:rxbinding-appcompat-v7-kotlin:compileReleaseJavaWithJavac
+:rxbinding-appcompat-v7-kotlin:extractReleaseAnnotations
+:rxbinding-appcompat-v7-kotlin:mergeReleaseShaders
+:rxbinding-appcompat-v7-kotlin:compileReleaseShaders
+:rxbinding-appcompat-v7-kotlin:generateReleaseAssets
+:rxbinding-appcompat-v7-kotlin:mergeReleaseAssets
+:rxbinding-appcompat-v7-kotlin:mergeReleaseConsumerProguardFiles
+:rxbinding-appcompat-v7-kotlin:packageReleaseRenderscript NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:processReleaseJavaRes NO-SOURCE
+:rxbinding-appcompat-v7-kotlin:transformResourcesWithMergeJavaResForRelease
+:rxbinding-appcompat-v7-kotlin:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxbinding-appcompat-v7-kotlin:mergeReleaseJniLibFolders
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithMergeJniLibsForRelease
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithStripDebugSymbolForRelease
+:rxbinding-appcompat-v7-kotlin:transformNativeLibsWithSyncJniLibsForRelease
+:rxbinding-appcompat-v7-kotlin:bundleRelease
+:rxbinding-appcompat-v7-kotlin:compileReleaseSources
+:rxbinding-appcompat-v7-kotlin:mergeReleaseResources
+:rxbinding-appcompat-v7-kotlin:verifyReleaseResources
+:rxbinding-appcompat-v7-kotlin:assembleRelease
+:rxbinding-appcompat-v7-kotlin:signArchives SKIPPED
+:rxbinding-appcompat-v7-kotlin:assemble
+:rxbinding-appcompat-v7-kotlin:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 48s
+164 actionable tasks: 164 executed
+
+2018-05-14 06:09:14,954 INFO  FullProcessService - Found APK file: /tmp/rdisk/1860/src/RxBinding-master/rxbinding-appcompat-v7-kotlin/build/outputs/apk/androidTest/debug/rxbinding-appcompat-v7-kotlin-debug-androidTest.apk

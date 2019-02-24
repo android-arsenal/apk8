@@ -1,0 +1,143 @@
+2018-04-04 15:27:54,757 INFO  DownloadService - Downloading "https://github.com/sschendel/RemoteLogger/archive/master.zip", attempt 3
+2018-04-04 15:27:55,161 INFO  DownloadService - Downloaded https://github.com/sschendel/RemoteLogger/archive/master.zip, attempt 3
+2018-04-04 15:27:55,161 INFO  DownloadService - Size of file "/tmp/rdisk/1750/master.zip": 246 KB
+2018-04-04 15:27:55,161 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 15:27:55,161 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1750/master.zip: true
+2018-04-04 15:27:55,162 DEBUG ZipUtil - Extracting '/tmp/rdisk/1750/master.zip' into '/tmp/rdisk/1750/src'.
+2018-04-04 15:27:55,173 INFO  FullProcessService - Size of directory with sources: 281 KB
+2018-04-04 15:27:55,173 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1750/src]
+2018-04-04 15:27:55,178 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1750/src/.git/
+
+2018-04-04 15:27:55,181 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1750/src/RemoteLogger-master/gradlew
+2018-04-04 15:27:55,184 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1750/src/RemoteLogger-master/app/build.gradle /tmp/rdisk/1750/src/RemoteLogger-master/remotelogger/build.gradle /tmp/rdisk/1750/src/RemoteLogger-master/build.gradle
+2018-04-04 15:27:55,187 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1750/src/RemoteLogger-master/settings.gradle /tmp/rdisk/1750/src/RemoteLogger-master/remotelogger/build.gradle /tmp/rdisk/1750/src/RemoteLogger-master/build.gradle /tmp/rdisk/1750/src/RemoteLogger-master/app/build.gradle
+2018-04-04 15:27:55,188 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 15:27:55,188 INFO  ProjectFixService - Fixing project...
+2018-04-04 15:27:55,195 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1750/src/RemoteLogger-master/app/local.properties
+2018-04-04 15:27:55,195 INFO  ProjectFixService - Build info for "/tmp/rdisk/1750/src/RemoteLogger-master/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-04 15:27:55,196 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1750/src/RemoteLogger-master/remotelogger/local.properties
+2018-04-04 15:27:55,196 INFO  ProjectFixService - Build info for "/tmp/rdisk/1750/src/RemoteLogger-master/remotelogger/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-04 15:27:55,197 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1750/src/RemoteLogger-master/local.properties
+2018-04-04 15:27:55,197 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 15:27:55,198 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 15:27:55,199 INFO  ProjectFixService - Build info for "/tmp/rdisk/1750/src/RemoteLogger-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-04 15:27:55,199 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 15:27:55,199 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 15:27:55,200 INFO  SysUtils - Execute command: [/tmp/rdisk/1750/src/RemoteLogger-master/gradlew, -b, /tmp/rdisk/1750/src/RemoteLogger-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 15:28:02,939 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 15:28:02,939 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 15:28:02,939 INFO  SysUtils - Execute command: [/tmp/rdisk/1750/src/RemoteLogger-master/gradlew, -b, /tmp/rdisk/1750/src/RemoteLogger-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 15:28:26,304 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:remotelogger:compileLint
+:remotelogger:copyReleaseLint UP-TO-DATE
+:remotelogger:preBuild UP-TO-DATE
+:remotelogger:preReleaseBuild UP-TO-DATE
+:remotelogger:checkReleaseManifest
+:remotelogger:preDebugAndroidTestBuild UP-TO-DATE
+:remotelogger:preDebugBuild UP-TO-DATE
+:remotelogger:prepareComAndroidSupportAppcompatV72103Library
+:remotelogger:prepareComAndroidSupportSupportV42103Library
+:remotelogger:prepareReleaseDependencies
+:remotelogger:compileReleaseAidl
+:remotelogger:compileReleaseRenderscript
+:remotelogger:generateReleaseBuildConfig
+:remotelogger:generateReleaseAssets UP-TO-DATE
+:remotelogger:mergeReleaseAssets
+:remotelogger:generateReleaseResValues
+:remotelogger:generateReleaseResources
+:remotelogger:mergeReleaseResources
+:remotelogger:processReleaseManifest
+:remotelogger:processReleaseResources
+:remotelogger:generateReleaseSources
+:remotelogger:compileReleaseJava
+:remotelogger:extractReleaseAnnotations
+:remotelogger:mergeReleaseProguardFiles
+:remotelogger:processReleaseJavaRes UP-TO-DATE
+:remotelogger:packageReleaseJar
+:remotelogger:compileReleaseNdk UP-TO-DATE
+:remotelogger:packageReleaseJniLibs UP-TO-DATE
+:remotelogger:packageReleaseLocalJar UP-TO-DATE
+:remotelogger:packageReleaseRenderscript UP-TO-DATE
+:remotelogger:packageReleaseResources
+:remotelogger:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareRemoteLoggerMasterRemoteloggerUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/1750/src/RemoteLogger-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.93 secs
+
+2018-04-04 15:28:26,358 INFO  FullProcessService - Found APK file: /tmp/rdisk/1750/src/RemoteLogger-master/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,15 @@
+2018-04-04 09:25:21,868 INFO  DownloadService - Downloading "https://github.com/wseemann/FFmpegMediaMetadataRetriever/archive/master.zip", attempt 3
+2018-04-04 09:26:22,493 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:26:23,342 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:26:23,342 INFO  DownloadService - Downloading "https://github.com/wseemann/FFmpegMediaMetadataRetriever/archive/master.zip", attempt 3
+2018-04-04 09:27:24,754 DEBUG FullProcessService - Repository https://github.com/wseemann/FFmpegMediaMetadataRetriever available: true
+2018-04-04 09:27:24,754 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:27:24,754 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/wseemann/FFmpegMediaMetadataRetriever, /tmp/rdisk/1823/src]
+2018-04-04 09:28:50,482 INFO  SysUtils - 
+2018-04-04 09:28:50,494 INFO  GitService - Deleted "/tmp/rdisk/1823/src/.git": true
+2018-04-04 09:28:50,499 INFO  FullProcessService - Size of directory with sources: 61 MB
+2018-04-04 09:28:50,499 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-04 09:28:50,499 ERROR FullProcessService - Project will not be processed
+2018-04-04 09:28:50,499 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 09:28:50,503 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/1823/src/gradle/fmmr-library/fmmr-demo/FMMRDemo.apk
+2018-04-04 09:28:50,503 INFO  FullProcessService - Found APK file: /tmp/rdisk/1823/src/gradle/fmmr-library/fmmr-demo/FMMRDemo.apk

@@ -1,0 +1,283 @@
+2018-04-04 11:58:05,557 INFO  DownloadService - Downloading "https://github.com/ridsatrio/filtrate/archive/master.zip", attempt 3
+2018-04-04 11:59:06,273 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 11:59:07,133 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 11:59:07,133 INFO  DownloadService - Downloading "https://github.com/ridsatrio/filtrate/archive/master.zip", attempt 3
+2018-04-04 12:00:08,514 DEBUG FullProcessService - Repository https://github.com/ridsatrio/filtrate available: true
+2018-04-04 12:00:08,514 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 12:00:08,514 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ridsatrio/filtrate, /tmp/rdisk/1779/src]
+2018-04-04 12:00:16,045 INFO  SysUtils - 
+2018-04-04 12:00:16,061 INFO  GitService - Deleted "/tmp/rdisk/1779/src/.git": true
+2018-04-04 12:00:16,063 INFO  FullProcessService - Size of directory with sources: 137 KB
+2018-04-04 12:00:16,064 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1779/src]
+2018-04-04 12:00:16,068 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1779/src/.git/
+
+2018-04-04 12:00:16,071 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1779/src/gradlew
+2018-04-04 12:00:16,074 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1779/src/library/build.gradle /tmp/rdisk/1779/src/sample/build.gradle /tmp/rdisk/1779/src/build.gradle
+2018-04-04 12:00:16,076 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1779/src/settings.gradle /tmp/rdisk/1779/src/sample/build.gradle /tmp/rdisk/1779/src/library/build.gradle /tmp/rdisk/1779/src/build.gradle
+2018-04-04 12:00:16,076 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 12:00:16,076 INFO  ProjectFixService - Fixing project...
+2018-04-04 12:00:16,085 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1779/src/library/local.properties
+2018-04-04 12:00:16,086 INFO  ProjectFixService - Build info for "/tmp/rdisk/1779/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 12:00:16,086 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1779/src/sample/local.properties
+2018-04-04 12:00:16,086 INFO  ProjectFixService - Build info for "/tmp/rdisk/1779/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 12:00:16,086 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1779/src/local.properties
+2018-04-04 12:00:16,087 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 12:00:16,088 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 12:00:16,089 INFO  ProjectFixService - Build info for "/tmp/rdisk/1779/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 12:00:16,089 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 12:00:16,089 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 12:00:16,089 INFO  SysUtils - Execute command: [/tmp/rdisk/1779/src/gradlew, -b, /tmp/rdisk/1779/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 12:00:25,953 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-04 12:00:25,953 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 12:00:25,953 INFO  SysUtils - Execute command: [/tmp/rdisk/1779/src/gradlew, -b, /tmp/rdisk/1779/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 12:00:36,019 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42221Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:25: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:26: error: package android.support.v4.app does not exist
+import android.support.v4.app.DialogFragment;
+                             ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:27: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentActivity;
+                             ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:28: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentManager;
+                             ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:29: error: package android.support.v4.graphics.drawable does not exist
+import android.support.v4.graphics.drawable.DrawableCompat;
+                                           ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:54: error: cannot find symbol
+    private FragmentActivity mActivity;
+            ^
+  symbol:   class FragmentActivity
+  location: class Filtrate
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:71: error: cannot find symbol
+    private Filtrate(FragmentActivity activity) {
+                     ^
+  symbol:   class FragmentActivity
+  location: class Filtrate
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:83: error: cannot find symbol
+    public static Filtrate with(FragmentActivity activity, OnRateListener rateListener) {
+                                ^
+  symbol:   class FragmentActivity
+  location: class Filtrate
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:292: error: cannot find symbol
+    protected class RatePromptDialog extends DialogFragment
+                                             ^
+  symbol:   class DialogFragment
+  location: class Filtrate
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:309: error: cannot find symbol
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+                                                           ^
+  symbol:   class Nullable
+  location: class Filtrate.RatePromptDialog
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:310: error: cannot find symbol
+                                 @Nullable Bundle savedInstanceState) {
+                                  ^
+  symbol:   class Nullable
+  location: class Filtrate.RatePromptDialog
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:83: warning: no @return
+    public static Filtrate with(FragmentActivity activity, OnRateListener rateListener) {
+                           ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:101: warning: no @return
+    public Filtrate setRateCancelListener(OnRateCancelListener cancelListener) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:115: warning: no @return
+    public Filtrate setInitialLaunchThreshold(int launchThreshold) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:128: warning: no @return
+    public Filtrate setRetryPolicy(RetryPolicy retryPolicy) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:142: warning: no @return
+    public Filtrate setAcceptableRateThreshold(int rateThreshold) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:157: warning: no @return
+    public Filtrate setTheme(Theme theme) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:172: warning: no @return
+    public Filtrate setRatingBarColor(int color) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:187: warning: no @return
+    public Filtrate setRatePromptText(String ratePromptText) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:201: warning: no @return
+    public Filtrate setSkipButtonText(String skipButtonText) {
+                    ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:229: warning: no @return
+    public int getLaunchCount() {
+               ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:236: warning: no @return
+    public int getSkipCount() {
+               ^
+/tmp/rdisk/1779/src/library/src/main/java/id/ridsatrio/filtrate/Filtrate.java:245: warning: no @return
+    public int getNextThreshold() {
+               ^
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+
+25 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.654 secs
+
+2018-04-04 12:00:36,026 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 12:00:36,027 INFO  SysUtils - Execute command: [/tmp/rdisk/1779/src/gradlew, -b, /tmp/rdisk/1779/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 12:00:43,139 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 12:00:43,139 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 12:00:43,139 INFO  SysUtils - Execute command: [/tmp/rdisk/1779/src/gradlew, -b, /tmp/rdisk/1779/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 12:01:07,918 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72200Library
+:sample:prepareComAndroidSupportSupportV42221Library
+:sample:prepareIdRidsatrioFiltrateLibrary011Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/1779/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/1779/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.31 secs
+
+2018-04-04 12:01:07,959 INFO  FullProcessService - Found APK file: /tmp/rdisk/1779/src/sample/build/outputs/apk/sample-release-unsigned.apk

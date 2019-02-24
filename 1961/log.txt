@@ -1,0 +1,12 @@
+16:10:51.778 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/google/enjarify/archive/master.zip", attempt 3
+16:10:54.858 [main] INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/google/enjarify/archive/master.zip, attempt 3
+16:10:55.899 [main] DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1464948651164-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1464948651164-0/src'.
+16:10:55.946 [main] INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 1 MB
+16:10:55.989 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): none
+16:10:55.989 [main] ERROR c.g.v.a.s.a.ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+16:10:55.995 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): none
+16:10:56.001 [main] INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): none
+16:10:56.008 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: none
+16:10:56.010 [main] ERROR c.g.v.a.s.FullProcessService - Project is not correct Gradle project
+16:10:56.010 [main] ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+16:10:56.019 [main] ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

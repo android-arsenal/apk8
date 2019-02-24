@@ -1,0 +1,1082 @@
+2018-04-04 01:41:03,917 INFO  DownloadService - Downloading "https://github.com/konmik/solid/archive/master.zip", attempt 3
+2018-04-04 01:42:04,433 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:42:05,121 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:42:05,121 INFO  DownloadService - Downloading "https://github.com/konmik/solid/archive/master.zip", attempt 3
+2018-04-04 01:43:06,490 DEBUG FullProcessService - Repository https://github.com/konmik/solid available: true
+2018-04-04 01:43:06,490 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:43:06,490 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/konmik/solid, /tmp/rdisk/1955/src]
+2018-04-04 01:43:08,688 INFO  SysUtils - 
+2018-04-04 01:43:08,693 INFO  GitService - Deleted "/tmp/rdisk/1955/src/.git": true
+2018-04-04 01:43:08,697 INFO  FullProcessService - Size of directory with sources: 225 KB
+2018-04-04 01:43:08,697 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1955/src]
+2018-04-04 01:43:08,701 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1955/src/.git/
+
+2018-04-04 01:43:08,704 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1955/src/gradlew
+2018-04-04 01:43:08,708 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1955/src/collections/build.gradle /tmp/rdisk/1955/src/java7test/build.gradle /tmp/rdisk/1955/src/retrolambdatest/build.gradle /tmp/rdisk/1955/src/streams/build.gradle /tmp/rdisk/1955/src/build.gradle
+2018-04-04 01:43:08,710 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1955/src/streams/build.gradle /tmp/rdisk/1955/src/settings.gradle /tmp/rdisk/1955/src/retrolambdatest/build.gradle /tmp/rdisk/1955/src/java7test/build.gradle /tmp/rdisk/1955/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/1955/src/collections/build.gradle /tmp/rdisk/1955/src/build.gradle
+2018-04-04 01:43:08,711 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:43:08,711 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:43:08,720 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1955/src/collections/local.properties
+2018-04-04 01:43:08,720 INFO  ProjectFixService - Build info for "/tmp/rdisk/1955/src/collections/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-04 01:43:08,720 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1955/src/java7test/local.properties
+2018-04-04 01:43:08,721 INFO  ProjectFixService - Build info for "/tmp/rdisk/1955/src/java7test/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-04 01:43:08,721 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1955/src/retrolambdatest/local.properties
+2018-04-04 01:43:08,721 INFO  ProjectFixService - Build info for "/tmp/rdisk/1955/src/retrolambdatest/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-04 01:43:08,721 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1955/src/streams/local.properties
+2018-04-04 01:43:08,722 INFO  ProjectFixService - Build info for "/tmp/rdisk/1955/src/streams/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-04 01:43:08,722 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1955/src/local.properties
+2018-04-04 01:43:08,722 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 01:43:08,722 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 01:43:08,723 INFO  ProjectFixService - Build info for "/tmp/rdisk/1955/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-04 01:43:08,723 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:43:08,723 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:43:08,723 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/collections/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:43:34,294 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 01:43:34,294 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 01:43:34,294 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 01:43:34,294 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/collections/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 01:43:53,072 INFO  SysUtils - Configuration on demand is an incubating feature.
+:collections:androidJavadocs/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:5: error: package solid.functions does not exist
+import solid.functions.Func1;
+                      ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:17: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SparseArray<T>> toSparseArray(Func1<T, Integer> itemToKey) {
+                                                                       ^
+  symbol:   class Func1
+  location: class ToSparseArray
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:17: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SparseArray<T>> toSparseArray(Func1<T, Integer> itemToKey) {
+                      ^
+  symbol:   class Func1
+  location: class ToSparseArray
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:33: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SparseArray<T>> toSparseArray(final Func1<T, Integer> itemToKey, final int initialCapacity) {
+                                                                             ^
+  symbol:   class Func1
+  location: class ToSparseArray
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:33: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SparseArray<T>> toSparseArray(final Func1<T, Integer> itemToKey, final int initialCapacity) {
+                      ^
+  symbol:   class Func1
+  location: class ToSparseArray
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:7: error: package solid.functions does not exist
+import solid.functions.Func1;
+                      ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:11: error: cannot find symbol
+    private static final Func1 TO_SOLID_SET = toSolidSet(0);
+                         ^
+  symbol:   class Func1
+  location: class ToSolidSet
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:20: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SolidSet<T>> toSolidSet() {
+                      ^
+  symbol:   class Func1
+  location: class ToSolidSet
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidSet.java:14: error: package solid.stream does not exist
+import solid.stream.Stream;
+                   ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidSet.java:22: error: cannot find symbol
+public class SolidSet<T> extends Stream<T> implements Set<T>, Parcelable {
+                                 ^
+  symbol: class Stream
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:35: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SolidSet<T>> toSolidSet(final int initialCapacity) {
+                      ^
+  symbol:   class Func1
+  location: class ToSolidSet
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:5: error: cannot find symbol
+import solid.collections.Pair;
+                        ^
+  symbol:   class Pair
+  location: package solid.collections
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:7: error: package solid.functions does not exist
+import solid.functions.Func1;
+                      ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:9: error: package solid.stream does not exist
+import static solid.stream.Stream.stream;
+                          ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:9: error: static import only from classes and interfaces
+import static solid.stream.Stream.stream;
+^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: error: cannot find symbol
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                                                ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: error: cannot find symbol
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                                                                                ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: error: cannot find symbol
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                            ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidMap.java:13: error: package solid.stream does not exist
+import solid.stream.Stream;
+                   ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidMap.java:28: error: cannot find symbol
+public class SolidMap<K, V> extends Stream<Map.Entry<K, V>> implements Parcelable {
+                                    ^
+  symbol: class Stream
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:34: error: cannot find symbol
+    public static <T, K> Func1<Iterable<T>, SolidMap<K, T>> toSolidMap(final Func1<T, K> keyExtractor) {
+                                                                             ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:34: error: cannot find symbol
+    public static <T, K> Func1<Iterable<T>, SolidMap<K, T>> toSolidMap(final Func1<T, K> keyExtractor) {
+                         ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:46: error: cannot find symbol
+    public static <K, V> Func1<Iterable<Map.Entry<K, V>>, SolidMap<K, V>> toSolidMap() {
+                         ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:63: error: cannot find symbol
+    public static <K, V> Func1<Iterable<Pair<K, V>>, SolidMap<K, V>> pairsToSolidMap() {
+                         ^
+  symbol:   class Func1
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:63: error: cannot find symbol
+    public static <K, V> Func1<Iterable<Pair<K, V>>, SolidMap<K, V>> pairsToSolidMap() {
+                                        ^
+  symbol:   class Pair
+  location: class ToSolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidMap.java:48: error: cannot find symbol
+    public SolidMap(Iterable<Pair<K, V>> iterable) {
+                             ^
+  symbol:   class Pair
+  location: class SolidMap<K,V>
+  where K,V are type-variables:
+    K extends Object declared in class SolidMap
+    V extends Object declared in class SolidMap
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:7: error: package solid.functions does not exist
+import solid.functions.Func1;
+                      ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:11: error: cannot find symbol
+    private static final Func1 TO_SOLID_LIST = toSolidList(0);
+                         ^
+  symbol:   class Func1
+  location: class ToSolidList
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:20: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SolidList<T>> toSolidList() {
+                      ^
+  symbol:   class Func1
+  location: class ToSolidList
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidList.java:13: error: package solid.stream does not exist
+import solid.stream.Stream;
+                   ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidList.java:23: error: cannot find symbol
+public class SolidList<T> extends Stream<T> implements List<T>, Parcelable {
+                                  ^
+  symbol: class Stream
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:35: error: cannot find symbol
+    public static <T> Func1<Iterable<T>, SolidList<T>> toSolidList(final int initialCapacity) {
+                      ^
+  symbol:   class Func1
+  location: class ToSolidList
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidList.java:85: error: unknown tag: T
+     * @param <T>   <T> a type of list items to return.
+                    ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collections/SolidMap.java:93: warning: no @return
+    public Map<K, V> asMap() {
+                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:14: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:25: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidList.java:27: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: warning: no @param for <T>
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                               ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: warning: no @param for <K>
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                               ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: warning: no @param for <V>
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                               ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: warning: no @param for keyExtractor
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                               ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:16: warning: no @param for valueExtractor
+    public static <T, K, V> Func1<Iterable<T>, SolidMap<K, V>> toSolidMap(final Func1<T, K> keyExtractor, final Func1<T, V> valueExtractor) {
+                                                               ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:34: warning: no @param for <T>
+    public static <T, K> Func1<Iterable<T>, SolidMap<K, T>> toSolidMap(final Func1<T, K> keyExtractor) {
+                                                            ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:34: warning: no @param for <K>
+    public static <T, K> Func1<Iterable<T>, SolidMap<K, T>> toSolidMap(final Func1<T, K> keyExtractor) {
+                                                            ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:34: warning: no @param for keyExtractor
+    public static <T, K> Func1<Iterable<T>, SolidMap<K, T>> toSolidMap(final Func1<T, K> keyExtractor) {
+                                                            ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:46: warning: no @param for <K>
+    public static <K, V> Func1<Iterable<Map.Entry<K, V>>, SolidMap<K, V>> toSolidMap() {
+                                                                          ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:46: warning: no @param for <V>
+    public static <K, V> Func1<Iterable<Map.Entry<K, V>>, SolidMap<K, V>> toSolidMap() {
+                                                                          ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:61: error: reference not found
+     * Returns a function that converts a stream of {@link Pair} into {@link SolidMap}.
+                                                           ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:63: warning: no @param for <K>
+    public static <K, V> Func1<Iterable<Pair<K, V>>, SolidMap<K, V>> pairsToSolidMap() {
+                                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidMap.java:63: warning: no @param for <V>
+    public static <K, V> Func1<Iterable<Pair<K, V>>, SolidMap<K, V>> pairsToSolidMap() {
+                                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:14: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:25: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSolidSet.java:27: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:10: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:22: error: reference not found
+     * Returns a method that can be used with {@link solid.stream.Stream#collect(Func1)}
+                                                     ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:24: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:25: error: reference not found
+     * Use this method instead of {@link #toSparseArray(Func1)}} for better performance on
+                                         ^
+/tmp/rdisk/1955/src/collections/src/main/java/solid/collectors/ToSparseArray.java:33: warning - Tag @link: can't find toSparseArray(Func1) in solid.collectors.ToSparseArray
+
+12 errors
+46 warnings
+:collections:androidJavadocsJar
+:collections:androidSourcesJar
+:collections:compileLint
+:collections:copyDebugLint UP-TO-DATE
+:collections:mergeDebugProguardFiles
+:collections:preBuild UP-TO-DATE
+:collections:preDebugBuild UP-TO-DATE
+:collections:checkDebugManifest
+:collections:prepareDebugDependencies
+:collections:compileDebugAidl
+:collections:compileDebugRenderscript
+:collections:generateDebugBuildConfig
+:collections:generateDebugAssets UP-TO-DATE
+:collections:mergeDebugAssets
+:collections:generateDebugResValues
+:collections:generateDebugResources
+:collections:packageDebugResources
+:collections:processDebugManifest
+:collections:processDebugResources
+:collections:generateDebugSources
+:collections:processDebugJavaRes UP-TO-DATE
+:collections:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:collections:packageDebugJar
+:collections:compileDebugNdk UP-TO-DATE
+:collections:packageDebugJniLibs UP-TO-DATE
+:collections:packageDebugLocalJar UP-TO-DATE
+:collections:packageDebugRenderscript UP-TO-DATE
+:collections:bundleDebug
+:collections:compileDebugSources
+:collections:assembleDebug
+:collections:copyReleaseLint UP-TO-DATE
+:collections:mergeReleaseProguardFiles
+:collections:preReleaseBuild UP-TO-DATE
+:collections:checkReleaseManifest
+:collections:prepareReleaseDependencies
+:collections:compileReleaseAidl
+:collections:compileReleaseRenderscript
+:collections:generateReleaseBuildConfig
+:collections:generateReleaseAssets UP-TO-DATE
+:collections:mergeReleaseAssets
+:collections:generateReleaseResValues
+:collections:generateReleaseResources
+:collections:packageReleaseResources
+:collections:processReleaseManifest
+:collections:processReleaseResources
+:collections:generateReleaseSources
+:collections:processReleaseJavaRes UP-TO-DATE
+:collections:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:collections:packageReleaseJar
+:collections:compileReleaseNdk UP-TO-DATE
+:collections:packageReleaseJniLibs UP-TO-DATE
+:collections:packageReleaseLocalJar UP-TO-DATE
+:collections:packageReleaseRenderscript UP-TO-DATE
+:collections:bundleRelease
+:collections:compileReleaseSources
+:collections:assembleRelease
+:collections:jarRelease
+:collections:signArchives SKIPPED
+:collections:assemble
+:collections:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1955/src/collections/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1955/src/collections/build/outputs/lint-results.xml
+:collections:preDebugUnitTestBuild UP-TO-DATE
+:collections:prepareDebugUnitTestDependencies
+:collections:processDebugUnitTestJavaRes UP-TO-DATE
+:collections:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:collections:compileDebugUnitTestSources UP-TO-DATE
+:collections:mockableAndroidJar
+:collections:assembleDebugUnitTest
+:collections:testDebugUnitTest
+:collections:preReleaseUnitTestBuild UP-TO-DATE
+:collections:prepareReleaseUnitTestDependencies
+:collections:processReleaseUnitTestJavaRes UP-TO-DATE
+:collections:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:collections:compileReleaseUnitTestSources UP-TO-DATE
+:collections:assembleReleaseUnitTest
+:collections:testReleaseUnitTest
+:collections:test
+:collections:check
+:collections:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.321 secs
+
+2018-04-04 01:43:53,080 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:43:53,080 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/java7test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:44:00,360 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 01:44:00,361 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 01:44:00,361 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 01:44:00,361 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/java7test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 01:44:18,622 INFO  SysUtils - Configuration on demand is an incubating feature.
+:java7test:compileLint
+:java7test:copyDebugLint UP-TO-DATE
+:java7test:mergeDebugProguardFiles
+:java7test:preBuild UP-TO-DATE
+:java7test:preDebugBuild UP-TO-DATE
+:java7test:checkDebugManifest
+:java7test:prepareDebugDependencies
+:java7test:compileDebugAidl
+:java7test:compileDebugRenderscript
+:java7test:generateDebugBuildConfig
+:java7test:generateDebugAssets UP-TO-DATE
+:java7test:mergeDebugAssets
+:java7test:generateDebugResValues
+:java7test:generateDebugResources
+:java7test:packageDebugResources
+:java7test:processDebugManifest
+:java7test:processDebugResources
+:java7test:generateDebugSources
+:java7test:processDebugJavaRes UP-TO-DATE
+:java7test:compileDebugJavaWithJavac
+:java7test:packageDebugJar
+:java7test:compileDebugNdk UP-TO-DATE
+:java7test:packageDebugJniLibs UP-TO-DATE
+:java7test:packageDebugLocalJar UP-TO-DATE
+:java7test:packageDebugRenderscript UP-TO-DATE
+:java7test:bundleDebug
+:java7test:compileDebugSources
+:java7test:assembleDebug
+:java7test:copyReleaseLint UP-TO-DATE
+:java7test:mergeReleaseProguardFiles
+:java7test:preReleaseBuild UP-TO-DATE
+:java7test:checkReleaseManifest
+:java7test:prepareReleaseDependencies
+:java7test:compileReleaseAidl
+:java7test:compileReleaseRenderscript
+:java7test:generateReleaseBuildConfig
+:java7test:generateReleaseAssets UP-TO-DATE
+:java7test:mergeReleaseAssets
+:java7test:generateReleaseResValues
+:java7test:generateReleaseResources
+:java7test:packageReleaseResources
+:java7test:processReleaseManifest
+:java7test:processReleaseResources
+:java7test:generateReleaseSources
+:java7test:processReleaseJavaRes UP-TO-DATE
+:java7test:compileReleaseJavaWithJavac
+:java7test:packageReleaseJar
+:java7test:compileReleaseNdk UP-TO-DATE
+:java7test:packageReleaseJniLibs UP-TO-DATE
+:java7test:packageReleaseLocalJar UP-TO-DATE
+:java7test:packageReleaseRenderscript UP-TO-DATE
+:java7test:bundleRelease
+:java7test:compileReleaseSources
+:java7test:assembleRelease
+:java7test:assemble
+:java7test:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1955/src/java7test/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1955/src/java7test/build/outputs/lint-results.xml
+:collections:compileLint
+:collections:copyReleaseLint UP-TO-DATE
+:collections:mergeReleaseProguardFiles UP-TO-DATE
+:collections:preBuild UP-TO-DATE
+:collections:preReleaseBuild UP-TO-DATE
+:collections:checkReleaseManifest
+:collections:prepareReleaseDependencies
+:collections:compileReleaseAidl UP-TO-DATE
+:collections:compileReleaseRenderscript UP-TO-DATE
+:collections:generateReleaseBuildConfig UP-TO-DATE
+:collections:generateReleaseAssets UP-TO-DATE
+:collections:mergeReleaseAssets UP-TO-DATE
+:collections:generateReleaseResValues UP-TO-DATE
+:collections:generateReleaseResources UP-TO-DATE
+:collections:packageReleaseResources UP-TO-DATE
+:collections:processReleaseManifest UP-TO-DATE
+:collections:processReleaseResources UP-TO-DATE
+:collections:generateReleaseSources UP-TO-DATE
+:collections:processReleaseJavaRes UP-TO-DATE
+:collections:compileReleaseJavaWithJavac UP-TO-DATE
+:collections:packageReleaseJar UP-TO-DATE
+:collections:compileReleaseNdk UP-TO-DATE
+:collections:packageReleaseJniLibs UP-TO-DATE
+:collections:packageReleaseLocalJar UP-TO-DATE
+:collections:packageReleaseRenderscript UP-TO-DATE
+:collections:bundleRelease UP-TO-DATE
+:java7test:preDebugUnitTestBuild UP-TO-DATE
+:java7test:preReleaseUnitTestBuild UP-TO-DATE
+:streams:compileLint
+:streams:copyReleaseLint UP-TO-DATE
+:streams:mergeReleaseProguardFiles
+:streams:preBuild UP-TO-DATE
+:streams:preReleaseBuild UP-TO-DATE
+:streams:checkReleaseManifest
+:streams:prepareReleaseDependencies
+:streams:compileReleaseAidl
+:streams:compileReleaseRenderscript
+:streams:generateReleaseBuildConfig
+:streams:generateReleaseAssets UP-TO-DATE
+:streams:mergeReleaseAssets
+:streams:generateReleaseResValues
+:streams:generateReleaseResources
+:streams:packageReleaseResources
+:streams:processReleaseManifest
+:streams:processReleaseResources
+:streams:generateReleaseSources
+:streams:processReleaseJavaRes UP-TO-DATE
+:streams:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:streams:packageReleaseJar
+:streams:compileReleaseNdk UP-TO-DATE
+:streams:packageReleaseJniLibs UP-TO-DATE
+:streams:packageReleaseLocalJar UP-TO-DATE
+:streams:packageReleaseRenderscript UP-TO-DATE
+:streams:bundleRelease
+:java7test:prepareSrcCollectionsUnspecifiedLibrary
+:java7test:prepareSrcStreamsUnspecifiedLibrary
+:java7test:prepareDebugUnitTestDependencies
+:java7test:processDebugUnitTestJavaRes UP-TO-DATE
+:java7test:compileDebugUnitTestJavaWithJavacNote: /tmp/rdisk/1955/src/java7test/src/test/java/test_utils/AssertIterableEquals.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:java7test:compileDebugUnitTestSources
+:java7test:mockableAndroidJar
+:java7test:assembleDebugUnitTest
+:java7test:testDebugUnitTest
+:java7test:prepareReleaseUnitTestDependencies
+:java7test:processReleaseUnitTestJavaRes UP-TO-DATE
+:java7test:compileReleaseUnitTestJavaWithJavacNote: /tmp/rdisk/1955/src/java7test/src/test/java/test_utils/AssertIterableEquals.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:java7test:compileReleaseUnitTestSources
+:java7test:assembleReleaseUnitTest
+:java7test:testReleaseUnitTest
+:java7test:test
+:java7test:check
+:java7test:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.818 secs
+
+2018-04-04 01:44:18,639 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:44:18,639 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/retrolambdatest/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:44:26,012 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 01:44:26,012 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 01:44:26,012 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 01:44:26,012 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/retrolambdatest/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 01:44:45,528 INFO  SysUtils - Configuration on demand is an incubating feature.
+:retrolambdatest:compileLint
+:retrolambdatest:copyDebugLint UP-TO-DATE
+:retrolambdatest:mergeDebugProguardFiles
+:retrolambdatest:preBuild UP-TO-DATE
+:retrolambdatest:preDebugBuild UP-TO-DATE
+:retrolambdatest:checkDebugManifest
+:retrolambdatest:prepareDebugDependencies
+:retrolambdatest:compileDebugAidl
+:retrolambdatest:compileDebugRenderscript
+:retrolambdatest:generateDebugBuildConfig
+:retrolambdatest:generateDebugAssets UP-TO-DATE
+:retrolambdatest:mergeDebugAssets
+:retrolambdatest:generateDebugResValues
+:retrolambdatest:generateDebugResources
+:retrolambdatest:packageDebugResources
+:retrolambdatest:processDebugManifest
+:retrolambdatest:processDebugResources
+:retrolambdatest:generateDebugSources
+:retrolambdatest:processDebugJavaRes UP-TO-DATE
+:retrolambdatest:compileDebugJavaWithJavac
+:retrolambdatest:compileRetrolambdaDebug
+:retrolambdatest:packageDebugJar
+:retrolambdatest:compileDebugNdk UP-TO-DATE
+:retrolambdatest:packageDebugJniLibs UP-TO-DATE
+:retrolambdatest:packageDebugLocalJar UP-TO-DATE
+:retrolambdatest:packageDebugRenderscript UP-TO-DATE
+:retrolambdatest:bundleDebug
+:retrolambdatest:compileDebugSources
+:retrolambdatest:assembleDebug
+:retrolambdatest:copyReleaseLint UP-TO-DATE
+:retrolambdatest:mergeReleaseProguardFiles
+:retrolambdatest:preReleaseBuild UP-TO-DATE
+:retrolambdatest:checkReleaseManifest
+:retrolambdatest:prepareReleaseDependencies
+:retrolambdatest:compileReleaseAidl
+:retrolambdatest:compileReleaseRenderscript
+:retrolambdatest:generateReleaseBuildConfig
+:retrolambdatest:generateReleaseAssets UP-TO-DATE
+:retrolambdatest:mergeReleaseAssets
+:retrolambdatest:generateReleaseResValues
+:retrolambdatest:generateReleaseResources
+:retrolambdatest:packageReleaseResources
+:retrolambdatest:processReleaseManifest
+:retrolambdatest:processReleaseResources
+:retrolambdatest:generateReleaseSources
+:retrolambdatest:processReleaseJavaRes UP-TO-DATE
+:retrolambdatest:compileReleaseJavaWithJavac
+:retrolambdatest:compileRetrolambdaRelease
+:retrolambdatest:packageReleaseJar
+:retrolambdatest:compileReleaseNdk UP-TO-DATE
+:retrolambdatest:packageReleaseJniLibs UP-TO-DATE
+:retrolambdatest:packageReleaseLocalJar UP-TO-DATE
+:retrolambdatest:packageReleaseRenderscript UP-TO-DATE
+:retrolambdatest:bundleRelease
+:retrolambdatest:compileReleaseSources
+:retrolambdatest:assembleRelease
+:retrolambdatest:assemble
+:retrolambdatest:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1955/src/retrolambdatest/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1955/src/retrolambdatest/build/outputs/lint-results.xml
+:collections:compileLint
+:collections:copyReleaseLint UP-TO-DATE
+:collections:mergeReleaseProguardFiles UP-TO-DATE
+:collections:preBuild UP-TO-DATE
+:collections:preReleaseBuild UP-TO-DATE
+:collections:checkReleaseManifest
+:collections:prepareReleaseDependencies
+:collections:compileReleaseAidl UP-TO-DATE
+:collections:compileReleaseRenderscript UP-TO-DATE
+:collections:generateReleaseBuildConfig UP-TO-DATE
+:collections:generateReleaseAssets UP-TO-DATE
+:collections:mergeReleaseAssets UP-TO-DATE
+:collections:generateReleaseResValues UP-TO-DATE
+:collections:generateReleaseResources UP-TO-DATE
+:collections:packageReleaseResources UP-TO-DATE
+:collections:processReleaseManifest UP-TO-DATE
+:collections:processReleaseResources UP-TO-DATE
+:collections:generateReleaseSources UP-TO-DATE
+:collections:processReleaseJavaRes UP-TO-DATE
+:collections:compileReleaseJavaWithJavac UP-TO-DATE
+:collections:packageReleaseJar UP-TO-DATE
+:collections:compileReleaseNdk UP-TO-DATE
+:collections:packageReleaseJniLibs UP-TO-DATE
+:collections:packageReleaseLocalJar UP-TO-DATE
+:collections:packageReleaseRenderscript UP-TO-DATE
+:collections:bundleRelease UP-TO-DATE
+:retrolambdatest:preDebugUnitTestBuild UP-TO-DATE
+:retrolambdatest:preReleaseUnitTestBuild UP-TO-DATE
+:streams:compileLint
+:streams:copyReleaseLint UP-TO-DATE
+:streams:mergeReleaseProguardFiles UP-TO-DATE
+:streams:preBuild UP-TO-DATE
+:streams:preReleaseBuild UP-TO-DATE
+:streams:checkReleaseManifest
+:streams:prepareReleaseDependencies
+:streams:compileReleaseAidl UP-TO-DATE
+:streams:compileReleaseRenderscript UP-TO-DATE
+:streams:generateReleaseBuildConfig UP-TO-DATE
+:streams:generateReleaseAssets UP-TO-DATE
+:streams:mergeReleaseAssets UP-TO-DATE
+:streams:generateReleaseResValues UP-TO-DATE
+:streams:generateReleaseResources UP-TO-DATE
+:streams:packageReleaseResources UP-TO-DATE
+:streams:processReleaseManifest UP-TO-DATE
+:streams:processReleaseResources UP-TO-DATE
+:streams:generateReleaseSources UP-TO-DATE
+:streams:processReleaseJavaRes UP-TO-DATE
+:streams:compileReleaseJavaWithJavac UP-TO-DATE
+:streams:packageReleaseJar UP-TO-DATE
+:streams:compileReleaseNdk UP-TO-DATE
+:streams:packageReleaseJniLibs UP-TO-DATE
+:streams:packageReleaseLocalJar UP-TO-DATE
+:streams:packageReleaseRenderscript UP-TO-DATE
+:streams:bundleRelease UP-TO-DATE
+:retrolambdatest:prepareSrcCollectionsUnspecifiedLibrary
+:retrolambdatest:prepareSrcStreamsUnspecifiedLibrary
+:retrolambdatest:prepareDebugUnitTestDependencies
+:retrolambdatest:processDebugUnitTestJavaRes UP-TO-DATE
+:retrolambdatest:compileDebugUnitTestJavaWithJavacNote: /tmp/rdisk/1955/src/retrolambdatest/src/test/java/test_utils/AssertIterableEquals.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:retrolambdatest:compileDebugUnitTestSources
+:retrolambdatest:mockableAndroidJar
+:retrolambdatest:assembleDebugUnitTest
+:retrolambdatest:testDebugUnitTest
+:retrolambdatest:prepareReleaseUnitTestDependencies
+:retrolambdatest:processReleaseUnitTestJavaRes UP-TO-DATE
+:retrolambdatest:compileReleaseUnitTestJavaWithJavacNote: /tmp/rdisk/1955/src/retrolambdatest/src/test/java/test_utils/AssertIterableEquals.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:retrolambdatest:compileReleaseUnitTestSources
+:retrolambdatest:assembleReleaseUnitTest
+:retrolambdatest:testReleaseUnitTest
+:retrolambdatest:test
+:retrolambdatest:check
+:retrolambdatest:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.107 secs
+
+2018-04-04 01:44:45,548 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:44:45,548 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/streams/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:44:52,917 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 01:44:52,917 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 01:44:52,918 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 01:44:52,918 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/streams/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 01:45:14,201 INFO  SysUtils - Configuration on demand is an incubating feature.
+:streams:androidJavadocs/tmp/rdisk/1955/src/streams/src/main/java/solid/collectors/ToArrayList.java:26: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/collectors/ToJoinedString.java:9: error: type arguments not allowed here
+ * to chain it with {@link solid.stream.Stream<String>} streams.
+                           ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/collectors/ToJoinedString.java:11: warning - Tag @link:illegal character: "60" in "solid.stream.Stream<String>"
+/tmp/rdisk/1955/src/streams/src/main/java/solid/collectors/ToJoinedString.java:11: warning - Tag @link:illegal character: "62" in "solid.stream.Stream<String>"
+/tmp/rdisk/1955/src/streams/src/main/java/solid/collectors/ToList.java:25: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:24: warning: no @param for <T>
+    public static <T> Optional<T> empty() {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:24: warning: no @return
+    public static <T> Optional<T> empty() {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:31: warning: no @param for <T>
+    public static <T> Optional<T> of(T value) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:31: warning: no @param for value
+    public static <T> Optional<T> of(T value) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:31: warning: no @return
+    public static <T> Optional<T> of(T value) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:38: warning: no @return
+    public T get() {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:47: warning: no @return
+    public boolean isPresent() {
+                   ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:54: warning: no @param for action
+    public void ifPresent(Action1<T> action) {
+                ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:62: warning: no @param for default1
+    public T or(T default1) {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:62: warning: no @return
+    public T or(T default1) {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:69: warning: no @param for func1
+    public T or(Func0<T> func1) {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:69: warning: no @return
+    public T or(Func0<T> func1) {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:76: warning: no @return
+    public T orNull() {
+             ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:83: warning: no @param for <R>
+    public <R> Optional<R> map(Func1<T, R> func1) {
+                           ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:83: warning: no @param for func1
+    public <R> Optional<R> map(Func1<T, R> func1) {
+                           ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/optional/Optional.java:83: warning: no @return
+    public <R> Optional<R> map(Func1<T, R> func1) {
+                           ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Range.java:42: warning: no @param for from
+    public static Stream<Integer> range(final int from, final int to) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Range.java:42: warning: no @param for to
+    public static Stream<Integer> range(final int from, final int to) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Range.java:42: warning: no @return
+    public static Stream<Integer> range(final int from, final int to) {
+                                  ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Stream.java:129: warning: no @param for initial
+    public <R> R reduce(R initial, Func2<R, T, R> accumulator) {
+                 ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Stream.java:476: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Stream.java:581: warning: no @param for <V>
+    public <K, V> Stream<Grouped<K, V>> groupBy(final Func1<? super T, ? extends K> groupSelector, final Func1<? super T, ? extends V> valueSelector) {
+                                        ^
+/tmp/rdisk/1955/src/streams/src/main/java/solid/stream/Stream.java:657: warning: no @return
+    public Stream<T> onNext(final Action1<? super T> action) {
+                     ^
+
+4 errors
+24 warnings
+:streams:androidJavadocsJar
+:streams:androidSourcesJar
+:streams:compileLint
+:streams:copyDebugLint UP-TO-DATE
+:streams:mergeDebugProguardFiles
+:streams:preBuild UP-TO-DATE
+:streams:preDebugBuild UP-TO-DATE
+:streams:checkDebugManifest
+:streams:prepareDebugDependencies
+:streams:compileDebugAidl
+:streams:compileDebugRenderscript
+:streams:generateDebugBuildConfig
+:streams:generateDebugAssets UP-TO-DATE
+:streams:mergeDebugAssets
+:streams:generateDebugResValues
+:streams:generateDebugResources
+:streams:packageDebugResources
+:streams:processDebugManifest
+:streams:processDebugResources
+:streams:generateDebugSources
+:streams:processDebugJavaRes UP-TO-DATE
+:streams:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:streams:packageDebugJar
+:streams:compileDebugNdk UP-TO-DATE
+:streams:packageDebugJniLibs UP-TO-DATE
+:streams:packageDebugLocalJar UP-TO-DATE
+:streams:packageDebugRenderscript UP-TO-DATE
+:streams:bundleDebug
+:streams:compileDebugSources
+:streams:assembleDebug
+:streams:copyReleaseLint UP-TO-DATE
+:streams:mergeReleaseProguardFiles UP-TO-DATE
+:streams:preReleaseBuild UP-TO-DATE
+:streams:checkReleaseManifest
+:streams:prepareReleaseDependencies
+:streams:compileReleaseAidl UP-TO-DATE
+:streams:compileReleaseRenderscript UP-TO-DATE
+:streams:generateReleaseBuildConfig UP-TO-DATE
+:streams:generateReleaseAssets UP-TO-DATE
+:streams:mergeReleaseAssets UP-TO-DATE
+:streams:generateReleaseResValues UP-TO-DATE
+:streams:generateReleaseResources UP-TO-DATE
+:streams:packageReleaseResources UP-TO-DATE
+:streams:processReleaseManifest UP-TO-DATE
+:streams:processReleaseResources UP-TO-DATE
+:streams:generateReleaseSources UP-TO-DATE
+:streams:processReleaseJavaRes UP-TO-DATE
+:streams:compileReleaseJavaWithJavac UP-TO-DATE
+:streams:packageReleaseJar UP-TO-DATE
+:streams:compileReleaseNdk UP-TO-DATE
+:streams:packageReleaseJniLibs UP-TO-DATE
+:streams:packageReleaseLocalJar UP-TO-DATE
+:streams:packageReleaseRenderscript UP-TO-DATE
+:streams:bundleRelease UP-TO-DATE
+:streams:compileReleaseSources UP-TO-DATE
+:streams:assembleRelease UP-TO-DATE
+:streams:jarRelease
+:streams:signArchives SKIPPED
+:streams:assemble
+:streams:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1955/src/streams/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1955/src/streams/build/outputs/lint-results.xml
+:streams:preDebugUnitTestBuild UP-TO-DATE
+:streams:prepareDebugUnitTestDependencies
+:streams:processDebugUnitTestJavaRes UP-TO-DATE
+:streams:compileDebugUnitTestJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:streams:compileDebugUnitTestSources
+:streams:mockableAndroidJar
+:streams:assembleDebugUnitTest
+:streams:testDebugUnitTest
+:streams:preReleaseUnitTestBuild UP-TO-DATE
+:streams:prepareReleaseUnitTestDependencies
+:streams:processReleaseUnitTestJavaRes UP-TO-DATE
+:streams:compileReleaseUnitTestJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:streams:compileReleaseUnitTestSources
+:streams:assembleReleaseUnitTest
+:streams:testReleaseUnitTest
+:streams:test
+:streams:check
+:streams:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.87 secs
+
+2018-04-04 01:45:14,228 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:45:14,228 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:45:21,664 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-04 01:45:21,665 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 01:45:21,665 INFO  SysUtils - Execute command: [/tmp/rdisk/1955/src/gradlew, -b, /tmp/rdisk/1955/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 01:45:29,235 INFO  SysUtils - Configuration on demand is an incubating feature.
+:collections:androidJavadocs UP-TO-DATE
+:collections:androidJavadocsJar UP-TO-DATE
+:collections:androidSourcesJar UP-TO-DATE
+:collections:compileLint
+:collections:copyDebugLint UP-TO-DATE
+:collections:mergeDebugProguardFiles UP-TO-DATE
+:collections:preBuild UP-TO-DATE
+:collections:preDebugBuild UP-TO-DATE
+:collections:checkDebugManifest
+:collections:prepareDebugDependencies
+:collections:compileDebugAidl UP-TO-DATE
+:collections:compileDebugRenderscript UP-TO-DATE
+:collections:generateDebugBuildConfig UP-TO-DATE
+:collections:generateDebugAssets UP-TO-DATE
+:collections:mergeDebugAssets UP-TO-DATE
+:collections:generateDebugResValues UP-TO-DATE
+:collections:generateDebugResources UP-TO-DATE
+:collections:packageDebugResources UP-TO-DATE
+:collections:processDebugManifest UP-TO-DATE
+:collections:processDebugResources UP-TO-DATE
+:collections:generateDebugSources UP-TO-DATE
+:collections:processDebugJavaRes UP-TO-DATE
+:collections:compileDebugJavaWithJavac UP-TO-DATE
+:collections:packageDebugJar UP-TO-DATE
+:collections:compileDebugNdk UP-TO-DATE
+:collections:packageDebugJniLibs UP-TO-DATE
+:collections:packageDebugLocalJar UP-TO-DATE
+:collections:packageDebugRenderscript UP-TO-DATE
+:collections:bundleDebug UP-TO-DATE
+:collections:compileDebugSources UP-TO-DATE
+:collections:assembleDebug UP-TO-DATE
+:collections:copyReleaseLint UP-TO-DATE
+:collections:mergeReleaseProguardFiles UP-TO-DATE
+:collections:preReleaseBuild UP-TO-DATE
+:collections:checkReleaseManifest
+:collections:prepareReleaseDependencies
+:collections:compileReleaseAidl UP-TO-DATE
+:collections:compileReleaseRenderscript UP-TO-DATE
+:collections:generateReleaseBuildConfig UP-TO-DATE
+:collections:generateReleaseAssets UP-TO-DATE
+:collections:mergeReleaseAssets UP-TO-DATE
+:collections:generateReleaseResValues UP-TO-DATE
+:collections:generateReleaseResources UP-TO-DATE
+:collections:packageReleaseResources UP-TO-DATE
+:collections:processReleaseManifest UP-TO-DATE
+:collections:processReleaseResources UP-TO-DATE
+:collections:generateReleaseSources UP-TO-DATE
+:collections:processReleaseJavaRes UP-TO-DATE
+:collections:compileReleaseJavaWithJavac UP-TO-DATE
+:collections:packageReleaseJar UP-TO-DATE
+:collections:compileReleaseNdk UP-TO-DATE
+:collections:packageReleaseJniLibs UP-TO-DATE
+:collections:packageReleaseLocalJar UP-TO-DATE
+:collections:packageReleaseRenderscript UP-TO-DATE
+:collections:bundleRelease UP-TO-DATE
+:collections:compileReleaseSources UP-TO-DATE
+:collections:assembleRelease UP-TO-DATE
+:collections:jarRelease UP-TO-DATE
+:collections:signArchives SKIPPED
+:collections:assemble UP-TO-DATE
+:collections:build
+:java7test:compileLint
+:java7test:copyDebugLint UP-TO-DATE
+:java7test:mergeDebugProguardFiles UP-TO-DATE
+:java7test:preBuild UP-TO-DATE
+:java7test:preDebugBuild UP-TO-DATE
+:java7test:checkDebugManifest
+:java7test:prepareDebugDependencies
+:java7test:compileDebugAidl UP-TO-DATE
+:java7test:compileDebugRenderscript UP-TO-DATE
+:java7test:generateDebugBuildConfig UP-TO-DATE
+:java7test:generateDebugAssets UP-TO-DATE
+:java7test:mergeDebugAssets UP-TO-DATE
+:java7test:generateDebugResValues UP-TO-DATE
+:java7test:generateDebugResources UP-TO-DATE
+:java7test:packageDebugResources UP-TO-DATE
+:java7test:processDebugManifest UP-TO-DATE
+:java7test:processDebugResources UP-TO-DATE
+:java7test:generateDebugSources UP-TO-DATE
+:java7test:processDebugJavaRes UP-TO-DATE
+:java7test:compileDebugJavaWithJavac UP-TO-DATE
+:java7test:packageDebugJar UP-TO-DATE
+:java7test:compileDebugNdk UP-TO-DATE
+:java7test:packageDebugJniLibs UP-TO-DATE
+:java7test:packageDebugLocalJar UP-TO-DATE
+:java7test:packageDebugRenderscript UP-TO-DATE
+:java7test:bundleDebug UP-TO-DATE
+:java7test:compileDebugSources UP-TO-DATE
+:java7test:assembleDebug UP-TO-DATE
+:java7test:copyReleaseLint UP-TO-DATE
+:java7test:mergeReleaseProguardFiles UP-TO-DATE
+:java7test:preReleaseBuild UP-TO-DATE
+:java7test:checkReleaseManifest
+:java7test:prepareReleaseDependencies
+:java7test:compileReleaseAidl UP-TO-DATE
+:java7test:compileReleaseRenderscript UP-TO-DATE
+:java7test:generateReleaseBuildConfig UP-TO-DATE
+:java7test:generateReleaseAssets UP-TO-DATE
+:java7test:mergeReleaseAssets UP-TO-DATE
+:java7test:generateReleaseResValues UP-TO-DATE
+:java7test:generateReleaseResources UP-TO-DATE
+:java7test:packageReleaseResources UP-TO-DATE
+:java7test:processReleaseManifest UP-TO-DATE
+:java7test:processReleaseResources UP-TO-DATE
+:java7test:generateReleaseSources UP-TO-DATE
+:java7test:processReleaseJavaRes UP-TO-DATE
+:java7test:compileReleaseJavaWithJavac UP-TO-DATE
+:java7test:packageReleaseJar UP-TO-DATE
+:java7test:compileReleaseNdk UP-TO-DATE
+:java7test:packageReleaseJniLibs UP-TO-DATE
+:java7test:packageReleaseLocalJar UP-TO-DATE
+:java7test:packageReleaseRenderscript UP-TO-DATE
+:java7test:bundleRelease UP-TO-DATE
+:java7test:compileReleaseSources UP-TO-DATE
+:java7test:assembleRelease UP-TO-DATE
+:java7test:assemble UP-TO-DATE
+:java7test:build
+:retrolambdatest:compileLint
+:retrolambdatest:copyDebugLint UP-TO-DATE
+:retrolambdatest:mergeDebugProguardFiles UP-TO-DATE
+:retrolambdatest:preBuild UP-TO-DATE
+:retrolambdatest:preDebugBuild UP-TO-DATE
+:retrolambdatest:checkDebugManifest
+:retrolambdatest:prepareDebugDependencies
+:retrolambdatest:compileDebugAidl UP-TO-DATE
+:retrolambdatest:compileDebugRenderscript UP-TO-DATE
+:retrolambdatest:generateDebugBuildConfig UP-TO-DATE
+:retrolambdatest:generateDebugAssets UP-TO-DATE
+:retrolambdatest:mergeDebugAssets UP-TO-DATE
+:retrolambdatest:generateDebugResValues UP-TO-DATE
+:retrolambdatest:generateDebugResources UP-TO-DATE
+:retrolambdatest:packageDebugResources UP-TO-DATE
+:retrolambdatest:processDebugManifest UP-TO-DATE
+:retrolambdatest:processDebugResources UP-TO-DATE
+:retrolambdatest:generateDebugSources UP-TO-DATE
+:retrolambdatest:processDebugJavaRes UP-TO-DATE
+:retrolambdatest:compileDebugJavaWithJavac UP-TO-DATE
+:retrolambdatest:compileRetrolambdaDebug UP-TO-DATE
+:retrolambdatest:packageDebugJar UP-TO-DATE
+:retrolambdatest:compileDebugNdk UP-TO-DATE
+:retrolambdatest:packageDebugJniLibs UP-TO-DATE
+:retrolambdatest:packageDebugLocalJar UP-TO-DATE
+:retrolambdatest:packageDebugRenderscript UP-TO-DATE
+:retrolambdatest:bundleDebug UP-TO-DATE
+:retrolambdatest:compileDebugSources UP-TO-DATE
+:retrolambdatest:assembleDebug UP-TO-DATE
+:retrolambdatest:copyReleaseLint UP-TO-DATE
+:retrolambdatest:mergeReleaseProguardFiles UP-TO-DATE
+:retrolambdatest:preReleaseBuild UP-TO-DATE
+:retrolambdatest:checkReleaseManifest
+:retrolambdatest:prepareReleaseDependencies
+:retrolambdatest:compileReleaseAidl UP-TO-DATE
+:retrolambdatest:compileReleaseRenderscript UP-TO-DATE
+:retrolambdatest:generateReleaseBuildConfig UP-TO-DATE
+:retrolambdatest:generateReleaseAssets UP-TO-DATE
+:retrolambdatest:mergeReleaseAssets UP-TO-DATE
+:retrolambdatest:generateReleaseResValues UP-TO-DATE
+:retrolambdatest:generateReleaseResources UP-TO-DATE
+:retrolambdatest:packageReleaseResources UP-TO-DATE
+:retrolambdatest:processReleaseManifest UP-TO-DATE
+:retrolambdatest:processReleaseResources UP-TO-DATE
+:retrolambdatest:generateReleaseSources UP-TO-DATE
+:retrolambdatest:processReleaseJavaRes UP-TO-DATE
+:retrolambdatest:compileReleaseJavaWithJavac UP-TO-DATE
+:retrolambdatest:compileRetrolambdaRelease UP-TO-DATE
+:retrolambdatest:packageReleaseJar UP-TO-DATE
+:retrolambdatest:compileReleaseNdk UP-TO-DATE
+:retrolambdatest:packageReleaseJniLibs UP-TO-DATE
+:retrolambdatest:packageReleaseLocalJar UP-TO-DATE
+:retrolambdatest:packageReleaseRenderscript UP-TO-DATE
+:retrolambdatest:bundleRelease UP-TO-DATE
+:retrolambdatest:compileReleaseSources UP-TO-DATE
+:retrolambdatest:assembleRelease UP-TO-DATE
+:retrolambdatest:assemble UP-TO-DATE
+:retrolambdatest:build
+:streams:androidJavadocs UP-TO-DATE
+:streams:androidJavadocsJar UP-TO-DATE
+:streams:androidSourcesJar UP-TO-DATE
+:streams:compileLint
+:streams:copyDebugLint UP-TO-DATE
+:streams:mergeDebugProguardFiles UP-TO-DATE
+:streams:preBuild UP-TO-DATE
+:streams:preDebugBuild UP-TO-DATE
+:streams:checkDebugManifest
+:streams:prepareDebugDependencies
+:streams:compileDebugAidl UP-TO-DATE
+:streams:compileDebugRenderscript UP-TO-DATE
+:streams:generateDebugBuildConfig UP-TO-DATE
+:streams:generateDebugAssets UP-TO-DATE
+:streams:mergeDebugAssets UP-TO-DATE
+:streams:generateDebugResValues UP-TO-DATE
+:streams:generateDebugResources UP-TO-DATE
+:streams:packageDebugResources UP-TO-DATE
+:streams:processDebugManifest UP-TO-DATE
+:streams:processDebugResources UP-TO-DATE
+:streams:generateDebugSources UP-TO-DATE
+:streams:processDebugJavaRes UP-TO-DATE
+:streams:compileDebugJavaWithJavac UP-TO-DATE
+:streams:packageDebugJar UP-TO-DATE
+:streams:compileDebugNdk UP-TO-DATE
+:streams:packageDebugJniLibs UP-TO-DATE
+:streams:packageDebugLocalJar UP-TO-DATE
+:streams:packageDebugRenderscript UP-TO-DATE
+:streams:bundleDebug UP-TO-DATE
+:streams:compileDebugSources UP-TO-DATE
+:streams:assembleDebug UP-TO-DATE
+:streams:copyReleaseLint UP-TO-DATE
+:streams:mergeReleaseProguardFiles UP-TO-DATE
+:streams:preReleaseBuild UP-TO-DATE
+:streams:checkReleaseManifest
+:streams:prepareReleaseDependencies
+:streams:compileReleaseAidl UP-TO-DATE
+:streams:compileReleaseRenderscript UP-TO-DATE
+:streams:generateReleaseBuildConfig UP-TO-DATE
+:streams:generateReleaseAssets UP-TO-DATE
+:streams:mergeReleaseAssets UP-TO-DATE
+:streams:generateReleaseResValues UP-TO-DATE
+:streams:generateReleaseResources UP-TO-DATE
+:streams:packageReleaseResources UP-TO-DATE
+:streams:processReleaseManifest UP-TO-DATE
+:streams:processReleaseResources UP-TO-DATE
+:streams:generateReleaseSources UP-TO-DATE
+:streams:processReleaseJavaRes UP-TO-DATE
+:streams:compileReleaseJavaWithJavac UP-TO-DATE
+:streams:packageReleaseJar UP-TO-DATE
+:streams:compileReleaseNdk UP-TO-DATE
+:streams:packageReleaseJniLibs UP-TO-DATE
+:streams:packageReleaseLocalJar UP-TO-DATE
+:streams:packageReleaseRenderscript UP-TO-DATE
+:streams:bundleRelease UP-TO-DATE
+:streams:compileReleaseSources UP-TO-DATE
+:streams:assembleRelease UP-TO-DATE
+:streams:jarRelease UP-TO-DATE
+:streams:signArchives SKIPPED
+:streams:assemble UP-TO-DATE
+:streams:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.125 secs
+
+2018-04-04 01:45:29,263 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 01:45:29,293 ERROR FullProcessService - Could not find generated or existed APK file

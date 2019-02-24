@@ -1,0 +1,21 @@
+2018-04-04 00:28:07,796 INFO  DownloadService - Downloading "https://github.com/JorenSix/TarsosDSP/archive/master.zip", attempt 3
+2018-04-04 00:29:08,407 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:29:09,208 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:29:09,208 INFO  DownloadService - Downloading "https://github.com/JorenSix/TarsosDSP/archive/master.zip", attempt 3
+2018-04-04 00:30:10,456 DEBUG FullProcessService - Repository https://github.com/JorenSix/TarsosDSP available: true
+2018-04-04 00:30:10,456 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:30:10,456 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/JorenSix/TarsosDSP, /tmp/rdisk/1986/src]
+2018-04-04 00:30:14,769 INFO  SysUtils - 
+2018-04-04 00:30:14,776 INFO  GitService - Deleted "/tmp/rdisk/1986/src/.git": true
+2018-04-04 00:30:14,784 INFO  FullProcessService - Size of directory with sources: 8 MB
+2018-04-04 00:30:14,784 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1986/src]
+2018-04-04 00:30:14,789 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1986/src/.git/
+
+2018-04-04 00:30:14,795 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 00:30:14,795 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 00:30:14,801 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 00:30:14,807 INFO  ProjectBuildService - All script(s): none
+2018-04-04 00:30:14,807 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:30:14,807 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 00:30:14,807 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 00:30:14,814 ERROR FullProcessService - Could not find generated or existed APK file

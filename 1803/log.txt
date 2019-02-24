@@ -1,0 +1,294 @@
+2018-04-04 10:20:31,760 INFO  DownloadService - Downloading "https://github.com/takahirom/PreLollipopTransition/archive/master.zip", attempt 3
+2018-04-04 10:21:32,365 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:21:33,180 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:21:33,180 INFO  DownloadService - Downloading "https://github.com/takahirom/PreLollipopTransition/archive/master.zip", attempt 3
+2018-04-04 10:22:34,465 DEBUG FullProcessService - Repository https://github.com/takahirom/PreLollipopTransition available: true
+2018-04-04 10:22:34,466 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:22:34,466 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/takahirom/PreLollipopTransition, /tmp/rdisk/1803/src]
+2018-04-04 10:22:36,119 INFO  SysUtils - 
+2018-04-04 10:22:36,124 INFO  GitService - Deleted "/tmp/rdisk/1803/src/.git": true
+2018-04-04 10:22:36,127 INFO  FullProcessService - Size of directory with sources: 319 KB
+2018-04-04 10:22:36,127 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1803/src]
+2018-04-04 10:22:36,132 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1803/src/.git/
+
+2018-04-04 10:22:36,135 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1803/src/gradlew
+2018-04-04 10:22:36,138 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle /tmp/rdisk/1803/src/sample-app/build.gradle /tmp/rdisk/1803/src/build.gradle
+2018-04-04 10:22:36,141 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1803/src/settings.gradle /tmp/rdisk/1803/src/sample-app/build.gradle /tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle /tmp/rdisk/1803/src/build.gradle
+2018-04-04 10:22:36,141 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:22:36,141 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:22:36,149 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1803/src/pre-lollipop-activity-transition/local.properties
+2018-04-04 10:22:36,152 INFO  ProjectFixService - Build info for "/tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,152 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,152 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1803/src/sample-app/local.properties
+2018-04-04 10:22:36,155 INFO  ProjectFixService - Build info for "/tmp/rdisk/1803/src/sample-app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,155 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1803/src/sample-app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,155 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1803/src/local.properties
+2018-04-04 10:22:36,155 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-04 10:22:36,155 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-04 10:22:36,156 INFO  ProjectFixService - Build info for "/tmp/rdisk/1803/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,156 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1803/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 10:22:36,156 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:22:36,156 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:22:36,157 INFO  SysUtils - Execute command: [/tmp/rdisk/1803/src/gradlew, -b, /tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:22:45,525 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 10:22:45,526 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 10:22:45,526 INFO  SysUtils - Execute command: [/tmp/rdisk/1803/src/gradlew, -b, /tmp/rdisk/1803/src/pre-lollipop-activity-transition/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 10:22:57,727 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:pre-lollipop-activity-transition:preBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preDebugBuild UP-TO-DATE
+:pre-lollipop-activity-transition:checkDebugManifest
+:pre-lollipop-activity-transition:preDebugAndroidTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preDebugUnitTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preReleaseBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preReleaseUnitTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCompat2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCoreUi2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCoreUtils2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportFragment2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportMediaCompat2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportV42531Library
+:pre-lollipop-activity-transition:prepareDebugDependencies
+:pre-lollipop-activity-transition:compileDebugAidl
+:pre-lollipop-activity-transition:compileDebugNdk UP-TO-DATE
+:pre-lollipop-activity-transition:compileLint
+:pre-lollipop-activity-transition:copyDebugLint UP-TO-DATE
+:pre-lollipop-activity-transition:compileDebugRenderscript
+:pre-lollipop-activity-transition:generateDebugBuildConfig
+:pre-lollipop-activity-transition:generateDebugResValues
+:pre-lollipop-activity-transition:generateDebugResources
+:pre-lollipop-activity-transition:packageDebugResources
+:pre-lollipop-activity-transition:processDebugManifest
+:pre-lollipop-activity-transition:processDebugResources
+:pre-lollipop-activity-transition:generateDebugSources
+:pre-lollipop-activity-transition:incrementalDebugJavaCompilationSafeguard
+:pre-lollipop-activity-transition:javaPreCompileDebug
+:pre-lollipop-activity-transition:compileDebugJavaWithJavac
+:pre-lollipop-activity-transition:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:pre-lollipop-activity-transition:extractDebugAnnotations
+:pre-lollipop-activity-transition:mergeDebugShaders
+:pre-lollipop-activity-transition:compileDebugShaders
+:pre-lollipop-activity-transition:generateDebugAssets
+:pre-lollipop-activity-transition:mergeDebugAssets
+:pre-lollipop-activity-transition:mergeDebugProguardFiles
+:pre-lollipop-activity-transition:packageDebugRenderscript UP-TO-DATE
+:pre-lollipop-activity-transition:processDebugJavaRes UP-TO-DATE
+:pre-lollipop-activity-transition:transformResourcesWithMergeJavaResForDebug
+:pre-lollipop-activity-transition:transformClassesAndResourcesWithSyncLibJarsForDebug
+:pre-lollipop-activity-transition:mergeDebugJniLibFolders
+:pre-lollipop-activity-transition:transformNativeLibsWithMergeJniLibsForDebug
+:pre-lollipop-activity-transition:transformNativeLibsWithStripDebugSymbolForDebug
+:pre-lollipop-activity-transition:transformNativeLibsWithSyncJniLibsForDebug
+:pre-lollipop-activity-transition:bundleDebug
+:pre-lollipop-activity-transition:compileDebugSources
+:pre-lollipop-activity-transition:assembleDebug
+:pre-lollipop-activity-transition:checkReleaseManifest
+:pre-lollipop-activity-transition:prepareReleaseDependencies
+:pre-lollipop-activity-transition:compileReleaseAidl
+:pre-lollipop-activity-transition:compileReleaseNdk UP-TO-DATE
+:pre-lollipop-activity-transition:copyReleaseLint UP-TO-DATE
+:pre-lollipop-activity-transition:compileReleaseRenderscript
+:pre-lollipop-activity-transition:generateReleaseBuildConfig
+:pre-lollipop-activity-transition:generateReleaseResValues
+:pre-lollipop-activity-transition:generateReleaseResources
+:pre-lollipop-activity-transition:packageReleaseResources
+:pre-lollipop-activity-transition:processReleaseManifest
+:pre-lollipop-activity-transition:processReleaseResources
+:pre-lollipop-activity-transition:generateReleaseSources
+:pre-lollipop-activity-transition:incrementalReleaseJavaCompilationSafeguard
+:pre-lollipop-activity-transition:javaPreCompileRelease
+:pre-lollipop-activity-transition:compileReleaseJavaWithJavac
+:pre-lollipop-activity-transition:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:pre-lollipop-activity-transition:extractReleaseAnnotations
+:pre-lollipop-activity-transition:mergeReleaseShaders
+:pre-lollipop-activity-transition:compileReleaseShaders
+:pre-lollipop-activity-transition:generateReleaseAssets
+:pre-lollipop-activity-transition:mergeReleaseAssets
+:pre-lollipop-activity-transition:mergeReleaseProguardFiles
+:pre-lollipop-activity-transition:packageReleaseRenderscript UP-TO-DATE
+:pre-lollipop-activity-transition:processReleaseJavaRes UP-TO-DATE
+:pre-lollipop-activity-transition:transformResourcesWithMergeJavaResForRelease
+:pre-lollipop-activity-transition:transformClassesAndResourcesWithSyncLibJarsForRelease
+:pre-lollipop-activity-transition:mergeReleaseJniLibFolders
+:pre-lollipop-activity-transition:transformNativeLibsWithMergeJniLibsForRelease
+:pre-lollipop-activity-transition:transformNativeLibsWithStripDebugSymbolForRelease
+:pre-lollipop-activity-transition:transformNativeLibsWithSyncJniLibsForRelease
+:pre-lollipop-activity-transition:bundleRelease
+:pre-lollipop-activity-transition:compileReleaseSources
+:pre-lollipop-activity-transition:assembleRelease
+:pre-lollipop-activity-transition:javadoc/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransitionLauncher.java:70: error: package android.support.v4.app does not exist
+    public void prepare(android.support.v4.app.Fragment toFragment) {
+                                              ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransition.java:37: error: package android.support.v4.app does not exist
+    private android.support.v4.app.Fragment supportFragment;
+                                  ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransition.java:44: error: package android.support.v4.app does not exist
+    private FragmentTransition(android.support.v4.app.Fragment fragment) {
+                                                     ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransition.java:52: error: package android.support.v4.app does not exist
+    public static FragmentTransition with(android.support.v4.app.Fragment fragment) {
+                                                                ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/ExitFragmentTransition.java:23: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentManager;
+                             ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/ExitFragmentTransition.java:34: error: package android.support.v4.app does not exist
+    private android.support.v4.app.Fragment supportFragment;
+                                  ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/ExitFragmentTransition.java:44: error: package android.support.v4.app does not exist
+    public ExitFragmentTransition(final android.support.v4.app.Fragment fragment, MoveData moveData) {
+                                                              ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/core/TransitionAnimation.java:27: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewCompat;
+                              ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransitionLauncher.java:58: warning: no @param for toFragment
+    public void prepare(Fragment toFragment) {
+                ^
+/tmp/rdisk/1803/src/pre-lollipop-activity-transition/src/main/java/com/kogitune/activity_transition/fragment/FragmentTransitionLauncher.java:70: warning: no @param for toFragment
+    public void prepare(android.support.v4.app.Fragment toFragment) {
+                ^
+
+10 warnings
+:pre-lollipop-activity-transition:javadocJar
+:pre-lollipop-activity-transition:sourcesJar
+:pre-lollipop-activity-transition:assemble
+:pre-lollipop-activity-transition:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.0 secs
+
+2018-04-04 10:22:57,737 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:22:57,737 INFO  SysUtils - Execute command: [/tmp/rdisk/1803/src/gradlew, -b, /tmp/rdisk/1803/src/sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:23:11,582 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 10:23:11,582 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 10:23:11,582 INFO  SysUtils - Execute command: [/tmp/rdisk/1803/src/gradlew, -b, /tmp/rdisk/1803/src/sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 10:23:33,306 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:pre-lollipop-activity-transition:preBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preReleaseBuild UP-TO-DATE
+:pre-lollipop-activity-transition:checkReleaseManifest
+:pre-lollipop-activity-transition:preDebugAndroidTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preDebugBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preDebugUnitTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:preReleaseUnitTestBuild UP-TO-DATE
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCompat2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCoreUi2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportCoreUtils2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportFragment2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportMediaCompat2531Library
+:pre-lollipop-activity-transition:prepareComAndroidSupportSupportV42531Library
+:pre-lollipop-activity-transition:prepareReleaseDependencies
+:pre-lollipop-activity-transition:compileReleaseAidl UP-TO-DATE
+:pre-lollipop-activity-transition:compileReleaseNdk UP-TO-DATE
+:pre-lollipop-activity-transition:compileLint UP-TO-DATE
+:pre-lollipop-activity-transition:copyReleaseLint UP-TO-DATE
+:pre-lollipop-activity-transition:compileReleaseRenderscript UP-TO-DATE
+:pre-lollipop-activity-transition:generateReleaseBuildConfig UP-TO-DATE
+:pre-lollipop-activity-transition:generateReleaseResValues UP-TO-DATE
+:pre-lollipop-activity-transition:generateReleaseResources UP-TO-DATE
+:pre-lollipop-activity-transition:packageReleaseResources UP-TO-DATE
+:pre-lollipop-activity-transition:processReleaseManifest UP-TO-DATE
+:pre-lollipop-activity-transition:processReleaseResources UP-TO-DATE
+:pre-lollipop-activity-transition:generateReleaseSources UP-TO-DATE
+:pre-lollipop-activity-transition:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:pre-lollipop-activity-transition:javaPreCompileRelease
+:pre-lollipop-activity-transition:compileReleaseJavaWithJavac UP-TO-DATE
+:pre-lollipop-activity-transition:extractReleaseAnnotations UP-TO-DATE
+:pre-lollipop-activity-transition:mergeReleaseShaders UP-TO-DATE
+:pre-lollipop-activity-transition:compileReleaseShaders UP-TO-DATE
+:pre-lollipop-activity-transition:generateReleaseAssets UP-TO-DATE
+:pre-lollipop-activity-transition:mergeReleaseAssets UP-TO-DATE
+:pre-lollipop-activity-transition:mergeReleaseProguardFiles UP-TO-DATE
+:pre-lollipop-activity-transition:packageReleaseRenderscript UP-TO-DATE
+:pre-lollipop-activity-transition:processReleaseJavaRes UP-TO-DATE
+:pre-lollipop-activity-transition:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:pre-lollipop-activity-transition:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:pre-lollipop-activity-transition:mergeReleaseJniLibFolders UP-TO-DATE
+:pre-lollipop-activity-transition:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:pre-lollipop-activity-transition:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:pre-lollipop-activity-transition:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:pre-lollipop-activity-transition:bundleRelease UP-TO-DATE
+:sample-app:preBuild UP-TO-DATE
+:sample-app:preDebugBuild UP-TO-DATE
+:sample-app:checkDebugManifest
+:sample-app:preReleaseBuild UP-TO-DATE
+:sample-app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:sample-app:prepareComAndroidSupportAppcompatV72531Library
+:sample-app:prepareComAndroidSupportSupportCompat2531Library
+:sample-app:prepareComAndroidSupportSupportCoreUi2531Library
+:sample-app:prepareComAndroidSupportSupportCoreUtils2531Library
+:sample-app:prepareComAndroidSupportSupportFragment2531Library
+:sample-app:prepareComAndroidSupportSupportMediaCompat2531Library
+:sample-app:prepareComAndroidSupportSupportV42531Library
+:sample-app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:sample-app:prepareDebugDependencies
+:sample-app:compileDebugAidl
+:sample-app:compileDebugRenderscript
+:sample-app:generateDebugBuildConfig
+:sample-app:generateDebugResValues
+:sample-app:generateDebugResources
+:sample-app:mergeDebugResources
+:sample-app:processDebugManifest
+:sample-app:processDebugResources
+:sample-app:generateDebugSources
+:sample-app:incrementalDebugJavaCompilationSafeguard
+:sample-app:javaPreCompileDebug
+:sample-app:compileDebugJavaWithJavac
+:sample-app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-app:compileDebugNdk UP-TO-DATE
+:sample-app:compileDebugSources
+:sample-app:mergeDebugShaders
+:sample-app:compileDebugShaders
+:sample-app:generateDebugAssets
+:sample-app:mergeDebugAssets
+:sample-app:transformClassesWithDexForDebug
+:sample-app:mergeDebugJniLibFolders
+:sample-app:transformNativeLibsWithMergeJniLibsForDebug
+:sample-app:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-app:processDebugJavaRes UP-TO-DATE
+:sample-app:transformResourcesWithMergeJavaResForDebug
+:sample-app:validateSigningDebug
+:sample-app:packageDebug
+:sample-app:assembleDebug
+:sample-app:checkReleaseManifest
+:sample-app:prepareReleaseDependencies
+:sample-app:compileReleaseAidl
+:sample-app:compileReleaseRenderscript
+:sample-app:generateReleaseBuildConfig
+:sample-app:generateReleaseResValues
+:sample-app:generateReleaseResources
+:sample-app:mergeReleaseResources
+:sample-app:processReleaseManifest
+:sample-app:processReleaseResources
+:sample-app:generateReleaseSources
+:sample-app:incrementalReleaseJavaCompilationSafeguard
+:sample-app:javaPreCompileRelease
+:sample-app:compileReleaseJavaWithJavac
+:sample-app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-app:compileReleaseNdk UP-TO-DATE
+:sample-app:compileReleaseSources
+:sample-app:lintVitalRelease
+:sample-app:mergeReleaseShaders
+:sample-app:compileReleaseShaders
+:sample-app:generateReleaseAssets
+:sample-app:mergeReleaseAssets
+:sample-app:transformClassesWithDexForRelease
+:sample-app:mergeReleaseJniLibFolders
+:sample-app:transformNativeLibsWithMergeJniLibsForRelease
+:sample-app:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-app:processReleaseJavaRes UP-TO-DATE
+:sample-app:transformResourcesWithMergeJavaResForRelease
+:sample-app:packageRelease
+:sample-app:assembleRelease
+:sample-app:assemble
+:sample-app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.462 secs
+
+2018-04-04 10:23:33,358 INFO  FullProcessService - Found APK file: /tmp/rdisk/1803/src/sample-app/build/outputs/apk/sample-app-release-unsigned.apk

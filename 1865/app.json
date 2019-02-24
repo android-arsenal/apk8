@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "cn.aigestudio.downloader.demo",
+    "label" : "MultiThreadDownloader",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.MOUNT_UNMOUNT_FILESYSTEMS", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAABmPCFmPCBnPCFmPCGTk8GWlsSWlsVpOyFoPSOYmMKVlsSVl8VnPCJlPCJmPCBoPh9mPCJnOyBmPR9nPR4TVcZAAAAAFXRSTlMA/9yVqiHEcic7Kv+VWWrUMb5XGSr7r2QsAAAAbklEQVRIx2NgGJyAkUgw/DQwMeMBTFg0sOALR5aRooGVDQTYwWwOThAgoIGLGwR4cCa+oaAB2dNEaSCU4yjSwMuHFeDWwE9MfhhuGgQ40YDggGQgHIB5WGvAUbYKDaaCTJjU4l6EhMQ3BDUMLgAAyXMJF1hsk9gAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 955,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"cn.aigestudio.downloader.demo\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"@android:style/Theme.Black\" android:label=\"MultiThreadDownloader\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:label=\"MultiThreadDownloader\" android:name=\"cn.aigestudio.downloader.demo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<service android:name=\"cn.aigestudio.downloader.demo.DLService\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 427034,
+  "crc32" : 3480413700,
+  "sha256" : "5c8e5893aa6eaa086f71e34844b68686f2b170a647cd7033ef12e9d521447541",
+  "buildTime" : 1522821378000
+}

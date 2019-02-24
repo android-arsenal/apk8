@@ -1,0 +1,153 @@
+2018-04-04 01:55:34,891 INFO  DownloadService - Downloading "https://github.com/florent37/MaterialImageLoading/archive/master.zip", attempt 3
+2018-04-04 01:56:35,516 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:56:36,191 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:56:36,191 INFO  DownloadService - Downloading "https://github.com/florent37/MaterialImageLoading/archive/master.zip", attempt 3
+2018-04-04 01:57:37,580 DEBUG FullProcessService - Repository https://github.com/florent37/MaterialImageLoading available: true
+2018-04-04 01:57:37,580 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:57:37,580 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/florent37/MaterialImageLoading, /tmp/rdisk/1951/src]
+2018-04-04 01:57:51,133 INFO  SysUtils - 
+2018-04-04 01:57:51,148 INFO  GitService - Deleted "/tmp/rdisk/1951/src/.git": true
+2018-04-04 01:57:51,151 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-04 01:57:51,151 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1951/src]
+2018-04-04 01:57:51,155 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1951/src/.git/
+
+2018-04-04 01:57:51,158 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1951/src/gradlew
+2018-04-04 01:57:51,161 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1951/src/app/build.gradle /tmp/rdisk/1951/src/materialimageloading/build.gradle /tmp/rdisk/1951/src/build.gradle
+2018-04-04 01:57:51,163 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1951/src/settings.gradle /tmp/rdisk/1951/src/materialimageloading/build.gradle /tmp/rdisk/1951/src/gradle/install-v1.gradle /tmp/rdisk/1951/src/gradle/bintray-java-v1.gradle /tmp/rdisk/1951/src/gradle/bintray-android-v1.gradle /tmp/rdisk/1951/src/build.gradle /tmp/rdisk/1951/src/app/build.gradle
+2018-04-04 01:57:51,163 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:57:51,163 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:57:51,170 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1951/src/app/local.properties
+2018-04-04 01:57:51,173 INFO  ProjectFixService - Build info for "/tmp/rdisk/1951/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 01:57:51,174 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1951/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 01:57:51,174 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1951/src/materialimageloading/local.properties
+2018-04-04 01:57:51,177 INFO  ProjectFixService - Build info for "/tmp/rdisk/1951/src/materialimageloading/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 01:57:51,177 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1951/src/materialimageloading/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 01:57:51,178 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1951/src/local.properties
+2018-04-04 01:57:51,178 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-04 01:57:51,178 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-04 01:57:51,180 INFO  ProjectFixService - Build info for "/tmp/rdisk/1951/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 01:57:51,180 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1951/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 01:57:51,180 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:57:51,180 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:57:51,180 INFO  SysUtils - Execute command: [/tmp/rdisk/1951/src/gradlew, -b, /tmp/rdisk/1951/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:58:00,385 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-04 01:58:00,386 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 01:58:00,386 INFO  SysUtils - Execute command: [/tmp/rdisk/1951/src/gradlew, -b, /tmp/rdisk/1951/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 01:58:42,519 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:materialimageloading:preBuild UP-TO-DATE
+:materialimageloading:preReleaseBuild UP-TO-DATE
+:materialimageloading:compileReleaseNdk UP-TO-DATE
+:materialimageloading:compileLint
+:materialimageloading:copyReleaseLint UP-TO-DATE
+:materialimageloading:mergeReleaseProguardFiles
+:materialimageloading:packageReleaseRenderscript UP-TO-DATE
+:materialimageloading:checkReleaseManifest
+:materialimageloading:prepareReleaseDependencies
+:materialimageloading:compileReleaseRenderscript
+:materialimageloading:generateReleaseResValues
+:materialimageloading:generateReleaseResources
+:materialimageloading:packageReleaseResources
+:materialimageloading:compileReleaseAidl
+:materialimageloading:generateReleaseBuildConfig
+:materialimageloading:mergeReleaseShaders
+:materialimageloading:compileReleaseShaders
+:materialimageloading:generateReleaseAssets
+:materialimageloading:mergeReleaseAssets
+:materialimageloading:processReleaseManifest
+:materialimageloading:processReleaseResources
+:materialimageloading:generateReleaseSources
+:materialimageloading:incrementalReleaseJavaCompilationSafeguard
+:materialimageloading:compileReleaseJavaWithJavac
+:materialimageloading:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:materialimageloading:processReleaseJavaRes UP-TO-DATE
+:materialimageloading:transformResourcesWithMergeJavaResForRelease
+:materialimageloading:transformClassesAndResourcesWithSyncLibJarsForRelease
+:materialimageloading:mergeReleaseJniLibFolders
+:materialimageloading:transformNative_libsWithMergeJniLibsForRelease
+:materialimageloading:transformNative_libsWithSyncJniLibsForRelease
+:materialimageloading:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:app:prepareComAndroidSupportAppcompatV72330Library
+:app:prepareComAndroidSupportSupportV42330Library
+:app:prepareComAndroidSupportSupportVectorDrawable2330Library
+:app:prepareComGithubFlorent37Materialimageloading102Library
+:app:prepareComJakewhartonButterknife801Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/1951/src/app/build/generated/source/apt/debug/com/github/florent37/materialimageanimation/sample/MaterialImageLoadingMainActivity$$ViewBinder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/1951/src/app/build/generated/source/apt/release/com/github/florent37/materialimageanimation/sample/MaterialImageLoadingMainActivity$$ViewBinder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 41.701 secs
+
+2018-04-04 01:58:42,563 INFO  FullProcessService - Found APK file: /tmp/rdisk/1951/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,117 @@
+2018-04-04 14:56:47,934 INFO  DownloadService - Downloading "https://github.com/boxme/AsyncManager/archive/master.zip", attempt 3
+2018-04-04 14:56:48,387 INFO  DownloadService - Downloaded https://github.com/boxme/AsyncManager/archive/master.zip, attempt 3
+2018-04-04 14:56:48,387 INFO  DownloadService - Size of file "/tmp/rdisk/1763/master.zip": 100 KB
+2018-04-04 14:56:48,387 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:56:48,388 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1763/master.zip: true
+2018-04-04 14:56:48,388 DEBUG ZipUtil - Extracting '/tmp/rdisk/1763/master.zip' into '/tmp/rdisk/1763/src'.
+2018-04-04 14:56:48,396 INFO  FullProcessService - Size of directory with sources: 130 KB
+2018-04-04 14:56:48,396 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1763/src]
+2018-04-04 14:56:48,406 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1763/src/.git/
+
+2018-04-04 14:56:48,408 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1763/src/AsyncManager-master/gradlew
+2018-04-04 14:56:48,411 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1763/src/AsyncManager-master/app/build.gradle /tmp/rdisk/1763/src/AsyncManager-master/asyncmanager/build.gradle /tmp/rdisk/1763/src/AsyncManager-master/build.gradle
+2018-04-04 14:56:48,413 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1763/src/AsyncManager-master/settings.gradle /tmp/rdisk/1763/src/AsyncManager-master/build.gradle /tmp/rdisk/1763/src/AsyncManager-master/asyncmanager/build.gradle /tmp/rdisk/1763/src/AsyncManager-master/app/build.gradle
+2018-04-04 14:56:48,413 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 14:56:48,413 INFO  ProjectFixService - Fixing project...
+2018-04-04 14:56:48,419 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1763/src/AsyncManager-master/app/local.properties
+2018-04-04 14:56:48,420 INFO  ProjectFixService - Build info for "/tmp/rdisk/1763/src/AsyncManager-master/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-04 14:56:48,420 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1763/src/AsyncManager-master/asyncmanager/local.properties
+2018-04-04 14:56:48,420 INFO  ProjectFixService - Build info for "/tmp/rdisk/1763/src/AsyncManager-master/asyncmanager/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-04 14:56:48,421 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1763/src/AsyncManager-master/local.properties
+2018-04-04 14:56:48,421 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 14:56:48,421 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 14:56:48,422 INFO  ProjectFixService - Build info for "/tmp/rdisk/1763/src/AsyncManager-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-04 14:56:48,422 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 14:56:48,422 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:56:48,423 INFO  SysUtils - Execute command: [/tmp/rdisk/1763/src/AsyncManager-master/gradlew, -b, /tmp/rdisk/1763/src/AsyncManager-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:57:01,756 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 14:57:01,756 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 14:57:01,756 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 14:57:01,756 INFO  SysUtils - Execute command: [/tmp/rdisk/1763/src/AsyncManager-master/gradlew, -b, /tmp/rdisk/1763/src/AsyncManager-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 14:57:37,200 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComGithubBoxmeAsyncmanager100Library
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroid13Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp13Library
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant debug: 28 issues found
+Ran lint on variant release: 28 issues found
+Wrote HTML report to file:/tmp/rdisk/1763/src/AsyncManager-master/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1763/src/AsyncManager-master/app/build/outputs/lint-results.xml
+:app:preCompileDebugUnitTestJava
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJava UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebug
+:app:preCompileReleaseUnitTestJava
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJava UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testRelease
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 34.987 secs
+
+2018-04-04 14:57:37,239 INFO  FullProcessService - Found APK file: /tmp/rdisk/1763/src/AsyncManager-master/app/build/outputs/apk/app-debug.apk

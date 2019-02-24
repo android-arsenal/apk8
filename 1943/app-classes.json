@@ -1,0 +1,4 @@
+{
+  "com.binaryfork.spanny" : [ "BuildConfig", "R", "R$anim", "R$attr", "R$bool", "R$color", "R$dimen", "R$drawable", "R$id", "R$integer", "R$layout", "R$string", "R$style", "R$styleable", "Spanny", "Spanny$GetSpan" ],
+  "com.binaryfork.spannysample" : [ "BuildConfig", "CustomAlignmentSpan", "CustomBackgroundSpan", "CustomTypefaceSpan", "MainActivity", "MainActivity$1", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style" ]
+}

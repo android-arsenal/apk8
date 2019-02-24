@@ -1,0 +1,21 @@
+2018-04-04 01:27:32,922 INFO  DownloadService - Downloading "https://github.com/Glamdring/EasyCamera/archive/master.zip", attempt 3
+2018-04-04 01:28:33,390 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:28:34,049 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:28:34,049 INFO  DownloadService - Downloading "https://github.com/Glamdring/EasyCamera/archive/master.zip", attempt 3
+2018-04-04 01:29:35,352 DEBUG FullProcessService - Repository https://github.com/Glamdring/EasyCamera available: true
+2018-04-04 01:29:35,352 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:29:35,352 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Glamdring/EasyCamera, /tmp/rdisk/1960/src]
+2018-04-04 01:29:36,763 INFO  SysUtils - 
+2018-04-04 01:29:36,768 INFO  GitService - Deleted "/tmp/rdisk/1960/src/.git": true
+2018-04-04 01:29:36,768 INFO  FullProcessService - Size of directory with sources: 35 KB
+2018-04-04 01:29:36,768 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1960/src]
+2018-04-04 01:29:36,772 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1960/src/.git/
+
+2018-04-04 01:29:36,773 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-04 01:29:36,773 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-04 01:29:36,774 INFO  ProjectBuildService - Build script(s): none
+2018-04-04 01:29:36,775 INFO  ProjectBuildService - All script(s): none
+2018-04-04 01:29:36,775 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:29:36,775 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-04 01:29:36,775 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 01:29:36,775 ERROR FullProcessService - Could not find generated or existed APK file

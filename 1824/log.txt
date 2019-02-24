@@ -1,0 +1,496 @@
+2018-04-04 09:20:10,600 INFO  DownloadService - Downloading "https://github.com/richardradics/MVPAndroidBootstrap/archive/master.zip", attempt 3
+2018-04-04 09:21:11,234 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:21:12,070 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:21:12,070 INFO  DownloadService - Downloading "https://github.com/richardradics/MVPAndroidBootstrap/archive/master.zip", attempt 3
+2018-04-04 09:22:13,311 DEBUG FullProcessService - Repository https://github.com/richardradics/MVPAndroidBootstrap available: true
+2018-04-04 09:22:13,311 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:22:13,311 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/richardradics/MVPAndroidBootstrap, /tmp/rdisk/1824/src]
+2018-04-04 09:22:22,935 INFO  SysUtils - 
+2018-04-04 09:22:22,946 INFO  GitService - Deleted "/tmp/rdisk/1824/src/.git": true
+2018-04-04 09:22:22,956 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-04 09:22:22,957 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1824/src]
+2018-04-04 09:22:22,962 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1824/src/.git/
+
+2018-04-04 09:22:22,976 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1824/src/gradlew
+2018-04-04 09:22:22,984 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1824/src/app/build.gradle /tmp/rdisk/1824/src/commons/build.gradle /tmp/rdisk/1824/src/core/build.gradle /tmp/rdisk/1824/src/build.gradle
+2018-04-04 09:22:22,991 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1824/src/settings.gradle /tmp/rdisk/1824/src/core/build.workaround-missing-resource.gradle /tmp/rdisk/1824/src/core/build.gradle /tmp/rdisk/1824/src/commons/build.gradle /tmp/rdisk/1824/src/build.gradle /tmp/rdisk/1824/src/app/build.workaround-missing-resource.gradle /tmp/rdisk/1824/src/app/build.gradle
+2018-04-04 09:22:22,992 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:22:22,992 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:22:23,009 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1824/src/app/local.properties
+2018-04-04 09:22:23,013 INFO  ProjectFixService - Build info for "/tmp/rdisk/1824/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 09:22:23,014 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1824/src/commons/local.properties
+2018-04-04 09:22:23,017 INFO  ProjectFixService - Build info for "/tmp/rdisk/1824/src/commons/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 09:22:23,017 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1824/src/core/local.properties
+2018-04-04 09:22:23,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/1824/src/core/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 09:22:23,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1824/src/local.properties
+2018-04-04 09:22:23,020 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 09:22:23,021 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 09:22:23,021 INFO  ProjectFixService - Build info for "/tmp/rdisk/1824/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 09:22:23,021 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:22:23,021 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:22:23,021 INFO  SysUtils - Execute command: [/tmp/rdisk/1824/src/gradlew, -b, /tmp/rdisk/1824/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:23:31,952 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-04 09:23:31,952 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 09:23:31,952 INFO  SysUtils - Execute command: [/tmp/rdisk/1824/src/gradlew, -b, /tmp/rdisk/1824/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 09:24:45,585 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:commons:compileLint
+:commons:copyReleaseLint UP-TO-DATE
+:commons:preBuild UP-TO-DATE
+:commons:preReleaseBuild UP-TO-DATE
+:commons:checkReleaseManifest
+:commons:preDebugAndroidTestBuild UP-TO-DATE
+:commons:preDebugBuild UP-TO-DATE
+:commons:preDebugUnitTestBuild UP-TO-DATE
+:commons:preReleaseUnitTestBuild UP-TO-DATE
+:commons:prepareComAndroidSupportAppcompatV72103Library
+:commons:prepareComAndroidSupportSupportV42103Library
+:commons:prepareComBalysvMaterialRipple101Library
+:commons:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:commons:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:commons:prepareReleaseDependencies
+:commons:compileReleaseAidl
+:commons:compileReleaseRenderscript
+:commons:generateReleaseBuildConfig
+:commons:generateReleaseAssets UP-TO-DATE
+:commons:mergeReleaseAssets
+:commons:generateReleaseResValues
+:commons:generateReleaseResources
+:commons:mergeReleaseResources
+:commons:processReleaseManifest
+:commons:processReleaseResources
+:commons:generateReleaseSources
+:commons:processReleaseJavaRes UP-TO-DATE
+:commons:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:commons:extractReleaseAnnotations
+:commons:mergeReleaseProguardFiles
+:commons:packageReleaseJar
+:commons:compileReleaseNdk UP-TO-DATE
+:commons:packageReleaseJniLibs UP-TO-DATE
+:commons:packageReleaseLocalJar UP-TO-DATE
+:commons:packageReleaseRenderscript UP-TO-DATE
+:commons:packageReleaseResources
+:commons:bundleRelease
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:commons:copyDebugLint UP-TO-DATE
+:commons:checkDebugManifest
+:commons:prepareDebugDependencies
+:commons:compileDebugAidl
+:commons:compileDebugRenderscript
+:commons:generateDebugBuildConfig
+:commons:generateDebugAssets UP-TO-DATE
+:commons:mergeDebugAssets
+:commons:generateDebugResValues
+:commons:generateDebugResources
+:commons:mergeDebugResources
+:commons:processDebugManifest
+:commons:processDebugResources
+:commons:generateDebugSources
+:commons:processDebugJavaRes UP-TO-DATE
+:commons:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:commons:extractDebugAnnotations
+:commons:mergeDebugProguardFiles
+:commons:packageDebugJar
+:commons:compileDebugNdk UP-TO-DATE
+:commons:packageDebugJniLibs UP-TO-DATE
+:commons:packageDebugLocalJar UP-TO-DATE
+:commons:packageDebugRenderscript UP-TO-DATE
+:commons:packageDebugResources
+:commons:bundleDebug
+:core:preBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:preDebugAndroidTestBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareComAndroidSupportAppcompatV72103Library
+:core:prepareComAndroidSupportCardviewV72103Library
+:core:prepareComAndroidSupportPaletteV72103Library
+:core:prepareComAndroidSupportRecyclerviewV72103Library
+:core:prepareComAndroidSupportSupportV132103Library
+:core:prepareComAndroidSupportSupportV42103Library
+:core:prepareComBalysvMaterialRipple101Library
+:core:prepareComGithubTraexExpandablelayoutLibrary13Library
+:core:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:core:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:core:prepareComNispokSnackbar291Library
+:core:prepareComPnikosisMaterialishProgress14Library
+:core:prepareComSnappydbSnappydbLib050Library
+:core:prepareSrcCommonsUnspecifiedLibrary
+:core:prepareUkCoChrisjenxCalligraphy202Library
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl
+:core:compileReleaseRenderscript
+:core:generateReleaseBuildConfig
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:mergeReleaseResources
+:core:processReleaseManifest
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJavaNote: Resolve log file to /tmp/rdisk/1824/src/core/build/generated/source/apt/androidannotations.log
+Note: Initialize AndroidAnnotations 3.3.1 with options {androidManifestFile=/tmp/rdisk/1824/src/core/build/intermediates/bundles/release/aapt/AndroidManifest.xml, resourcePackageName=com.richardradics.core}
+Note: Start processing for 7 annotations on 22 elements
+Note: AndroidManifest.xml file found with specified path: /tmp/rdisk/1824/src/core/build/intermediates/bundles/release/aapt/AndroidManifest.xml
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=com.richardradics.core, componentQualifiedNames=[com.richardradics.core.app.ErrorActivity], permissionQualifiedNames=[], applicationClassName=com.richardradics.core.app.BaseApplication_, libraryProject=false, debugabble=false, minSdkVersion=15, maxSdkVersion=-1, targetSdkVersion=21]
+Note: Found project R class: com.richardradics.core.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EApplicationHandler: [com.richardradics.core.app.BaseApplication]
+Note: Validating with EActivityHandler: [com.richardradics.core.app.BaseActivity]
+Note: Validating with EBeanHandler: [com.richardradics.core.util.LoadAndToast, com.richardradics.core.util.CommonUseCases, com.richardradics.core.retrofit.ConnectivityAwareUrlClient, com.richardradics.core.retrofit.BaseRetryHandler, com.richardradics.core.retrofit.BaseRetrofitClient, com.richardradics.core.navigation.Navigator, com.richardradics.core.error.SnappyErrorHandler, com.richardradics.core.error.NetworkErrorHandler, com.richardradics.core.error.ErrorHandler, com.richardradics.core.database.SnappyDatabase]
+Note: Validating with BeanHandler: [commonUseCases, navigator, networkErrorHandler, navigator, navigator, defaultRetryHandler, connectivityAwareUrlClient, networkErrorHandler, navigator, snappyErrorHandler, networkErrorHandler, snappyErrorHandler, navigator, commonUseCases, networkErrorHandler, progress]
+Note: Validating with RootContextHandler: [context, context, context, context, context, context]
+Note: Validating with AfterInjectHandler: [afterBaseInject()]
+Note: Validating with UiThreadHandler: [sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String), callPhone(java.lang.String), callPhoneWithSimCheck(java.lang.String), showError(java.lang.String)]
+Note: Processing root elements
+Note: Processing root elements EApplicationHandler: [com.richardradics.core.app.BaseApplication]
+Note: Processing root elements EActivityHandler: [com.richardradics.core.app.BaseActivity]
+Note: Processing root elements EBeanHandler: [com.richardradics.core.navigation.Navigator, com.richardradics.core.database.SnappyDatabase, com.richardradics.core.util.LoadAndToast, com.richardradics.core.error.ErrorHandler, com.richardradics.core.retrofit.BaseRetrofitClient, com.richardradics.core.util.CommonUseCases, com.richardradics.core.retrofit.ConnectivityAwareUrlClient, com.richardradics.core.retrofit.BaseRetryHandler, com.richardradics.core.error.NetworkErrorHandler, com.richardradics.core.error.SnappyErrorHandler]
+Note: Processing enclosed elements
+Note: Processing enclosed elements with BeanHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3265ef81, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@63e8903e]
+Note: Processing enclosed elements with RootContextHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@44d58d15, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@7db415c7]
+Note: Processing enclosed elements with UiThreadHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@365bd240, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@52e54aaa]
+Note: Number of files generated by AndroidAnnotations: 11
+Note: Writting following API classes in project: []
+Note: Generating class: com.richardradics.core.util.CommonUseCases_
+Note: Generating class: com.richardradics.core.util.LoadAndToast_
+Note: Generating class: com.richardradics.core.error.ErrorHandler_
+Note: Generating class: com.richardradics.core.error.NetworkErrorHandler_
+Note: Generating class: com.richardradics.core.error.SnappyErrorHandler_
+Note: Generating class: com.richardradics.core.app.BaseApplication_
+Note: Generating class: com.richardradics.core.database.SnappyDatabase_
+Note: Generating class: com.richardradics.core.retrofit.BaseRetrofitClient_
+Note: Generating class: com.richardradics.core.retrofit.BaseRetryHandler_
+Note: Generating class: com.richardradics.core.retrofit.ConnectivityAwareUrlClient_
+Note: Generating class: com.richardradics.core.navigation.Navigator_
+Note: Time measurements: [Whole Processing = 304 ms], [Extract Manifest = 156 ms], [Generate Sources = 63 ms], [Process Annotations = 34 ms], [Extract Annotations = 16 ms], [Find R Classes = 15 ms], [Validate Annotations = 12 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 11 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:extractReleaseAnnotations
+:core:mergeReleaseProguardFiles
+:core:packageReleaseJar
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources
+:core:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportCardviewV72103Library
+:app:prepareComAndroidSupportPaletteV72103Library
+:app:prepareComAndroidSupportRecyclerviewV72103Library
+:app:prepareComAndroidSupportSupportV132103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareComBalysvMaterialRipple101Library
+:app:prepareComGithubKsoichiroAndroidObservablescrollview150Library
+:app:prepareComGithubTraexExpandablelayoutLibrary13Library
+:app:prepareComJakewhartonHugoHugoRuntime121Library
+:app:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:app:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:app:prepareComNispokSnackbar291Library
+:app:prepareComPnikosisMaterialishProgress14Library
+:app:prepareComSnappydbSnappydbLib050Library
+:app:prepareSrcCommonsUnspecifiedLibrary
+:app:prepareSrcCoreUnspecifiedLibrary
+:app:prepareUkCoChrisjenxCalligraphy202Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_default_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/ic_chooser.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:core:copyDebugLint UP-TO-DATE
+:core:checkDebugManifest
+:core:prepareComJakewhartonHugoHugoRuntime121Library
+:core:prepareDebugDependencies
+:core:compileDebugAidl
+:core:compileDebugRenderscript
+:core:generateDebugBuildConfig
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets
+:core:generateDebugResValues
+:core:generateDebugResources
+:core:mergeDebugResources
+:core:processDebugManifest
+:core:processDebugResources
+:core:generateDebugSources
+:core:processDebugJavaRes UP-TO-DATE
+:core:compileDebugJavaNote: Resolve log file to /tmp/rdisk/1824/src/core/build/generated/source/apt/androidannotations.log
+Note: Initialize AndroidAnnotations 3.3.1 with options {androidManifestFile=/tmp/rdisk/1824/src/core/build/intermediates/bundles/debug/aapt/AndroidManifest.xml, resourcePackageName=com.richardradics.core}
+Note: Start processing for 7 annotations on 22 elements
+Note: AndroidManifest.xml file found with specified path: /tmp/rdisk/1824/src/core/build/intermediates/bundles/debug/aapt/AndroidManifest.xml
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=com.richardradics.core, componentQualifiedNames=[com.richardradics.core.app.ErrorActivity], permissionQualifiedNames=[], applicationClassName=com.richardradics.core.app.BaseApplication_, libraryProject=false, debugabble=false, minSdkVersion=15, maxSdkVersion=-1, targetSdkVersion=21]
+Note: Found project R class: com.richardradics.core.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EApplicationHandler: [com.richardradics.core.app.BaseApplication]
+Note: Validating with EActivityHandler: [com.richardradics.core.app.BaseActivity]
+Note: Validating with EBeanHandler: [com.richardradics.core.util.LoadAndToast, com.richardradics.core.util.CommonUseCases, com.richardradics.core.retrofit.ConnectivityAwareUrlClient, com.richardradics.core.retrofit.BaseRetryHandler, com.richardradics.core.retrofit.BaseRetrofitClient, com.richardradics.core.navigation.Navigator, com.richardradics.core.error.SnappyErrorHandler, com.richardradics.core.error.NetworkErrorHandler, com.richardradics.core.error.ErrorHandler, com.richardradics.core.database.SnappyDatabase]
+Note: Validating with BeanHandler: [commonUseCases, navigator, networkErrorHandler, navigator, navigator, defaultRetryHandler, connectivityAwareUrlClient, networkErrorHandler, navigator, snappyErrorHandler, networkErrorHandler, snappyErrorHandler, navigator, commonUseCases, networkErrorHandler, progress]
+Note: Validating with RootContextHandler: [context, context, context, context, context, context]
+Note: Validating with AfterInjectHandler: [afterBaseInject()]
+Note: Validating with UiThreadHandler: [sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String), callPhone(java.lang.String), callPhoneWithSimCheck(java.lang.String), showError(java.lang.String)]
+Note: Processing root elements
+Note: Processing root elements EApplicationHandler: [com.richardradics.core.app.BaseApplication]
+Note: Processing root elements EActivityHandler: [com.richardradics.core.app.BaseActivity]
+Note: Processing root elements EBeanHandler: [com.richardradics.core.navigation.Navigator, com.richardradics.core.retrofit.BaseRetrofitClient, com.richardradics.core.retrofit.ConnectivityAwareUrlClient, com.richardradics.core.util.CommonUseCases, com.richardradics.core.retrofit.BaseRetryHandler, com.richardradics.core.error.ErrorHandler, com.richardradics.core.error.SnappyErrorHandler, com.richardradics.core.error.NetworkErrorHandler, com.richardradics.core.database.SnappyDatabase, com.richardradics.core.util.LoadAndToast]
+Note: Processing enclosed elements
+Note: Processing enclosed elements with BeanHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@63c59ae5, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@71675354]
+Note: Processing enclosed elements with RootContextHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@4c8e54, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@28f3815c]
+Note: Processing enclosed elements with UiThreadHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2759181a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@322eded1]
+Note: Number of files generated by AndroidAnnotations: 11
+Note: Writting following API classes in project: []
+Note: Generating class: com.richardradics.core.util.CommonUseCases_
+Note: Generating class: com.richardradics.core.util.LoadAndToast_
+Note: Generating class: com.richardradics.core.error.ErrorHandler_
+Note: Generating class: com.richardradics.core.error.NetworkErrorHandler_
+Note: Generating class: com.richardradics.core.error.SnappyErrorHandler_
+Note: Generating class: com.richardradics.core.app.BaseApplication_
+Note: Generating class: com.richardradics.core.database.SnappyDatabase_
+Note: Generating class: com.richardradics.core.retrofit.BaseRetrofitClient_
+Note: Generating class: com.richardradics.core.retrofit.BaseRetryHandler_
+Note: Generating class: com.richardradics.core.retrofit.ConnectivityAwareUrlClient_
+Note: Generating class: com.richardradics.core.navigation.Navigator_
+Note: Time measurements: [Whole Processing = 132 ms], [Generate Sources = 61 ms], [Process Annotations = 31 ms], [Find R Classes = 12 ms], [Validate Annotations = 9 ms], [Extract Annotations = 5 ms], [Extract Manifest = 5 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 11 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:extractDebugAnnotations
+:core:mergeDebugProguardFiles
+:core:packageDebugJar
+:core:compileDebugNdk UP-TO-DATE
+:core:packageDebugJniLibs UP-TO-DATE
+:core:packageDebugLocalJar UP-TO-DATE
+:core:packageDebugRenderscript UP-TO-DATE
+:core:packageDebugResources
+:core:bundleDebug
+:app:compileDebugJavaNote: Resolve log file to /tmp/rdisk/1824/src/app/build/generated/source/apt/androidannotations.log
+Note: Initialize AndroidAnnotations 3.3.1 with options {androidManifestFile=/tmp/rdisk/1824/src/app/build/intermediates/manifests/full/debug/AndroidManifest.xml, resourcePackageName=com.richardradics.cleanaa}
+Note: Start processing for 13 annotations on 43 elements
+Note: AndroidManifest.xml file found with specified path: /tmp/rdisk/1824/src/app/build/intermediates/manifests/full/debug/AndroidManifest.xml
+warning: A class activity declared in the AndroidManifest.xml cannot be found in the compile path: [android.support.v7.widget.TestActivity]
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=com.richardradics.cleanaa, componentQualifiedNames=[com.richardradics.cleanaa.ui.MainActivity_, com.richardradics.cleanaa.ui.DetailActivity_, com.richardradics.core.app.ErrorActivity, com.richardradics.commons.galgo.GalgoService], permissionQualifiedNames=[android.permission.INTERNET, android.permission.READ_EXTERNAL_STORAGE, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.SYSTEM_ALERT_WINDOW], applicationClassName=com.richardradics.cleanaa.app.CleanApplication_, libraryProject=false, debugabble=false, minSdkVersion=15, maxSdkVersion=-1, targetSdkVersion=21]
+Note: Found project R class: com.richardradics.cleanaa.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EApplicationHandler: [com.richardradics.cleanaa.app.CleanApplication]
+Note: Validating with EActivityHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity, com.richardradics.cleanaa.app.CleanActivity]
+/tmp/rdisk/1824/src/app/src/main/java/com/richardradics/cleanaa/app/CleanActivity.java:22: warning: The component CleanActivity_ is not registered in the AndroidManifest.xml file.
+@EActivity
+^
+Note: Validating with EBeanHandler: [com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper, com.richardradics.cleanaa.repository.api.OpenWeatherClient, com.richardradics.cleanaa.mvp.presenter.MainPresenter, com.richardradics.cleanaa.mvp.presenter.BasePresenter, com.richardradics.cleanaa.interactor.GetCitiesImp, com.richardradics.cleanaa.interactor.BaseInteractor, com.richardradics.cleanaa.app.CleanErrorHandler, com.richardradics.cleanaa.app.CleanDatabase]
+Note: Validating with ViewByIdHandler: [mainRecyclerView, image, mOverlayView, mScollView, bodyTextview, toolbar, titleTextView]
+Note: Validating with ResHandler: [mFlexibleSpaceImageHeight]
+Note: Validating with ResHandler: [mToolBarColor, snackBarColor]
+Note: Validating with BeanHandler: [presenter, cleanErrorHandler, openWeatherResponseMapper, getCities, cleanErrorHandler, cleanDatabase, cleanRepository, cleanErrorHandler]
+Note: Validating with OptionsMenuHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity]
+Note: Validating with OptionsItemHandler: [homeSelected(), homeSelected()]
+Note: Validating with AfterInjectHandler: [onAfterInjectFinished(), onAfterInjectFinished()]
+Note: Validating with AfterViewsHandler: [onAfterViews(), onBaseViewFinish()]
+Note: Validating with UiThreadHandler: [setListViewModels(java.util.List<com.richardradics.cleanaa.mvp.view.model.MainListViewModel>), onError(java.lang.Exception), onItemsLoaded(java.util.List<com.richardradics.cleanaa.domain.City>), onError(java.lang.Exception)]
+Note: Validating with BackgroundHandler: [getCities(java.lang.Double,java.lang.Double,java.lang.Integer,com.richardradics.cleanaa.interactor.GetCities.Callback)]
+Note: Processing root elements
+Note: Processing root elements EApplicationHandler: [com.richardradics.cleanaa.app.CleanApplication]
+Note: Processing root elements EActivityHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity, com.richardradics.cleanaa.app.CleanActivity]
+Note: Processing root elements EBeanHandler: [com.richardradics.cleanaa.mvp.presenter.MainPresenter, com.richardradics.cleanaa.interactor.BaseInteractor, com.richardradics.cleanaa.app.CleanErrorHandler, com.richardradics.cleanaa.repository.api.OpenWeatherClient, com.richardradics.cleanaa.mvp.presenter.BasePresenter, com.richardradics.cleanaa.app.CleanDatabase, com.richardradics.cleanaa.interactor.GetCitiesImp, com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper]
+Note: Processing enclosed elements
+Note: Processing enclosed elements with ViewByIdHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@bcd812c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2c27bba2, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@47843c72, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@253ce354]
+Note: Processing enclosed elements with BeanHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@15b23cb2, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@264d590e, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@61d8b99f, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@75ce09c6, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@796a1925, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@731686d9, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@22d33f1c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@79c0b9d0, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3774b3a7, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@78063b15, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@542ba73d, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6e8ea696, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@27569209, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@10819a20, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3edd04ff, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6d507ab4, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3e27c083, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2311d436, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@695ad870, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@4e251c8, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@33469a2a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@167e2810, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@17daaa29, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@567e96cb, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@68c06cf7]
+Note: Processing enclosed elements with OptionsItemHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@147ab3ee, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@f5bf06f]
+Note: Processing enclosed elements with RootContextHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1b0c5a58, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@616df8d8]
+Note: Processing enclosed elements with AfterInjectHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@185afb98]
+Note: Processing enclosed elements with AfterViewsHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1eb0b2b0, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@73599848]
+Note: Processing enclosed elements with UiThreadHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3c594af9]
+Note: Number of files generated by AndroidAnnotations: 12
+Note: Writting following API classes in project: []
+Note: Generating class: com.richardradics.cleanaa.app.CleanActivity_
+Note: Generating class: com.richardradics.cleanaa.app.CleanApplication_
+Note: Generating class: com.richardradics.cleanaa.app.CleanDatabase_
+Note: Generating class: com.richardradics.cleanaa.app.CleanErrorHandler_
+Note: Generating class: com.richardradics.cleanaa.ui.DetailActivity_
+Note: Generating class: com.richardradics.cleanaa.ui.MainActivity_
+Note: Generating class: com.richardradics.cleanaa.mvp.presenter.BasePresenter_
+Note: Generating class: com.richardradics.cleanaa.mvp.presenter.MainPresenter_
+Note: Generating class: com.richardradics.cleanaa.repository.api.OpenWeatherClient_
+Note: Generating class: com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper_
+Note: Generating class: com.richardradics.cleanaa.interactor.BaseInteractor_
+Note: Generating class: com.richardradics.cleanaa.interactor.GetCitiesImp_
+Note: Time measurements: [Whole Processing = 240 ms], [Generate Sources = 127 ms], [Process Annotations = 55 ms], [Validate Annotations = 17 ms], [Find R Classes = 14 ms], [Extract Annotations = 12 ms], [Extract Manifest = 7 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 12 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+2 warnings
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(303751387) : No Delegate set : lost message:/tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_default_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/ic_chooser.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1824/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: Resolve log file to /tmp/rdisk/1824/src/app/build/generated/source/apt/androidannotations.log
+Note: Initialize AndroidAnnotations 3.3.1 with options {androidManifestFile=/tmp/rdisk/1824/src/app/build/intermediates/manifests/full/release/AndroidManifest.xml, resourcePackageName=com.richardradics.cleanaa}
+Note: Start processing for 13 annotations on 43 elements
+Note: AndroidManifest.xml file found with specified path: /tmp/rdisk/1824/src/app/build/intermediates/manifests/full/release/AndroidManifest.xml
+warning: A class activity declared in the AndroidManifest.xml cannot be found in the compile path: [android.support.v7.widget.TestActivity]
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=com.richardradics.cleanaa, componentQualifiedNames=[com.richardradics.cleanaa.ui.MainActivity_, com.richardradics.cleanaa.ui.DetailActivity_, com.richardradics.core.app.ErrorActivity, com.richardradics.commons.galgo.GalgoService], permissionQualifiedNames=[android.permission.INTERNET, android.permission.READ_EXTERNAL_STORAGE, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.SYSTEM_ALERT_WINDOW], applicationClassName=com.richardradics.cleanaa.app.CleanApplication_, libraryProject=false, debugabble=false, minSdkVersion=15, maxSdkVersion=-1, targetSdkVersion=21]
+Note: Found project R class: com.richardradics.cleanaa.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EApplicationHandler: [com.richardradics.cleanaa.app.CleanApplication]
+Note: Validating with EActivityHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity, com.richardradics.cleanaa.app.CleanActivity]
+/tmp/rdisk/1824/src/app/src/main/java/com/richardradics/cleanaa/app/CleanActivity.java:22: warning: The component CleanActivity_ is not registered in the AndroidManifest.xml file.
+@EActivity
+^
+Note: Validating with EBeanHandler: [com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper, com.richardradics.cleanaa.repository.api.OpenWeatherClient, com.richardradics.cleanaa.mvp.presenter.MainPresenter, com.richardradics.cleanaa.mvp.presenter.BasePresenter, com.richardradics.cleanaa.interactor.GetCitiesImp, com.richardradics.cleanaa.interactor.BaseInteractor, com.richardradics.cleanaa.app.CleanErrorHandler, com.richardradics.cleanaa.app.CleanDatabase]
+Note: Validating with ViewByIdHandler: [mainRecyclerView, image, mOverlayView, mScollView, bodyTextview, toolbar, titleTextView]
+Note: Validating with ResHandler: [mFlexibleSpaceImageHeight]
+Note: Validating with ResHandler: [mToolBarColor, snackBarColor]
+Note: Validating with BeanHandler: [presenter, cleanErrorHandler, openWeatherResponseMapper, getCities, cleanErrorHandler, cleanDatabase, cleanRepository, cleanErrorHandler]
+Note: Validating with OptionsMenuHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity]
+Note: Validating with OptionsItemHandler: [homeSelected(), homeSelected()]
+Note: Validating with AfterInjectHandler: [onAfterInjectFinished(), onAfterInjectFinished()]
+Note: Validating with AfterViewsHandler: [onAfterViews(), onBaseViewFinish()]
+Note: Validating with UiThreadHandler: [setListViewModels(java.util.List<com.richardradics.cleanaa.mvp.view.model.MainListViewModel>), onError(java.lang.Exception), onItemsLoaded(java.util.List<com.richardradics.cleanaa.domain.City>), onError(java.lang.Exception)]
+Note: Validating with BackgroundHandler: [getCities(java.lang.Double,java.lang.Double,java.lang.Integer,com.richardradics.cleanaa.interactor.GetCities.Callback)]
+Note: Processing root elements
+Note: Processing root elements EApplicationHandler: [com.richardradics.cleanaa.app.CleanApplication]
+Note: Processing root elements EActivityHandler: [com.richardradics.cleanaa.ui.MainActivity, com.richardradics.cleanaa.ui.DetailActivity, com.richardradics.cleanaa.app.CleanActivity]
+Note: Processing root elements EBeanHandler: [com.richardradics.cleanaa.repository.api.OpenWeatherClient, com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper, com.richardradics.cleanaa.app.CleanDatabase, com.richardradics.cleanaa.mvp.presenter.BasePresenter, com.richardradics.cleanaa.interactor.BaseInteractor, com.richardradics.cleanaa.interactor.GetCitiesImp, com.richardradics.cleanaa.mvp.presenter.MainPresenter, com.richardradics.cleanaa.app.CleanErrorHandler]
+Note: Processing enclosed elements
+Note: Processing enclosed elements with ViewByIdHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@4e0b2059, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@68a02d9c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@47840b2a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1da68f59]
+Note: Processing enclosed elements with BeanHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@4c5b205b, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@7279a0fb, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@119a90d8, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@78952356, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@772812ed, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@ccc2289, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@15a09ea7, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@38482500, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@756fd766, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@be6bf2b, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1f0905c7, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@5727322, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@147c815, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@47a65ab3, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@346eda3b, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6b24a7bd, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@5990ba8f, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@32ac7f73, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@3da68406, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@12846cb, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@e236945, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@5543c3a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@78bf4009, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@68b16289, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2a18eb66]
+Note: Processing enclosed elements with OptionsItemHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@63ecabed, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6f4cc1b9]
+Note: Processing enclosed elements with RootContextHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2fcf5f0a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@44f112dd]
+Note: Processing enclosed elements with AfterInjectHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6e42c75f]
+Note: Processing enclosed elements with AfterViewsHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@747244d2, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@46395260]
+Note: Processing enclosed elements with UiThreadHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@36208379]
+Note: Number of files generated by AndroidAnnotations: 12
+Note: Writting following API classes in project: []
+Note: Generating class: com.richardradics.cleanaa.app.CleanActivity_
+Note: Generating class: com.richardradics.cleanaa.app.CleanApplication_
+Note: Generating class: com.richardradics.cleanaa.app.CleanDatabase_
+Note: Generating class: com.richardradics.cleanaa.app.CleanErrorHandler_
+Note: Generating class: com.richardradics.cleanaa.ui.DetailActivity_
+Note: Generating class: com.richardradics.cleanaa.ui.MainActivity_
+Note: Generating class: com.richardradics.cleanaa.repository.api.OpenWeatherClient_
+Note: Generating class: com.richardradics.cleanaa.repository.api.OpenWeatherResponseMapper_
+Note: Generating class: com.richardradics.cleanaa.mvp.presenter.BasePresenter_
+Note: Generating class: com.richardradics.cleanaa.mvp.presenter.MainPresenter_
+Note: Generating class: com.richardradics.cleanaa.interactor.BaseInteractor_
+Note: Generating class: com.richardradics.cleanaa.interactor.GetCitiesImp_
+Note: Time measurements: [Whole Processing = 244 ms], [Generate Sources = 132 ms], [Process Annotations = 56 ms], [Validate Annotations = 17 ms], [Extract Annotations = 11 ms], [Find R Classes = 11 ms], [Extract Manifest = 7 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 12 elements
+Note: Time measurements: [Whole Processing = 1 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+2 warnings
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 13.05 secs
+
+2018-04-04 09:24:45,719 INFO  FullProcessService - Found APK file: /tmp/rdisk/1824/src/app/build/outputs/apk/app-debug.apk

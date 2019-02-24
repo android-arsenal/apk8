@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "io.karim.materialtabs.sample",
+    "label" : "MaterialTabs",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.5",
+    "versionCode" : 8,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACIlBMVEUAAAD///////////////////////8As8wDvdQCu9MCu9MCu9MDutICu9MCutICscgAAAACudECudECutICutICs8q8vLzW1tYCudAEutIDutIFutICssqkpKTIyMgCuNCenp5Kzd4Eu9InxNgwxtoPvdRCy90cwNZr1uRs1uQ+ydxf0uJFy91q1eMmw9g6yNtEy90xxtoTvtQnw9gqxNgewdZAyt0RvtVm1eM4yNuq5+9/3Ohv1+VV0OCg5O0MvNNIzN5j0+J22OYpxNh/2+eA2+eD3OgGutKl5e5Z0eBu1uQlw9gHutI1x9p52eZ42eZ12OVAytyV4etZ0eFj1OJJzd562ud82ueG3emT4etCytw8ydyN3+o/ydyJ3umd4+wow9hx1+UQvdSw6PCr5+9JzN6L3umQ4OorxdlY0eGB3Oha0eFg0+I/ytxa0eFc0uEYv9UtxdlDy90wxtlc0eFe0uFi0+IWv9Vh0+Jv1+Q7yNtUz+A4yNtBytxt1uRm1eN62a972rB72rB727F10arf38zg4Mzg4Mzh4c3W1sT7+/v9/f39/f3+/v7y8vL7+/vLy8umpqatra36+vr8/Pz9/f3////v7++Hh4eqqqoAAADb29v6+vr5+fnLy8sAAAA3NzfLy8vr6+vv7+/u7u7s7OzHx8c0NDQAAAAAAABCQkJZWVlYWFhXV1dbW1tcXFxdXV1GRkZmZmYAAAAAAAC/v7+mjazeAAAAtnRSTlMAAwQCEx4dCpbo7JaY//+aAer5/fzqFyXv////7yol7ir8///////////////////////////////8/P///////////////////////////////////Pz//////////////////////////Pz//////////////////////////O///P/v7//8/+/v//z/7+4nKxzs+f3/7CIDCKn//60DKrDt8O/tsSwJIEJNS0xMS01CBQsOBGdb1CMAAAHDSURBVEjHY2CgF2BkIgAYUZQzMxM2ElkNkMnCyoYXsLKAlcHUs3NwchEAnNzscB3MDDy8fIQBvwBUAyMDiyCfkLAIXiAsxCsqxgDxORODuASfCNAISUlJKSwmS0uDREV4ZWSBSiEa5ORBGqSkcQFJiAYFhAYJPkUlZRVVNXUNTS1NbR1dPX1pA1VDI2lVDU1DYxNTDTNzC0s0DVZq1ja2dvYOjjpOzi7Grm7uHp5e3tI+vn72/gGBAUHBIaFoGsLCI2wi7aKiPQNjYuMCvNz04+OBGqQTEpOSU1LT0jMys9A0ZOfk5uUX5BUWFbvklUiXluWXV5RWVkmbVtcE1pa5+OXW1aN4GhJKfDh9LY0eSqgaJNEAOJiwaYCEK5aowIwHuAasMQcGWJ0kJYU7JaFqaGhsaiQAmppbkDS0trW3EQDtHZ1IGrq6e7oJgJ7evlENoxpGNWDV0E+ihgnE2TARqoGRYdLk3ilTe/CCqVOmTZ/BMBNaZc2aPWda7zS8oHfa3Hmz4HXc/AULFy1eshgPWLJ46bLl8xHV6IqVq1avWbNm7TrsYP369Rs2rlyBXFFv2ryFANi8CbXyn7mVAJhJt1YMAFUukEYWgTLHAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1783,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"8\" android:versionName=\"1.0.5\" package=\"io.karim.materialtabs.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f080025\" android:label=\"MaterialTabs\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"io.karim.materialtabs.sample.MyApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"MaterialTabs\" android:name=\"io.karim.materialtabs.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"MaterialTabs\" android:name=\"io.karim.materialtabs.sample.TabsActivity\" />\n\t\t<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"a03db896e5d07df2ceb3df0a257d7c7f9ddae6ee\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1424249,
+  "crc32" : 402579628,
+  "sha256" : "939b5de77923a65888428a8b04edc02a3713ea6747ef8deb90ee92b7fdd66ab4",
+  "buildTime" : 1522820269000
+}

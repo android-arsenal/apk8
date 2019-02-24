@@ -1,0 +1,253 @@
+2018-04-04 01:48:40,835 INFO  DownloadService - Downloading "https://github.com/vikramkakkar/SublimePicker/archive/master.zip", attempt 3
+2018-04-04 01:49:41,415 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:49:42,214 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:49:42,214 INFO  DownloadService - Downloading "https://github.com/vikramkakkar/SublimePicker/archive/master.zip", attempt 3
+2018-04-04 01:50:43,410 DEBUG FullProcessService - Repository https://github.com/vikramkakkar/SublimePicker available: true
+2018-04-04 01:50:43,410 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:50:43,410 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vikramkakkar/SublimePicker, /tmp/rdisk/1953/src]
+2018-04-04 01:51:06,153 INFO  SysUtils - 
+2018-04-04 01:51:06,164 INFO  GitService - Deleted "/tmp/rdisk/1953/src/.git": true
+2018-04-04 01:51:06,176 INFO  FullProcessService - Size of directory with sources: 14 MB
+2018-04-04 01:51:06,176 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1953/src]
+2018-04-04 01:51:06,180 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1953/src/.git/
+
+2018-04-04 01:51:06,189 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1953/src/gradlew
+2018-04-04 01:51:06,198 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1953/src/app/build.gradle /tmp/rdisk/1953/src/sublimepickerlibrary/build.gradle /tmp/rdisk/1953/src/build.gradle
+2018-04-04 01:51:06,207 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1953/src/sublimepickerlibrary/build.gradle /tmp/rdisk/1953/src/settings.gradle /tmp/rdisk/1953/src/build.gradle /tmp/rdisk/1953/src/app/build.gradle
+2018-04-04 01:51:06,209 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-04 01:51:06,547 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-04 01:51:06,547 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-04 01:51:06,685 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-04 01:51:06,685 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-04 01:51:06,685 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:51:06,705 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1953/src/app/local.properties
+2018-04-04 01:51:06,705 INFO  ProjectFixService - Build info for "/tmp/rdisk/1953/src/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-04 01:51:06,705 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1953/src/sublimepickerlibrary/local.properties
+2018-04-04 01:51:06,706 INFO  ProjectFixService - Build info for "/tmp/rdisk/1953/src/sublimepickerlibrary/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-04 01:51:06,706 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1953/src/local.properties
+2018-04-04 01:51:06,706 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-04 01:51:06,706 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-04 01:51:06,707 INFO  ProjectFixService - Build info for "/tmp/rdisk/1953/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-04 01:51:06,707 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:51:06,707 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:51:06,707 INFO  SysUtils - Execute command: [/tmp/rdisk/1953/src/gradlew, -b, /tmp/rdisk/1953/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:51:16,966 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 01:51:16,966 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 01:51:16,966 INFO  SysUtils - Execute command: [/tmp/rdisk/1953/src/gradlew, -b, /tmp/rdisk/1953/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 01:51:24,165 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 01:51:24,165 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in project ':app'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in project ':app'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.766 secs
+
+2018-04-04 01:51:24,165 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-04 01:51:24,165 INFO  SysUtils - Execute command: [/tmp/rdisk/1953/src/gradlew, -b, /tmp/rdisk/1953/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 01:52:09,263 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:sublimepickerlibrary:compileLint
+:sublimepickerlibrary:copyReleaseLint UP-TO-DATE
+:sublimepickerlibrary:preBuild UP-TO-DATE
+:sublimepickerlibrary:preReleaseBuild UP-TO-DATE
+:sublimepickerlibrary:checkReleaseManifest
+:sublimepickerlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:sublimepickerlibrary:preDebugBuild UP-TO-DATE
+:sublimepickerlibrary:preDebugUnitTestBuild UP-TO-DATE
+:sublimepickerlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:sublimepickerlibrary:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:sublimepickerlibrary:prepareComAndroidSupportAppcompatV72321Library
+:sublimepickerlibrary:prepareComAndroidSupportGridlayoutV72321Library
+:sublimepickerlibrary:prepareComAndroidSupportSupportV42321Library
+:sublimepickerlibrary:prepareComAndroidSupportSupportVectorDrawable2321Library
+:sublimepickerlibrary:prepareReleaseDependencies
+:sublimepickerlibrary:compileReleaseAidl
+:sublimepickerlibrary:compileReleaseRenderscript
+:sublimepickerlibrary:generateReleaseBuildConfig
+:sublimepickerlibrary:generateReleaseAssets UP-TO-DATE
+:sublimepickerlibrary:mergeReleaseAssets
+:sublimepickerlibrary:generateReleaseResValues
+:sublimepickerlibrary:generateReleaseResources
+:sublimepickerlibrary:mergeReleaseResources
+:sublimepickerlibrary:processReleaseManifest
+:sublimepickerlibrary:processReleaseResources
+:sublimepickerlibrary:generateReleaseSources
+:sublimepickerlibrary:processReleaseJavaRes UP-TO-DATE
+:sublimepickerlibrary:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1953/src/sublimepickerlibrary/src/main/java/com/appeaser/sublimepickerlibrary/timepicker/SublimeTimePicker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sublimepickerlibrary:extractReleaseAnnotations
+:sublimepickerlibrary:mergeReleaseProguardFiles
+:sublimepickerlibrary:packageReleaseJar
+:sublimepickerlibrary:compileReleaseNdk UP-TO-DATE
+:sublimepickerlibrary:packageReleaseJniLibs UP-TO-DATE
+:sublimepickerlibrary:packageReleaseLocalJar UP-TO-DATE
+:sublimepickerlibrary:packageReleaseRenderscript UP-TO-DATE
+:sublimepickerlibrary:packageReleaseResources
+:sublimepickerlibrary:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:app:prepareComAndroidSupportAppcompatV72321Library
+:app:prepareComAndroidSupportGridlayoutV72321Library
+:app:prepareComAndroidSupportSupportV42321Library
+:app:prepareComAndroidSupportSupportVectorDrawable2321Library
+:app:prepareComAppeaserSublimepickerlibrarySublimepickerlibrary211Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant debug: 26 issues found
+Ran lint on variant release: 26 issues found
+Wrote HTML report to file:/tmp/rdisk/1953/src/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1953/src/app/build/outputs/lint-results.xml
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebugUnitTest
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testReleaseUnitTest
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 44.645 secs
+
+2018-04-04 01:52:09,347 INFO  FullProcessService - Found APK file: /tmp/rdisk/1953/src/app/build/outputs/apk/app-debug.apk

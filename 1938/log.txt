@@ -1,0 +1,10 @@
+2018-05-11 11:46:38,598 INFO  DownloadService - Downloading "https://github.com/contentful/vault/archive/master.zip", attempt 3
+2018-05-11 11:46:39,031 INFO  DownloadService - Downloaded https://github.com/contentful/vault/archive/master.zip, attempt 3
+2018-05-11 11:46:39,032 INFO  DownloadService - Size of file "/tmp/rdisk/1938/master.zip": 187 KB
+2018-05-11 11:46:39,032 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:46:39,032 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1938/master.zip: false
+2018-05-11 11:46:39,032 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-05-11 11:46:39,032 ERROR FullProcessService - Could not find directory with sources
+2018-05-11 11:46:39,032 ERROR FullProcessService - Project will not be processed
+2018-05-11 11:46:39,032 ERROR FullProcessService - Project build has not produced APK file
+2018-05-11 11:46:39,032 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,564 @@
+2018-04-04 14:49:32,609 INFO  DownloadService - Downloading "https://github.com/chemouna/decor/archive/master.zip", attempt 3
+2018-04-04 14:49:33,463 INFO  DownloadService - Downloaded https://github.com/chemouna/decor/archive/master.zip, attempt 3
+2018-04-04 14:49:33,464 INFO  DownloadService - Size of file "/tmp/rdisk/1773/master.zip": 990 KB
+2018-04-04 14:49:33,464 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-04 14:49:33,464 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1773/master.zip: true
+2018-04-04 14:49:33,464 DEBUG ZipUtil - Extracting '/tmp/rdisk/1773/master.zip' into '/tmp/rdisk/1773/src'.
+2018-04-04 14:49:33,485 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 14:49:33,485 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1773/src]
+2018-04-04 14:49:33,494 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1773/src/.git/
+
+2018-04-04 14:49:33,498 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1773/src/Decor-master/gradlew
+2018-04-04 14:49:33,501 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1773/src/Decor-master/decor/build.gradle /tmp/rdisk/1773/src/Decor-master/decorators/build.gradle /tmp/rdisk/1773/src/Decor-master/samples/build.gradle /tmp/rdisk/1773/src/Decor-master/build.gradle
+2018-04-04 14:49:33,505 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1773/src/Decor-master/settings.gradle /tmp/rdisk/1773/src/Decor-master/samples/build.gradle /tmp/rdisk/1773/src/Decor-master/deploy.gradle /tmp/rdisk/1773/src/Decor-master/decorators/build.gradle /tmp/rdisk/1773/src/Decor-master/decor/build.gradle /tmp/rdisk/1773/src/Decor-master/build.gradle
+2018-04-04 14:49:33,505 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 14:49:33,505 INFO  ProjectFixService - Fixing project...
+2018-04-04 14:49:33,516 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1773/src/Decor-master/decor/local.properties
+2018-04-04 14:49:33,519 INFO  ProjectFixService - Build info for "/tmp/rdisk/1773/src/Decor-master/decor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 14:49:33,520 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1773/src/Decor-master/decor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 14:49:33,520 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1773/src/Decor-master/decorators/local.properties
+2018-04-04 14:49:33,523 INFO  ProjectFixService - Build info for "/tmp/rdisk/1773/src/Decor-master/decorators/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 14:49:33,523 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1773/src/Decor-master/decorators/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 14:49:33,524 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1773/src/Decor-master/samples/local.properties
+2018-04-04 14:49:33,527 INFO  ProjectFixService - Build info for "/tmp/rdisk/1773/src/Decor-master/samples/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 14:49:33,527 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1773/src/Decor-master/samples/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 14:49:33,527 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1773/src/Decor-master/local.properties
+2018-04-04 14:49:33,528 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 14:49:33,528 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 14:49:33,531 INFO  ProjectFixService - Build info for "/tmp/rdisk/1773/src/Decor-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-04 14:49:33,531 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1773/src/Decor-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-04 14:49:33,532 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 14:49:33,532 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:49:33,532 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/decor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:49:48,656 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 14:49:48,656 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 14:49:48,656 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 14:49:48,657 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/decor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 14:50:26,687 INFO  SysUtils - Configuration on demand is an incubating feature.
+Build file '/tmp/rdisk/1773/src/Decor-master/build.gradle': line 24
+The has() method has been deprecated and is scheduled to be removed in Gradle 3.0. Please use the hasProperty() or ext.has() method instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:decor:androidJavadocs
+:decor:androidJavadocsJar
+:decor:androidSourcesJar
+:decor:preBuild UP-TO-DATE
+:decor:preDebugBuild UP-TO-DATE
+:decor:compileDebugNdk UP-TO-DATE
+:decor:compileLint
+:decor:copyDebugLint UP-TO-DATE
+:decor:checkDebugManifest
+:decor:preDebugAndroidTestBuild UP-TO-DATE
+:decor:preDebugUnitTestBuild UP-TO-DATE
+:decor:preReleaseBuild UP-TO-DATE
+:decor:preReleaseUnitTestBuild UP-TO-DATE
+:decor:prepareComAndroidSupportAppcompatV72311Library
+:decor:prepareComAndroidSupportSupportV42311Library
+:decor:prepareDebugDependencies
+:decor:compileDebugAidl
+:decor:compileDebugRenderscript
+:decor:generateDebugBuildConfig
+:decor:mergeDebugShaders
+:decor:compileDebugShaders
+:decor:generateDebugAssets
+:decor:mergeDebugAssets
+:decor:generateDebugResValues
+:decor:generateDebugResources
+:decor:mergeDebugResources
+:decor:processDebugManifest
+:decor:processDebugResources
+:decor:generateDebugSources
+:decor:incrementalDebugJavaCompilationSafeguard
+:decor:compileDebugJavaWithJavac
+:decor:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1773/src/Decor-master/decor/src/main/java/com/mounacheikhna/decor/AttrsDecorator.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:decor:extractDebugAnnotations
+:decor:mergeDebugProguardFiles
+:decor:packageDebugRenderscript UP-TO-DATE
+:decor:packageDebugResources
+:decor:processDebugJavaRes UP-TO-DATE
+:decor:transformResourcesWithMergeJavaResForDebug
+:decor:transformClassesAndResourcesWithSyncLibJarsForDebug
+:decor:mergeDebugJniLibFolders
+:decor:transformNative_libsWithMergeJniLibsForDebug
+:decor:transformNative_libsWithSyncJniLibsForDebug
+:decor:bundleDebug
+:decor:compileDebugSources
+:decor:assembleDebug
+:decor:compileReleaseNdk UP-TO-DATE
+:decor:copyReleaseLint UP-TO-DATE
+:decor:checkReleaseManifest
+:decor:prepareReleaseDependencies
+:decor:compileReleaseAidl
+:decor:compileReleaseRenderscript
+:decor:generateReleaseBuildConfig
+:decor:mergeReleaseShaders
+:decor:compileReleaseShaders
+:decor:generateReleaseAssets
+:decor:mergeReleaseAssets
+:decor:generateReleaseResValues
+:decor:generateReleaseResources
+:decor:mergeReleaseResources
+:decor:processReleaseManifest
+:decor:processReleaseResources
+:decor:generateReleaseSources
+:decor:incrementalReleaseJavaCompilationSafeguard
+:decor:compileReleaseJavaWithJavac
+:decor:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1773/src/Decor-master/decor/src/main/java/com/mounacheikhna/decor/AttrsDecorator.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:decor:extractReleaseAnnotations
+:decor:mergeReleaseProguardFiles
+:decor:packageReleaseRenderscript UP-TO-DATE
+:decor:packageReleaseResources
+:decor:processReleaseJavaRes UP-TO-DATE
+:decor:transformResourcesWithMergeJavaResForRelease
+:decor:transformClassesAndResourcesWithSyncLibJarsForRelease
+:decor:mergeReleaseJniLibFolders
+:decor:transformNative_libsWithMergeJniLibsForRelease
+:decor:transformNative_libsWithSyncJniLibsForRelease
+:decor:bundleRelease
+:decor:compileReleaseSources
+:decor:assembleRelease
+:decor:signArchives SKIPPED
+:decor:assemble
+:decor:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/1773/src/Decor-master/decor/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1773/src/Decor-master/decor/build/outputs/lint-results-debug.xml
+:decor:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:decor:prepareDebugUnitTestDependencies
+:decor:compileDebugUnitTestJavaWithJavac
+:decor:compileDebugUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:decor:processDebugUnitTestJavaRes UP-TO-DATE
+:decor:compileDebugUnitTestSources
+:decor:mockableAndroidJar
+:decor:assembleDebugUnitTest
+:decor:testDebugUnitTest
+:decor:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:decor:prepareReleaseUnitTestDependencies
+:decor:compileReleaseUnitTestJavaWithJavac
+:decor:compileReleaseUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:decor:processReleaseUnitTestJavaRes UP-TO-DATE
+:decor:compileReleaseUnitTestSources
+:decor:assembleReleaseUnitTest
+:decor:testReleaseUnitTest
+:decor:test
+:decor:check
+:decor:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.607 secs
+
+2018-04-04 14:50:26,733 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:50:26,733 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/decorators/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:50:34,885 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 14:50:34,886 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 14:50:34,886 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 14:50:34,886 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/decorators/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 14:51:01,076 INFO  SysUtils - Configuration on demand is an incubating feature.
+Build file '/tmp/rdisk/1773/src/Decor-master/build.gradle': line 24
+The has() method has been deprecated and is scheduled to be removed in Gradle 3.0. Please use the hasProperty() or ext.has() method instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:decorators:androidJavadocs/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ShimmerDecorator.java:6: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ShimmerDecorator.java:11: error: cannot find symbol
+public class ShimmerDecorator extends AttrsDecorator<TextView> {
+                                      ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/SearchAnimateDecorator.java:12: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/SearchAnimateDecorator.java:18: error: cannot find symbol
+public class SearchAnimateDecorator extends AttrsDecorator<ImageView> {
+                                            ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ReloadTextDecorator.java:5: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ReloadTextDecorator.java:10: error: cannot find symbol
+public class ReloadTextDecorator extends AttrsDecorator<TextView> {
+                                         ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/OnActionBaseDecorator.java:6: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/OnActionBaseDecorator.java:15: error: cannot find symbol
+public abstract class OnActionBaseDecorator extends AttrsDecorator<View> {
+                                                    ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/FontDecorator.java:7: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/FontDecorator.java:10: error: cannot find symbol
+public class FontDecorator extends AttrsDecorator<TextView> {
+                                   ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ErrorDecorator.java:7: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ErrorDecorator.java:12: error: cannot find symbol
+public class ErrorDecorator extends AttrsDecorator<EditText> {
+                                    ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/Decorators.java:3: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.Decorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/Decorators.java:18: error: cannot find symbol
+    public static Decorator[] getAll() {
+                  ^
+  symbol:   class Decorator
+  location: class Decorators
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ColorFilterDecorator.java:6: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/ColorFilterDecorator.java:12: error: cannot find symbol
+public class ColorFilterDecorator extends AttrsDecorator<ImageView> {
+                                          ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/BlurDecorator.java:10: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/BlurDecorator.java:16: error: cannot find symbol
+public class BlurDecorator extends AttrsDecorator<View> {
+                                   ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/AutofitDecorator.java:18: error: package com.mounacheikhna.decor does not exist
+import com.mounacheikhna.decor.AttrsDecorator;
+                              ^
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/AutofitDecorator.java:24: error: cannot find symbol
+public class AutofitDecorator extends AttrsDecorator<TextView> {
+                                      ^
+  symbol: class AttrsDecorator
+/tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/AutofitDecorator.java:88: warning: no @param for sizeToFit
+    public void setSizeToFit(boolean sizeToFit) {
+                ^
+
+21 warnings
+:decorators:androidJavadocsJar
+:decorators:androidSourcesJar
+:decorators:preBuild UP-TO-DATE
+:decorators:preDebugBuild UP-TO-DATE
+:decorators:compileDebugNdk UP-TO-DATE
+:decorators:compileLint
+:decorators:copyDebugLint UP-TO-DATE
+:decor:preBuild UP-TO-DATE
+:decor:preReleaseBuild UP-TO-DATE
+:decor:compileReleaseNdk UP-TO-DATE
+:decor:compileLint
+:decor:copyReleaseLint UP-TO-DATE
+:decor:checkReleaseManifest
+:decor:preDebugAndroidTestBuild UP-TO-DATE
+:decor:preDebugBuild UP-TO-DATE
+:decor:preDebugUnitTestBuild UP-TO-DATE
+:decor:preReleaseUnitTestBuild UP-TO-DATE
+:decor:prepareComAndroidSupportAppcompatV72311Library UP-TO-DATE
+:decor:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:decor:prepareReleaseDependencies
+:decor:compileReleaseAidl UP-TO-DATE
+:decor:compileReleaseRenderscript UP-TO-DATE
+:decor:generateReleaseBuildConfig UP-TO-DATE
+:decor:mergeReleaseShaders UP-TO-DATE
+:decor:compileReleaseShaders UP-TO-DATE
+:decor:generateReleaseAssets UP-TO-DATE
+:decor:mergeReleaseAssets UP-TO-DATE
+:decor:generateReleaseResValues UP-TO-DATE
+:decor:generateReleaseResources UP-TO-DATE
+:decor:mergeReleaseResources UP-TO-DATE
+:decor:processReleaseManifest UP-TO-DATE
+:decor:processReleaseResources UP-TO-DATE
+:decor:generateReleaseSources UP-TO-DATE
+:decor:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:decor:compileReleaseJavaWithJavac UP-TO-DATE
+:decor:extractReleaseAnnotations UP-TO-DATE
+:decor:mergeReleaseProguardFiles UP-TO-DATE
+:decor:packageReleaseRenderscript UP-TO-DATE
+:decor:packageReleaseResources UP-TO-DATE
+:decor:processReleaseJavaRes UP-TO-DATE
+:decor:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:decor:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:decor:mergeReleaseJniLibFolders UP-TO-DATE
+:decor:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:decor:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:decor:bundleRelease UP-TO-DATE
+:decorators:checkDebugManifest
+:decorators:preDebugAndroidTestBuild UP-TO-DATE
+:decorators:preDebugUnitTestBuild UP-TO-DATE
+:decorators:preReleaseBuild UP-TO-DATE
+:decorators:preReleaseUnitTestBuild UP-TO-DATE
+:decorators:prepareComAndroidSupportAppcompatV72311Library
+:decorators:prepareComAndroidSupportPaletteV72311Library
+:decorators:prepareComAndroidSupportSupportV42311Library
+:decorators:prepareComMounacheikhnaDecor024Library
+:decorators:prepareDebugDependencies
+:decorators:compileDebugAidl
+:decorators:compileDebugRenderscript
+:decorators:generateDebugBuildConfig
+:decorators:mergeDebugShaders
+:decorators:compileDebugShaders
+:decorators:generateDebugAssets
+:decorators:mergeDebugAssets
+:decorators:generateDebugResValues
+:decorators:generateDebugResources
+:decorators:mergeDebugResources
+:decorators:processDebugManifest
+:decorators:processDebugResources
+:decorators:generateDebugSources
+:decorators:incrementalDebugJavaCompilationSafeguard
+:decorators:compileDebugJavaWithJavac
+:decorators:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/SearchAnimateDecorator.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:decorators:extractDebugAnnotations
+:decorators:mergeDebugProguardFiles
+:decorators:packageDebugRenderscript UP-TO-DATE
+:decorators:packageDebugResources
+:decorators:processDebugJavaRes UP-TO-DATE
+:decorators:transformResourcesWithMergeJavaResForDebug
+:decorators:transformClassesAndResourcesWithSyncLibJarsForDebug
+:decorators:mergeDebugJniLibFolders
+:decorators:transformNative_libsWithMergeJniLibsForDebug
+:decorators:transformNative_libsWithSyncJniLibsForDebug
+:decorators:bundleDebug
+:decorators:compileDebugSources
+:decorators:assembleDebug
+:decorators:compileReleaseNdk UP-TO-DATE
+:decorators:copyReleaseLint UP-TO-DATE
+:decorators:checkReleaseManifest
+:decorators:prepareReleaseDependencies
+:decorators:compileReleaseAidl
+:decorators:compileReleaseRenderscript
+:decorators:generateReleaseBuildConfig
+:decorators:mergeReleaseShaders
+:decorators:compileReleaseShaders
+:decorators:generateReleaseAssets
+:decorators:mergeReleaseAssets
+:decorators:generateReleaseResValues
+:decorators:generateReleaseResources
+:decorators:mergeReleaseResources
+:decorators:processReleaseManifest
+:decorators:processReleaseResources
+:decorators:generateReleaseSources
+:decorators:incrementalReleaseJavaCompilationSafeguard
+:decorators:compileReleaseJavaWithJavac
+:decorators:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1773/src/Decor-master/decorators/src/main/java/com/mounacheikhna/decorators/SearchAnimateDecorator.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:decorators:extractReleaseAnnotations
+:decorators:mergeReleaseProguardFiles
+:decorators:packageReleaseRenderscript UP-TO-DATE
+:decorators:packageReleaseResources
+:decorators:processReleaseJavaRes UP-TO-DATE
+:decorators:transformResourcesWithMergeJavaResForRelease
+:decorators:transformClassesAndResourcesWithSyncLibJarsForRelease
+:decorators:mergeReleaseJniLibFolders
+:decorators:transformNative_libsWithMergeJniLibsForRelease
+:decorators:transformNative_libsWithSyncJniLibsForRelease
+:decorators:bundleRelease
+:decorators:compileReleaseSources
+:decorators:assembleRelease
+:decorators:signArchives SKIPPED
+:decorators:assemble
+:decorators:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:///tmp/rdisk/1773/src/Decor-master/decorators/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1773/src/Decor-master/decorators/build/outputs/lint-results-debug.xml
+:decorators:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:decorators:prepareDebugUnitTestDependencies
+:decorators:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:decorators:processDebugUnitTestJavaRes UP-TO-DATE
+:decorators:compileDebugUnitTestSources UP-TO-DATE
+:decorators:mockableAndroidJar
+:decorators:assembleDebugUnitTest
+:decorators:testDebugUnitTest
+:decorators:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:decorators:prepareReleaseUnitTestDependencies
+:decorators:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:decorators:processReleaseUnitTestJavaRes UP-TO-DATE
+:decorators:compileReleaseUnitTestSources UP-TO-DATE
+:decorators:assembleReleaseUnitTest
+:decorators:testReleaseUnitTest
+:decorators:test
+:decorators:check
+:decorators:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.731 secs
+
+2018-04-04 14:51:01,168 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 14:51:01,168 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 14:51:09,085 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-04 14:51:09,085 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 14:51:09,085 INFO  SysUtils - Execute command: [/tmp/rdisk/1773/src/Decor-master/gradlew, -b, /tmp/rdisk/1773/src/Decor-master/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 14:51:36,457 INFO  SysUtils - Configuration on demand is an incubating feature.
+Build file '/tmp/rdisk/1773/src/Decor-master/build.gradle': line 24
+The has() method has been deprecated and is scheduled to be removed in Gradle 3.0. Please use the hasProperty() or ext.has() method instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:decor:preBuild UP-TO-DATE
+:decor:preReleaseBuild UP-TO-DATE
+:decor:compileReleaseNdk UP-TO-DATE
+:decor:compileLint
+:decor:copyReleaseLint UP-TO-DATE
+:decor:checkReleaseManifest
+:decor:preDebugAndroidTestBuild UP-TO-DATE
+:decor:preDebugBuild UP-TO-DATE
+:decor:preDebugUnitTestBuild UP-TO-DATE
+:decor:preReleaseUnitTestBuild UP-TO-DATE
+:decor:prepareComAndroidSupportAppcompatV72311Library UP-TO-DATE
+:decor:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:decor:prepareReleaseDependencies
+:decor:compileReleaseAidl UP-TO-DATE
+:decor:compileReleaseRenderscript UP-TO-DATE
+:decor:generateReleaseBuildConfig UP-TO-DATE
+:decor:mergeReleaseShaders UP-TO-DATE
+:decor:compileReleaseShaders UP-TO-DATE
+:decor:generateReleaseAssets UP-TO-DATE
+:decor:mergeReleaseAssets UP-TO-DATE
+:decor:generateReleaseResValues UP-TO-DATE
+:decor:generateReleaseResources UP-TO-DATE
+:decor:mergeReleaseResources UP-TO-DATE
+:decor:processReleaseManifest UP-TO-DATE
+:decor:processReleaseResources UP-TO-DATE
+:decor:generateReleaseSources UP-TO-DATE
+:decor:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:decor:compileReleaseJavaWithJavac UP-TO-DATE
+:decor:extractReleaseAnnotations UP-TO-DATE
+:decor:mergeReleaseProguardFiles UP-TO-DATE
+:decor:packageReleaseRenderscript UP-TO-DATE
+:decor:packageReleaseResources UP-TO-DATE
+:decor:processReleaseJavaRes UP-TO-DATE
+:decor:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:decor:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:decor:mergeReleaseJniLibFolders UP-TO-DATE
+:decor:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:decor:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:decor:bundleRelease UP-TO-DATE
+:decorators:preBuild UP-TO-DATE
+:decorators:preReleaseBuild UP-TO-DATE
+:decorators:compileReleaseNdk UP-TO-DATE
+:decorators:compileLint
+:decorators:copyReleaseLint UP-TO-DATE
+:decorators:checkReleaseManifest
+:decorators:preDebugAndroidTestBuild UP-TO-DATE
+:decorators:preDebugBuild UP-TO-DATE
+:decorators:preDebugUnitTestBuild UP-TO-DATE
+:decorators:preReleaseUnitTestBuild UP-TO-DATE
+:decorators:prepareComAndroidSupportAppcompatV72311Library UP-TO-DATE
+:decorators:prepareComAndroidSupportPaletteV72311Library UP-TO-DATE
+:decorators:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:decorators:prepareComMounacheikhnaDecor024Library UP-TO-DATE
+:decorators:prepareReleaseDependencies
+:decorators:compileReleaseAidl UP-TO-DATE
+:decorators:compileReleaseRenderscript UP-TO-DATE
+:decorators:generateReleaseBuildConfig UP-TO-DATE
+:decorators:mergeReleaseShaders UP-TO-DATE
+:decorators:compileReleaseShaders UP-TO-DATE
+:decorators:generateReleaseAssets UP-TO-DATE
+:decorators:mergeReleaseAssets UP-TO-DATE
+:decorators:generateReleaseResValues UP-TO-DATE
+:decorators:generateReleaseResources UP-TO-DATE
+:decorators:mergeReleaseResources UP-TO-DATE
+:decorators:processReleaseManifest UP-TO-DATE
+:decorators:processReleaseResources UP-TO-DATE
+:decorators:generateReleaseSources UP-TO-DATE
+:decorators:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:decorators:compileReleaseJavaWithJavac UP-TO-DATE
+:decorators:extractReleaseAnnotations UP-TO-DATE
+:decorators:mergeReleaseProguardFiles UP-TO-DATE
+:decorators:packageReleaseRenderscript UP-TO-DATE
+:decorators:packageReleaseResources UP-TO-DATE
+:decorators:processReleaseJavaRes UP-TO-DATE
+:decorators:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:decorators:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:decorators:mergeReleaseJniLibFolders UP-TO-DATE
+:decorators:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:decorators:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:decorators:bundleRelease UP-TO-DATE
+:samples:preBuild UP-TO-DATE
+:samples:preDebugBuild UP-TO-DATE
+:samples:checkDebugManifest
+:samples:preReleaseBuild UP-TO-DATE
+:samples:prepareComAndroidSupportAppcompatV72311Library
+:samples:prepareComAndroidSupportPaletteV72311Library
+:samples:prepareComAndroidSupportSupportV42311Library
+:samples:prepareComMounacheikhnaDecor024Library
+:samples:prepareComMounacheikhnaDecorators024Library
+:samples:prepareDebugDependencies
+:samples:compileDebugAidl
+:samples:compileDebugRenderscript
+:samples:generateDebugBuildConfig
+:samples:mergeDebugShaders
+:samples:compileDebugShaders
+:samples:generateDebugAssets
+:samples:mergeDebugAssets
+:samples:generateDebugResValues
+:samples:generateDebugResources
+:samples:mergeDebugResources
+:samples:processDebugManifest
+:samples:processDebugResources
+:samples:generateDebugSources
+:samples:incrementalDebugJavaCompilationSafeguard
+:samples:compileDebugJavaWithJavac
+:samples:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:samples:compileDebugNdk UP-TO-DATE
+:samples:compileDebugSources
+:samples:prePackageMarkerForDebug
+:samples:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:samples:mergeDebugJniLibFolders
+:samples:transformNative_libsWithMergeJniLibsForDebug
+:samples:processDebugJavaRes UP-TO-DATE
+:samples:transformResourcesWithMergeJavaResForDebug
+:samples:validateDebugSigning
+:samples:packageDebug
+:samples:zipalignDebug
+:samples:assembleDebug
+:samples:checkReleaseManifest
+:samples:prepareReleaseDependencies
+:samples:compileReleaseAidl
+:samples:compileReleaseRenderscript
+:samples:generateReleaseBuildConfig
+:samples:mergeReleaseShaders
+:samples:compileReleaseShaders
+:samples:generateReleaseAssets
+:samples:mergeReleaseAssets
+:samples:generateReleaseResValues
+:samples:generateReleaseResources
+:samples:mergeReleaseResources
+:samples:processReleaseManifest
+:samples:processReleaseResources
+:samples:generateReleaseSources
+:samples:incrementalReleaseJavaCompilationSafeguard
+:samples:compileReleaseJavaWithJavac
+:samples:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:samples:compileReleaseNdk UP-TO-DATE
+:samples:compileReleaseSources
+:samples:lintVitalRelease
+:samples:prePackageMarkerForRelease
+:samples:transformClassesWithDexForRelease
+:samples:mergeReleaseJniLibFolders
+:samples:transformNative_libsWithMergeJniLibsForRelease
+:samples:processReleaseJavaRes UP-TO-DATE
+:samples:transformResourcesWithMergeJavaResForRelease
+:samples:packageRelease
+:samples:assembleRelease
+:samples:assemble
+:samples:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.913 secs
+
+2018-04-04 14:51:36,586 INFO  FullProcessService - Found APK file: /tmp/rdisk/1773/src/Decor-master/samples/build/outputs/apk/samples-release-unsigned.apk

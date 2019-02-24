@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.yalantis.guillotine.sample",
+    "label" : "Guillotine",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFTElEQVRo3u2aSWxUdRzHP2+b6bxpZzpbO20ppbS2UChbJCpKQENEESMhYtRgOHgyMYaLV0PExLOJISFojMajmAYkHJoqYqF7S/d2wG5IO907S9tZ3szzMIhBDHSZliH0d3x5b97v8/7f35oRdF3nSTaRJ9zWAB63yf+9sKF0G8AO4CSQnyJ+DgNfA3UDvW0PBwDKgZYU/NjHgeeA+kdJ6HQKK+bUQmIgO4UBMh8ZA8D8ojOBKBKPxxkcGgEtBKKB/PU5KIpMPK4jSSJDt71E54OAiDsvB7NZRdO0xb5qfiEAi65soXAEs5rGhyeOoGMkEp7ht6stRKIakiji8wU58Mrz5LjzkGWBppY2BgeHMZtNyc9CS7FYLMbYxDRffv4JrqxyQGPvgUPU1bfjsFuZD4X59sxn5OTuBHRePngInz+YFICk1AE1zYh/dJTzFVX3vsvunWVEA378wTlKitfjznYC0NFxhfrGDlxOW+oUMh1AUGho6gRiAOzYvgkQmZsJsLWsGEFyA1Bd08rc1BQGg5JaldjsyKS+qYNo+DYAu3eVke5yQGyWss1FgALotNzoAUEiWU1k0gBs1nR6Pf20tvUAUFJSSHFhHhBje3kJAHHtDo3NnZjs1tTrhWRZJhrwU13TCoAk57KptBBQKN9SlNB/Zy+dPX3YrRmpB6DrOshGahvagSggsXHDOjKycliXvw6A63XthGdmUBQ59QAArE4bjS1dzAb6AHimeD37X9oFuIA4tQ1tIMokc4ZKKoAl3Uzfn0M0NHcDsLm0kLfe2A9IRMJDNDV3k+6wJfOVyQWQJBE9NMe1mhuJVLqtlHePvQ5Aa1sPvTcHyLSYUwdAkiT8/iDDI14ikSiiKILRRGNzFzCP0ZSBOcMCwLXaNqIBH0ajgXA4wvCIl0BgFkmSHg+ArMiMjU1it6Wzb+8e5uZDBAOzOJx2Wjs8+H39QBroUSBKQ1MHgpKG3x8kHI6wb+8eLBaV8fFJZFlefYCJ8SkK8nOouvwDlZcq+ObMKebnQxgUmf5bQ1yv7QAyQFCJhP+ird2DopqIhKN8f+4LKi9VUPnLd+TmZDE5ObP6AL4xL+8cO0hBwQ4gxttHT7BpcxE+fxCiEapr/hnqrNTWtdHjGSAei7G1vIQ3D78PaBQXP8vRIweYGR1dfYB0h4sLF68wPd0HSFT9+jM3e/uxWNJBUvB6JwANEBnxTqCFwtjtVrq7blFdfRGQGR/3cOnyVSwu5+q309nZLrp7+3j54HsUF5Xyx7U6JEVCTTMCYDQa7t1rNBpAllBNRvxRjWPHP+XFF36ix9PFwIAXt9u1lOFmeQCapuHOcdHX76W13UOWKwtrpoWYFnvI3BDHZrPgD8xyvuIClgwr2W7nkp1f9kAT02LY7Vbsd5uzhzn/L3gM1ZRGwfr8BT+ztpl7+gB0HUkU7ylUUWRYoS34igEIgnDf2oUV2uLLK/GjuQW5VP1ez6uHjwACfr+P3LzsBMiTAGBS0xifmMbj6UNHR1XNuJw2tGVmnKQCSCKENRj1J9Qh3J9gASOoiU3EHDA48aDzsTg408FigqWyLRkgFAWzAV7bkgik+BI0LsvQPw6jATDKqwwwNQcbnXDxIx1k0COLe14QABucPCfwVSUUZK0ygK6DKCSUgnLXoUURJMYFWWRZGWrJAHY1cfQfnBUQhYSeF3sCBhna70CW7TEAmAwQDMOPdfxfFC/M4uCwgE2FaBKDWF1QIxdPHH+BY/mpcBHOmxZSiSdSuPUJLATgVAoDnF6IhJqAPcDHgDtFHB8DzgLVDySDtf9KrAE85QB/AwVD6l+xbPq2AAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1678,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.2\" package=\"com.yalantis.guillotine.sample\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"24\" />\n\t<application android:theme=\"resourceId:0x7f08008e\" android:label=\"Guillotine\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.yalantis.guillotine.sample.App\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.yalantis.guillotine.sample.activity.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2889277,
+  "crc32" : 1116947875,
+  "sha256" : "9ab5c68524e76dc402e8e9e4fbcf814173ade2525aaf2274a7bfe76f482e4401",
+  "buildTime" : 1526038931000
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.example.leakcanary",
+    "label" : null,
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAE00lEQVR4Ae2ZA3AsaRCAV3HOvottW4+FZ9u2bSs427btwtm2EScbe9J93Xv7701NTaX2Fi+zVW+qvvonmP77m+6xzo7FYMGFy8GDBzmennDzIks8JyfngqKiopCSkpJgRxg6dGhQQUFBKHGxNaQeEfVuTz4zM9O/sLDwRqKKqCfqePy/FBcX19EOqJ8yZYr58OHDOzn2tGnTjCzhVgGa/GYCnYWqgCSAkydPxvLycjxy5MgOjk+VMblcgveMaBsqeQ0nQGMPjZKjkIBEAtLEiRN7y8rKsKKiAg8dOrTNLZXgvcJjWlpaNCVuZgFCso7Ao8q6EhAjQwJAAkACWFpaKhGWShw4cGC7XMIdAo3WRPoIkCdmhwAoBSZMmACcPEucOnUKuRpCQrST+yugLiJQlZRVgAUYPHnypKiESjtpr4VQVgELXAFCIlTbyd0CYkR7JJQVUErQumo7uVPALpQtNG7cOJQlL0ZuJ1sl9u/fr2gnFwoUFRVCxYlw/PtbH+yp1WFvnTrdNXrs+g/orjVidy2PJuhtnox9bRuhr3UFmCvXwmsv74GyslIW6xenWHGdoEXPuEzg6lPh0N+oQwcAMBsQm2hsOh+klokgtS0B6FgC/e1L4LWXdsCJEycslSCQq7F79+5t4t7JVQK854WAUxJUPWirvAxb/g6mMQh++SICxo8fzyDRy9eLSZMmNaekpARZ0zK6QoDbQQg4LcHr9T/rsOYHHVR+p4fc3FyBlJeXh1lZWU2xsbEp1rRMGhFgOHk9SRhAajBB0+8+UPWDH9ANn6CPDnqesykyMjJJiwIM8MiVoIMe/v5Wjzk5ObYKEJYKREREJLtN4NF7LsXjByMdhbe3xAKzDtor/20hksDTJrB9U7wzt9i8vagEn2KR5mIJFMeApwgwQHFtFz1KXgiIY0DzAigXIDxfgMfs7GzRQp4nwI+fVAVzVFRUoqdWQAgkiJw8WsCTKnBG4IzAiOH5uHBeKq5fnYjzZqfhcPrZEwT4aQ1PHIrE2p+8bIkx5t+M/CCEQ4cWaFvggTsuFwmp8uGb5+DYMTnaFDi4JwalBnnC6nz/kT9OmpClLYGThyOxvdJgS+aPr3xwycJUrPreW1Xip0/9ceSIvMEX2LE5Hu+6KUh1z//2he9AFeHtBl9g385YOjjD8O1XzsO2v0UF7KOjyoCnjkRq5xgYMzoHW/8y2i3wxTuBuHdHrHYEmDefu8Ce5PlA5rOR9k6jc2elY2e1fsDkK7/zxulTMzVxFgKlALNne6zq2YcTvPeWK8QpVCkAg1IBfqug9rah9EgE3nZdMN5DCXPST95/Cf3vZWpvJSzJD0YFBMijk4gKgLsEGmVBeSJl4ugkoGghRgg0OvVERi9WYwdqITcJiLkcfyYWn1lp4yASqJN/ZqW30xJdYV0Ox+X4DM/FD/X0gqv+4osvjhRvpx350O2bkZHxCAVEDshcUxrB7zNdDsfl+AKeMzU19UnOgXNx9Eu90dvbO4Fa6emcnJwG2iNN+fl55mMHwpq+/cC7qe4nXVP9z47D23/zvncTxaO4uU3cMjwHz5WUlPQszZ3EOTgqICT8iLBzzjlnxIUXXjieGEOMlTGORwdRbsuxxwcGBg7nOXluRfIOS3gRAcTZpwmey8ue5P8BMoUs9FXxrY0AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 13,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.example.leakcanary\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<application android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.example.leakcanary.ExampleApplication\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"LeakCanary Sample\" android:name=\"com.example.leakcanary.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 20680,
+  "crc32" : 3355122919,
+  "sha256" : "3522bd39624830faf8ba96defca470e2b9dfe554b519973a37faf1801876e292",
+  "buildTime" : 1526039867000
+}

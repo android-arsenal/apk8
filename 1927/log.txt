@@ -1,0 +1,1877 @@
+2018-04-04 03:04:07,175 INFO  DownloadService - Downloading "https://github.com/richardradics/RxAndroidBootstrap/archive/master.zip", attempt 3
+2018-04-04 03:05:07,624 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 03:05:08,314 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 03:05:08,314 INFO  DownloadService - Downloading "https://github.com/richardradics/RxAndroidBootstrap/archive/master.zip", attempt 3
+2018-04-04 03:06:09,542 DEBUG FullProcessService - Repository https://github.com/richardradics/RxAndroidBootstrap available: true
+2018-04-04 03:06:09,542 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 03:06:09,542 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/richardradics/RxAndroidBootstrap, /tmp/rdisk/1927/src]
+2018-04-04 03:06:17,849 INFO  SysUtils - 
+2018-04-04 03:06:17,857 INFO  GitService - Deleted "/tmp/rdisk/1927/src/.git": true
+2018-04-04 03:06:17,869 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-04 03:06:17,869 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1927/src]
+2018-04-04 03:06:17,874 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1927/src/.git/
+
+2018-04-04 03:06:17,882 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1927/src/gradlew
+2018-04-04 03:06:17,890 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1927/src/app/build.gradle /tmp/rdisk/1927/src/commons/build.gradle /tmp/rdisk/1927/src/core/build.gradle /tmp/rdisk/1927/src/build.gradle
+2018-04-04 03:06:17,899 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1927/src/settings.gradle /tmp/rdisk/1927/src/core/build.gradle /tmp/rdisk/1927/src/commons/build.gradle /tmp/rdisk/1927/src/build.gradle /tmp/rdisk/1927/src/app/build.gradle
+2018-04-04 03:06:17,899 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 03:06:17,899 INFO  ProjectFixService - Fixing project...
+2018-04-04 03:06:17,919 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1927/src/app/local.properties
+2018-04-04 03:06:17,922 INFO  ProjectFixService - Build info for "/tmp/rdisk/1927/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 03:06:17,923 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1927/src/commons/local.properties
+2018-04-04 03:06:17,925 INFO  ProjectFixService - Build info for "/tmp/rdisk/1927/src/commons/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 03:06:17,925 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1927/src/core/local.properties
+2018-04-04 03:06:17,927 INFO  ProjectFixService - Build info for "/tmp/rdisk/1927/src/core/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 03:06:17,927 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1927/src/local.properties
+2018-04-04 03:06:17,928 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-04 03:06:17,929 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-04 03:06:17,929 INFO  ProjectFixService - Build info for "/tmp/rdisk/1927/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-04 03:06:17,929 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 03:06:17,929 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:06:17,929 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:06:42,326 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 03:06:42,326 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 03:06:42,326 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 03:07:11,196 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 03:07:11,197 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:commons:compileLint
+:commons:copyReleaseLint UP-TO-DATE
+:commons:preBuild UP-TO-DATE
+:commons:preReleaseBuild UP-TO-DATE
+:commons:checkReleaseManifest
+:commons:preDebugAndroidTestBuild UP-TO-DATE
+:commons:preDebugBuild UP-TO-DATE
+:commons:preDebugUnitTestBuild UP-TO-DATE
+:commons:preReleaseUnitTestBuild UP-TO-DATE
+:commons:prepareComAndroidSupportAppcompatV72220Library
+:commons:prepareComAndroidSupportSupportV42220Library
+:commons:prepareComBalysvMaterialRipple101Library
+:commons:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:commons:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:commons:prepareReleaseDependencies
+:commons:compileReleaseAidl
+:commons:compileReleaseRenderscript
+:commons:generateReleaseBuildConfig
+:commons:generateReleaseAssets UP-TO-DATE
+:commons:mergeReleaseAssets
+:commons:generateReleaseResValues
+:commons:generateReleaseResources
+:commons:mergeReleaseResources
+:commons:processReleaseManifest
+:commons:processReleaseResources
+:commons:generateReleaseSources
+:commons:processReleaseJavaRes UP-TO-DATE
+:commons:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:commons:extractReleaseAnnotations
+:commons:mergeReleaseProguardFiles
+:commons:packageReleaseJar
+:commons:compileReleaseNdk UP-TO-DATE
+:commons:packageReleaseJniLibs UP-TO-DATE
+:commons:packageReleaseLocalJar UP-TO-DATE
+:commons:packageReleaseRenderscript UP-TO-DATE
+:commons:packageReleaseResources
+:commons:bundleRelease
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:commons:copyDebugLint UP-TO-DATE
+:commons:checkDebugManifest
+:commons:prepareDebugDependencies
+:commons:compileDebugAidl
+:commons:compileDebugRenderscript
+:commons:generateDebugBuildConfig
+:commons:generateDebugAssets UP-TO-DATE
+:commons:mergeDebugAssets
+:commons:generateDebugResValues
+:commons:generateDebugResources
+:commons:mergeDebugResources
+:commons:processDebugManifest
+:commons:processDebugResources
+:commons:generateDebugSources
+:commons:processDebugJavaRes UP-TO-DATE
+:commons:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:commons:extractDebugAnnotations
+:commons:mergeDebugProguardFiles
+:commons:packageDebugJar
+:commons:compileDebugNdk UP-TO-DATE
+:commons:packageDebugJniLibs UP-TO-DATE
+:commons:packageDebugLocalJar UP-TO-DATE
+:commons:packageDebugRenderscript UP-TO-DATE
+:commons:packageDebugResources
+:commons:bundleDebug
+:core:preBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:preDebugAndroidTestBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareComAndroidSupportAppcompatV72220Library
+:core:prepareComAndroidSupportDesign2220Library
+:core:prepareComAndroidSupportSupportV42220Library
+:core:prepareComBalysvMaterialRipple101Library
+:core:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:core:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:core:prepareSrcCommonsUnspecifiedLibrary
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl
+:core:compileReleaseRenderscript
+:core:generateReleaseBuildConfig
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:mergeReleaseResources
+:core:processReleaseManifest
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJavaNote: /tmp/rdisk/1927/src/core/src/main/java/com/richardradics/core/app/CoreBaseActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:compileRetrolambdaRelease
+:core:extractReleaseAnnotations
+:core:mergeReleaseProguardFiles
+:core:packageReleaseJar
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources
+:core:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportCardviewV72220Library
+:app:prepareComAndroidSupportDesign2220Library
+:app:prepareComAndroidSupportPaletteV72220Library
+:app:prepareComAndroidSupportRecyclerviewV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComBalysvMaterialRipple101Library
+:app:prepareComGithubKsoichiroAndroidObservablescrollview150Library
+:app:prepareComJakewhartonHugoHugoRuntime121Library
+:app:prepareComJoanzapataPdfviewAndroidPdfview104Library
+:app:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library
+:app:prepareSrcCommonsUnspecifiedLibrary
+:app:prepareSrcCoreUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_default_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/ic_chooser.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:core:copyDebugLint UP-TO-DATE
+:core:checkDebugManifest
+:core:prepareComJakewhartonHugoHugoRuntime121Library
+:core:prepareDebugDependencies
+:core:compileDebugAidl
+:core:compileDebugRenderscript
+:core:generateDebugBuildConfig
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets
+:core:generateDebugResValues
+:core:generateDebugResources
+:core:mergeDebugResources
+:core:processDebugManifest
+:core:processDebugResources
+:core:generateDebugSources
+:core:processDebugJavaRes UP-TO-DATE
+:core:compileDebugJavaNote: /tmp/rdisk/1927/src/core/src/main/java/com/richardradics/core/app/CoreBaseActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:core:compileRetrolambdaDebug
+:core:extractDebugAnnotations
+:core:mergeDebugProguardFiles
+:core:packageDebugJar
+:core:compileDebugNdk UP-TO-DATE
+:core:packageDebugJniLibs UP-TO-DATE
+:core:packageDebugLocalJar UP-TO-DATE
+:core:packageDebugRenderscript UP-TO-DATE
+:core:packageDebugResources
+:core:bundleDebug
+:app:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+advice defined in hugo.weaving.internal.Hugo has not been applied [Xlint:adviceDidNotMatch]
+:app:compileRetrolambdaDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileRetrolambdaDebug'.
+> Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileRetrolambdaDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultJavaExecAction.execute(DefaultJavaExecAction.java:31)
+	at org.gradle.api.internal.file.DefaultFileOperations.javaexec(DefaultFileOperations.java:148)
+	at org.gradle.api.internal.project.AbstractProject.javaexec(AbstractProject.java:779)
+	at org.gradle.api.internal.project.AbstractProject.javaexec(AbstractProject.java:775)
+	at org.gradle.api.Project$javaexec$11.call(Unknown Source)
+	at me.tatarka.RetrolambdaTask.execute(RetrolambdaTask.groovy:69)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 28.439 secs
+
+2018-04-04 03:07:11,328 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:07:11,328 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/commons/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:07:19,548 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 03:07:19,548 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 03:07:19,549 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 03:07:19,549 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/commons/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 03:07:32,754 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 03:07:32,754 INFO  SysUtils - Configuration on demand is an incubating feature.
+:commons:compileLint
+:commons:copyDebugLint UP-TO-DATE
+:commons:preBuild UP-TO-DATE
+:commons:preDebugBuild UP-TO-DATE
+:commons:checkDebugManifest
+:commons:preDebugAndroidTestBuild UP-TO-DATE
+:commons:preDebugUnitTestBuild UP-TO-DATE
+:commons:preReleaseBuild UP-TO-DATE
+:commons:preReleaseUnitTestBuild UP-TO-DATE
+:commons:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:commons:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:commons:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:commons:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:commons:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:commons:prepareDebugDependencies
+:commons:compileDebugAidl UP-TO-DATE
+:commons:compileDebugRenderscript UP-TO-DATE
+:commons:generateDebugBuildConfig UP-TO-DATE
+:commons:generateDebugAssets UP-TO-DATE
+:commons:mergeDebugAssets UP-TO-DATE
+:commons:generateDebugResValues UP-TO-DATE
+:commons:generateDebugResources UP-TO-DATE
+:commons:mergeDebugResources UP-TO-DATE
+:commons:processDebugManifest UP-TO-DATE
+:commons:processDebugResources UP-TO-DATE
+:commons:generateDebugSources UP-TO-DATE
+:commons:processDebugJavaRes UP-TO-DATE
+:commons:compileDebugJava UP-TO-DATE
+:commons:extractDebugAnnotations UP-TO-DATE
+:commons:mergeDebugProguardFiles UP-TO-DATE
+:commons:packageDebugJar UP-TO-DATE
+:commons:compileDebugNdk UP-TO-DATE
+:commons:packageDebugJniLibs UP-TO-DATE
+:commons:packageDebugLocalJar UP-TO-DATE
+:commons:packageDebugRenderscript UP-TO-DATE
+:commons:packageDebugResources UP-TO-DATE
+:commons:bundleDebug UP-TO-DATE
+:commons:compileDebugSources UP-TO-DATE
+:commons:assembleDebug UP-TO-DATE
+:commons:copyReleaseLint UP-TO-DATE
+:commons:checkReleaseManifest
+:commons:prepareReleaseDependencies
+:commons:compileReleaseAidl UP-TO-DATE
+:commons:compileReleaseRenderscript UP-TO-DATE
+:commons:generateReleaseBuildConfig UP-TO-DATE
+:commons:generateReleaseAssets UP-TO-DATE
+:commons:mergeReleaseAssets UP-TO-DATE
+:commons:generateReleaseResValues UP-TO-DATE
+:commons:generateReleaseResources UP-TO-DATE
+:commons:mergeReleaseResources UP-TO-DATE
+:commons:processReleaseManifest UP-TO-DATE
+:commons:processReleaseResources UP-TO-DATE
+:commons:generateReleaseSources UP-TO-DATE
+:commons:processReleaseJavaRes UP-TO-DATE
+:commons:compileReleaseJava UP-TO-DATE
+:commons:extractReleaseAnnotations UP-TO-DATE
+:commons:mergeReleaseProguardFiles UP-TO-DATE
+:commons:packageReleaseJar UP-TO-DATE
+:commons:compileReleaseNdk UP-TO-DATE
+:commons:packageReleaseJniLibs UP-TO-DATE
+:commons:packageReleaseLocalJar UP-TO-DATE
+:commons:packageReleaseRenderscript UP-TO-DATE
+:commons:packageReleaseResources UP-TO-DATE
+:commons:bundleRelease UP-TO-DATE
+:commons:compileReleaseSources UP-TO-DATE
+:commons:assembleRelease UP-TO-DATE
+:commons:assemble UP-TO-DATE
+:commons:lint
+Ran lint on variant debug: 50 issues found
+Ran lint on variant release: 50 issues found
+Wrote HTML report to file:/tmp/rdisk/1927/src/commons/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1927/src/commons/build/outputs/lint-results.xml
+:commons:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':commons:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':commons:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:166)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:131)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$0.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:77)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 12.741 secs
+
+2018-04-04 03:07:32,868 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:07:32,868 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:07:40,493 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 03:07:40,493 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 03:07:40,493 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 03:07:40,494 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 03:07:57,977 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:core:compileLint
+:core:copyDebugLint UP-TO-DATE
+:commons:compileLint
+:commons:copyDebugLint UP-TO-DATE
+:commons:preBuild UP-TO-DATE
+:commons:preDebugBuild UP-TO-DATE
+:commons:checkDebugManifest
+:commons:preDebugAndroidTestBuild UP-TO-DATE
+:commons:preDebugUnitTestBuild UP-TO-DATE
+:commons:preReleaseBuild UP-TO-DATE
+:commons:preReleaseUnitTestBuild UP-TO-DATE
+:commons:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:commons:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:commons:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:commons:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:commons:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:commons:prepareDebugDependencies
+:commons:compileDebugAidl UP-TO-DATE
+:commons:compileDebugRenderscript UP-TO-DATE
+:commons:generateDebugBuildConfig UP-TO-DATE
+:commons:generateDebugAssets UP-TO-DATE
+:commons:mergeDebugAssets UP-TO-DATE
+:commons:generateDebugResValues UP-TO-DATE
+:commons:generateDebugResources UP-TO-DATE
+:commons:mergeDebugResources UP-TO-DATE
+:commons:processDebugManifest UP-TO-DATE
+:commons:processDebugResources UP-TO-DATE
+:commons:generateDebugSources UP-TO-DATE
+:commons:processDebugJavaRes UP-TO-DATE
+:commons:compileDebugJava UP-TO-DATE
+:commons:extractDebugAnnotations UP-TO-DATE
+:commons:mergeDebugProguardFiles UP-TO-DATE
+:commons:packageDebugJar UP-TO-DATE
+:commons:compileDebugNdk UP-TO-DATE
+:commons:packageDebugJniLibs UP-TO-DATE
+:commons:packageDebugLocalJar UP-TO-DATE
+:commons:packageDebugRenderscript UP-TO-DATE
+:commons:packageDebugResources UP-TO-DATE
+:commons:bundleDebug UP-TO-DATE
+:commons:copyReleaseLint UP-TO-DATE
+:commons:checkReleaseManifest
+:commons:prepareReleaseDependencies
+:commons:compileReleaseAidl UP-TO-DATE
+:commons:compileReleaseRenderscript UP-TO-DATE
+:commons:generateReleaseBuildConfig UP-TO-DATE
+:commons:generateReleaseAssets UP-TO-DATE
+:commons:mergeReleaseAssets UP-TO-DATE
+:commons:generateReleaseResValues UP-TO-DATE
+:commons:generateReleaseResources UP-TO-DATE
+:commons:mergeReleaseResources UP-TO-DATE
+:commons:processReleaseManifest UP-TO-DATE
+:commons:processReleaseResources UP-TO-DATE
+:commons:generateReleaseSources UP-TO-DATE
+:commons:processReleaseJavaRes UP-TO-DATE
+:commons:compileReleaseJava UP-TO-DATE
+:commons:extractReleaseAnnotations UP-TO-DATE
+:commons:mergeReleaseProguardFiles UP-TO-DATE
+:commons:packageReleaseJar UP-TO-DATE
+:commons:compileReleaseNdk UP-TO-DATE
+:commons:packageReleaseJniLibs UP-TO-DATE
+:commons:packageReleaseLocalJar UP-TO-DATE
+:commons:packageReleaseRenderscript UP-TO-DATE
+:commons:packageReleaseResources UP-TO-DATE
+:commons:bundleRelease UP-TO-DATE
+:core:preBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:checkDebugManifest
+:core:preDebugAndroidTestBuild UP-TO-DATE
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:core:prepareComAndroidSupportDesign2220Library UP-TO-DATE
+:core:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:core:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:core:prepareComJakewhartonHugoHugoRuntime121Library UP-TO-DATE
+:core:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:core:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:core:prepareSrcCommonsUnspecifiedLibrary UP-TO-DATE
+:core:prepareDebugDependencies
+:core:compileDebugAidl UP-TO-DATE
+:core:compileDebugRenderscript UP-TO-DATE
+:core:generateDebugBuildConfig UP-TO-DATE
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets UP-TO-DATE
+:core:generateDebugResValues UP-TO-DATE
+:core:generateDebugResources UP-TO-DATE
+:core:mergeDebugResources UP-TO-DATE
+:core:processDebugManifest UP-TO-DATE
+:core:processDebugResources UP-TO-DATE
+:core:generateDebugSources UP-TO-DATE
+:core:processDebugJavaRes UP-TO-DATE
+:core:compileDebugJava UP-TO-DATE
+:core:compileRetrolambdaDebug
+:core:extractDebugAnnotations UP-TO-DATE
+:core:mergeDebugProguardFiles UP-TO-DATE
+:core:packageDebugJar UP-TO-DATE
+:core:compileDebugNdk UP-TO-DATE
+:core:packageDebugJniLibs UP-TO-DATE
+:core:packageDebugLocalJar UP-TO-DATE
+:core:packageDebugRenderscript UP-TO-DATE
+:core:packageDebugResources UP-TO-DATE
+:core:bundleDebug UP-TO-DATE
+:core:compileDebugSources UP-TO-DATE
+:core:assembleDebug UP-TO-DATE
+:core:copyReleaseLint UP-TO-DATE
+:core:checkReleaseManifest
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl UP-TO-DATE
+:core:compileReleaseRenderscript UP-TO-DATE
+:core:generateReleaseBuildConfig UP-TO-DATE
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets UP-TO-DATE
+:core:generateReleaseResValues UP-TO-DATE
+:core:generateReleaseResources UP-TO-DATE
+:core:mergeReleaseResources UP-TO-DATE
+:core:processReleaseManifest UP-TO-DATE
+:core:processReleaseResources UP-TO-DATE
+:core:generateReleaseSources UP-TO-DATE
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJava UP-TO-DATE
+:core:compileRetrolambdaRelease
+:core:extractReleaseAnnotations UP-TO-DATE
+:core:mergeReleaseProguardFiles UP-TO-DATE
+:core:packageReleaseJar UP-TO-DATE
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources UP-TO-DATE
+:core:bundleRelease UP-TO-DATE
+:core:compileReleaseSources UP-TO-DATE
+:core:assembleRelease UP-TO-DATE
+:core:assemble UP-TO-DATE
+:core:lintFailed converting ECJ parse tree to Lombok for file /tmp/rdisk/1927/src/core/src/main/java/com/richardradics/core/error/ErrorHandler.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitBlock(EcjTreeConverter.java:636)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:292)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:229)
+	at lombok.ast.ecj.EcjTreeConverter.access$000(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitIfStatement(EcjTreeConverter.java:1074)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:196)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:89)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Failed converting ECJ parse tree to Lombok for file /tmp/rdisk/1927/src/core/src/main/java/com/richardradics/core/error/ErrorHandler.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitBlock(EcjTreeConverter.java:636)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:292)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:229)
+	at lombok.ast.ecj.EcjTreeConverter.access$000(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitIfStatement(EcjTreeConverter.java:1074)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:196)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:89)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1927/src/core/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1927/src/core/build/outputs/lint-results.xml
+:core:preCompileDebugUnitTestJava
+:core:prepareDebugUnitTestDependencies
+:core:processDebugUnitTestJavaRes UP-TO-DATE
+:core:compileDebugUnitTestJava UP-TO-DATE
+:core:compileDebugUnitTestSources UP-TO-DATE
+:core:mockableAndroidJar
+:core:assembleDebugUnitTest
+:core:testDebug
+:core:preCompileReleaseUnitTestJava
+:core:prepareReleaseUnitTestDependencies
+:core:processReleaseUnitTestJavaRes UP-TO-DATE
+:core:compileReleaseUnitTestJava UP-TO-DATE
+:core:compileReleaseUnitTestSources UP-TO-DATE
+:core:assembleReleaseUnitTest
+:core:testRelease
+:core:test
+:core:check
+:core:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.078 secs
+
+2018-04-04 03:07:58,089 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 03:07:58,089 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 03:08:06,128 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 03:08:06,129 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 03:08:06,129 INFO  SysUtils - Execute command: [/tmp/rdisk/1927/src/gradlew, -b, /tmp/rdisk/1927/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 03:09:02,291 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 03:09:02,291 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:commons:compileLint
+:commons:copyReleaseLint UP-TO-DATE
+:commons:preBuild UP-TO-DATE
+:commons:preReleaseBuild UP-TO-DATE
+:commons:checkReleaseManifest
+:commons:preDebugAndroidTestBuild UP-TO-DATE
+:commons:preDebugBuild UP-TO-DATE
+:commons:preDebugUnitTestBuild UP-TO-DATE
+:commons:preReleaseUnitTestBuild UP-TO-DATE
+:commons:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:commons:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:commons:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:commons:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:commons:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:commons:prepareReleaseDependencies
+:commons:compileReleaseAidl UP-TO-DATE
+:commons:compileReleaseRenderscript UP-TO-DATE
+:commons:generateReleaseBuildConfig UP-TO-DATE
+:commons:generateReleaseAssets UP-TO-DATE
+:commons:mergeReleaseAssets UP-TO-DATE
+:commons:generateReleaseResValues UP-TO-DATE
+:commons:generateReleaseResources UP-TO-DATE
+:commons:mergeReleaseResources UP-TO-DATE
+:commons:processReleaseManifest UP-TO-DATE
+:commons:processReleaseResources UP-TO-DATE
+:commons:generateReleaseSources UP-TO-DATE
+:commons:processReleaseJavaRes UP-TO-DATE
+:commons:compileReleaseJava UP-TO-DATE
+:commons:extractReleaseAnnotations UP-TO-DATE
+:commons:mergeReleaseProguardFiles UP-TO-DATE
+:commons:packageReleaseJar UP-TO-DATE
+:commons:compileReleaseNdk UP-TO-DATE
+:commons:packageReleaseJniLibs UP-TO-DATE
+:commons:packageReleaseLocalJar UP-TO-DATE
+:commons:packageReleaseRenderscript UP-TO-DATE
+:commons:packageReleaseResources UP-TO-DATE
+:commons:bundleRelease UP-TO-DATE
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:commons:copyDebugLint UP-TO-DATE
+:commons:checkDebugManifest
+:commons:prepareDebugDependencies
+:commons:compileDebugAidl UP-TO-DATE
+:commons:compileDebugRenderscript UP-TO-DATE
+:commons:generateDebugBuildConfig UP-TO-DATE
+:commons:generateDebugAssets UP-TO-DATE
+:commons:mergeDebugAssets UP-TO-DATE
+:commons:generateDebugResValues UP-TO-DATE
+:commons:generateDebugResources UP-TO-DATE
+:commons:mergeDebugResources UP-TO-DATE
+:commons:processDebugManifest UP-TO-DATE
+:commons:processDebugResources UP-TO-DATE
+:commons:generateDebugSources UP-TO-DATE
+:commons:processDebugJavaRes UP-TO-DATE
+:commons:compileDebugJava UP-TO-DATE
+:commons:extractDebugAnnotations UP-TO-DATE
+:commons:mergeDebugProguardFiles UP-TO-DATE
+:commons:packageDebugJar UP-TO-DATE
+:commons:compileDebugNdk UP-TO-DATE
+:commons:packageDebugJniLibs UP-TO-DATE
+:commons:packageDebugLocalJar UP-TO-DATE
+:commons:packageDebugRenderscript UP-TO-DATE
+:commons:packageDebugResources UP-TO-DATE
+:commons:bundleDebug UP-TO-DATE
+:core:preBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:preDebugAndroidTestBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:core:prepareComAndroidSupportDesign2220Library UP-TO-DATE
+:core:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:core:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:core:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:core:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:core:prepareSrcCommonsUnspecifiedLibrary UP-TO-DATE
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl UP-TO-DATE
+:core:compileReleaseRenderscript UP-TO-DATE
+:core:generateReleaseBuildConfig UP-TO-DATE
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets UP-TO-DATE
+:core:generateReleaseResValues UP-TO-DATE
+:core:generateReleaseResources UP-TO-DATE
+:core:mergeReleaseResources UP-TO-DATE
+:core:processReleaseManifest UP-TO-DATE
+:core:processReleaseResources UP-TO-DATE
+:core:generateReleaseSources UP-TO-DATE
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJava UP-TO-DATE
+:core:compileRetrolambdaRelease UP-TO-DATE
+:core:extractReleaseAnnotations UP-TO-DATE
+:core:mergeReleaseProguardFiles UP-TO-DATE
+:core:packageReleaseJar UP-TO-DATE
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources UP-TO-DATE
+:core:bundleRelease UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportCardviewV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportDesign2220Library UP-TO-DATE
+:app:prepareComAndroidSupportPaletteV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:app:prepareComBalysvMaterialRipple101Library UP-TO-DATE
+:app:prepareComGithubKsoichiroAndroidObservablescrollview150Library UP-TO-DATE
+:app:prepareComJakewhartonHugoHugoRuntime121Library UP-TO-DATE
+:app:prepareComJoanzapataPdfviewAndroidPdfview104Library UP-TO-DATE
+:app:prepareComMarvinlabsAndroidFloatinglabelWidgets150Library UP-TO-DATE
+:app:prepareSrcCommonsUnspecifiedLibrary UP-TO-DATE
+:app:prepareSrcCoreUnspecifiedLibrary UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:core:copyDebugLint UP-TO-DATE
+:core:checkDebugManifest
+:core:prepareComJakewhartonHugoHugoRuntime121Library UP-TO-DATE
+:core:prepareDebugDependencies
+:core:compileDebugAidl UP-TO-DATE
+:core:compileDebugRenderscript UP-TO-DATE
+:core:generateDebugBuildConfig UP-TO-DATE
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets UP-TO-DATE
+:core:generateDebugResValues UP-TO-DATE
+:core:generateDebugResources UP-TO-DATE
+:core:mergeDebugResources UP-TO-DATE
+:core:processDebugManifest UP-TO-DATE
+:core:processDebugResources UP-TO-DATE
+:core:generateDebugSources UP-TO-DATE
+:core:processDebugJavaRes UP-TO-DATE
+:core:compileDebugJava UP-TO-DATE
+:core:compileRetrolambdaDebug UP-TO-DATE
+:core:extractDebugAnnotations UP-TO-DATE
+:core:mergeDebugProguardFiles UP-TO-DATE
+:core:packageDebugJar UP-TO-DATE
+:core:compileDebugNdk UP-TO-DATE
+:core:packageDebugJniLibs UP-TO-DATE
+:core:packageDebugLocalJar UP-TO-DATE
+:core:packageDebugRenderscript UP-TO-DATE
+:core:packageDebugResources UP-TO-DATE
+:core:bundleDebug UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:compileRetrolambdaDebug
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_activated.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_default_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/ic_chooser.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_disabled_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1927/src/app/build/intermediates/exploded-aar/com.marvinlabs/android-floatinglabel-widgets/1.5.0/res/drawable-xxhdpi-v4/bg_edittext_focused_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileRetrolambdaRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalReleaseFailed converting ECJ parse tree to Lombok for file /tmp/rdisk/1927/src/app/src/main/java/com/richardradics/cleanrx/ui/activity/MainActivity.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitAllocationExpression(EcjTreeConverter.java:987)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:340)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Failed converting ECJ parse tree to Lombok for file /tmp/rdisk/1927/src/app/src/main/java/com/richardradics/cleanrx/repository/CleanWeatherService.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:229)
+	at lombok.ast.ecj.EcjTreeConverter.access$000(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitReturnStatement(EcjTreeConverter.java:1270)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:96)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+:app:proguardRelease
+Warning: butterknife.internal.ButterKnifeProcessor: can't find superclass or interface javax.annotation.processing.AbstractProcessor
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.AbstractProcessor
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.AbstractProcessor
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.Filer
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.JavaFileObject
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Modifier
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Modifier
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ElementKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.ArrayType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.ArrayType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Types
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ElementKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.VariableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.VariableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ElementKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.SourceVersion
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced field 'javax.annotation.processing.ProcessingEnvironment processingEnv' in program class butterknife.internal.ButterKnifeProcessor
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.Diagnostic$Kind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.Messager
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Elements
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.PackageElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.AbstractProcessor
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.VariableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.Filer
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.JavaFileObject
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Modifier
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ElementKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeKind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Types
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.SourceVersion
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.Diagnostic$Kind
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.Messager
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Elements
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.PackageElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.Diagnostic
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Elements
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.util.Types
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.Filer
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.ProcessingEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.tools.JavaFileObject
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Modifier
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.ArrayType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.annotation.processing.RoundEnvironment
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeVariable
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.VariableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.ExecutableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.VariableElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.DeclaredType
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.type.TypeMirror
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.SourceVersion
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.Element
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: butterknife.internal.ButterKnifeProcessor: can't find referenced class javax.lang.model.element.TypeElement
+Warning: com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl: can't find referenced method 'long getContentLengthLong()' in program class com.squareup.okhttp.internal.huc.HttpURLConnectionImpl
+Warning: com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl: can't find referenced method 'long getHeaderFieldLong(java.lang.String,long)' in program class com.squareup.okhttp.internal.huc.HttpURLConnectionImpl
+Warning: okio.DeflaterSink: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchServiceFactory
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchServiceFactory
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.URLFetchService
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPMethod
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPResponse
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPRequest
+Warning: retrofit.appengine.UrlFetchClient: can't find referenced class com.google.appengine.api.urlfetch.HTTPHeader
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentSequencedCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentSequencedCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentSequencedCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentSequencedCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.ConcurrentSequencedCircularArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.MpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpmcArrayQueueProducerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueue: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueueConsumerField: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueueProducerFields: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.SpscArrayQueueProducerFields: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: rx.internal.util.unsafe.UnsafeAccess: can't find referenced class sun.misc.Unsafe
+Warning: there were 273 unresolved references to classes or interfaces.
+         You may need to add missing library jars or update their versions.
+         If your code works fine without the missing classes, you can suppress
+         the warnings with '-dontwarn' options.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedclass)
+Warning: there were 3 unresolved references to program class members.
+         Your input classes appear to be inconsistent.
+         You may need to recompile the code.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedprogramclassmember)
+:app:proguardRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:proguardRelease'.
+> java.io.IOException: Please correct the above warnings first.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:proguardRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.UncheckedIOException: java.io.IOException: Please correct the above warnings first.
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:78)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+Caused by: java.io.IOException: Please correct the above warnings first.
+	at proguard.Initializer.execute(Initializer.java:473)
+	at proguard.ProGuard.initialize(ProGuard.java:222)
+	at proguard.ProGuard.execute(ProGuard.java:97)
+	at proguard.gradle.ProGuardTask.proguard(ProGuardTask.java:1074)
+	at com.android.build.gradle.tasks.AndroidProGuardTask.proguard(AndroidProGuardTask.java:87)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	... 56 more
+
+
+BUILD FAILED
+
+Total time: 55.683 secs
+
+2018-04-04 03:09:02,420 INFO  FullProcessService - Found APK file: /tmp/rdisk/1927/src/app/build/outputs/apk/app-debug.apk

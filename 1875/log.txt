@@ -1,0 +1,768 @@
+2018-04-04 05:31:56,210 INFO  DownloadService - Downloading "https://github.com/PomepuyN/AndroidWearCrashReport/archive/master.zip", attempt 3
+2018-04-04 05:32:56,894 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 05:32:57,551 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 05:32:57,551 INFO  DownloadService - Downloading "https://github.com/PomepuyN/AndroidWearCrashReport/archive/master.zip", attempt 3
+2018-04-04 05:33:58,858 DEBUG FullProcessService - Repository https://github.com/PomepuyN/AndroidWearCrashReport available: true
+2018-04-04 05:33:58,858 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 05:33:58,858 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/PomepuyN/AndroidWearCrashReport, /tmp/rdisk/1875/src]
+2018-04-04 05:34:00,269 INFO  SysUtils - 
+2018-04-04 05:34:00,280 INFO  GitService - Deleted "/tmp/rdisk/1875/src/.git": true
+2018-04-04 05:34:00,282 INFO  FullProcessService - Size of directory with sources: 115 KB
+2018-04-04 05:34:00,282 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1875/src]
+2018-04-04 05:34:00,286 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1875/src/.git/
+
+2018-04-04 05:34:00,291 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1875/src/gradlew
+2018-04-04 05:34:00,293 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1875/src/mobile/build.gradle /tmp/rdisk/1875/src/wear/build.gradle /tmp/rdisk/1875/src/build.gradle
+2018-04-04 05:34:00,294 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1875/src/wear/build.gradle /tmp/rdisk/1875/src/settings.gradle /tmp/rdisk/1875/src/mobile/build.gradle /tmp/rdisk/1875/src/build.gradle
+2018-04-04 05:34:00,295 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/mcxiaoke/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-04 05:34:00,662 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/mcxiaoke/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-04 05:34:00,663 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/mcxiaoke/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-04 05:34:00,663 INFO  ProjectFixService - Fixing project...
+2018-04-04 05:34:00,669 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1875/src/mobile/local.properties
+2018-04-04 05:34:00,669 INFO  ProjectFixService - Build info for "/tmp/rdisk/1875/src/mobile/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-04 05:34:00,669 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1875/src/wear/local.properties
+2018-04-04 05:34:00,670 INFO  ProjectFixService - Build info for "/tmp/rdisk/1875/src/wear/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=23,minSdkVersion=20,targetSdkVersion=23]
+2018-04-04 05:34:00,670 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1875/src/local.properties
+2018-04-04 05:34:00,670 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-04 05:34:00,670 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-04 05:34:00,671 INFO  ProjectFixService - Build info for "/tmp/rdisk/1875/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=23,minSdkVersion=20,targetSdkVersion=23]
+2018-04-04 05:34:00,671 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 05:34:00,671 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:34:00,671 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/mobile/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:34:14,773 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 05:34:14,773 INFO  ProjectTaskService - Detected possible tasks: 7
+2018-04-04 05:34:14,773 INFO  ProjectTaskService - Excluded tasks (5): androidJavadocsJar sourcesJar androidJavadocs javadocJar androidSourcesJar
+2018-04-04 05:34:14,773 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/mobile/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, sourcesJar, -x, androidJavadocs, -x, javadocJar, -x, androidSourcesJar, build]
+2018-04-04 05:34:21,392 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 05:34:21,392 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'sourcesJar' not found in project ':mobile'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'sourcesJar' not found in project ':mobile'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.136 secs
+
+2018-04-04 05:34:21,392 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-04 05:34:21,392 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/mobile/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 05:34:41,642 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mobile:androidJavadocs/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:11: error: package com.google.android.gms.common does not exist
+import com.google.android.gms.common.ConnectionResult;
+                                    ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:12: error: package com.google.android.gms.common.api does not exist
+import com.google.android.gms.common.api.GoogleApiClient;
+                                        ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:13: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.DataApi;
+                                      ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:14: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.DataEvent;
+                                      ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:15: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.DataEventBuffer;
+                                      ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:16: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.DataMapItem;
+                                      ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:17: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.Wearable;
+                                      ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:22: error: package DataApi does not exist
+public class CrashReport implements DataApi.DataListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+                                           ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:22: error: package GoogleApiClient does not exist
+public class CrashReport implements DataApi.DataListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+                                                                         ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:22: error: package GoogleApiClient does not exist
+public class CrashReport implements DataApi.DataListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+                                                                                                              ^
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:25: error: cannot find symbol
+    private GoogleApiClient mGoogleApiClient = null;
+            ^
+  symbol:   class GoogleApiClient
+  location: class CrashReport
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:74: error: cannot find symbol
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+                                   ^
+  symbol:   class ConnectionResult
+  location: class CrashReport
+/tmp/rdisk/1875/src/mobile/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/mobile/CrashReport.java:79: error: cannot find symbol
+    public void onDataChanged(DataEventBuffer dataEvents) {
+                              ^
+  symbol:   class DataEventBuffer
+  location: class CrashReport
+
+13 warnings
+:mobile:androidJavadocsJar
+:mobile:androidSourcesJar
+:mobile:compileLint
+:mobile:copyDebugLint UP-TO-DATE
+:mobile:preBuild UP-TO-DATE
+:mobile:preDebugBuild UP-TO-DATE
+:mobile:checkDebugManifest
+:mobile:preDebugAndroidTestBuild UP-TO-DATE
+:mobile:preDebugUnitTestBuild UP-TO-DATE
+:mobile:preReleaseBuild UP-TO-DATE
+:mobile:preReleaseUnitTestBuild UP-TO-DATE
+:mobile:prepareComAndroidSupportSupportV42220Library
+:mobile:prepareComGoogleAndroidGmsPlayServicesBase810Library
+:mobile:prepareComGoogleAndroidGmsPlayServicesBasement810Library
+:mobile:prepareComGoogleAndroidGmsPlayServicesWearable810Library
+:mobile:prepareDebugDependencies
+:mobile:compileDebugAidl
+:mobile:compileDebugRenderscript
+:mobile:generateDebugBuildConfig
+:mobile:generateDebugAssets UP-TO-DATE
+:mobile:mergeDebugAssets
+:mobile:generateDebugResValues
+:mobile:generateDebugResources
+:mobile:mergeDebugResources
+:mobile:processDebugManifest
+:mobile:processDebugResources
+:mobile:generateDebugSources
+:mobile:processDebugJavaRes UP-TO-DATE
+:mobile:compileDebugJava
+:mobile:extractDebugAnnotations
+:mobile:mergeDebugProguardFiles
+:mobile:packageDebugJar
+:mobile:compileDebugNdk UP-TO-DATE
+:mobile:packageDebugJniLibs UP-TO-DATE
+:mobile:packageDebugLocalJar UP-TO-DATE
+:mobile:packageDebugRenderscript UP-TO-DATE
+:mobile:packageDebugResources
+:mobile:bundleDebug
+:mobile:compileDebugSources
+:mobile:assembleDebug
+:mobile:copyReleaseLint UP-TO-DATE
+:mobile:checkReleaseManifest
+:mobile:prepareReleaseDependencies
+:mobile:compileReleaseAidl
+:mobile:compileReleaseRenderscript
+:mobile:generateReleaseBuildConfig
+:mobile:generateReleaseAssets UP-TO-DATE
+:mobile:mergeReleaseAssets
+:mobile:generateReleaseResValues
+:mobile:generateReleaseResources
+:mobile:mergeReleaseResources
+:mobile:processReleaseManifest
+:mobile:processReleaseResources
+:mobile:generateReleaseSources
+:mobile:processReleaseJavaRes UP-TO-DATE
+:mobile:compileReleaseJava
+:mobile:extractReleaseAnnotations
+:mobile:mergeReleaseProguardFiles
+:mobile:packageReleaseJar
+:mobile:compileReleaseNdk UP-TO-DATE
+:mobile:packageReleaseJniLibs UP-TO-DATE
+:mobile:packageReleaseLocalJar UP-TO-DATE
+:mobile:packageReleaseRenderscript UP-TO-DATE
+:mobile:packageReleaseResources
+:mobile:bundleRelease
+:mobile:compileReleaseSources
+:mobile:assembleRelease
+:mobile:signArchives SKIPPED
+:mobile:assemble
+:mobile:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1875/src/mobile/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1875/src/mobile/build/outputs/lint-results.xml
+:mobile:preCompileDebugUnitTestJava
+:mobile:prepareDebugUnitTestDependencies
+:mobile:processDebugUnitTestJavaRes UP-TO-DATE
+:mobile:compileDebugUnitTestJava UP-TO-DATE
+:mobile:compileDebugUnitTestSources UP-TO-DATE
+:mobile:mockableAndroidJar
+:mobile:assembleDebugUnitTest
+:mobile:testDebug
+:mobile:preCompileReleaseUnitTestJava
+:mobile:prepareReleaseUnitTestDependencies
+:mobile:processReleaseUnitTestJavaRes UP-TO-DATE
+:mobile:compileReleaseUnitTestJava UP-TO-DATE
+:mobile:compileReleaseUnitTestSources UP-TO-DATE
+:mobile:assembleReleaseUnitTest
+:mobile:testRelease
+:mobile:test
+:mobile:check
+:mobile:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.811 secs
+
+2018-04-04 05:34:41,665 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:34:41,665 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/wear/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:34:49,155 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 05:34:49,156 INFO  ProjectTaskService - Detected possible tasks: 7
+2018-04-04 05:34:49,156 INFO  ProjectTaskService - Excluded tasks (5): androidJavadocsJar sourcesJar androidJavadocs javadocJar androidSourcesJar
+2018-04-04 05:34:49,156 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/wear/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, sourcesJar, -x, androidJavadocs, -x, javadocJar, -x, androidSourcesJar, build]
+2018-04-04 05:34:56,225 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 05:34:56,225 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'sourcesJar' not found in project ':wear'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'sourcesJar' not found in project ':wear'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.636 secs
+
+2018-04-04 05:34:56,225 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-04 05:34:56,225 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/wear/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 05:35:15,541 INFO  SysUtils - Configuration on demand is an incubating feature.
+:wear:androidJavadocs/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:8: error: package com.google.android.gms.common.api does not exist
+import com.google.android.gms.common.api.GoogleApiClient;
+                                        ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:9: error: package com.google.android.gms.common.api does not exist
+import com.google.android.gms.common.api.PendingResult;
+                                        ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:10: error: package com.google.android.gms.common.api does not exist
+import com.google.android.gms.common.api.ResultCallback;
+                                        ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:11: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.DataApi;
+                                      ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:12: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.PutDataMapRequest;
+                                      ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:13: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.PutDataRequest;
+                                      ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:14: error: package com.google.android.gms.wearable does not exist
+import com.google.android.gms.wearable.Wearable;
+                                      ^
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:28: error: cannot find symbol
+    private GoogleApiClient googleApiClient;
+            ^
+  symbol:   class GoogleApiClient
+  location: class CrashReporter
+/tmp/rdisk/1875/src/wear/src/main/java/fr/nicolaspomepuy/androidwearcrashreport/wear/CrashReporter.java:106: error: cannot find symbol
+    public GoogleApiClient getGoogleApiClient(Context context) {
+           ^
+  symbol:   class GoogleApiClient
+  location: class CrashReporter
+
+9 warnings
+:wear:androidJavadocsJar
+:wear:androidSourcesJar
+:wear:compileLint
+:wear:copyDebugLint UP-TO-DATE
+:wear:preBuild UP-TO-DATE
+:wear:preDebugBuild UP-TO-DATE
+:wear:checkDebugManifest
+:wear:preDebugAndroidTestBuild UP-TO-DATE
+:wear:preDebugUnitTestBuild UP-TO-DATE
+:wear:preReleaseBuild UP-TO-DATE
+:wear:preReleaseUnitTestBuild UP-TO-DATE
+:wear:prepareComAndroidSupportSupportV42220Library
+:wear:prepareComGoogleAndroidGmsPlayServicesBase810Library
+:wear:prepareComGoogleAndroidGmsPlayServicesBasement810Library
+:wear:prepareComGoogleAndroidGmsPlayServicesWearable810Library
+:wear:prepareDebugDependencies
+:wear:compileDebugAidl
+:wear:compileDebugRenderscript
+:wear:generateDebugBuildConfig
+:wear:generateDebugAssets UP-TO-DATE
+:wear:mergeDebugAssets
+:wear:generateDebugResValues
+:wear:generateDebugResources
+:wear:mergeDebugResources
+:wear:processDebugManifest
+:wear:processDebugResources
+:wear:generateDebugSources
+:wear:processDebugJavaRes UP-TO-DATE
+:wear:compileDebugJava
+:wear:extractDebugAnnotations
+:wear:mergeDebugProguardFiles
+:wear:packageDebugJar
+:wear:compileDebugNdk UP-TO-DATE
+:wear:packageDebugJniLibs UP-TO-DATE
+:wear:packageDebugLocalJar UP-TO-DATE
+:wear:packageDebugRenderscript UP-TO-DATE
+:wear:packageDebugResources
+:wear:bundleDebug
+:wear:compileDebugSources
+:wear:assembleDebug
+:wear:copyReleaseLint UP-TO-DATE
+:wear:checkReleaseManifest
+:wear:prepareReleaseDependencies
+:wear:compileReleaseAidl
+:wear:compileReleaseRenderscript
+:wear:generateReleaseBuildConfig
+:wear:generateReleaseAssets UP-TO-DATE
+:wear:mergeReleaseAssets
+:wear:generateReleaseResValues
+:wear:generateReleaseResources
+:wear:mergeReleaseResources
+:wear:processReleaseManifest
+:wear:processReleaseResources
+:wear:generateReleaseSources
+:wear:processReleaseJavaRes UP-TO-DATE
+:wear:compileReleaseJava
+:wear:extractReleaseAnnotations
+:wear:mergeReleaseProguardFiles
+:wear:packageReleaseJar
+:wear:compileReleaseNdk UP-TO-DATE
+:wear:packageReleaseJniLibs UP-TO-DATE
+:wear:packageReleaseLocalJar UP-TO-DATE
+:wear:packageReleaseRenderscript UP-TO-DATE
+:wear:packageReleaseResources
+:wear:bundleRelease
+:wear:compileReleaseSources
+:wear:assembleRelease
+:wear:signArchives SKIPPED
+:wear:assemble
+:wear:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1875/src/wear/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1875/src/wear/build/outputs/lint-results.xml
+:wear:preCompileDebugUnitTestJava
+:wear:prepareDebugUnitTestDependencies
+:wear:processDebugUnitTestJavaRes UP-TO-DATE
+:wear:compileDebugUnitTestJava UP-TO-DATE
+:wear:compileDebugUnitTestSources UP-TO-DATE
+:wear:mockableAndroidJar
+:wear:assembleDebugUnitTest
+:wear:testDebug
+:wear:preCompileReleaseUnitTestJava
+:wear:prepareReleaseUnitTestDependencies
+:wear:processReleaseUnitTestJavaRes UP-TO-DATE
+:wear:compileReleaseUnitTestJava UP-TO-DATE
+:wear:compileReleaseUnitTestSources UP-TO-DATE
+:wear:assembleReleaseUnitTest
+:wear:testRelease
+:wear:test
+:wear:check
+:wear:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.885 secs
+
+2018-04-04 05:35:15,584 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 05:35:15,584 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 05:35:23,166 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-04-04 05:35:23,166 INFO  ProjectTaskService - Excluded tasks (21): lintDebug mockableAndroidJar androidJavadocs javadocJar deviceCheck lint androidSourcesJar deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar sourcesJar testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-04 05:35:23,166 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, javadocJar, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, sourcesJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-04 05:35:29,984 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-04 05:35:29,984 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in root project 'src'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in root project 'src'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.396 secs
+
+2018-04-04 05:35:29,984 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-04 05:35:29,985 INFO  SysUtils - Execute command: [/tmp/rdisk/1875/src/gradlew, -b, /tmp/rdisk/1875/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 05:35:42,695 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mobile:androidJavadocs UP-TO-DATE
+:mobile:androidJavadocsJar UP-TO-DATE
+:mobile:androidSourcesJar UP-TO-DATE
+:mobile:compileLint
+:mobile:copyDebugLint UP-TO-DATE
+:mobile:preBuild UP-TO-DATE
+:mobile:preDebugBuild UP-TO-DATE
+:mobile:checkDebugManifest
+:mobile:preDebugAndroidTestBuild UP-TO-DATE
+:mobile:preDebugUnitTestBuild UP-TO-DATE
+:mobile:preReleaseBuild UP-TO-DATE
+:mobile:preReleaseUnitTestBuild UP-TO-DATE
+:mobile:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:mobile:prepareComGoogleAndroidGmsPlayServicesBase810Library UP-TO-DATE
+:mobile:prepareComGoogleAndroidGmsPlayServicesBasement810Library UP-TO-DATE
+:mobile:prepareComGoogleAndroidGmsPlayServicesWearable810Library UP-TO-DATE
+:mobile:prepareDebugDependencies
+:mobile:compileDebugAidl UP-TO-DATE
+:mobile:compileDebugRenderscript UP-TO-DATE
+:mobile:generateDebugBuildConfig UP-TO-DATE
+:mobile:generateDebugAssets UP-TO-DATE
+:mobile:mergeDebugAssets UP-TO-DATE
+:mobile:generateDebugResValues UP-TO-DATE
+:mobile:generateDebugResources UP-TO-DATE
+:mobile:mergeDebugResources UP-TO-DATE
+:mobile:processDebugManifest UP-TO-DATE
+:mobile:processDebugResources UP-TO-DATE
+:mobile:generateDebugSources UP-TO-DATE
+:mobile:processDebugJavaRes UP-TO-DATE
+:mobile:compileDebugJava UP-TO-DATE
+:mobile:extractDebugAnnotations UP-TO-DATE
+:mobile:mergeDebugProguardFiles UP-TO-DATE
+:mobile:packageDebugJar UP-TO-DATE
+:mobile:compileDebugNdk UP-TO-DATE
+:mobile:packageDebugJniLibs UP-TO-DATE
+:mobile:packageDebugLocalJar UP-TO-DATE
+:mobile:packageDebugRenderscript UP-TO-DATE
+:mobile:packageDebugResources UP-TO-DATE
+:mobile:bundleDebug UP-TO-DATE
+:mobile:compileDebugSources UP-TO-DATE
+:mobile:assembleDebug UP-TO-DATE
+:mobile:copyReleaseLint UP-TO-DATE
+:mobile:checkReleaseManifest
+:mobile:prepareReleaseDependencies
+:mobile:compileReleaseAidl UP-TO-DATE
+:mobile:compileReleaseRenderscript UP-TO-DATE
+:mobile:generateReleaseBuildConfig UP-TO-DATE
+:mobile:generateReleaseAssets UP-TO-DATE
+:mobile:mergeReleaseAssets UP-TO-DATE
+:mobile:generateReleaseResValues UP-TO-DATE
+:mobile:generateReleaseResources UP-TO-DATE
+:mobile:mergeReleaseResources UP-TO-DATE
+:mobile:processReleaseManifest UP-TO-DATE
+:mobile:processReleaseResources UP-TO-DATE
+:mobile:generateReleaseSources UP-TO-DATE
+:mobile:processReleaseJavaRes UP-TO-DATE
+:mobile:compileReleaseJava UP-TO-DATE
+:mobile:extractReleaseAnnotations UP-TO-DATE
+:mobile:mergeReleaseProguardFiles UP-TO-DATE
+:mobile:packageReleaseJar UP-TO-DATE
+:mobile:compileReleaseNdk UP-TO-DATE
+:mobile:packageReleaseJniLibs UP-TO-DATE
+:mobile:packageReleaseLocalJar UP-TO-DATE
+:mobile:packageReleaseRenderscript UP-TO-DATE
+:mobile:packageReleaseResources UP-TO-DATE
+:mobile:bundleRelease UP-TO-DATE
+:mobile:compileReleaseSources UP-TO-DATE
+:mobile:assembleRelease UP-TO-DATE
+:mobile:signArchives SKIPPED
+:mobile:assemble UP-TO-DATE
+:mobile:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/1875/src/mobile/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1875/src/mobile/build/outputs/lint-results.xml
+:mobile:preCompileDebugUnitTestJava
+:mobile:prepareDebugUnitTestDependencies
+:mobile:processDebugUnitTestJavaRes UP-TO-DATE
+:mobile:compileDebugUnitTestJava UP-TO-DATE
+:mobile:compileDebugUnitTestSources UP-TO-DATE
+:mobile:mockableAndroidJar UP-TO-DATE
+:mobile:assembleDebugUnitTest UP-TO-DATE
+:mobile:testDebug UP-TO-DATE
+:mobile:preCompileReleaseUnitTestJava
+:mobile:prepareReleaseUnitTestDependencies
+:mobile:processReleaseUnitTestJavaRes UP-TO-DATE
+:mobile:compileReleaseUnitTestJava UP-TO-DATE
+:mobile:compileReleaseUnitTestSources UP-TO-DATE
+:mobile:assembleReleaseUnitTest UP-TO-DATE
+:mobile:testRelease UP-TO-DATE
+:mobile:test UP-TO-DATE
+:mobile:check
+:mobile:build
+:wear:androidJavadocs UP-TO-DATE
+:wear:androidJavadocsJar UP-TO-DATE
+:wear:androidSourcesJar UP-TO-DATE
+:wear:compileLint
+:wear:copyDebugLint UP-TO-DATE
+:wear:preBuild UP-TO-DATE
+:wear:preDebugBuild UP-TO-DATE
+:wear:checkDebugManifest
+:wear:preDebugAndroidTestBuild UP-TO-DATE
+:wear:preDebugUnitTestBuild UP-TO-DATE
+:wear:preReleaseBuild UP-TO-DATE
+:wear:preReleaseUnitTestBuild UP-TO-DATE
+:wear:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:wear:prepareComGoogleAndroidGmsPlayServicesBase810Library UP-TO-DATE
+:wear:prepareComGoogleAndroidGmsPlayServicesBasement810Library UP-TO-DATE
+:wear:prepareComGoogleAndroidGmsPlayServicesWearable810Library UP-TO-DATE
+:wear:prepareDebugDependencies
+:wear:compileDebugAidl UP-TO-DATE
+:wear:compileDebugRenderscript UP-TO-DATE
+:wear:generateDebugBuildConfig UP-TO-DATE
+:wear:generateDebugAssets UP-TO-DATE
+:wear:mergeDebugAssets UP-TO-DATE
+:wear:generateDebugResValues UP-TO-DATE
+:wear:generateDebugResources UP-TO-DATE
+:wear:mergeDebugResources UP-TO-DATE
+:wear:processDebugManifest UP-TO-DATE
+:wear:processDebugResources UP-TO-DATE
+:wear:generateDebugSources UP-TO-DATE
+:wear:processDebugJavaRes UP-TO-DATE
+:wear:compileDebugJava UP-TO-DATE
+:wear:extractDebugAnnotations UP-TO-DATE
+:wear:mergeDebugProguardFiles UP-TO-DATE
+:wear:packageDebugJar UP-TO-DATE
+:wear:compileDebugNdk UP-TO-DATE
+:wear:packageDebugJniLibs UP-TO-DATE
+:wear:packageDebugLocalJar UP-TO-DATE
+:wear:packageDebugRenderscript UP-TO-DATE
+:wear:packageDebugResources UP-TO-DATE
+:wear:bundleDebug UP-TO-DATE
+:wear:compileDebugSources UP-TO-DATE
+:wear:assembleDebug UP-TO-DATE
+:wear:copyReleaseLint UP-TO-DATE
+:wear:checkReleaseManifest
+:wear:prepareReleaseDependencies
+:wear:compileReleaseAidl UP-TO-DATE
+:wear:compileReleaseRenderscript UP-TO-DATE
+:wear:generateReleaseBuildConfig UP-TO-DATE
+:wear:generateReleaseAssets UP-TO-DATE
+:wear:mergeReleaseAssets UP-TO-DATE
+:wear:generateReleaseResValues UP-TO-DATE
+:wear:generateReleaseResources UP-TO-DATE
+:wear:mergeReleaseResources UP-TO-DATE
+:wear:processReleaseManifest UP-TO-DATE
+:wear:processReleaseResources UP-TO-DATE
+:wear:generateReleaseSources UP-TO-DATE
+:wear:processReleaseJavaRes UP-TO-DATE
+:wear:compileReleaseJava UP-TO-DATE
+:wear:extractReleaseAnnotations UP-TO-DATE
+:wear:mergeReleaseProguardFiles UP-TO-DATE
+:wear:packageReleaseJar UP-TO-DATE
+:wear:compileReleaseNdk UP-TO-DATE
+:wear:packageReleaseJniLibs UP-TO-DATE
+:wear:packageReleaseLocalJar UP-TO-DATE
+:wear:packageReleaseRenderscript UP-TO-DATE
+:wear:packageReleaseResources UP-TO-DATE
+:wear:bundleRelease UP-TO-DATE
+:wear:compileReleaseSources UP-TO-DATE
+:wear:assembleRelease UP-TO-DATE
+:wear:signArchives SKIPPED
+:wear:assemble UP-TO-DATE
+:wear:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/1875/src/wear/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1875/src/wear/build/outputs/lint-results.xml
+:wear:preCompileDebugUnitTestJava
+:wear:prepareDebugUnitTestDependencies
+:wear:processDebugUnitTestJavaRes UP-TO-DATE
+:wear:compileDebugUnitTestJava UP-TO-DATE
+:wear:compileDebugUnitTestSources UP-TO-DATE
+:wear:mockableAndroidJar UP-TO-DATE
+:wear:assembleDebugUnitTest UP-TO-DATE
+:wear:testDebug UP-TO-DATE
+:wear:preCompileReleaseUnitTestJava
+:wear:prepareReleaseUnitTestDependencies
+:wear:processReleaseUnitTestJavaRes UP-TO-DATE
+:wear:compileReleaseUnitTestJava UP-TO-DATE
+:wear:compileReleaseUnitTestSources UP-TO-DATE
+:wear:assembleReleaseUnitTest UP-TO-DATE
+:wear:testRelease UP-TO-DATE
+:wear:test UP-TO-DATE
+:wear:check
+:wear:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.259 secs
+
+2018-04-04 05:35:42,738 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 05:35:42,781 ERROR FullProcessService - Could not find generated or existed APK file

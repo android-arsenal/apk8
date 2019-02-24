@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.artfulbits.benchmark.sample",
+    "label" : "Meter - Sample 01",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB4FBMVEUAAADDIy7JOELLQErFKzb23uD99vbehIrgjZP//v723+DJOULNSFH56er34OL//f3jlpzFKjXtvL/78PDQUVruwcT77/DOS1TXbHPmpKnUYmr++vrnp6vRVV7YbnXFKzXwyMr67e7OTFTEJzLoq6/88vLSWWH01df01tj78PHknKHad37//P3eh43KO0T23N7z0dP89PXSW2PIND712tz67OzbfILWaXDDJC/ad33aeH7moabJOEHdgoj89PTPUVnyztD34uPKO0XMRE377u/gjZLEJjHgjJHnpqrYcHfVZGv++/vlnqPMRE7tu77rtrnrtbnxyczOSlPik5nfiY/GLTfilJnZdXzbe4HGLzndgYfLP0nfipDINkDGLjngi5HHMTvhkJXcfYPbe4LFLDbEJTDqsbXqs7bsubzPT1jyzc/XanLjmJ3MRU7oqK3vwsXehoznqKzjlpvqsbTmoqfgj5TINT/kmp/Xa3LhkJbjl5zEKDPfiY7PTlbNR1DhkpfhkZfloaXMQ0zbeYDfh43RVl/ikpjQUlvadn3mpKjKPUbLP0jIN0HJN0HHMjzLQkvHMDvFKTTLQEnOTVbRVV3OTFXQU1vFKTPNSFDQUlrKPkjSWGDMQkvOSVLEKDLFKjTPCtGRAAAAoHRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6CJqxQAAAWdJREFUSMdjYBiUgJFoMKphRGtgYmZmIUUDEysbGzspGjg4OTm5uInXwMPLx8/JKUC0BkEhYRFRTk4xcWI1SPBLMkpJc3LKMMrKgQE3fg3yCopKjMoqnJyqanLq6hqanJxa+DVo6+gCST19Tk4DZSBDypBT1QifBmMTU3YzM3MLS6C/rUAC1pyc6jZ4NNhygoCdPYsDJ6ejE1DA2YWT0xW3Bjd3DzDwZPTy5uT0AQm5cnK6+BKRlpT9ODmF/QMCAgKBNloTk/iCghEgJJRqqZUpLDwiMjQqOsYy1i0uPiExKVktyColISEVlwbnNKP0jEwhqazsnNy8fKaMgsIi82L2ktIyXBqcyisqq6praoPr6j0bGpuKmlsaWtvaOzq7qOaHFOPY7h4m48he44QyRouyPuP+hN4JcUwsE3FpsAmqzU2ZNLlpytSEaYzTZ3QHzZw1e05u0Nwy4p1kMQ9IzB8t+UashkEGAIeIT/80onywAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1549,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.artfulbits.benchmark.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f0b0004\" android:label=\"Meter - Sample 01\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.artfulbits.benchmark.sample.TheApp\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Meter - Sample 01\" android:name=\"com.artfulbits.benchmark.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1243935,
+  "crc32" : 2680840207,
+  "sha256" : "b794143a101569429d10db1bb47cd886de94ec6e68cc8f21c2a119836797f160",
+  "buildTime" : 1497406375000
+}

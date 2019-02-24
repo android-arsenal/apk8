@@ -1,0 +1,174 @@
+2018-05-11 11:51:18,062 INFO  DownloadService - Downloading "https://github.com/tianzhijiexian/CommonAdapter/archive/master.zip", attempt 3
+2018-05-11 11:51:19,938 INFO  DownloadService - Downloaded https://github.com/tianzhijiexian/CommonAdapter/archive/master.zip, attempt 3
+2018-05-11 11:51:19,939 INFO  DownloadService - Size of file "/tmp/rdisk/1861/master.zip": 431 KB
+2018-05-11 11:51:19,939 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:51:19,939 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1861/master.zip: true
+2018-05-11 11:51:19,939 DEBUG ZipUtil - Extracting '/tmp/rdisk/1861/master.zip' into '/tmp/rdisk/1861/src'.
+2018-05-11 11:51:19,952 INFO  FullProcessService - Size of directory with sources: 501 KB
+2018-05-11 11:51:19,952 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1861/src]
+2018-05-11 11:51:19,956 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1861/src/.git/
+
+2018-05-11 11:51:19,959 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1861/src/CommonAdapter-master/gradlew
+2018-05-11 11:51:19,962 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1861/src/CommonAdapter-master/app/build.gradle /tmp/rdisk/1861/src/CommonAdapter-master/lib/build.gradle /tmp/rdisk/1861/src/CommonAdapter-master/build.gradle
+2018-05-11 11:51:19,964 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1861/src/CommonAdapter-master/settings.gradle /tmp/rdisk/1861/src/CommonAdapter-master/lib/build.gradle /tmp/rdisk/1861/src/CommonAdapter-master/build.gradle /tmp/rdisk/1861/src/CommonAdapter-master/app/build.gradle
+2018-05-11 11:51:19,964 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:51:19,964 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:51:19,970 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1861/src/CommonAdapter-master/app/local.properties
+2018-05-11 11:51:19,970 INFO  ProjectFixService - Build info for "/tmp/rdisk/1861/src/CommonAdapter-master/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 11:51:19,971 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1861/src/CommonAdapter-master/lib/local.properties
+2018-05-11 11:51:19,971 INFO  ProjectFixService - Build info for "/tmp/rdisk/1861/src/CommonAdapter-master/lib/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 11:51:19,971 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1861/src/CommonAdapter-master/local.properties
+2018-05-11 11:51:19,972 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-11 11:51:19,972 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-11 11:51:19,973 INFO  ProjectFixService - Build info for "/tmp/rdisk/1861/src/CommonAdapter-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 11:51:19,973 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:51:19,973 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:51:19,973 INFO  SysUtils - Execute command: [/tmp/rdisk/1861/src/CommonAdapter-master/gradlew, -b, /tmp/rdisk/1861/src/CommonAdapter-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:51:28,929 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 11:51:28,929 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:51:28,929 INFO  SysUtils - Execute command: [/tmp/rdisk/1861/src/CommonAdapter-master/gradlew, -b, /tmp/rdisk/1861/src/CommonAdapter-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:52:16,418 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest
+:lib:processDebugManifest
+:app:preDebugBuild
+:lib:compileDebugAidl
+:app:compileDebugAidl
+:lib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:generateDebugResValues
+:app:generateDebugResources
+:lib:compileDebugRenderscript
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:app:mergeDebugResources
+:app:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForDebug
+:app:dataBindingGenBaseClassesDebug
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:mainApkListPersistenceDebug
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:lib:platformAttrExtractor
+:lib:generateDebugBuildConfig
+:lib:prepareLintJar
+:lib:javaPreCompileDebug
+:lib:processDebugJavaRes NO-SOURCE
+:app:transformDataBindingWithDataBindingMergeArtifactsForDebug
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:lib:mergeDebugShaders
+:lib:compileDebugShaders
+:lib:generateDebugAssets
+:lib:packageDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:lib:compileDebugNdk NO-SOURCE
+:lib:mergeDebugJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForDebug
+:lib:transformNativeLibsWithStripDebugSymbolForDebug
+:lib:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:processReleaseManifest
+:app:preReleaseBuild
+:lib:compileReleaseAidl
+:app:compileReleaseAidl
+:lib:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:lib:compileReleaseRenderscript
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:app:mergeReleaseResources
+:app:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForRelease
+:app:dataBindingGenBaseClassesRelease
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:lib:generateReleaseBuildConfig
+:lib:javaPreCompileRelease
+:lib:processReleaseJavaRes NO-SOURCE
+:app:transformDataBindingWithDataBindingMergeArtifactsForRelease
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:mergeReleaseJniLibFolders
+:lib:compileReleaseNdk NO-SOURCE
+:lib:mergeReleaseJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForRelease
+:lib:transformNativeLibsWithStripDebugSymbolForRelease
+:lib:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:lib:generateDebugRFile
+:app:processDebugResources
+:app:generateDebugSources
+:lib:generateDebugSources
+:lib:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:dataBindingExportBuildInfoDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/1861/src/CommonAdapter-master/app/src/main/java/kale/commonadapter/RecyclerViewActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:lib:generateReleaseRFile
+:app:processReleaseResources
+:app:generateReleaseSources
+:lib:generateReleaseSources
+:lib:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:dataBindingExportBuildInfoRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/1861/src/CommonAdapter-master/app/src/main/java/kale/commonadapter/RecyclerViewActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithExternalLibsDexMergerForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 47s
+99 actionable tasks: 99 executed
+
+2018-05-11 11:52:16,475 INFO  FullProcessService - Found APK file: /tmp/rdisk/1861/src/CommonAdapter-master/app/build/outputs/apk/debug/app-debug.apk

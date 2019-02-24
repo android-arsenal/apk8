@@ -1,0 +1,306 @@
+2018-01-03 18:27:37,367 INFO  DownloadService - Downloading "https://github.com/skylot/jadx/archive/master.zip", attempt 3
+2018-01-03 18:27:39,674 INFO  DownloadService - Downloaded https://github.com/skylot/jadx/archive/master.zip, attempt 3
+2018-01-03 18:27:39,674 INFO  DownloadService - Size of file "/tmp/1515004057362-0/master.zip": 1 MB
+2018-01-03 18:27:39,674 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-01-03 18:27:39,676 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/1515004057362-0/master.zip: true
+2018-01-03 18:27:39,676 DEBUG ZipUtil - Extracting '/tmp/1515004057362-0/master.zip' into '/tmp/1515004057362-0/src'.
+2018-01-03 18:27:39,855 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-01-03 18:27:39,856 INFO  SysUtils - Execute command: [git, init, /tmp/1515004057362-0/src]
+2018-01-03 18:27:39,887 INFO  SysUtils - Initialized empty Git repository in /tmp/1515004057362-0/src/.git/
+
+2018-01-03 18:27:39,893 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/1515004057362-0/src/jadx-master/gradlew
+2018-01-03 18:27:39,899 INFO  ProjectBuildService - Build script(s): /tmp/1515004057362-0/src/jadx-master/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle
+2018-01-03 18:27:39,904 INFO  ProjectBuildService - All script(s): /tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle /tmp/1515004057362-0/src/jadx-master/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle /tmp/1515004057362-0/src/jadx-master/settings.gradle /tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle /tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle
+2018-01-03 18:27:39,905 INFO  ProjectBuildService - Remote scripts: none
+2018-01-03 18:27:39,905 INFO  ProjectFixService - Fixing project...
+2018-01-03 18:27:39,917 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/local.properties
+2018-01-03 18:27:39,918 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4.1-bin.zip
+2018-01-03 18:27:39,922 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,922 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,923 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/jadx-cli/local.properties
+2018-01-03 18:27:39,927 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,928 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,928 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/jadx-core/local.properties
+2018-01-03 18:27:39,932 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,932 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,933 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/jadx-gui/local.properties
+2018-01-03 18:27:39,937 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,937 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,938 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/jadx-samples/local.properties
+2018-01-03 18:27:39,941 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,942 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,942 INFO  LocalPropertiesFixService - Created fake /tmp/1515004057362-0/src/jadx-master/jadx-test-app/local.properties
+2018-01-03 18:27:39,946 INFO  ProjectFixService - Build info for "/tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-01-03 18:27:39,946 INFO  ProjectFixService - Fixed build info for "/tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-01-03 18:27:39,947 INFO  ProjectFixService - Project was maybe fixed
+2018-01-03 18:27:39,947 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:27:39,947 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:27:46,714 INFO  ProjectTaskService - Detected possible tasks: 52
+2018-01-03 18:27:46,714 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:27:46,714 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:01,925 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava NO-SOURCE
+:compileGroovy NO-SOURCE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:jar
+:assemble
+:jadx-core:compileJava/tmp/1515004057362-0/src/jadx-master/jadx-core/src/main/java/jadx/core/dex/instructions/args/LiteralArg.java:68: warning: [deprecation] literalToString(long,ArgType) in TypeGen has been deprecated
+			String value = TypeGen.literalToString(literal, getType());
+			                      ^
+1 warning
+
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources
+:jadx-core:classes
+:jadx-core:jar
+:jadx-cli:compileJava
+:jadx-cli:compileGroovy NO-SOURCE
+:jadx-cli:processResources
+:jadx-cli:classes
+:jadx-cli:jar
+:jadx-cli:startScripts
+:jadx-cli:installDist
+:jadx-gui:compileJava
+:jadx-gui:compileGroovy NO-SOURCE
+:jadx-gui:processResources
+:jadx-gui:classes
+:jadx-gui:jar
+:jadx-gui:startScripts
+:jadx-gui:installDist
+:copyArtifacts
+:pack
+:dist
+:jadx-samples:compileJava
+:jadx-samples:compileGroovy NO-SOURCE
+:jadx-samples:processResources NO-SOURCE
+:jadx-samples:classes
+:jadx-samples:samplesRun
+Test classes path: /tmp/1515004057362-0/src/jadx-master/jadx-samples/build/classes/java/main/jadx/samples
+Set timeout to 52 seconds
+>> PASS	jadx.samples.TestAnnotations
+>> PASS	jadx.samples.TestAnnotationsParser
+>> PASS	jadx.samples.TestArrays
+>> PASS	jadx.samples.TestCF
+>> PASS	jadx.samples.TestCF2
+>> PASS	jadx.samples.TestCF3
+>> PASS	jadx.samples.TestCF4
+>> PASS	jadx.samples.TestConditions
+>> PASS	jadx.samples.TestDeadCode
+>> PASS	jadx.samples.TestEnum
+>> PASS	jadx.samples.TestFields
+>> PASS	jadx.samples.TestGenerics
+>> PASS	jadx.samples.TestImports
+>> PASS	jadx.samples.TestImports2
+>> PASS	jadx.samples.TestInitializers
+>> PASS	jadx.samples.TestInner
+>> PASS	jadx.samples.TestInner2
+>> PASS	jadx.samples.TestInner3
+>> PASS	jadx.samples.TestInnerNames
+>> PASS	jadx.samples.TestInvoke
+>> PASS	jadx.samples.TestStringProcessing
+>> PASS	jadx.samples.TestSwitch
+>> PASS	jadx.samples.TestTryCatch
+>> PASS	jadx.samples.TestTypeResolver
+>> PASS	jadx.samples.TestTypeResolver2
+𐌏 = 66319
+>> PASS	jadx.samples.TestUnicode
+---
+Total 26, Passed: 26, Failed: 0
+:jadx-samples:samplesJar
+:jadx-samples:samplesJadxCreate
+18:27:59 INFO  - converting to dex: samples-0.7.0.jar ...
+18:28:00 INFO  - loading ...
+18:28:00 WARN  - Unknown 'R' class, create references to 'R'
+18:28:00 INFO  - processing ...
+18:28:00 INFO  - done
+:jadx-samples:samplesJadxCompileNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:jadx-samples:samplesJadxRun
+Test classes path: /tmp/1515004057362-0/src/jadx-master/jadx-samples/build/samples-jadx/output/jadx/samples
+Set timeout to 52 seconds
+>> PASS	jadx.samples.TestAnnotations
+>> PASS	jadx.samples.TestAnnotationsParser
+>> PASS	jadx.samples.TestArrays
+>> PASS	jadx.samples.TestCF
+>> PASS	jadx.samples.TestCF2
+>> PASS	jadx.samples.TestCF3
+>> PASS	jadx.samples.TestCF4
+>> PASS	jadx.samples.TestConditions
+>> PASS	jadx.samples.TestDeadCode
+>> PASS	jadx.samples.TestEnum
+>> PASS	jadx.samples.TestFields
+>> PASS	jadx.samples.TestGenerics
+>> PASS	jadx.samples.TestImports
+>> PASS	jadx.samples.TestImports2
+>> PASS	jadx.samples.TestInitializers
+>> PASS	jadx.samples.TestInner
+>> PASS	jadx.samples.TestInner2
+>> PASS	jadx.samples.TestInner3
+>> PASS	jadx.samples.TestInnerNames
+>> PASS	jadx.samples.TestInvoke
+>> PASS	jadx.samples.TestStringProcessing
+>> PASS	jadx.samples.TestSwitch
+>> PASS	jadx.samples.TestTryCatch
+>> PASS	jadx.samples.TestTypeResolver
+>> PASS	jadx.samples.TestTypeResolver2
+𐌏 = 66319
+>> PASS	jadx.samples.TestUnicode
+---
+Total 26, Passed: 26, Failed: 0
+:jadx-samples:samples
+:samples
+:build
+:jadx-cli:distTar
+:jadx-cli:distZip
+:jadx-cli:assemble
+:jadx-cli:build
+:jadx-core:assemble
+:jadx-core:build
+:jadx-gui:distTar
+:jadx-gui:distZip
+:jadx-gui:assemble
+:jadx-gui:build
+:jadx-samples:jar
+:jadx-samples:assemble
+:jadx-samples:build
+:jadx-test-app:compileJava NO-SOURCE
+:jadx-test-app:compileGroovy NO-SOURCE
+:jadx-test-app:processResources NO-SOURCE
+:jadx-test-app:classes UP-TO-DATE
+:jadx-test-app:jar
+:jadx-test-app:assemble
+:jadx-test-app:build
+
+BUILD SUCCESSFUL in 15s
+28 actionable tasks: 28 executed
+
+2018-01-03 18:28:01,947 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:28:01,947 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:28:07,716 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-01-03 18:28:07,716 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:28:07,716 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-cli/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:13,632 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jadx-core:compileJava UP-TO-DATE
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources UP-TO-DATE
+:jadx-core:classes UP-TO-DATE
+:jadx-core:jar UP-TO-DATE
+:jadx-cli:compileJava UP-TO-DATE
+:jadx-cli:compileGroovy NO-SOURCE
+:jadx-cli:processResources UP-TO-DATE
+:jadx-cli:classes UP-TO-DATE
+:jadx-cli:jar UP-TO-DATE
+:jadx-cli:startScripts UP-TO-DATE
+:jadx-cli:distTar UP-TO-DATE
+:jadx-cli:distZip UP-TO-DATE
+:jadx-cli:assemble UP-TO-DATE
+:jadx-cli:build
+
+BUILD SUCCESSFUL in 5s
+9 actionable tasks: 9 up-to-date
+
+2018-01-03 18:28:13,644 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:28:13,644 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:28:18,970 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-01-03 18:28:18,970 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:28:18,970 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:24,416 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jadx-core:compileJava UP-TO-DATE
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources UP-TO-DATE
+:jadx-core:classes UP-TO-DATE
+:jadx-core:jar UP-TO-DATE
+:jadx-core:assemble UP-TO-DATE
+:jadx-core:build
+
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 3 up-to-date
+
+2018-01-03 18:28:24,428 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:28:24,428 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:28:29,502 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-01-03 18:28:29,502 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:28:29,503 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-gui/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:35,006 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jadx-core:compileJava UP-TO-DATE
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources UP-TO-DATE
+:jadx-core:classes UP-TO-DATE
+:jadx-core:jar UP-TO-DATE
+:jadx-cli:compileJava UP-TO-DATE
+:jadx-cli:compileGroovy NO-SOURCE
+:jadx-cli:processResources UP-TO-DATE
+:jadx-cli:classes UP-TO-DATE
+:jadx-cli:jar UP-TO-DATE
+:jadx-gui:compileJava UP-TO-DATE
+:jadx-gui:compileGroovy NO-SOURCE
+:jadx-gui:processResources UP-TO-DATE
+:jadx-gui:classes UP-TO-DATE
+:jadx-gui:jar UP-TO-DATE
+:jadx-gui:startScripts UP-TO-DATE
+:jadx-gui:distTar UP-TO-DATE
+:jadx-gui:distZip UP-TO-DATE
+:jadx-gui:assemble UP-TO-DATE
+:jadx-gui:build
+
+BUILD SUCCESSFUL in 5s
+12 actionable tasks: 12 up-to-date
+
+2018-01-03 18:28:35,018 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:28:35,018 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:28:40,197 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-01-03 18:28:40,197 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:28:40,198 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:46,311 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jadx-core:compileJava UP-TO-DATE
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources UP-TO-DATE
+:jadx-core:classes UP-TO-DATE
+:jadx-core:jar UP-TO-DATE
+:jadx-cli:compileJava UP-TO-DATE
+:jadx-cli:compileGroovy NO-SOURCE
+:jadx-cli:processResources UP-TO-DATE
+:jadx-cli:classes UP-TO-DATE
+:jadx-cli:jar UP-TO-DATE
+:jadx-samples:compileJava UP-TO-DATE
+:jadx-samples:compileGroovy NO-SOURCE
+:jadx-samples:processResources NO-SOURCE
+:jadx-samples:classes UP-TO-DATE
+:jadx-samples:jar UP-TO-DATE
+:jadx-samples:assemble UP-TO-DATE
+:jadx-samples:build
+
+BUILD SUCCESSFUL in 5s
+8 actionable tasks: 8 up-to-date
+
+2018-01-03 18:28:46,322 INFO  ProjectTaskService - Detecting possible tasks...
+2018-01-03 18:28:46,322 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-01-03 18:28:51,624 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-01-03 18:28:51,624 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-01-03 18:28:51,624 INFO  SysUtils - Execute command: [/tmp/1515004057362-0/src/jadx-master/gradlew, -b, /tmp/1515004057362-0/src/jadx-master/jadx-test-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-01-03 18:28:57,124 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jadx-core:compileJava UP-TO-DATE
+:jadx-core:compileGroovy NO-SOURCE
+:jadx-core:processResources UP-TO-DATE
+:jadx-core:classes UP-TO-DATE
+:jadx-core:jar UP-TO-DATE
+:jadx-cli:compileJava UP-TO-DATE
+:jadx-cli:compileGroovy NO-SOURCE
+:jadx-cli:processResources UP-TO-DATE
+:jadx-cli:classes UP-TO-DATE
+:jadx-cli:jar UP-TO-DATE
+:jadx-test-app:compileJava NO-SOURCE
+:jadx-test-app:compileGroovy NO-SOURCE
+:jadx-test-app:processResources NO-SOURCE
+:jadx-test-app:classes UP-TO-DATE
+:jadx-test-app:jar UP-TO-DATE
+:jadx-test-app:assemble UP-TO-DATE
+:jadx-test-app:build
+
+BUILD SUCCESSFUL in 5s
+7 actionable tasks: 7 up-to-date
+
+2018-01-03 18:28:57,135 ERROR FullProcessService - Project build has not produced APK file
+2018-01-03 18:28:57,145 ERROR FullProcessService - Could not find generated or existed APK file

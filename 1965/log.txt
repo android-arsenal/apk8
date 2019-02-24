@@ -1,0 +1,193 @@
+2018-04-04 01:19:39,435 INFO  DownloadService - Downloading "https://github.com/percolate/foam/archive/master.zip", attempt 3
+2018-04-04 01:20:39,885 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:20:40,617 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:20:40,617 INFO  DownloadService - Downloading "https://github.com/percolate/foam/archive/master.zip", attempt 3
+2018-04-04 01:21:41,820 DEBUG FullProcessService - Repository https://github.com/percolate/foam available: true
+2018-04-04 01:21:41,820 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:21:41,820 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/percolate/foam, /tmp/rdisk/1965/src]
+2018-04-04 01:21:44,664 INFO  SysUtils - 
+2018-04-04 01:21:44,679 INFO  GitService - Deleted "/tmp/rdisk/1965/src/.git": true
+2018-04-04 01:21:44,681 INFO  FullProcessService - Size of directory with sources: 394 KB
+2018-04-04 01:21:44,681 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1965/src]
+2018-04-04 01:21:44,686 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1965/src/.git/
+
+2018-04-04 01:21:44,688 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1965/src/Foam/gradlew
+2018-04-04 01:21:44,690 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1965/src/Foam/foam/build.gradle /tmp/rdisk/1965/src/Foam/build.gradle
+2018-04-04 01:21:44,691 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1965/src/Foam/settings.gradle /tmp/rdisk/1965/src/Foam/foam/maven_push.gradle /tmp/rdisk/1965/src/Foam/foam/build.gradle /tmp/rdisk/1965/src/Foam/build.gradle
+2018-04-04 01:21:44,692 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:21:44,692 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:21:44,698 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1965/src/Foam/foam/local.properties
+2018-04-04 01:21:44,698 INFO  ProjectFixService - Build info for "/tmp/rdisk/1965/src/Foam/foam/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 01:21:44,698 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1965/src/Foam/local.properties
+2018-04-04 01:21:44,698 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 01:21:44,698 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 01:21:44,701 INFO  ProjectFixService - Build info for "/tmp/rdisk/1965/src/Foam/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-04 01:21:44,701 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:21:44,701 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:21:44,701 INFO  SysUtils - Execute command: [/tmp/rdisk/1965/src/Foam/gradlew, -b, /tmp/rdisk/1965/src/Foam/foam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:22:00,076 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-04 01:22:00,076 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-04 01:22:00,077 INFO  SysUtils - Execute command: [/tmp/rdisk/1965/src/Foam/gradlew, -b, /tmp/rdisk/1965/src/Foam/foam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-04 01:22:15,601 INFO  SysUtils - Configuration on demand is an incubating feature.
+:foam:androidJavadocs
+:foam:androidJavadocsJar
+:foam:androidSourcesJar
+:foam:compileLint
+:foam:copyDebugLint UP-TO-DATE
+:foam:preBuild UP-TO-DATE
+:foam:preDebugBuild UP-TO-DATE
+:foam:checkDebugManifest
+:foam:preDebugAndroidTestBuild UP-TO-DATE
+:foam:preDebugUnitTestBuild UP-TO-DATE
+:foam:preReleaseBuild UP-TO-DATE
+:foam:preReleaseUnitTestBuild UP-TO-DATE
+:foam:prepareComAndroidSupportAppcompatV72220Library
+:foam:prepareComAndroidSupportMultidex100Library
+:foam:prepareComAndroidSupportSupportV42220Library
+:foam:prepareDebugDependencies
+:foam:compileDebugAidl
+:foam:compileDebugRenderscript
+:foam:generateDebugBuildConfig
+:foam:generateDebugAssets UP-TO-DATE
+:foam:mergeDebugAssets
+:foam:generateDebugResValues
+:foam:generateDebugResources
+:foam:mergeDebugResources
+:foam:processDebugManifest
+:foam:processDebugResources
+:foam:generateDebugSources
+:foam:processDebugJavaRes UP-TO-DATE
+:foam:compileDebugJava
+:foam:extractDebugAnnotations
+:foam:mergeDebugProguardFiles
+:foam:unzipJacocoAgent
+:foam:instrumentDebug
+:foam:packageDebugJar
+:foam:compileDebugNdk UP-TO-DATE
+:foam:packageDebugJniLibs UP-TO-DATE
+:foam:packageDebugLocalJar
+:foam:packageDebugRenderscript UP-TO-DATE
+:foam:packageDebugResources
+:foam:bundleDebug
+:foam:compileDebugSources
+:foam:assembleDebug
+:foam:copyReleaseLint UP-TO-DATE
+:foam:checkReleaseManifest
+:foam:prepareReleaseDependencies
+:foam:compileReleaseAidl
+:foam:compileReleaseRenderscript
+:foam:generateReleaseBuildConfig
+:foam:generateReleaseAssets UP-TO-DATE
+:foam:mergeReleaseAssets
+:foam:generateReleaseResValues
+:foam:generateReleaseResources
+:foam:mergeReleaseResources
+:foam:processReleaseManifest
+:foam:processReleaseResources
+:foam:generateReleaseSources
+:foam:processReleaseJavaRes UP-TO-DATE
+:foam:compileReleaseJava
+:foam:extractReleaseAnnotations
+:foam:mergeReleaseProguardFiles
+:foam:packageReleaseJar
+:foam:compileReleaseNdk UP-TO-DATE
+:foam:packageReleaseJniLibs UP-TO-DATE
+:foam:packageReleaseLocalJar
+:foam:packageReleaseRenderscript UP-TO-DATE
+:foam:packageReleaseResources
+:foam:bundleRelease
+:foam:compileReleaseSources
+:foam:assembleRelease
+:foam:signArchives SKIPPED
+:foam:assemble
+:foam:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.797 secs
+
+2018-04-04 01:22:15,634 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:22:15,634 INFO  SysUtils - Execute command: [/tmp/rdisk/1965/src/Foam/gradlew, -b, /tmp/rdisk/1965/src/Foam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:22:22,449 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-04 01:22:22,449 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-04 01:22:22,449 INFO  SysUtils - Execute command: [/tmp/rdisk/1965/src/Foam/gradlew, -b, /tmp/rdisk/1965/src/Foam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-04 01:22:29,720 INFO  SysUtils - Configuration on demand is an incubating feature.
+:foam:androidJavadocs UP-TO-DATE
+:foam:androidJavadocsJar UP-TO-DATE
+:foam:androidSourcesJar UP-TO-DATE
+:foam:compileLint
+:foam:copyDebugLint UP-TO-DATE
+:foam:preBuild UP-TO-DATE
+:foam:preDebugBuild UP-TO-DATE
+:foam:checkDebugManifest
+:foam:preDebugAndroidTestBuild UP-TO-DATE
+:foam:preDebugUnitTestBuild UP-TO-DATE
+:foam:preReleaseBuild UP-TO-DATE
+:foam:preReleaseUnitTestBuild UP-TO-DATE
+:foam:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:foam:prepareComAndroidSupportMultidex100Library UP-TO-DATE
+:foam:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:foam:prepareDebugDependencies
+:foam:compileDebugAidl UP-TO-DATE
+:foam:compileDebugRenderscript UP-TO-DATE
+:foam:generateDebugBuildConfig UP-TO-DATE
+:foam:generateDebugAssets UP-TO-DATE
+:foam:mergeDebugAssets UP-TO-DATE
+:foam:generateDebugResValues UP-TO-DATE
+:foam:generateDebugResources UP-TO-DATE
+:foam:mergeDebugResources UP-TO-DATE
+:foam:processDebugManifest UP-TO-DATE
+:foam:processDebugResources UP-TO-DATE
+:foam:generateDebugSources UP-TO-DATE
+:foam:processDebugJavaRes UP-TO-DATE
+:foam:compileDebugJava UP-TO-DATE
+:foam:extractDebugAnnotations UP-TO-DATE
+:foam:mergeDebugProguardFiles UP-TO-DATE
+:foam:unzipJacocoAgent UP-TO-DATE
+:foam:instrumentDebug UP-TO-DATE
+:foam:packageDebugJar UP-TO-DATE
+:foam:compileDebugNdk UP-TO-DATE
+:foam:packageDebugJniLibs UP-TO-DATE
+:foam:packageDebugLocalJar UP-TO-DATE
+:foam:packageDebugRenderscript UP-TO-DATE
+:foam:packageDebugResources UP-TO-DATE
+:foam:bundleDebug UP-TO-DATE
+:foam:compileDebugSources UP-TO-DATE
+:foam:assembleDebug UP-TO-DATE
+:foam:copyReleaseLint UP-TO-DATE
+:foam:checkReleaseManifest
+:foam:prepareReleaseDependencies
+:foam:compileReleaseAidl UP-TO-DATE
+:foam:compileReleaseRenderscript UP-TO-DATE
+:foam:generateReleaseBuildConfig UP-TO-DATE
+:foam:generateReleaseAssets UP-TO-DATE
+:foam:mergeReleaseAssets UP-TO-DATE
+:foam:generateReleaseResValues UP-TO-DATE
+:foam:generateReleaseResources UP-TO-DATE
+:foam:mergeReleaseResources UP-TO-DATE
+:foam:processReleaseManifest UP-TO-DATE
+:foam:processReleaseResources UP-TO-DATE
+:foam:generateReleaseSources UP-TO-DATE
+:foam:processReleaseJavaRes UP-TO-DATE
+:foam:compileReleaseJava UP-TO-DATE
+:foam:extractReleaseAnnotations UP-TO-DATE
+:foam:mergeReleaseProguardFiles UP-TO-DATE
+:foam:packageReleaseJar UP-TO-DATE
+:foam:compileReleaseNdk UP-TO-DATE
+:foam:packageReleaseJniLibs UP-TO-DATE
+:foam:packageReleaseLocalJar UP-TO-DATE
+:foam:packageReleaseRenderscript UP-TO-DATE
+:foam:packageReleaseResources UP-TO-DATE
+:foam:bundleRelease UP-TO-DATE
+:foam:compileReleaseSources UP-TO-DATE
+:foam:assembleRelease UP-TO-DATE
+:foam:signArchives SKIPPED
+:foam:assemble UP-TO-DATE
+:foam:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.829 secs
+
+2018-04-04 01:22:29,753 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 01:22:29,784 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,171 @@
+2018-04-04 01:02:38,696 INFO  DownloadService - Downloading "https://github.com/darko1002001/android-commons/archive/master.zip", attempt 3
+2018-04-04 01:03:39,359 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:03:40,181 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:03:40,181 INFO  DownloadService - Downloading "https://github.com/darko1002001/android-commons/archive/master.zip", attempt 3
+2018-04-04 01:04:41,509 DEBUG FullProcessService - Repository https://github.com/darko1002001/android-commons available: true
+2018-04-04 01:04:41,509 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:04:41,509 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/darko1002001/android-commons, /tmp/rdisk/1972/src]
+2018-04-04 01:04:43,020 INFO  SysUtils - 
+2018-04-04 01:04:43,025 INFO  GitService - Deleted "/tmp/rdisk/1972/src/.git": true
+2018-04-04 01:04:43,028 INFO  FullProcessService - Size of directory with sources: 174 KB
+2018-04-04 01:04:43,028 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1972/src]
+2018-04-04 01:04:43,032 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1972/src/.git/
+
+2018-04-04 01:04:43,035 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1972/src/gradlew
+2018-04-04 01:04:43,038 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1972/src/app/build.gradle /tmp/rdisk/1972/src/library/build.gradle /tmp/rdisk/1972/src/build.gradle
+2018-04-04 01:04:43,040 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1972/src/settings.gradle /tmp/rdisk/1972/src/library/build.gradle /tmp/rdisk/1972/src/gradle-mvn-push.gradle /tmp/rdisk/1972/src/build.gradle /tmp/rdisk/1972/src/app/build.gradle
+2018-04-04 01:04:43,041 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:04:43,041 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:04:43,048 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1972/src/app/local.properties
+2018-04-04 01:04:43,050 INFO  ProjectFixService - Build info for "/tmp/rdisk/1972/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-04-04 01:04:43,050 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1972/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-04-04 01:04:43,051 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1972/src/library/local.properties
+2018-04-04 01:04:43,053 INFO  ProjectFixService - Build info for "/tmp/rdisk/1972/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-04-04 01:04:43,053 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1972/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-04-04 01:04:43,053 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1972/src/local.properties
+2018-04-04 01:04:43,053 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 01:04:43,053 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 01:04:43,055 INFO  ProjectFixService - Build info for "/tmp/rdisk/1972/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-04-04 01:04:43,055 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1972/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-04-04 01:04:43,055 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:04:43,056 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:04:43,056 INFO  SysUtils - Execute command: [/tmp/rdisk/1972/src/gradlew, -b, /tmp/rdisk/1972/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:05:00,658 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-04 01:05:00,658 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 01:05:00,658 INFO  SysUtils - Execute command: [/tmp/rdisk/1972/src/gradlew, -b, /tmp/rdisk/1972/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 01:05:23,860 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: /tmp/rdisk/1972/src/library/src/main/java/com/aranea_apps/android/libs/commons/UDIDGenerator.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1972/src/library/src/main/java/com/aranea_apps/android/libs/commons/preferences/ModelPreference.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72000Library
+:app:prepareComAndroidSupportSupportV42000Library
+:app:prepareComAraneaAppsAndroidLibsLibrary112Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_go.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT err(967271235) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(1563775135) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(1564573836) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(561359381) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_normal.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(319214737) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT err(319214737) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_go.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_normal.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+AAPT err(98522170) : No Delegate set : lost message:/tmp/rdisk/1972/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.76 secs
+
+2018-04-04 01:05:23,895 INFO  FullProcessService - Found APK file: /tmp/rdisk/1972/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,129 @@
+2018-04-04 04:40:23,995 INFO  DownloadService - Downloading "https://github.com/zzz40500/Android-PullToNextLayout/archive/master.zip", attempt 3
+2018-04-04 04:41:24,643 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 04:41:25,434 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 04:41:25,437 INFO  DownloadService - Downloading "https://github.com/zzz40500/Android-PullToNextLayout/archive/master.zip", attempt 3
+2018-04-04 04:42:26,688 DEBUG FullProcessService - Repository https://github.com/zzz40500/Android-PullToNextLayout available: true
+2018-04-04 04:42:26,688 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 04:42:26,688 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/zzz40500/Android-PullToNextLayout, /tmp/rdisk/1893/src]
+2018-04-04 04:42:28,886 INFO  SysUtils - 
+2018-04-04 04:42:28,891 INFO  GitService - Deleted "/tmp/rdisk/1893/src/.git": true
+2018-04-04 04:42:28,895 INFO  FullProcessService - Size of directory with sources: 8 MB
+2018-04-04 04:42:28,895 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1893/src]
+2018-04-04 04:42:28,900 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1893/src/.git/
+
+2018-04-04 04:42:28,903 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1893/src/gradlew
+2018-04-04 04:42:28,907 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1893/src/example2/build.gradle /tmp/rdisk/1893/src/pulltonextlayout/build.gradle /tmp/rdisk/1893/src/build.gradle
+2018-04-04 04:42:28,910 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1893/src/settings.gradle /tmp/rdisk/1893/src/pulltonextlayout/build.gradle /tmp/rdisk/1893/src/maven-push.gradle /tmp/rdisk/1893/src/example2/build.gradle /tmp/rdisk/1893/src/build.gradle
+2018-04-04 04:42:28,911 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 04:42:28,911 INFO  ProjectFixService - Fixing project...
+2018-04-04 04:42:28,919 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1893/src/example2/local.properties
+2018-04-04 04:42:28,919 INFO  ProjectFixService - Build info for "/tmp/rdisk/1893/src/example2/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-04 04:42:28,920 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1893/src/pulltonextlayout/local.properties
+2018-04-04 04:42:28,920 INFO  ProjectFixService - Build info for "/tmp/rdisk/1893/src/pulltonextlayout/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-04 04:42:28,920 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1893/src/local.properties
+2018-04-04 04:42:28,920 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 04:42:28,920 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 04:42:28,921 INFO  ProjectFixService - Build info for "/tmp/rdisk/1893/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-04 04:42:28,921 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 04:42:28,921 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 04:42:28,921 INFO  SysUtils - Execute command: [/tmp/rdisk/1893/src/gradlew, -b, /tmp/rdisk/1893/src/example2/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 04:42:37,490 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-04 04:42:37,490 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 04:42:37,490 INFO  SysUtils - Execute command: [/tmp/rdisk/1893/src/gradlew, -b, /tmp/rdisk/1893/src/example2/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 04:43:03,301 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example2:preBuild
+:example2:compileDebugNdk
+:example2:preDebugBuild
+:example2:checkDebugManifest
+:example2:preReleaseBuild
+:pulltonextlayout:compileLint
+:pulltonextlayout:copyReleaseLint UP-TO-DATE
+:pulltonextlayout:preBuild
+:pulltonextlayout:preReleaseBuild
+:pulltonextlayout:checkReleaseManifest
+:pulltonextlayout:preDebugBuild
+:pulltonextlayout:preDebugTestBuild
+:pulltonextlayout:prepareComAndroidSupportSupportV42211Library
+:pulltonextlayout:prepareReleaseDependencies
+:pulltonextlayout:compileReleaseAidl
+:pulltonextlayout:compileReleaseRenderscript
+:pulltonextlayout:generateReleaseBuildConfig
+:pulltonextlayout:generateReleaseAssets UP-TO-DATE
+:pulltonextlayout:mergeReleaseAssets
+:pulltonextlayout:generateReleaseResValues
+:pulltonextlayout:generateReleaseResources
+:pulltonextlayout:mergeReleaseResources
+:pulltonextlayout:processReleaseManifest
+:pulltonextlayout:processReleaseResources
+:pulltonextlayout:generateReleaseSources
+:pulltonextlayout:compileReleaseJavaNote: /tmp/rdisk/1893/src/pulltonextlayout/src/main/java/com/mingle/pulltonextlayout/PullToNextView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:pulltonextlayout:extractReleaseAnnotations
+:pulltonextlayout:mergeReleaseProguardFiles
+:pulltonextlayout:processReleaseJavaRes UP-TO-DATE
+:pulltonextlayout:packageReleaseJar
+:pulltonextlayout:compileReleaseNdk
+:pulltonextlayout:packageReleaseJniLibs UP-TO-DATE
+:pulltonextlayout:packageReleaseLocalJar UP-TO-DATE
+:pulltonextlayout:packageReleaseRenderscript UP-TO-DATE
+:pulltonextlayout:packageReleaseResources
+:pulltonextlayout:bundleRelease
+:example2:prepareComAndroidSupportAppcompatV72200Library
+:example2:prepareComAndroidSupportSupportV42211Library
+:example2:prepareComMingleZzz40500Pulltonextlayout130Library
+:example2:prepareDebugDependencies
+:example2:compileDebugAidl
+:example2:compileDebugRenderscript
+:example2:generateDebugBuildConfig
+:example2:generateDebugAssets UP-TO-DATE
+:example2:mergeDebugAssets
+:example2:generateDebugResValues
+:example2:generateDebugResources
+:example2:mergeDebugResources/tmp/rdisk/1893/src/example2/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:example2:processDebugManifest
+:example2:processDebugResources
+:example2:generateDebugSources
+:example2:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example2:preDexDebug
+:example2:dexDebug
+:example2:processDebugJavaRes UP-TO-DATE
+:example2:validateDebugSigning
+:example2:packageDebug
+:example2:zipalignDebug
+:example2:assembleDebug
+:example2:checkReleaseManifest
+:example2:prepareReleaseDependencies
+:example2:compileReleaseAidl
+:example2:compileReleaseRenderscript
+:example2:generateReleaseBuildConfig
+:example2:generateReleaseAssets UP-TO-DATE
+:example2:mergeReleaseAssets
+:example2:generateReleaseResValues
+:example2:generateReleaseResources
+:example2:mergeReleaseResources/tmp/rdisk/1893/src/example2/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:example2:processReleaseManifest
+:example2:processReleaseResources
+:example2:generateReleaseSources
+:example2:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example2:lintVitalRelease
+:example2:compileReleaseNdk
+:example2:preDexRelease
+:example2:dexRelease
+:example2:processReleaseJavaRes UP-TO-DATE
+:example2:packageRelease
+:example2:assembleRelease
+:example2:assemble
+:example2:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.363 secs
+
+2018-04-04 04:43:03,337 INFO  FullProcessService - Found APK file: /tmp/rdisk/1893/src/example2/build/outputs/apk/example2-release-unsigned.apk

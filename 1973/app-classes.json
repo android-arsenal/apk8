@@ -1,0 +1,10 @@
+{
+  "com.malmstein.fenster" : [ "BuildConfig", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ],
+  "com.malmstein.fenster.controller" : [ "FensterPlayerController", "FensterPlayerControllerVisibilityListener", "MediaFensterPlayerController", "MediaFensterPlayerController$1", "MediaFensterPlayerController$2", "MediaFensterPlayerController$3", "SimpleMediaFensterPlayerController", "SimpleMediaFensterPlayerController$1", "SimpleMediaFensterPlayerController$2", "SimpleMediaFensterPlayerController$3" ],
+  "com.malmstein.fenster.demo" : [ "BuildConfig", "GestureMediaPlayerActivity", "GestureMediaPlayerActivity$1", "MediaPlayerDemoActivity", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$raw", "R$string", "R$style", "R$styleable", "ScaleMediaPlayerActivity", "SimpleMediaPlayerActivity", "SimpleMediaPlayerActivity$1" ],
+  "com.malmstein.fenster.gestures" : [ "FensterEventsListener", "FensterGestureControllerView", "FensterGestureListener" ],
+  "com.malmstein.fenster.helper" : [ "BrightnessHelper" ],
+  "com.malmstein.fenster.play" : [ "FensterPlayer", "FensterVideoFragment", "FensterVideoStateListener" ],
+  "com.malmstein.fenster.seekbar" : [ "BrightnessSeekBar", "BrightnessSeekBar$1", "BrightnessSeekBar$Listener", "VolumeSeekBar", "VolumeSeekBar$1", "VolumeSeekBar$2", "VolumeSeekBar$Listener" ],
+  "com.malmstein.fenster.view" : [ "FensterLoadingView", "FensterTouchRoot", "FensterTouchRoot$OnTouchReceiver", "FensterVideoView", "FensterVideoView$1", "FensterVideoView$10", "FensterVideoView$11", "FensterVideoView$2", "FensterVideoView$3", "FensterVideoView$4", "FensterVideoView$5", "FensterVideoView$6", "FensterVideoView$7", "FensterVideoView$8", "FensterVideoView$9", "FensterVideoView$ScaleType", "VideoSizeCalculator", "VideoSizeCalculator$Dimens" ]
+}

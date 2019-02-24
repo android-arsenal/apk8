@@ -1,0 +1,106 @@
+2018-04-04 00:18:09,867 INFO  DownloadService - Downloading "https://github.com/elastique/poetry/archive/master.zip", attempt 3
+2018-04-04 00:19:10,458 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:19:11,130 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:19:11,131 INFO  DownloadService - Downloading "https://github.com/elastique/poetry/archive/master.zip", attempt 3
+2018-04-04 00:20:12,378 DEBUG FullProcessService - Repository https://github.com/elastique/poetry available: true
+2018-04-04 00:20:12,378 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:20:12,378 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/elastique/poetry, /tmp/rdisk/1991/src]
+2018-04-04 00:20:14,143 INFO  SysUtils - 
+2018-04-04 00:20:14,154 INFO  GitService - Deleted "/tmp/rdisk/1991/src/.git": true
+2018-04-04 00:20:14,156 INFO  FullProcessService - Size of directory with sources: 156 KB
+2018-04-04 00:20:14,156 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1991/src]
+2018-04-04 00:20:14,166 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1991/src/.git/
+
+2018-04-04 00:20:14,167 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1991/src/gradlew
+2018-04-04 00:20:14,169 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1991/src/build.gradle
+2018-04-04 00:20:14,171 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1991/src/build.gradle
+2018-04-04 00:20:14,171 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:20:14,171 INFO  ProjectFixService - Fixing project...
+2018-04-04 00:20:14,176 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1991/src/local.properties
+2018-04-04 00:20:14,176 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 00:20:14,176 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 00:20:14,177 INFO  ProjectFixService - Build info for "/tmp/rdisk/1991/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-04 00:20:14,177 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1991/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-04 00:20:14,178 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 00:20:14,178 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 00:20:14,178 INFO  SysUtils - Execute command: [/tmp/rdisk/1991/src/gradlew, -b, /tmp/rdisk/1991/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 00:20:23,070 INFO  ProjectTaskService - Detected possible tasks: 77
+2018-04-04 00:20:23,070 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-04 00:20:23,071 INFO  SysUtils - Execute command: [/tmp/rdisk/1991/src/gradlew, -b, /tmp/rdisk/1991/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-04 00:20:31,943 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileLint
+:copyDebugLint UP-TO-DATE
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:preDebugAndroidTestBuild UP-TO-DATE
+:preDebugUnitTestBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:preReleaseUnitTestBuild UP-TO-DATE
+:prepareComAndroidSupportSupportV42340Library
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:processDebugJavaRes UP-TO-DATE
+:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:extractDebugAnnotations
+:mergeDebugProguardFiles
+:packageDebugJar
+:compileDebugNdk UP-TO-DATE
+:packageDebugJniLibs UP-TO-DATE
+:packageDebugLocalJar UP-TO-DATE
+:packageDebugRenderscript UP-TO-DATE
+:packageDebugResources
+:bundleDebug
+:compileDebugSources
+:assembleDebug
+:copyReleaseLint UP-TO-DATE
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:processReleaseJavaRes UP-TO-DATE
+:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:extractReleaseAnnotations
+:mergeReleaseProguardFiles
+:packageReleaseJar
+:compileReleaseNdk UP-TO-DATE
+:packageReleaseJniLibs UP-TO-DATE
+:packageReleaseLocalJar UP-TO-DATE
+:packageReleaseRenderscript UP-TO-DATE
+:packageReleaseResources
+:bundleRelease
+:compileReleaseSources
+:assembleRelease
+:jarRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.426 secs
+
+2018-04-04 00:20:31,950 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 00:20:31,956 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,391 @@
+2018-04-04 09:16:52,400 INFO  DownloadService - Downloading "https://github.com/florent37/PicassoPalette/archive/master.zip", attempt 3
+2018-04-04 09:17:53,039 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:17:53,864 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 09:17:53,865 INFO  DownloadService - Downloading "https://github.com/florent37/PicassoPalette/archive/master.zip", attempt 3
+2018-04-04 09:18:55,138 DEBUG FullProcessService - Repository https://github.com/florent37/PicassoPalette available: true
+2018-04-04 09:18:55,138 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:18:55,138 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/florent37/PicassoPalette, /tmp/rdisk/1825/src]
+2018-04-04 09:19:01,627 INFO  SysUtils - 
+2018-04-04 09:19:01,639 INFO  GitService - Deleted "/tmp/rdisk/1825/src/.git": true
+2018-04-04 09:19:01,641 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 09:19:01,641 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1825/src]
+2018-04-04 09:19:01,646 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1825/src/.git/
+
+2018-04-04 09:19:01,648 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1825/src/gradlew
+2018-04-04 09:19:01,651 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1825/src/picassopalette/build.gradle /tmp/rdisk/1825/src/sample/build.gradle /tmp/rdisk/1825/src/build.gradle
+2018-04-04 09:19:01,653 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1825/src/settings.gradle /tmp/rdisk/1825/src/sample/build.gradle /tmp/rdisk/1825/src/picassopalette/build.gradle /tmp/rdisk/1825/src/gradle/install-v1.gradle /tmp/rdisk/1825/src/gradle/bintray-java-v1.gradle /tmp/rdisk/1825/src/gradle/bintray-android-v1.gradle /tmp/rdisk/1825/src/build.gradle
+2018-04-04 09:19:01,653 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:19:01,653 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:19:01,659 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1825/src/picassopalette/local.properties
+2018-04-04 09:19:01,663 INFO  ProjectFixService - Build info for "/tmp/rdisk/1825/src/picassopalette/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-04 09:19:01,663 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1825/src/picassopalette/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-04 09:19:01,663 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1825/src/sample/local.properties
+2018-04-04 09:19:01,667 INFO  ProjectFixService - Build info for "/tmp/rdisk/1825/src/sample/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-04 09:19:01,667 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1825/src/sample/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-04 09:19:01,667 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1825/src/local.properties
+2018-04-04 09:19:01,667 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-04 09:19:01,667 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-04 09:19:01,669 INFO  ProjectFixService - Build info for "/tmp/rdisk/1825/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-04 09:19:01,669 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1825/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-04 09:19:01,669 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:19:01,670 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:19:01,670 INFO  SysUtils - Execute command: [/tmp/rdisk/1825/src/gradlew, -b, /tmp/rdisk/1825/src/picassopalette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:19:10,605 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 09:19:10,606 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 09:19:10,606 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 09:19:10,606 INFO  SysUtils - Execute command: [/tmp/rdisk/1825/src/gradlew, -b, /tmp/rdisk/1825/src/picassopalette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 09:19:31,192 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:picassopalette:preBuild UP-TO-DATE
+:picassopalette:preDebugBuild UP-TO-DATE
+:picassopalette:compileDebugNdk UP-TO-DATE
+:picassopalette:compileLint
+:picassopalette:copyDebugLint UP-TO-DATE
+:picassopalette:checkDebugManifest
+:picassopalette:preDebugAndroidTestBuild UP-TO-DATE
+:picassopalette:preDebugUnitTestBuild UP-TO-DATE
+:picassopalette:preReleaseBuild UP-TO-DATE
+:picassopalette:preReleaseUnitTestBuild UP-TO-DATE
+:picassopalette:prepareComAndroidSupportPaletteV72330Library
+:picassopalette:prepareComAndroidSupportSupportV42330Library
+:picassopalette:prepareDebugDependencies
+:picassopalette:compileDebugAidl
+:picassopalette:compileDebugRenderscript
+:picassopalette:generateDebugBuildConfig
+:picassopalette:mergeDebugShaders
+:picassopalette:compileDebugShaders
+:picassopalette:generateDebugAssets
+:picassopalette:mergeDebugAssets
+:picassopalette:generateDebugResValues
+:picassopalette:generateDebugResources
+:picassopalette:mergeDebugResources
+:picassopalette:processDebugManifest
+:picassopalette:processDebugResources
+:picassopalette:generateDebugSources
+:picassopalette:incrementalDebugJavaCompilationSafeguard
+:picassopalette:compileDebugJavaWithJavac
+:picassopalette:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:picassopalette:extractDebugAnnotations
+:picassopalette:mergeDebugProguardFiles
+:picassopalette:packageDebugRenderscript UP-TO-DATE
+:picassopalette:packageDebugResources
+:picassopalette:processDebugJavaRes UP-TO-DATE
+:picassopalette:transformResourcesWithMergeJavaResForDebug
+:picassopalette:transformClassesAndResourcesWithSyncLibJarsForDebug
+:picassopalette:mergeDebugJniLibFolders
+:picassopalette:transformNative_libsWithMergeJniLibsForDebug
+:picassopalette:transformNative_libsWithSyncJniLibsForDebug
+:picassopalette:bundleDebug
+:picassopalette:compileDebugSources
+:picassopalette:assembleDebug
+:picassopalette:compileReleaseNdk UP-TO-DATE
+:picassopalette:copyReleaseLint UP-TO-DATE
+:picassopalette:checkReleaseManifest
+:picassopalette:prepareReleaseDependencies
+:picassopalette:compileReleaseAidl
+:picassopalette:compileReleaseRenderscript
+:picassopalette:generateReleaseBuildConfig
+:picassopalette:mergeReleaseShaders
+:picassopalette:compileReleaseShaders
+:picassopalette:generateReleaseAssets
+:picassopalette:mergeReleaseAssets
+:picassopalette:generateReleaseResValues
+:picassopalette:generateReleaseResources
+:picassopalette:mergeReleaseResources
+:picassopalette:processReleaseManifest
+:picassopalette:processReleaseResources
+:picassopalette:generateReleaseSources
+:picassopalette:incrementalReleaseJavaCompilationSafeguard
+:picassopalette:compileReleaseJavaWithJavac
+:picassopalette:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:picassopalette:extractReleaseAnnotations
+:picassopalette:mergeReleaseProguardFiles
+:picassopalette:packageReleaseRenderscript UP-TO-DATE
+:picassopalette:packageReleaseResources
+:picassopalette:processReleaseJavaRes UP-TO-DATE
+:picassopalette:transformResourcesWithMergeJavaResForRelease
+:picassopalette:transformClassesAndResourcesWithSyncLibJarsForRelease
+:picassopalette:mergeReleaseJniLibFolders
+:picassopalette:transformNative_libsWithMergeJniLibsForRelease
+:picassopalette:transformNative_libsWithSyncJniLibsForRelease
+:picassopalette:bundleRelease
+:picassopalette:compileReleaseSources
+:picassopalette:assembleRelease
+:picassopalette:javadoc/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:6: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:7: error: package android.support.v4.util does not exist
+import android.support.v4.util.Pair;
+                              ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:8: error: package android.support.v7.graphics does not exist
+import android.support.v7.graphics.Palette;
+                                  ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:15: error: package com.squareup.picasso does not exist
+import com.squareup.picasso.Callback;
+                           ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:16: error: package com.squareup.picasso does not exist
+import com.squareup.picasso.Picasso;
+                           ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:17: error: package com.squareup.picasso does not exist
+import com.squareup.picasso.Target;
+                           ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:5: error: package android.support.v4.util does not exist
+import android.support.v4.util.LruCache;
+                              ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:6: error: package android.support.v4.util does not exist
+import android.support.v4.util.Pair;
+                              ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:7: error: package android.support.v7.graphics does not exist
+import android.support.v7.graphics.Palette;
+                                  ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:29: error: cannot find symbol
+public class PicassoPalette extends BitmapPalette implements Target, Callback {
+                                                             ^
+  symbol: class Target
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:29: error: cannot find symbol
+public class PicassoPalette extends BitmapPalette implements Target, Callback {
+                                                                     ^
+  symbol: class Callback
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:31: error: cannot find symbol
+    protected Callback callback;
+              ^
+  symbol:   class Callback
+  location: class PicassoPalette
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:67: error: cannot find symbol
+    public PicassoPalette setGlideListener(Callback callback) {
+                                           ^
+  symbol:   class Callback
+  location: class PicassoPalette
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PicassoPalette.java:80: error: package Picasso does not exist
+    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                                                     ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:28: error: cannot find symbol
+    private LruCache<String, Palette> cache = new LruCache<>(40);
+            ^
+  symbol:   class LruCache
+  location: class BitmapPalette
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:28: error: cannot find symbol
+    private LruCache<String, Palette> cache = new LruCache<>(40);
+                             ^
+  symbol:   class Palette
+  location: class BitmapPalette
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PaletteTarget.java:3: error: package android.support.v4.util does not exist
+import android.support.v4.util.Pair;
+                              ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:94: error: cannot find symbol
+    protected void apply(Palette palette) {
+                         ^
+  symbol:   class Palette
+  location: class BitmapPalette
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:139: error: package Palette does not exist
+    protected static int getColor(Palette.Swatch swatch, @Swatch.PaletteSwatch int paletteSwatch) {
+                                         ^
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:25: error: cannot find symbol
+        void onPaletteLoaded(Palette palette);
+                             ^
+  symbol:   class Palette
+  location: interface CallBack
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PaletteTarget.java:17: error: cannot find symbol
+    protected ArrayList<Pair<View, Integer>> targetsBackground = new ArrayList<>();
+                        ^
+  symbol:   class Pair
+  location: class PaletteTarget
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/PaletteTarget.java:18: error: cannot find symbol
+    protected ArrayList<Pair<TextView, Integer>> targetsText = new ArrayList<>();
+                        ^
+  symbol:   class Pair
+  location: class PaletteTarget
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:38: error: cannot find symbol
+        @IntDef({VIBRANT, VIBRANT_DARK, VIBRANT_LIGHT, MUTED, MUTED_DARK, MUTED_LIGHT})
+         ^
+  symbol:   class IntDef
+  location: class Profile
+/tmp/rdisk/1825/src/picassopalette/src/main/java/com/github/florent37/picassopalette/BitmapPalette.java:49: error: cannot find symbol
+        @IntDef({RGB, TITLE_TEXT_COLOR, BODY_TEXT_COLOR})
+         ^
+  symbol:   class IntDef
+  location: class Swatch
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+46 warnings
+:picassopalette:javadocJar
+:picassopalette:sourcesJar
+:picassopalette:assemble
+:picassopalette:lint
+Ran lint on variant release: 0 issues found
+Ran lint on variant debug: 0 issues found
+Wrote HTML report to file:///tmp/rdisk/1825/src/picassopalette/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1825/src/picassopalette/build/outputs/lint-results-debug.xml
+:picassopalette:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:picassopalette:prepareDebugUnitTestDependencies
+:picassopalette:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:picassopalette:processDebugUnitTestJavaRes UP-TO-DATE
+:picassopalette:compileDebugUnitTestSources UP-TO-DATE
+:picassopalette:mockableAndroidJar
+:picassopalette:assembleDebugUnitTest
+:picassopalette:testDebugUnitTest
+:picassopalette:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:picassopalette:prepareReleaseUnitTestDependencies
+:picassopalette:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:picassopalette:processReleaseUnitTestJavaRes UP-TO-DATE
+:picassopalette:compileReleaseUnitTestSources UP-TO-DATE
+:picassopalette:assembleReleaseUnitTest
+:picassopalette:testReleaseUnitTest
+:picassopalette:test
+:picassopalette:check
+:picassopalette:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.123 secs
+
+2018-04-04 09:19:31,202 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:19:31,202 INFO  SysUtils - Execute command: [/tmp/rdisk/1825/src/gradlew, -b, /tmp/rdisk/1825/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:19:38,677 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-04 09:19:38,677 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 09:19:38,677 INFO  SysUtils - Execute command: [/tmp/rdisk/1825/src/gradlew, -b, /tmp/rdisk/1825/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 09:20:05,183 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:picassopalette:preBuild UP-TO-DATE
+:picassopalette:preReleaseBuild UP-TO-DATE
+:picassopalette:compileReleaseNdk UP-TO-DATE
+:picassopalette:compileLint
+:picassopalette:copyReleaseLint UP-TO-DATE
+:picassopalette:checkReleaseManifest
+:picassopalette:preDebugAndroidTestBuild UP-TO-DATE
+:picassopalette:preDebugBuild UP-TO-DATE
+:picassopalette:preDebugUnitTestBuild UP-TO-DATE
+:picassopalette:preReleaseUnitTestBuild UP-TO-DATE
+:picassopalette:prepareComAndroidSupportPaletteV72330Library UP-TO-DATE
+:picassopalette:prepareComAndroidSupportSupportV42330Library UP-TO-DATE
+:picassopalette:prepareReleaseDependencies
+:picassopalette:compileReleaseAidl UP-TO-DATE
+:picassopalette:compileReleaseRenderscript UP-TO-DATE
+:picassopalette:generateReleaseBuildConfig UP-TO-DATE
+:picassopalette:mergeReleaseShaders UP-TO-DATE
+:picassopalette:compileReleaseShaders UP-TO-DATE
+:picassopalette:generateReleaseAssets UP-TO-DATE
+:picassopalette:mergeReleaseAssets UP-TO-DATE
+:picassopalette:generateReleaseResValues UP-TO-DATE
+:picassopalette:generateReleaseResources UP-TO-DATE
+:picassopalette:mergeReleaseResources UP-TO-DATE
+:picassopalette:processReleaseManifest UP-TO-DATE
+:picassopalette:processReleaseResources UP-TO-DATE
+:picassopalette:generateReleaseSources UP-TO-DATE
+:picassopalette:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:picassopalette:compileReleaseJavaWithJavac UP-TO-DATE
+:picassopalette:extractReleaseAnnotations UP-TO-DATE
+:picassopalette:mergeReleaseProguardFiles UP-TO-DATE
+:picassopalette:packageReleaseRenderscript UP-TO-DATE
+:picassopalette:packageReleaseResources UP-TO-DATE
+:picassopalette:processReleaseJavaRes UP-TO-DATE
+:picassopalette:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:picassopalette:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:picassopalette:mergeReleaseJniLibFolders UP-TO-DATE
+:picassopalette:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:picassopalette:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:picassopalette:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:sample:prepareComAndroidSupportAppcompatV72330Library
+:sample:prepareComAndroidSupportPaletteV72330Library
+:sample:prepareComAndroidSupportSupportV42330Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2330Library
+:sample:prepareComGithubFlorent37Picassopalette200Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:prePackageMarkerForDebug
+:sample:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:prePackageMarkerForRelease
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.057 secs
+
+2018-04-04 09:20:05,234 INFO  FullProcessService - Found APK file: /tmp/rdisk/1825/src/sample/build/outputs/apk/sample-release-unsigned.apk

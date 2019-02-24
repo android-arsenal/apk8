@@ -1,0 +1,9 @@
+2018-04-04 08:59:09,436 INFO  DownloadService - Downloading "https://github.com/Bodo1981/appkit/archive/master.zip", attempt 3
+2018-04-04 09:00:10,063 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:01:06,120 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-04 09:01:06,120 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-04 09:01:54,171 DEBUG FullProcessService - Repository https://github.com/Bodo1981/appkit available: false
+2018-04-04 09:01:54,171 ERROR FullProcessService - Could not find directory with sources
+2018-04-04 09:01:54,171 ERROR FullProcessService - Project will not be processed
+2018-04-04 09:01:54,171 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 09:01:54,171 ERROR FullProcessService - Could not find generated or existed APK file

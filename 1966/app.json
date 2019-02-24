@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "net.bluetoothviewer.full",
+    "label" : "Bluetooth Viewer",
+    "icon" : "res/drawable-ldpi-v4/launcher_main.png",
+    "versionName" : "1.1.5",
+    "versionCode" : 11,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.BLUETOOTH", "android.permission.BLUETOOTH_ADMIN" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/launcher_main.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAFKUlEQVRYw9WYWWhcVRjHf+fe2ZOZ7EkTE9NOWk1JLVJFmVHwSUtrpS4RVC51eRDUIlShPumD2BcFH8QHC5paO1iqpeCCotSnwtxKtZSESrR0Stu0E7I02ySz3OX44EkZwzSZyQL6wTzcc797vv/5lv/5voH/mIhKlBPJWBNgG3Fzokz9ANAAXDfipiznG63CA+wC3k0kY/4y9V8E3qjk4J4KAf0APAU8C3yuvOADAspoHsgbcVMmkrF7gWeA/UbcdNckZArAA8B7wFFgE7BFhUUAE8CfwGmgF/jJiJufrGUO+YEngPeBjkVUXSADvAN8asTN2XJtaBWAiQAHgM+AEJBeRP0GkAU+AD5OJGMtq+ohlScHgH3qEK8BV4CvFLhicYCXVfi+VPl1GNhrxM3MaiX1Y8ArgK6edyqDvhK6utKfK3r/HGACB1fsoUQyFgJOANtXyHlngJ1G3Byr2EOJZEwDhBE3HaBNVdFlQK4AUAjoBMYSyZgOyFJ0IEqAaVdk1gH0qQR9S4GXCz8XQkMTHiEQuNKRUjpIStqRwEcqjC8BV4EPjbg5tJSH9qkfimP6FEN7i/f3aH6CvkbCgXYC3joQGraTZTafJpNPU7BnkNJZSAV/AI8D3WpNAm/esuwVz/QULbUpT908shA6QW89rbX3EW1+lCp/K7rmoya4HoDb6h5kfeMj1AQ3oGv/umEk0K72nJeehdeQtgQ3ieJngYbfU0NLzT1U+9uQ0sFyMmSzebxaNZYzg655cV2Lttr7iQQ70TXfwr3FYvbLIcabeaNrfmpDUeqqNjE+O0i2MMrdt7/Ktf4o5s+TbGnaT21oAyMz5xBCpzm8Fb+3DlHBHa6Vz6AaPk+YSLCTucIIHfUPcUezgVuoQrqCfL7AkcPHmErXs61zL6608OhBqv3r0DTvGgASAp8njFcPcX3iNJrQyGW8HD/+NalUCp/Ph+PYWJZNbaiL4ckzZAvjBL2NaGINAIFA07xowke0aQf1VZtZ19JMd3c3AwMDnDp1iu3bt7N16134PGE2tuwmHGhX35RvpqJ+yHVtXFlgaOJXQv5G3Ow6BgcH6enpIRqNcvLkSXTdw8Y7W7k8/gvhQDuutJEV8GnZ0KV0sZwMtpMlEuigYGeojnjp7X2arq4u8vk8mqah6zqZ3DVCvma8ehU5awLHLawqIPFPqbkU7GlmckM0VG9meOosF0aPEQgKAoEgoVAVe57fQ1NHgXNXDhIOtAMwm0vjSmvZIXNUYzUvBWB2HpTt5picSxH0NeL3hLGdOQaG+ujaFqIh0kVq6hBV/la8egjbzTKWOU/WGkfKm7w6p/acl4yyWdpDRty0VWuaVv3xd4rutfmwZa1xhqd+w5UOQV8Ts4VhMvZFpvOXuTH7F7aTIxJcz+h0P5NzF4vDpau9vlV7p4GjyuaiSX1C9cUNqmV4uJhdpXSYy49wzU4ylb1EONCB31NLtjBGJNjJ6Mw5prNXyVkTpUI1DbwOHAHGgfPL6Yd2KZDeklQgPGjCA0IgpYMrreIQLWT8F4y4+cVKy/4SMAa0lrLhSqvcpJ0CLqxGlQ2qGcxi+eKq3Dy7Wk1+tRp/3laz2LyRH4FU0cFcIArsKFpLqenjWDkjeNlzWSIZ8wDHgd1qyQKeNOLm90vk3DdA78JqWq3Zfs2lUkByiedydVYOSLm8uCGfAUZKqI6od/MyVG64luOhQ8DvitT6gP4SOv3q3bjSPbRmfzaopG0F6oGUETezt9AJqmq7YcTNNP9n+RuhmOkscHMqsgAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 65,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"11\" android:versionName=\"1.1.5\" package=\"net.bluetoothviewer.full\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />\n\t<application android:theme=\"@android:style/Theme.Holo\" android:label=\"Bluetooth Viewer\" android:icon=\"res/drawable-ldpi-v4/launcher_main.png\" android:name=\"net.bluetoothviewer.application.BluetoothViewerFullApplication\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"net.bluetoothviewer.BluetoothViewer\" android:windowSoftInputMode=\"0x2\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"@android:style/Theme.Dialog\" android:label=\"Select a device to connect to\" android:name=\"net.bluetoothviewer.DeviceListActivity\" android:configChanges=\"0xa0\" />\n\t\t<activity android:theme=\"@android:style/Theme.Dialog\" android:label=\"Settings\" android:name=\"net.bluetoothviewer.SettingsActivity\" android:configChanges=\"0xa0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 217833,
+  "crc32" : 1331705888,
+  "sha256" : "1d68a0d75f1b19f48dec51a398a947c7a59df8f74954b2c1672b4fe7b2ab819c",
+  "buildTime" : 1522804777000
+}

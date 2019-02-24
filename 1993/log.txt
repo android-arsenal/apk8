@@ -1,0 +1,93 @@
+2018-04-04 00:15:10,082 INFO  DownloadService - Downloading "https://github.com/elastique/poetry-demo/archive/master.zip", attempt 3
+2018-04-04 00:16:10,756 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:16:11,584 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:16:11,584 INFO  DownloadService - Downloading "https://github.com/elastique/poetry-demo/archive/master.zip", attempt 3
+2018-04-04 00:17:12,856 DEBUG FullProcessService - Repository https://github.com/elastique/poetry-demo available: true
+2018-04-04 00:17:12,856 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:17:12,856 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/elastique/poetry-demo, /tmp/rdisk/1993/src]
+2018-04-04 00:17:14,497 INFO  SysUtils - 
+2018-04-04 00:17:14,507 INFO  GitService - Deleted "/tmp/rdisk/1993/src/.git": true
+2018-04-04 00:17:14,508 INFO  FullProcessService - Size of directory with sources: 139 KB
+2018-04-04 00:17:14,508 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1993/src]
+2018-04-04 00:17:14,512 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1993/src/.git/
+
+2018-04-04 00:17:14,514 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1993/src/gradlew
+2018-04-04 00:17:14,516 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1993/src/build.gradle
+2018-04-04 00:17:14,517 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1993/src/settings.gradle /tmp/rdisk/1993/src/build.gradle
+2018-04-04 00:17:14,517 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:17:14,517 INFO  ProjectFixService - Fixing project...
+2018-04-04 00:17:14,521 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1993/src/local.properties
+2018-04-04 00:17:14,521 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 00:17:14,521 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 00:17:14,522 INFO  ProjectFixService - Build info for "/tmp/rdisk/1993/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-04 00:17:14,522 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 00:17:14,522 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 00:17:14,522 INFO  SysUtils - Execute command: [/tmp/rdisk/1993/src/gradlew, -b, /tmp/rdisk/1993/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 00:17:33,391 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-04 00:17:33,391 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-04 00:17:33,391 INFO  SysUtils - Execute command: [/tmp/rdisk/1993/src/gradlew, -b, /tmp/rdisk/1993/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-04 00:18:02,894 INFO  SysUtils - Configuration on demand is an incubating feature.
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:preReleaseBuild UP-TO-DATE
+:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:prepareComAndroidSupportAppcompatV72340Library
+:prepareComAndroidSupportSupportV42340Library
+:prepareComAndroidSupportSupportVectorDrawable2340Library
+:prepareNlElastiquePoetryPoetry301Library
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:processDebugJavaRes UP-TO-DATE
+:compileDebugJavaWithJavacNote: /tmp/rdisk/1993/src/src/main/java/nl/elastique/poetry/demo/activities/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:compileDebugNdk UP-TO-DATE
+:compileDebugSources
+:preDexDebug
+:dexDebug
+:validateDebugSigning
+:packageDebug
+:zipalignDebug
+:assembleDebug
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:processReleaseJavaRes UP-TO-DATE
+:compileReleaseJavaWithJavacNote: /tmp/rdisk/1993/src/src/main/java/nl/elastique/poetry/demo/activities/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:compileReleaseNdk UP-TO-DATE
+:compileReleaseSources
+:preDexRelease
+:dexRelease
+:packageRelease
+:assembleRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.055 secs
+
+2018-04-04 00:18:02,932 INFO  FullProcessService - Found APK file: /tmp/rdisk/1993/src/build/outputs/apk/src-release-unsigned.apk

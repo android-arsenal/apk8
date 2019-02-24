@@ -1,0 +1,39 @@
+{
+  "meta" : {
+    "packageName" : "com.example.qr_readerexample",
+    "label" : "QR-ReaderExample",
+    "icon" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.CAMERA" ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.camera",
+      "required" : false
+    }, {
+      "name" : "android.hardware.camera.autofocus",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAEBElEQVRIx63WeWxUVRTH8c9Mx2nptCwtRbESZXFj+UsJiwH3GGPcCBEwoCYaMSKixEQxYFxC1GjcEhQ3VNyixl2jRkCUEFFB4m4rLkFAWVqhZYCuxz8cJ9MyiBF/75/33j33m/N+5957Hv+bSupWdsSBqCPqVipJKjO2WfsBZNKpaayypFJ2Sh0AKGU3pSmJv1+0a+kW0kNSu1bldklL6bS7W0Tp3ykkClJ5z03dwp4y3FILvGKyGc7wrYu7RdzqrHxeeTXa6PZ8go1uswuNvsFFlmkwxE/mqcpFhDka87OThfyeJslo1arGBOVgiMkSWnzgM5SboEarVhmT9OziVBftdItvcIpHcm+GuBBzUQs63GMZhjmxy8zk/mqywnSdDjbXpf8Yt1/QyZ6W8qxVHtrPIuiiXh6WRVVuYKFXHWyRmy0xOTfhTo3I6LVvUENB1XZoRp1NRptvkL6g2f15wPsaioNqjbG6YGi83oY61DTTTVKN3sarL4gYkytAN9BIC/THNik9bBEOc74OVe52iU2OV+klm1UrLTK9wOx3THSQtOs9ZK0TjPKte8210TgLrXGoi2w30Vrp/FVYq+q62BAREYsjHSNiRDwR82Ng9I8lkY1NsT5a4qtoiYit8WocE5lYGvfGiDgvGuKseCMiIj4K1V3M7m2GhJO86GcVnvSiC5yK4cLjPpVxraSjZdT7SLt624t5NNgEZfjQGoQW79ppQ25f1WtR63Lwu8H6KNtX+ceqMVStNI5UY7Y6z3lTX78Y5AbXqfQDeNl291mvtQsq71HEuhgU3+Xuf42jojLSMTG+iqr4OqbF9bE6KiIZ5XFH7Irv4ohIxuK8RwWgjtgVP0Y22qIt2mJ3/Bg/xWXRM0ZHfYyPRbE1svFxHB5PxZy4IrKxLgbHM8XMXuH+bvvnTjNVes1ANxpmlRVmSXjUGQ4xVcI844p5tN5y0/NPTRa7QZM+prhLwlorbTELA4xT4zds1FR8r/V1iy9l0Ucvr+F7XOVCqwzUzxAfazPSIAPcLhxtgOHFd/92l3Q52KZossdjTjHPFF84x2azbTYdoW3fx0h3PWgR2CZ0OtYrzrXRQs+ixKZ/D5rm9NyCfMYW1+ivBDvsMNCCAkf3AlXkOsNhSsARGrxtroQmn7pa1h84x2mqnGS+kcVBzV5XogYt3rIbn1tuvRckkLQVZ/rQCWba4V3nqSwG6qOfOwqwA5R7R4Obna0TUz2PNleqwTYPOK4AlFBdty2jFq17NeQKrUKZZpDWA2SllOqQVZE7j1YY3zfFHkntUtLSe5ndI9cSCpX5628o3x732PnXp63TYUkRyL9VVhtSOus/aR+V1XEAPzaVn+hMyOifb2P/Te0a/fYnY9DiuUqwbGwAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 2407,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.example.qr_readerexample\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.CAMERA\" />\n\t<uses-feature android:name=\"android.hardware.camera\" />\n\t<uses-feature android:name=\"android.hardware.camera.autofocus\" />\n\t<application android:theme=\"resourceId:0x7f0d0121\" android:label=\"QR-ReaderExample\" android:icon=\"res/drawable-ldpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"QR-ReaderExample\" android:name=\"com.example.qr_readerexample.DecoderActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2010246,
+  "crc32" : 1664861154,
+  "sha256" : "bd92b140cddc4fa6b0dbdd91b0556b6b114bc61d9f00992234e351cb5f333034",
+  "buildTime" : 1526048368000
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "net.frakbot.blinktextview.sample",
+    "label" : "BlinkTextView sample",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 825,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"net.frakbot.blinktextview.sample\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"BlinkTextView sample\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"BlinkTextView sample\" android:name=\"net.frakbot.blinktextview.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 804677,
+  "crc32" : 3043264358,
+  "sha256" : "a71ba427a2521ce10b1113f8cec1d51dcdf15e4e4c8682131f5b1cb1818d01ad",
+  "buildTime" : 1522820596000
+}

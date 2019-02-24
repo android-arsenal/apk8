@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.karumi.expandableselector",
+    "label" : "Expandable Selector",
+    "icon" : "res/mipmap-mdpi-v4/ic_logo_karumi.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_logo_karumi.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAE60lEQVRo3u2XW2xUVRSGv7X3YdopZbilII2AAuVmKoVqBQce0Ig++aDxRY0XMCgJYCLGoD4A0WjEmKAmEuM1XmKMITE8mBBNTLxUiFQQS02htFOhQ+lQKNPLXDpnLx+myq08HGgLJPMnk7P3yVlr1rfO3muvAwUVVFBBBRVU0HWu2YuWBraZtyh6sZ+Fwf1IUINZlcvEhtzcxrpf/569KLogl80caq7fm6pYuLSiP+cfKfYU39j5gpSkU9n9xSWjDL4bb9V2+EZvUtGjKFMO/1HbWlG9tMK4XBvGTvNzpqnpz59zQeMxQQ2sNQZk55zq6AoRWdlcvzdVUbVkqjHsLxpl5/jGG23FfCvwaDgc2i0qk8XYtb5HqSDbPeOVGbFNs6ujNVak0Rk7D2SHNTL6ct5+YADnOxWRFMg2Vd4HMNa+BXyB6JNOTQroB25WqDP5/+gz+XvpvBf9QJDPFP4SRAbuy4gAiCeoairn3F0ivDZrwZIJQEjhIMi9zvWPU/Sow20W+CeH6wLuVGW1CgdUdRRKi/Nzi4F6VBX4sXHfT10jApCxGQc8eGRfbbvCOuOZrCqPH6r75R1ghSemD8cTh+tq64BPD9fVngZdBboLda+o0zZVPjy8f3cXqs8B9d3J5PMAs6oWD3/FWZ9qGlqHL3VckfllrbuNqt5vu6C1D4wDl4XeDIRCkM1COg2el6GnJ43n5efqPIwB1wUyDvSMJ9ALr07sH1GABxrU7N8TOxgqicwtKR5NzlecDzkffF/xfc756SXG4Pt6yvd1mW6KNFwJQOA9cOqko/zG8kx7cyMt7SewRrEWPAvWysD17NwOzM8fa0JEq3VTpIEtSUYUwJkUxigz587mTEsDB1qP0ZtNYwaCNgOBmkEDF6wlbqzW9L8ciYVeT8KmyMgCgMNaoXTsGMonl+G31NN0vIOWjgQqDs/KBUGfB5FAiPZsiMTCW5NkX4xccQ0IDGAGlowxMLNqAeGQhXgT3ekMDW3H6c70Yq0OBhG3nqvperY0NuHdJKkXIkNSxAIDhMKl/wdlxDF/8RJMphfamlCF1s7TNJ9M4DSH553NvED0+OoxsUnbk5xaFxmyKhwYwPfNeZmNTBxH2dRpkOqGEzFQQyrrONTRwZlUH2KIex41R58qiU3/qJeONZEhPUYCA5TIf8tjILtGmXdbFUWlEejryUMgIJZ4MklzIrHn0MMlsRmf99K6ajRDreDdaPjizel5wi01VYj1IJOCxDFQASw5WMy22ITmnvSwdAaBARQGrTATysYz8YZJeZfpPki05cdipiDmdtZMvDYAwsa/ZJmsrKnEhkIOMZBNQWcc1IDYDcPVmwU/B8KDHVD5eajIJsrKJ9WAbEZMD+keSBwFkXt4+9j0awLA87lEe0DcGq1pX19Zx5t3b+GN5WNQWUmm73c64xkwm64JAFs0yB4wJFQ0+t0dRbH7atOw8fv8w1uXf4IvS0iemsfp4z+wtbF4qAG8wBbWx1rvnC1NXITojgVFsfv3pdm58IIYU/hUjm1hTXXLcLyBwABW85kf6MYTvvrRr+cWxR46kOabWwdJ8HvLh/UDKzBASdiSS2GAOKLRr2YUxR5pSvPlrGKuhoKfA+IZa2hHNPrxtFGxx1r6r1rwl6VnEr2yrrPPA3i6rZ/rVms7ruPgCyqooIIKKqigIdK/1XUBf94fx0gAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1270,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.karumi.expandableselector\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f08006f\" android:label=\"Expandable Selector\" android:icon=\"res/mipmap-mdpi-v4/ic_logo_karumi.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Expandable Selector\" android:name=\"com.karumi.expandableselector.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1029510,
+  "crc32" : 3206590544,
+  "sha256" : "f7f0c50834faeceb8a1c8bf579c71094197e3b6bbccc8fd5f9461ebe005c7b0d",
+  "buildTime" : 1522801674000
+}

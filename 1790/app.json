@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "me.zhanghai.android.patternlock.sample2",
+    "label" : "PatternLock Sample",
+    "icon" : "res/mipmap-mdpi-v4/launcher_icon.png",
+    "versionName" : "2.1.2",
+    "versionCode" : 9,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/launcher_icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABC1BMVEUAAAD////////////////////////////////+/v7+/v79/f38/Pzw8PAAAAD8/Pz8/Pz9/f39/f3y8vLIyMjW1tb7+/vy8vKwsLDIyMj7+/uqqqrLy8usrKytra36+vrv7++Hh4eqqqoAAADb29vLy8sAAAA3NzfLy8vr6+vv7+/u7u7s7OzHx8c0NDQAAAAAAABGRkZgYGBcXFxbW1tmZmYAAAAAAAC/v7/+/v79/f38/PyzubzN6earsrX5+/uS0cvH5+Sr29f2+vqu3Nj7/PwppZr1+vma1M97x8C949+74t4zqZ7v9/as3Nf6/Pz0+fmt3Ni5v8GZ1M+lrLDD5eL////6+vr5+flelvyuAAAAOXRSTlMAAwQCEx4dCpbo7JaYmgHq+f386hcl7+8qJe4qJysc7OwiAwiprQMqsO3w7+2xLAkgQk1LTAULDgSfRIASAAABfUlEQVRIx72WaVPCMBCGUyginlAV7wsUtahcgpYCRSve0Jaj+v9/iR1ou62TZGGc4f2UmbzPZjdpsiVkXhIiiISQPRrFQwY9zlCMLXAVE8c2zx9fTCwhSizHfSJKVpQ6rtU1FxCIuF5PpiSuUkllY5NMKo+QrXRdwuJLyvaOY50Au3tTAfsApOcEqA2YbzZh3FBZQMv3aO1HAFoqmpL2pM9UA8XPBbRnfaZdosXnAXQ/G2D4mQA1fw7Ais8C2H46wPFTgc7Lqz//9v7h6fOrw1qh2zM8wIBRr8uuwQQC/CZvl0xLC/s1y+Sfg26F1jAsHTvpUFZePtxvKUAE/Lyv1a/Dzx+7D24dkD9648ZZBfNB77RD/PHTgT4QgwH4+8x3aQgBRyMYD9X/v3yzPsYH061w6AICOTpW8IZin5ySjNuysmfftmJzpdg/51m/x+UuLq/kvMxRXr6+uc1BGy0US+VKpXLHkDNVLhULwUZdrd0jqlXDzT/zgCgzt7+YX3yoSnJR6AwjAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2110,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"9\" android:versionName=\"2.1.2\" package=\"me.zhanghai.android.patternlock.sample2\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"25\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0900af\" android:label=\"PatternLock Sample\" android:icon=\"res/mipmap-mdpi-v4/launcher_icon.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:fullBackupContent=\"true\">\n\t\t<activity android:label=\"PatternLock Sample\" android:name=\"me.zhanghai.android.patternlock.sample.app.MainActivity\" android:launchMode=\"singleTop\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Pattern lock\" android:name=\"me.zhanghai.android.patternlock.sample.app.PatternLockActivity\" android:launchMode=\"singleTop\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".app.MainActivity\" />\n\t\t</activity>\n\t\t<activity android:label=\"Set unlock pattern\" android:name=\"me.zhanghai.android.patternlock.sample.app.SetPatternActivity\" android:launchMode=\"singleTop\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".app.PatternLockActivity\" />\n\t\t</activity>\n\t\t<activity android:label=\"Confirm your unlock pattern\" android:name=\"me.zhanghai.android.patternlock.sample.app.ConfirmPatternActivity\" android:launchMode=\"singleTop\" />\n\t\t<activity android:label=\"Confirm password to reset pattern\" android:name=\"me.zhanghai.android.patternlock.sample.app.ResetPatternActivity\" android:launchMode=\"singleTop\" />\n\t\t<activity android:label=\"About\" android:name=\"me.zhanghai.android.patternlock.sample.app.AboutActivity\" android:launchMode=\"singleTop\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1799799,
+  "crc32" : 2322699074,
+  "sha256" : "0923eabfa97556eb01feb6957b119973219235ad24880c624211fe681c02c9a9",
+  "buildTime" : 1522839543000
+}

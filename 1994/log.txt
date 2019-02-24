@@ -1,0 +1,425 @@
+2018-04-04 00:11:16,669 INFO  DownloadService - Downloading "https://github.com/Blaubot/Blaubot/archive/master.zip", attempt 3
+2018-04-04 00:12:17,127 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 00:12:17,810 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 00:12:17,810 INFO  DownloadService - Downloading "https://github.com/Blaubot/Blaubot/archive/master.zip", attempt 3
+2018-04-04 00:13:19,049 DEBUG FullProcessService - Repository https://github.com/Blaubot/Blaubot available: true
+2018-04-04 00:13:19,049 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 00:13:19,049 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Blaubot/Blaubot, /tmp/rdisk/1994/src]
+2018-04-04 00:13:21,659 INFO  SysUtils - 
+2018-04-04 00:13:21,672 INFO  GitService - Deleted "/tmp/rdisk/1994/src/.git": true
+2018-04-04 00:13:21,690 INFO  FullProcessService - Size of directory with sources: 7 MB
+2018-04-04 00:13:21,690 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1994/src]
+2018-04-04 00:13:21,694 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1994/src/.git/
+
+2018-04-04 00:13:21,706 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1994/src/gradlew
+2018-04-04 00:13:21,720 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1994/src/blaubot-android/build.gradle /tmp/rdisk/1994/src/examples/blaubot-app/build.gradle /tmp/rdisk/1994/src/examples/blaubot-cam/build.gradle /tmp/rdisk/1994/src/examples/blaubot-chat/build.gradle /tmp/rdisk/1994/src/examples/blaubot-fingertracking/build.gradle /tmp/rdisk/1994/src/build.gradle /tmp/rdisk/1994/src/blaubot-jsr82/build.gradle /tmp/rdisk/1994/src/blaubot-test/build.gradle /tmp/rdisk/1994/src/blaubot-websockets/build.gradle /tmp/rdisk/1994/src/blaubot/build.gradle /tmp/rdisk/1994/src/examples/blaubot-cam-server/build.gradle /tmp/rdisk/1994/src/examples/blaubot-fingertracking-swing/build.gradle /tmp/rdisk/1994/src/website/build.gradle
+2018-04-04 00:13:21,732 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1994/src/website/build.gradle /tmp/rdisk/1994/src/settings.gradle /tmp/rdisk/1994/src/examples/blaubot-fingertracking/build.gradle /tmp/rdisk/1994/src/examples/blaubot-fingertracking-swing/build.gradle /tmp/rdisk/1994/src/examples/blaubot-chat/build.gradle /tmp/rdisk/1994/src/examples/blaubot-cam/build.gradle /tmp/rdisk/1994/src/examples/blaubot-cam-server/build.gradle /tmp/rdisk/1994/src/examples/blaubot-app/build.gradle /tmp/rdisk/1994/src/build.gradle /tmp/rdisk/1994/src/blaubot/build.gradle /tmp/rdisk/1994/src/blaubot-websockets/build.gradle /tmp/rdisk/1994/src/blaubot-test/build.gradle /tmp/rdisk/1994/src/blaubot-jsr82/build.gradle /tmp/rdisk/1994/src/blaubot-android/build.gradle
+2018-04-04 00:13:21,733 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 00:13:21,733 INFO  ProjectFixService - Fixing project...
+2018-04-04 00:13:21,760 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/blaubot-android/local.properties
+2018-04-04 00:13:21,761 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/blaubot-android/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,761 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-app/local.properties
+2018-04-04 00:13:21,761 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,762 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-cam/local.properties
+2018-04-04 00:13:21,762 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-cam/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,762 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-chat/local.properties
+2018-04-04 00:13:21,762 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-chat/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,762 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-fingertracking/local.properties
+2018-04-04 00:13:21,763 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-fingertracking/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,763 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/local.properties
+2018-04-04 00:13:21,763 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-04 00:13:21,763 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-04 00:13:21,770 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,770 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/blaubot-jsr82/local.properties
+2018-04-04 00:13:21,772 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/blaubot-jsr82/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,773 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/blaubot-test/local.properties
+2018-04-04 00:13:21,774 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/blaubot-test/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,774 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/blaubot-websockets/local.properties
+2018-04-04 00:13:21,777 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/blaubot-websockets/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,777 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/blaubot/local.properties
+2018-04-04 00:13:21,780 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/blaubot/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-cam-server/local.properties
+2018-04-04 00:13:21,781 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-cam-server/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,781 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/examples/blaubot-fingertracking-swing/local.properties
+2018-04-04 00:13:21,783 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/examples/blaubot-fingertracking-swing/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,783 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1994/src/website/local.properties
+2018-04-04 00:13:21,784 INFO  ProjectFixService - Build info for "/tmp/rdisk/1994/src/website/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 00:13:21,784 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 00:13:21,784 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 00:13:21,785 INFO  SysUtils - Execute command: [/tmp/rdisk/1994/src/gradlew, -b, /tmp/rdisk/1994/src/blaubot-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 00:13:40,007 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 00:13:40,007 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 00:13:40,007 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 00:13:40,007 INFO  SysUtils - Execute command: [/tmp/rdisk/1994/src/gradlew, -b, /tmp/rdisk/1994/src/blaubot-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 00:14:18,770 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:blaubot-android:preBuild UP-TO-DATE
+:blaubot-android:preDebugBuild UP-TO-DATE
+:blaubot-android:compileDebugNdk UP-TO-DATE
+:blaubot-android:compileLint
+:blaubot-android:copyDebugLint UP-TO-DATE
+:blaubot-android:mergeDebugProguardFiles
+:blaubot-android:packageDebugRenderscript UP-TO-DATE
+:blaubot-android:checkDebugManifest
+:blaubot-android:prepareDebugDependencies
+:blaubot-android:compileDebugRenderscript
+:blaubot-android:generateDebugResValues
+:blaubot-android:generateDebugResources
+:blaubot-android:packageDebugResources
+:blaubot:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:blaubot:processResources UP-TO-DATE
+:blaubot:classes
+:blaubot:jar
+:blaubot-android:compileDebugAidl
+:blaubot-android:generateDebugBuildConfig
+:blaubot-android:mergeDebugShaders
+:blaubot-android:compileDebugShaders
+:blaubot-android:generateDebugAssets
+:blaubot-android:mergeDebugAssets
+:blaubot-android:processDebugManifest
+:blaubot-android:processDebugResources
+:blaubot-android:generateDebugSources
+:blaubot-android:incrementalDebugJavaCompilationSafeguard
+:blaubot-android:compileDebugJavaWithJavac
+:blaubot-android:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/wifip2p/BlaubotWifiP2PBeacon.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:blaubot-android:processDebugJavaRes UP-TO-DATE
+:blaubot-android:transformResourcesWithMergeJavaResForDebug
+:blaubot-android:transformClassesAndResourcesWithSyncLibJarsForDebug
+:blaubot-android:mergeDebugJniLibFolders
+:blaubot-android:transformNative_libsWithMergeJniLibsForDebug
+:blaubot-android:transformNative_libsWithSyncJniLibsForDebug
+:blaubot-android:bundleDebug
+:blaubot-android:compileDebugSources
+:blaubot-android:assembleDebug
+:blaubot-android:preReleaseBuild UP-TO-DATE
+:blaubot-android:compileReleaseNdk UP-TO-DATE
+:blaubot-android:copyReleaseLint UP-TO-DATE
+:blaubot-android:mergeReleaseProguardFiles
+:blaubot-android:packageReleaseRenderscript UP-TO-DATE
+:blaubot-android:checkReleaseManifest
+:blaubot-android:prepareReleaseDependencies
+:blaubot-android:compileReleaseRenderscript
+:blaubot-android:generateReleaseResValues
+:blaubot-android:generateReleaseResources
+:blaubot-android:packageReleaseResources
+:blaubot-android:compileReleaseAidl
+:blaubot-android:generateReleaseBuildConfig
+:blaubot-android:mergeReleaseShaders
+:blaubot-android:compileReleaseShaders
+:blaubot-android:generateReleaseAssets
+:blaubot-android:mergeReleaseAssets
+:blaubot-android:processReleaseManifest
+:blaubot-android:processReleaseResources
+:blaubot-android:generateReleaseSources
+:blaubot-android:incrementalReleaseJavaCompilationSafeguard
+:blaubot-android:compileReleaseJavaWithJavac
+:blaubot-android:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/wifip2p/BlaubotWifiP2PBeacon.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:blaubot-android:processReleaseJavaRes UP-TO-DATE
+:blaubot-android:transformResourcesWithMergeJavaResForRelease
+:blaubot-android:transformClassesAndResourcesWithSyncLibJarsForRelease
+:blaubot-android:mergeReleaseJniLibFolders
+:blaubot-android:transformNative_libsWithMergeJniLibsForRelease
+:blaubot-android:transformNative_libsWithSyncJniLibsForRelease
+:blaubot-android:bundleRelease
+:blaubot-android:compileReleaseSources
+:blaubot-android:assembleRelease
+:blaubot-android:javadoc/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/edit/WebsocketServerConnectorEditView.java:16: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ViewUtils.java:5: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ThroughputView.java:23: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/SubscribersView.java:13: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/StateView.java:16: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/StateHistoryView.java:18: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ServerConnectorView.java:21: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ConnectionView.java:19: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/PingView.java:23: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/PingMeasureResultView.java:17: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/LogLevelView.java:16: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/LifeCycleView.java:18: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/KingdomView.java:20: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/DebugView.java:11: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ChannelManagerView.java:19: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/AdminMessageView.java:20: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/BeaconView.java:22: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/views/ChannelView.java:31: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+/tmp/rdisk/1994/src/blaubot-android/src/main/java/eu/hgross/blaubot/android/bluetooth/views/ACLListView.java:18: error: cannot find symbol
+import eu.hgross.blaubot.android.R;
+                                ^
+  symbol:   class R
+  location: package eu.hgross.blaubot.android
+
+19 warnings
+:blaubot-android:javadocJar
+:blaubot-android:sourcesJar
+:blaubot-android:assemble
+:blaubot-android:lint
+Ran lint on variant release: 334 issues found
+Ran lint on variant debug: 334 issues found
+Wrote HTML report to file:///tmp/rdisk/1994/src/blaubot-android/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1994/src/blaubot-android/build/outputs/lint-results-debug.xml
+:blaubot-android:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:blaubot-android:preDebugUnitTestBuild UP-TO-DATE
+:blaubot-android:prepareDebugUnitTestDependencies
+:blaubot-android:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:blaubot-android:processDebugUnitTestJavaRes UP-TO-DATE
+:blaubot-android:compileDebugUnitTestSources UP-TO-DATE
+:blaubot-android:mockableAndroidJar
+:blaubot-android:assembleDebugUnitTest
+:blaubot-android:testDebugUnitTest
+:blaubot-android:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:blaubot-android:preReleaseUnitTestBuild UP-TO-DATE
+:blaubot-android:prepareReleaseUnitTestDependencies
+:blaubot-android:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:blaubot-android:processReleaseUnitTestJavaRes UP-TO-DATE
+:blaubot-android:compileReleaseUnitTestSources UP-TO-DATE
+:blaubot-android:assembleReleaseUnitTest
+:blaubot-android:testReleaseUnitTest
+:blaubot-android:test
+:blaubot-android:check
+:blaubot-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 38.287 secs
+
+2018-04-04 00:14:18,817 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 00:14:18,817 INFO  SysUtils - Execute command: [/tmp/rdisk/1994/src/gradlew, -b, /tmp/rdisk/1994/src/examples/blaubot-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 00:14:27,326 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-04 00:14:27,326 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-04 00:14:27,326 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-04 00:14:27,326 INFO  SysUtils - Execute command: [/tmp/rdisk/1994/src/gradlew, -b, /tmp/rdisk/1994/src/examples/blaubot-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-04 00:15:04,076 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:blaubot:compileJava UP-TO-DATE
+:blaubot:processResources UP-TO-DATE
+:blaubot:classes UP-TO-DATE
+:blaubot:jar UP-TO-DATE
+:blaubot-android:preBuild UP-TO-DATE
+:blaubot-android:preReleaseBuild UP-TO-DATE
+:blaubot-android:compileReleaseNdk UP-TO-DATE
+:blaubot-android:compileLint
+:blaubot-android:copyReleaseLint UP-TO-DATE
+:blaubot-android:mergeReleaseProguardFiles UP-TO-DATE
+:blaubot-android:packageReleaseRenderscript UP-TO-DATE
+:blaubot-android:checkReleaseManifest
+:blaubot-android:prepareReleaseDependencies
+:blaubot-android:compileReleaseRenderscript UP-TO-DATE
+:blaubot-android:generateReleaseResValues UP-TO-DATE
+:blaubot-android:generateReleaseResources UP-TO-DATE
+:blaubot-android:packageReleaseResources UP-TO-DATE
+:blaubot-android:compileReleaseAidl UP-TO-DATE
+:blaubot-android:generateReleaseBuildConfig UP-TO-DATE
+:blaubot-android:mergeReleaseShaders UP-TO-DATE
+:blaubot-android:compileReleaseShaders UP-TO-DATE
+:blaubot-android:generateReleaseAssets UP-TO-DATE
+:blaubot-android:mergeReleaseAssets UP-TO-DATE
+:blaubot-android:processReleaseManifest UP-TO-DATE
+:blaubot-android:processReleaseResources UP-TO-DATE
+:blaubot-android:generateReleaseSources UP-TO-DATE
+:blaubot-android:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:blaubot-android:compileReleaseJavaWithJavac UP-TO-DATE
+:blaubot-android:processReleaseJavaRes UP-TO-DATE
+:blaubot-android:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:blaubot-android:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:blaubot-android:mergeReleaseJniLibFolders UP-TO-DATE
+:blaubot-android:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:blaubot-android:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:blaubot-android:bundleRelease UP-TO-DATE
+:blaubot-websockets:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:blaubot-websockets:processResources UP-TO-DATE
+:blaubot-websockets:classes
+:blaubot-websockets:jar
+:examples:blaubot-app:preBuild UP-TO-DATE
+:examples:blaubot-app:preDebugBuild UP-TO-DATE
+:examples:blaubot-app:checkDebugManifest
+:examples:blaubot-app:preReleaseBuild UP-TO-DATE
+:examples:blaubot-app:prepareEuHgrossBlaubotAndroid200Beta2Library
+:examples:blaubot-app:prepareDebugDependencies
+:examples:blaubot-app:compileDebugAidl
+:examples:blaubot-app:compileDebugRenderscript
+:examples:blaubot-app:generateDebugBuildConfig
+:examples:blaubot-app:mergeDebugShaders
+:examples:blaubot-app:compileDebugShaders
+:examples:blaubot-app:generateDebugAssets
+:examples:blaubot-app:mergeDebugAssets
+:examples:blaubot-app:generateDebugResValues
+:examples:blaubot-app:generateDebugResources
+:examples:blaubot-app:mergeDebugResources
+:examples:blaubot-app:processDebugManifest
+:examples:blaubot-app:processDebugResources
+:examples:blaubot-app:generateDebugSources
+:examples:blaubot-app:incrementalDebugJavaCompilationSafeguard
+:examples:blaubot-app:compileDebugJavaWithJavac
+:examples:blaubot-app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1994/src/examples/blaubot-app/src/main/java/eu/hgross/blaubot/BlaubotConfiguratorActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:examples:blaubot-app:compileDebugNdk UP-TO-DATE
+:examples:blaubot-app:compileDebugSources
+:examples:blaubot-app:prePackageMarkerForDebug
+:examples:blaubot-app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:examples:blaubot-app:mergeDebugJniLibFolders
+:examples:blaubot-app:transformNative_libsWithMergeJniLibsForDebug
+:examples:blaubot-app:processDebugJavaRes UP-TO-DATE
+:examples:blaubot-app:transformResourcesWithMergeJavaResForDebug
+:examples:blaubot-app:validateDebugSigning
+:examples:blaubot-app:packageDebug
+:examples:blaubot-app:zipalignDebug
+:examples:blaubot-app:assembleDebug
+:examples:blaubot-app:checkReleaseManifest
+:examples:blaubot-app:prepareReleaseDependencies
+:examples:blaubot-app:compileReleaseAidl
+:examples:blaubot-app:compileReleaseRenderscript
+:examples:blaubot-app:generateReleaseBuildConfig
+:examples:blaubot-app:mergeReleaseShaders
+:examples:blaubot-app:compileReleaseShaders
+:examples:blaubot-app:generateReleaseAssets
+:examples:blaubot-app:mergeReleaseAssets
+:examples:blaubot-app:generateReleaseResValues
+:examples:blaubot-app:generateReleaseResources
+:examples:blaubot-app:mergeReleaseResources
+:examples:blaubot-app:processReleaseManifest
+:examples:blaubot-app:processReleaseResources
+:examples:blaubot-app:generateReleaseSources
+:examples:blaubot-app:incrementalReleaseJavaCompilationSafeguard
+:examples:blaubot-app:compileReleaseJavaWithJavac
+:examples:blaubot-app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1994/src/examples/blaubot-app/src/main/java/eu/hgross/blaubot/BlaubotConfiguratorActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:examples:blaubot-app:compileReleaseNdk UP-TO-DATE
+:examples:blaubot-app:compileReleaseSources
+:examples:blaubot-app:lintVitalRelease
+:examples:blaubot-app:prePackageMarkerForRelease
+:examples:blaubot-app:transformClassesWithDexForRelease
+:examples:blaubot-app:mergeReleaseJniLibFolders
+:examples:blaubot-app:transformNative_libsWithMergeJniLibsForRelease
+:examples:blaubot-app:processReleaseJavaRes UP-TO-DATE
+:examples:blaubot-app:transformResourcesWithMergeJavaResForRelease
+:examples:blaubot-app:packageRelease
+:examples:blaubot-app:assembleRelease
+:examples:blaubot-app:assemble
+:examples:blaubot-app:compileLint
+:examples:blaubot-app:lint
+Ran lint on variant debug: 87 issues found
+Ran lint on variant release: 87 issues found
+Wrote HTML report to file:///tmp/rdisk/1994/src/examples/blaubot-app/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1994/src/examples/blaubot-app/build/outputs/lint-results-debug.xml
+:examples:blaubot-app:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:examples:blaubot-app:preDebugUnitTestBuild UP-TO-DATE
+:examples:blaubot-app:prepareDebugUnitTestDependencies
+:examples:blaubot-app:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:examples:blaubot-app:processDebugUnitTestJavaRes UP-TO-DATE
+:examples:blaubot-app:compileDebugUnitTestSources UP-TO-DATE
+:examples:blaubot-app:mockableAndroidJar
+:examples:blaubot-app:assembleDebugUnitTest
+:examples:blaubot-app:testDebugUnitTest
+:examples:blaubot-app:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:examples:blaubot-app:preReleaseUnitTestBuild UP-TO-DATE
+:examples:blaubot-app:prepareReleaseUnitTestDependencies
+:examples:blaubot-app:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:examples:blaubot-app:processReleaseUnitTestJavaRes UP-TO-DATE
+:examples:blaubot-app:compileReleaseUnitTestSources UP-TO-DATE
+:examples:blaubot-app:assembleReleaseUnitTest
+:examples:blaubot-app:testReleaseUnitTest
+:examples:blaubot-app:test
+:examples:blaubot-app:check
+:examples:blaubot-app:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.245 secs
+
+2018-04-04 00:15:04,151 INFO  FullProcessService - Found APK file: /tmp/rdisk/1994/src/examples/blaubot-app/build/outputs/apk/blaubot-app-release-unsigned.apk

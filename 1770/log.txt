@@ -1,0 +1,140 @@
+2018-04-05 18:44:15,546 INFO  DownloadService - Downloading "https://github.com/7heaven/SHSegmentControl/archive/master.zip", attempt 3
+2018-04-05 18:44:17,520 INFO  DownloadService - Downloaded https://github.com/7heaven/SHSegmentControl/archive/master.zip, attempt 3
+2018-04-05 18:44:17,520 INFO  DownloadService - Size of file "/tmp/rdisk/1770/master.zip": 194 KB
+2018-04-05 18:44:17,520 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-05 18:44:17,520 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1770/master.zip: true
+2018-04-05 18:44:17,521 DEBUG ZipUtil - Extracting '/tmp/rdisk/1770/master.zip' into '/tmp/rdisk/1770/src'.
+2018-04-05 18:44:17,531 INFO  FullProcessService - Size of directory with sources: 254 KB
+2018-04-05 18:44:17,531 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1770/src]
+2018-04-05 18:44:17,536 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1770/src/.git/
+
+2018-04-05 18:44:17,539 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1770/src/SHSegmentControl-master/gradlew
+2018-04-05 18:44:17,542 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1770/src/SHSegmentControl-master/example/build.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/build.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/build.gradle
+2018-04-05 18:44:17,545 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1770/src/SHSegmentControl-master/settings.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/build.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/bintray.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/example/build.gradle /tmp/rdisk/1770/src/SHSegmentControl-master/build.gradle
+2018-04-05 18:44:17,545 INFO  ProjectBuildService - Remote scripts: none
+2018-04-05 18:44:17,545 INFO  ProjectFixService - Fixing project...
+2018-04-05 18:44:17,552 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1770/src/SHSegmentControl-master/example/local.properties
+2018-04-05 18:44:17,554 INFO  ProjectFixService - Build info for "/tmp/rdisk/1770/src/SHSegmentControl-master/example/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=21]
+2018-04-05 18:44:17,555 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/local.properties
+2018-04-05 18:44:17,557 INFO  ProjectFixService - Build info for "/tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=21]
+2018-04-05 18:44:17,557 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1770/src/SHSegmentControl-master/local.properties
+2018-04-05 18:44:17,558 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-05 18:44:17,558 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-05 18:44:17,558 INFO  ProjectFixService - Build info for "/tmp/rdisk/1770/src/SHSegmentControl-master/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=21]
+2018-04-05 18:44:17,558 INFO  ProjectFixService - Project was maybe fixed
+2018-04-05 18:44:17,558 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-05 18:44:17,558 INFO  SysUtils - Execute command: [/tmp/rdisk/1770/src/SHSegmentControl-master/gradlew, -b, /tmp/rdisk/1770/src/SHSegmentControl-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-05 18:44:27,456 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-05 18:44:27,456 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-05 18:44:27,456 INFO  SysUtils - Execute command: [/tmp/rdisk/1770/src/SHSegmentControl-master/gradlew, -b, /tmp/rdisk/1770/src/SHSegmentControl-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-05 18:44:41,057 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:segmentcontrol:preBuild UP-TO-DATE
+:segmentcontrol:preReleaseBuild UP-TO-DATE
+:segmentcontrol:checkReleaseManifest
+:segmentcontrol:prepareReleaseDependencies
+:segmentcontrol:compileReleaseAidl
+:segmentcontrol:compileReleaseNdk UP-TO-DATE
+:segmentcontrol:compileLint
+:segmentcontrol:copyReleaseLint UP-TO-DATE
+:segmentcontrol:mergeReleaseShaders
+:segmentcontrol:compileReleaseShaders
+:segmentcontrol:generateReleaseAssets
+:segmentcontrol:mergeReleaseAssets
+:segmentcontrol:mergeReleaseProguardFiles
+:segmentcontrol:packageReleaseRenderscript UP-TO-DATE
+:segmentcontrol:compileReleaseRenderscript
+:segmentcontrol:generateReleaseResValues
+:segmentcontrol:generateReleaseResources
+:segmentcontrol:packageReleaseResources
+:segmentcontrol:processReleaseManifest
+:segmentcontrol:generateReleaseBuildConfig
+:segmentcontrol:processReleaseResources
+:segmentcontrol:generateReleaseSources
+:segmentcontrol:incrementalReleaseJavaCompilationSafeguard
+:segmentcontrol:javaPreCompileRelease
+:segmentcontrol:compileReleaseJavaWithJavac
+:segmentcontrol:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1770/src/SHSegmentControl-master/segmentcontrol/src/main/java/com/sevenheaven/segmentcontrol/SegmentControl.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:segmentcontrol:processReleaseJavaRes UP-TO-DATE
+:segmentcontrol:transformResourcesWithMergeJavaResForRelease
+:segmentcontrol:transformClassesAndResourcesWithSyncLibJarsForRelease
+:segmentcontrol:mergeReleaseJniLibFolders
+:segmentcontrol:transformNativeLibsWithMergeJniLibsForRelease
+:segmentcontrol:transformNativeLibsWithStripDebugSymbolForRelease
+:segmentcontrol:transformNativeLibsWithSyncJniLibsForRelease
+:segmentcontrol:bundleRelease
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:incrementalDebugJavaCompilationSafeguard
+:example:javaPreCompileDebug
+:example:compileDebugJavaWithJavac
+:example:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example:compileDebugNdk UP-TO-DATE
+:example:compileDebugSources
+:example:mergeDebugShaders
+:example:compileDebugShaders
+:example:generateDebugAssets
+:example:mergeDebugAssets
+:example:transformClassesWithDexForDebug
+:example:mergeDebugJniLibFolders
+:example:transformNativeLibsWithMergeJniLibsForDebug
+:example:transformNativeLibsWithStripDebugSymbolForDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForDebug
+:example:validateSigningDebug
+:example:packageDebug
+:example:assembleDebug
+:example:preReleaseBuild UP-TO-DATE
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:incrementalReleaseJavaCompilationSafeguard
+:example:javaPreCompileRelease
+:example:compileReleaseJavaWithJavac
+:example:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example:compileReleaseNdk UP-TO-DATE
+:example:compileReleaseSources
+:example:lintVitalRelease
+:example:mergeReleaseShaders
+:example:compileReleaseShaders
+:example:generateReleaseAssets
+:example:mergeReleaseAssets
+:example:transformClassesWithDexForRelease
+:example:mergeReleaseJniLibFolders
+:example:transformNativeLibsWithMergeJniLibsForRelease
+:example:transformNativeLibsWithStripDebugSymbolForRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.345 secs
+
+2018-04-05 18:44:41,071 INFO  FullProcessService - Found APK file: /tmp/rdisk/1770/src/SHSegmentControl-master/example/build/outputs/apk/example-release-unsigned.apk

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.appeaser.sublimepicker",
+    "label" : "SublimePicker",
+    "icon" : "res/mipmap-mdpi-v4/app_icon.png",
+    "versionName" : "1.4",
+    "versionCode" : 5,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/app_icon.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1711,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ar_XB", "ko", "uk", "my_MM", "mn_MN", "ur_PK", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"5\" android:versionName=\"1.4\" package=\"com.appeaser.sublimepicker\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f0b0091\" android:label=\"SublimePicker\" android:icon=\"res/mipmap-mdpi-v4/app_icon.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"SublimePicker\" android:name=\"com.appeaser.sublimepicker.Sampler\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1819773,
+  "crc32" : 3046907988,
+  "sha256" : "b9fe9910998b010ee4ad5f199623c7e593235e1686eb753ce5d264ab3c80248f",
+  "buildTime" : 1522806714000
+}

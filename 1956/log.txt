@@ -1,0 +1,126 @@
+2018-04-04 01:38:20,870 INFO  DownloadService - Downloading "https://github.com/glomadrian/velocimeter-view/archive/master.zip", attempt 3
+2018-04-04 01:39:21,476 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 01:39:22,163 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 01:39:22,163 INFO  DownloadService - Downloading "https://github.com/glomadrian/velocimeter-view/archive/master.zip", attempt 3
+2018-04-04 01:40:23,414 DEBUG FullProcessService - Repository https://github.com/glomadrian/velocimeter-view available: true
+2018-04-04 01:40:23,414 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 01:40:23,414 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/glomadrian/velocimeter-view, /tmp/rdisk/1956/src]
+2018-04-04 01:40:26,584 INFO  SysUtils - 
+2018-04-04 01:40:26,589 INFO  GitService - Deleted "/tmp/rdisk/1956/src/.git": true
+2018-04-04 01:40:26,593 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-04 01:40:26,593 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1956/src]
+2018-04-04 01:40:26,597 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1956/src/.git/
+
+2018-04-04 01:40:26,600 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1956/src/gradlew
+2018-04-04 01:40:26,603 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1956/src/app/build.gradle /tmp/rdisk/1956/src/velocimeterlibrary/build.gradle /tmp/rdisk/1956/src/build.gradle
+2018-04-04 01:40:26,606 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1956/src/velocimeterlibrary/build.gradle /tmp/rdisk/1956/src/settings.gradle /tmp/rdisk/1956/src/build.gradle /tmp/rdisk/1956/src/app/build.gradle
+2018-04-04 01:40:26,606 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 01:40:26,606 INFO  ProjectFixService - Fixing project...
+2018-04-04 01:40:26,613 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1956/src/app/local.properties
+2018-04-04 01:40:26,613 INFO  ProjectFixService - Build info for "/tmp/rdisk/1956/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 01:40:26,613 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1956/src/velocimeterlibrary/local.properties
+2018-04-04 01:40:26,613 INFO  ProjectFixService - Build info for "/tmp/rdisk/1956/src/velocimeterlibrary/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 01:40:26,614 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1956/src/local.properties
+2018-04-04 01:40:26,614 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 01:40:26,614 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 01:40:26,614 INFO  ProjectFixService - Build info for "/tmp/rdisk/1956/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-04 01:40:26,615 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 01:40:26,615 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 01:40:26,615 INFO  SysUtils - Execute command: [/tmp/rdisk/1956/src/gradlew, -b, /tmp/rdisk/1956/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 01:40:34,613 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-04 01:40:34,613 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-04 01:40:34,613 INFO  SysUtils - Execute command: [/tmp/rdisk/1956/src/gradlew, -b, /tmp/rdisk/1956/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-04 01:40:58,681 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:velocimeterlibrary:compileLint
+:velocimeterlibrary:copyReleaseLint UP-TO-DATE
+:velocimeterlibrary:preBuild UP-TO-DATE
+:velocimeterlibrary:preReleaseBuild UP-TO-DATE
+:velocimeterlibrary:checkReleaseManifest
+:velocimeterlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:velocimeterlibrary:preDebugBuild UP-TO-DATE
+:velocimeterlibrary:preDebugUnitTestBuild UP-TO-DATE
+:velocimeterlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:velocimeterlibrary:prepareComAndroidSupportAppcompatV72220Library
+:velocimeterlibrary:prepareComAndroidSupportSupportV42220Library
+:velocimeterlibrary:prepareReleaseDependencies
+:velocimeterlibrary:compileReleaseAidl
+:velocimeterlibrary:compileReleaseRenderscript
+:velocimeterlibrary:generateReleaseBuildConfig
+:velocimeterlibrary:generateReleaseAssets UP-TO-DATE
+:velocimeterlibrary:mergeReleaseAssets
+:velocimeterlibrary:generateReleaseResValues
+:velocimeterlibrary:generateReleaseResources
+:velocimeterlibrary:mergeReleaseResources
+:velocimeterlibrary:processReleaseManifest
+:velocimeterlibrary:processReleaseResources
+:velocimeterlibrary:generateReleaseSources
+:velocimeterlibrary:processReleaseJavaRes UP-TO-DATE
+:velocimeterlibrary:compileReleaseJava
+:velocimeterlibrary:extractReleaseAnnotations
+:velocimeterlibrary:mergeReleaseProguardFiles
+:velocimeterlibrary:packageReleaseJar
+:velocimeterlibrary:compileReleaseNdk UP-TO-DATE
+:velocimeterlibrary:packageReleaseJniLibs UP-TO-DATE
+:velocimeterlibrary:packageReleaseLocalJar UP-TO-DATE
+:velocimeterlibrary:packageReleaseRenderscript UP-TO-DATE
+:velocimeterlibrary:packageReleaseResources
+:velocimeterlibrary:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareSrcVelocimeterlibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.647 secs
+
+2018-04-04 01:40:58,737 INFO  FullProcessService - Found APK file: /tmp/rdisk/1956/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,130 @@
+2018-04-04 10:45:37,078 INFO  DownloadService - Downloading "https://github.com/dommerq/Yeti/archive/master.zip", attempt 3
+2018-04-04 10:46:37,590 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 10:46:38,338 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 10:46:38,338 INFO  DownloadService - Downloading "https://github.com/dommerq/Yeti/archive/master.zip", attempt 3
+2018-04-04 10:47:39,632 DEBUG FullProcessService - Repository https://github.com/dommerq/Yeti available: true
+2018-04-04 10:47:39,632 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 10:47:39,632 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/dommerq/Yeti, /tmp/rdisk/1794/src]
+2018-04-04 10:47:41,181 INFO  SysUtils - 
+2018-04-04 10:47:41,198 INFO  GitService - Deleted "/tmp/rdisk/1794/src/.git": true
+2018-04-04 10:47:41,201 INFO  FullProcessService - Size of directory with sources: 166 KB
+2018-04-04 10:47:41,201 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1794/src]
+2018-04-04 10:47:41,209 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1794/src/.git/
+
+2018-04-04 10:47:41,212 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1794/src/gradlew
+2018-04-04 10:47:41,215 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1794/src/sample/build.gradle /tmp/rdisk/1794/src/yeti/build.gradle /tmp/rdisk/1794/src/build.gradle
+2018-04-04 10:47:41,217 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1794/src/yeti/build.gradle /tmp/rdisk/1794/src/settings.gradle /tmp/rdisk/1794/src/sample/build.gradle /tmp/rdisk/1794/src/build.gradle
+2018-04-04 10:47:41,217 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 10:47:41,217 INFO  ProjectFixService - Fixing project...
+2018-04-04 10:47:41,224 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1794/src/sample/local.properties
+2018-04-04 10:47:41,224 INFO  ProjectFixService - Build info for "/tmp/rdisk/1794/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-04 10:47:41,224 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1794/src/yeti/local.properties
+2018-04-04 10:47:41,225 INFO  ProjectFixService - Build info for "/tmp/rdisk/1794/src/yeti/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-04 10:47:41,225 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1794/src/local.properties
+2018-04-04 10:47:41,226 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 10:47:41,226 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 10:47:41,227 INFO  ProjectFixService - Build info for "/tmp/rdisk/1794/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-04 10:47:41,227 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 10:47:41,227 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 10:47:41,227 INFO  SysUtils - Execute command: [/tmp/rdisk/1794/src/gradlew, -b, /tmp/rdisk/1794/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 10:47:50,927 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 10:47:50,928 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 10:47:50,928 INFO  SysUtils - Execute command: [/tmp/rdisk/1794/src/gradlew, -b, /tmp/rdisk/1794/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 10:48:16,584 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:yeti:compileLint
+:yeti:copyReleaseLint UP-TO-DATE
+:yeti:preBuild UP-TO-DATE
+:yeti:preReleaseBuild UP-TO-DATE
+:yeti:checkReleaseManifest
+:yeti:preDebugAndroidTestBuild UP-TO-DATE
+:yeti:preDebugBuild UP-TO-DATE
+:yeti:prepareComAndroidSupportAppcompatV72211Library
+:yeti:prepareComAndroidSupportRecyclerviewV72211Library
+:yeti:prepareComAndroidSupportSupportV42211Library
+:yeti:prepareReleaseDependencies
+:yeti:compileReleaseAidl
+:yeti:compileReleaseRenderscript
+:yeti:generateReleaseBuildConfig
+:yeti:generateReleaseAssets UP-TO-DATE
+:yeti:mergeReleaseAssets
+:yeti:generateReleaseResValues
+:yeti:generateReleaseResources
+:yeti:mergeReleaseResources
+:yeti:processReleaseManifest
+:yeti:processReleaseResources
+:yeti:generateReleaseSources
+:yeti:compileReleaseJavaNote: /tmp/rdisk/1794/src/yeti/src/main/java/me/kentin/yeti/YetiActionProvider.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:yeti:extractReleaseAnnotations
+:yeti:mergeReleaseProguardFiles
+:yeti:processReleaseJavaRes UP-TO-DATE
+:yeti:packageReleaseJar
+:yeti:compileReleaseNdk UP-TO-DATE
+:yeti:packageReleaseJniLibs UP-TO-DATE
+:yeti:packageReleaseLocalJar UP-TO-DATE
+:yeti:packageReleaseRenderscript UP-TO-DATE
+:yeti:packageReleaseResources
+:yeti:bundleRelease
+:sample:prepareComAndroidSupportAppcompatV72211Library
+:sample:prepareComAndroidSupportRecyclerviewV72211Library
+:sample:prepareComAndroidSupportSupportV42211Library
+:sample:prepareMeKentinYeti110Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.215 secs
+
+2018-04-04 10:48:16,642 INFO  FullProcessService - Found APK file: /tmp/rdisk/1794/src/sample/build/outputs/apk/sample-release-unsigned.apk

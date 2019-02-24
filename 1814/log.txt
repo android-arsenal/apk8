@@ -1,0 +1,605 @@
+2018-04-04 09:51:05,502 INFO  DownloadService - Downloading "https://github.com/Raizlabs/DebugModule/archive/master.zip", attempt 3
+2018-04-04 09:52:06,141 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 09:52:06,201 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-04 09:52:06,201 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-04 09:52:07,179 DEBUG FullProcessService - Repository https://github.com/Raizlabs/DebugModule available: true
+2018-04-04 09:52:07,179 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 09:52:07,179 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Raizlabs/DebugModule, /tmp/rdisk/1814/src]
+2018-04-04 09:52:10,766 INFO  SysUtils - 
+2018-04-04 09:52:10,771 INFO  GitService - Deleted "/tmp/rdisk/1814/src/.git": true
+2018-04-04 09:52:10,774 INFO  FullProcessService - Size of directory with sources: 271 KB
+2018-04-04 09:52:10,774 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1814/src]
+2018-04-04 09:52:10,779 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1814/src/.git/
+
+2018-04-04 09:52:10,782 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1814/src/gradlew
+2018-04-04 09:52:10,785 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1814/src/DebugModule/build.gradle /tmp/rdisk/1814/src/app/build.gradle /tmp/rdisk/1814/src/build.gradle
+2018-04-04 09:52:10,787 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1814/src/settings.gradle /tmp/rdisk/1814/src/maven_push.gradle /tmp/rdisk/1814/src/java-artifacts.gradle /tmp/rdisk/1814/src/build.gradle /tmp/rdisk/1814/src/app/build.gradle /tmp/rdisk/1814/src/android-artifacts.gradle /tmp/rdisk/1814/src/DebugModule/build.gradle
+2018-04-04 09:52:10,788 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 09:52:10,788 INFO  ProjectFixService - Fixing project...
+2018-04-04 09:52:10,796 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1814/src/DebugModule/local.properties
+2018-04-04 09:52:10,796 INFO  ProjectFixService - Build info for "/tmp/rdisk/1814/src/DebugModule/build.gradle": [buildToolsVersion=22,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:52:10,796 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1814/src/DebugModule/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:52:10,797 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1814/src/app/local.properties
+2018-04-04 09:52:10,798 INFO  ProjectFixService - Build info for "/tmp/rdisk/1814/src/app/build.gradle": [buildToolsVersion=22,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:52:10,798 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1814/src/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:52:10,798 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1814/src/local.properties
+2018-04-04 09:52:10,799 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 09:52:10,799 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 09:52:10,801 INFO  ProjectFixService - Build info for "/tmp/rdisk/1814/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-04 09:52:10,801 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 09:52:10,801 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:52:10,801 INFO  SysUtils - Execute command: [/tmp/rdisk/1814/src/gradlew, -b, /tmp/rdisk/1814/src/DebugModule/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:52:18,479 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-04 09:52:18,480 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-04 09:52:18,480 INFO  SysUtils - Execute command: [/tmp/rdisk/1814/src/gradlew, -b, /tmp/rdisk/1814/src/DebugModule/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-04 09:52:28,363 INFO  SysUtils - Configuration on demand is an incubating feature.
+:DebugModule:androidSourcesJar
+:DebugModule:compileLint
+:DebugModule:copyDebugLint UP-TO-DATE
+:DebugModule:preBuild UP-TO-DATE
+:DebugModule:preDebugBuild UP-TO-DATE
+:DebugModule:checkDebugManifest
+:DebugModule:preDebugAndroidTestBuild UP-TO-DATE
+:DebugModule:preReleaseBuild UP-TO-DATE
+:DebugModule:prepareComAndroidSupportRecyclerviewV72200Library
+:DebugModule:prepareComAndroidSupportSupportV42200Library
+:DebugModule:prepareDebugDependencies
+:DebugModule:compileDebugAidl
+:DebugModule:compileDebugRenderscript
+:DebugModule:generateDebugBuildConfig
+:DebugModule:generateDebugAssets UP-TO-DATE
+:DebugModule:mergeDebugAssets
+:DebugModule:generateDebugResValues
+:DebugModule:generateDebugResources
+:DebugModule:mergeDebugResources
+:DebugModule:processDebugManifest
+:DebugModule:processDebugResources
+:DebugModule:generateDebugSources
+:DebugModule:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:DebugModule:extractDebugAnnotations
+:DebugModule:mergeDebugProguardFiles
+:DebugModule:processDebugJavaRes UP-TO-DATE
+:DebugModule:packageDebugJar
+:DebugModule:compileDebugNdk UP-TO-DATE
+:DebugModule:packageDebugJniLibs UP-TO-DATE
+:DebugModule:packageDebugLocalJar UP-TO-DATE
+:DebugModule:packageDebugRenderscript UP-TO-DATE
+:DebugModule:packageDebugResources
+:DebugModule:bundleDebug
+:DebugModule:assembleDebug
+:DebugModule:copyReleaseLint UP-TO-DATE
+:DebugModule:checkReleaseManifest
+:DebugModule:prepareReleaseDependencies
+:DebugModule:compileReleaseAidl
+:DebugModule:compileReleaseRenderscript
+:DebugModule:generateReleaseBuildConfig
+:DebugModule:generateReleaseAssets UP-TO-DATE
+:DebugModule:mergeReleaseAssets
+:DebugModule:generateReleaseResValues
+:DebugModule:generateReleaseResources
+:DebugModule:mergeReleaseResources
+:DebugModule:processReleaseManifest
+:DebugModule:processReleaseResources
+:DebugModule:generateReleaseSources
+:DebugModule:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:DebugModule:extractReleaseAnnotations
+:DebugModule:mergeReleaseProguardFiles
+:DebugModule:processReleaseJavaRes UP-TO-DATE
+:DebugModule:packageReleaseJar
+:DebugModule:compileReleaseNdk UP-TO-DATE
+:DebugModule:packageReleaseJniLibs UP-TO-DATE
+:DebugModule:packageReleaseLocalJar UP-TO-DATE
+:DebugModule:packageReleaseRenderscript UP-TO-DATE
+:DebugModule:packageReleaseResources
+:DebugModule:bundleRelease
+:DebugModule:assembleRelease
+:DebugModule:assemble
+:DebugModule:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.445 secs
+
+2018-04-04 09:52:28,372 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 09:52:28,373 INFO  SysUtils - Execute command: [/tmp/rdisk/1814/src/gradlew, -b, /tmp/rdisk/1814/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 09:52:35,244 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-04 09:52:35,245 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-04 09:52:35,245 INFO  SysUtils - Execute command: [/tmp/rdisk/1814/src/gradlew, -b, /tmp/rdisk/1814/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-04 09:52:57,339 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:DebugModule:androidSourcesJar UP-TO-DATE
+:DebugModule:compileLint
+:DebugModule:copyDebugLint UP-TO-DATE
+:DebugModule:preBuild UP-TO-DATE
+:DebugModule:preDebugBuild UP-TO-DATE
+:DebugModule:checkDebugManifest
+:DebugModule:preDebugAndroidTestBuild UP-TO-DATE
+:DebugModule:preReleaseBuild UP-TO-DATE
+:DebugModule:prepareComAndroidSupportRecyclerviewV72200Library UP-TO-DATE
+:DebugModule:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:DebugModule:prepareDebugDependencies
+:DebugModule:compileDebugAidl UP-TO-DATE
+:DebugModule:compileDebugRenderscript UP-TO-DATE
+:DebugModule:generateDebugBuildConfig UP-TO-DATE
+:DebugModule:generateDebugAssets UP-TO-DATE
+:DebugModule:mergeDebugAssets UP-TO-DATE
+:DebugModule:generateDebugResValues UP-TO-DATE
+:DebugModule:generateDebugResources UP-TO-DATE
+:DebugModule:mergeDebugResources UP-TO-DATE
+:DebugModule:processDebugManifest UP-TO-DATE
+:DebugModule:processDebugResources UP-TO-DATE
+:DebugModule:generateDebugSources UP-TO-DATE
+:DebugModule:compileDebugJava UP-TO-DATE
+:DebugModule:extractDebugAnnotations UP-TO-DATE
+:DebugModule:mergeDebugProguardFiles UP-TO-DATE
+:DebugModule:processDebugJavaRes UP-TO-DATE
+:DebugModule:packageDebugJar UP-TO-DATE
+:DebugModule:compileDebugNdk UP-TO-DATE
+:DebugModule:packageDebugJniLibs UP-TO-DATE
+:DebugModule:packageDebugLocalJar UP-TO-DATE
+:DebugModule:packageDebugRenderscript UP-TO-DATE
+:DebugModule:packageDebugResources UP-TO-DATE
+:DebugModule:bundleDebug UP-TO-DATE
+:DebugModule:copyReleaseLint UP-TO-DATE
+:DebugModule:checkReleaseManifest
+:DebugModule:prepareReleaseDependencies
+:DebugModule:compileReleaseAidl UP-TO-DATE
+:DebugModule:compileReleaseRenderscript UP-TO-DATE
+:DebugModule:generateReleaseBuildConfig UP-TO-DATE
+:DebugModule:generateReleaseAssets UP-TO-DATE
+:DebugModule:mergeReleaseAssets UP-TO-DATE
+:DebugModule:generateReleaseResValues UP-TO-DATE
+:DebugModule:generateReleaseResources UP-TO-DATE
+:DebugModule:mergeReleaseResources UP-TO-DATE
+:DebugModule:processReleaseManifest UP-TO-DATE
+:DebugModule:processReleaseResources UP-TO-DATE
+:DebugModule:generateReleaseSources UP-TO-DATE
+:DebugModule:compileReleaseJava UP-TO-DATE
+:DebugModule:extractReleaseAnnotations UP-TO-DATE
+:DebugModule:mergeReleaseProguardFiles UP-TO-DATE
+:DebugModule:processReleaseJavaRes UP-TO-DATE
+:DebugModule:packageReleaseJar UP-TO-DATE
+:DebugModule:compileReleaseNdk UP-TO-DATE
+:DebugModule:packageReleaseJniLibs UP-TO-DATE
+:DebugModule:packageReleaseLocalJar UP-TO-DATE
+:DebugModule:packageReleaseRenderscript UP-TO-DATE
+:DebugModule:packageReleaseResources UP-TO-DATE
+:DebugModule:bundleRelease UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareComGetbaseFloatingactionbutton190Library
+:app:prepareComRaizlabsAndroidDBFlow180Library
+:app:prepareComRaizlabsAndroidDebugModule210Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavajavax.annotation.processing.FilerException: Attempt to recreate a file for type com.raizlabs.android.dbflow.config.AppDatabase$Database
+	at com.sun.tools.javac.processing.JavacFiler.checkNameAndExistence(JavacFiler.java:522)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceOrClassFile(JavacFiler.java:396)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceFile(JavacFiler.java:378)
+	at com.raizlabs.android.dbflow.processor.model.ProcessorManager.handle(ProcessorManager.java:277)
+	at com.raizlabs.android.dbflow.processor.DBFlowProcessor.process(DBFlowProcessor.java:94)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:794)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs(JavacProcessingEnvironment.java:705)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.access$1800(JavacProcessingEnvironment.java:91)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1035)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1176)
+	at com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1170)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:856)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)
+	at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:138)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:42)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+javax.annotation.processing.FilerException: Attempt to recreate a file for type com.raizlabs.android.dbflow.config.AppDatabase$Database
+	at com.sun.tools.javac.processing.JavacFiler.checkNameAndExistence(JavacFiler.java:522)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceOrClassFile(JavacFiler.java:396)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceFile(JavacFiler.java:378)
+	at com.raizlabs.android.dbflow.processor.model.ProcessorManager.handle(ProcessorManager.java:277)
+	at com.raizlabs.android.dbflow.processor.DBFlowProcessor.process(DBFlowProcessor.java:94)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:794)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.access$200(JavacProcessingEnvironment.java:91)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$DiscoveredProcessors$ProcessorStateIterator.runContributingProcs(JavacProcessingEnvironment.java:627)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1033)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1198)
+	at com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1170)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:856)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)
+	at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:138)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:42)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+warning: File for type 'com.raizlabs.android.dbflow.config.GeneratedDatabaseHolder' created in the last round will not be subject to annotation processing.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavajavax.annotation.processing.FilerException: Attempt to recreate a file for type com.raizlabs.android.dbflow.config.AppDatabase$Database
+	at com.sun.tools.javac.processing.JavacFiler.checkNameAndExistence(JavacFiler.java:522)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceOrClassFile(JavacFiler.java:396)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceFile(JavacFiler.java:378)
+	at com.raizlabs.android.dbflow.processor.model.ProcessorManager.handle(ProcessorManager.java:277)
+	at com.raizlabs.android.dbflow.processor.DBFlowProcessor.process(DBFlowProcessor.java:94)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:794)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs(JavacProcessingEnvironment.java:705)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.access$1800(JavacProcessingEnvironment.java:91)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1035)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1176)
+	at com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1170)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:856)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)
+	at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:138)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:42)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+javax.annotation.processing.FilerException: Attempt to recreate a file for type com.raizlabs.android.dbflow.config.AppDatabase$Database
+	at com.sun.tools.javac.processing.JavacFiler.checkNameAndExistence(JavacFiler.java:522)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceOrClassFile(JavacFiler.java:396)
+	at com.sun.tools.javac.processing.JavacFiler.createSourceFile(JavacFiler.java:378)
+	at com.raizlabs.android.dbflow.processor.model.ProcessorManager.handle(ProcessorManager.java:277)
+	at com.raizlabs.android.dbflow.processor.DBFlowProcessor.process(DBFlowProcessor.java:94)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:794)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.access$200(JavacProcessingEnvironment.java:91)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$DiscoveredProcessors$ProcessorStateIterator.runContributingProcs(JavacProcessingEnvironment.java:627)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1033)
+	at com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1198)
+	at com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1170)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:856)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)
+	at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:138)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:42)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+warning: File for type 'com.raizlabs.android.dbflow.config.GeneratedDatabaseHolder' created in the last round will not be subject to annotation processing.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.682 secs
+
+2018-04-04 09:52:57,360 INFO  FullProcessService - Found APK file: /tmp/rdisk/1814/src/app/build/outputs/apk/app-debug.apk

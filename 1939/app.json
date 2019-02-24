@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.amqtech.opensource.appintroexample",
+    "label" : "AppIntro Example",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.1",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.VIBRATE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.CAMERA", "android.permission.ACCESS_FINE_LOCATION" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2408,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.0.1\" package=\"com.amqtech.opensource.appintroexample\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.VIBRATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.CAMERA\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n\t<application android:theme=\"resourceId:0x7f0d00b1\" android:label=\"AppIntro Example\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.amqtech.opensource.appintroexample.ui.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.mainTabs.intro.DefaultIntro\" />\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.mainTabs.intro.DefaultIntro2\" />\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.mainTabs.intro.CustomLayoutIntro\" />\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.mainTabs.intro.CustomBackgroundIntro\" />\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.permsTabs.intro.PermissionsIntro1\" />\n\t\t<activity android:theme=\"resourceId:0x7f0d000c\" android:label=\"AppIntro Example\" android:name=\"com.amqtech.opensource.appintroexample.ui.permsTabs.intro.PermissionsIntro2\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 3497519,
+  "crc32" : 3636112401,
+  "sha256" : "8ebe7521af6b1c957eda0be3a7acc1a12eb9b4295904e0d23f9f58824ac43ec2",
+  "buildTime" : 1522809199000
+}

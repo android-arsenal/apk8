@@ -1,0 +1,1260 @@
+2018-05-11 11:55:51,461 INFO  DownloadService - Downloading "https://github.com/square/leakcanary/archive/master.zip", attempt 3
+2018-05-11 11:55:53,540 INFO  DownloadService - Downloaded https://github.com/square/leakcanary/archive/master.zip, attempt 3
+2018-05-11 11:55:53,540 INFO  DownloadService - Size of file "/tmp/rdisk/1775/master.zip": 6 MB
+2018-05-11 11:55:53,540 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:55:53,541 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1775/master.zip: true
+2018-05-11 11:55:53,541 DEBUG ZipUtil - Extracting '/tmp/rdisk/1775/master.zip' into '/tmp/rdisk/1775/src'.
+2018-05-11 11:55:53,715 INFO  FullProcessService - Size of directory with sources: 24 MB
+2018-05-11 11:55:53,715 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1775/src]
+2018-05-11 11:55:53,726 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1775/src/.git/
+
+2018-05-11 11:55:53,731 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1775/src/leakcanary-master/gradlew
+2018-05-11 11:55:53,736 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle /tmp/rdisk/1775/src/leakcanary-master/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-watcher/build.gradle
+2018-05-11 11:55:53,741 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1775/src/leakcanary-master/settings.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-watcher/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle /tmp/rdisk/1775/src/leakcanary-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/1775/src/leakcanary-master/gradle/checkstyle.gradle /tmp/rdisk/1775/src/leakcanary-master/build.gradle
+2018-05-11 11:55:53,741 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:55:53,741 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:55:53,755 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/local.properties
+2018-05-11 11:55:53,759 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,760 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,760 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/local.properties
+2018-05-11 11:55:53,764 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,764 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,765 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/local.properties
+2018-05-11 11:55:53,769 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,769 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,770 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/local.properties
+2018-05-11 11:55:53,774 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,774 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,774 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/local.properties
+2018-05-11 11:55:53,775 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-05-11 11:55:53,775 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-05-11 11:55:53,779 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,779 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1775/src/leakcanary-master/leakcanary-watcher/local.properties
+2018-05-11 11:55:53,784 INFO  ProjectFixService - Build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-watcher/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:55:53,784 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1775/src/leakcanary-master/leakcanary-watcher/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:55:53,784 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:55:53,784 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:55:53,784 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:56:04,275 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 11:56:04,276 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 11:56:04,276 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 11:56:24,746 INFO  SysUtils - Configuration on demand is an incubating feature.
+:leakcanary-analyzer:androidJavadocs/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakTraceElement.java:72: error: cannot find symbol
+  public final Exclusion exclusion;
+               ^
+  symbol:   class Exclusion
+  location: class LeakTraceElement
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakTraceElement.java:84: error: cannot find symbol
+      String extra, Exclusion exclusion, List<LeakReference> leakReferences) {
+                    ^
+  symbol:   class Exclusion
+  location: class LeakTraceElement
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:18: error: cannot find symbol
+import com.squareup.haha.perflib.ArrayInstance;
+                                ^
+  symbol:   class ArrayInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:19: error: cannot find symbol
+import com.squareup.haha.perflib.ClassInstance;
+                                ^
+  symbol:   class ClassInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:20: error: cannot find symbol
+import com.squareup.haha.perflib.ClassObj;
+                                ^
+  symbol:   class ClassObj
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:21: error: cannot find symbol
+import com.squareup.haha.perflib.Field;
+                                ^
+  symbol:   class Field
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:23: error: cannot find symbol
+import com.squareup.haha.perflib.Instance;
+                                ^
+  symbol:   class Instance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:24: error: cannot find symbol
+import com.squareup.haha.perflib.RootObj;
+                                ^
+  symbol:   class RootObj
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:25: error: cannot find symbol
+import com.squareup.haha.perflib.RootType;
+                                ^
+  symbol:   class RootType
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:26: error: cannot find symbol
+import com.squareup.haha.perflib.Snapshot;
+                                ^
+  symbol:   class Snapshot
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:27: error: cannot find symbol
+import com.squareup.haha.perflib.Type;
+                                ^
+  symbol:   class Type
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:18: error: cannot find symbol
+import com.squareup.haha.perflib.ArrayInstance;
+                                ^
+  symbol:   class ArrayInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:19: error: cannot find symbol
+import com.squareup.haha.perflib.ClassInstance;
+                                ^
+  symbol:   class ClassInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:20: error: cannot find symbol
+import com.squareup.haha.perflib.ClassObj;
+                                ^
+  symbol:   class ClassObj
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:21: error: cannot find symbol
+import com.squareup.haha.perflib.Instance;
+                                ^
+  symbol:   class Instance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:22: error: cannot find symbol
+import com.squareup.haha.perflib.Type;
+                                ^
+  symbol:   class Type
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:30: error: cannot find symbol
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+                                     ^
+  symbol:   class Preconditions
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:30: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:51: error: cannot find symbol
+  private final ExcludedRefs excludedRefs;
+                ^
+  symbol:   class ExcludedRefs
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakNode.java:18: error: cannot find symbol
+import com.squareup.haha.perflib.Instance;
+                                ^
+  symbol:   class Instance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:54: error: cannot find symbol
+  private final LinkedHashSet<Instance> toVisitSet;
+                              ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:55: error: cannot find symbol
+  private final LinkedHashSet<Instance> toVisitIfNoPathSet;
+                              ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:56: error: cannot find symbol
+  private final LinkedHashSet<Instance> visitedSet;
+                              ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:59: error: cannot find symbol
+  ShortestPathFinder(ExcludedRefs excludedRefs) {
+                     ^
+  symbol:   class ExcludedRefs
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:78: error: cannot find symbol
+  Result findPath(Snapshot snapshot, Instance leakingRef) {
+                  ^
+  symbol:   class Snapshot
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:78: error: cannot find symbol
+  Result findPath(Snapshot snapshot, Instance leakingRef) {
+                                     ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:131: error: cannot find symbol
+  private void enqueueGcRoots(Snapshot snapshot) {
+                              ^
+  symbol:   class Snapshot
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:287: error: cannot find symbol
+  private void enqueue(Exclusion exclusion, LeakNode parent, Instance child,
+                       ^
+  symbol:   class Exclusion
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:287: error: cannot find symbol
+  private void enqueue(Exclusion exclusion, LeakNode parent, Instance child,
+                                                             ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/ShortestPathFinder.java:319: error: cannot find symbol
+  private boolean isString(Instance instance) {
+                           ^
+  symbol:   class Instance
+  location: class ShortestPathFinder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:40: error: cannot find symbol
+  static String threadName(Instance holder) {
+                           ^
+  symbol:   class Instance
+  location: class HahaHelper
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:51: error: cannot find symbol
+  static boolean extendsThread(ClassObj clazz) {
+                               ^
+  symbol:   class ClassObj
+  location: class HahaHelper
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:143: error: cannot find symbol
+  static List<ClassInstance.FieldValue> classInstanceValues(Instance instance) {
+                                                            ^
+  symbol:   class Instance
+  location: class HahaHelper
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:143: error: package ClassInstance does not exist
+  static List<ClassInstance.FieldValue> classInstanceValues(Instance instance) {
+                           ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:149: error: package ClassInstance does not exist
+  static <T> T fieldValue(List<ClassInstance.FieldValue> values, String fieldName) {
+                                            ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HahaHelper.java:158: error: package ClassInstance does not exist
+  static boolean hasField(List<ClassInstance.FieldValue> values, String fieldName) {
+                                            ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakNode.java:22: error: cannot find symbol
+  final Exclusion exclusion;
+        ^
+  symbol:   class Exclusion
+  location: class LeakNode
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakNode.java:23: error: cannot find symbol
+  final Instance instance;
+        ^
+  symbol:   class Instance
+  location: class LeakNode
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakNode.java:27: error: cannot find symbol
+  LeakNode(Exclusion exclusion, Instance instance, LeakNode parent, LeakReference leakReference) {
+           ^
+  symbol:   class Exclusion
+  location: class LeakNode
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/LeakNode.java:27: error: cannot find symbol
+  LeakNode(Exclusion exclusion, Instance instance, LeakNode parent, LeakReference leakReference) {
+                                ^
+  symbol:   class Instance
+  location: class LeakNode
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:18: error: cannot find symbol
+import com.squareup.haha.perflib.ArrayInstance;
+                                ^
+  symbol:   class ArrayInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:19: error: cannot find symbol
+import com.squareup.haha.perflib.ClassInstance;
+                                ^
+  symbol:   class ClassInstance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:20: error: cannot find symbol
+import com.squareup.haha.perflib.ClassObj;
+                                ^
+  symbol:   class ClassObj
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:21: error: cannot find symbol
+import com.squareup.haha.perflib.Field;
+                                ^
+  symbol:   class Field
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:22: error: cannot find symbol
+import com.squareup.haha.perflib.HprofParser;
+                                ^
+  symbol:   class HprofParser
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:23: error: cannot find symbol
+import com.squareup.haha.perflib.Instance;
+                                ^
+  symbol:   class Instance
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:24: error: cannot find symbol
+import com.squareup.haha.perflib.RootObj;
+                                ^
+  symbol:   class RootObj
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:25: error: cannot find symbol
+import com.squareup.haha.perflib.RootType;
+                                ^
+  symbol:   class RootType
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:26: error: cannot find symbol
+import com.squareup.haha.perflib.Snapshot;
+                                ^
+  symbol:   class Snapshot
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:27: error: cannot find symbol
+import com.squareup.haha.perflib.Type;
+                                ^
+  symbol:   class Type
+  location: package com.squareup.haha.perflib
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:28: error: package com.squareup.haha.perflib.io does not exist
+import com.squareup.haha.perflib.io.HprofBuffer;
+                                   ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:29: error: package com.squareup.haha.perflib.io does not exist
+import com.squareup.haha.perflib.io.MemoryMappedFileBuffer;
+                                   ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:30: error: package com.squareup.haha.trove does not exist
+import com.squareup.haha.trove.THashMap;
+                              ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:31: error: package com.squareup.haha.trove does not exist
+import com.squareup.haha.trove.TObjectProcedure;
+                              ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:65: error: cannot find symbol
+  private final ExcludedRefs excludedRefs;
+                ^
+  symbol:   class ExcludedRefs
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:67: error: cannot find symbol
+  public HeapAnalyzer(ExcludedRefs excludedRefs) {
+                      ^
+  symbol:   class ExcludedRefs
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:135: error: cannot find symbol
+  void deduplicateGcRoots(Snapshot snapshot) {
+                          ^
+  symbol:   class Snapshot
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:156: error: cannot find symbol
+  private String generateRootKey(RootObj root) {
+                                 ^
+  symbol:   class RootObj
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:160: error: cannot find symbol
+  private Instance findLeakingReference(String key, Snapshot snapshot) {
+                                                    ^
+  symbol:   class Snapshot
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:160: error: cannot find symbol
+  private Instance findLeakingReference(String key, Snapshot snapshot) {
+          ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:175: error: cannot find symbol
+  private AnalysisResult findLeakTrace(long analysisStartNanoTime, Snapshot snapshot,
+                                                                   ^
+  symbol:   class Snapshot
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:176: error: cannot find symbol
+      Instance leakingRef) {
+      ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:215: error: cannot find symbol
+  private long computeIgnoredBitmapRetainedSize(Snapshot snapshot, Instance leakingInstance) {
+                                                ^
+  symbol:   class Snapshot
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:215: error: cannot find symbol
+  private long computeIgnoredBitmapRetainedSize(Snapshot snapshot, Instance leakingInstance) {
+                                                                   ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:239: error: cannot find symbol
+  private boolean isIgnoredDominator(Instance dominator, Instance instance) {
+                                     ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:239: error: cannot find symbol
+  private boolean isIgnoredDominator(Instance dominator, Instance instance) {
+                                                         ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:342: error: cannot find symbol
+  private List<LeakReference> describeFields(Instance instance) {
+                                             ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:379: error: cannot find symbol
+  private String getClassName(Instance instance) {
+                              ^
+  symbol:   class Instance
+  location: class HeapAnalyzer
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/haha/perflib/HahaSpy.java:20: error: cannot find symbol
+  public static Instance allocatingThread(Instance instance) {
+                                          ^
+  symbol:   class Instance
+  location: class HahaSpy
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/haha/perflib/HahaSpy.java:20: error: cannot find symbol
+  public static Instance allocatingThread(Instance instance) {
+                ^
+  symbol:   class Instance
+  location: class HahaSpy
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:61: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:105: warning - Tag @link: reference not found: KeyedWeakReference
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:105: warning - Tag @link: reference not found: KeyedWeakReference
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:11: warning - Tag @link: reference not found: KeyedWeakReference
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:14: warning - Tag @link: reference not found: KeyedWeakReference#key
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:17: warning - Tag @link: reference not found: KeyedWeakReference#name
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:14: warning - Tag @link: reference not found: KeyedWeakReference#key
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:17: warning - Tag @link: reference not found: KeyedWeakReference#name
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:61: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:11: warning - Tag @link: reference not found: KeyedWeakReference
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:105: warning - Tag @link: reference not found: KeyedWeakReference
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/HeapAnalyzer.java:61: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:14: warning - Tag @link: reference not found: KeyedWeakReference#key
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:17: warning - Tag @link: reference not found: KeyedWeakReference#name
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/TrackedReference.java:11: warning - Tag @link: reference not found: KeyedWeakReference
+
+85 warnings
+:leakcanary-analyzer:androidJavadocsJar
+:leakcanary-analyzer:androidSourcesJar
+:leakcanary-analyzer:preBuild UP-TO-DATE
+:leakcanary-analyzer:preDebugBuild UP-TO-DATE
+:leakcanary-analyzer:compileDebugAidl
+:leakcanary-analyzer:compileDebugRenderscript
+:leakcanary-analyzer:checkDebugManifest
+:leakcanary-analyzer:generateDebugBuildConfig SKIPPED
+:leakcanary-analyzer:generateDebugResValues
+:leakcanary-analyzer:generateDebugResources
+:leakcanary-analyzer:packageDebugResources
+:leakcanary-analyzer:platformAttrExtractor
+:leakcanary-analyzer:processDebugManifest
+:leakcanary-analyzer:prepareLintJar
+:leakcanary-analyzer:generateDebugRFile
+:leakcanary-analyzer:generateDebugSources
+:leakcanary-watcher:compileJava
+:leakcanary-watcher:processResources NO-SOURCE
+:leakcanary-watcher:classes
+:leakcanary-watcher:jar
+:leakcanary-analyzer:javaPreCompileDebug
+:leakcanary-analyzer:compileDebugJavaWithJavacNote: /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/AnalysisResult.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:leakcanary-analyzer:extractDebugAnnotations
+:leakcanary-analyzer:mergeDebugConsumerProguardFiles
+:leakcanary-analyzer:mergeDebugShaders
+:leakcanary-analyzer:compileDebugShaders
+:leakcanary-analyzer:generateDebugAssets
+:leakcanary-analyzer:packageDebugAssets
+:leakcanary-analyzer:packageDebugRenderscript NO-SOURCE
+:leakcanary-analyzer:processDebugJavaRes NO-SOURCE
+:leakcanary-analyzer:transformResourcesWithMergeJavaResForDebug
+:leakcanary-analyzer:transformClassesAndResourcesWithSyncLibJarsForDebug
+:leakcanary-analyzer:compileDebugNdk NO-SOURCE
+:leakcanary-analyzer:mergeDebugJniLibFolders
+:leakcanary-analyzer:transformNativeLibsWithMergeJniLibsForDebug
+:leakcanary-analyzer:transformNativeLibsWithStripDebugSymbolForDebug
+:leakcanary-analyzer:transformNativeLibsWithSyncJniLibsForDebug
+:leakcanary-analyzer:bundleDebug
+:leakcanary-analyzer:compileDebugSources
+:leakcanary-analyzer:assembleDebug
+:leakcanary-analyzer:preReleaseBuild UP-TO-DATE
+:leakcanary-analyzer:compileReleaseAidl
+:leakcanary-analyzer:compileReleaseRenderscript
+:leakcanary-analyzer:checkReleaseManifest
+:leakcanary-analyzer:generateReleaseBuildConfig SKIPPED
+:leakcanary-analyzer:generateReleaseResValues
+:leakcanary-analyzer:generateReleaseResources
+:leakcanary-analyzer:packageReleaseResources
+:leakcanary-analyzer:processReleaseManifest
+:leakcanary-analyzer:generateReleaseRFile
+:leakcanary-analyzer:generateReleaseSources
+:leakcanary-analyzer:javaPreCompileRelease
+:leakcanary-analyzer:compileReleaseJavaWithJavacNote: /tmp/rdisk/1775/src/leakcanary-master/leakcanary-analyzer/src/main/java/com/squareup/leakcanary/AnalysisResult.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:leakcanary-analyzer:extractReleaseAnnotations
+:leakcanary-analyzer:mergeReleaseConsumerProguardFiles
+:leakcanary-analyzer:mergeReleaseShaders
+:leakcanary-analyzer:compileReleaseShaders
+:leakcanary-analyzer:generateReleaseAssets
+:leakcanary-analyzer:packageReleaseAssets
+:leakcanary-analyzer:packageReleaseRenderscript NO-SOURCE
+:leakcanary-analyzer:processReleaseJavaRes NO-SOURCE
+:leakcanary-analyzer:transformResourcesWithMergeJavaResForRelease
+:leakcanary-analyzer:transformClassesAndResourcesWithSyncLibJarsForRelease
+:leakcanary-analyzer:compileReleaseNdk NO-SOURCE
+:leakcanary-analyzer:mergeReleaseJniLibFolders
+:leakcanary-analyzer:transformNativeLibsWithMergeJniLibsForRelease
+:leakcanary-analyzer:transformNativeLibsWithStripDebugSymbolForRelease
+:leakcanary-analyzer:transformNativeLibsWithSyncJniLibsForRelease
+:leakcanary-analyzer:bundleRelease
+:leakcanary-analyzer:compileReleaseSources
+:leakcanary-analyzer:mergeReleaseResources
+:leakcanary-analyzer:verifyReleaseResources
+:leakcanary-analyzer:assembleRelease
+:leakcanary-analyzer:signArchives SKIPPED
+:leakcanary-analyzer:assemble
+:leakcanary-analyzer:build
+
+BUILD SUCCESSFUL in 20s
+51 actionable tasks: 51 executed
+
+2018-05-11 11:56:24,759 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:56:24,759 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:56:32,320 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 11:56:32,320 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 11:56:32,320 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android-no-op/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 11:56:44,639 INFO  SysUtils - Configuration on demand is an incubating feature.
+:leakcanary-android-no-op:androidJavadocs
+:leakcanary-android-no-op:androidJavadocsJar
+:leakcanary-android-no-op:androidSourcesJar
+:leakcanary-android-no-op:preBuild UP-TO-DATE
+:leakcanary-android-no-op:preDebugBuild UP-TO-DATE
+:leakcanary-android-no-op:compileDebugAidl
+:leakcanary-android-no-op:compileDebugRenderscript
+:leakcanary-android-no-op:checkDebugManifest
+:leakcanary-android-no-op:generateDebugBuildConfig SKIPPED
+:leakcanary-android-no-op:generateDebugResValues
+:leakcanary-android-no-op:generateDebugResources
+:leakcanary-android-no-op:packageDebugResources
+:leakcanary-android-no-op:platformAttrExtractor
+:leakcanary-android-no-op:processDebugManifest
+:leakcanary-android-no-op:prepareLintJar
+:leakcanary-android-no-op:javaPreCompileDebug
+:leakcanary-android-no-op:mergeDebugConsumerProguardFiles
+:leakcanary-android-no-op:mergeDebugShaders
+:leakcanary-android-no-op:compileDebugShaders
+:leakcanary-android-no-op:generateDebugAssets
+:leakcanary-android-no-op:packageDebugAssets
+:leakcanary-android-no-op:packageDebugRenderscript NO-SOURCE
+:leakcanary-android-no-op:processDebugJavaRes NO-SOURCE
+:leakcanary-android-no-op:compileDebugNdk NO-SOURCE
+:leakcanary-android-no-op:mergeDebugJniLibFolders
+:leakcanary-android-no-op:transformNativeLibsWithMergeJniLibsForDebug
+:leakcanary-android-no-op:transformNativeLibsWithStripDebugSymbolForDebug
+:leakcanary-android-no-op:generateDebugRFile
+:leakcanary-android-no-op:generateDebugSources
+:leakcanary-android-no-op:compileDebugJavaWithJavac
+:leakcanary-android-no-op:extractDebugAnnotations
+:leakcanary-android-no-op:transformResourcesWithMergeJavaResForDebug
+:leakcanary-android-no-op:transformClassesAndResourcesWithSyncLibJarsForDebug
+:leakcanary-android-no-op:transformNativeLibsWithSyncJniLibsForDebug
+:leakcanary-android-no-op:bundleDebug
+:leakcanary-android-no-op:compileDebugSources
+:leakcanary-android-no-op:assembleDebug
+:leakcanary-android-no-op:preReleaseBuild UP-TO-DATE
+:leakcanary-android-no-op:compileReleaseAidl
+:leakcanary-android-no-op:compileReleaseRenderscript
+:leakcanary-android-no-op:checkReleaseManifest
+:leakcanary-android-no-op:generateReleaseBuildConfig SKIPPED
+:leakcanary-android-no-op:generateReleaseResValues
+:leakcanary-android-no-op:generateReleaseResources
+:leakcanary-android-no-op:packageReleaseResources
+:leakcanary-android-no-op:processReleaseManifest
+:leakcanary-android-no-op:generateReleaseRFile
+:leakcanary-android-no-op:generateReleaseSources
+:leakcanary-android-no-op:javaPreCompileRelease
+:leakcanary-android-no-op:compileReleaseJavaWithJavac
+:leakcanary-android-no-op:extractReleaseAnnotations
+:leakcanary-android-no-op:mergeReleaseConsumerProguardFiles
+:leakcanary-android-no-op:mergeReleaseShaders
+:leakcanary-android-no-op:compileReleaseShaders
+:leakcanary-android-no-op:generateReleaseAssets
+:leakcanary-android-no-op:packageReleaseAssets
+:leakcanary-android-no-op:packageReleaseRenderscript NO-SOURCE
+:leakcanary-android-no-op:processReleaseJavaRes NO-SOURCE
+:leakcanary-android-no-op:transformResourcesWithMergeJavaResForRelease
+:leakcanary-android-no-op:transformClassesAndResourcesWithSyncLibJarsForRelease
+:leakcanary-android-no-op:compileReleaseNdk NO-SOURCE
+:leakcanary-android-no-op:mergeReleaseJniLibFolders
+:leakcanary-android-no-op:transformNativeLibsWithMergeJniLibsForRelease
+:leakcanary-android-no-op:transformNativeLibsWithStripDebugSymbolForRelease
+:leakcanary-android-no-op:transformNativeLibsWithSyncJniLibsForRelease
+:leakcanary-android-no-op:bundleRelease
+:leakcanary-android-no-op:compileReleaseSources
+:leakcanary-android-no-op:mergeReleaseResources
+:leakcanary-android-no-op:verifyReleaseResources
+:leakcanary-android-no-op:assembleRelease
+:leakcanary-android-no-op:signArchives SKIPPED
+:leakcanary-android-no-op:assemble
+:leakcanary-android-no-op:build
+
+BUILD SUCCESSFUL in 12s
+49 actionable tasks: 49 executed
+
+2018-05-11 11:56:44,659 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:56:44,659 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:56:52,386 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 11:56:52,386 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 11:56:52,386 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 11:57:14,111 INFO  SysUtils - Configuration on demand is an incubating feature.
+:leakcanary-android:androidJavadocs/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/RequestStoragePermissionActivity.java:25: error: cannot find symbol
+import com.squareup.leakcanary.R;
+                              ^
+  symbol:   class R
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/LeakCanaryInternals.java:31: error: cannot find symbol
+import com.squareup.leakcanary.R;
+                              ^
+  symbol:   class R
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/LeakCanaryInternals.java:32: error: cannot find symbol
+import com.squareup.leakcanary.RefWatcher;
+                              ^
+  symbol:   class RefWatcher
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/LeakCanaryInternals.java:57: error: cannot find symbol
+  public static volatile RefWatcher installedRefWatcher;
+                         ^
+  symbol:   class RefWatcher
+  location: class LeakCanaryInternals
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/HeapAnalyzerService.java:22: error: cannot find symbol
+import com.squareup.leakcanary.AnalysisResult;
+                              ^
+  symbol:   class AnalysisResult
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/HeapAnalyzerService.java:24: error: cannot find symbol
+import com.squareup.leakcanary.HeapAnalyzer;
+                              ^
+  symbol:   class HeapAnalyzer
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/HeapAnalyzerService.java:25: error: cannot find symbol
+import com.squareup.leakcanary.HeapDump;
+                              ^
+  symbol:   class HeapDump
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/HeapAnalyzerService.java:36: error: cannot find symbol
+  public static void runAnalysis(Context context, HeapDump heapDump,
+                                                  ^
+  symbol:   class HeapDump
+  location: class HeapAnalyzerService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:28: error: cannot find symbol
+      HeapDump heapDump, AnalysisResult result) {
+      ^
+  symbol:   class HeapDump
+  location: class AbstractAnalysisResultService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:28: error: cannot find symbol
+      HeapDump heapDump, AnalysisResult result) {
+                         ^
+  symbol:   class AnalysisResult
+  location: class AbstractAnalysisResultService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:67: error: cannot find symbol
+  protected abstract void onHeapAnalyzed(HeapDump heapDump, AnalysisResult result);
+                                         ^
+  symbol:   class HeapDump
+  location: class AbstractAnalysisResultService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:67: error: cannot find symbol
+  protected abstract void onHeapAnalyzed(HeapDump heapDump, AnalysisResult result);
+                                                            ^
+  symbol:   class AnalysisResult
+  location: class AbstractAnalysisResultService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:25: error: cannot find symbol
+import com.squareup.leakcanary.Exclusion;
+                              ^
+  symbol:   class Exclusion
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:26: error: cannot find symbol
+import com.squareup.leakcanary.LeakTrace;
+                              ^
+  symbol:   class LeakTrace
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:27: error: cannot find symbol
+import com.squareup.leakcanary.LeakTraceElement;
+                              ^
+  symbol:   class LeakTraceElement
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:28: error: cannot find symbol
+import com.squareup.leakcanary.R;
+                              ^
+  symbol:   class R
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:33: error: package com.squareup.leakcanary.LeakTraceElement does not exist
+import static com.squareup.leakcanary.LeakTraceElement.Holder.ARRAY;
+                                                      ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:33: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.LeakTraceElement.Holder.ARRAY;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:34: error: package com.squareup.leakcanary.LeakTraceElement does not exist
+import static com.squareup.leakcanary.LeakTraceElement.Holder.THREAD;
+                                                      ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:34: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.LeakTraceElement.Holder.THREAD;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:35: error: package com.squareup.leakcanary.LeakTraceElement does not exist
+import static com.squareup.leakcanary.LeakTraceElement.Type.STATIC_FIELD;
+                                                      ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:35: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.LeakTraceElement.Type.STATIC_FIELD;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:44: error: cannot find symbol
+  private List<LeakTraceElement> elements = Collections.emptyList();
+               ^
+  symbol:   class LeakTraceElement
+  location: class DisplayLeakAdapter
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:90: error: cannot find symbol
+  private String elementToHtmlString(LeakTraceElement element, boolean root, boolean opened) {
+                                     ^
+  symbol:   class LeakTraceElement
+  location: class DisplayLeakAdapter
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:156: error: cannot find symbol
+  public void update(LeakTrace leakTrace, String referenceKey, String referenceName) {
+                     ^
+  symbol:   class LeakTrace
+  location: class DisplayLeakAdapter
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakAdapter.java:177: error: cannot find symbol
+  @Override public LeakTraceElement getItem(int position) {
+                   ^
+  symbol:   class LeakTraceElement
+  location: class DisplayLeakAdapter
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:43: error: cannot find symbol
+import com.squareup.leakcanary.AnalysisResult;
+                              ^
+  symbol:   class AnalysisResult
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:46: error: cannot find symbol
+import com.squareup.leakcanary.HeapDump;
+                              ^
+  symbol:   class HeapDump
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:48: error: cannot find symbol
+import com.squareup.leakcanary.R;
+                              ^
+  symbol:   class R
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:61: error: package android.support.v4.content does not exist
+import static android.support.v4.content.FileProvider.getUriForFile;
+                                        ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:61: error: static import only from classes and interfaces
+import static android.support.v4.content.FileProvider.getUriForFile;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:67: error: cannot find symbol
+import static com.squareup.leakcanary.BuildConfig.GIT_SHA;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:67: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.BuildConfig.GIT_SHA;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:68: error: cannot find symbol
+import static com.squareup.leakcanary.BuildConfig.LIBRARY_VERSION;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:68: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.BuildConfig.LIBRARY_VERSION;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:29: error: cannot find symbol
+import static com.squareup.leakcanary.BuildConfig.GIT_SHA;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:29: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.BuildConfig.GIT_SHA;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:30: error: cannot find symbol
+import static com.squareup.leakcanary.BuildConfig.LIBRARY_VERSION;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:30: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.BuildConfig.LIBRARY_VERSION;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:40: error: cannot find symbol
+  public static RefWatcher install(Application application) {
+                ^
+  symbol:   class RefWatcher
+  location: class LeakCanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:49: error: cannot find symbol
+  public static RefWatcher installedRefWatcher() {
+                ^
+  symbol:   class RefWatcher
+  location: class LeakCanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:8: error: cannot find symbol
+import static com.squareup.leakcanary.RefWatcher.DISABLED;
+                                     ^
+  symbol:   class RefWatcher
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:8: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.RefWatcher.DISABLED;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:12: error: cannot find symbol
+public final class AndroidRefWatcherBuilder extends RefWatcherBuilder<AndroidRefWatcherBuilder> {
+                                                    ^
+  symbol: class RefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:76: error: cannot find symbol
+  public static String leakInfo(Context context, HeapDump heapDump, AnalysisResult result,
+                                                 ^
+  symbol:   class HeapDump
+  location: class LeakCanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/LeakCanary.java:76: error: cannot find symbol
+  public static String leakInfo(Context context, HeapDump heapDump, AnalysisResult result,
+                                                                    ^
+  symbol:   class AnalysisResult
+  location: class LeakCanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:431: error: cannot find symbol
+    final HeapDump heapDump;
+          ^
+  symbol:   class HeapDump
+  location: class Leak
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:432: error: cannot find symbol
+    final AnalysisResult result;
+          ^
+  symbol:   class AnalysisResult
+  location: class Leak
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:435: error: cannot find symbol
+    Leak(HeapDump heapDump, AnalysisResult result, File resultFile) {
+         ^
+  symbol:   class HeapDump
+  location: class Leak
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/internal/DisplayLeakActivity.java:435: error: cannot find symbol
+    Leak(HeapDump heapDump, AnalysisResult result, File resultFile) {
+                            ^
+  symbol:   class AnalysisResult
+  location: class Leak
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:72: error: cannot find symbol
+  public RefWatcher buildAndInstall() {
+         ^
+  symbol:   class RefWatcher
+  location: class AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:91: error: cannot find symbol
+  @Override protected HeapDumper defaultHeapDumper() {
+                      ^
+  symbol:   class HeapDumper
+  location: class AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:96: error: cannot find symbol
+  @Override protected DebuggerControl defaultDebuggerControl() {
+                      ^
+  symbol:   class DebuggerControl
+  location: class AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:100: error: package HeapDump does not exist
+  @Override protected HeapDump.Listener defaultHeapDumpListener() {
+                              ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:104: error: cannot find symbol
+  @Override protected ExcludedRefs defaultExcludedRefs() {
+                      ^
+  symbol:   class ExcludedRefs
+  location: class AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:108: error: cannot find symbol
+  @Override protected WatchExecutor defaultWatchExecutor() {
+                      ^
+  symbol:   class WatchExecutor
+  location: class AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ServiceHeapDumpListener.java:21: error: cannot find symbol
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+                                     ^
+  symbol:   class Preconditions
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ServiceHeapDumpListener.java:21: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ServiceHeapDumpListener.java:24: error: package HeapDump does not exist
+public final class ServiceHeapDumpListener implements HeapDump.Listener {
+                                                              ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ServiceHeapDumpListener.java:37: error: cannot find symbol
+  @Override public void analyze(HeapDump heapDump) {
+                                ^
+  symbol:   class HeapDump
+  location: class ServiceHeapDumpListener
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:43: error: cannot find symbol
+  @Override protected final void onHeapAnalyzed(HeapDump heapDump, AnalysisResult result) {
+                                                ^
+  symbol:   class HeapDump
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:43: error: cannot find symbol
+  @Override protected final void onHeapAnalyzed(HeapDump heapDump, AnalysisResult result) {
+                                                                   ^
+  symbol:   class AnalysisResult
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:88: error: cannot find symbol
+  private boolean saveResult(HeapDump heapDump, AnalysisResult result) {
+                             ^
+  symbol:   class HeapDump
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:88: error: cannot find symbol
+  private boolean saveResult(HeapDump heapDump, AnalysisResult result) {
+                                                ^
+  symbol:   class AnalysisResult
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:111: error: cannot find symbol
+  private HeapDump renameHeapdump(HeapDump heapDump) {
+                                  ^
+  symbol:   class HeapDump
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:111: error: cannot find symbol
+  private HeapDump renameHeapdump(HeapDump heapDump) {
+          ^
+  symbol:   class HeapDump
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:131: error: cannot find symbol
+  protected void afterDefaultHandling(HeapDump heapDump, AnalysisResult result, String leakInfo) {
+                                      ^
+  symbol:   class HeapDump
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DisplayLeakService.java:131: error: cannot find symbol
+  protected void afterDefaultHandling(HeapDump heapDump, AnalysisResult result, String leakInfo) {
+                                                         ^
+  symbol:   class AnalysisResult
+  location: class DisplayLeakService
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DefaultLeakDirectoryProvider.java:37: error: cannot find symbol
+import static com.squareup.leakcanary.HeapDumper.RETRY_LATER;
+                                     ^
+  symbol:   class HeapDumper
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/DefaultLeakDirectoryProvider.java:37: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.HeapDumper.RETRY_LATER;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:24: error: package com.squareup.leakcanary.Retryable does not exist
+import static com.squareup.leakcanary.Retryable.Result.RETRY;
+                                               ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:24: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.Retryable.Result.RETRY;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:31: error: cannot find symbol
+public final class AndroidWatchExecutor implements WatchExecutor {
+                                                   ^
+  symbol: class WatchExecutor
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:48: error: cannot find symbol
+  @Override public void execute(Retryable retryable) {
+                                ^
+  symbol:   class Retryable
+  location: class AndroidWatchExecutor
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:56: error: cannot find symbol
+  void postWaitForIdle(final Retryable retryable, final int failedAttempts) {
+                             ^
+  symbol:   class Retryable
+  location: class AndroidWatchExecutor
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:64: error: cannot find symbol
+  void waitForIdle(final Retryable retryable, final int failedAttempts) {
+                         ^
+  symbol:   class Retryable
+  location: class AndroidWatchExecutor
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:74: error: cannot find symbol
+  void postToBackgroundWithDelay(final Retryable retryable, final int failedAttempts) {
+                                       ^
+  symbol:   class Retryable
+  location: class AndroidWatchExecutor
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidHeapDumper.java:31: error: cannot find symbol
+public final class AndroidHeapDumper implements HeapDumper {
+                                                ^
+  symbol: class HeapDumper
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidExcludedRefs.java:543: error: package ExcludedRefs does not exist
+  public static ExcludedRefs.Builder createAndroidDefaults() {
+                            ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidExcludedRefs.java:555: error: package ExcludedRefs does not exist
+  public static ExcludedRefs.Builder createAppDefaults() {
+                            ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidExcludedRefs.java:559: error: package ExcludedRefs does not exist
+  public static ExcludedRefs.Builder createBuilder(EnumSet<AndroidExcludedRefs> refs) {
+                            ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidExcludedRefs.java:580: error: package ExcludedRefs does not exist
+  abstract void add(ExcludedRefs.Builder excluded);
+                                ^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidDebuggerControl.java:20: error: cannot find symbol
+public final class AndroidDebuggerControl implements DebuggerControl {
+                                                     ^
+  symbol: class DebuggerControl
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:22: error: cannot find symbol
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+                                     ^
+  symbol:   class Preconditions
+  location: package com.squareup.leakcanary
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:22: error: static import only from classes and interfaces
+import static com.squareup.leakcanary.Preconditions.checkNotNull;
+^
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:28: error: cannot find symbol
+  public static void installOnIcsPlus(Application application, RefWatcher refWatcher) {
+                                                               ^
+  symbol:   class RefWatcher
+  location: class ActivityRefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:32: error: cannot find symbol
+  public static void install(Application application, RefWatcher refWatcher) {
+                                                      ^
+  symbol:   class RefWatcher
+  location: class ActivityRefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:62: error: cannot find symbol
+  private final RefWatcher refWatcher;
+                ^
+  symbol:   class RefWatcher
+  location: class ActivityRefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/ActivityRefWatcher.java:68: error: cannot find symbol
+  public ActivityRefWatcher(Application application, RefWatcher refWatcher) {
+                                                     ^
+  symbol:   class RefWatcher
+  location: class ActivityRefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:67: warning - Tag @link: reference not found: AnalysisResult#leakFound
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AbstractAnalysisResultService.java:67: warning - Tag @link: reference not found: AnalysisResult#excludedLeak
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:12: warning - Tag @link: reference not found: RefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:72: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:27: warning - Tag @link: can't find heapDumpListener(HeapDump.Listener) in com.squareup.leakcanary.AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:57: warning - Tag @link: can't find heapDumper(HeapDumper) in com.squareup.leakcanary.AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:37: warning - Tag @link: can't find watchExecutor(WatchExecutor) in com.squareup.leakcanary.AndroidRefWatcherBuilder
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:37: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:37: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidRefWatcherBuilder.java:72: warning - Tag @link: reference not found: RefWatcher
+/tmp/rdisk/1775/src/leakcanary-master/leakcanary-android/src/main/java/com/squareup/leakcanary/AndroidWatchExecutor.java:31: warning - Tag @link: reference not found: WatchExecutor
+
+100 warnings
+:leakcanary-android:androidJavadocsJar
+:leakcanary-android:androidSourcesJar
+:leakcanary-analyzer:preBuild UP-TO-DATE
+:leakcanary-analyzer:preDebugBuild UP-TO-DATE
+:leakcanary-analyzer:compileDebugAidl UP-TO-DATE
+:leakcanary-android:preBuild UP-TO-DATE
+:leakcanary-android:preDebugBuild UP-TO-DATE
+:leakcanary-android:compileDebugAidl
+:leakcanary-analyzer:compileDebugRenderscript UP-TO-DATE
+:leakcanary-analyzer:checkDebugManifest UP-TO-DATE
+:leakcanary-analyzer:generateDebugBuildConfig SKIPPED
+:leakcanary-analyzer:generateDebugResValues UP-TO-DATE
+:leakcanary-analyzer:generateDebugResources UP-TO-DATE
+:leakcanary-analyzer:packageDebugResources UP-TO-DATE
+:leakcanary-analyzer:platformAttrExtractor UP-TO-DATE
+:leakcanary-analyzer:processDebugManifest UP-TO-DATE
+:leakcanary-analyzer:generateDebugRFile UP-TO-DATE
+:leakcanary-analyzer:prepareLintJar UP-TO-DATE
+:leakcanary-analyzer:generateDebugSources UP-TO-DATE
+:leakcanary-watcher:compileJava UP-TO-DATE
+:leakcanary-watcher:processResources NO-SOURCE
+:leakcanary-watcher:classes UP-TO-DATE
+:leakcanary-watcher:jar UP-TO-DATE
+:leakcanary-analyzer:javaPreCompileDebug UP-TO-DATE
+:leakcanary-analyzer:compileDebugJavaWithJavac UP-TO-DATE
+:leakcanary-analyzer:processDebugJavaRes NO-SOURCE
+:leakcanary-analyzer:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:leakcanary-analyzer:packageDebugRenderscript NO-SOURCE
+:leakcanary-android:compileDebugRenderscript
+:leakcanary-android:checkDebugManifest
+:leakcanary-android:generateDebugBuildConfig
+:leakcanary-android:generateDebugResValues
+:leakcanary-android:generateDebugResources
+:leakcanary-android:packageDebugResources
+:leakcanary-android:platformAttrExtractor
+:leakcanary-android:processDebugManifest
+:leakcanary-android:prepareLintJar
+:leakcanary-android:javaPreCompileDebug
+:leakcanary-android:mergeDebugConsumerProguardFiles
+:leakcanary-android:mergeDebugShaders
+:leakcanary-android:compileDebugShaders
+:leakcanary-android:generateDebugAssets
+:leakcanary-android:packageDebugAssets
+:leakcanary-android:packageDebugRenderscript NO-SOURCE
+:leakcanary-android:processDebugJavaRes NO-SOURCE
+:leakcanary-android:compileDebugNdk NO-SOURCE
+:leakcanary-android:mergeDebugJniLibFolders
+:leakcanary-android:transformNativeLibsWithMergeJniLibsForDebug
+:leakcanary-android:transformNativeLibsWithStripDebugSymbolForDebug
+:leakcanary-android:transformNativeLibsWithSyncJniLibsForDebug
+:leakcanary-analyzer:preReleaseBuild UP-TO-DATE
+:leakcanary-analyzer:compileReleaseAidl UP-TO-DATE
+:leakcanary-android:preReleaseBuild UP-TO-DATE
+:leakcanary-android:compileReleaseAidl
+:leakcanary-android:generateDebugRFile
+:leakcanary-android:generateDebugSources
+:leakcanary-android:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:leakcanary-android:extractDebugAnnotations
+:leakcanary-android:transformResourcesWithMergeJavaResForDebug
+:leakcanary-android:transformClassesAndResourcesWithSyncLibJarsForDebug
+:leakcanary-android:bundleDebug
+:leakcanary-android:compileDebugSources
+:leakcanary-android:assembleDebug
+:leakcanary-analyzer:compileReleaseRenderscript UP-TO-DATE
+:leakcanary-analyzer:checkReleaseManifest UP-TO-DATE
+:leakcanary-analyzer:generateReleaseBuildConfig SKIPPED
+:leakcanary-analyzer:generateReleaseResValues UP-TO-DATE
+:leakcanary-analyzer:generateReleaseResources UP-TO-DATE
+:leakcanary-analyzer:packageReleaseResources UP-TO-DATE
+:leakcanary-analyzer:processReleaseManifest UP-TO-DATE
+:leakcanary-analyzer:generateReleaseRFile UP-TO-DATE
+:leakcanary-analyzer:generateReleaseSources UP-TO-DATE
+:leakcanary-analyzer:javaPreCompileRelease UP-TO-DATE
+:leakcanary-analyzer:compileReleaseJavaWithJavac UP-TO-DATE
+:leakcanary-analyzer:processReleaseJavaRes NO-SOURCE
+:leakcanary-analyzer:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:leakcanary-analyzer:packageReleaseRenderscript NO-SOURCE
+:leakcanary-android:compileReleaseRenderscript
+:leakcanary-android:checkReleaseManifest
+:leakcanary-android:generateReleaseBuildConfig
+:leakcanary-android:generateReleaseResValues
+:leakcanary-android:generateReleaseResources
+:leakcanary-android:packageReleaseResources
+:leakcanary-android:processReleaseManifest
+:leakcanary-android:generateReleaseRFile
+:leakcanary-android:generateReleaseSources
+:leakcanary-android:javaPreCompileRelease
+:leakcanary-android:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:leakcanary-android:extractReleaseAnnotations
+:leakcanary-android:mergeReleaseConsumerProguardFiles
+:leakcanary-android:mergeReleaseShaders
+:leakcanary-android:compileReleaseShaders
+:leakcanary-android:generateReleaseAssets
+:leakcanary-android:packageReleaseAssets
+:leakcanary-android:packageReleaseRenderscript NO-SOURCE
+:leakcanary-android:processReleaseJavaRes NO-SOURCE
+:leakcanary-android:transformResourcesWithMergeJavaResForRelease
+:leakcanary-android:transformClassesAndResourcesWithSyncLibJarsForRelease
+:leakcanary-android:compileReleaseNdk NO-SOURCE
+:leakcanary-android:mergeReleaseJniLibFolders
+:leakcanary-android:transformNativeLibsWithMergeJniLibsForRelease
+:leakcanary-android:transformNativeLibsWithStripDebugSymbolForRelease
+:leakcanary-android:transformNativeLibsWithSyncJniLibsForRelease
+:leakcanary-android:bundleRelease
+:leakcanary-android:compileReleaseSources
+:leakcanary-android:mergeReleaseResources
+:leakcanary-android:verifyReleaseResources
+:leakcanary-android:assembleRelease
+:leakcanary-android:signArchives SKIPPED
+:leakcanary-android:assemble
+:leakcanary-android:build
+
+BUILD SUCCESSFUL in 21s
+75 actionable tasks: 53 executed, 22 up-to-date
+
+2018-05-11 11:57:14,161 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:57:14,161 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:57:21,539 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 11:57:21,539 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:57:21,540 INFO  SysUtils - Execute command: [/tmp/rdisk/1775/src/leakcanary-master/gradlew, -b, /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:57:47,464 INFO  SysUtils - Configuration on demand is an incubating feature.
+:leakcanary-analyzer:preBuild UP-TO-DATE
+:leakcanary-analyzer:preDebugBuild UP-TO-DATE
+:leakcanary-analyzer:compileDebugAidl UP-TO-DATE
+:leakcanary-analyzer:compileDebugRenderscript UP-TO-DATE
+:leakcanary-analyzer:checkDebugManifest UP-TO-DATE
+:leakcanary-analyzer:generateDebugBuildConfig SKIPPED
+:leakcanary-analyzer:generateDebugResValues UP-TO-DATE
+:leakcanary-analyzer:generateDebugResources UP-TO-DATE
+:leakcanary-analyzer:packageDebugResources UP-TO-DATE
+:leakcanary-analyzer:platformAttrExtractor UP-TO-DATE
+:leakcanary-analyzer:processDebugManifest UP-TO-DATE
+:leakcanary-analyzer:generateDebugRFile UP-TO-DATE
+:leakcanary-analyzer:prepareLintJar UP-TO-DATE
+:leakcanary-analyzer:generateDebugSources UP-TO-DATE
+:leakcanary-watcher:compileJava UP-TO-DATE
+:leakcanary-watcher:processResources NO-SOURCE
+:leakcanary-watcher:classes UP-TO-DATE
+:leakcanary-watcher:jar UP-TO-DATE
+:leakcanary-analyzer:javaPreCompileDebug UP-TO-DATE
+:leakcanary-analyzer:compileDebugJavaWithJavac UP-TO-DATE
+:leakcanary-analyzer:processDebugJavaRes NO-SOURCE
+:leakcanary-analyzer:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:leakcanary-android:preBuild UP-TO-DATE
+:leakcanary-android:preDebugBuild UP-TO-DATE
+:leakcanary-android:compileDebugAidl UP-TO-DATE
+:leakcanary-analyzer:packageDebugRenderscript NO-SOURCE
+:leakcanary-android:compileDebugRenderscript UP-TO-DATE
+:leakcanary-android:checkDebugManifest UP-TO-DATE
+:leakcanary-android:generateDebugBuildConfig UP-TO-DATE
+:leakcanary-android:generateDebugResValues UP-TO-DATE
+:leakcanary-android:generateDebugResources UP-TO-DATE
+:leakcanary-android:packageDebugResources UP-TO-DATE
+:leakcanary-android:platformAttrExtractor UP-TO-DATE
+:leakcanary-android:processDebugManifest UP-TO-DATE
+:leakcanary-android:generateDebugRFile UP-TO-DATE
+:leakcanary-android:prepareLintJar UP-TO-DATE
+:leakcanary-android:generateDebugSources UP-TO-DATE
+:leakcanary-android:javaPreCompileDebug UP-TO-DATE
+:leakcanary-android:compileDebugJavaWithJavac UP-TO-DATE
+:leakcanary-android:processDebugJavaRes NO-SOURCE
+:leakcanary-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:leakcanary-sample:preBuild UP-TO-DATE
+:leakcanary-sample:preDebugBuild
+:leakcanary-sample:compileDebugAidl
+:leakcanary-android:packageDebugRenderscript NO-SOURCE
+:leakcanary-sample:compileDebugRenderscript
+:leakcanary-sample:checkDebugManifest
+:leakcanary-sample:generateDebugBuildConfig
+:leakcanary-sample:prepareLintJar
+:leakcanary-sample:mainApkListPersistenceDebug
+:leakcanary-sample:generateDebugResValues
+:leakcanary-sample:generateDebugResources
+:leakcanary-sample:mergeDebugResources
+:leakcanary-sample:createDebugCompatibleScreenManifests
+:leakcanary-sample:processDebugManifest
+:leakcanary-sample:splitsDiscoveryTaskDebug
+:leakcanary-sample:processDebugResources
+:leakcanary-sample:generateDebugSources
+:leakcanary-sample:javaPreCompileDebug
+:leakcanary-sample:compileDebugJavaWithJavac
+:leakcanary-sample:compileDebugNdk NO-SOURCE
+:leakcanary-sample:compileDebugSources
+:leakcanary-analyzer:mergeDebugShaders UP-TO-DATE
+:leakcanary-analyzer:compileDebugShaders UP-TO-DATE
+:leakcanary-analyzer:generateDebugAssets UP-TO-DATE
+:leakcanary-analyzer:packageDebugAssets UP-TO-DATE
+:leakcanary-android:mergeDebugShaders UP-TO-DATE
+:leakcanary-android:compileDebugShaders UP-TO-DATE
+:leakcanary-android:generateDebugAssets UP-TO-DATE
+:leakcanary-android:packageDebugAssets UP-TO-DATE
+:leakcanary-sample:mergeDebugShaders
+:leakcanary-sample:compileDebugShaders
+:leakcanary-sample:generateDebugAssets
+:leakcanary-sample:mergeDebugAssets
+:leakcanary-sample:transformClassesWithDexBuilderForDebug
+:leakcanary-sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:leakcanary-sample:transformDexArchiveWithDexMergerForDebug
+:leakcanary-analyzer:compileDebugNdk NO-SOURCE
+:leakcanary-analyzer:mergeDebugJniLibFolders UP-TO-DATE
+:leakcanary-analyzer:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:leakcanary-analyzer:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:leakcanary-analyzer:transformNativeLibsWithIntermediateJniLibsForDebug
+:leakcanary-android:compileDebugNdk NO-SOURCE
+:leakcanary-android:mergeDebugJniLibFolders UP-TO-DATE
+:leakcanary-android:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:leakcanary-android:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:leakcanary-android:transformNativeLibsWithIntermediateJniLibsForDebug
+:leakcanary-sample:mergeDebugJniLibFolders
+:leakcanary-sample:transformNativeLibsWithMergeJniLibsForDebug
+:leakcanary-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:leakcanary-sample:processDebugJavaRes NO-SOURCE
+:leakcanary-sample:transformResourcesWithMergeJavaResForDebug
+:leakcanary-sample:validateSigningDebug
+:leakcanary-sample:packageDebug
+:leakcanary-sample:assembleDebug
+:leakcanary-android-no-op:preBuild UP-TO-DATE
+:leakcanary-android-no-op:preReleaseBuild UP-TO-DATE
+:leakcanary-android-no-op:compileReleaseAidl UP-TO-DATE
+:leakcanary-android-no-op:compileReleaseRenderscript UP-TO-DATE
+:leakcanary-android-no-op:checkReleaseManifest UP-TO-DATE
+:leakcanary-android-no-op:generateReleaseBuildConfig SKIPPED
+:leakcanary-android-no-op:generateReleaseResValues UP-TO-DATE
+:leakcanary-android-no-op:generateReleaseResources UP-TO-DATE
+:leakcanary-android-no-op:packageReleaseResources UP-TO-DATE
+:leakcanary-android-no-op:platformAttrExtractor UP-TO-DATE
+:leakcanary-android-no-op:processReleaseManifest UP-TO-DATE
+:leakcanary-android-no-op:generateReleaseRFile UP-TO-DATE
+:leakcanary-android-no-op:prepareLintJar UP-TO-DATE
+:leakcanary-android-no-op:generateReleaseSources UP-TO-DATE
+:leakcanary-android-no-op:javaPreCompileRelease UP-TO-DATE
+:leakcanary-android-no-op:compileReleaseJavaWithJavac UP-TO-DATE
+:leakcanary-android-no-op:processReleaseJavaRes NO-SOURCE
+:leakcanary-android-no-op:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:leakcanary-sample:preReleaseBuild
+:leakcanary-sample:compileReleaseAidl
+:leakcanary-android-no-op:packageReleaseRenderscript NO-SOURCE
+:leakcanary-sample:compileReleaseRenderscript
+:leakcanary-sample:checkReleaseManifest
+:leakcanary-sample:generateReleaseBuildConfig
+:leakcanary-sample:mainApkListPersistenceRelease
+:leakcanary-sample:generateReleaseResValues
+:leakcanary-sample:generateReleaseResources
+:leakcanary-sample:mergeReleaseResources
+:leakcanary-sample:createReleaseCompatibleScreenManifests
+:leakcanary-sample:processReleaseManifest
+:leakcanary-sample:splitsDiscoveryTaskRelease
+:leakcanary-sample:processReleaseResources
+:leakcanary-sample:generateReleaseSources
+:leakcanary-sample:javaPreCompileRelease
+:leakcanary-sample:compileReleaseJavaWithJavac
+:leakcanary-sample:compileReleaseNdk NO-SOURCE
+:leakcanary-sample:compileReleaseSources
+:leakcanary-sample:lintVitalRelease
+:leakcanary-android-no-op:mergeReleaseShaders UP-TO-DATE
+:leakcanary-android-no-op:compileReleaseShaders UP-TO-DATE
+:leakcanary-android-no-op:generateReleaseAssets UP-TO-DATE
+:leakcanary-android-no-op:packageReleaseAssets UP-TO-DATE
+:leakcanary-sample:mergeReleaseShaders
+:leakcanary-sample:compileReleaseShaders
+:leakcanary-sample:generateReleaseAssets
+:leakcanary-sample:mergeReleaseAssets
+:leakcanary-sample:transformClassesWithDexBuilderForRelease
+:leakcanary-sample:transformDexArchiveWithExternalLibsDexMergerForRelease
+:leakcanary-sample:transformDexArchiveWithDexMergerForRelease
+:leakcanary-android-no-op:compileReleaseNdk NO-SOURCE
+:leakcanary-android-no-op:mergeReleaseJniLibFolders UP-TO-DATE
+:leakcanary-android-no-op:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:leakcanary-android-no-op:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:leakcanary-android-no-op:transformNativeLibsWithIntermediateJniLibsForRelease
+:leakcanary-sample:mergeReleaseJniLibFolders
+:leakcanary-sample:transformNativeLibsWithMergeJniLibsForRelease
+:leakcanary-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:leakcanary-sample:processReleaseJavaRes NO-SOURCE
+:leakcanary-sample:transformResourcesWithMergeJavaResForRelease
+:leakcanary-sample:packageRelease
+:leakcanary-sample:assembleRelease
+:leakcanary-sample:assemble
+:leakcanary-sample:build
+
+BUILD SUCCESSFUL in 25s
+113 actionable tasks: 58 executed, 55 up-to-date
+
+2018-05-11 11:57:47,530 INFO  FullProcessService - Found APK file: /tmp/rdisk/1775/src/leakcanary-master/leakcanary-sample/build/outputs/apk/release/leakcanary-sample-release-unsigned.apk

@@ -1,0 +1,158 @@
+2018-05-11 13:32:18,284 INFO  DownloadService - Downloading "https://github.com/mcsong/AppStoreLibrary/archive/master.zip", attempt 3
+2018-05-11 13:32:19,986 INFO  DownloadService - Downloaded https://github.com/mcsong/AppStoreLibrary/archive/master.zip, attempt 3
+2018-05-11 13:32:19,987 INFO  DownloadService - Size of file "/tmp/rdisk/1772/master.zip": 95 KB
+2018-05-11 13:32:19,987 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 13:32:19,987 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1772/master.zip: true
+2018-05-11 13:32:19,987 DEBUG ZipUtil - Extracting '/tmp/rdisk/1772/master.zip' into '/tmp/rdisk/1772/src'.
+2018-05-11 13:32:19,997 INFO  FullProcessService - Size of directory with sources: 130 KB
+2018-05-11 13:32:19,997 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1772/src]
+2018-05-11 13:32:20,005 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1772/src/.git/
+
+2018-05-11 13:32:20,012 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1772/src/AppStoreLibrary-master/gradlew
+2018-05-11 13:32:20,016 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build.gradle /tmp/rdisk/1772/src/AppStoreLibrary-master/Library/build.gradle /tmp/rdisk/1772/src/AppStoreLibrary-master/build.gradle
+2018-05-11 13:32:20,018 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1772/src/AppStoreLibrary-master/settings.gradle /tmp/rdisk/1772/src/AppStoreLibrary-master/build.gradle /tmp/rdisk/1772/src/AppStoreLibrary-master/Library/build.gradle /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build.gradle
+2018-05-11 13:32:20,019 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 13:32:20,019 INFO  ProjectFixService - Fixing project...
+2018-05-11 13:32:20,026 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/local.properties
+2018-05-11 13:32:20,026 INFO  ProjectFixService - Build info for "/tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=25]
+2018-05-11 13:32:20,027 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1772/src/AppStoreLibrary-master/Library/local.properties
+2018-05-11 13:32:20,027 INFO  ProjectFixService - Build info for "/tmp/rdisk/1772/src/AppStoreLibrary-master/Library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 13:32:20,027 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1772/src/AppStoreLibrary-master/local.properties
+2018-05-11 13:32:20,028 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-11 13:32:20,028 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-11 13:32:20,029 INFO  ProjectFixService - Build info for "/tmp/rdisk/1772/src/AppStoreLibrary-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 13:32:20,029 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 13:32:20,030 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 13:32:20,030 INFO  SysUtils - Execute command: [/tmp/rdisk/1772/src/AppStoreLibrary-master/gradlew, -b, /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 13:32:27,486 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 13:32:27,486 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 13:32:27,486 INFO  SysUtils - Execute command: [/tmp/rdisk/1772/src/AppStoreLibrary-master/gradlew, -b, /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 13:32:53,142 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Demo:preBuild UP-TO-DATE
+:Library:preBuild UP-TO-DATE
+:Library:preDebugBuild UP-TO-DATE
+:Library:checkDebugManifest
+:Library:processDebugManifest
+:Demo:preDebugBuild
+:Library:compileDebugAidl
+:Demo:compileDebugAidl
+:Library:packageDebugRenderscript NO-SOURCE
+:Demo:compileDebugRenderscript
+:Demo:checkDebugManifest
+:Demo:generateDebugBuildConfig
+:Demo:prepareLintJar
+:Demo:mainApkListPersistenceDebug
+:Demo:generateDebugResValues
+:Demo:generateDebugResources
+:Library:compileDebugRenderscript
+:Library:generateDebugResValues
+:Library:generateDebugResources
+:Library:packageDebugResources
+:Demo:mergeDebugResources
+:Demo:createDebugCompatibleScreenManifests
+:Demo:processDebugManifest
+:Demo:splitsDiscoveryTaskDebug
+:Library:platformAttrExtractor
+:Library:generateDebugBuildConfig
+:Library:prepareLintJar
+:Library:javaPreCompileDebug
+:Library:processDebugJavaRes NO-SOURCE
+:Demo:compileDebugNdk NO-SOURCE
+:Demo:mergeDebugShaders
+:Demo:compileDebugShaders
+:Demo:generateDebugAssets
+:Library:mergeDebugShaders
+:Library:compileDebugShaders
+:Library:generateDebugAssets
+:Library:packageDebugAssets
+:Demo:mergeDebugAssets
+:Demo:mergeDebugJniLibFolders
+:Library:compileDebugNdk NO-SOURCE
+:Library:mergeDebugJniLibFolders
+:Library:transformNativeLibsWithMergeJniLibsForDebug
+:Library:transformNativeLibsWithStripDebugSymbolForDebug
+:Library:transformNativeLibsWithIntermediateJniLibsForDebug
+:Demo:processDebugJavaRes NO-SOURCE
+:Demo:validateSigningDebug
+:Library:preReleaseBuild UP-TO-DATE
+:Library:checkReleaseManifest
+:Library:processReleaseManifest
+:Demo:preReleaseBuild
+:Library:compileReleaseAidl
+:Demo:compileReleaseAidl
+:Library:packageReleaseRenderscript NO-SOURCE
+:Demo:compileReleaseRenderscript
+:Demo:checkReleaseManifest
+:Demo:generateReleaseBuildConfig
+:Demo:mainApkListPersistenceRelease
+:Demo:generateReleaseResValues
+:Demo:generateReleaseResources
+:Library:compileReleaseRenderscript
+:Library:generateReleaseResValues
+:Library:generateReleaseResources
+:Library:packageReleaseResources
+:Demo:mergeReleaseResources
+:Demo:createReleaseCompatibleScreenManifests
+:Demo:processReleaseManifest
+:Demo:splitsDiscoveryTaskRelease
+:Library:generateReleaseBuildConfig
+:Library:javaPreCompileRelease
+:Library:processReleaseJavaRes NO-SOURCE
+:Demo:compileReleaseNdk NO-SOURCE
+:Demo:mergeReleaseShaders
+:Demo:compileReleaseShaders
+:Demo:generateReleaseAssets
+:Library:mergeReleaseShaders
+:Library:compileReleaseShaders
+:Library:generateReleaseAssets
+:Library:packageReleaseAssets
+:Demo:mergeReleaseAssets
+:Demo:mergeReleaseJniLibFolders
+:Library:compileReleaseNdk NO-SOURCE
+:Library:mergeReleaseJniLibFolders
+:Library:transformNativeLibsWithMergeJniLibsForRelease
+:Library:transformNativeLibsWithStripDebugSymbolForRelease
+:Library:transformNativeLibsWithIntermediateJniLibsForRelease
+:Demo:processReleaseJavaRes NO-SOURCE
+:Library:generateDebugRFile
+:Demo:processDebugResources
+:Demo:generateDebugSources
+:Library:generateDebugSources
+:Library:compileDebugJavaWithJavac
+:Library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:Demo:javaPreCompileDebug
+:Demo:compileDebugJavaWithJavac
+:Demo:compileDebugSources
+:Demo:transformClassesWithDexBuilderForDebug
+:Demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:Demo:transformDexArchiveWithDexMergerForDebug
+:Demo:transformNativeLibsWithMergeJniLibsForDebug
+:Demo:transformNativeLibsWithStripDebugSymbolForDebug
+:Demo:transformResourcesWithMergeJavaResForDebug
+:Demo:packageDebug
+:Demo:assembleDebug
+:Library:generateReleaseRFile
+:Demo:processReleaseResources
+:Demo:generateReleaseSources
+:Library:generateReleaseSources
+:Library:compileReleaseJavaWithJavac
+:Library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:Demo:javaPreCompileRelease
+:Demo:compileReleaseJavaWithJavac
+:Demo:compileReleaseSources
+:Demo:lintVitalRelease
+:Demo:transformClassesWithDexBuilderForRelease
+:Demo:transformDexArchiveWithExternalLibsDexMergerForRelease
+:Demo:transformDexArchiveWithDexMergerForRelease
+:Demo:transformNativeLibsWithMergeJniLibsForRelease
+:Demo:transformNativeLibsWithStripDebugSymbolForRelease
+:Demo:transformResourcesWithMergeJavaResForRelease
+:Demo:packageRelease
+:Demo:assembleRelease
+:Demo:assemble
+:Demo:build
+
+BUILD SUCCESSFUL in 25s
+91 actionable tasks: 91 executed
+
+2018-05-11 13:32:53,194 INFO  FullProcessService - Found APK file: /tmp/rdisk/1772/src/AppStoreLibrary-master/Demo/build/outputs/apk/release/Demo-release-unsigned.apk

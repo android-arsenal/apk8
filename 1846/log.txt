@@ -1,0 +1,99 @@
+2018-04-04 08:32:37,145 INFO  DownloadService - Downloading "https://github.com/yongjhih/squery/archive/master.zip", attempt 3
+2018-04-04 08:33:37,598 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-04 08:33:38,455 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-04 08:33:38,455 INFO  DownloadService - Downloading "https://github.com/yongjhih/squery/archive/master.zip", attempt 3
+2018-04-04 08:34:39,726 DEBUG FullProcessService - Repository https://github.com/yongjhih/squery available: true
+2018-04-04 08:34:39,726 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-04 08:34:39,726 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/squery, /tmp/rdisk/1846/src]
+2018-04-04 08:34:41,217 INFO  SysUtils - 
+2018-04-04 08:34:41,226 INFO  GitService - Deleted "/tmp/rdisk/1846/src/.git": true
+2018-04-04 08:34:41,227 INFO  FullProcessService - Size of directory with sources: 161 KB
+2018-04-04 08:34:41,227 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1846/src]
+2018-04-04 08:34:41,232 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1846/src/.git/
+
+2018-04-04 08:34:41,234 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1846/src/gradlew
+2018-04-04 08:34:41,235 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1846/src/build.gradle /tmp/rdisk/1846/src/squery-app/build.gradle /tmp/rdisk/1846/src/squery/build.gradle
+2018-04-04 08:34:41,237 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1846/src/squery/javadoc.gradle /tmp/rdisk/1846/src/squery/build.gradle /tmp/rdisk/1846/src/squery-app/build.gradle /tmp/rdisk/1846/src/settings.gradle /tmp/rdisk/1846/src/build.gradle
+2018-04-04 08:34:41,237 INFO  ProjectBuildService - Remote scripts: none
+2018-04-04 08:34:41,237 INFO  ProjectFixService - Fixing project...
+2018-04-04 08:34:41,240 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1846/src/local.properties
+2018-04-04 08:34:41,241 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-04 08:34:41,241 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-04 08:34:41,243 INFO  ProjectFixService - Build info for "/tmp/rdisk/1846/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:34:41,243 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1846/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:34:41,243 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1846/src/squery-app/local.properties
+2018-04-04 08:34:41,245 INFO  ProjectFixService - Build info for "/tmp/rdisk/1846/src/squery-app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:34:41,245 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1846/src/squery-app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:34:41,246 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1846/src/squery/local.properties
+2018-04-04 08:34:41,247 INFO  ProjectFixService - Build info for "/tmp/rdisk/1846/src/squery/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-04 08:34:41,248 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1846/src/squery/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-04 08:34:41,248 INFO  ProjectFixService - Project was maybe fixed
+2018-04-04 08:34:41,248 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:34:41,248 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:34:47,936 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-04 08:34:47,936 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 08:34:47,936 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 08:34:53,017 INFO  SysUtils - Configuration on demand is an incubating feature.
+:squery:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:squery:processResources UP-TO-DATE
+:squery:classes
+:squery:jar
+:squery:javadocJar
+:squery:sourcesJar
+:squery:assemble
+:squery:build
+:squery-app:compileJava
+:squery-app:processResources UP-TO-DATE
+:squery-app:classes
+:squery-app:jar
+:squery-app:assemble
+:squery-app:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.673 secs
+
+2018-04-04 08:34:53,020 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:34:53,020 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/squery-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:34:57,457 INFO  ProjectTaskService - Detected possible tasks: 38
+2018-04-04 08:34:57,457 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-04 08:34:57,457 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/squery-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-04 08:35:01,599 INFO  SysUtils - Configuration on demand is an incubating feature.
+:squery:compileJava UP-TO-DATE
+:squery:processResources UP-TO-DATE
+:squery:classes UP-TO-DATE
+:squery:jar UP-TO-DATE
+:squery-app:compileJava UP-TO-DATE
+:squery-app:processResources UP-TO-DATE
+:squery-app:classes UP-TO-DATE
+:squery-app:jar UP-TO-DATE
+:squery-app:assemble UP-TO-DATE
+:squery-app:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.639 secs
+
+2018-04-04 08:35:01,601 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-04 08:35:01,602 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/squery/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-04 08:35:05,930 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-04 08:35:05,930 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-04 08:35:05,930 INFO  SysUtils - Execute command: [/tmp/rdisk/1846/src/gradlew, -b, /tmp/rdisk/1846/src/squery/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-04 08:35:09,981 INFO  SysUtils - Configuration on demand is an incubating feature.
+:squery:compileJava UP-TO-DATE
+:squery:processResources UP-TO-DATE
+:squery:classes UP-TO-DATE
+:squery:jar UP-TO-DATE
+:squery:javadocJar UP-TO-DATE
+:squery:sourcesJar UP-TO-DATE
+:squery:assemble UP-TO-DATE
+:squery:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.623 secs
+
+2018-04-04 08:35:09,984 ERROR FullProcessService - Project build has not produced APK file
+2018-04-04 08:35:09,986 ERROR FullProcessService - Could not find generated or existed APK file

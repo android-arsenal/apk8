@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.codepond.wizardroid.sample",
+    "label" : "WizarDroid Samples",
+    "icon" : "res/drawable-ldpi-v4/icon.png",
+    "versionName" : "1.3.1",
+    "versionCode" : 7,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGg0lEQVRYw8WWe4hV1xXGf/txzrnvufNyHEenY3SMj0ltolEnDbaptE0jISkJpaSENkRKH/9IKX3ljxQhQhsaah9EEyz0lZgYJIUibaW1oQGT+G6UaMbHZGYyo/Oee+/ce89r7/4xo2khZK4KdsGGwz5nn/Xxfd9ea2GtxVpLti7LopXLaGltRktIJhxSSRetJHNH04Pw6E7I3fVhb6/k+LClufHQcNcTcMdaKN4Or66/lsPyxvPf/Qp8eS0cOg8tXbBmNyBuEoDUHXDvA1AE+g/ArjRcPg4ifQ303Uhs3AF1QAFo657ZG/jVTZLAWQpr74YxIAbSzdfzlxsAsHortABVIAIyzUD+JgLY+FVwgOzsanbAabmOKzQTxhj8UgkT+Ni56d8EYxn4B4Isne0Bk+UmhkfrcjB6fQASCTc5/+O3PxaMDdvpI0f+EMemqLX64EsBwsVb3d2++tJg9ocTE3/BL5VJxEUeWg8XzkLTY/PW5m9tO/zUlvevHUCuPreueWH7r6e1mhhOegerlfCMlpKKMTNaqfovoLe84KacfP08l0v9jbStGiZdX+WvZZePrbhI16aRzfteOLdHeUzpRGu7PzX0Hnw0oVcBVAqloerJfx1VcdQeO8lpIgitxc4eN1HzJ4lW5d/aP8Dj33uTRx8v07qohE4pBoorUck2nt7++c0XziwZX3q/ZOLMS+f8qV8smyM/ws5mcD2XlUsWfLdtfuPTh09fbPCrwYRAUigV8dJgQbd2dH3tkW8s27npS/9WJvQojmcwVpJ0q2hvgN4zLfz8B93Fd06MHIVXtwInr/SCORkQwLu9l3Y35FJPesIuL1SCQ34o2PbbJdz5qQyTE0GUri9mPX1WLoqfse+OviymSidwdYapQpnujl22ed1Bsf2lfcNv7Bu75/TxJDEOCdVcGwNN+Qylis8nOtueLQfh4dM9I79ZvS7Pjv0rKA4rosDcUoni82Ec0JheTskfxI+mkEITm4DGzEqmK6MEYoyOxc6TrjbbAh2j3m9nQ+feuRmoBhFYeO/y5CsJVzcZYj77cBPaM4wXAqzRG5WOy1Lo8HLxGFomkcIBLFolGC4eR4sEUiTp7fU/LXS0zUqLNzANnTWYUCuFlJI4tj3lqXheyzyP9ffkuNRnvuO40ainK2fLQWK3iJRNRY0oJ8CaGfEEIEWOSq5AoqywKjqVTFQ6S4W6r8euvws4NyeAePa6lat+n19Rn9vQnaN+obd+sD/6mRQOYej8EcFXrLREbkAswM46XMw+OdMZjAUZeHuC0LlPxOrBOF+6Dbi3pkqIgDCMMQg/35jQQSy/LYUFS480oh9lrzr2v31trxpqZgwwiHRslBTSQKx0Tb1AopBWIVEY7NtNLd63tGO/aABp+KVj5J9MzWOGjYSw1Sv2qglApRpRqUYEUQz4JxIJtUU7ImOwOEbu0kZkTQ1d4rqb0VN7Vs3QKCCOrDM9pFov9wZEVp5wQx242FusmKuw3gCANd2pqwXJy6jNr+/zm8aHLAtW+D9Rl0MqoefIaxj1LGSFFaDiupokGBkC6SRwkkkyDckjuSbZNzZYfTubcfZUGgMK2aqVUW0ABExqwykrLCLUp2tiIBCCvc8NUi7F5BrUwLk3KvcdeW183u93KJ54dg1OWmRiVUJY8ZEqSGGpBO4qsHcm0qX9sm/B32sCIC3s/HHP7HwHIM+11uU/c/bU+EFZvMiKrvpjJ9/xQIEQ9qpcsbQIK5jdohI6LMhP9DTmJrlYqD8QWln7SNY830MKies4gPW7Vs3fmPFaNvzupxdYnT96IJvzN1RiufWKELGw2xO+fkjHojRjULG3HDr339bW98jahf0oaQhjVRsAYy2eVmihSXoOrlaUCuWe1ry/8m//hOd2eyxdEr+ZTZSf/0AC+7JfTO0zsaoKYbHY110V/Xm0lKVQTWCtQEpTGwApBLG1hMbgRzGxsfQXg77U4o6HQfDM8w30T6YJrF5urQABQeh2KiGwgpzEEhvZ4UjDW71LePHIeirVBJ4T1nYNrbUIKZFuEp1WCCcgcJKH8ouXPpA71S9yrrayVKIhbYcKhRSxkTSnSgOp7CQTfrI0HXoN+XTxvOuEmNmCUbWK6hwS/E+dNhaSStGSTRAbFxuUTo6cPPajVMIV5ZHAdtX1kM3aodd6bv3+WCk3f2Pn2aNSRxzr6/jm6ODCuxvq/BeVU0UYheuEiNijbFRtA8n/K/4DbOnqxxFnn+4AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 894,
+  "locales" : [ "", "de" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"7\" android:versionName=\"1.3.1\" package=\"org.codepond.wizardroid.sample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:theme=\"@android:style/Theme.Holo.Light.DarkActionBar\" android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<application android:label=\"WizarDroid Samples\" android:icon=\"res/drawable-ldpi-v4/icon.png\" android:uiOptions=\"0x1\">\n\t\t<activity android:name=\"org.codepond.wizardroid.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"org.codepond.wizardroid.sample.TutorialActivity\" android:parentActivityName=\"org.codepond.wizardroid.sample.sample.MainActivity\" />\n\t\t<activity android:name=\"org.codepond.wizardroid.sample.FormActivity\" android:parentActivityName=\"org.codepond.wizardroid.sample.sample.MainActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 403776,
+  "crc32" : 1360933537,
+  "sha256" : "7e7c5fca3dfbd657cc18f8219163deeb252728452b9444f0b9ded60ce27dac9f",
+  "buildTime" : 1526492013000
+}

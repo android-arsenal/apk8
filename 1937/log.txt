@@ -1,0 +1,356 @@
+2018-05-11 11:46:39,049 INFO  DownloadService - Downloading "https://github.com/Flipboard/bottomsheet/archive/master.zip", attempt 3
+2018-05-11 11:46:39,465 INFO  DownloadService - Downloaded https://github.com/Flipboard/bottomsheet/archive/master.zip, attempt 3
+2018-05-11 11:46:39,465 INFO  DownloadService - Size of file "/tmp/rdisk/1937/master.zip": 142 KB
+2018-05-11 11:46:39,465 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:46:39,466 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1937/master.zip: true
+2018-05-11 11:46:39,466 DEBUG ZipUtil - Extracting '/tmp/rdisk/1937/master.zip' into '/tmp/rdisk/1937/src'.
+2018-05-11 11:46:39,479 INFO  FullProcessService - Size of directory with sources: 234 KB
+2018-05-11 11:46:39,479 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1937/src]
+2018-05-11 11:46:39,483 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1937/src/.git/
+
+2018-05-11 11:46:39,486 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1937/src/bottomsheet-master/gradlew
+2018-05-11 11:46:39,490 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/build.gradle
+2018-05-11 11:46:39,493 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1937/src/bottomsheet-master/settings.gradle /tmp/rdisk/1937/src/bottomsheet-master/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build.gradle /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build.gradle
+2018-05-11 11:46:39,493 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:46:39,493 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:46:39,501 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/local.properties
+2018-05-11 11:46:39,501 INFO  ProjectFixService - Build info for "/tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:46:39,502 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/local.properties
+2018-05-11 11:46:39,502 INFO  ProjectFixService - Build info for "/tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:46:39,502 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet/local.properties
+2018-05-11 11:46:39,503 INFO  ProjectFixService - Build info for "/tmp/rdisk/1937/src/bottomsheet-master/bottomsheet/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:46:39,503 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1937/src/bottomsheet-master/local.properties
+2018-05-11 11:46:39,503 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-05-11 11:46:39,503 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-05-11 11:46:39,505 INFO  ProjectFixService - Build info for "/tmp/rdisk/1937/src/bottomsheet-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:46:39,505 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:46:39,505 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:46:39,505 INFO  SysUtils - Execute command: [/tmp/rdisk/1937/src/bottomsheet-master/gradlew, -b, /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:46:49,447 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-11 11:46:49,447 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-11 11:46:49,447 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-11 11:46:49,447 INFO  SysUtils - Execute command: [/tmp/rdisk/1937/src/bottomsheet-master/gradlew, -b, /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 11:47:13,451 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:bottomsheet-commons:preBuild UP-TO-DATE
+:bottomsheet-commons:preDebugBuild UP-TO-DATE
+:bottomsheet-commons:compileDebugNdk UP-TO-DATE
+:bottomsheet-commons:compileLint
+:bottomsheet-commons:copyDebugLint UP-TO-DATE
+:bottomsheet:preBuild UP-TO-DATE
+:bottomsheet:preReleaseBuild UP-TO-DATE
+:bottomsheet:compileReleaseNdk UP-TO-DATE
+:bottomsheet:compileLint
+:bottomsheet:copyReleaseLint UP-TO-DATE
+:bottomsheet:checkReleaseManifest
+:bottomsheet:preDebugAndroidTestBuild UP-TO-DATE
+:bottomsheet:preDebugBuild UP-TO-DATE
+:bottomsheet:preDebugUnitTestBuild UP-TO-DATE
+:bottomsheet:preReleaseUnitTestBuild UP-TO-DATE
+:bottomsheet:prepareComAndroidSupportSupportV42320Library
+:bottomsheet:prepareReleaseDependencies
+:bottomsheet:compileReleaseAidl
+:bottomsheet:compileReleaseRenderscript
+:bottomsheet:generateReleaseBuildConfig
+:bottomsheet:mergeReleaseShaders
+:bottomsheet:compileReleaseShaders
+:bottomsheet:generateReleaseAssets
+:bottomsheet:mergeReleaseAssets
+:bottomsheet:generateReleaseResValues
+:bottomsheet:generateReleaseResources
+:bottomsheet:mergeReleaseResources
+:bottomsheet:processReleaseManifest
+:bottomsheet:processReleaseResources
+:bottomsheet:generateReleaseSources
+:bottomsheet:incrementalReleaseJavaCompilationSafeguard
+:bottomsheet:compileReleaseJavaWithJavac
+:bottomsheet:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:bottomsheet:extractReleaseAnnotations
+:bottomsheet:mergeReleaseProguardFiles
+:bottomsheet:packageReleaseRenderscript UP-TO-DATE
+:bottomsheet:packageReleaseResources
+:bottomsheet:processReleaseJavaRes UP-TO-DATE
+:bottomsheet:transformResourcesWithMergeJavaResForRelease
+:bottomsheet:transformClassesAndResourcesWithSyncLibJarsForRelease
+:bottomsheet:mergeReleaseJniLibFolders
+:bottomsheet:transformNative_libsWithMergeJniLibsForRelease
+:bottomsheet:transformNative_libsWithSyncJniLibsForRelease
+:bottomsheet:bundleRelease
+:bottomsheet-commons:checkDebugManifest
+:bottomsheet-commons:preDebugAndroidTestBuild UP-TO-DATE
+:bottomsheet-commons:preDebugUnitTestBuild UP-TO-DATE
+:bottomsheet-commons:preReleaseBuild UP-TO-DATE
+:bottomsheet-commons:preReleaseUnitTestBuild UP-TO-DATE
+:bottomsheet-commons:prepareBottomsheetMasterBottomsheetUnspecifiedLibrary
+:bottomsheet-commons:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:bottomsheet-commons:prepareComAndroidSupportAppcompatV72320Library
+:bottomsheet-commons:prepareComAndroidSupportSupportV42320Library
+:bottomsheet-commons:prepareComAndroidSupportSupportVectorDrawable2320Library
+:bottomsheet-commons:prepareDebugDependencies
+:bottomsheet-commons:compileDebugAidl
+:bottomsheet-commons:compileDebugRenderscript
+:bottomsheet-commons:generateDebugBuildConfig
+:bottomsheet-commons:mergeDebugShaders
+:bottomsheet-commons:compileDebugShaders
+:bottomsheet-commons:generateDebugAssets
+:bottomsheet-commons:mergeDebugAssets
+:bottomsheet-commons:generateDebugResValues
+:bottomsheet-commons:generateDebugResources
+:bottomsheet-commons:mergeDebugResources
+:bottomsheet-commons:processDebugManifest
+:bottomsheet-commons:processDebugResources
+:bottomsheet-commons:generateDebugSources
+:bottomsheet-commons:incrementalDebugJavaCompilationSafeguard
+:bottomsheet-commons:compileDebugJavaWithJavac
+:bottomsheet-commons:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/IntentPickerSheetView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:bottomsheet-commons:extractDebugAnnotations
+Warning: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/ImagePickerSheetView.java: The typedef annotation com.flipboard.bottomsheet.commons.ImagePickerSheetView.ImagePickerTile.TileType should have @Retention(RetentionPolicy.SOURCE)
+Warning: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/ImagePickerSheetView.java: The typedef annotation com.flipboard.bottomsheet.commons.ImagePickerSheetView.ImagePickerTile.SpecialTileType should have @Retention(RetentionPolicy.SOURCE)
+:bottomsheet-commons:mergeDebugProguardFiles
+:bottomsheet-commons:packageDebugRenderscript UP-TO-DATE
+:bottomsheet-commons:packageDebugResources
+:bottomsheet-commons:processDebugJavaRes UP-TO-DATE
+:bottomsheet-commons:transformResourcesWithMergeJavaResForDebug
+:bottomsheet-commons:transformClassesAndResourcesWithSyncLibJarsForDebug
+:bottomsheet-commons:mergeDebugJniLibFolders
+:bottomsheet-commons:transformNative_libsWithMergeJniLibsForDebug
+:bottomsheet-commons:transformNative_libsWithSyncJniLibsForDebug
+:bottomsheet-commons:bundleDebug
+:bottomsheet-commons:compileDebugSources
+:bottomsheet-commons:assembleDebug
+:bottomsheet-commons:compileReleaseNdk UP-TO-DATE
+:bottomsheet-commons:copyReleaseLint UP-TO-DATE
+:bottomsheet-commons:checkReleaseManifest
+:bottomsheet-commons:prepareReleaseDependencies
+:bottomsheet-commons:compileReleaseAidl
+:bottomsheet-commons:compileReleaseRenderscript
+:bottomsheet-commons:generateReleaseBuildConfig
+:bottomsheet-commons:mergeReleaseShaders
+:bottomsheet-commons:compileReleaseShaders
+:bottomsheet-commons:generateReleaseAssets
+:bottomsheet-commons:mergeReleaseAssets
+:bottomsheet-commons:generateReleaseResValues
+:bottomsheet-commons:generateReleaseResources
+:bottomsheet-commons:mergeReleaseResources
+:bottomsheet-commons:processReleaseManifest
+:bottomsheet-commons:processReleaseResources
+:bottomsheet-commons:generateReleaseSources
+:bottomsheet-commons:incrementalReleaseJavaCompilationSafeguard
+:bottomsheet-commons:compileReleaseJavaWithJavac
+:bottomsheet-commons:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/IntentPickerSheetView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:bottomsheet-commons:extractReleaseAnnotations
+Warning: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/ImagePickerSheetView.java: The typedef annotation com.flipboard.bottomsheet.commons.ImagePickerSheetView.ImagePickerTile.TileType should have @Retention(RetentionPolicy.SOURCE)
+Warning: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/src/main/java/com/flipboard/bottomsheet/commons/ImagePickerSheetView.java: The typedef annotation com.flipboard.bottomsheet.commons.ImagePickerSheetView.ImagePickerTile.SpecialTileType should have @Retention(RetentionPolicy.SOURCE)
+:bottomsheet-commons:mergeReleaseProguardFiles
+:bottomsheet-commons:packageReleaseRenderscript UP-TO-DATE
+:bottomsheet-commons:packageReleaseResources
+:bottomsheet-commons:processReleaseJavaRes UP-TO-DATE
+:bottomsheet-commons:transformResourcesWithMergeJavaResForRelease
+:bottomsheet-commons:transformClassesAndResourcesWithSyncLibJarsForRelease
+:bottomsheet-commons:mergeReleaseJniLibFolders
+:bottomsheet-commons:transformNative_libsWithMergeJniLibsForRelease
+:bottomsheet-commons:transformNative_libsWithSyncJniLibsForRelease
+:bottomsheet-commons:bundleRelease
+:bottomsheet-commons:compileReleaseSources
+:bottomsheet-commons:assembleRelease
+:bottomsheet-commons:assemble
+:bottomsheet-commons:lint
+Ran lint on variant release: 9 issues found
+Ran lint on variant debug: 9 issues found
+Wrote HTML report to file:///tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-commons/build/outputs/lint-results-debug.xml
+:bottomsheet-commons:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:bottomsheet-commons:prepareDebugUnitTestDependencies
+:bottomsheet-commons:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:bottomsheet-commons:processDebugUnitTestJavaRes UP-TO-DATE
+:bottomsheet-commons:compileDebugUnitTestSources UP-TO-DATE
+:bottomsheet-commons:mockableAndroidJar
+:bottomsheet-commons:assembleDebugUnitTest
+:bottomsheet-commons:testDebugUnitTest
+:bottomsheet-commons:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:bottomsheet-commons:prepareReleaseUnitTestDependencies
+:bottomsheet-commons:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:bottomsheet-commons:processReleaseUnitTestJavaRes UP-TO-DATE
+:bottomsheet-commons:compileReleaseUnitTestSources UP-TO-DATE
+:bottomsheet-commons:assembleReleaseUnitTest
+:bottomsheet-commons:testReleaseUnitTest
+:bottomsheet-commons:test
+:bottomsheet-commons:check
+:bottomsheet-commons:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.436 secs
+
+2018-05-11 11:47:13,499 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:47:13,499 INFO  SysUtils - Execute command: [/tmp/rdisk/1937/src/bottomsheet-master/gradlew, -b, /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:47:20,945 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-11 11:47:20,945 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:47:20,945 INFO  SysUtils - Execute command: [/tmp/rdisk/1937/src/bottomsheet-master/gradlew, -b, /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:47:50,186 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:bottomsheet:preBuild UP-TO-DATE
+:bottomsheet:preReleaseBuild UP-TO-DATE
+:bottomsheet:compileReleaseNdk UP-TO-DATE
+:bottomsheet:compileLint
+:bottomsheet:copyReleaseLint UP-TO-DATE
+:bottomsheet:checkReleaseManifest
+:bottomsheet:preDebugAndroidTestBuild UP-TO-DATE
+:bottomsheet:preDebugBuild UP-TO-DATE
+:bottomsheet:preDebugUnitTestBuild UP-TO-DATE
+:bottomsheet:preReleaseUnitTestBuild UP-TO-DATE
+:bottomsheet:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:bottomsheet:prepareReleaseDependencies
+:bottomsheet:compileReleaseAidl UP-TO-DATE
+:bottomsheet:compileReleaseRenderscript UP-TO-DATE
+:bottomsheet:generateReleaseBuildConfig UP-TO-DATE
+:bottomsheet:mergeReleaseShaders UP-TO-DATE
+:bottomsheet:compileReleaseShaders UP-TO-DATE
+:bottomsheet:generateReleaseAssets UP-TO-DATE
+:bottomsheet:mergeReleaseAssets UP-TO-DATE
+:bottomsheet:generateReleaseResValues UP-TO-DATE
+:bottomsheet:generateReleaseResources UP-TO-DATE
+:bottomsheet:mergeReleaseResources UP-TO-DATE
+:bottomsheet:processReleaseManifest UP-TO-DATE
+:bottomsheet:processReleaseResources UP-TO-DATE
+:bottomsheet:generateReleaseSources UP-TO-DATE
+:bottomsheet:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:bottomsheet:compileReleaseJavaWithJavac UP-TO-DATE
+:bottomsheet:extractReleaseAnnotations UP-TO-DATE
+:bottomsheet:mergeReleaseProguardFiles UP-TO-DATE
+:bottomsheet:packageReleaseRenderscript UP-TO-DATE
+:bottomsheet:packageReleaseResources UP-TO-DATE
+:bottomsheet:processReleaseJavaRes UP-TO-DATE
+:bottomsheet:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:bottomsheet:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:bottomsheet:mergeReleaseJniLibFolders UP-TO-DATE
+:bottomsheet:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:bottomsheet:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:bottomsheet:bundleRelease UP-TO-DATE
+:bottomsheet-commons:preBuild UP-TO-DATE
+:bottomsheet-commons:preReleaseBuild UP-TO-DATE
+:bottomsheet-commons:compileReleaseNdk UP-TO-DATE
+:bottomsheet-commons:compileLint
+:bottomsheet-commons:copyReleaseLint UP-TO-DATE
+:bottomsheet-commons:checkReleaseManifest
+:bottomsheet-commons:preDebugAndroidTestBuild UP-TO-DATE
+:bottomsheet-commons:preDebugBuild UP-TO-DATE
+:bottomsheet-commons:preDebugUnitTestBuild UP-TO-DATE
+:bottomsheet-commons:preReleaseUnitTestBuild UP-TO-DATE
+:bottomsheet-commons:prepareBottomsheetMasterBottomsheetUnspecifiedLibrary UP-TO-DATE
+:bottomsheet-commons:prepareComAndroidSupportAnimatedVectorDrawable2320Library UP-TO-DATE
+:bottomsheet-commons:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:bottomsheet-commons:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:bottomsheet-commons:prepareComAndroidSupportSupportVectorDrawable2320Library UP-TO-DATE
+:bottomsheet-commons:prepareReleaseDependencies
+:bottomsheet-commons:compileReleaseAidl UP-TO-DATE
+:bottomsheet-commons:compileReleaseRenderscript UP-TO-DATE
+:bottomsheet-commons:generateReleaseBuildConfig UP-TO-DATE
+:bottomsheet-commons:mergeReleaseShaders UP-TO-DATE
+:bottomsheet-commons:compileReleaseShaders UP-TO-DATE
+:bottomsheet-commons:generateReleaseAssets UP-TO-DATE
+:bottomsheet-commons:mergeReleaseAssets UP-TO-DATE
+:bottomsheet-commons:generateReleaseResValues UP-TO-DATE
+:bottomsheet-commons:generateReleaseResources UP-TO-DATE
+:bottomsheet-commons:mergeReleaseResources UP-TO-DATE
+:bottomsheet-commons:processReleaseManifest UP-TO-DATE
+:bottomsheet-commons:processReleaseResources UP-TO-DATE
+:bottomsheet-commons:generateReleaseSources UP-TO-DATE
+:bottomsheet-commons:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:bottomsheet-commons:compileReleaseJavaWithJavac UP-TO-DATE
+:bottomsheet-commons:extractReleaseAnnotations UP-TO-DATE
+:bottomsheet-commons:mergeReleaseProguardFiles UP-TO-DATE
+:bottomsheet-commons:packageReleaseRenderscript UP-TO-DATE
+:bottomsheet-commons:packageReleaseResources UP-TO-DATE
+:bottomsheet-commons:processReleaseJavaRes UP-TO-DATE
+:bottomsheet-commons:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:bottomsheet-commons:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:bottomsheet-commons:mergeReleaseJniLibFolders UP-TO-DATE
+:bottomsheet-commons:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:bottomsheet-commons:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:bottomsheet-commons:bundleRelease UP-TO-DATE
+:bottomsheet-sample:preBuild UP-TO-DATE
+:bottomsheet-sample:preDebugBuild UP-TO-DATE
+:bottomsheet-sample:checkDebugManifest
+:bottomsheet-sample:preReleaseBuild UP-TO-DATE
+:bottomsheet-sample:prepareBottomsheetMasterBottomsheetCommonsUnspecifiedLibrary
+:bottomsheet-sample:prepareBottomsheetMasterBottomsheetUnspecifiedLibrary
+:bottomsheet-sample:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:bottomsheet-sample:prepareComAndroidSupportAppcompatV72320Library
+:bottomsheet-sample:prepareComAndroidSupportSupportV42320Library
+:bottomsheet-sample:prepareComAndroidSupportSupportVectorDrawable2320Library
+:bottomsheet-sample:prepareDebugDependencies
+:bottomsheet-sample:compileDebugAidl
+:bottomsheet-sample:compileDebugRenderscript
+:bottomsheet-sample:generateDebugBuildConfig
+:bottomsheet-sample:mergeDebugShaders
+:bottomsheet-sample:compileDebugShaders
+:bottomsheet-sample:generateDebugAssets
+:bottomsheet-sample:mergeDebugAssets
+:bottomsheet-sample:generateDebugResValues
+:bottomsheet-sample:generateDebugResources
+:bottomsheet-sample:mergeDebugResources
+:bottomsheet-sample:processDebugManifest
+:bottomsheet-sample:processDebugResources
+:bottomsheet-sample:generateDebugSources
+:bottomsheet-sample:incrementalDebugJavaCompilationSafeguard
+:bottomsheet-sample:compileDebugJavaWithJavac
+:bottomsheet-sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:bottomsheet-sample:compileDebugNdk UP-TO-DATE
+:bottomsheet-sample:compileDebugSources
+:bottomsheet-sample:prePackageMarkerForDebug
+:bottomsheet-sample:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:bottomsheet-sample:mergeDebugJniLibFolders
+:bottomsheet-sample:transformNative_libsWithMergeJniLibsForDebug
+:bottomsheet-sample:processDebugJavaRes UP-TO-DATE
+:bottomsheet-sample:transformResourcesWithMergeJavaResForDebug
+:bottomsheet-sample:validateDebugSigning
+:bottomsheet-sample:packageDebug
+:bottomsheet-sample:zipalignDebug
+:bottomsheet-sample:assembleDebug
+:bottomsheet-sample:checkReleaseManifest
+:bottomsheet-sample:prepareReleaseDependencies
+:bottomsheet-sample:compileReleaseAidl
+:bottomsheet-sample:compileReleaseRenderscript
+:bottomsheet-sample:generateReleaseBuildConfig
+:bottomsheet-sample:mergeReleaseShaders
+:bottomsheet-sample:compileReleaseShaders
+:bottomsheet-sample:generateReleaseAssets
+:bottomsheet-sample:mergeReleaseAssets
+:bottomsheet-sample:generateReleaseResValues
+:bottomsheet-sample:generateReleaseResources
+:bottomsheet-sample:mergeReleaseResources
+:bottomsheet-sample:processReleaseManifest
+:bottomsheet-sample:processReleaseResources
+:bottomsheet-sample:generateReleaseSources
+:bottomsheet-sample:incrementalReleaseJavaCompilationSafeguard
+:bottomsheet-sample:compileReleaseJavaWithJavac
+:bottomsheet-sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:bottomsheet-sample:compileReleaseNdk UP-TO-DATE
+:bottomsheet-sample:compileReleaseSources
+:bottomsheet-sample:lintVitalRelease
+:bottomsheet-sample:prePackageMarkerForRelease
+:bottomsheet-sample:transformClassesWithDexForRelease
+:bottomsheet-sample:mergeReleaseJniLibFolders
+:bottomsheet-sample:transformNative_libsWithMergeJniLibsForRelease
+:bottomsheet-sample:processReleaseJavaRes UP-TO-DATE
+:bottomsheet-sample:transformResourcesWithMergeJavaResForRelease
+:bottomsheet-sample:packageRelease
+:bottomsheet-sample:assembleRelease
+:bottomsheet-sample:assemble
+:bottomsheet-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.803 secs
+
+2018-05-11 11:47:50,274 INFO  FullProcessService - Found APK file: /tmp/rdisk/1937/src/bottomsheet-master/bottomsheet-sample/build/outputs/apk/bottomsheet-sample-release-unsigned.apk
